@@ -79,30 +79,24 @@ export default function Home() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
-        /* ── LAYOUT ── */
-        .layout { display: flex; min-height: 100vh; }
-        .main-content { margin-left: 200px; flex: 1; min-width: 0; }
-
-        /* ── LEFT SIDEBAR ── */
+        /* ── SIDEBAR — lives inside the hero, scrolls away with it ── */
         .lsb {
-          position: fixed;
+          position: absolute;
           left: 0; top: 0;
-          height: 100vh;
+          height: 100%;
           width: 200px;
-          background: #0B1F3A;
-          z-index: 100;
+          z-index: 10;
           display: flex;
           flex-direction: column;
-          border-right: 1px solid rgba(201,168,76,0.15);
-          overflow-y: auto;
+          /* no background — hero image shows through the logo/burger area */
         }
         .lsb-head {
           display: flex;
           align-items: center;
           gap: 10px;
-          padding: 18px 14px 16px;
-          border-bottom: 1px solid rgba(201,168,76,0.12);
+          padding: 20px 14px 18px;
           flex-shrink: 0;
+          /* fully transparent — hero image shows through */
         }
         .lsb-burger {
           background: none; border: none; cursor: pointer;
@@ -120,7 +114,17 @@ export default function Home() {
           width: 100%; max-width: 110px; height: auto;
           mix-blend-mode: multiply;
         }
-        .lsb-nav { flex: 1; padding: 10px 0; overflow-y: auto; }
+        /* Nav links: only this area gets the dark navy panel */
+        .lsb-nav {
+          flex: 1;
+          padding: 10px 0;
+          overflow-y: auto;
+          background: rgba(11,31,58,0.88);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-top: 2px solid #C9A84C;
+          border-right: 1px solid rgba(201,168,76,0.15);
+        }
         .lsb-link {
           display: block;
           font-family: 'Inter', sans-serif;
@@ -139,7 +143,7 @@ export default function Home() {
         }
         .lsb-link.active { color: #C9A84C; border-left-color: #C9A84C; }
 
-        /* Mobile trigger */
+        /* Mobile trigger — fixed so it stays accessible when overlay is open */
         .lsb-trigger {
           display: none;
           position: fixed; top: 16px; left: 14px; z-index: 200;
@@ -157,13 +161,12 @@ export default function Home() {
           background: rgba(0,0,0,0.5);
         }
 
-        /* ── HERO ── */
+        /* ── HERO — full width, sidebar sits inside ── */
         .hero {
           position: relative;
           min-height: 100vh;
           display: flex;
           align-items: center;
-          justify-content: center;
         }
         .hero-img {
           object-fit: cover;
@@ -174,36 +177,33 @@ export default function Home() {
           inset: 0;
           background: linear-gradient(
             160deg,
-            rgba(11,31,58,0.55) 0%,
-            rgba(11,31,58,0.72) 100%
+            rgba(11,31,58,0.5) 0%,
+            rgba(11,31,58,0.68) 100%
           );
         }
+        /* Hero content sits right of the sidebar */
         .hero-content {
           position: relative;
           z-index: 2;
-          padding: 64px 56px;
+          padding: 60px 64px 72px 260px;
           width: 100%;
-          max-width: 680px;
+          max-width: 1000px;
         }
 
-        /* Mobile hero logo */
+        /* Mobile hero logo — shown only when sidebar is hidden */
         .hero-mlogo {
           display: none;
           text-align: center;
           margin-bottom: 32px;
         }
-        .hero-mlogo-img {
-          mix-blend-mode: multiply;
-        }
+        .hero-mlogo-img { mix-blend-mode: multiply; }
 
         .hero-eyebrow {
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          font-size: 0.72rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
+          font-size: 0.72rem; font-weight: 600;
+          letter-spacing: 0.14em; text-transform: uppercase;
           color: #C9A84C;
           margin-bottom: 20px;
         }
@@ -216,63 +216,44 @@ export default function Home() {
         .hero-title {
           font-family: 'Playfair Display', serif;
           font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-          font-weight: 700;
-          line-height: 1.12;
+          font-weight: 700; line-height: 1.12;
           color: #F8F6F1;
           margin-bottom: 24px;
         }
         .hero-sub {
-          font-size: 1rem;
-          font-weight: 300;
-          line-height: 1.65;
+          font-size: 1rem; font-weight: 300; line-height: 1.65;
           color: rgba(248,246,241,0.78);
           max-width: 500px;
           margin-bottom: 28px;
         }
 
         /* ── HERO SEARCH ── */
-        .hs-wrap { max-width: 560px; }
+        .hs-wrap { max-width: 520px; }
         .hs-form {
-          display: flex;
-          gap: 0;
+          display: flex; gap: 0;
           background: rgba(248,246,241,0.96);
           border: 1px solid rgba(201,168,76,0.3);
         }
         .hs-input {
-          flex: 1;
-          padding: 16px 20px;
-          background: transparent;
-          border: none;
-          outline: none;
-          font-family: 'Inter', sans-serif;
-          font-size: 0.9rem;
-          font-weight: 400;
-          color: #0B1F3A;
+          flex: 1; padding: 16px 20px;
+          background: transparent; border: none; outline: none;
+          font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #0B1F3A;
         }
         .hs-input::placeholder { color: rgba(11,31,58,0.4); }
         .hs-btn {
           padding: 16px 24px;
-          background: #C9A84C;
-          color: #0B1F3A;
-          font-family: 'Inter', sans-serif;
-          font-size: 0.76rem;
-          font-weight: 700;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          border: none;
-          cursor: pointer;
-          transition: background 0.2s;
-          white-space: nowrap;
-          flex-shrink: 0;
+          background: #C9A84C; color: #0B1F3A;
+          font-family: 'Inter', sans-serif; font-size: 0.76rem;
+          font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+          border: none; cursor: pointer; transition: background 0.2s;
+          white-space: nowrap; flex-shrink: 0;
         }
         .hs-btn:hover:not(:disabled) { background: #b8943e; }
         .hs-btn:disabled { opacity: 0.55; cursor: not-allowed; }
         .hs-dots { display: flex; gap: 5px; padding: 16px 0 0; }
         .hs-dots span {
-          width: 6px; height: 6px;
-          background: #C9A84C;
-          border-radius: 50%;
-          animation: hsPulse 1.2s ease-in-out infinite;
+          width: 6px; height: 6px; background: #C9A84C;
+          border-radius: 50%; animation: hsPulse 1.2s ease-in-out infinite;
         }
         .hs-dots span:nth-child(2) { animation-delay: 0.2s; }
         .hs-dots span:nth-child(3) { animation-delay: 0.4s; }
@@ -280,178 +261,76 @@ export default function Home() {
           0%,80%,100% { opacity: 0.25; transform: scale(0.85); }
           40% { opacity: 1; transform: scale(1); }
         }
-        .hs-error {
-          margin-top: 12px;
-          font-size: 0.82rem;
-          color: rgba(248,246,241,0.55);
-          font-weight: 300;
-        }
+        .hs-error { margin-top: 12px; font-size: 0.82rem; color: rgba(248,246,241,0.55); font-weight: 300; }
         .hs-answer {
-          margin-top: 16px;
-          background: rgba(248,246,241,0.96);
-          border-left: 3px solid #C9A84C;
-          padding: 24px 28px;
-          animation: hsFade 0.25s ease;
-          max-height: 380px;
-          overflow-y: auto;
+          margin-top: 16px; background: rgba(248,246,241,0.96);
+          border-left: 3px solid #C9A84C; padding: 24px 28px;
+          animation: hsFade 0.25s ease; max-height: 380px; overflow-y: auto;
         }
         @keyframes hsFade {
           from { opacity: 0; transform: translateY(4px); }
           to   { opacity: 1; transform: translateY(0); }
         }
-        .hs-answer-q {
-          font-size: 0.68rem;
-          font-weight: 600;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 10px;
-        }
-        .hs-answer-text {
-          font-size: 0.9rem;
-          font-weight: 300;
-          line-height: 1.8;
-          color: #1A2D42;
-          white-space: pre-wrap;
-        }
-        .hs-cursor {
-          display: inline-block;
-          width: 2px; height: 0.9em;
-          background: #C9A84C;
-          vertical-align: text-bottom;
-          margin-left: 2px;
-          animation: hsBlink 0.8s step-end infinite;
-        }
+        .hs-answer-q { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
+        .hs-answer-text { font-size: 0.9rem; font-weight: 300; line-height: 1.8; color: #1A2D42; white-space: pre-wrap; }
+        .hs-cursor { display: inline-block; width: 2px; height: 0.9em; background: #C9A84C; vertical-align: text-bottom; margin-left: 2px; animation: hsBlink 0.8s step-end infinite; }
         @keyframes hsBlink { 50% { opacity: 0; } }
-        .hs-answer-foot {
-          margin-top: 16px;
-          padding-top: 12px;
-          border-top: 1px solid rgba(11,31,58,0.1);
-          font-size: 0.68rem;
-          color: #8A9AAA;
-        }
+        .hs-answer-foot { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(11,31,58,0.1); font-size: 0.68rem; color: #8A9AAA; }
 
-        /* ── SECTION SHARED ── */
+        /* ── SECTIONS ── */
         .section { padding: 96px 48px; }
         .section-label {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 0.7rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 16px;
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 16px;
         }
         .section-label::before { content: '◈'; font-size: 0.65rem; }
         .section-heading {
           font-family: 'Playfair Display', serif;
-          font-size: clamp(1.8rem, 3vw, 2.6rem);
-          font-weight: 700;
-          color: #0B1F3A;
-          line-height: 1.2;
-          margin-bottom: 56px;
-          max-width: 520px;
+          font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700;
+          color: #0B1F3A; line-height: 1.2; margin-bottom: 56px; max-width: 520px;
         }
-
-        /* ── TOPICS GRID ── */
         .topics-section { background: #F8F6F1; }
         .topics-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 0;
-          border-top: 1px solid #E8E4DC;
-          border-left: 1px solid #E8E4DC;
+          display: grid; grid-template-columns: repeat(4, 1fr);
+          gap: 0; border-top: 1px solid #E8E4DC; border-left: 1px solid #E8E4DC;
         }
         .topic-card {
-          padding: 36px 32px;
-          border-right: 1px solid #E8E4DC;
-          border-bottom: 1px solid #E8E4DC;
-          text-decoration: none;
-          display: block;
-          transition: background 0.2s;
+          padding: 36px 32px; border-right: 1px solid #E8E4DC; border-bottom: 1px solid #E8E4DC;
+          text-decoration: none; display: block; transition: background 0.2s;
         }
         .topic-card:hover { background: #fff; }
         .topic-card-label {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.08rem;
-          font-weight: 600;
-          color: #0B1F3A;
-          margin-bottom: 10px;
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 8px;
+          font-family: 'Playfair Display', serif; font-size: 1.08rem; font-weight: 600;
+          color: #0B1F3A; margin-bottom: 10px;
+          display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
         }
-        .topic-card-label::after {
-          content: '→';
-          font-family: 'Inter', sans-serif;
-          font-size: 0.9rem;
-          color: #C9A84C;
-          flex-shrink: 0;
-          margin-top: 2px;
-          transition: transform 0.2s;
-        }
+        .topic-card-label::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #C9A84C; flex-shrink: 0; margin-top: 2px; transition: transform 0.2s; }
         .topic-card:hover .topic-card-label::after { transform: translateX(4px); }
-        .topic-card-desc {
-          font-size: 0.85rem;
-          font-weight: 400;
-          line-height: 1.6;
-          color: #5C6B7A;
-        }
+        .topic-card-desc { font-size: 0.85rem; font-weight: 400; line-height: 1.6; color: #5C6B7A; }
         .topic-card-inactive { cursor: default; opacity: 0.45; }
         .topic-card-inactive:hover { background: transparent; }
         .topic-card-inactive .topic-card-label::after { display: none; }
 
-        /* ── TRUST STRIP ── */
         .trust-section { background: #0B1F3A; }
-        .trust-inner {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 80px;
-          align-items: start;
-        }
+        .trust-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
         .trust-intro .section-heading { color: #F8F6F1; margin-bottom: 0; }
         .trust-pillars { display: flex; flex-direction: column; gap: 40px; padding-top: 8px; }
-        .pillar {
-          display: grid; grid-template-columns: 1fr; gap: 8px;
-          padding-bottom: 40px;
-          border-bottom: 1px solid rgba(248,246,241,0.1);
-        }
+        .pillar { display: grid; grid-template-columns: 1fr; gap: 8px; padding-bottom: 40px; border-bottom: 1px solid rgba(248,246,241,0.1); }
         .pillar:last-child { border-bottom: none; padding-bottom: 0; }
-        .pillar-heading {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.15rem; font-weight: 600; color: #C9A84C;
-        }
-        .pillar-body {
-          font-size: 0.9rem; font-weight: 300; line-height: 1.7;
-          color: rgba(248,246,241,0.7);
-        }
+        .pillar-heading { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: #C9A84C; }
+        .pillar-body { font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: rgba(248,246,241,0.7); }
 
-        /* ── FOOTER ── */
-        .footer {
-          background: #0B1F3A;
-          border-top: 1px solid rgba(248,246,241,0.08);
-          padding: 40px 48px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .footer-logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 0.95rem; font-weight: 700;
-          color: #F8F6F1; letter-spacing: 0.02em;
-        }
+        .footer { background: #0B1F3A; border-top: 1px solid rgba(248,246,241,0.08); padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: #F8F6F1; letter-spacing: 0.02em; }
         .footer-logo span { color: #C9A84C; }
         .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
 
         /* ── MOBILE ── */
         @media (max-width: 768px) {
-          .lsb { transform: translateX(-100%); transition: transform 0.28s ease; }
+          .lsb { position: fixed; transform: translateX(-100%); transition: transform 0.28s ease; }
           .lsb.lsb--open { transform: translateX(0); }
           .lsb-trigger { display: flex; }
-          .main-content { margin-left: 0; }
           .hero-mlogo { display: block; }
           .hero-content { padding: 60px 24px 48px; }
           .hs-wrap { max-width: 100%; }
@@ -470,93 +349,88 @@ export default function Home() {
         }
       `}</style>
 
-      <div className="layout">
+      {/* HERO — full width; sidebar sits inside and scrolls away with it */}
+      <section className="hero">
+        <Image
+          src="/images/sunrise.jpg"
+          alt="Sunrise from Movenpick Residences, Punta Engaño, Cebu"
+          fill
+          priority
+          className="hero-img"
+        />
+        <div className="hero-overlay" />
         <HomeSidebar />
+        <div className="hero-content">
+          {/* Logo shown only on mobile when sidebar is hidden */}
+          <div className="hero-mlogo">
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                alt="Expat Compass PH"
+                width={120}
+                height={120}
+                className="hero-mlogo-img"
+              />
+            </Link>
+          </div>
+          <p className="hero-eyebrow">Your relocation resource</p>
+          <h1 className="hero-title">
+            Living in the Philippines,<br />done properly.
+          </h1>
+          <p className="hero-sub">
+            Clear, practical, up-to-date guidance on visas, housing,
+            healthcare, and daily life — for foreigners who want to do
+            it right.
+          </p>
+          <HeroSearch />
+        </div>
+      </section>
 
-        <main className="main-content">
-          {/* HERO */}
-          <section className="hero">
-            <Image
-              src="/images/sunrise.jpg"
-              alt="Sunrise from Movenpick Residences, Punta Engaño, Cebu"
-              fill
-              priority
-              className="hero-img"
-            />
-            <div className="hero-overlay" />
-            <div className="hero-content">
-              {/* Logo shown only on mobile (sidebar hidden) */}
-              <div className="hero-mlogo">
-                <Link href="/">
-                  <Image
-                    src="/images/logo.png"
-                    alt="Expat Compass PH"
-                    width={120}
-                    height={120}
-                    className="hero-mlogo-img"
-                  />
-                </Link>
+      {/* TOPICS */}
+      <section className="section topics-section" id="topics">
+        <p className="section-label">Everything you need</p>
+        <h2 className="section-heading">
+          The essential topics,<br />covered in depth.
+        </h2>
+        <div className="topics-grid">
+          {topics.map((t) =>
+            t.href ? (
+              <Link key={t.label} href={t.href} className="topic-card">
+                <div className="topic-card-label">{t.label}</div>
+                <p className="topic-card-desc">{t.description}</p>
+              </Link>
+            ) : (
+              <div key={t.label} className="topic-card topic-card-inactive">
+                <div className="topic-card-label">{t.label}</div>
+                <p className="topic-card-desc">{t.description}</p>
               </div>
-              <p className="hero-eyebrow">Your relocation resource</p>
-              <h1 className="hero-title">
-                Living in the Philippines,<br />done properly.
-              </h1>
-              <p className="hero-sub">
-                Clear, practical, up-to-date guidance on visas, housing,
-                healthcare, and daily life — for foreigners who want to do
-                it right.
-              </p>
-              <HeroSearch />
-            </div>
-          </section>
+            )
+          )}
+        </div>
+      </section>
 
-          {/* TOPICS */}
-          <section className="section topics-section" id="topics">
-            <p className="section-label">Everything you need</p>
+      {/* TRUST */}
+      <section className="section trust-section">
+        <div className="trust-inner">
+          <div className="trust-intro">
+            <p className="section-label" style={{color:"#C9A84C"}}>Why Expat Compass PH</p>
             <h2 className="section-heading">
-              The essential topics,<br />covered in depth.
+              Guidance you can actually rely on.
             </h2>
-            <div className="topics-grid">
-              {topics.map((t) =>
-                t.href ? (
-                  <Link key={t.label} href={t.href} className="topic-card">
-                    <div className="topic-card-label">{t.label}</div>
-                    <p className="topic-card-desc">{t.description}</p>
-                  </Link>
-                ) : (
-                  <div key={t.label} className="topic-card topic-card-inactive">
-                    <div className="topic-card-label">{t.label}</div>
-                    <p className="topic-card-desc">{t.description}</p>
-                  </div>
-                )
-              )}
-            </div>
-          </section>
-
-          {/* TRUST */}
-          <section className="section trust-section">
-            <div className="trust-inner">
-              <div className="trust-intro">
-                <p className="section-label" style={{color:"#C9A84C"}}>Why Expat Compass PH</p>
-                <h2 className="section-heading">
-                  Guidance you can actually rely on.
-                </h2>
+          </div>
+          <div className="trust-pillars">
+            {pillars.map((p) => (
+              <div key={p.heading} className="pillar">
+                <h3 className="pillar-heading">{p.heading}</h3>
+                <p className="pillar-body">{p.body}</p>
               </div>
-              <div className="trust-pillars">
-                {pillars.map((p) => (
-                  <div key={p.heading} className="pillar">
-                    <h3 className="pillar-heading">{p.heading}</h3>
-                    <p className="pillar-body">{p.body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* FOOTER */}
-          <Footer />
-        </main>
-      </div>
+      {/* FOOTER */}
+      <Footer />
     </>
   );
 }
