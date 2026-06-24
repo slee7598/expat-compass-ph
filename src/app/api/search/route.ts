@@ -1,7 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
 
-const client = new Anthropic();
-
 const SYSTEM_PROMPT = `You are an expert guide on expat life in the Philippines. You provide accurate, practical, and honest answers about living in the Philippines as a foreign national — including the topics most guides are too cautious to cover properly.
 
 Your areas of expertise:
@@ -57,42 +55,59 @@ Keep answers between 150 and 400 words. Write in flowing prose. Use a bulleted l
 If asked about something genuinely unrelated to life in the Philippines as an expat, respond with: "I can only help with questions about living in the Philippines as a foreigner. What would you like to know?"`;
 
 export async function POST(request: Request) {
-  const { query } = await request.json();
-
-  if (!query || typeof query !== "string" || query.trim().length === 0) {
-    return new Response("Query is required", { status: 400 });
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return new Response("ANTHROPIC_API_KEY is not configured.", { status: 500 });
   }
 
-  const stream = client.messages.stream({
-    model: "claude-sonnet-4-6",
-    max_tokens: 1024,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: "user", content: query.trim() }],
-  });
+  let query: string;
+  try {
+    const body = await request.json();
+    query = body.query;
+  } catch {
+    return new Response("Invalid request body.", { status: 400 });
+  }
 
-  const readable = new ReadableStream({
-    async start(controller) {
-      try {
-        for await (const chunk of stream) {
-          if (
-            chunk.type === "content_block_delta" &&
-            chunk.delta.type === "text_delta"
-          ) {
-            controller.enqueue(new TextEncoder().encode(chunk.delta.text));
+  if (!query || typeof query !== "string" || query.trim().length === 0) {
+    return new Response("Query is required.", { status: 400 });
+  }
+
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+  try {
+    const stream = client.messages.stream({
+      model: "claude-sonnet-4-6",
+      max_tokens: 1024,
+      system: SYSTEM_PROMPT,
+      messages: [{ role: "user", content: query.trim() }],
+    });
+
+    const readable = new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const chunk of stream) {
+            if (
+              chunk.type === "content_block_delta" &&
+              chunk.delta.type === "text_delta"
+            ) {
+              controller.enqueue(new TextEncoder().encode(chunk.delta.text));
+            }
           }
+        } catch (err) {
+          controller.error(err);
+        } finally {
+          controller.close();
         }
-      } catch (err) {
-        controller.error(err);
-      } finally {
-        controller.close();
-      }
-    },
-  });
+      },
+    });
 
-  return new Response(readable, {
-    headers: {
-      "Content-Type": "text/plain; charset=utf-8",
-      "X-Content-Type-Options": "nosniff",
-    },
-  });
+    return new Response(readable, {
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8",
+        "X-Content-Type-Options": "nosniff",
+      },
+    });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "Anthropic API error.";
+    return new Response(message, { status: 502 });
+  }
 }

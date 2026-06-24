@@ -40,7 +40,8 @@ export default function ExpatSearch() {
       });
 
       if (!res.ok) {
-        throw new Error("Search failed. Please try again.");
+        const text = await res.text();
+        throw new Error(text || "Search failed. Please try again.");
       }
 
       const reader = res.body!.getReader();
