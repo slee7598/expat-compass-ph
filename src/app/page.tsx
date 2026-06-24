@@ -84,52 +84,6 @@ export default function Home() {
           color: #0B1F3A;
         }
 
-        /* ── NAV ── */
-        .nav {
-          position: absolute;
-          top: 0; left: 0; right: 0;
-          z-index: 10;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 48px;
-          height: 72px;
-          background: rgba(11,31,58,0.6);
-          backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
-          border-bottom: 1px solid rgba(201,168,76,0.18);
-        }
-        .nav-logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.15rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          letter-spacing: 0.02em;
-          text-decoration: none;
-        }
-        .nav-logo span { color: #C9A84C; }
-        .nav-links {
-          display: flex;
-          gap: 2px;
-          list-style: none;
-        }
-        .nav-links a {
-          display: block;
-          font-size: 0.74rem;
-          font-weight: 500;
-          letter-spacing: 0.09em;
-          text-transform: uppercase;
-          color: rgba(248,246,241,0.82);
-          text-decoration: none;
-          padding: 7px 13px;
-          border: 1px solid transparent;
-          transition: color 0.18s, border-color 0.18s;
-        }
-        .nav-links a:hover {
-          color: #C9A84C;
-          border-color: rgba(201,168,76,0.4);
-        }
-
         /* ── HERO ── */
         .hero {
           position: relative;
@@ -482,8 +436,6 @@ export default function Home() {
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {
-          .nav { padding: 0 24px; }
-          .nav-links { display: none; }
           .hero-content { padding: 0 24px 52px; }
           .hs-wrap { max-width: 100%; }
           .section { padding: 72px 24px; }
@@ -499,9 +451,6 @@ export default function Home() {
         }
       `}</style>
 
-      {/* NAV */}
-      <Nav />
-
       {/* HERO */}
       <section className="hero">
         <Image
@@ -512,6 +461,7 @@ export default function Home() {
           className="hero-img"
         />
         <div className="hero-overlay" />
+        <Nav />
         <div className="hero-content">
           <p className="hero-eyebrow">Your relocation resource</p>
           <h1 className="hero-title">
