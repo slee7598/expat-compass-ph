@@ -1,3 +1,5 @@
+import Nav from "@/components/Nav";
+
 const visaTypes = [
   {
     label: "SRRV",
@@ -408,17 +410,7 @@ export default function VisasPage() {
 
       {/* PAGE HEADER */}
       <header className="page-header">
-        <nav className="nav">
-          <a href="/" className="nav-logo">
-            Expat Compass <span>PH</span>
-          </a>
-          <ul className="nav-links">
-            <li><a href="/visas" className="active">Visas</a></li>
-            <li><a href="#">City Guides</a></li>
-            <li><a href="#">Cost of Living</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
+        <Nav active="/visas" />
 
         <div className="page-hero">
           <p className="page-eyebrow">Visas &amp; Residency</p>

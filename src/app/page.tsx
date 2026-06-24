@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Nav from "@/components/Nav";
 
 const topics = [
   {
@@ -11,19 +12,19 @@ const topics = [
     label: "Marriage",
     description:
       "Legal requirements for marrying a Filipino citizen as a foreign national.",
-    href: "#",
+    href: "/marriage",
   },
   {
     label: "Cost of Living",
     description:
       "Realistic monthly budgets across cities, from frugal to comfortable.",
-    href: "#",
+    href: "/cost-of-living",
   },
   {
     label: "Housing",
     description:
       "Renting vs. owning, condo laws for foreigners, and neighborhoods to know.",
-    href: "#",
+    href: "/housing",
   },
   {
     label: "Healthcare",
@@ -358,17 +359,7 @@ export default function Home() {
       `}</style>
 
       {/* NAV */}
-      <nav className="nav">
-        <a href="/" className="nav-logo">
-          Expat Compass <span>PH</span>
-        </a>
-        <ul className="nav-links">
-          <li><a href="/visas">Visas</a></li>
-          <li><a href="#">City Guides</a></li>
-          <li><a href="#">Cost of Living</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
+      <Nav />
 
       {/* HERO */}
       <section className="hero">
