@@ -32,7 +32,7 @@ const topics = [
     label: "Healthcare",
     description:
       "Private hospitals, PhilHealth, international insurance, and medical costs.",
-    href: null,
+    href: "/healthcare",
   },
   {
     label: "Banking",

@@ -5,6 +5,7 @@ const links = [
   { label: "Marriage", href: "/marriage" },
   { label: "Cost of Living", href: "/cost-of-living" },
   { label: "Housing", href: "/housing" },
+  { label: "Healthcare", href: "/healthcare" },
 ];
 
 interface NavProps {
