@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ExpatSearch from "@/components/ExpatSearch";
 
 const topics = [
   {
@@ -392,6 +393,9 @@ export default function Home() {
           <a href="#topics" className="hero-cta">Explore the guides</a>
         </div>
       </section>
+
+      {/* AI SEARCH */}
+      <ExpatSearch />
 
       {/* TOPICS */}
       <section className="section topics-section" id="topics">
