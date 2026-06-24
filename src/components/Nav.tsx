@@ -42,8 +42,8 @@ export default function Nav({ active }: NavProps) {
             <Image
               src="/images/logo.png"
               alt="Expat Compass PH"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               className="nav-logo-img"
               priority
             />
@@ -51,28 +51,38 @@ export default function Nav({ active }: NavProps) {
         </div>
       </nav>
 
+      {/* Slide-in drawer — always mounted for CSS transition */}
+      <div
+        className={`nav-drawer${open ? " nav-drawer--open" : ""}`}
+        aria-hidden={!open}
+      >
+        <button
+          className="nav-drawer-close"
+          onClick={() => setOpen(false)}
+          aria-label="Close menu"
+        >
+          &times;
+        </button>
+        <nav className="nav-drawer-links">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`nav-dl${active === link.href ? " active" : ""}`}
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+
       {open && (
-        <div className="nav-overlay" role="dialog" aria-modal="true">
-          <button
-            className="nav-ov-close"
-            onClick={() => setOpen(false)}
-            aria-label="Close menu"
-          >
-            &times;
-          </button>
-          <nav className="nav-ov-links">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`nav-ol${active === link.href ? " active" : ""}`}
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
+        <div
+          className="nav-backdrop"
+          onClick={() => setOpen(false)}
+          aria-hidden="true"
+        />
       )}
     </>
   );

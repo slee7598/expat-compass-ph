@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
 
@@ -79,94 +78,13 @@ export default function Home() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
-        /* ── SIDEBAR — lives inside the hero, scrolls away with it ── */
-        .lsb {
-          position: absolute;
-          left: 0; top: 0;
-          height: 100%;
-          width: 200px;
-          z-index: 10;
-          display: flex;
-          flex-direction: column;
-          /* no background — hero image shows through the logo/burger area */
-        }
-        .lsb-head {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 20px 14px 18px;
-          flex-shrink: 0;
-          /* fully transparent — hero image shows through */
-        }
-        .lsb-burger {
-          background: none; border: none; cursor: pointer;
-          padding: 4px;
-          display: flex; flex-direction: column; gap: 5px; align-items: center;
-          flex-shrink: 0;
-        }
-        .lsb-burger span {
-          display: block; width: 18px; height: 2px;
-          background: #C9A84C; border-radius: 1px;
-        }
-        .lsb-logo-link { display: block; line-height: 0; flex: 1; min-width: 0; }
-        .lsb-logo-img {
-          display: block;
-          width: 100%; max-width: 110px; height: auto;
-          mix-blend-mode: multiply;
-        }
-        /* Nav links: only this area gets the dark navy panel */
-        .lsb-nav {
-          flex: 1;
-          padding: 10px 0;
-          overflow-y: auto;
-          background: rgba(11,31,58,0.88);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          border-top: 2px solid #C9A84C;
-          border-right: 1px solid rgba(201,168,76,0.15);
-        }
-        .lsb-link {
-          display: block;
-          font-family: 'Inter', sans-serif;
-          font-size: 0.71rem; font-weight: 500;
-          letter-spacing: 0.09em; text-transform: uppercase;
-          color: rgba(248,246,241,0.62);
-          text-decoration: none;
-          padding: 11px 18px 11px 20px;
-          border-left: 2px solid transparent;
-          transition: color 0.18s, background 0.18s, border-color 0.18s;
-        }
-        .lsb-link:hover {
-          color: #C9A84C;
-          background: rgba(201,168,76,0.06);
-          border-left-color: rgba(201,168,76,0.3);
-        }
-        .lsb-link.active { color: #C9A84C; border-left-color: #C9A84C; }
-
-        /* Mobile trigger — fixed so it stays accessible when overlay is open */
-        .lsb-trigger {
-          display: none;
-          position: fixed; top: 16px; left: 14px; z-index: 200;
-          background: rgba(11,31,58,0.82); border: none; cursor: pointer;
-          padding: 9px 10px; border-radius: 4px;
-          flex-direction: column; gap: 5px; align-items: center;
-        }
-        .lsb-trigger span {
-          display: block; width: 22px; height: 2px;
-          background: #C9A84C; border-radius: 1px;
-        }
-        /* Mobile backdrop */
-        .lsb-backdrop {
-          position: fixed; inset: 0; z-index: 90;
-          background: rgba(0,0,0,0.5);
-        }
-
-        /* ── HERO — full width, sidebar sits inside ── */
+        /* ── HERO ── */
         .hero {
           position: relative;
           min-height: 100vh;
           display: flex;
           align-items: center;
+          justify-content: center;
         }
         .hero-img {
           object-fit: cover;
@@ -181,23 +99,21 @@ export default function Home() {
             rgba(11,31,58,0.68) 100%
           );
         }
-        /* Hero content sits right of the sidebar */
         .hero-content {
           position: relative;
           z-index: 2;
-          padding: 60px 64px 72px 260px;
+          padding: 80px 48px;
           width: 100%;
-          max-width: 1000px;
-        }
-
-        /* Mobile hero logo — shown only when sidebar is hidden */
-        .hero-mlogo {
-          display: none;
+          max-width: 760px;
           text-align: center;
-          margin-bottom: 32px;
         }
-        .hero-mlogo-img { mix-blend-mode: multiply; }
-
+        .hero-logo {
+          display: block;
+          width: 100px;
+          height: auto;
+          margin: 0 auto 40px;
+          mix-blend-mode: multiply;
+        }
         .hero-eyebrow {
           display: inline-flex;
           align-items: center;
@@ -207,10 +123,10 @@ export default function Home() {
           color: #C9A84C;
           margin-bottom: 20px;
         }
-        .hero-eyebrow::before {
+        .hero-eyebrow::before, .hero-eyebrow::after {
           content: '';
           display: block;
-          width: 28px; height: 1px;
+          width: 24px; height: 1px;
           background: #C9A84C;
         }
         .hero-title {
@@ -224,11 +140,11 @@ export default function Home() {
           font-size: 1rem; font-weight: 300; line-height: 1.65;
           color: rgba(248,246,241,0.78);
           max-width: 500px;
-          margin-bottom: 28px;
+          margin: 0 auto 32px;
         }
 
         /* ── HERO SEARCH ── */
-        .hs-wrap { max-width: 520px; }
+        .hs-wrap { max-width: 520px; margin: 0 auto; text-align: left; }
         .hs-form {
           display: flex; gap: 0;
           background: rgba(248,246,241,0.96);
@@ -279,6 +195,7 @@ export default function Home() {
 
         /* ── SECTIONS ── */
         .section { padding: 96px 48px; }
+        .section-inner { max-width: 1100px; margin: 0 auto; }
         .section-label {
           display: inline-flex; align-items: center; gap: 10px;
           font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
@@ -328,10 +245,6 @@ export default function Home() {
 
         /* ── MOBILE ── */
         @media (max-width: 768px) {
-          .lsb { position: fixed; transform: translateX(-100%); transition: transform 0.28s ease; }
-          .lsb.lsb--open { transform: translateX(0); }
-          .lsb-trigger { display: flex; }
-          .hero-mlogo { display: block; }
           .hero-content { padding: 60px 24px 48px; }
           .hs-wrap { max-width: 100%; }
         }
@@ -349,7 +262,7 @@ export default function Home() {
         }
       `}</style>
 
-      {/* HERO — full width; sidebar sits inside and scrolls away with it */}
+      {/* HERO */}
       <section className="hero">
         <Image
           src="/images/sunrise.jpg"
@@ -359,20 +272,15 @@ export default function Home() {
           className="hero-img"
         />
         <div className="hero-overlay" />
-        <HomeSidebar />
         <div className="hero-content">
-          {/* Logo shown only on mobile when sidebar is hidden */}
-          <div className="hero-mlogo">
-            <Link href="/">
-              <Image
-                src="/images/logo.png"
-                alt="Expat Compass PH"
-                width={120}
-                height={120}
-                className="hero-mlogo-img"
-              />
-            </Link>
-          </div>
+          <Image
+            src="/images/logo.png"
+            alt="Expat Compass PH"
+            width={100}
+            height={100}
+            className="hero-logo"
+            priority
+          />
           <p className="hero-eyebrow">Your relocation resource</p>
           <h1 className="hero-title">
             Living in the Philippines,<br />done properly.
@@ -388,43 +296,47 @@ export default function Home() {
 
       {/* TOPICS */}
       <section className="section topics-section" id="topics">
-        <p className="section-label">Everything you need</p>
-        <h2 className="section-heading">
-          The essential topics,<br />covered in depth.
-        </h2>
-        <div className="topics-grid">
-          {topics.map((t) =>
-            t.href ? (
-              <Link key={t.label} href={t.href} className="topic-card">
-                <div className="topic-card-label">{t.label}</div>
-                <p className="topic-card-desc">{t.description}</p>
-              </Link>
-            ) : (
-              <div key={t.label} className="topic-card topic-card-inactive">
-                <div className="topic-card-label">{t.label}</div>
-                <p className="topic-card-desc">{t.description}</p>
-              </div>
-            )
-          )}
+        <div className="section-inner">
+          <p className="section-label">Everything you need</p>
+          <h2 className="section-heading">
+            The essential topics,<br />covered in depth.
+          </h2>
+          <div className="topics-grid">
+            {topics.map((t) =>
+              t.href ? (
+                <Link key={t.label} href={t.href} className="topic-card">
+                  <div className="topic-card-label">{t.label}</div>
+                  <p className="topic-card-desc">{t.description}</p>
+                </Link>
+              ) : (
+                <div key={t.label} className="topic-card topic-card-inactive">
+                  <div className="topic-card-label">{t.label}</div>
+                  <p className="topic-card-desc">{t.description}</p>
+                </div>
+              )
+            )}
+          </div>
         </div>
       </section>
 
       {/* TRUST */}
       <section className="section trust-section">
-        <div className="trust-inner">
-          <div className="trust-intro">
-            <p className="section-label" style={{color:"#C9A84C"}}>Why Expat Compass PH</p>
-            <h2 className="section-heading">
-              Guidance you can actually rely on.
-            </h2>
-          </div>
-          <div className="trust-pillars">
-            {pillars.map((p) => (
-              <div key={p.heading} className="pillar">
-                <h3 className="pillar-heading">{p.heading}</h3>
-                <p className="pillar-body">{p.body}</p>
-              </div>
-            ))}
+        <div className="section-inner">
+          <div className="trust-inner">
+            <div className="trust-intro">
+              <p className="section-label" style={{ color: "#C9A84C" }}>Why Expat Compass PH</p>
+              <h2 className="section-heading">
+                Guidance you can actually rely on.
+              </h2>
+            </div>
+            <div className="trust-pillars">
+              {pillars.map((p) => (
+                <div key={p.heading} className="pillar">
+                  <h3 className="pillar-heading">{p.heading}</h3>
+                  <p className="pillar-body">{p.body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
