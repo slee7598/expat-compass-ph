@@ -473,7 +473,6 @@ export default function Home() {
             it right.
           </p>
           <HeroSearch />
-          <a href="#topics" className="hero-cta">Explore the guides</a>
         </div>
       </section>
 
