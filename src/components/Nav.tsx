@@ -42,8 +42,8 @@ export default function Nav({ active }: NavProps) {
             <Image
               src="/images/logo.png"
               alt="Expat Compass PH"
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               className="nav-logo-img"
               priority
             />

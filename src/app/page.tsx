@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
 
@@ -78,13 +79,64 @@ export default function Home() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
+        /* ── SIDEBAR — inside hero, scrolls away with it ── */
+        .lsb {
+          position: absolute;
+          left: 0; top: 0;
+          height: 100%;
+          width: 200px;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+        }
+        .lsb-head {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 24px 16px 18px;
+          flex-shrink: 0;
+          /* transparent — hero image shows through */
+        }
+        .lsb-logo-link { display: block; line-height: 0; }
+        .lsb-logo-img {
+          display: block;
+          width: 110px; height: auto;
+          mix-blend-mode: multiply;
+        }
+        .lsb-nav {
+          flex: 1;
+          padding: 10px 0;
+          overflow-y: auto;
+          background: rgba(11,31,58,0.88);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-top: 2px solid #C9A84C;
+          border-right: 1px solid rgba(201,168,76,0.15);
+        }
+        .lsb-link {
+          display: block;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.71rem; font-weight: 500;
+          letter-spacing: 0.09em; text-transform: uppercase;
+          color: rgba(248,246,241,0.62);
+          text-decoration: none;
+          padding: 11px 18px 11px 20px;
+          border-left: 2px solid transparent;
+          transition: color 0.18s, background 0.18s, border-color 0.18s;
+        }
+        .lsb-link:hover {
+          color: #C9A84C;
+          background: rgba(201,168,76,0.06);
+          border-left-color: rgba(201,168,76,0.3);
+        }
+        .lsb-link.active { color: #C9A84C; border-left-color: #C9A84C; }
+
         /* ── HERO ── */
         .hero {
           position: relative;
           min-height: 100vh;
           display: flex;
           align-items: center;
-          justify-content: center;
         }
         .hero-img {
           object-fit: cover;
@@ -102,17 +154,8 @@ export default function Home() {
         .hero-content {
           position: relative;
           z-index: 2;
-          padding: 80px 48px;
+          padding: 60px 64px 72px 260px;
           width: 100%;
-          max-width: 760px;
-          text-align: center;
-        }
-        .hero-logo {
-          display: block;
-          width: 100px;
-          height: auto;
-          margin: 0 auto 40px;
-          mix-blend-mode: multiply;
         }
         .hero-eyebrow {
           display: inline-flex;
@@ -123,10 +166,10 @@ export default function Home() {
           color: #C9A84C;
           margin-bottom: 20px;
         }
-        .hero-eyebrow::before, .hero-eyebrow::after {
+        .hero-eyebrow::before {
           content: '';
           display: block;
-          width: 24px; height: 1px;
+          width: 28px; height: 1px;
           background: #C9A84C;
         }
         .hero-title {
@@ -140,11 +183,11 @@ export default function Home() {
           font-size: 1rem; font-weight: 300; line-height: 1.65;
           color: rgba(248,246,241,0.78);
           max-width: 500px;
-          margin: 0 auto 32px;
+          margin-bottom: 28px;
         }
 
         /* ── HERO SEARCH ── */
-        .hs-wrap { max-width: 520px; margin: 0 auto; text-align: left; }
+        .hs-wrap { max-width: 520px; }
         .hs-form {
           display: flex; gap: 0;
           background: rgba(248,246,241,0.96);
@@ -245,6 +288,7 @@ export default function Home() {
 
         /* ── MOBILE ── */
         @media (max-width: 768px) {
+          .lsb { display: none; }
           .hero-content { padding: 60px 24px 48px; }
           .hs-wrap { max-width: 100%; }
         }
@@ -262,7 +306,7 @@ export default function Home() {
         }
       `}</style>
 
-      {/* HERO */}
+      {/* HERO — sidebar sits inside, scrolls away with the hero */}
       <section className="hero">
         <Image
           src="/images/sunrise.jpg"
@@ -272,15 +316,8 @@ export default function Home() {
           className="hero-img"
         />
         <div className="hero-overlay" />
+        <HomeSidebar />
         <div className="hero-content">
-          <Image
-            src="/images/logo.png"
-            alt="Expat Compass PH"
-            width={100}
-            height={100}
-            className="hero-logo"
-            priority
-          />
           <p className="hero-eyebrow">Your relocation resource</p>
           <h1 className="hero-title">
             Living in the Philippines,<br />done properly.
@@ -341,7 +378,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <Footer />
     </>
   );

@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,67 +15,31 @@ const links = [
 ];
 
 export default function HomeSidebar({ active }: { active?: string }) {
-  const [open, setOpen] = useState(false);
-
   return (
-    <>
-      {/* Sidebar — fixed on desktop, slide-in on mobile */}
-      <aside className={`lsb${open ? " lsb--open" : ""}`}>
-        <div className="lsb-head">
-          <button
-            className="lsb-burger"
-            onClick={() => setOpen(false)}
-            aria-label="Close menu"
+    <aside className="lsb">
+      <div className="lsb-head">
+        <Link href="/" className="lsb-logo-link">
+          <Image
+            src="/images/logo.png"
+            alt="Expat Compass PH"
+            width={120}
+            height={120}
+            className="lsb-logo-img"
+            priority
+          />
+        </Link>
+      </div>
+      <nav className="lsb-nav">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`lsb-link${active === link.href ? " active" : ""}`}
           >
-            <span />
-            <span />
-            <span />
-          </button>
-          <Link href="/" className="lsb-logo-link">
-            <Image
-              src="/images/logo.png"
-              alt="Expat Compass PH"
-              width={120}
-              height={120}
-              className="lsb-logo-img"
-              priority
-            />
+            {link.label}
           </Link>
-        </div>
-        <nav className="lsb-nav">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`lsb-link${active === link.href ? " active" : ""}`}
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-      </aside>
-
-      {/* Mobile backdrop */}
-      {open && (
-        <div
-          className="lsb-backdrop"
-          onClick={() => setOpen(false)}
-          aria-hidden="true"
-        />
-      )}
-
-      {/* Mobile trigger — hamburger outside the sidebar */}
-      <button
-        className="lsb-trigger"
-        onClick={() => setOpen((o) => !o)}
-        aria-label={open ? "Close menu" : "Open menu"}
-        aria-expanded={open}
-      >
-        <span />
-        <span />
-        <span />
-      </button>
-    </>
+        ))}
+      </nav>
+    </aside>
   );
 }
