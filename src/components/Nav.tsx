@@ -7,6 +7,7 @@ const links = [
   { label: "Housing", href: "/housing" },
   { label: "Healthcare", href: "/healthcare" },
   { label: "Banking", href: "/banking" },
+  { label: "Transportation", href: "/transportation" },
 ];
 
 interface NavProps {
