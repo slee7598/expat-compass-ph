@@ -25,45 +25,32 @@ export default function Nav({ active }: NavProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="nav-shell">
-      {/* Logo */}
-      <Link href="/" className="nav-logo">
-        <Image
-          src="/images/logo.png"
-          alt="Expat Compass PH"
-          width={120}
-          height={120}
-          className="nav-logo-img"
-          priority
-        />
-      </Link>
-
-      {/* Desktop: vertical sidebar panel */}
-      <aside className="nav-sidebar" aria-label="Main navigation">
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={`nav-sl${active === link.href ? " active" : ""}`}
+    <>
+      <nav className="nav">
+        <div className="nav-brand">
+          <button
+            className="nav-burger"
+            onClick={() => setOpen((o) => !o)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
           >
-            {link.label}
+            <span />
+            <span />
+            <span />
+          </button>
+          <Link href="/" className="nav-logo">
+            <Image
+              src="/images/logo.png"
+              alt="Expat Compass PH"
+              width={80}
+              height={80}
+              className="nav-logo-img"
+              priority
+            />
           </Link>
-        ))}
-      </aside>
+        </div>
+      </nav>
 
-      {/* Mobile: hamburger */}
-      <button
-        className="nav-burger"
-        onClick={() => setOpen((o) => !o)}
-        aria-label={open ? "Close menu" : "Open menu"}
-        aria-expanded={open}
-      >
-        <span />
-        <span />
-        <span />
-      </button>
-
-      {/* Mobile: full-screen overlay */}
       {open && (
         <div className="nav-overlay" role="dialog" aria-modal="true">
           <button
@@ -87,6 +74,6 @@ export default function Nav({ active }: NavProps) {
           </nav>
         </div>
       )}
-    </div>
+    </>
   );
 }
