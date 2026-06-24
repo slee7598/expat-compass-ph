@@ -124,6 +124,34 @@ const after = {
   ],
 };
 
+const filipinoReqs = [
+  "Marriage Counseling Certificate — Obtain from the City Social Welfare and Development Office (CSWDO), Lapu-Lapu City.",
+  "PSA Birth Certificate — 1 Original, 3 Photocopies.",
+  "PSA CENOMAR (Certificate of No Marriage) — Must be issued within the last 3 months. 1 Original, 3 Photocopies.",
+  "Barangay Certificate of Residency — Applicant must have resided in the barangay for at least six (6) months. 1 Original, 3 Photocopies.",
+  "Parental Consent or Advice — Required for applicants under 25. Parents with valid ID must personally appear and sign the required forms.",
+  "Death Certificate — Required for widow or widower applicants. Issued by the Local Civil Registrar.",
+  "Annulled Applicants — Provide: Previous Marriage Certificate with annulment annotation, Certified True Copy of Annulment Decision, Certificate of Finality.",
+  "Valid Government ID and Cedula.",
+];
+
+const foreignReqs = [
+  "Legal Capacity to Marry / Certificate of No Impediment — Issued by your Embassy or Consulate in the Philippines. 1 Original, 3 Photocopies.",
+  "Birth Certificate — English version. 1 Original, 3 Photocopies.",
+  "Passport with Arrival Stamp — 1 Original, 3 Photocopies.",
+  "Divorce Decree (if previously married) — English version. 1 Original, 3 Photocopies.",
+  "Cedula — Obtain from the City Treasurer’s Office.",
+];
+
+const marriageReminders = [
+  "Both applicants must appear in person.",
+  "Dress presentably. No sleeveless shirts, tank tops, shorts, or slippers.",
+  "At least one applicant must be a resident of Lapu-Lapu City with a valid ID showing a Lapu-Lapu City address.",
+  "The Cedula, Residency Certificate, and Marriage Counseling Certificate should reflect matching address information.",
+  "Marriage Licenses are released after the 10-day posting period. Release hours: 1:00 PM – 4:00 PM only.",
+  "Marriage Licenses are valid for 120 days from the date of issuance.",
+];
+
 export default function MarriagePage() {
   return (
     <>
@@ -402,6 +430,213 @@ export default function MarriagePage() {
           color: rgba(248,246,241,0.35);
         }
 
+        /* ── STEVE'S NOTE ── */
+        .sn-section {
+          background: #0D1E30;
+          border-top: 3px solid #C9A84C;
+          padding: 80px 48px;
+          position: relative;
+          overflow: hidden;
+        }
+        .sn-section::before {
+          content: 'S';
+          font-family: 'Playfair Display', serif;
+          font-size: 320px;
+          font-weight: 700;
+          color: rgba(201,168,76,0.05);
+          position: absolute;
+          right: -10px;
+          top: -60px;
+          line-height: 1;
+          pointer-events: none;
+          user-select: none;
+        }
+        .sn-inner {
+          max-width: 860px;
+          position: relative;
+          z-index: 1;
+        }
+        .sn-header {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-bottom: 28px;
+        }
+        .sn-monogram {
+          width: 52px;
+          height: 52px;
+          background: #C9A84C;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Playfair Display', serif;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #0B1F3A;
+          flex-shrink: 0;
+        }
+        .sn-name {
+          font-family: 'Playfair Display', serif;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: #F8F6F1;
+          line-height: 1.1;
+        }
+        .sn-tag {
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          margin-top: 4px;
+        }
+        .sn-rule {
+          height: 1px;
+          background: rgba(201,168,76,0.2);
+          margin-bottom: 32px;
+        }
+        .sn-body {
+          font-size: 0.95rem;
+          font-weight: 300;
+          line-height: 1.85;
+          color: rgba(248,246,241,0.82);
+        }
+        .sn-body p + p { margin-top: 14px; }
+        .sn-verified {
+          margin-top: 36px;
+          padding-top: 20px;
+          border-top: 1px solid rgba(201,168,76,0.2);
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.72rem;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #C9A84C;
+        }
+        .sn-verified::before { content: '✓'; }
+        .sn-ref-head {
+          font-size: 0.72rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: rgba(248,246,241,0.35);
+          margin: 40px 0 16px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid rgba(201,168,76,0.15);
+        }
+        .sn-meta-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2px;
+          margin-bottom: 28px;
+        }
+        .sn-meta-card {
+          background: rgba(248,246,241,0.04);
+          padding: 14px 18px;
+          border: 1px solid rgba(201,168,76,0.08);
+        }
+        .sn-meta-label {
+          font-size: 0.65rem;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          margin-bottom: 3px;
+        }
+        .sn-meta-value {
+          font-size: 0.88rem;
+          font-weight: 400;
+          color: rgba(248,246,241,0.82);
+        }
+        .sn-req-group { margin-bottom: 24px; }
+        .sn-req-title {
+          font-size: 0.7rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          padding: 10px 0;
+          border-bottom: 1px solid rgba(201,168,76,0.2);
+          margin-bottom: 0;
+        }
+        .sn-req-item {
+          display: grid;
+          grid-template-columns: 28px 1fr;
+          gap: 8px;
+          padding: 10px 0;
+          border-bottom: 1px solid rgba(248,246,241,0.05);
+          align-items: start;
+        }
+        .sn-req-num {
+          font-size: 0.7rem;
+          font-weight: 600;
+          color: rgba(201,168,76,0.7);
+          padding-top: 1px;
+        }
+        .sn-req-text {
+          font-size: 0.88rem;
+          font-weight: 300;
+          line-height: 1.65;
+          color: rgba(248,246,241,0.72);
+        }
+        .sn-fee {
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          background: rgba(201,168,76,0.08);
+          border: 1px solid rgba(201,168,76,0.25);
+          padding: 10px 20px;
+          margin: 20px 0;
+        }
+        .sn-fee-label {
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: rgba(248,246,241,0.45);
+        }
+        .sn-fee-amount {
+          font-size: 1.05rem;
+          font-weight: 600;
+          color: #C9A84C;
+        }
+        .sn-reminders {
+          background: rgba(201,168,76,0.05);
+          border-left: 2px solid rgba(201,168,76,0.4);
+          padding: 18px 22px;
+          margin-top: 16px;
+        }
+        .sn-reminders-title {
+          font-size: 0.7rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          margin-bottom: 14px;
+        }
+        .sn-reminder {
+          font-size: 0.85rem;
+          font-weight: 300;
+          line-height: 1.65;
+          color: rgba(248,246,241,0.7);
+          padding: 5px 0;
+          padding-left: 16px;
+          position: relative;
+          border-bottom: 1px solid rgba(248,246,241,0.04);
+        }
+        .sn-reminder::before {
+          content: '—';
+          position: absolute;
+          left: 0;
+          color: rgba(201,168,76,0.6);
+        }
+        @media (max-width: 900px) {
+          .sn-section { padding: 56px 24px; }
+          .sn-meta-grid { grid-template-columns: 1fr; }
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -553,6 +788,72 @@ export default function MarriagePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* STEVE'S NOTE */}
+      <section className="sn-section">
+        <div className="sn-inner">
+          <div className="sn-header">
+            <div className="sn-monogram">S</div>
+            <div>
+              <p className="sn-name">Steve&rsquo;s Note</p>
+              <p className="sn-tag">First-hand experience · Lapu-Lapu City, Cebu</p>
+            </div>
+          </div>
+          <div className="sn-rule" />
+          <div className="sn-body">
+            <p>When Irish and I applied for our marriage license in Lapu-Lapu City, I was not required to provide a PSA CENOMAR as the foreign applicant. The documents I provided were my Legal Capacity to Marry from the U.S. Consulate, passport, birth certificate, divorce decree, and cedula.</p>
+            <p>One thing that surprised us was how seriously the offices took appearance and dress code. Applicants should arrive well-dressed for the application, orientation, and counseling sessions. Casual but neat clothing is fine, but sleeveless shirts, shorts, and slippers may result in being turned away and asked to return another day.</p>
+            <p>Requirements can change and may vary by municipality. Always verify current requirements directly with your local Civil Registrar before applying.</p>
+          </div>
+
+          <p className="sn-ref-head">Marriage License Requirements — Lapu-Lapu City, Cebu</p>
+
+          <div className="sn-meta-grid">
+            <div className="sn-meta-card">
+              <p className="sn-meta-label">Application schedule</p>
+              <p className="sn-meta-value">Morning only</p>
+            </div>
+            <div className="sn-meta-card">
+              <p className="sn-meta-label">Submission hours</p>
+              <p className="sn-meta-value">8:00 AM – 11:00 AM</p>
+            </div>
+          </div>
+
+          <div className="sn-req-group">
+            <p className="sn-req-title">Filipino Applicant</p>
+            {filipinoReqs.map((r, i) => (
+              <div key={i} className="sn-req-item">
+                <span className="sn-req-num">{i + 1}.</span>
+                <span className="sn-req-text">{r}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="sn-req-group">
+            <p className="sn-req-title">Foreign Applicant</p>
+            {foreignReqs.map((r, i) => (
+              <div key={i} className="sn-req-item">
+                <span className="sn-req-num">{i + 1}.</span>
+                <span className="sn-req-text">{r}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="sn-fee">
+            <span className="sn-fee-label">Application Fee</span>
+            <span className="sn-fee-amount">₱150.00</span>
+          </div>
+
+          <div className="sn-reminders">
+            <p className="sn-reminders-title">Important Reminders</p>
+            {marriageReminders.map((r, i) => (
+              <p key={i} className="sn-reminder">{r}</p>
+            ))}
+          </div>
+
+          <p className="sn-verified">Last Verified: June 2026 · Lapu-Lapu City, Cebu, Philippines</p>
         </div>
       </section>
 

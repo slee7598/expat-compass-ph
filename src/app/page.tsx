@@ -505,8 +505,8 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <Image
-          src="/images/philippines.jpg"
-          alt="The Philippines"
+          src="/images/sunrise.jpg"
+          alt="Sunrise from Movenpick Residences, Punta Engaño, Cebu"
           fill
           priority
           className="hero-img"

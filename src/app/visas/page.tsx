@@ -397,6 +397,96 @@ export default function VisasPage() {
           color: rgba(248,246,241,0.35);
         }
 
+        /* ── STEVE'S NOTE ── */
+        .sn-section {
+          background: #0D1E30;
+          border-top: 3px solid #C9A84C;
+          padding: 80px 48px;
+          position: relative;
+          overflow: hidden;
+        }
+        .sn-section::before {
+          content: 'S';
+          font-family: 'Playfair Display', serif;
+          font-size: 320px;
+          font-weight: 700;
+          color: rgba(201,168,76,0.05);
+          position: absolute;
+          right: -10px;
+          top: -60px;
+          line-height: 1;
+          pointer-events: none;
+          user-select: none;
+        }
+        .sn-inner {
+          max-width: 860px;
+          position: relative;
+          z-index: 1;
+        }
+        .sn-header {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-bottom: 28px;
+        }
+        .sn-monogram {
+          width: 52px;
+          height: 52px;
+          background: #C9A84C;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Playfair Display', serif;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #0B1F3A;
+          flex-shrink: 0;
+        }
+        .sn-name {
+          font-family: 'Playfair Display', serif;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: #F8F6F1;
+          line-height: 1.1;
+        }
+        .sn-tag {
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          margin-top: 4px;
+        }
+        .sn-rule {
+          height: 1px;
+          background: rgba(201,168,76,0.2);
+          margin-bottom: 32px;
+        }
+        .sn-body {
+          font-size: 0.95rem;
+          font-weight: 300;
+          line-height: 1.85;
+          color: rgba(248,246,241,0.82);
+        }
+        .sn-body p + p { margin-top: 14px; }
+        .sn-verified {
+          margin-top: 36px;
+          padding-top: 20px;
+          border-top: 1px solid rgba(201,168,76,0.2);
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.72rem;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #C9A84C;
+        }
+        .sn-verified::before { content: '✓'; }
+        @media (max-width: 900px) {
+          .sn-section { padding: 56px 24px; }
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -534,6 +624,26 @@ export default function VisasPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* STEVE'S NOTE */}
+      <section className="sn-section">
+        <div className="sn-inner">
+          <div className="sn-header">
+            <div className="sn-monogram">S</div>
+            <div>
+              <p className="sn-name">Steve&rsquo;s Note</p>
+              <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
+            </div>
+          </div>
+          <div className="sn-rule" />
+          <div className="sn-body">
+            <p>When I arrived in the Philippines, my passport stamp gave me 30 days. After that, I had to visit the Bureau of Immigration. The first extension is 30 days only — no option to go longer on the first visit — and it cost me approximately $80 USD.</p>
+            <p>After those 30 days, you can apply for a 60-day extension. You&rsquo;d think it would cost more, but it came out to roughly the same $80. However, on the next 60-day extension visit, they will require you to obtain your ACR card (Alien Certificate of Registration). That visit cost me close to $200 USD. Budget for it — it catches a lot of people off guard.</p>
+            <p>One thing I&rsquo;d strongly recommend: if you&rsquo;re not planning to return to your home country within the year, take a trip to a nearby country — Thailand and Vietnam are popular choices — and let your entry stamp reset. If you stay in the Philippines for over a year without leaving, the exit process becomes significantly more complicated and considerably more expensive. I&rsquo;ve heard this from people who&rsquo;ve been through it. Don&rsquo;t let it sneak up on you.</p>
+          </div>
+          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
