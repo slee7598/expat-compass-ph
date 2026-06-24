@@ -6,6 +6,7 @@ const links = [
   { label: "Cost of Living", href: "/cost-of-living" },
   { label: "Housing", href: "/housing" },
   { label: "Healthcare", href: "/healthcare" },
+  { label: "Banking", href: "/banking" },
 ];
 
 interface NavProps {

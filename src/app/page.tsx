@@ -38,7 +38,7 @@ const topics = [
     label: "Banking",
     description:
       "Opening accounts as a foreigner, remittances, and digital banking options.",
-    href: null,
+    href: "/banking",
   },
   {
     label: "Transportation",
