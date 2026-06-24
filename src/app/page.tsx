@@ -50,7 +50,7 @@ const topics = [
     label: "City Guides",
     description:
       "In-depth profiles of Metro Manila, Cebu, Davao, Dumaguete, and more.",
-    href: null,
+    href: "/city-guides",
   },
 ];
 
