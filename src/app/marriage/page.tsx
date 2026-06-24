@@ -43,7 +43,7 @@ const documents = {
     },
     {
       label: "Filipino spouse",
-      body: "PSA-issued birth certificate · CENOMAR (Certificate of No Marriage Record) from the PSA, confirming no existing marriage record · Valid government-issued ID · Barangay clearance or certificate of residency from their current address.",
+      body: "PSA-issued birth certificate · CENOMAR (Certificate of No Marriage Record) from the PSA, confirming no existing marriage record · Valid government-issued ID · Barangay clearance or certificate of residency from their current address · Cedula (Community Tax Certificate), obtained from the barangay office where the Filipino spouse currently resides.",
     },
     {
       label: "Previously married",
@@ -65,6 +65,14 @@ const license = {
     {
       label: "Validity",
       body: "A Philippine marriage license is valid for 120 days from the date of issue. If the ceremony does not take place within that window, you must reapply.",
+    },
+    {
+      label: "Pre-marriage orientation",
+      body: "Both parties are required to attend a pre-marriage orientation and counselling (PMOC) seminar, typically organised by the LCR or a recognised family services provider. A certificate of attendance is issued upon completion and must be submitted as part of the marriage license application.",
+    },
+    {
+      label: "Under 25 — counselling",
+      body: "If the Filipino spouse is below 25 years of age, an additional family planning counselling session is required, and a separate certificate of completion must be submitted. The same age threshold triggers a parental consent requirement: the Filipino party must present a notarised written consent from their parents or legal guardian, or alternatively, the parents may appear in person at the LCR with valid government-issued identification when the paperwork is filed.",
     },
     {
       label: "Fees & timeline",
