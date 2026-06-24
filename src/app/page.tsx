@@ -30,25 +30,25 @@ const topics = [
     label: "Healthcare",
     description:
       "Private hospitals, PhilHealth, international insurance, and medical costs.",
-    href: "#",
+    href: null,
   },
   {
     label: "Banking",
     description:
       "Opening accounts as a foreigner, remittances, and digital banking options.",
-    href: "#",
+    href: null,
   },
   {
     label: "Transportation",
     description:
       "Getting around by jeepney, Grab, ferry, and domestic flights.",
-    href: "#",
+    href: null,
   },
   {
     label: "City Guides",
     description:
       "In-depth profiles of Metro Manila, Cebu, Davao, Dumaguete, and more.",
-    href: "#",
+    href: null,
   },
 ];
 
@@ -275,6 +275,12 @@ export default function Home() {
           line-height: 1.6;
           color: #5C6B7A;
         }
+        .topic-card-inactive {
+          cursor: default;
+          opacity: 0.45;
+        }
+        .topic-card-inactive:hover { background: transparent; }
+        .topic-card-inactive .topic-card-label::after { display: none; }
 
         /* ── TRUST STRIP ── */
         .trust-section {
@@ -392,12 +398,19 @@ export default function Home() {
           The essential topics,<br />covered in depth.
         </h2>
         <div className="topics-grid">
-          {topics.map((t) => (
-            <a key={t.label} href={t.href} className="topic-card">
-              <div className="topic-card-label">{t.label}</div>
-              <p className="topic-card-desc">{t.description}</p>
-            </a>
-          ))}
+          {topics.map((t) =>
+            t.href ? (
+              <a key={t.label} href={t.href} className="topic-card">
+                <div className="topic-card-label">{t.label}</div>
+                <p className="topic-card-desc">{t.description}</p>
+              </a>
+            ) : (
+              <div key={t.label} className="topic-card topic-card-inactive">
+                <div className="topic-card-label">{t.label}</div>
+                <p className="topic-card-desc">{t.description}</p>
+              </div>
+            )
+          )}
         </div>
       </section>
 

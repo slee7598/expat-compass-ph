@@ -27,7 +27,7 @@ const visaTypes = [
     subtitle: "SIRV, Work Permits, ACR-I",
     description:
       "Investor visas, employment passes, and alien certificates of registration for specific circumstances.",
-    href: "#other",
+    href: null,
   },
 ];
 
@@ -273,6 +273,12 @@ export default function VisasPage() {
           line-height: 1.6;
           color: #5C6B7A;
         }
+        .visa-card-inactive {
+          cursor: default;
+          opacity: 0.45;
+        }
+        .visa-card-inactive:hover { background: transparent; }
+        .visa-card-inactive .visa-card-label::after { display: none; }
 
         /* ── VISA DETAIL SECTIONS ── */
         .visa-detail-inner {
@@ -433,13 +439,21 @@ export default function VisasPage() {
           Four routes worth knowing about.
         </h2>
         <div className="visa-grid">
-          {visaTypes.map((v) => (
-            <a key={v.label} href={v.href} className="visa-card">
-              <div className="visa-card-label">{v.label}</div>
-              <p className="visa-card-subtitle">{v.subtitle}</p>
-              <p className="visa-card-desc">{v.description}</p>
-            </a>
-          ))}
+          {visaTypes.map((v) =>
+            v.href ? (
+              <a key={v.label} href={v.href} className="visa-card">
+                <div className="visa-card-label">{v.label}</div>
+                <p className="visa-card-subtitle">{v.subtitle}</p>
+                <p className="visa-card-desc">{v.description}</p>
+              </a>
+            ) : (
+              <div key={v.label} className="visa-card visa-card-inactive">
+                <div className="visa-card-label">{v.label}</div>
+                <p className="visa-card-subtitle">{v.subtitle}</p>
+                <p className="visa-card-desc">{v.description}</p>
+              </div>
+            )
+          )}
         </div>
       </section>
 
