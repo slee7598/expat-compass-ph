@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const links = [
   { label: "Visas", href: "/visas" },
   { label: "Marriage", href: "/marriage" },
@@ -12,18 +14,18 @@ interface NavProps {
 export default function Nav({ active }: NavProps) {
   return (
     <nav className="nav">
-      <a href="/" className="nav-logo">
+      <Link href="/" className="nav-logo">
         Expat Compass <span>PH</span>
-      </a>
+      </Link>
       <ul className="nav-links">
         {links.map((link) => (
           <li key={link.href}>
-            <a
+            <Link
               href={link.href}
               className={active === link.href ? "active" : undefined}
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

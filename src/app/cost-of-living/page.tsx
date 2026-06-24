@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const categories = [
   {
@@ -712,14 +713,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
-        <a href="/" className="footer-logo">
-          Expat Compass <span>PH</span>
-        </a>
-        <p className="footer-note">
-          © {new Date().getFullYear()} Expat Compass PH · For informational purposes only
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

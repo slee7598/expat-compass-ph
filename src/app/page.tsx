@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const topics = [
   {
@@ -400,10 +402,10 @@ export default function Home() {
         <div className="topics-grid">
           {topics.map((t) =>
             t.href ? (
-              <a key={t.label} href={t.href} className="topic-card">
+              <Link key={t.label} href={t.href} className="topic-card">
                 <div className="topic-card-label">{t.label}</div>
                 <p className="topic-card-desc">{t.description}</p>
-              </a>
+              </Link>
             ) : (
               <div key={t.label} className="topic-card topic-card-inactive">
                 <div className="topic-card-label">{t.label}</div>
@@ -435,14 +437,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
-        <div className="footer-logo">
-          Expat Compass <span>PH</span>
-        </div>
-        <p className="footer-note">
-          © {new Date().getFullYear()} Expat Compass PH · For informational purposes only
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }
