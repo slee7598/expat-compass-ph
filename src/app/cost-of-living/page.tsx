@@ -21,7 +21,7 @@ const categories = [
     subtitle: "Grab, jeepney & beyond",
     description:
       "Public transport is cheap; convenience has a price. Grab is reliable and inexpensive by Western standards but adds up with daily use.",
-    href: "#daily",
+    href: "#budgets",
   },
   {
     label: "City Comparison",
