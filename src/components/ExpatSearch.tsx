@@ -3,11 +3,12 @@
 import { useState, useRef, FormEvent } from "react";
 
 const SUGGESTIONS = [
-  "What visa do I need to retire in the Philippines?",
-  "How much does a 1-bedroom condo cost in BGC?",
-  "Is Cebu or Davao better for expats?",
+  "What visa do I need to retire here?",
+  "Which months should I avoid due to typhoons?",
+  "How does the bar fine system work?",
   "What are the red flags when dating a Filipina?",
-  "How do KTV bars work in the Philippines?",
+  "Which areas of Mindanao are actually dangerous?",
+  "What scams target foreigners most?",
 ];
 
 export default function ExpatSearch() {
