@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "@/components/Nav";
+import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
 
@@ -77,19 +77,93 @@ export default function Home() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
-        body {
+        /* ── LAYOUT ── */
+        .layout { display: flex; min-height: 100vh; }
+        .main-content { margin-left: 200px; flex: 1; min-width: 0; }
+
+        /* ── LEFT SIDEBAR ── */
+        .lsb {
+          position: fixed;
+          left: 0; top: 0;
+          height: 100vh;
+          width: 200px;
+          background: #0B1F3A;
+          z-index: 100;
+          display: flex;
+          flex-direction: column;
+          border-right: 1px solid rgba(201,168,76,0.15);
+          overflow-y: auto;
+        }
+        .lsb-head {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 18px 14px 16px;
+          border-bottom: 1px solid rgba(201,168,76,0.12);
+          flex-shrink: 0;
+        }
+        .lsb-burger {
+          background: none; border: none; cursor: pointer;
+          padding: 4px;
+          display: flex; flex-direction: column; gap: 5px; align-items: center;
+          flex-shrink: 0;
+        }
+        .lsb-burger span {
+          display: block; width: 18px; height: 2px;
+          background: #C9A84C; border-radius: 1px;
+        }
+        .lsb-logo-link { display: block; line-height: 0; flex: 1; min-width: 0; }
+        .lsb-logo-img {
+          display: block;
+          width: 100%; max-width: 110px; height: auto;
+          mix-blend-mode: multiply;
+        }
+        .lsb-nav { flex: 1; padding: 10px 0; overflow-y: auto; }
+        .lsb-link {
+          display: block;
           font-family: 'Inter', sans-serif;
-          background: #F8F6F1;
-          color: #0B1F3A;
+          font-size: 0.71rem; font-weight: 500;
+          letter-spacing: 0.09em; text-transform: uppercase;
+          color: rgba(248,246,241,0.62);
+          text-decoration: none;
+          padding: 11px 18px 11px 20px;
+          border-left: 2px solid transparent;
+          transition: color 0.18s, background 0.18s, border-color 0.18s;
+        }
+        .lsb-link:hover {
+          color: #C9A84C;
+          background: rgba(201,168,76,0.06);
+          border-left-color: rgba(201,168,76,0.3);
+        }
+        .lsb-link.active { color: #C9A84C; border-left-color: #C9A84C; }
+
+        /* Mobile trigger */
+        .lsb-trigger {
+          display: none;
+          position: fixed; top: 16px; left: 14px; z-index: 200;
+          background: rgba(11,31,58,0.82); border: none; cursor: pointer;
+          padding: 9px 10px; border-radius: 4px;
+          flex-direction: column; gap: 5px; align-items: center;
+        }
+        .lsb-trigger span {
+          display: block; width: 22px; height: 2px;
+          background: #C9A84C; border-radius: 1px;
+        }
+        /* Mobile backdrop */
+        .lsb-backdrop {
+          position: fixed; inset: 0; z-index: 90;
+          background: rgba(0,0,0,0.5);
         }
 
         /* ── HERO ── */
         .hero {
           position: relative;
-          min-height: 92vh;
+          min-height: 100vh;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
+          justify-content: center;
         }
         .hero-img {
           object-fit: cover;
@@ -99,18 +173,29 @@ export default function Home() {
           position: absolute;
           inset: 0;
           background: linear-gradient(
-            to top,
-            rgba(11,31,58,0.82) 0%,
-            rgba(11,31,58,0.35) 55%,
-            rgba(11,31,58,0.08) 100%
+            160deg,
+            rgba(11,31,58,0.55) 0%,
+            rgba(11,31,58,0.72) 100%
           );
         }
         .hero-content {
           position: relative;
           z-index: 2;
-          padding: 0 48px 72px;
-          max-width: 760px;
+          padding: 64px 56px;
+          width: 100%;
+          max-width: 680px;
         }
+
+        /* Mobile hero logo */
+        .hero-mlogo {
+          display: none;
+          text-align: center;
+          margin-bottom: 32px;
+        }
+        .hero-mlogo-img {
+          mix-blend-mode: multiply;
+        }
+
         .hero-eyebrow {
           display: inline-flex;
           align-items: center;
@@ -125,77 +210,46 @@ export default function Home() {
         .hero-eyebrow::before {
           content: '';
           display: block;
-          width: 28px;
-          height: 1px;
+          width: 28px; height: 1px;
           background: #C9A84C;
         }
         .hero-title {
           font-family: 'Playfair Display', serif;
-          font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+          font-size: clamp(2.4rem, 4.5vw, 3.8rem);
           font-weight: 700;
           line-height: 1.12;
           color: #F8F6F1;
           margin-bottom: 24px;
         }
         .hero-sub {
-          font-size: 1.05rem;
+          font-size: 1rem;
           font-weight: 300;
           line-height: 1.65;
           color: rgba(248,246,241,0.78);
-          max-width: 520px;
+          max-width: 500px;
           margin-bottom: 28px;
         }
-        .hero-cta {
-          display: inline-block;
-          margin-top: 24px;
-          padding: 15px 34px;
-          background: #C9A84C;
-          color: #0B1F3A;
-          font-size: 0.82rem;
-          font-weight: 600;
-          letter-spacing: 0.09em;
-          text-transform: uppercase;
-          text-decoration: none;
-          transition: background 0.2s;
-        }
-        .hero-cta:hover { background: #b8943e; }
 
         /* ── HERO SEARCH ── */
-        .hs-wrap { width: 100%; max-width: 640px; }
-        .hs-label {
-          font-size: 0.68rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 10px;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
-        .hs-label::before {
-          content: '';
-          display: block;
-          width: 20px;
-          height: 1px;
-          background: #C9A84C;
-        }
+        .hs-wrap { max-width: 560px; }
         .hs-form {
           display: flex;
+          gap: 0;
+          background: rgba(248,246,241,0.96);
+          border: 1px solid rgba(201,168,76,0.3);
         }
         .hs-input {
           flex: 1;
           padding: 16px 20px;
-          font-family: 'Inter', sans-serif;
-          font-size: 0.92rem;
-          font-weight: 400;
-          color: #0B1F3A;
-          background: rgba(248,246,241,0.96);
+          background: transparent;
           border: none;
           outline: none;
-          min-width: 0;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: #0B1F3A;
         }
-        .hs-input::placeholder { color: #9AAABB; }
+        .hs-input::placeholder { color: rgba(11,31,58,0.4); }
         .hs-btn {
           padding: 16px 24px;
           background: #C9A84C;
@@ -213,11 +267,7 @@ export default function Home() {
         }
         .hs-btn:hover:not(:disabled) { background: #b8943e; }
         .hs-btn:disabled { opacity: 0.55; cursor: not-allowed; }
-        .hs-dots {
-          display: flex;
-          gap: 5px;
-          padding: 16px 0 0;
-        }
+        .hs-dots { display: flex; gap: 5px; padding: 16px 0 0; }
         .hs-dots span {
           width: 6px; height: 6px;
           background: #C9A84C;
@@ -282,9 +332,7 @@ export default function Home() {
         }
 
         /* ── SECTION SHARED ── */
-        .section {
-          padding: 96px 48px;
-        }
+        .section { padding: 96px 48px; }
         .section-label {
           display: inline-flex;
           align-items: center;
@@ -296,10 +344,7 @@ export default function Home() {
           color: #C9A84C;
           margin-bottom: 16px;
         }
-        .section-label::before {
-          content: '◈';
-          font-size: 0.65rem;
-        }
+        .section-label::before { content: '◈'; font-size: 0.65rem; }
         .section-heading {
           font-family: 'Playfair Display', serif;
           font-size: clamp(1.8rem, 3vw, 2.6rem);
@@ -311,9 +356,7 @@ export default function Home() {
         }
 
         /* ── TOPICS GRID ── */
-        .topics-section {
-          background: #F8F6F1;
-        }
+        .topics-section { background: #F8F6F1; }
         .topics-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -329,9 +372,7 @@ export default function Home() {
           display: block;
           transition: background 0.2s;
         }
-        .topic-card:hover {
-          background: #fff;
-        }
+        .topic-card:hover { background: #fff; }
         .topic-card-label {
           font-family: 'Playfair Display', serif;
           font-size: 1.08rem;
@@ -352,63 +393,39 @@ export default function Home() {
           margin-top: 2px;
           transition: transform 0.2s;
         }
-        .topic-card:hover .topic-card-label::after {
-          transform: translateX(4px);
-        }
+        .topic-card:hover .topic-card-label::after { transform: translateX(4px); }
         .topic-card-desc {
           font-size: 0.85rem;
           font-weight: 400;
           line-height: 1.6;
           color: #5C6B7A;
         }
-        .topic-card-inactive {
-          cursor: default;
-          opacity: 0.45;
-        }
+        .topic-card-inactive { cursor: default; opacity: 0.45; }
         .topic-card-inactive:hover { background: transparent; }
         .topic-card-inactive .topic-card-label::after { display: none; }
 
         /* ── TRUST STRIP ── */
-        .trust-section {
-          background: #0B1F3A;
-        }
+        .trust-section { background: #0B1F3A; }
         .trust-inner {
           display: grid;
           grid-template-columns: 1fr 2fr;
           gap: 80px;
           align-items: start;
         }
-        .trust-intro .section-heading {
-          color: #F8F6F1;
-          margin-bottom: 0;
-        }
-        .trust-pillars {
-          display: flex;
-          flex-direction: column;
-          gap: 40px;
-          padding-top: 8px;
-        }
+        .trust-intro .section-heading { color: #F8F6F1; margin-bottom: 0; }
+        .trust-pillars { display: flex; flex-direction: column; gap: 40px; padding-top: 8px; }
         .pillar {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 8px;
+          display: grid; grid-template-columns: 1fr; gap: 8px;
           padding-bottom: 40px;
           border-bottom: 1px solid rgba(248,246,241,0.1);
         }
-        .pillar:last-child {
-          border-bottom: none;
-          padding-bottom: 0;
-        }
+        .pillar:last-child { border-bottom: none; padding-bottom: 0; }
         .pillar-heading {
           font-family: 'Playfair Display', serif;
-          font-size: 1.15rem;
-          font-weight: 600;
-          color: #C9A84C;
+          font-size: 1.15rem; font-weight: 600; color: #C9A84C;
         }
         .pillar-body {
-          font-size: 0.9rem;
-          font-weight: 300;
-          line-height: 1.7;
+          font-size: 0.9rem; font-weight: 300; line-height: 1.7;
           color: rgba(248,246,241,0.7);
         }
 
@@ -423,21 +440,23 @@ export default function Home() {
         }
         .footer-logo {
           font-family: 'Playfair Display', serif;
-          font-size: 0.95rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          letter-spacing: 0.02em;
+          font-size: 0.95rem; font-weight: 700;
+          color: #F8F6F1; letter-spacing: 0.02em;
         }
         .footer-logo span { color: #C9A84C; }
-        .footer-note {
-          font-size: 0.75rem;
-          color: rgba(248,246,241,0.35);
-        }
+        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
 
         /* ── MOBILE ── */
-        @media (max-width: 900px) {
-          .hero-content { padding: 0 24px 52px; }
+        @media (max-width: 768px) {
+          .lsb { transform: translateX(-100%); transition: transform 0.28s ease; }
+          .lsb.lsb--open { transform: translateX(0); }
+          .lsb-trigger { display: flex; }
+          .main-content { margin-left: 0; }
+          .hero-mlogo { display: block; }
+          .hero-content { padding: 60px 24px 48px; }
           .hs-wrap { max-width: 100%; }
+        }
+        @media (max-width: 900px) {
           .section { padding: 72px 24px; }
           .topics-grid { grid-template-columns: repeat(2, 1fr); }
           .trust-inner { grid-template-columns: 1fr; gap: 40px; }
@@ -451,76 +470,93 @@ export default function Home() {
         }
       `}</style>
 
-      {/* HERO */}
-      <section className="hero">
-        <Image
-          src="/images/sunrise.jpg"
-          alt="Sunrise from Movenpick Residences, Punta Engaño, Cebu"
-          fill
-          priority
-          className="hero-img"
-        />
-        <div className="hero-overlay" />
-        <Nav />
-        <div className="hero-content">
-          <p className="hero-eyebrow">Your relocation resource</p>
-          <h1 className="hero-title">
-            Living in the Philippines,<br />done properly.
-          </h1>
-          <p className="hero-sub">
-            Clear, practical, up-to-date guidance on visas, housing,
-            healthcare, and daily life — for foreigners who want to do
-            it right.
-          </p>
-          <HeroSearch />
-        </div>
-      </section>
+      <div className="layout">
+        <HomeSidebar />
 
-      {/* TOPICS */}
-      <section className="section topics-section" id="topics">
-        <p className="section-label">Everything you need</p>
-        <h2 className="section-heading">
-          The essential topics,<br />covered in depth.
-        </h2>
-        <div className="topics-grid">
-          {topics.map((t) =>
-            t.href ? (
-              <Link key={t.label} href={t.href} className="topic-card">
-                <div className="topic-card-label">{t.label}</div>
-                <p className="topic-card-desc">{t.description}</p>
-              </Link>
-            ) : (
-              <div key={t.label} className="topic-card topic-card-inactive">
-                <div className="topic-card-label">{t.label}</div>
-                <p className="topic-card-desc">{t.description}</p>
+        <main className="main-content">
+          {/* HERO */}
+          <section className="hero">
+            <Image
+              src="/images/sunrise.jpg"
+              alt="Sunrise from Movenpick Residences, Punta Engaño, Cebu"
+              fill
+              priority
+              className="hero-img"
+            />
+            <div className="hero-overlay" />
+            <div className="hero-content">
+              {/* Logo shown only on mobile (sidebar hidden) */}
+              <div className="hero-mlogo">
+                <Link href="/">
+                  <Image
+                    src="/images/logo.png"
+                    alt="Expat Compass PH"
+                    width={120}
+                    height={120}
+                    className="hero-mlogo-img"
+                  />
+                </Link>
               </div>
-            )
-          )}
-        </div>
-      </section>
+              <p className="hero-eyebrow">Your relocation resource</p>
+              <h1 className="hero-title">
+                Living in the Philippines,<br />done properly.
+              </h1>
+              <p className="hero-sub">
+                Clear, practical, up-to-date guidance on visas, housing,
+                healthcare, and daily life — for foreigners who want to do
+                it right.
+              </p>
+              <HeroSearch />
+            </div>
+          </section>
 
-      {/* TRUST */}
-      <section className="section trust-section">
-        <div className="trust-inner">
-          <div className="trust-intro">
-            <p className="section-label" style={{color:"#C9A84C"}}>Why Expat Compass PH</p>
+          {/* TOPICS */}
+          <section className="section topics-section" id="topics">
+            <p className="section-label">Everything you need</p>
             <h2 className="section-heading">
-              Guidance you can actually rely on.
+              The essential topics,<br />covered in depth.
             </h2>
-          </div>
-          <div className="trust-pillars">
-            {pillars.map((p) => (
-              <div key={p.heading} className="pillar">
-                <h3 className="pillar-heading">{p.heading}</h3>
-                <p className="pillar-body">{p.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            <div className="topics-grid">
+              {topics.map((t) =>
+                t.href ? (
+                  <Link key={t.label} href={t.href} className="topic-card">
+                    <div className="topic-card-label">{t.label}</div>
+                    <p className="topic-card-desc">{t.description}</p>
+                  </Link>
+                ) : (
+                  <div key={t.label} className="topic-card topic-card-inactive">
+                    <div className="topic-card-label">{t.label}</div>
+                    <p className="topic-card-desc">{t.description}</p>
+                  </div>
+                )
+              )}
+            </div>
+          </section>
 
-      {/* FOOTER */}
-      <Footer />
+          {/* TRUST */}
+          <section className="section trust-section">
+            <div className="trust-inner">
+              <div className="trust-intro">
+                <p className="section-label" style={{color:"#C9A84C"}}>Why Expat Compass PH</p>
+                <h2 className="section-heading">
+                  Guidance you can actually rely on.
+                </h2>
+              </div>
+              <div className="trust-pillars">
+                {pillars.map((p) => (
+                  <div key={p.heading} className="pillar">
+                    <h3 className="pillar-heading">{p.heading}</h3>
+                    <p className="pillar-body">{p.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* FOOTER */}
+          <Footer />
+        </main>
+      </div>
     </>
   );
 }
