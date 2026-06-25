@@ -101,7 +101,10 @@ export default function Home() {
         .lsb-logo-img {
           display: block;
           width: 110px; height: auto;
-          mix-blend-mode: multiply;
+          border-radius: 12px;
+          padding: 6px;
+          background: white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         .lsb-nav {
           flex: 1;
@@ -316,7 +319,10 @@ export default function Home() {
         .lsb-mob-logo-link { display: block; line-height: 0; }
         .lsb-mob-logo-img {
           display: block; width: 70px; height: auto;
-          mix-blend-mode: multiply;
+          border-radius: 12px;
+          padding: 6px;
+          background: white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         .lsb-mob-drawer {
           position: fixed;
