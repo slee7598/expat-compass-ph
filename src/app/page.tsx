@@ -3,6 +3,7 @@ import Link from "next/link";
 import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const topics = [
   {
@@ -282,6 +283,95 @@ export default function Home() {
         .topic-card-inactive:hover { background: transparent; }
         .topic-card-inactive .topic-card-label::after { display: none; }
 
+        /* ── NEWSLETTER ── */
+        .newsletter-section { background: #0B1F3A; }
+        .nl-wrap {
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .nl-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.7rem; font-weight: 600;
+          letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C;
+          margin-bottom: 16px;
+        }
+        .nl-eyebrow::before, .nl-eyebrow::after {
+          content: '';
+          display: block;
+          width: 20px; height: 1px;
+          background: #C9A84C;
+        }
+        .nl-heading {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+          font-weight: 700; line-height: 1.2;
+          color: #F8F6F1;
+          margin-bottom: 16px;
+        }
+        .nl-sub {
+          font-size: 0.95rem; font-weight: 300; line-height: 1.7;
+          color: rgba(248,246,241,0.65);
+          margin-bottom: 32px;
+        }
+        .nl-form {
+          display: flex;
+          gap: 0;
+          max-width: 480px;
+          margin: 0 auto 12px;
+        }
+        .nl-input {
+          flex: 1;
+          padding: 14px 18px;
+          background: rgba(248,246,241,0.96);
+          border: 1px solid rgba(201,168,76,0.3);
+          border-right: none;
+          outline: none;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.9rem;
+          color: #0B1F3A;
+        }
+        .nl-input::placeholder { color: rgba(11,31,58,0.4); }
+        .nl-btn {
+          padding: 14px 24px;
+          background: #C9A84C; color: #0B1F3A;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.76rem; font-weight: 700;
+          letter-spacing: 0.1em; text-transform: uppercase;
+          border: none; cursor: pointer;
+          transition: background 0.2s;
+          white-space: nowrap; flex-shrink: 0;
+        }
+        .nl-btn:hover:not(:disabled) { background: #b8943e; }
+        .nl-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .nl-success {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 14px 24px;
+          background: rgba(201,168,76,0.12);
+          border: 1px solid rgba(201,168,76,0.3);
+          color: #C9A84C;
+          font-size: 0.9rem; font-weight: 500;
+          margin-bottom: 12px;
+        }
+        .nl-check {
+          font-size: 1.1rem; font-weight: 700;
+        }
+        .nl-error {
+          font-size: 0.82rem;
+          color: rgba(248,246,241,0.5);
+          margin-top: 8px;
+        }
+        .nl-note {
+          font-size: 0.72rem;
+          color: rgba(248,246,241,0.3);
+          margin-top: 12px;
+        }
+
         .trust-section { background: #0B1F3A; }
         .trust-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
         .trust-intro .section-heading { color: #F8F6F1; margin-bottom: 0; }
@@ -435,6 +525,11 @@ export default function Home() {
             )}
           </div>
         </div>
+      </section>
+
+      {/* NEWSLETTER */}
+      <section className="section newsletter-section">
+        <NewsletterSignup />
       </section>
 
       {/* TRUST */}
