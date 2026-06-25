@@ -187,6 +187,13 @@ export default function Home() {
         }
 
         /* ── HERO SEARCH ── */
+        .hs-label {
+          font-family: 'Inter', sans-serif;
+          font-size: 0.68rem; font-weight: 600;
+          letter-spacing: 0.12em; text-transform: uppercase;
+          color: #C9A84C;
+          margin-bottom: 10px;
+        }
         .hs-wrap { max-width: 520px; }
         .hs-form {
           display: flex; gap: 0;
