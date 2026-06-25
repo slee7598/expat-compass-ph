@@ -13,7 +13,7 @@ const links = [
   { label: "Banking", href: "/banking" },
   { label: "Transportation", href: "/transportation" },
   { label: "City Guides", href: "/city-guides" },
-  { label: "Steve Recommends", href: "/steve-recommends" },
+  { label: "Steve's Expat Toolkit", href: "/steve-recommends" },
   { label: "About", href: "/about" },
 ];
 

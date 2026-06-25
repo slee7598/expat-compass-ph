@@ -256,8 +256,8 @@ export default function SteveRecommendsPage() {
       <header className="page-header">
         <Nav active="/steve-recommends" />
         <div className="page-hero">
-          <p className="page-eyebrow">Steve Recommends</p>
-          <h1 className="page-title">What I actually use.</h1>
+          <p className="page-eyebrow">Steve's Expat Toolkit</p>
+          <h1 className="page-title">Steve's Expat Toolkit</h1>
         </div>
       </header>
 
