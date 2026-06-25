@@ -286,11 +286,79 @@ export default function Home() {
         .footer-logo span { color: #C9A84C; }
         .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
 
+        /* ── MOBILE NAV BAR (hero page) ── */
+        .lsb-mob-bar {
+          display: none;
+          position: absolute;
+          top: 0; left: 0; right: 0;
+          z-index: 20;
+          padding: 12px 20px;
+          align-items: center;
+          gap: 12px;
+        }
+        .lsb-mob-burger {
+          background: none; border: none; cursor: pointer;
+          padding: 4px;
+          display: flex; flex-direction: column; gap: 5px;
+          flex-shrink: 0;
+        }
+        .lsb-mob-burger span {
+          display: block; width: 22px; height: 2px;
+          background: #C9A84C; border-radius: 1px;
+        }
+        .lsb-mob-logo-link { display: block; line-height: 0; }
+        .lsb-mob-logo-img {
+          display: block; width: 70px; height: auto;
+          mix-blend-mode: multiply;
+        }
+        .lsb-mob-drawer {
+          position: fixed;
+          left: 0; top: 0;
+          height: 100vh; width: 260px;
+          z-index: 400;
+          background: #0B1F3A;
+          border-right: 2px solid #C9A84C;
+          display: flex; flex-direction: column;
+          transform: translateX(-100%);
+          transition: transform 0.28s ease;
+          overflow-y: auto;
+        }
+        .lsb-mob-drawer--open { transform: translateX(0); }
+        .lsb-mob-close {
+          align-self: flex-end;
+          background: none; border: none;
+          color: rgba(248,246,241,0.45); font-size: 1.8rem;
+          cursor: pointer; padding: 18px 20px 10px;
+          transition: color 0.15s;
+        }
+        .lsb-mob-close:hover { color: #F8F6F1; }
+        .lsb-mob-nav { flex: 1; padding: 8px 0 24px; }
+        .lsb-mob-link {
+          display: block;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.72rem; font-weight: 500;
+          letter-spacing: 0.1em; text-transform: uppercase;
+          color: rgba(248,246,241,0.65);
+          text-decoration: none;
+          padding: 14px 24px;
+          border-left: 2px solid transparent;
+          transition: color 0.18s, background 0.18s, border-color 0.18s;
+        }
+        .lsb-mob-link:hover, .lsb-mob-link.active { color: #C9A84C; }
+        .lsb-mob-link:hover { background: rgba(201,168,76,0.07); border-left-color: rgba(201,168,76,0.3); }
+        .lsb-mob-link.active { border-left-color: #C9A84C; }
+        .lsb-mob-backdrop {
+          position: fixed; inset: 0; z-index: 390;
+          background: rgba(0,0,0,0.45);
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 768px) {
           .lsb { display: none; }
-          .hero-content { padding: 60px 24px 48px; }
+          .lsb-mob-bar { display: flex; }
+          .hero-content { padding: 96px 24px 48px; }
           .hs-wrap { max-width: 100%; }
+          .lsb-logo-img { width: 70px; }
         }
         @media (max-width: 900px) {
           .section { padding: 72px 24px; }

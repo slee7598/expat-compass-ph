@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,31 +18,93 @@ const links = [
 ];
 
 export default function HomeSidebar({ active }: { active?: string }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <aside className="lsb">
-      <div className="lsb-head">
-        <Link href="/" className="lsb-logo-link">
+    <>
+      {/* Desktop: always-visible sidebar inside the hero */}
+      <aside className="lsb">
+        <div className="lsb-head">
+          <Link href="/" className="lsb-logo-link">
+            <Image
+              src="/images/logo.png"
+              alt="Expat Compass PH"
+              width={120}
+              height={120}
+              className="lsb-logo-img"
+              priority
+            />
+          </Link>
+        </div>
+        <nav className="lsb-nav">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`lsb-link${active === link.href ? " active" : ""}`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </aside>
+
+      {/* Mobile: top bar with hamburger + logo */}
+      <div className="lsb-mob-bar">
+        <button
+          className="lsb-mob-burger"
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Open menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <Link href="/" className="lsb-mob-logo-link">
           <Image
             src="/images/logo.png"
             alt="Expat Compass PH"
-            width={120}
-            height={120}
-            className="lsb-logo-img"
+            width={80}
+            height={80}
+            className="lsb-mob-logo-img"
             priority
           />
         </Link>
       </div>
-      <nav className="lsb-nav">
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={`lsb-link${active === link.href ? " active" : ""}`}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </nav>
-    </aside>
+
+      {/* Mobile slide-in drawer */}
+      <div
+        className={`lsb-mob-drawer${open ? " lsb-mob-drawer--open" : ""}`}
+        aria-hidden={!open}
+      >
+        <button
+          className="lsb-mob-close"
+          onClick={() => setOpen(false)}
+          aria-label="Close menu"
+        >
+          &times;
+        </button>
+        <nav className="lsb-mob-nav">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`lsb-mob-link${active === link.href ? " active" : ""}`}
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+
+      {open && (
+        <div
+          className="lsb-mob-backdrop"
+          onClick={() => setOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+    </>
   );
 }
