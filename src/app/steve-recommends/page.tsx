@@ -85,7 +85,7 @@ const activities: RecItem[] = [
   {
     name: "Klook — Activities & Experiences",
     body: "Klook is my go-to for booking activities and experiences across the Philippines and Southeast Asia. Island hopping, diving, city tours, transfers — it is all on there, with instant confirmation and competitive prices.",
-    link: "https://affiliate.klook.com/redirect?aid=125611&aff_adid=1318272&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fphilippines%2F",
+    link: "https://www.klook.com/en-US/philippines/?aid=125611",
     linkLabel: "Browse Philippines Activities →",
   },
 ];
