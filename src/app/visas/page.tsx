@@ -3,104 +3,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Philippines Visa Guide for Expats 2026 — SRRV, 13A & Tourist Extensions",
+  title: "Philippines Visa Guide for Expats 2026 — Tourist Extensions, SRRV, 13A & Digital Nomad Visa",
   description:
-    "Complete guide to Philippine visas for foreigners — SRRV, 13A spouse visa, tourist visa extensions, and long-stay options explained clearly with costs and timelines.",
+    "The complete 2026 guide to Philippines visas for foreign expats. Tourist visa extensions with real costs, SRRV retirement visa, 13A spousal visa, Digital Nomad Visa, ACR I-Card and PRA ID explained clearly.",
   alternates: { canonical: "https://expatcompassph.com/visas" },
-};
-
-const visaTypes = [
-  {
-    label: "SRRV",
-    subtitle: "Special Resident Retiree's Visa",
-    description:
-      "Long-stay permanent residency for retirees aged 35+, issued by the Philippine Retirement Authority.",
-    href: "#srrv",
-  },
-  {
-    label: "13A",
-    subtitle: "Non-Quota Immigrant Visa",
-    description:
-      "For foreign nationals married to a Filipino citizen. Leads directly to permanent residency.",
-    href: "#13a",
-  },
-  {
-    label: "9(a) Tourist",
-    subtitle: "Temporary Visitor's Visa",
-    description:
-      "The default entry for most nationalities. Extendable monthly at any Bureau of Immigration office.",
-    href: "#tourist",
-  },
-  {
-    label: "Other Routes",
-    subtitle: "SIRV, Work Permits, ACR-I",
-    description:
-      "Investor visas, employment passes, and alien certificates of registration for specific circumstances.",
-    href: null,
-  },
-];
-
-const srrv = {
-  details: [
-    {
-      label: "Who qualifies",
-      body: "Foreign nationals aged 35 and above. Applicants aged 50 or older with a qualifying pension qualify for the lowest required deposit tier.",
-    },
-    {
-      label: "Required deposit",
-      body: "USD 10,000 for applicants aged 50+ with a pension · USD 20,000 for ages 35–49 or 50+ without a pension. Deposits are held with a PRA-accredited Philippine bank.",
-    },
-    {
-      label: "Key benefits",
-      body: "No annual reporting to the Bureau of Immigration. Deposit can later be converted toward a condo purchase or long-term lease. Right to work or study. Duty-free importation of household goods on first entry.",
-    },
-    {
-      label: "Ongoing costs",
-      body: "Annual PRA membership fee of approximately USD 360. Health insurance coverage is mandatory for the duration of your stay in the country.",
-    },
-  ],
-};
-
-const visa13a = {
-  details: [
-    {
-      label: "Eligibility",
-      body: "Foreign nationals who are legally married to a Filipino citizen. The marriage must be valid and recognised under Philippine law — common-law partnerships do not qualify.",
-    },
-    {
-      label: "Probationary period",
-      body: "Approved applicants first receive a 1-year Probationary Immigrant Visa. After 12 months of continuous residence, this converts to a permanent 13A upon application.",
-    },
-    {
-      label: "Documents required",
-      body: "Valid passport · PSA-authenticated marriage certificate · Birth certificate of Filipino spouse · Police clearances from countries of prior residence · Medical certificate · NBI clearance",
-    },
-    {
-      label: "What it allows",
-      body: "Unlimited stay in the Philippines. Right to work without a separate Alien Employment Permit. Ability to open bank accounts, sign long-term leases, and access resident-level services.",
-    },
-  ],
-};
-
-const tourist = {
-  details: [
-    {
-      label: "Initial stay on arrival",
-      body: "30 days for most nationalities, automatically extended to 59 days at many ports of entry. Check the Bureau of Immigration's current visa-free agreement list for your nationality.",
-    },
-    {
-      label: "Extension increments",
-      body: "Extensions are issued in 1- or 2-month increments at any BI office or accredited travel agency. Each extension costs approximately PHP 3,130–3,500 depending on duration and fees in effect.",
-    },
-    {
-      label: "Maximum continuous stay",
-      body: "A tourist visa may be extended for a cumulative total of up to 36 months from original entry. After 36 months you must depart — but there is no restriction on how quickly you may return.",
-    },
-    {
-      label: "ECC on departure",
-      body: "Any stay exceeding 6 continuous months requires an Emigration Clearance Certificate (ECC) from the BI before you depart. This is a routine administrative step, not a bar on leaving.",
-    },
-  ],
 };
 
 export default function VisasPage() {
@@ -110,598 +16,640 @@ export default function VisasPage() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-          font-family: 'Inter', sans-serif;
-          background: #F8F6F1;
-          color: #0B1F3A;
-        }
+        body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
         /* ── NAV ── */
-        .nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 28px 48px;
-          border-bottom: 1px solid rgba(248,246,241,0.1);
-        }
-        .nav-logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.15rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          letter-spacing: 0.02em;
-          text-decoration: none;
-        }
+        .nav { display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; border-bottom: 1px solid rgba(248,246,241,0.1); }
+        .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #F8F6F1; letter-spacing: 0.02em; text-decoration: none; }
         .nav-logo span { color: #C9A84C; }
-        .nav-links {
-          display: flex;
-          gap: 32px;
-          list-style: none;
-        }
-        .nav-links a {
-          font-size: 0.82rem;
-          font-weight: 500;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
-          text-decoration: none;
-          transition: color 0.2s;
-        }
-        .nav-links a:hover,
-        .nav-links a.active { color: #F8F6F1; }
 
-        /* ── PAGE HEADER (navy) ── */
-        .page-header {
-          background: #0B1F3A;
-        }
-        .page-hero {
-          padding: 72px 48px 96px;
-          max-width: 820px;
-        }
+        /* ── PAGE HERO ── */
+        .page-header { background: #0B1F3A; }
+        .page-hero { padding: 72px 48px 96px; max-width: 820px; }
         .page-eyebrow {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 0.72rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 20px;
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 20px;
         }
-        .page-eyebrow::before {
-          content: '';
-          display: block;
-          width: 28px;
-          height: 1px;
-          background: #C9A84C;
-        }
-        .page-title {
-          font-family: 'Playfair Display', serif;
-          font-size: clamp(2.2rem, 4.5vw, 3.4rem);
-          font-weight: 700;
-          line-height: 1.12;
-          color: #F8F6F1;
-          margin-bottom: 24px;
-        }
-        .page-sub {
-          font-size: 1.05rem;
-          font-weight: 300;
-          line-height: 1.65;
-          color: rgba(248,246,241,0.72);
-          max-width: 560px;
-        }
+        .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
+        .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 580px; }
 
-        /* ── SECTION SHARED ── */
-        .section {
-          padding: 96px 48px;
-        }
+        /* ── SECTIONS ── */
+        .section { padding: 88px 48px; }
         .section-light { background: #F8F6F1; }
         .section-dark  { background: #0B1F3A; }
+        .section-inner { max-width: 900px; }
 
         .section-label {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 0.7rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 16px;
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 16px;
         }
-        .section-label::before {
-          content: '◈';
-          font-size: 0.65rem;
-        }
-        .section-heading {
-          font-family: 'Playfair Display', serif;
-          font-size: clamp(1.8rem, 3vw, 2.6rem);
-          font-weight: 700;
-          color: #0B1F3A;
-          line-height: 1.2;
-          margin-bottom: 56px;
-          max-width: 560px;
-        }
-        .section-heading-light {
-          color: #F8F6F1;
-        }
+        .section-label::before { content: '◈'; font-size: 0.65rem; }
+        .section-heading { font-family: 'Playfair Display', serif; font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; line-height: 1.2; color: #0B1F3A; margin-bottom: 32px; max-width: 680px; }
+        .section-heading-light { color: #F8F6F1; }
 
-        /* ── OVERVIEW CARDS ── */
-        .visa-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 0;
-          border-top: 1px solid #E8E4DC;
-          border-left: 1px solid #E8E4DC;
-        }
-        .visa-card {
-          padding: 36px 32px;
-          border-right: 1px solid #E8E4DC;
-          border-bottom: 1px solid #E8E4DC;
-          text-decoration: none;
-          display: block;
-          transition: background 0.2s;
-        }
-        .visa-card:hover { background: #fff; }
-        .visa-card-label {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.08rem;
-          font-weight: 600;
-          color: #0B1F3A;
-          margin-bottom: 4px;
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 8px;
-        }
-        .visa-card-label::after {
-          content: '→';
-          font-family: 'Inter', sans-serif;
-          font-size: 0.9rem;
-          color: #C9A84C;
-          flex-shrink: 0;
-          margin-top: 2px;
-          transition: transform 0.2s;
-        }
-        .visa-card:hover .visa-card-label::after {
-          transform: translateX(4px);
-        }
-        .visa-card-subtitle {
-          font-size: 0.75rem;
-          font-weight: 500;
-          letter-spacing: 0.04em;
-          color: #C9A84C;
-          margin-bottom: 12px;
-          text-transform: uppercase;
-        }
-        .visa-card-desc {
-          font-size: 0.85rem;
-          font-weight: 400;
-          line-height: 1.6;
-          color: #5C6B7A;
-        }
-        .visa-card-inactive {
-          cursor: default;
-          opacity: 0.45;
-        }
-        .visa-card-inactive:hover { background: transparent; }
-        .visa-card-inactive .visa-card-label::after { display: none; }
+        /* ── BODY TEXT ── */
+        .vb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
+        .vb-light { color: rgba(248,246,241,0.8); }
+        .vsub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem, 1.8vw, 1.28rem); font-weight: 700; line-height: 1.25; color: #0B1F3A; margin: 40px 0 14px; padding-top: 36px; border-top: 1px solid rgba(11,31,58,0.08); }
+        .vsub-first { border-top: none; padding-top: 0; margin-top: 4px; }
+        .vsub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
 
-        /* ── VISA DETAIL SECTIONS ── */
-        .visa-detail-inner {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 80px;
-          align-items: start;
-        }
-        .visa-detail-lead {}
-        .visa-detail-intro {
-          font-size: 0.95rem;
-          font-weight: 300;
-          line-height: 1.75;
-          color: #5C6B7A;
-          margin-top: 4px;
-        }
-        .visa-detail-intro-light {
-          color: rgba(248,246,241,0.65);
-        }
-        .visa-rows {
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-          padding-top: 8px;
-        }
-        .visa-row {
-          padding: 28px 0;
-          border-bottom: 1px solid #E8E4DC;
-          display: grid;
-          grid-template-columns: 160px 1fr;
-          gap: 24px;
-          align-items: start;
-        }
-        .visa-row:first-child { border-top: 1px solid #E8E4DC; }
-        .visa-row-dark {
-          border-bottom-color: rgba(248,246,241,0.1);
-        }
-        .visa-row-dark:first-child {
-          border-top-color: rgba(248,246,241,0.1);
-        }
-        .visa-row-label {
-          font-size: 0.75rem;
-          font-weight: 600;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          padding-top: 2px;
-        }
-        .visa-row-body {
-          font-size: 0.9rem;
-          font-weight: 300;
-          line-height: 1.75;
-          color: #4A5868;
-        }
-        .visa-row-body-light {
-          color: rgba(248,246,241,0.72);
-        }
+        /* ── LISTS ── */
+        .vlist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
+        .vli { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
+        .vli::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
+        .vli-light { color: rgba(248,246,241,0.78); }
+        .vnlist { list-style: none; counter-reset: vctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+        .vni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: vctr; }
+        .vni::before { content: counter(vctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
 
-        /* ── LEGAL NOTE ── */
-        .legal-section {
-          background: #F8F6F1;
-          border-top: 3px solid #C9A84C;
-        }
-        .legal-inner {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 80px;
-          align-items: start;
-        }
-        .legal-icon {
-          width: 48px;
-          height: 48px;
-          background: #C9A84C;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 20px;
-          font-size: 1.2rem;
-          color: #0B1F3A;
-          font-weight: 700;
-          flex-shrink: 0;
-        }
-        .legal-body {
-          font-size: 0.95rem;
-          font-weight: 300;
-          line-height: 1.8;
-          color: #5C6B7A;
-          max-width: 640px;
-        }
-        .legal-body strong {
-          color: #0B1F3A;
-          font-weight: 600;
-        }
+        /* ── ALERT / INFO BOXES ── */
+        .va-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
+        .va-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
+        .va-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .va-gold-body-light { color: rgba(248,246,241,0.85); }
 
-        /* ── FOOTER ── */
-        .footer {
-          background: #0B1F3A;
-          border-top: 1px solid rgba(248,246,241,0.08);
-          padding: 40px 48px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .footer-logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 0.95rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          letter-spacing: 0.02em;
-          text-decoration: none;
-        }
-        .footer-logo span { color: #C9A84C; }
-        .footer-note {
-          font-size: 0.75rem;
-          color: rgba(248,246,241,0.35);
-        }
+        .va-blue { background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2); border-left: 4px solid #2979FF; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
+        .va-blue-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
+        .va-blue-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+
+        .va-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
+        .va-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
+        .va-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .va-amber-body-light { color: rgba(248,246,241,0.85); }
+
+        .va-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
+        .va-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
+        .va-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+
+        /* ── TABLES ── */
+        .vtable-wrap { overflow-x: auto; margin: 24px 0; max-width: 780px; }
+        .vtable { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+        .vtable th { background: #C9A84C; color: #0B1F3A; font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 700; padding: 13px 18px; text-align: left; }
+        .vtable th.th-dim { background: rgba(201,168,76,0.12); color: rgba(248,246,241,0.5); font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+        .vtable td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.07); font-weight: 300; line-height: 1.5; color: rgba(248,246,241,0.78); vertical-align: top; }
+        .vtable td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.4); background: rgba(248,246,241,0.02); }
+        .vtable-light th { background: #0B1F3A; color: #F8F6F1; }
+        .vtable-light th.th-dim { background: rgba(11,31,58,0.08); color: rgba(11,31,58,0.45); }
+        .vtable-light td { border-bottom-color: rgba(11,31,58,0.07); color: #4A5868; }
+        .vtable-light td.td-dim { color: rgba(11,31,58,0.4); background: rgba(11,31,58,0.02); }
+        .vtable .td-good { color: #6FCF97; font-weight: 500; }
+        .vtable .td-warn { color: #F2994A; font-weight: 500; }
+        .vtable .td-na { color: rgba(248,246,241,0.3); }
+        .vtable-light .td-good { color: #27AE60; }
+        .vtable-light .td-na { color: rgba(11,31,58,0.25); }
+
+        /* ── COST TABLE ── */
+        .cost-table-wrap { overflow-x: auto; margin: 20px 0 28px; max-width: 640px; }
+        .cost-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+        .cost-table tr { border-bottom: 1px solid rgba(11,31,58,0.07); }
+        .cost-table td { padding: 13px 0; font-weight: 300; line-height: 1.5; color: #4A5868; vertical-align: top; }
+        .cost-table td:first-child { font-size: 0.82rem; font-weight: 500; color: #0B1F3A; padding-right: 32px; }
+        .cost-table td:last-child { font-family: 'Playfair Display', serif; font-weight: 700; color: #0B1F3A; white-space: nowrap; }
+
+        /* ── STAGE CARDS ── */
+        .stage-list { display: flex; flex-direction: column; gap: 0; max-width: 760px; margin: 20px 0; }
+        .stage-card { display: grid; grid-template-columns: 56px 1fr; gap: 0; border: 1px solid rgba(11,31,58,0.08); border-bottom: none; }
+        .stage-card:last-child { border-bottom: 1px solid rgba(11,31,58,0.08); }
+        .stage-num { background: #0B1F3A; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #C9A84C; }
+        .stage-body { padding: 22px 24px; background: #fff; }
+        .stage-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 8px; }
+        .stage-text { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #4A5868; }
+
+        /* ── DEPOSIT TABLE ── */
+        .deposit-grid { display: flex; flex-direction: column; gap: 0; max-width: 720px; margin: 20px 0; }
+        .deposit-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 18px 24px; border: 1px solid rgba(248,246,241,0.08); border-bottom: none; align-items: center; background: rgba(248,246,241,0.03); }
+        .deposit-row:last-child { border-bottom: 1px solid rgba(248,246,241,0.08); }
+        .deposit-row:nth-child(even) { background: rgba(248,246,241,0.015); }
+        .deposit-label { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: rgba(248,246,241,0.75); }
+        .deposit-label strong { font-weight: 600; color: #F8F6F1; }
+        .deposit-amount { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #C9A84C; white-space: nowrap; }
+        .deposit-head { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.2); }
+        .deposit-head .deposit-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C9A84C; }
+        .deposit-head .deposit-amount { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(201,168,76,0.7); font-family: 'Inter', sans-serif; }
+
+        /* ── SCENARIO CARDS ── */
+        .scenario-grid { display: flex; flex-direction: column; gap: 0; max-width: 820px; margin-top: 12px; }
+        .scenario-card { display: grid; grid-template-columns: 1fr 1.6fr; gap: 0; border: 1px solid #E8E4DC; border-bottom: none; }
+        .scenario-card:last-child { border-bottom: 1px solid #E8E4DC; }
+        .scenario-q { padding: 24px 28px; background: #0B1F3A; font-family: 'Playfair Display', serif; font-size: 0.92rem; font-weight: 600; color: #F8F6F1; line-height: 1.45; display: flex; align-items: center; }
+        .scenario-a { padding: 24px 28px; background: #fff; font-size: 0.88rem; font-weight: 300; line-height: 1.72; color: #4A5868; display: flex; align-items: center; border-left: 3px solid #C9A84C; }
 
         /* ── STEVE'S NOTE ── */
         .sn-section {
-          background: #0D1E30;
-          border-top: 3px solid #C9A84C;
-          padding: 80px 48px;
-          position: relative;
-          overflow: hidden;
+          background: #0D1E30; border-top: 3px solid #C9A84C;
+          padding: 80px 48px; position: relative; overflow: hidden;
         }
         .sn-section::before {
-          content: 'S';
-          font-family: 'Playfair Display', serif;
-          font-size: 320px;
-          font-weight: 700;
-          color: rgba(201,168,76,0.05);
-          position: absolute;
-          right: -10px;
-          top: -60px;
-          line-height: 1;
-          pointer-events: none;
-          user-select: none;
+          content: 'S'; font-family: 'Playfair Display', serif; font-size: 320px; font-weight: 700;
+          color: rgba(201,168,76,0.05); position: absolute; right: -10px; top: -60px;
+          line-height: 1; pointer-events: none; user-select: none;
         }
-        .sn-inner {
-          max-width: 860px;
-          position: relative;
-          z-index: 1;
-        }
-        .sn-header {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          margin-bottom: 28px;
-        }
-        .sn-monogram {
-          width: 52px;
-          height: 52px;
-          background: #C9A84C;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: 'Playfair Display', serif;
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #0B1F3A;
-          flex-shrink: 0;
-        }
-        .sn-name {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.6rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          line-height: 1.1;
-        }
-        .sn-tag {
-          font-size: 0.7rem;
-          font-weight: 500;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-top: 4px;
-        }
-        .sn-rule {
-          height: 1px;
-          background: rgba(201,168,76,0.2);
-          margin-bottom: 32px;
-        }
-        .sn-body {
-          font-size: 0.95rem;
-          font-weight: 300;
-          line-height: 1.85;
-          color: rgba(248,246,241,0.82);
-        }
-        .sn-body p + p { margin-top: 14px; }
-        .sn-verified {
-          margin-top: 36px;
-          padding-top: 20px;
-          border-top: 1px solid rgba(201,168,76,0.2);
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 0.72rem;
-          font-weight: 600;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: #C9A84C;
-        }
+        .sn-inner { max-width: 860px; position: relative; z-index: 1; }
+        .sn-header { display: flex; align-items: center; gap: 20px; margin-bottom: 28px; }
+        .sn-monogram { width: 52px; height: 52px; background: #C9A84C; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #0B1F3A; flex-shrink: 0; }
+        .sn-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #F8F6F1; line-height: 1.1; }
+        .sn-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 4px; }
+        .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 32px; }
+        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .sn-body p + p { margin-top: 16px; }
+        .sn-verified { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.2); display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A84C; }
         .sn-verified::before { content: '✓'; }
-        @media (max-width: 900px) {
-          .sn-section { padding: 56px 24px; }
-        }
+
+        /* ── LEGAL SECTION ── */
+        .legal-section { background: #F8F6F1; padding: 64px 48px; border-top: 1px solid #E8E4DC; }
+        .legal-inner { max-width: 900px; display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: start; }
+        .legal-icon { width: 48px; height: 48px; background: #C9A84C; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.2rem; color: #0B1F3A; font-weight: 700; flex-shrink: 0; }
+        .legal-body { font-size: 0.9rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; max-width: 640px; }
+        .legal-body strong { color: #0B1F3A; font-weight: 600; }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {
-          .nav { padding: 20px 24px; }
-          .nav-links { display: none; }
-          .page-hero { padding: 52px 24px 72px; }
-          .section { padding: 72px 24px; }
-          .visa-grid { grid-template-columns: repeat(2, 1fr); }
-          .visa-detail-inner { grid-template-columns: 1fr; gap: 40px; }
+          .page-hero, .section, .sn-section, .legal-section { padding-left: 24px; padding-right: 24px; }
           .legal-inner { grid-template-columns: 1fr; gap: 32px; }
-          .visa-row { grid-template-columns: 1fr; gap: 8px; }
-          .footer { flex-direction: column; gap: 12px; text-align: center; }
+          .stage-card { grid-template-columns: 42px 1fr; }
+          .scenario-card { grid-template-columns: 1fr; }
+          .scenario-q { border-bottom: 2px solid #C9A84C; }
+          .scenario-a { border-left: none; border-top: none; }
+          .deposit-row { grid-template-columns: 1fr; gap: 6px; }
         }
-        @media (max-width: 560px) {
-          .visa-grid { grid-template-columns: 1fr; }
+        @media (max-width: 600px) {
           .page-title { font-size: 2rem; }
         }
       `}</style>
 
-      {/* PAGE HEADER */}
-      <header className="page-header">
+      {/* ── HERO ── */}
+      <div className="page-header">
         <Nav active="/visas" />
-
         <div className="page-hero">
-          <p className="page-eyebrow">Visas &amp; Residency</p>
-          <h1 className="page-title">
-            Understanding your<br />long-stay options.
-          </h1>
-          <p className="page-sub">
-            The Philippines offers several viable paths for foreigners who want
-            to stay longer than a holiday. Here is a clear breakdown of the
-            main routes — what they require, what they provide, and who they
-            suit.
-          </p>
+          <p className="page-eyebrow">Visas and Immigration</p>
+          <h1 className="page-title">Staying in the Philippines Legally</h1>
+          <p className="page-sub">The complete guide to every visa option available to foreign nationals in 2026 — tourist extensions, retirement visas, spousal visas, and the new Digital Nomad Visa. Real costs, real timelines, no confusion.</p>
         </div>
-      </header>
+      </div>
 
-      {/* OVERVIEW */}
-      <section className="section section-light" id="overview">
-        <p className="section-label">Visa types at a glance</p>
-        <h2 className="section-heading">
-          Four routes worth knowing about.
-        </h2>
-        <div className="visa-grid">
-          {visaTypes.map((v) =>
-            v.href ? (
-              <a key={v.label} href={v.href} className="visa-card">
-                <div className="visa-card-label">{v.label}</div>
-                <p className="visa-card-subtitle">{v.subtitle}</p>
-                <p className="visa-card-desc">{v.description}</p>
-              </a>
-            ) : (
-              <div key={v.label} className="visa-card visa-card-inactive">
-                <div className="visa-card-label">{v.label}</div>
-                <p className="visa-card-subtitle">{v.subtitle}</p>
-                <p className="visa-card-desc">{v.description}</p>
-              </div>
-            )
-          )}
-        </div>
-      </section>
+      {/* ── SECTION 1: THREE DOCUMENTS ── */}
+      <section className="section section-light" id="documents">
+        <div className="section-inner">
+          <p className="section-label">Start Here</p>
+          <h2 className="section-heading">Understanding the Three Long-Stay Documents</h2>
 
-      {/* SRRV */}
-      <section className="section section-dark" id="srrv">
-        <div className="visa-detail-inner">
-          <div className="visa-detail-lead">
-            <p className="section-label">SRRV</p>
-            <h2 className="section-heading section-heading-light">
-              Special Resident Retiree&rsquo;s Visa
-            </h2>
-            <p className="visa-detail-intro visa-detail-intro-light">
-              Issued by the Philippine Retirement Authority (PRA), the SRRV is
-              designed for foreign retirees who want indefinite, hassle-free
-              residency. Holders can enter and exit the country freely without
-              a re-entry permit.
-            </p>
-          </div>
-          <div className="visa-rows">
-            {srrv.details.map((d) => (
-              <div key={d.label} className="visa-row visa-row-dark">
-                <span className="visa-row-label">{d.label}</span>
-                <p className="visa-row-body visa-row-body-light">{d.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          <p className="vb">Before diving into specific visas, every foreigner in the Philippines needs to understand the difference between three commonly confused documents. Getting this wrong causes real problems at immigration counters, airports, and government offices.</p>
 
-      {/* 13A */}
-      <section className="section section-light" id="13a">
-        <div className="visa-detail-inner">
-          <div className="visa-detail-lead">
-            <p className="section-label">13A Visa</p>
-            <h2 className="section-heading">
-              Spouse of a Filipino Citizen
-            </h2>
-            <p className="visa-detail-intro">
-              If you are legally married to a Filipino citizen, the 13A
-              Non-Quota Immigrant Visa is typically the most straightforward
-              route to permanent legal residency — with the right to live and
-              work in the country indefinitely.
-            </p>
+          <h3 className="vsub vsub-first">The 9(a) Tourist Visa — Visa-Free Entry</h3>
+          <p className="vb">Most Western nationals including Americans, British, Australians, and Europeans enter the Philippines visa-free for an initial 30 days. Americans receive 59 days. This is not a visa in the traditional sense — it is a visa-free entry privilege under Executive Order 408. It can be extended monthly at any Bureau of Immigration office for up to 36 months total. After 59 days of stay, you are required to obtain an ACR I-Card.</p>
+
+          <h3 className="vsub">The ACR I-Card — Alien Certificate of Registration Identity Card</h3>
+          <p className="vb">Issued by the Bureau of Immigration to foreign nationals who have stayed in the Philippines for more than 59 days. It is your official identity document as a long-stay foreigner. It must be renewed periodically. You need it for banking, government transactions, and many official processes. Tourist visa extenders, 13A visa holders, and most other long-term foreign residents carry an ACR I-Card.</p>
+          <div className="va-amber">
+            <p className="va-amber-label">Annual Report Required</p>
+            <p className="va-amber-body">ACR I-Card holders must file an Annual Report with the Bureau of Immigration between January 1 and the last day of February each year. Missing this deadline results in fines.</p>
           </div>
-          <div className="visa-rows">
-            {visa13a.details.map((d) => (
-              <div key={d.label} className="visa-row">
-                <span className="visa-row-label">{d.label}</span>
-                <p className="visa-row-body">{d.body}</p>
-              </div>
-            ))}
+
+          <h3 className="vsub">The PRA ID Card — Philippine Retirement Authority Identity Card</h3>
+          <p className="vb">This is NOT the same as an ACR I-Card. SRRV holders receive a PRA ID Card issued by the Philippine Retirement Authority — not the Bureau of Immigration. SRRV holders are specifically exempt from the ACR I-Card requirement. They are also exempt from the Bureau of Immigration Annual Report, exit clearances, and re-entry permits. Their identity document is the PRA Membership ID Card, which serves the same function as the ACR I-Card but comes from a completely different government agency. Confusing these two documents is one of the most common mistakes in expat forums and even in some immigration advice.</p>
+
+          <h3 className="vsub">At a Glance</h3>
+          <div className="vtable-wrap">
+            <table className="vtable vtable-light">
+              <thead>
+                <tr>
+                  <th>Document</th>
+                  <th>Who carries it</th>
+                  <th>Issued by</th>
+                  <th>Annual Report required</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="td-dim">ACR I-Card</td>
+                  <td>Tourist extenders, 13A holders, most long-stay foreigners</td>
+                  <td>Bureau of Immigration</td>
+                  <td className="td-warn">Yes — Jan/Feb each year</td>
+                </tr>
+                <tr>
+                  <td className="td-dim">PRA ID Card</td>
+                  <td>SRRV holders only</td>
+                  <td>Philippine Retirement Authority</td>
+                  <td className="td-good">No — exempt</td>
+                </tr>
+                <tr>
+                  <td className="td-dim">None</td>
+                  <td>Short-stay tourists under 59 days</td>
+                  <td>N/A</td>
+                  <td className="td-na">Not applicable</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      {/* TOURIST EXTENSIONS */}
+      {/* ── SECTION 2: 9(a) TOURIST VISA ── */}
       <section className="section section-dark" id="tourist">
-        <div className="visa-detail-inner">
-          <div className="visa-detail-lead">
-            <p className="section-label">Tourist Visa (9a)</p>
-            <h2 className="section-heading section-heading-light">
-              Extending Your Tourist Stay
-            </h2>
-            <p className="visa-detail-intro visa-detail-intro-light">
-              Most nationalities enter the Philippines visa-free under a 9(a)
-              Temporary Visitor&rsquo;s Visa. With regular extensions at any Bureau
-              of Immigration office, a tourist stay can legally reach 36 months
-              — making it a practical long-term option for those who are not yet
-              committed to full residency.
-            </p>
+        <div className="section-inner">
+          <p className="section-label">Tourist Visa</p>
+          <h2 className="section-heading section-heading-light">The 9(a) Tourist Visa — Extending Your Stay</h2>
+
+          <p className="vb vb-light">The 9(a) Temporary Visitor Visa is how the overwhelming majority of foreign expats stay in the Philippines. Most Western nationals enter visa-free and simply extend their stay month by month or every two months at any Bureau of Immigration office. It is legal, straightforward, and used by thousands of long-term expats who are not yet ready to commit to a long-term visa category.</p>
+
+          <h3 className="vsub vsub-first vsub-light">How entry works</h3>
+          <p className="vb vb-light">Most Western nationalities including Americans, Australians, British, and most Europeans receive 30 days visa-free upon arrival. Americans receive 59 days. Citizens of some countries require a visa in advance — check with the Philippine Embassy in your country before travel. All arrivals must complete the free eTravel registration before flying — do not use paid third-party sites, the official eTravel portal is free.</p>
+
+          <h3 className="vsub vsub-light">The extension process</h3>
+          <p className="vb vb-light">Extensions are processed at any Bureau of Immigration office nationwide. You can extend by one month or two months at a time. Extensions are also available online through the BI e-Services portal as of 2025, though the system has experienced recurring technical issues — do not wait until the last day of your authorized stay to file online. Always extend at least 7 to 10 days before your current extension expires.</p>
+
+          <h3 className="vsub vsub-light">Real costs at the counter</h3>
+          <div className="va-gold">
+            <p className="va-gold-label">Steve's Personal Experience — June 2026</p>
+            <p className="va-gold-body-light">Published BI fees look lower than what you actually pay at the counter. In practice, expect to pay approximately 5,000 pesos for a standard monthly or two-month extension. The difference between the published base fee and the actual amount is an expedited processing fee added automatically — you do not get a choice and there is no option to decline it. When your ACR I-Card is required after 59 days, the total jumps to 10,000 pesos or more. The LSVVE six-month extension at 11,500 to 13,900 pesos is actually the best value if you plan to stay long-term — one trip instead of monthly visits. Always bring extra cash. I will update this page with the official current fee board once I photograph it at the Gaisano Mall BI office in Lapu-Lapu City on my next extension.</p>
           </div>
-          <div className="visa-rows">
-            {tourist.details.map((d) => (
-              <div key={d.label} className="visa-row visa-row-dark">
-                <span className="visa-row-label">{d.label}</span>
-                <p className="visa-row-body visa-row-body-light">{d.body}</p>
+
+          <div className="vtable-wrap">
+            <table className="vtable">
+              <thead>
+                <tr>
+                  <th>Extension type</th>
+                  <th>Approximate real cost at counter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="td-dim">Monthly or 2-month extension</td>
+                  <td>~5,000 pesos</td>
+                </tr>
+                <tr>
+                  <td className="td-dim">First extension requiring ACR I-Card</td>
+                  <td>10,000 pesos or more</td>
+                </tr>
+                <tr>
+                  <td className="td-dim">LSVVE 6-month extension</td>
+                  <td>11,500 – 13,900 pesos depending on nationality</td>
+                </tr>
+                <tr>
+                  <td className="td-dim">Overstay fine</td>
+                  <td>500 pesos per month overstayed + motion for reconsideration fee</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="vsub vsub-light">The 36-month limit</h3>
+          <p className="vb vb-light">Non-visa required nationals can stay in the Philippines for a maximum of 36 months from their date of entry through tourist visa extensions. Visa-required nationals are limited to 24 months. Once you hit the cap, you must depart the Philippines. Most people take a short trip to a neighboring country — Japan, South Korea, Singapore, Hong Kong — and re-enter fresh. Re-entry is always at the discretion of the immigration officer.</p>
+
+          <h3 className="vsub vsub-light">The ACR I-Card requirement</h3>
+          <p className="vb vb-light">After 59 days of continuous stay in the Philippines, you are legally required to obtain an ACR I-Card from the Bureau of Immigration. It costs approximately 900 pesos for the card itself plus additional fees. Once you have an ACR I-Card, you must file the Annual Report with the Bureau of Immigration between January and February each year. Missing the Annual Report deadline results in fines.</p>
+
+          <h3 className="vsub vsub-light">Online extensions</h3>
+          <p className="vb vb-light">As of 2025 the Bureau of Immigration offers online extensions through the BI e-Services portal at bi.gov.ph. Processing takes 2 to 3 business days when approved. Confirm with BI whether a physical passport stamp is needed before your next immigration transaction or departure.</p>
+
+          <h3 className="vsub vsub-light">The BI Cebu experience</h3>
+          <p className="vb vb-light">The Bureau of Immigration satellite office in Lapu-Lapu City at Gaisano Mall handles extensions for Mactan Island and Cebu residents. In my personal experience this is one of the more efficient BI offices in the country — arrive early, bring all documents, and expect to be in and out within an hour on a good day. The main Cebu City BI office handles more complex transactions.</p>
+        </div>
+      </section>
+
+      {/* ── SECTION 3: SRRV ── */}
+      <section className="section section-light" id="srrv">
+        <div className="section-inner">
+          <p className="section-label">Retirement Visa</p>
+          <h2 className="section-heading">The SRRV — Special Resident Retiree&rsquo;s Visa</h2>
+
+          <p className="vb">The SRRV is the Philippines&rsquo; premier long-term residency visa for qualifying foreign nationals and former Filipino citizens. It provides indefinite stay, multiple entry, and freedom from the monthly Bureau of Immigration visits that define life on a tourist extension. It is administered by the Philippine Retirement Authority — a separate government agency from the Bureau of Immigration — which creates important differences in how the visa works and what documents you carry.</p>
+
+          <div className="va-gold">
+            <p className="va-gold-label">Major 2025 Update — Age Requirement Lowered</p>
+            <p className="va-gold-body">Effective September 2025, the minimum age requirement for the SRRV was lowered from 50 to 40 years old. This is a significant change that opens the SRRV to early retirees, digital entrepreneurs, and younger long-stay residents who previously had to wait until 50. If you read older guides online, be aware that the 50-year age requirement is now outdated.</p>
+          </div>
+
+          <div className="va-amber">
+            <p className="va-amber-label">PRA ID Card — Not an ACR I-Card</p>
+            <p className="va-amber-body">SRRV holders are specifically exempt from the Bureau of Immigration ACR I-Card requirement. Instead you receive a PRA Membership ID Card issued by the Philippine Retirement Authority. This card serves the same identification function as the ACR I-Card but comes from a completely different agency. SRRV holders are also exempt from the Bureau of Immigration Annual Report, exit clearance certificates, and re-entry permits. These exemptions are among the most valuable benefits of the SRRV.</p>
+          </div>
+
+          <h3 className="vsub vsub-first">SRRV benefits</h3>
+          <ul className="vlist">
+            <li className="vli">Indefinite stay — no expiry on your residency as long as you maintain PRA membership.</li>
+            <li className="vli">Multiple entry — enter and exit freely without separate re-entry permits.</li>
+            <li className="vli">No BI Annual Report — SRRV holders deal with PRA, not BI, for annual compliance.</li>
+            <li className="vli">No ACR I-Card required — PRA ID Card serves as your identification.</li>
+            <li className="vli">No exit clearance required for ordinary departures.</li>
+            <li className="vli">Exemption from customs duties on one-time importation of household goods up to $7,000 USD.</li>
+            <li className="vli">Deposit can be converted into approved investments including condominium purchase.</li>
+            <li className="vli">Annual PRA membership fee of $360 USD covers principal and two dependents.</li>
+          </ul>
+
+          <h3 className="vsub">SRRV deposit requirements</h3>
+          <div className="deposit-grid">
+            <div className="deposit-row deposit-head">
+              <span className="deposit-label">Category</span>
+              <span className="deposit-amount">Required Deposit</span>
+            </div>
+            <div className="deposit-row">
+              <span className="deposit-label"><strong>SRRV Classic — Age 50+</strong><br />With qualifying pension ($800/month or more)</span>
+              <span className="deposit-amount">$15,000</span>
+            </div>
+            <div className="deposit-row">
+              <span className="deposit-label"><strong>SRRV Classic — Age 50+</strong><br />Without qualifying pension</span>
+              <span className="deposit-amount">$30,000</span>
+            </div>
+            <div className="deposit-row">
+              <span className="deposit-label"><strong>SRRV Classic — Age 40 to 49</strong> (new Sep 2025)<br />With qualifying pension ($800/month or more)</span>
+              <span className="deposit-amount">$25,000</span>
+            </div>
+            <div className="deposit-row">
+              <span className="deposit-label"><strong>SRRV Classic — Age 40 to 49</strong> (new Sep 2025)<br />Without qualifying pension</span>
+              <span className="deposit-amount">$50,000</span>
+            </div>
+            <div className="deposit-row">
+              <span className="deposit-label"><strong>SRRV Courtesy</strong><br />Retired diplomats, military officers (bilateral), international org officers, high achievers in academics, sports, arts</span>
+              <span className="deposit-amount">$1,500–6,000</span>
+            </div>
+          </div>
+          <p className="vb" style={{marginTop: '8px', fontSize: '0.83rem', color: '#6B7B8A'}}>A qualifying pension means a lifetime monthly benefit of at least $800 for a single applicant or $1,000 for a couple — Social Security, private pension, military pension, or lifetime disability benefit. Temporary or fixed-term payments do not qualify. The deposit is fully refundable when you leave the program.</p>
+
+          <h3 className="vsub">The SRRV application process</h3>
+          <div className="stage-list">
+            <div className="stage-card">
+              <div className="stage-num">1</div>
+              <div className="stage-body">
+                <p className="stage-title">Arrive on a convertible 9(a) tourist visa</p>
+                <p className="stage-text">Must have at least one month remaining validity. A non-convertible tourist visa cannot be used for SRRV application.</p>
               </div>
-            ))}
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">2</div>
+              <div className="stage-body">
+                <p className="stage-title">Obtain BI Clearance Certificate</p>
+                <p className="stage-text">New requirement since September 2025. Get this ideally during a tourist visa extension visit so it does not delay your SRRV application.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">3</div>
+              <div className="stage-body">
+                <p className="stage-title">Prepare and apostille all required documents</p>
+                <p className="stage-text">Police clearance from country of origin, medical clearance from a PRA-accredited clinic, pension proof if applicable, and proof of deposit.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">4</div>
+              <div className="stage-body">
+                <p className="stage-title">Complete inward remittance of deposit</p>
+                <p className="stage-text">Transfer required deposit amount to a PRA-accredited bank — DBP, BDO, or PNB.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">5</div>
+              <div className="stage-body">
+                <p className="stage-title">Submit complete application to PRA</p>
+                <p className="stage-text">Head office in BGC Taguig or satellite offices in Cebu, Davao, or other cities.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">6</div>
+              <div className="stage-body">
+                <p className="stage-title">PRA review and approval</p>
+                <p className="stage-text">Current processing time is 30 to 45 working days from receipt of complete documents.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">7</div>
+              <div className="stage-body">
+                <p className="stage-title">Take the oath administered by PRA</p>
+                <p className="stage-text">Required step before issuance of your documents.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">8</div>
+              <div className="stage-body">
+                <p className="stage-title">Receive SRRV visa stamp and PRA ID Card</p>
+                <p className="stage-text">SRRV visa stamp goes in your passport from the Bureau of Immigration. PRA Membership ID Card is your primary identification document going forward.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 className="vsub">SRRV vs. 13A</h3>
+          <p className="vb">The SRRV is entirely independent of your marital status — it stands on your own financial qualification. If you are single, widowed, or married to someone who is not a Filipino citizen, the SRRV is typically your best long-term option. The 13A spousal visa requires no deposit but is tied to your marriage. If the marriage ends, the 13A is affected. For those who qualify for 13A, it is often the better deal financially. For those who do not qualify, the SRRV is the most practical permanent solution.</p>
+
+          <h3 className="vsub">Work rights on the SRRV</h3>
+          <p className="vb">The SRRV grants residency, not an automatic right to work for Philippine employers. To take formal local employment you typically need a separate Alien Employment Permit from DOLE. However SRRV holders are exempt from the 9(g) employment visa that most working foreigners need. Running your own business as an owner or investor is generally permitted within Philippine foreign ownership rules.</p>
+        </div>
+      </section>
+
+      {/* ── SECTION 4: 13A ── */}
+      <section className="section section-dark" id="13a">
+        <div className="section-inner">
+          <p className="section-label">Spousal Visa</p>
+          <h2 className="section-heading section-heading-light">The 13A — For Foreign Spouses of Filipino Citizens</h2>
+
+          <p className="vb vb-light">The 13A is the Non-Quota Immigrant Visa by Marriage — the pathway to permanent residency for foreign nationals legally married to Filipino citizens. It derives from Section 13(a) of the Philippine Immigration Act of 1940 and is administered entirely by the Bureau of Immigration, not the PRA.</p>
+
+          <h3 className="vsub vsub-first vsub-light">Who qualifies</h3>
+          <ul className="vlist">
+            <li className="vli vli-light">Legally married to a Filipino citizen — the marriage must be valid under Philippine law. If married abroad, the marriage must be registered with PSA.</li>
+            <li className="vli vli-light">Your Filipino spouse must reside in the Philippines.</li>
+            <li className="vli vli-light">Clean criminal record — confirmed via NBI clearance and apostilled police clearance from home country.</li>
+            <li className="vli vli-light">Your country must have diplomatic relations with the Philippines and grant reciprocal immigration privileges to Filipinos — applies to nearly all Western nations.</li>
+            <li className="vli vli-light">Free from communicable diseases — medical clearance required.</li>
+            <li className="vli vli-light">No prior immigration violations in the Philippines.</li>
+          </ul>
+
+          <h3 className="vsub vsub-light">The two-stage process</h3>
+          <div className="stage-list">
+            <div className="stage-card">
+              <div className="stage-num">1</div>
+              <div className="stage-body">
+                <p className="stage-title">Stage 1 — Probationary 13A (1 year)</p>
+                <p className="stage-text">Issued after initial application, biometrics, and interview at the Bureau of Immigration. BI evaluates the genuine nature of the marriage during this year. Documents required: joint letter of request from both spouses, CGAF application form, PSA marriage certificate, PSA birth certificate of Filipino spouse, valid Philippine passport of Filipino spouse, NBI clearance (if in Philippines more than 6 months), apostilled police clearance from home country, medical clearance from BI-accredited physician, passport photos, and payment of fees. Processing time typically 2 to 3 months from complete submission.</p>
+              </div>
+            </div>
+            <div className="stage-card">
+              <div className="stage-num">2</div>
+              <div className="stage-body">
+                <p className="stage-title">Stage 2 — Permanent 13A (no expiry)</p>
+                <p className="stage-text">Applied for before the probationary visa expires — as early as 3 months before expiration. Once granted it does not expire as long as the marriage remains valid. You receive your ACR I-Card as a permanent 13A holder. Total fees typically range from 20,000 to 50,000 pesos or more depending on processing speed and which BI office processes your application.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 className="vsub vsub-light">Benefits of the 13A</h3>
+          <ul className="vlist">
+            <li className="vli vli-light">Permanent residency once Stage 2 is granted — no annual renewals of the visa itself.</li>
+            <li className="vli vli-light">Multiple entry and exit without separate permits.</li>
+            <li className="vli vli-light">Right to work in the Philippines — exempt from Labor Market Test, though a Certificate of Exclusion from DOLE is still required for formal employment.</li>
+            <li className="vli vli-light">Pathway to Philippine citizenship after statutory residency period.</li>
+            <li className="vli vli-light">No deposit required unlike the SRRV.</li>
+            <li className="vli vli-light">ACR I-Card issued as your identity document.</li>
+          </ul>
+
+          <div className="va-warning">
+            <p className="va-warning-label">⚠ Important Caveat</p>
+            <p className="va-warning-body">The 13A is tied to your marriage. If the marriage is legally dissolved through annulment or if your Filipino spouse passes away, your 13A status is affected. For this reason some couples pursue the SRRV as an independent backup visa once it becomes financially feasible.</p>
+          </div>
+
+          <h3 className="vsub vsub-light">Work rights on the 13A</h3>
+          <p className="vb vb-light">The 13A grants the right to work in the Philippines with fewer requirements than most other foreign workers face. You are exempt from the Labor Market Test. However you must obtain a Certificate of Exclusion from DOLE before beginning formal employment. You can own and operate a business subject to Philippine foreign investment laws. Certain licensed professions such as medicine and law are generally reserved for Filipino citizens.</p>
+        </div>
+      </section>
+
+      {/* ── SECTION 5: DIGITAL NOMAD VISA ── */}
+      <section className="section section-light" id="dnv">
+        <div className="section-inner">
+          <p className="section-label">Digital Nomad Visa</p>
+          <h2 className="section-heading">The Digital Nomad Visa — New in 2025</h2>
+
+          <div className="va-blue">
+            <p className="va-blue-label">New Visa — Executive Order No. 86 — April 2025</p>
+            <p className="va-blue-body">The Philippines launched its Digital Nomad Visa under Executive Order No. 86, signed in April 2025. This is a dedicated visa pathway for foreign nationals who work remotely for employers or clients outside the Philippines.</p>
+          </div>
+
+          <h3 className="vsub vsub-first">Who it is for</h3>
+          <p className="vb">Remote workers, freelancers, and business owners who work exclusively for non-Philippine employers or clients and want to live in the Philippines legally for an extended period without the monthly visa extension routine.</p>
+
+          <h3 className="vsub">Key terms</h3>
+          <ul className="vlist">
+            <li className="vli">Valid for 12 months, renewable for an additional 12 months — maximum 2 years total.</li>
+            <li className="vli">Multiple entry.</li>
+            <li className="vli">No Philippine income tax on foreign-sourced income — you pay taxes only in your home country.</li>
+            <li className="vli">Cannot work for Philippine employers or clients.</li>
+          </ul>
+
+          <h3 className="vsub">Income requirement and documents</h3>
+          <ul className="vlist">
+            <li className="vli">Minimum $24,000 USD per year — approximately $2,000 per month — from remote work or freelancing outside the Philippines.</li>
+            <li className="vli">3 to 6 months of bank statements.</li>
+            <li className="vli">Employment contracts or freelance agreements.</li>
+            <li className="vli">Valid passport with at least 6 months validity.</li>
+            <li className="vli">Valid health insurance covering the duration of the stay.</li>
+            <li className="vli">Clean criminal record — apostilled police clearance from home country.</li>
+            <li className="vli">Reciprocity requirement — your country must offer a similar digital nomad visa to Filipino citizens.</li>
+          </ul>
+
+          <div className="va-amber">
+            <p className="va-amber-label">⚠ Verify Before Applying</p>
+            <p className="va-amber-body">As of June 2026 some implementation details are still being finalized. No official list of qualifying countries has been published as of this writing. Verify current requirements directly with the Bureau of Immigration or Department of Foreign Affairs before preparing documents. Do not rely on third-party sites for the current income threshold or application process. Processing time when complete documents are submitted is approximately 2 to 3 weeks.</p>
           </div>
         </div>
       </section>
 
-      {/* STEVE'S NOTE — REAL COSTS */}
+      {/* ── SECTION 6: ANNUAL REPORT ── */}
+      <section className="section section-dark" id="annual-report">
+        <div className="section-inner">
+          <p className="section-label">ACR I-Card Holders</p>
+          <h2 className="section-heading section-heading-light">The Annual Report — What ACR I-Card Holders Must Know</h2>
+
+          <p className="vb vb-light">Every foreign national holding an ACR I-Card — including tourist visa extenders who have passed 59 days and 13A visa holders — must file the Bureau of Immigration Annual Report between January 1 and the last day of February each year. Missing this deadline results in fines.</p>
+
+          <h3 className="vsub vsub-first vsub-light">Who must file</h3>
+          <p className="vb vb-light">Any foreigner holding an ACR I-Card who was in the Philippines at any point during the previous year.</p>
+
+          <h3 className="vsub vsub-light">Who is exempt</h3>
+          <ul className="vlist">
+            <li className="vli vli-light">SRRV holders — they deal with the PRA for annual compliance, not the BI.</li>
+            <li className="vli vli-light">Short-stay tourists under 59 days with no ACR I-Card.</li>
+          </ul>
+
+          <h3 className="vsub vsub-light">How to file</h3>
+          <p className="vb vb-light">As of 2025/2026 the BI has moved toward an online appointment system for the Annual Report. Check the BI e-Services portal at bi.gov.ph before going in person. Do not just walk in — appointments may be required depending on the BI office. Keep all official receipts. In the Philippines the receipt is often more important than the stamp for proving you have paid your fees.</p>
+
+          <h3 className="vsub vsub-light">Late filing penalties</h3>
+          <p className="vb vb-light">Fines apply for missing the deadline. If your stay is less than 6 months past the deadline, you pay the monthly fine plus express lane fees. Over 6 months requires filing a Motion for Reconsideration. Over 12 months puts you at risk of being labeled an Undesirable Alien. Do not let this lapse.</p>
+        </div>
+      </section>
+
+      {/* ── SECTION 7: EXIT CLEARANCE ── */}
+      <section className="section section-light" id="ecc">
+        <div className="section-inner">
+          <p className="section-label">Departing the Philippines</p>
+          <h2 className="section-heading">Exit Clearance Certificate — When You Need One</h2>
+
+          <p className="vb">An Exit Clearance Certificate (ECC) is required from the Bureau of Immigration when certain categories of foreign nationals depart the Philippines after an extended stay.</p>
+
+          <h3 className="vsub vsub-first">Who needs an ECC</h3>
+          <ul className="vlist">
+            <li className="vli">Foreign nationals who have stayed in the Philippines for more than 6 months on a tourist visa extension and hold an ACR I-Card.</li>
+            <li className="vli">13A visa holders in certain situations.</li>
+          </ul>
+
+          <h3 className="vsub">Who does NOT need an ECC</h3>
+          <ul className="vlist">
+            <li className="vli">SRRV holders — this is one of the key exemptions of the SRRV program.</li>
+            <li className="vli">Short-stay tourists who have not exceeded 6 months.</li>
+          </ul>
+
+          <h3 className="vsub">Practical note</h3>
+          <p className="vb">Cost is approximately 500 to 1,000 pesos depending on your visa category and length of stay. Apply at the Bureau of Immigration main office or satellite offices before your intended departure — allow at least a week before flying. Do not show up at the airport and discover you need one that day.</p>
+        </div>
+      </section>
+
+      {/* ── SECTION 8: WHICH IS RIGHT FOR YOU ── */}
+      <section className="section section-dark" id="compare">
+        <div className="section-inner">
+          <p className="section-label">Visa Comparison</p>
+          <h2 className="section-heading section-heading-light">Which Visa Is Right For You?</h2>
+          <div className="scenario-grid">
+            <div className="scenario-card">
+              <div className="scenario-q">I am visiting the Philippines and may stay long term.</div>
+              <div className="scenario-a">Start on tourist visa extension. Convert to SRRV or 13A when your situation is clear. No need to commit immediately.</div>
+            </div>
+            <div className="scenario-card">
+              <div className="scenario-q">I am married to a Filipino citizen and plan to live here.</div>
+              <div className="scenario-a">The 13A is your best option. No deposit required. Apply as soon as your marriage is registered with PSA.</div>
+            </div>
+            <div className="scenario-card">
+              <div className="scenario-q">I am 40 or older and want permanent residency independent of any relationship.</div>
+              <div className="scenario-a">The SRRV is designed for you. Requires a deposit but grants complete independence from any marital status and exempts you from BI annual reports and exit clearances.</div>
+            </div>
+            <div className="scenario-card">
+              <div className="scenario-q">I work remotely for a foreign employer and want to live here legally.</div>
+              <div className="scenario-a">The Digital Nomad Visa is now available. Requires $24,000/year income and a qualifying citizenship. Verify current reciprocity requirements before applying.</div>
+            </div>
+            <div className="scenario-card">
+              <div className="scenario-q">I am here on business and do not plan to stay long term.</div>
+              <div className="scenario-a">Tourist visa extension is appropriate for stays up to 36 months. File Annual Report each January if you acquire an ACR I-Card.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── STEVE'S NOTE ── */}
       <section className="sn-section">
         <div className="sn-inner">
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
               <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
+              <p className="sn-tag">My personal immigration experience · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>A note on real costs: Published BI fees look lower than what you actually pay at the counter. In practice, expect to pay approximately ₱5,000 (~$82 USD) for a standard monthly or 2-month extension. The difference is an expedited processing fee that is added automatically — you do not get a choice. When your ACR I-Card is required (after 59 days), the total jumps to ₱10,000 or more. The LSVVE 6-month extension at ₱11,500–13,900 is actually the best value if you plan to stay long-term — one trip instead of monthly visits. Always bring extra cash. I will update this page with the official current fee board once I photograph it at the Gaisano Mall BI office in Lapu-Lapu City on my next extension. Last personal experience: June 2026, Lapu-Lapu City, Cebu.</p>
+            <p>I have been living in the Philippines on tourist visa extensions while my wife Irish and I go through the CR-1 spousal visa process for her to eventually have the ability to visit the US. The monthly extension routine is straightforward once you know the system — but the costs surprised me when I first arrived. What you see on the BI website and what you pay at the counter are two different numbers. The automatic expedited fee adds up.</p>
+            <p>My plan is to photograph the official BI fee board at the Gaisano Mall office in Lapu-Lapu City on my next extension and add it to this page so you have the most accurate current numbers available anywhere online. If you are staying long term and qualify for the SRRV, the math often favors converting away from tourist extensions — the monthly cost adds up faster than most people realize, and the SRRV exemptions from annual reports and exit clearances are genuinely valuable.</p>
+            <p>Irish and I are also working through the 13A process — I will document the real costs and timeline as we go through it ourselves.</p>
           </div>
-          <p className="sn-verified">Last Verified: June 2026 · Lapu-Lapu City, Cebu</p>
+          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
-      {/* STEVE'S NOTE */}
-      <section className="sn-section">
-        <div className="sn-inner">
-          <div className="sn-header">
-            <div className="sn-monogram">S</div>
-            <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
-            </div>
-          </div>
-          <div className="sn-rule" />
-          <div className="sn-body">
-            <p>When I arrived in the Philippines, my passport stamp gave me 30 days. After that, I had to visit the Bureau of Immigration. The first extension is 30 days only — no option to go longer on the first visit — and it cost me approximately $80 USD.</p>
-            <p>After those 30 days, you can apply for a 60-day extension. You&rsquo;d think it would cost more, but it came out to roughly the same $80. However, on the next 60-day extension visit, they will require you to obtain your ACR card (Alien Certificate of Registration). That visit cost me close to $200 USD. Budget for it — it catches a lot of people off guard.</p>
-            <p>One thing I&rsquo;d strongly recommend: if you&rsquo;re not planning to return to your home country within the year, take a trip to a nearby country — Thailand and Vietnam are popular choices — and let your entry stamp reset. If you stay in the Philippines for over a year without leaving, the exit process becomes significantly more complicated and considerably more expensive. I&rsquo;ve heard this from people who&rsquo;ve been through it. Don&rsquo;t let it sneak up on you.</p>
-          </div>
-          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
-        </div>
-      </section>
-
-      {/* LEGAL NOTE */}
-      <section className="section legal-section">
+      {/* ── DISCLAIMER ── */}
+      <section className="legal-section">
         <div className="legal-inner">
           <div>
             <div className="legal-icon">!</div>
             <p className="section-label">Important note</p>
-            <h2 className="section-heading">
-              Always consult a qualified professional.
-            </h2>
+            <h2 className="section-heading" style={{fontSize: '1.2rem', marginBottom: '8px'}}>Verify before you act.</h2>
           </div>
           <p className="legal-body">
-            <strong>The information on this page is for general guidance only</strong> and
-            reflects conditions as understood at the time of writing. Philippine immigration
-            law, PRA requirements, and Bureau of Immigration procedures change regularly —
-            sometimes without prominent public notice.
+            <strong>Immigration rules, fees, and requirements change regularly and without notice.</strong> The information on this page reflects conditions as of June 2026 and is for general informational purposes only. Always verify current requirements directly with the Bureau of Immigration at <strong>immigration.gov.ph</strong> or the Philippine Retirement Authority at <strong>pra.gov.ph</strong> before making immigration decisions.
             <br /><br />
-            Before making any decisions based on your visa status, we strongly recommend
-            consulting a licensed Philippine immigration attorney or an accredited visa
-            consultant. Fees, documentary requirements, processing times, and eligibility
-            rules can all vary depending on your nationality, current legal status, and the
-            specific BI office or PRA branch you deal with.
-            <br /><br />
-            Expat Compass PH is not a law firm and does not provide legal advice. Nothing on
-            this site constitutes a legal opinion or creates an attorney-client relationship.
+            Consider consulting a licensed Philippine immigration attorney or PRA-accredited consultant for complex situations. Expat Compass PH is not a law firm and does not provide legal advice. Nothing on this site constitutes a legal opinion or creates an attorney-client relationship.
           </p>
         </div>
       </section>
 
-      {/* FOOTER */}
       <Footer />
     </>
   );
