@@ -518,6 +518,7 @@ export default function BankingPage() {
       <header className="page-header">
         <Nav active="/banking" />
         <div className="page-hero">
+          <ExchangeRate />
           <p className="page-eyebrow">Banking</p>
           <h1 className="page-title">
             Managing your money<br />in the Philippines.
@@ -529,8 +530,6 @@ export default function BankingPage() {
           </p>
         </div>
       </header>
-
-      <ExchangeRate />
 
       {/* OVERVIEW */}
       <section className="section section-light" id="overview">
