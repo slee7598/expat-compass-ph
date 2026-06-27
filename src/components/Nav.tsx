@@ -10,6 +10,7 @@ const links = [
   { label: "Cost of Living", href: "/cost-of-living" },
   { label: "Housing", href: "/housing" },
   { label: "Healthcare", href: "/healthcare" },
+  { label: "US Benefits", href: "/retirement-benefits" },
   { label: "Banking", href: "/banking" },
   { label: "Transportation", href: "/transportation" },
   { label: "City Guides", href: "/city-guides" },
