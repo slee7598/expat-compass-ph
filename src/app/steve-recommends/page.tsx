@@ -54,6 +54,8 @@ const health: RecItem[] = [
   {
     name: "My Approach to Health Insurance",
     body: "I’m 52 years old and live a healthy lifestyle, so I’ve made a deliberate choice not to carry expat health insurance. When I need medical attention, I go to a private ER — as my Chong Hua experience shows, the costs are very manageable by Western standards. I keep my receipts and submit them to my US healthcare provider for full or partial reimbursement. This approach works for me given my age, health, and situation. It may not be right for everyone. If you have pre-existing conditions or want peace of mind, look into SafetyWing or a similar expat health plan.",
+    link: "https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador",
+    linkLabel: "Explore SafetyWing →",
   },
 ];
 
