@@ -81,6 +81,15 @@ const entertainment: RecItem[] = [
   },
 ];
 
+const activities: RecItem[] = [
+  {
+    name: "Klook — Activities & Experiences",
+    body: "Klook is my go-to for booking activities and experiences across the Philippines and Southeast Asia. Island hopping, diving, city tours, transfers — it is all on there, with instant confirmation and competitive prices.",
+    link: "https://affiliate.klook.com/redirect?aid=125611&aff_adid=1318272&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fphilippines%2F",
+    linkLabel: "Browse Philippines Activities →",
+  },
+];
+
 export default function SteveRecommendsPage() {
   return (
     <>
@@ -406,6 +415,27 @@ export default function SteveRecommendsPage() {
           <h2 className="cat-heading">Watching what you love from home.</h2>
           <div className="rec-items">
             {entertainment.map((item) => (
+              <div key={item.name} className="rec-item">
+                <p className="rec-item-name">{item.name}</p>
+                <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ACTIVITIES */}
+      <section className="rec-section rec-light">
+        <div className="rec-inner">
+          <p className="cat-label">Activities</p>
+          <h2 className="cat-heading">Getting out and exploring.</h2>
+          <div className="rec-items">
+            {activities.map((item) => (
               <div key={item.name} className="rec-item">
                 <p className="rec-item-name">{item.name}</p>
                 <p className="rec-item-body">{item.body}</p>
