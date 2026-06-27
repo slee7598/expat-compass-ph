@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ExchangeRate from "@/components/ExchangeRate";
 
 const aspects = [
   {
@@ -528,6 +529,8 @@ export default function BankingPage() {
           </p>
         </div>
       </header>
+
+      <ExchangeRate />
 
       {/* OVERVIEW */}
       <section className="section section-light" id="overview">
