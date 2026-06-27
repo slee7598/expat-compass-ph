@@ -88,6 +88,12 @@ const activities: RecItem[] = [
     link: "https://www.klook.com/destination/co1016-philippines/?aid=125611",
     linkLabel: "Browse Philippines Activities →",
   },
+  {
+    name: "Airbnb",
+    body: "Airbnb is my personal go-to for finding apartments, condos, and unique stays across the Philippines. The selection in Cebu, Manila, and Boracay is excellent — you can find everything from budget studios to beachfront villas. I use it for every trip. Note: Airbnb no longer has an affiliate program, so there is no commission link here — just an honest recommendation from someone who uses it constantly.",
+    link: "https://www.airbnb.com",
+    linkLabel: "Browse Airbnb Philippines →",
+  },
 ];
 
 export default function SteveRecommendsPage() {
