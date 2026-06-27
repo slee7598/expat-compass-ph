@@ -635,6 +635,24 @@ export default function VisasPage() {
         </div>
       </section>
 
+      {/* STEVE'S NOTE — REAL COSTS */}
+      <section className="sn-section">
+        <div className="sn-inner">
+          <div className="sn-header">
+            <div className="sn-monogram">S</div>
+            <div>
+              <p className="sn-name">Steve&rsquo;s Note</p>
+              <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
+            </div>
+          </div>
+          <div className="sn-rule" />
+          <div className="sn-body">
+            <p>A note on real costs: Published BI fees look lower than what you actually pay at the counter. In practice, expect to pay approximately ₱5,000 (~$82 USD) for a standard monthly or 2-month extension. The difference is an expedited processing fee that is added automatically — you do not get a choice. When your ACR I-Card is required (after 59 days), the total jumps to ₱10,000 or more. The LSVVE 6-month extension at ₱11,500–13,900 is actually the best value if you plan to stay long-term — one trip instead of monthly visits. Always bring extra cash. I will update this page with the official current fee board once I photograph it at the Gaisano Mall BI office in Lapu-Lapu City on my next extension. Last personal experience: June 2026, Lapu-Lapu City, Cebu.</p>
+          </div>
+          <p className="sn-verified">Last Verified: June 2026 · Lapu-Lapu City, Cebu</p>
+        </div>
+      </section>
+
       {/* STEVE'S NOTE */}
       <section className="sn-section">
         <div className="sn-inner">
