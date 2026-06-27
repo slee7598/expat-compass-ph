@@ -626,6 +626,24 @@ export default function BankingPage() {
         </div>
       </section>
 
+      {/* STEVE'S NOTE — GCASH */}
+      <section className="sn-section">
+        <div className="sn-inner">
+          <div className="sn-header">
+            <div className="sn-monogram">S</div>
+            <div>
+              <p className="sn-name">Steve&rsquo;s Note</p>
+              <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
+            </div>
+          </div>
+          <div className="sn-rule" />
+          <div className="sn-body">
+            <p>GCash is the most widely used digital wallet in the Philippines, but foreigners often hit a wall trying to set it up. The verification process requires a Philippine mobile number and government-issued ID that most expats cannot provide. A more foreigner-friendly alternative is Maya (formerly PayMaya), which has a simpler verification process and is accepted at most of the same merchants. If GCash is important to you, some expats have had success setting it up after obtaining their ACR I-Card and a local SIM — but it is not guaranteed.</p>
+          </div>
+          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+        </div>
+      </section>
+
       {/* DAY-TO-DAY */}
       <section className="section section-light" id="daily">
         <div className="detail-inner">
