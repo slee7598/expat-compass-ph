@@ -438,7 +438,7 @@ export default function CostOfLivingPage() {
 
           <div className="ca-gold" style={{marginTop: '24px'}}>
             <p className="ca-gold-label">Beer and alcohol</p>
-            <p className="ca-gold-body">San Miguel Pale Pilsen at a sari-sari store or convenience store runs approximately 38 to 50 pesos per bottle. At a mid-range bar or restaurant expect 80 to 150 pesos per bottle. At a resort bar or upscale venue expect 150 to 300 pesos. S&amp;R offers the cheapest bulk pricing. Alcohol is cheap in the Philippines by Western standards — a significant cost factor for expats who drink regularly.</p>
+            <p className="ca-gold-body">San Miguel Pale Pilsen at a sari-sari store or convenience store runs approximately 38 to 50 pesos per bottle. At a mid-range bar or restaurant expect 80 to 150 pesos per bottle. At a resort bar or upscale venue expect 150 to 300 pesos. A 24-pack of San Miguel Pale Pilsen at S&amp;R costs 1,240 pesos — the cheapest bulk option available in Cebu. Alcohol is cheap in the Philippines by Western standards — a significant cost factor for expats who drink regularly.</p>
           </div>
 
           <p className="cb cb-light" style={{marginTop: '20px'}}>Steve&rsquo;s honest note on food: I cook every day and eat well — this is not a sacrifice. Philippine ingredients are fresh and excellent. The combination of S&amp;R grocery delivery and Irish&rsquo;s cooking means we eat better here than I did in the US, at a fraction of the cost. The one meal out per week at a nice restaurant is a genuine treat, not a budget necessity.</p>
