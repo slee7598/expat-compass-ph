@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Philippines Visa Guide for Expats 2026 — SRRV, 13A & Tourist Extensions",
+  description:
+    "Complete guide to Philippine visas for foreigners — SRRV, 13A spouse visa, tourist visa extensions, and long-stay options explained clearly with costs and timelines.",
+  alternates: { canonical: "https://expatcompassph.com/visas" },
+};
 
 const visaTypes = [
   {

@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ExchangeRate from "@/components/ExchangeRate";
+
+export const metadata: Metadata = {
+  title: "Banking in the Philippines for Foreigners 2026 — Accounts, Remittances & Digital Banking",
+  description:
+    "How to open a bank account in the Philippines as a foreigner, the best ways to send money, digital wallets, and the live USD to PHP exchange rate.",
+  alternates: { canonical: "https://expatcompassph.com/banking" },
+};
 
 const aspects = [
   {

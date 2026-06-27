@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "About Expat Compass PH — Steve Lee & Irish, Living in Cebu Philippines",
+  description:
+    "Expat Compass PH is run by Steve Lee, an American expat living in Punta Engaño, Mactan Island, Cebu, and his Filipina partner Irish. Real experience, honest guidance.",
+  alternates: { canonical: "https://expatcompassph.com/about" },
+};
 
 const story = [
   "I spent 25 years working and raising my two children — 12 of those years as a full-time single father. When you're juggling a full-time job and raising kids on your own, international travel beyond Mexico simply isn't in the cards, let alone a trip to the other side of the globe.",

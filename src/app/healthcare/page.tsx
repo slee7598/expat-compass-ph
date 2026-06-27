@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Healthcare in the Philippines for Expats — Hospitals, Insurance & Costs",
+  description:
+    "Guide to private hospitals, PhilHealth, expat health insurance, and real medical costs in the Philippines. First-hand experience from an expat living in Cebu.",
+  alternates: { canonical: "https://expatcompassph.com/healthcare" },
+};
 
 const aspects = [
   {

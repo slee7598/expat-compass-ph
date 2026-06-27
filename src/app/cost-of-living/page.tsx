@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Cost of Living in the Philippines for Expats 2026 — Realistic Monthly Budgets",
+  description:
+    "Honest, detailed cost of living breakdown for expats in the Philippines. Monthly budgets for Cebu, Manila, and provincial areas from frugal to comfortable.",
+  alternates: { canonical: "https://expatcompassph.com/cost-of-living" },
+};
 
 const categories = [
   {

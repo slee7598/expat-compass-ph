@@ -26,10 +26,24 @@ export const metadata: Metadata = {
       "Practical, first-hand guidance on visas, housing, healthcare, banking, and daily life in the Philippines for expats and foreigners.",
     url: "https://expatcompassph.com",
     siteName: "Expat Compass PH",
+    type: "website",
+    images: [
+      {
+        url: "https://expatcompassph.com/images/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Expat Compass PH",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expat Compass PH",
+    title: "Expat Compass PH — Your Guide to Living in the Philippines",
+    description:
+      "Practical, first-hand guidance on visas, housing, healthcare, banking, and daily life in the Philippines for expats and foreigners.",
+  },
+  alternates: {
+    canonical: "https://expatcompassph.com",
   },
 };
 
@@ -46,6 +60,32 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ScrollToTop />
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Expat Compass PH",
+                url: "https://expatcompassph.com",
+                description: "Practical guidance for expats living in the Philippines",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Expat Compass PH",
+                url: "https://expatcompassph.com",
+                description: "Practical guidance for expats living in the Philippines",
+                founder: {
+                  "@type": "Person",
+                  name: "Steve Lee",
+                },
+                sameAs: ["https://github.com/slee7598/expat-compass-ph"],
+              },
+            ]),
+          }}
+        />
       </body>
     </html>
   );

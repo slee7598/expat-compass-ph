@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Steve's Expat Toolkit — Products & Services I Actually Use in the Philippines",
+  description:
+    "The apps, services, and tools I personally use as an American expat living in Cebu, Philippines. VPN setup, SIM cards, streaming, insurance, and more.",
+  alternates: { canonical: "https://expatcompassph.com/steve-recommends" },
+};
 
 type RecItem = { name: string; body: string; link?: string; linkLabel?: string };
 

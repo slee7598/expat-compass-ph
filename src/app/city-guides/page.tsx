@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Best Cities in the Philippines for Expats 2026 — Where to Live Guide",
+  description:
+    "In-depth profiles of the best cities for expats in the Philippines — Cebu, Manila, Davao, Dumaguete, and more. Costs, lifestyle, healthcare, and honest assessments.",
+  alternates: { canonical: "https://expatcompassph.com/city-guides" },
+};
 
 const overview = [
   {

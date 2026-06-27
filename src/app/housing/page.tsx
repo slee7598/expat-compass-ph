@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Renting & Buying Property in the Philippines as a Foreigner — Housing Guide",
+  description:
+    "Everything foreigners need to know about renting or buying property in the Philippines. Condo ownership laws, lease agreements, deposits, and neighborhoods to know.",
+  alternates: { canonical: "https://expatcompassph.com/housing" },
+};
 
 const aspects = [
   {

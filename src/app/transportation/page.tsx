@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Getting Around the Philippines — Expat Guide to Transport 2026",
+  description:
+    "How to get around the Philippines as an expat. Grab, jeepneys, ferries, domestic flights, and practical tips for daily transport in Cebu, Manila, and beyond.",
+  alternates: { canonical: "https://expatcompassph.com/transportation" },
+};
 
 const aspects = [
   {

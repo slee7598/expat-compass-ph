@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "How to Marry a Filipino Citizen as a Foreigner — Legal Requirements Philippines",
+  description:
+    "Step-by-step guide to marrying a Filipino citizen as a foreign national. Documents required, where to file, costs, and what to expect at the Civil Registry.",
+  alternates: { canonical: "https://expatcompassph.com/marriage" },
+};
 
 const aspects = [
   {
