@@ -639,6 +639,7 @@ export default function BankingPage() {
           <div className="sn-rule" />
           <div className="sn-body">
             <p>GCash is the most widely used digital wallet in the Philippines, but foreigners often hit a wall trying to set it up. The verification process requires a Philippine mobile number and government-issued ID that most expats cannot provide. A more foreigner-friendly alternative is Maya (formerly PayMaya), which has a simpler verification process and is accepted at most of the same merchants. If GCash is important to you, some expats have had success setting it up after obtaining their ACR I-Card and a local SIM — but it is not guaranteed.</p>
+            <p>One workaround worth knowing — you can send money directly to a GCash account using Remitly, even if you cannot set up your own GCash account. The minimum transfer amount to GCash via Remitly is PHP 6,000. This is particularly useful for sending money to a Filipino partner or family member who already has GCash set up.</p>
           </div>
           <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
         </div>
