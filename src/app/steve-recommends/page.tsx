@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-type RecItem = { name: string; body: string };
+type RecItem = { name: string; body: string; link?: string; linkLabel?: string };
 
 const comms: RecItem[] = [
   {
@@ -59,6 +59,21 @@ const immigration: RecItem[] = [
   {
     name: "Bureau of Immigration — Gaisano Mall, Pasak, Lapu-Lapu City",
     body: "The Bureau of Immigration office inside Gaisano Mall in Pasak, Lapu-Lapu City is the best immigration office I have been to in the Philippines. In and out in 15 minutes. No chaos, no confusion. If you’re based on Mactan Island, this is your office. Don’t go downtown if you don’t have to.",
+  },
+];
+
+const entertainment: RecItem[] = [
+  {
+    name: "Amazon Fire TV Stick 4K",
+    body: "The Fire TV Stick 4K is how I watch all my US content here in the Philippines. Plug it into any TV with an HDMI port and you have access to Netflix, Prime Video, YouTube, and hundreds of other apps. Pair it with the GLinet VPN setup I describe above and your streaming services think you are sitting in the US. An absolute must-have for any expat.",
+    link: "https://www.amazon.com/s?k=Amazon+Firestick+4k&crid=Q20WSVAQF6X0&sprefix=amazon+firestick+4k%2Caps%2C403&linkCode=ll2&tag=expatcompassp-20&linkId=ea0a337c78a3f62afd409ac45c5aec33&language=en_US&ref_=as_li_ss_tl",
+    linkLabel: "Shop on Amazon →",
+  },
+  {
+    name: "Xtreme Player",
+    body: "Xtreme Player is the app I use to organize and stream my entire personal media library — movies, TV shows, and music — across all my devices. Clean interface, supports every format, and works great on the Fire TV Stick. If you have a media library you want to access anywhere, this is the app. Use my referral code 789011 at checkout to get started.",
+    link: "https://xtremeplayerllc.com",
+    linkLabel: "Visit Xtreme Player →",
   },
 ];
 
@@ -203,6 +218,20 @@ export default function SteveRecommendsPage() {
         }
         .rec-light .rec-item-body { color: #2A3A4A; }
         .rec-dark .rec-item-body { color: rgba(248,246,241,0.75); }
+        .rec-item-link {
+          display: inline-block;
+          margin-top: 14px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          text-decoration: none;
+          border-bottom: 1px solid rgba(201,168,76,0.3);
+          padding-bottom: 2px;
+          transition: border-color 0.2s;
+        }
+        .rec-item-link:hover { border-color: #C9A84C; }
 
         /* ── DISCLAIMER ── */
         .rec-disclaimer {
@@ -271,6 +300,11 @@ export default function SteveRecommendsPage() {
               <div key={item.name} className="rec-item">
                 <p className="rec-item-name">{item.name}</p>
                 <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -287,6 +321,11 @@ export default function SteveRecommendsPage() {
               <div key={item.name} className="rec-item">
                 <p className="rec-item-name">{item.name}</p>
                 <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -303,6 +342,11 @@ export default function SteveRecommendsPage() {
               <div key={item.name} className="rec-item">
                 <p className="rec-item-name">{item.name}</p>
                 <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -319,6 +363,11 @@ export default function SteveRecommendsPage() {
               <div key={item.name} className="rec-item">
                 <p className="rec-item-name">{item.name}</p>
                 <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -335,6 +384,32 @@ export default function SteveRecommendsPage() {
               <div key={item.name} className="rec-item">
                 <p className="rec-item-name">{item.name}</p>
                 <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ENTERTAINMENT */}
+      <section className="rec-section rec-dark">
+        <div className="rec-inner">
+          <p className="cat-label">Entertainment</p>
+          <h2 className="cat-heading">Watching what you love from home.</h2>
+          <div className="rec-items">
+            {entertainment.map((item) => (
+              <div key={item.name} className="rec-item">
+                <p className="rec-item-name">{item.name}</p>
+                <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
               </div>
             ))}
           </div>
