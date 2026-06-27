@@ -11,6 +11,8 @@ const comms: RecItem[] = [
   {
     name: "GLinet VPN Setup — The Remote Worker Hack",
     body: "I don’t use a traditional VPN app. I use a GLinet home router (the Flint 3) paired with a GLinet travel router (the Slate 7 Pro). The travel router connects back to my home router in Las Vegas, which means every device I connect to it appears to be sitting on my couch in Las Vegas — not in the Philippines. This is an absolute game-changer for remote workers. Your US banking apps, streaming services, and work systems see a US connection. No flags, no blocks, no issues. If you work remotely from the Philippines, this setup is worth every penny.",
+    link: "https://www.amazon.com/s?k=GLinet&crid=Q08TN6PS44T6&sprefix=glinet%2Caps%2C795&linkCode=ll2&tag=expatcompassp-20&linkId=22e5dc989cc69abcbc3f97d3e8ddf57f&language=en_US&ref_=as_li_ss_tl",
+    linkLabel: "Shop GLinet on Amazon →",
   },
 ];
 
