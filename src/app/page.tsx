@@ -5,6 +5,7 @@ import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import HeroRate from "@/components/HeroRate";
 
 export const metadata: Metadata = {
   title: "Expat Compass PH — Your Guide to Living in the Philippines",
@@ -498,6 +499,7 @@ export default function Home() {
         <HomeSidebar />
         <div className="hero-content">
           <p className="hero-eyebrow">Your relocation resource</p>
+          <HeroRate />
           <h1 className="hero-title">
             Living in the Philippines,<br />done properly.
           </h1>
