@@ -77,7 +77,7 @@ const topics = [
     href: "/arrival-guide",
   },
   {
-    label: "Living on Income Abroad",
+    label: "Living on Income",
     description:
       "How expats fund their life — Social Security, remote work, Digital Nomad Visa, and receiving money efficiently.",
     href: "/income-abroad",
@@ -311,26 +311,6 @@ export default function Home() {
         .topic-card-inactive:hover { background: transparent; }
         .topic-card-inactive .topic-card-label::after { display: none; }
 
-        /* ── SITE SEARCH ── */
-        .site-search-section { background: #0B1F3A; border-top: 3px solid #C9A84C; border-bottom: 1px solid rgba(201,168,76,0.15); }
-        .site-search-inner { max-width: 820px; }
-        .site-search-eyebrow {
-          display: inline-flex; align-items: center; gap: 10px;
-          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
-          color: #C9A84C; margin-bottom: 10px;
-        }
-        .site-search-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: #C9A84C; }
-        .site-search-subtitle { font-size: 0.95rem; font-weight: 300; line-height: 1.6; color: rgba(248,246,241,0.65); margin-bottom: 32px; }
-        .gcse-search { color-scheme: light; }
-        /* Override Google CSE colours to match site */
-        .gsc-control-cse { background: transparent !important; border: none !important; padding: 0 !important; }
-        .gsc-input-box { background: rgba(248,246,241,0.96) !important; border: 1px solid rgba(201,168,76,0.35) !important; border-radius: 0 !important; }
-        .gsc-search-button-v2 { background: #C9A84C !important; border-color: #C9A84C !important; border-radius: 0 !important; padding: 10px 20px !important; }
-        .gsc-search-button-v2 svg { fill: #0B1F3A !important; }
-        .gsc-results-wrapper-overlay, .gsc-results-wrapper-nooverlay { background: #F8F6F1 !important; }
-        .gs-result .gs-title, .gs-result .gs-title * { color: #0B1F3A !important; }
-        .gs-result .gs-snippet { color: #4A5868 !important; }
-
         /* ── NEWSLETTER ── */
         .newsletter-section { background: #0B1F3A; }
         .nl-wrap {
@@ -506,33 +486,33 @@ export default function Home() {
         /* ── HERO CSE BAR ── */
         .hero-cse-bar {
           position: absolute;
-          top: 20px;
-          left: 200px; /* clear the sidebar */
-          right: 0;
-          z-index: 5;
+          top: 28px;
+          left: 0; right: 0;
+          z-index: 3;
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 0 48px;
+          padding: 0 24px;
+          pointer-events: none;
         }
+        .hero-cse-bar > * { pointer-events: auto; }
+        .hero-cse-inner { width: 100%; max-width: 560px; }
         .hero-cse-label {
-          font-size: 0.65rem; font-weight: 700;
+          display: block;
+          font-size: 0.63rem; font-weight: 700;
           letter-spacing: 0.18em; text-transform: uppercase;
           color: #C9A84C;
           margin-bottom: 8px;
-          align-self: flex-start;
-          margin-left: calc(50% - 300px); /* align with box left edge */
         }
-        .hero-cse-box {
-          width: 100%;
-          max-width: 600px;
-          color-scheme: light;
-        }
-        /* Google CSE overrides inside hero */
-        .hero-cse-box .gsc-control-cse { background: transparent !important; border: none !important; padding: 0 !important; }
-        .hero-cse-box .gsc-input-box { background: rgba(248,246,241,0.95) !important; border: 1px solid rgba(201,168,76,0.4) !important; border-radius: 0 !important; }
-        .hero-cse-box .gsc-search-button-v2 { background: #C9A84C !important; border-color: #C9A84C !important; border-radius: 0 !important; padding: 9px 18px !important; }
-        .hero-cse-box .gsc-search-button-v2 svg { fill: #0B1F3A !important; }
+        .hero-cse-box { width: 100%; color-scheme: light; }
+        .gcse-search { color-scheme: light; }
+        .gsc-control-cse { background: transparent !important; border: none !important; padding: 0 !important; }
+        .gsc-input-box { background: rgba(248,246,241,0.95) !important; border: 1px solid rgba(201,168,76,0.4) !important; border-radius: 0 !important; }
+        .gsc-search-button-v2 { background: #C9A84C !important; border-color: #C9A84C !important; border-radius: 0 !important; padding: 9px 18px !important; }
+        .gsc-search-button-v2 svg { fill: #0B1F3A !important; }
+        .gsc-results-wrapper-overlay, .gsc-results-wrapper-nooverlay { background: #F8F6F1 !important; }
+        .gs-result .gs-title, .gs-result .gs-title * { color: #0B1F3A !important; }
+        .gs-result .gs-snippet { color: #4A5868 !important; }
 
         /* ── MOBILE ── */
         @media (max-width: 768px) {
@@ -541,8 +521,7 @@ export default function Home() {
           .hero-content { padding: 96px 24px 48px; }
           .hs-wrap { max-width: 100%; }
           .lsb-logo-img { width: 70px; }
-          .hero-cse-bar { left: 0; top: 68px; padding: 0 20px; }
-          .hero-cse-label { margin-left: 0; align-self: center; }
+          .hero-cse-bar { top: 72px; }
         }
         @media (max-width: 900px) {
           .section { padding: 72px 24px; }
@@ -570,9 +549,11 @@ export default function Home() {
         <div className="hero-overlay" />
         <Script src="https://cse.google.com/cse.js?cx=c5753be89f8d14ec5" strategy="lazyOnload" />
         <div className="hero-cse-bar">
-          <p className="hero-cse-label">Search Expat Compass PH</p>
-          <div className="hero-cse-box">
-            <div className="gcse-search" />
+          <div className="hero-cse-inner">
+            <span className="hero-cse-label">Search Expat Compass PH</span>
+            <div className="hero-cse-box">
+              <div className="gcse-search" />
+            </div>
           </div>
         </div>
         <HomeSidebar />
@@ -588,16 +569,6 @@ export default function Home() {
             it right.
           </p>
           <HeroSearch />
-        </div>
-      </section>
-
-      {/* SITE SEARCH */}
-      <section className="section site-search-section">
-        <Script src="https://cse.google.com/cse.js?cx=c5753be89f8d14ec5" strategy="lazyOnload" />
-        <div className="section-inner site-search-inner">
-          <p className="site-search-eyebrow">Search the Site</p>
-          <p className="site-search-subtitle">Find exactly what you are looking for on Expat Compass PH</p>
-          <div className="gcse-search" />
         </div>
       </section>
 
