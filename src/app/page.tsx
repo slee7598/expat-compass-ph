@@ -63,6 +63,24 @@ const topics = [
       "In-depth profiles of Metro Manila, Cebu, Davao, Dumaguete, and more.",
     href: "/city-guides",
   },
+  {
+    label: "Moving to the Philippines",
+    description:
+      "What to bring, what to leave behind, documents to prepare, and your first week setup checklist.",
+    href: "/moving-to-philippines",
+  },
+  {
+    label: "Arriving in the Philippines",
+    description:
+      "Step-by-step guide through immigration, customs, transport, and your first week.",
+    href: "/arrival-guide",
+  },
+  {
+    label: "Living on Income Abroad",
+    description:
+      "How expats fund their life — Social Security, remote work, Digital Nomad Visa, and receiving money efficiently.",
+    href: "/income-abroad",
+  },
 ];
 
 const pillars = [
