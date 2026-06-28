@@ -17,6 +17,9 @@ const links = [
   { label: "Dating", href: "/dating-philippines" },
   { label: "Steve's Expat Toolkit", href: "/steve-recommends" },
   { label: "About", href: "/about" },
+  { label: "Moving Guide", href: "/moving-to-philippines" },
+  { label: "Arrival Guide", href: "/arrival-guide" },
+  { label: "Income Abroad", href: "/income-abroad" },
 ];
 
 interface NavProps {

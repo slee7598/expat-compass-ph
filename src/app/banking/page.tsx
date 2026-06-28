@@ -504,6 +504,45 @@ export default function BankingPage() {
           .sn-section { padding: 56px 24px; }
         }
 
+        /* ── BROKERAGE CARDS ── */
+        .section-body { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 24px; max-width: 760px; }
+        .section-body-light { color: rgba(248,246,241,0.8); }
+        .section-sub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem,1.8vw,1.28rem); font-weight: 700; color: #0B1F3A; margin: 36px 0 12px; padding-top: 32px; border-top: 1px solid rgba(11,31,58,0.08); max-width: 760px; }
+        .section-sub-first { border-top: none; padding-top: 0; margin-top: 0; }
+        .section-sub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
+        .section-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
+        .section-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
+        .section-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
+        .section-li-light { color: rgba(248,246,241,0.78); }
+        .section-nlist { list-style: none; counter-reset: sctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+        .section-ni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: sctr; }
+        .section-ni::before { content: counter(sctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
+        .section-ni-light { color: rgba(248,246,241,0.78); }
+        .broker-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
+        .broker-card { border: 1px solid rgba(248,246,241,0.1); border-bottom: none; padding: 26px 30px; background: rgba(248,246,241,0.03); }
+        .broker-card:last-child { border-bottom: 1px solid rgba(248,246,241,0.1); }
+        .broker-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
+        .broker-name { font-family: 'Playfair Display', serif; font-size: 1.02rem; font-weight: 700; color: #F8F6F1; }
+        .broker-verdict { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; flex-shrink: 0; }
+        .broker-verdict-rec { background: rgba(39,174,96,0.12); color: #6FCF97; border: 1px solid rgba(39,174,96,0.25); }
+        .broker-verdict-caution { background: rgba(242,153,74,0.12); color: #F2994A; border: 1px solid rgba(242,153,74,0.3); }
+        .broker-verdict-risk { background: rgba(235,87,87,0.12); color: #EB5757; border: 1px solid rgba(235,87,87,0.25); }
+        .broker-verdict-alt { background: rgba(201,168,76,0.1); color: #C9A84C; border: 1px solid rgba(201,168,76,0.25); }
+        .broker-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: rgba(248,246,241,0.72); }
+        .bank-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
+        .bank-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
+        .bank-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: rgba(248,246,241,0.82); }
+        /* ── PHONE CARDS ── */
+        .phone-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
+        .phone-card { border: 1px solid #E8E4DC; border-bottom: none; padding: 26px 30px; background: #fff; }
+        .phone-card:last-child { border-bottom: 1px solid #E8E4DC; }
+        .phone-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
+        .phone-name { font-family: 'Playfair Display', serif; font-size: 1.02rem; font-weight: 700; color: #0B1F3A; }
+        .phone-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #4A5868; }
+        .phone-rec-box { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.28); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 28px 0; max-width: 760px; }
+        .phone-rec-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
+        .phone-rec-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #4A5868; }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -698,6 +737,105 @@ export default function BankingPage() {
             <p>For sending money to someone&rsquo;s GCash or local bank account — paying rent, for example — I use Remitly. It transfers directly from your foreign bank account and the fees are minimal. That&rsquo;s how I pay my rent every month.</p>
           </div>
           <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+        </div>
+      </section>
+
+      {/* US INVESTMENT PORTFOLIO */}
+      <section className="section section-dark" id="investment-portfolio">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">US Investment Accounts</p>
+          <h2 className="section-heading section-heading-light">Managing Your US Investment Portfolio from the Philippines</h2>
+          <p className="section-body section-body-light">One of the most important and least discussed topics for American expats is what happens to your US brokerage and investment accounts when you move abroad permanently. The answer varies dramatically by institution and getting this wrong can result in your account being closed without warning.</p>
+
+          <div className="broker-grid">
+            <div className="broker-card">
+              <div className="broker-header">
+                <span className="broker-name">Interactive Brokers (IBKR)</span>
+                <span className="broker-verdict broker-verdict-caution">Use With VPN — 2026 Caveat</span>
+              </div>
+              <p className="broker-body">The most widely recommended brokerage for expats in the Philippines — accepts clients with Philippine addresses and provides access to 150+ global markets. However there is an important 2026 development: the Philippine Securities and Exchange Commission issued a public advisory against Interactive Brokers for operating without a domestic license, and major Philippine ISPs currently block browser access to the main IBKR website. The broker itself has not blacklisted Philippine residents — the mobile app remains fully functional for trading and funding, and existing users can manage portfolios via the mobile app or by routing browser traffic through a VPN. For expats already using IBKR this is manageable. For new accounts verify current status directly with IBKR before opening.</p>
+            </div>
+            <div className="broker-card">
+              <div className="broker-header">
+                <span className="broker-name">Charles Schwab International</span>
+                <span className="broker-verdict broker-verdict-rec">Recommended — Verify Account Type</span>
+              </div>
+              <p className="broker-body">Schwab International accounts are specifically designed for Americans living abroad. No foreign transaction fees on the checking account and ATM fee reimbursement worldwide — making it the most popular choice for daily banking among long-term expats. However Schwab has become increasingly restrictive with Philippine addresses in recent years with some expats reporting account restrictions when updating to a Philippine address. Verify your specific account type will remain active before moving. Schwab checking remains highly recommended regardless — it is the best debit card for international ATM use available to Americans.</p>
+            </div>
+            <div className="broker-card">
+              <div className="broker-header">
+                <span className="broker-name">Fidelity</span>
+                <span className="broker-verdict broker-verdict-caution">Verify Before Moving</span>
+              </div>
+              <p className="broker-body">Generally expat-friendly but has been closing accounts of customers who update to foreign addresses in some cases. Contact Fidelity before moving to verify your account will remain active with a Philippine address.</p>
+            </div>
+            <div className="broker-card">
+              <div className="broker-header">
+                <span className="broker-name">Vanguard</span>
+                <span className="broker-verdict broker-verdict-risk">Transfer Assets Before Moving</span>
+              </div>
+              <p className="broker-body">Has a documented history of closing accounts when customers update to foreign addresses. If you hold Vanguard accounts transfer assets to IBKR or another expat-friendly brokerage before updating your address. Do not update your address with Vanguard until assets have been transferred.</p>
+            </div>
+            <div className="broker-card">
+              <div className="broker-header">
+                <span className="broker-name">TradeStation</span>
+                <span className="broker-verdict broker-verdict-alt">Alternative Worth Considering</span>
+              </div>
+              <p className="broker-body">Accepts Philippine-resident accounts. An alternative worth considering alongside IBKR.</p>
+            </div>
+          </div>
+
+          <h3 className="section-sub section-sub-light">Moving Accounts — ACAT Transfers</h3>
+          <p className="section-body section-body-light">If you need to move accounts between brokerages use an ACAT transfer to move assets in-kind. This avoids selling positions and triggering taxable events. Initiate the transfer from the receiving institution. Typically takes 3 to 7 business days.</p>
+
+          <h3 className="section-sub section-sub-light">FBAR Reminder</h3>
+          <p className="section-body section-body-light">Foreign bank accounts including Philippine bank accounts must be reported if the total exceeds $10,000 at any point during the year. File FinCEN Form 114 by April 15. US brokerage accounts are not foreign accounts and do not count toward FBAR. Philippine bank accounts do.</p>
+
+          <div className="bank-alert">
+            <p className="bank-alert-label">Policy Verification — June 2026</p>
+            <p className="bank-alert-body">Brokerage policies for international clients change frequently. Always verify directly with your brokerage before moving abroad. This information reflects conditions as of June 2026.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* US PHONE NUMBER */}
+      <section className="section section-light" id="us-phone">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">Keeping Your US Number</p>
+          <h2 className="section-heading">Keeping Your US Phone Number — Critical for Banking OTP and Social Security</h2>
+          <p className="section-body">Every American expat discovers this problem within weeks of moving to the Philippines — US banks, brokerages, Social Security accounts, and countless other services require one-time passwords sent to a US phone number. If you cancelled your US number before leaving you may be locked out of critical accounts.</p>
+
+          <div className="phone-grid">
+            <div className="phone-card">
+              <div className="phone-header">
+                <span className="phone-name">Mint Mobile with WiFi Calling</span>
+              </div>
+              <p className="phone-body">Most practical option for permanent expats. Enable WiFi Calling on your phone before leaving the US. Once enabled calls and texts to your Mint Mobile US number work over any WiFi or internet connection including your PLDT fiber in the Philippines. Monthly cost approximately $15 to $17 USD. This is what expats in Cebu are actively using for bank OTP and authentication. <strong>Important:</strong> Enable WiFi Calling while still in the US — it cannot be enabled from abroad. Some banks and financial institutions are beginning to block WiFi-calling numbers for OTP — test your critical accounts before your trip.</p>
+            </div>
+            <div className="phone-card">
+              <div className="phone-header">
+                <span className="phone-name">Google Fi</span>
+              </div>
+              <p className="phone-body">Works in the Philippines for short to medium stays but has a critical limitation for permanent expats. Google Fi requires you to use the service primarily in the United States. After extended international use Google Fi suspends your international data and requires you to return to the US and use significant data domestically for at least 30 days before restoring international access. Google Fi is designed for travelers not permanent expats. It works well for keeping a US number during extended stays if you return to the US periodically but is not reliable as a permanent expat solution if you never return to the US.</p>
+            </div>
+            <div className="phone-card">
+              <div className="phone-header">
+                <span className="phone-name">Google Voice</span>
+              </div>
+              <p className="phone-body">Free US phone number that receives calls and texts via internet. Works from the Philippines at no cost. Most popular free option among expats. However a growing number of banks and financial institutions block Google Voice and other VOIP numbers for OTP verification. Do not rely on Google Voice as your sole US number for critical banking and government account access. Works well as a backup or for general communication.</p>
+            </div>
+            <div className="phone-card">
+              <div className="phone-header">
+                <span className="phone-name">Traveling Mailbox</span>
+              </div>
+              <p className="phone-body">Not a phone solution but pairs with the above. Provides a real US street address for mail forwarding, scanning, and receiving official correspondence. Cost $15 to $30 per month. Essential for expats who need a US address for SSA, IRS, and financial institutions.</p>
+            </div>
+          </div>
+
+          <div className="phone-rec-box">
+            <p className="phone-rec-label">Recommended Setup</p>
+            <p className="phone-rec-body">Mint Mobile with WiFi Calling enabled before departure as your primary US number plus Traveling Mailbox for your US address. This combination handles virtually every US institution requirement from the Philippines.</p>
+          </div>
         </div>
       </section>
 

@@ -495,6 +495,20 @@ export default function TransportationPage() {
           .sn-section { padding: 56px 24px; }
         }
 
+        /* ── LTO SECTION ── */
+        .lto-body { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
+        .lto-sub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem,1.8vw,1.28rem); font-weight: 700; color: #0B1F3A; margin: 36px 0 12px; padding-top: 32px; border-top: 1px solid rgba(11,31,58,0.08); max-width: 760px; }
+        .lto-sub-first { border-top: none; padding-top: 0; margin-top: 0; }
+        .lto-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
+        .lto-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
+        .lto-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
+        .lto-nlist { list-style: none; counter-reset: ltoctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+        .lto-ni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: ltoctr; }
+        .lto-ni::before { content: counter(ltoctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
+        .lto-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
+        .lto-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
+        .lto-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #4A5868; }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -667,6 +681,51 @@ export default function TransportationPage() {
             <p>One tip worth knowing: Maxim is typically about half the price of Grab. That said, Grab tends to be more available and more reliable during busy periods. My approach — use Maxim when I&rsquo;m not in a rush, use Grab when I need to be somewhere on time.</p>
           </div>
           <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+        </div>
+      </section>
+
+      {/* LTO LICENSE CONVERSION */}
+      <section className="section section-light" id="lto-conversion">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">Driver License</p>
+          <h2 className="section-heading">Converting Your Foreign Driver License to a Philippine License</h2>
+          <p className="lto-body">Foreigners can drive in the Philippines on a valid foreign driver license for 90 days from their date of arrival. After 90 days, driving on a foreign license is illegal. Most long-term expats convert their foreign license to a Philippine license through the Land Transportation Office (LTO).</p>
+
+          <div className="lto-alert">
+            <p className="lto-alert-label">Key Fact — Convert Before Your License Expires</p>
+            <p className="lto-alert-body">If your foreign license is currently valid at the time of conversion, no written or practical driving exam is required — the conversion is treated as an administrative process. If your foreign license has expired, you are treated as a new applicant and must pass both the theoretical exam and the practical driving test. Convert before your license expires to avoid the exam requirement.</p>
+          </div>
+
+          <h3 className="lto-sub lto-sub-first">Required Documents</h3>
+          <ul className="lto-list">
+            <li className="lto-li">Valid foreign driver license — original and one photocopy. If not in English, an official English translation from your embassy is required.</li>
+            <li className="lto-li">Passport — original and photocopy of bio page, valid visa, and latest arrival stamp.</li>
+            <li className="lto-li">Medical certificate from an LTO-accredited clinic — approximately 200 to 500 pesos for basic vision and physical fitness examination.</li>
+            <li className="lto-li">Accomplished Application for Permits and Licenses (APL) form — available at the LTO office.</li>
+            <li className="lto-li">ACR I-Card if you hold one — some LTO branches require this as proof of long-stay status.</li>
+          </ul>
+
+          <h3 className="lto-sub">LTO Conversion Process</h3>
+          <ol className="lto-nlist">
+            <li className="lto-ni">Go to a major LTO Licensing Center — not all branches process foreign license conversions.</li>
+            <li className="lto-ni">Get a queue number and checklist at the customer service counter.</li>
+            <li className="lto-ni">Complete the APL application form.</li>
+            <li className="lto-ni">Submit documents at the evaluator counter.</li>
+            <li className="lto-ni">Undergo biometrics — photo, digital signature, and fingerprints.</li>
+            <li className="lto-ni">Pay fees — 585 pesos for Non-Professional license.</li>
+            <li className="lto-ni">Processing takes approximately 30 days and some offices require you to return to collect the physical card.</li>
+          </ol>
+
+          <h3 className="lto-sub">Practical Tips</h3>
+          <ul className="lto-list">
+            <li className="lto-li">Bring at least 5 photocopies of every document.</li>
+            <li className="lto-li">Arrive early.</li>
+            <li className="lto-li">Avoid fixers — people outside LTO offices offering to speed up your application for a fee are operating illegally.</li>
+            <li className="lto-li">The Lapu-Lapu City LTO serves Mactan Island residents.</li>
+          </ul>
+
+          <h3 className="lto-sub">Motorcycle Note</h3>
+          <p className="lto-body">A standard car license conversion covers passenger vehicles. If you want to ride a motorcycle or scooter, confirm requirements at your specific LTO branch as this may require additional steps.</p>
         </div>
       </section>
 

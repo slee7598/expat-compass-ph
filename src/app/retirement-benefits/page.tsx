@@ -438,6 +438,86 @@ export default function RetirementBenefitsPage() {
         </div>
       </section>
 
+      {/* WEP AND GPO */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <p className="section-label">2025 Law Change</p>
+          <h2 className="section-heading">WEP and GPO Elimination — Critical Update for Teachers and Government Workers</h2>
+          <p className="rb-body">If you worked as a teacher, firefighter, police officer, or other government employee in a job that did not pay into Social Security, the Social Security Fairness Act signed into law in January 2025 fundamentally changed your benefit calculation.</p>
+
+          <div className="rb-alert">
+            <p className="rb-alert-label">2025 Law Change — Social Security Fairness Act</p>
+            <p className="rb-alert-body-dark">The Social Security Fairness Act was signed into law in January 2025 eliminating both the Windfall Elimination Provision (WEP) and the Government Pension Offset (GPO). If you were previously subject to WEP or GPO reductions to your Social Security benefit, those reductions have been eliminated and your benefit should now be calculated at full value. Contact SSA immediately to verify your updated benefit amount — many public sector retirees are now receiving higher payments and may be owed retroactive adjustments.</p>
+          </div>
+
+          <h3 className="rb-sub rb-sub-first">Who Was Affected by WEP</h3>
+          <ul className="rb-list">
+            <li className="rb-li">Teachers in states where teachers do not pay into Social Security — including California (CalSTRS), Texas (TRS), Illinois (TRS), Ohio (STRS), Massachusetts (MTRS), Louisiana, and others.</li>
+            <li className="rb-li">Firefighters and police officers in many municipalities.</li>
+            <li className="rb-li">Federal employees hired before 1984 under the Civil Service Retirement System.</li>
+          </ul>
+
+          <h3 className="rb-sub">What to Do Now</h3>
+          <p className="rb-body">If you were previously affected by WEP or GPO reductions, contact SSA through the Federal Benefits Unit at the US Embassy Manila at <strong>manila.fbu@ssa.gov</strong> or through ssa.gov to verify your updated benefit. Retroactive payments from January 2025 may apply to some recipients.</p>
+
+          <h3 className="rb-sub">CalSTRS and CalPERS Note</h3>
+          <p className="rb-body">California teacher and public employee retirement systems continue paying benefits regardless of where you live. If you receive retiree health coverage through CalPERS, verify whether your specific plan provides coverage internationally before moving. Contact CalPERS directly at calpers.ca.gov before making your move.</p>
+        </div>
+      </section>
+
+      {/* CANADIAN EXPATS */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <p className="section-label">Canadian Expats</p>
+          <h2 className="section-heading section-heading-light">Canadian Expats — Your Provincial Health Coverage Has a Deadline</h2>
+          <p className="rb-body rb-body-light">Canadian expats face a healthcare coverage cliff that catches many people by surprise. Unlike US Medicare which you keep regardless of where you live, Canadian provincial health insurance has residency requirements. Moving to the Philippines permanently means losing it.</p>
+
+          <h3 className="rb-sub rb-sub-first rb-sub-light">Provincial Coverage Timelines</h3>
+          <div className="vtable-wrap" style={{maxWidth: '600px', margin: '20px 0 28px'}}>
+            <table style={{width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem'}}>
+              <thead>
+                <tr>
+                  <th style={{background: 'rgba(201,168,76,0.12)', color: 'rgba(248,246,241,0.5)', fontFamily: "'Inter', sans-serif", fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '13px 18px', textAlign: 'left'}}>Province</th>
+                  <th style={{background: 'rgba(201,168,76,0.12)', color: 'rgba(248,246,241,0.5)', fontFamily: "'Inter', sans-serif", fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '13px 18px', textAlign: 'left'}}>Coverage Lapses After</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>British Columbia</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>7 months</td></tr>
+                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>Ontario</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>212 days (~7 months)</td></tr>
+                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>Alberta</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>6 months</td></tr>
+                <tr><td style={{padding: '12px 18px', fontWeight: 600, color: '#F8F6F1'}}>Quebec</td><td style={{padding: '12px 18px', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>Contact RAMQ directly — rules differ</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="rb-sub rb-sub-light">What to Do</h3>
+          <p className="rb-body rb-body-light">Purchase international health insurance before your provincial coverage lapses. Do not wait until your coverage ends. Cigna Global, Pacific Cross, and AXA are most recommended among Canadian expats in the Philippines. Pacific Cross has particularly strong Asia-Pacific coverage and is popular with Canadians. Budget $200 to $600 USD per month depending on age and coverage level.</p>
+
+          <h3 className="rb-sub rb-sub-light">CPP and OAS Abroad</h3>
+          <p className="rb-body rb-body-light">Canada Pension Plan and Old Age Security payments continue regardless of where you live. Canada has a tax treaty with the Philippines. Non-resident withholding tax on CPP and OAS is 25 percent unless you qualify for reduced treaty rates. Consult a Canadian expat tax specialist before moving.</p>
+        </div>
+      </section>
+
+      {/* SSA-7162 */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <p className="section-label">Philippines-Based Recipients</p>
+          <h2 className="section-heading">The SSA-7162 Questionnaire — What Philippines-Based Recipients Must Know</h2>
+          <p className="rb-body">If you receive Social Security benefits while living in the Philippines, SSA will periodically send you Form SSA-7162 — the Questionnaire for United States Benefits Recipients Outside the United States. This form confirms you are still alive, still eligible, and still residing at your reported address.</p>
+
+          <div className="rb-warning">
+            <p className="rb-warning-label">⚠ Do Not Ignore This Form</p>
+            <p className="rb-warning-body">SSA will suspend your benefit payments if you do not respond. Reinstatement requires contacting the Federal Benefits Unit and completing additional verification.</p>
+          </div>
+
+          <h3 className="rb-sub rb-sub-first">How to Handle It From the Philippines</h3>
+          <p className="rb-body">The Federal Benefits Unit at the US Embassy Manila handles Social Security for Philippines-based recipients. Contact them at <strong>manila.fbu@ssa.gov</strong>. Ask whether scanned email submission of the completed form is accepted — this can save significant time and international postage. If mailing, use registered mail with tracking and keep a copy of the completed form.</p>
+
+          <h3 className="rb-sub">If You Did Not Receive Your Form</h3>
+          <p className="rb-body">Download Form SSA-7162 from ssa.gov, complete it, and submit to the Federal Benefits Unit. Do not wait for a replacement to arrive by international mail — Philippine mail delivery is unreliable and delays can result in suspended payments.</p>
+        </div>
+      </section>
+
       {/* STEVE'S NOTE */}
       <section className="sn-section">
         <div className="sn-inner">

@@ -634,6 +634,77 @@ export default function VisasPage() {
         </div>
       </section>
 
+      {/* ── CRIMINAL RECORDS ── */}
+      <section className="section section-light" id="criminal-records">
+        <div className="section-inner">
+          <p className="section-label">Admissibility</p>
+          <h2 className="section-heading">Criminal Records and Philippine Visa Admissibility</h2>
+          <p className="vb">A criminal record does not automatically bar you from living in the Philippines, but certain offenses receive significant scrutiny and some may result in denial of entry or visa refusal.</p>
+
+          <h3 className="vsub vsub-first">What Philippine Immigration Checks</h3>
+          <ul className="vlist">
+            <li className="vli">All long-stay visa applicants must provide an NBI clearance if they have been in the Philippines for more than 6 months.</li>
+            <li className="vli">An apostilled police clearance certificate from their home country.</li>
+            <li className="vli">Police clearance from every country where they have lived for 12 months or more.</li>
+          </ul>
+
+          <h3 className="vsub">Drug Offenses — Highest Scrutiny</h3>
+          <div className="va-warning">
+            <p className="va-warning-label">⚠ Drug Offenses — Consult an Attorney</p>
+            <p className="va-warning-body">The Philippines takes drug-related offenses extremely seriously. Any conviction related to drug possession, trafficking, or supply — regardless of how long ago or whether the sentence was suspended — will receive heavy scrutiny from Philippine immigration. Suspended sentences, spent convictions, and expunged records in your home country do not automatically resolve the issue in Philippine immigration proceedings. Consult a licensed Philippine immigration attorney before applying for any long-stay visa if you have any drug-related record. Do not attempt to conceal drug offenses — concealment is treated far more seriously than disclosure.</p>
+          </div>
+
+          <h3 className="vsub">Violent Offenses</h3>
+          <p className="vb">Assault, domestic violence, and similar convictions raise concerns particularly given Philippine laws like RA 9262. Disclose fully and consult an attorney. Each case is evaluated individually.</p>
+
+          <h3 className="vsub">Fraud and Financial Crimes</h3>
+          <p className="vb">Generally less problematic than drug or violent offenses but still require honest disclosure.</p>
+
+          <h3 className="vsub">Minor Offenses</h3>
+          <p className="vb">Minor traffic violations, small misdemeanors resulting in fines only, and offenses from decades ago are typically not problematic. Disclose honestly and let the process work.</p>
+
+          <div className="va-amber">
+            <p className="va-amber-label">Spent Convictions — Important Note</p>
+            <p className="va-amber-body">The Philippines does not automatically recognize spent conviction legislation from other countries. Confirm with a licensed Philippine immigration attorney before assuming your spent record is irrelevant.</p>
+          </div>
+
+          <div className="va-gold">
+            <p className="va-gold-label">The Universal Rule</p>
+            <p className="va-gold-body">Always disclose honestly. Misrepresentation on immigration documents is grounds for permanent exclusion. With honest disclosure and proper legal guidance, many people with historic records successfully obtain Philippine visas.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── RA 9225 ── */}
+      <section className="section section-dark" id="ra9225">
+        <div className="section-inner">
+          <p className="section-label">Dual Citizenship</p>
+          <h2 className="section-heading section-heading-light">RA 9225 — Reclaiming Philippine Citizenship for Former Filipinos</h2>
+          <p className="vb vb-light">Republic Act 9225, the Citizenship Retention and Re-acquisition Act of 2003, allows natural-born Filipino citizens who became naturalized citizens of another country to reclaim their Philippine citizenship. Application fee is $50 USD. Processing typically takes 2 to 6 weeks depending on the embassy — some offer same-day oath-taking.</p>
+
+          <h3 className="vsub vsub-first vsub-light">Who Qualifies</h3>
+          <p className="vb vb-light">Natural-born Filipino citizens who lost Philippine citizenship through naturalization in another country. Does NOT apply to people who were never Filipino citizens or those born as dual citizens.</p>
+
+          <h3 className="vsub vsub-light">Benefits</h3>
+          <ul className="vlist">
+            <li className="vli vli-light">Full Philippine citizenship alongside your foreign citizenship — you do not give up your American, Canadian, or other citizenship.</li>
+            <li className="vli vli-light">Right to own land in the Philippines — the single most significant practical benefit, since foreigners are prohibited from land ownership.</li>
+            <li className="vli vli-light">Right to live and work in the Philippines without any visa requirements.</li>
+            <li className="vli vli-light">Access to PhilHealth and SSS as a citizen.</li>
+            <li className="vli vli-light">Ability to apply for a Philippine passport.</li>
+            <li className="vli vli-light">Derivative citizenship — unmarried children under 18 can be included for approximately $25 per child additional fee.</li>
+          </ul>
+
+          <h3 className="vsub vsub-light">How to Apply</h3>
+          <p className="vb vb-light">Apply at the nearest Philippine Embassy or Consulate in your country of residence. Required documents: PSA birth certificate on security paper, foreign naturalization certificate, valid foreign passport, and two 2x2 passport photos with white background. Personal appearance is required for the Oath of Allegiance before a Philippine Consular Officer. After approval you receive an Identification Certificate confirming Philippine citizenship.</p>
+
+          <div className="va-gold">
+            <p className="va-gold-label">Planning Note — Start Early</p>
+            <p className="va-gold-body-light">The PSA birth certificate is the most common delay. Request it through PSA Serbilis or your nearest Philippine Embassy well in advance — it can take weeks to months to arrive. Start the RA 9225 process while still in your home country if possible.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ── DISCLAIMER ── */}
       <section className="legal-section">
         <div className="legal-inner">
