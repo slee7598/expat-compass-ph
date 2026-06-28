@@ -88,7 +88,7 @@ export default function HousingPage() {
         .area-card-featured { border: 1px solid rgba(201,168,76,0.4); margin-bottom: 0; }
         .area-card-featured-head { background: #C9A84C; padding: 14px 24px; }
         .area-card-featured-eyebrow { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #0B1F3A; }
-        .area-card-featured-body { background: rgba(201,168,76,0.05); padding: 24px 28px; }
+        .area-card-featured-body { background: #fff; padding: 24px 28px; }
 
         .area-card { border: 1px solid rgba(11,31,58,0.08); border-top: none; }
         .area-card-head { background: #0B1F3A; padding: 14px 24px; }
