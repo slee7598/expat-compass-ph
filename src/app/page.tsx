@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
@@ -310,6 +311,26 @@ export default function Home() {
         .topic-card-inactive:hover { background: transparent; }
         .topic-card-inactive .topic-card-label::after { display: none; }
 
+        /* ── SITE SEARCH ── */
+        .site-search-section { background: #0B1F3A; border-top: 3px solid #C9A84C; border-bottom: 1px solid rgba(201,168,76,0.15); }
+        .site-search-inner { max-width: 820px; }
+        .site-search-eyebrow {
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 10px;
+        }
+        .site-search-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: #C9A84C; }
+        .site-search-subtitle { font-size: 0.95rem; font-weight: 300; line-height: 1.6; color: rgba(248,246,241,0.65); margin-bottom: 32px; }
+        .gcse-search { color-scheme: light; }
+        /* Override Google CSE colours to match site */
+        .gsc-control-cse { background: transparent !important; border: none !important; padding: 0 !important; }
+        .gsc-input-box { background: rgba(248,246,241,0.96) !important; border: 1px solid rgba(201,168,76,0.35) !important; border-radius: 0 !important; }
+        .gsc-search-button-v2 { background: #C9A84C !important; border-color: #C9A84C !important; border-radius: 0 !important; padding: 10px 20px !important; }
+        .gsc-search-button-v2 svg { fill: #0B1F3A !important; }
+        .gsc-results-wrapper-overlay, .gsc-results-wrapper-nooverlay { background: #F8F6F1 !important; }
+        .gs-result .gs-title, .gs-result .gs-title * { color: #0B1F3A !important; }
+        .gs-result .gs-snippet { color: #4A5868 !important; }
+
         /* ── NEWSLETTER ── */
         .newsletter-section { background: #0B1F3A; }
         .nl-wrap {
@@ -527,6 +548,16 @@ export default function Home() {
             it right.
           </p>
           <HeroSearch />
+        </div>
+      </section>
+
+      {/* SITE SEARCH */}
+      <section className="section site-search-section">
+        <Script src="https://cse.google.com/cse.js?cx=c5753be89f8d14ec5" strategy="lazyOnload" />
+        <div className="section-inner site-search-inner">
+          <p className="site-search-eyebrow">Search the Site</p>
+          <p className="site-search-subtitle">Find exactly what you are looking for on Expat Compass PH</p>
+          <div className="gcse-search" />
         </div>
       </section>
 
