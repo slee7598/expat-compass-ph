@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import HomeSidebar from "@/components/HomeSidebar";
 import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
@@ -483,37 +482,6 @@ export default function Home() {
           background: rgba(0,0,0,0.45);
         }
 
-        /* ── HERO CSE BAR ── */
-        .hero-cse-bar {
-          position: absolute;
-          top: 28px;
-          left: 0; right: 0;
-          z-index: 3;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 0 24px;
-          pointer-events: none;
-        }
-        .hero-cse-bar > * { pointer-events: auto; }
-        .hero-cse-inner { width: 100%; max-width: 560px; }
-        .hero-cse-label {
-          display: block;
-          font-size: 0.63rem; font-weight: 700;
-          letter-spacing: 0.18em; text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 8px;
-        }
-        .hero-cse-box { width: 100%; color-scheme: light; }
-        .gcse-search { color-scheme: light; }
-        .gsc-control-cse { background: transparent !important; border: none !important; padding: 0 !important; }
-        .gsc-input-box { background: rgba(248,246,241,0.95) !important; border: 1px solid rgba(201,168,76,0.4) !important; border-radius: 0 !important; }
-        .gsc-search-button-v2 { background: #C9A84C !important; border-color: #C9A84C !important; border-radius: 0 !important; padding: 9px 18px !important; }
-        .gsc-search-button-v2 svg { fill: #0B1F3A !important; }
-        .gsc-results-wrapper-overlay, .gsc-results-wrapper-nooverlay { background: #F8F6F1 !important; }
-        .gs-result .gs-title, .gs-result .gs-title * { color: #0B1F3A !important; }
-        .gs-result .gs-snippet { color: #4A5868 !important; }
-
         /* ── MOBILE ── */
         @media (max-width: 768px) {
           .lsb { display: none; }
@@ -521,7 +489,6 @@ export default function Home() {
           .hero-content { padding: 96px 24px 48px; }
           .hs-wrap { max-width: 100%; }
           .lsb-logo-img { width: 70px; }
-          .hero-cse-bar { top: 72px; }
         }
         @media (max-width: 900px) {
           .section { padding: 72px 24px; }
@@ -547,15 +514,6 @@ export default function Home() {
           className="hero-img"
         />
         <div className="hero-overlay" />
-        <Script src="https://cse.google.com/cse.js?cx=c5753be89f8d14ec5" strategy="lazyOnload" />
-        <div className="hero-cse-bar">
-          <div className="hero-cse-inner">
-            <span className="hero-cse-label">Search Expat Compass PH</span>
-            <div className="hero-cse-box">
-              <div className="gcse-search" />
-            </div>
-          </div>
-        </div>
         <HomeSidebar />
         <div className="hero-content">
           <p className="hero-eyebrow">Your relocation resource</p>
