@@ -5,180 +5,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Best Cities in the Philippines for Expats 2026 — Where to Live Guide",
   description:
-    "In-depth profiles of the best cities for expats in the Philippines — Cebu, Manila, Davao, Dumaguete, and more. Costs, lifestyle, healthcare, and honest assessments.",
+    "In-depth honest profiles of the best cities for expats in the Philippines — Cebu and Mactan, Manila and BGC, Dumaguete, Davao, Iloilo, and Baguio. Costs, lifestyle, healthcare, and who each city suits.",
   alternates: { canonical: "https://expatcompassph.com/city-guides" },
 };
-
-const overview = [
-  {
-    label: "Metro Manila",
-    subtitle: "The capital region",
-    description:
-      "The most international city in the Philippines — the best hospitals, dining, and career opportunities, alongside the worst traffic and the highest cost of living.",
-    href: "#manila",
-  },
-  {
-    label: "Cebu City",
-    subtitle: "The Queen City of the South",
-    description:
-      "A genuine alternative to Manila: international airport, strong expat community, beach access from the city, and costs 25–40% lower than the capital.",
-    href: "#cebu",
-  },
-  {
-    label: "Davao City",
-    subtitle: "Mindanao's safe hub",
-    description:
-      "One of Southeast Asia's largest cities by land area. Consistently ranked among the safest cities in the Philippines, affordable, and refreshingly free of Manila-scale traffic.",
-    href: "#davao",
-  },
-  {
-    label: "Smaller Cities",
-    subtitle: "Dumaguete, Baguio, Iloilo & more",
-    description:
-      "Provincial cities with established expat communities, dramatically lower costs, and a slower pace — often the right choice for retirees and remote workers.",
-    href: "#smaller",
-  },
-];
-
-const manila = [
-  {
-    label: "Character",
-    body: "Metro Manila is a sprawling megalopolis of 23 million people across 17 cities and municipalities. It is the Philippines in concentrated form: chaotic, vibrant, expensive by local standards, and genuinely world-class in pockets. The gap between a well-chosen neighbourhood and a poorly chosen one is larger here than anywhere else in the country.",
-  },
-  {
-    label: "BGC",
-    body: "Bonifacio Global City in Taguig is the top choice for most arriving expats. It is the most planned, cleanest, and safest district in Metro Manila — walkable, well-lit, with underground utilities, wide pavements, and a concentration of international restaurants, gyms, malls, and co-working spaces. It is also the most expensive. A 1-bedroom condo runs PHP 35,000–80,000 per month.",
-  },
-  {
-    label: "Makati & Rockwell",
-    body: "Makati's CBD and Salcedo/Legazpi Village are the established expat hub — denser and more urban than BGC, with a livelier street scene. Rockwell Center in Makati is a smaller, quieter enclave popular with professionals and retirees. Rents are broadly similar to BGC. Both areas have excellent restaurant and bar scenes and are well-served by taxis and Grab.",
-  },
-  {
-    label: "Ortigas & QC",
-    body: "Ortigas Center (Mandaluyong/Pasig) is a major business district with lower rents than Makati or BGC — PHP 20,000–40,000 for a 1-bedroom — and good mall infrastructure. Quezon City is the largest city in Metro Manila by population; it offers a more local feel, lower costs, proximity to the University of the Philippines, and a growing arts and food scene. Less polished than the south, but significantly cheaper.",
-  },
-  {
-    label: "Healthcare",
-    body: "Metro Manila has the best hospitals in the Philippines. St. Luke's (BGC and QC), Makati Medical Center, Asian Hospital (Muntinlupa), The Medical City (Pasig), and Cardinal Santos (San Juan) are all within 30–45 minutes of most expat neighbourhoods in normal traffic. A serious medical situation is as well-managed here as in most developed countries.",
-  },
-  {
-    label: "Getting around",
-    body: "Traffic on EDSA and connecting roads is severe during weekday peak hours and gets worse in rain. Grab and Maxim are the practical day-to-day solution for most expats. The LRT and MRT rail lines skip the traffic entirely and are fast outside rush hours. Many BGC and Makati residents walk within their own neighbourhood and Grab everywhere else. Owning a car in Metro Manila is a lifestyle choice, not a necessity.",
-  },
-  {
-    label: "Best for",
-    body: "Professionals working locally or regionally, expats who want maximum international amenity, people who need access to specialist healthcare, and anyone whose work or social life is centred on the capital. Less suited to those seeking a relaxed pace, a lower budget, or proximity to nature.",
-  },
-];
-
-const cebu = [
-  {
-    label: "Character",
-    body: "Cebu City and the surrounding Metro Cebu is a genuine second city — not a smaller copy of Manila, but a distinct urban centre with its own culture, food scene, and rhythm. It sits at the heart of the Visayas, offers some of the best diving in the world within an hour's reach, and is far more manageable than the capital while still offering most of what expats need.",
-  },
-  {
-    label: "IT Park & Lahug",
-    body: "Cebu IT Park in Lahug is the city's primary expat and professional hub — a compact, walkable business and lifestyle district with international restaurants, gyms, co-working spaces, and consistent 24-hour energy. Rents for a 1-bedroom condo: PHP 18,000–40,000. Immediately north of IT Park, Lahug and Nivel Hills are quieter residential areas popular with longer-term expats.",
-  },
-  {
-    label: "Mactan Island",
-    body: "Mactan is connected to mainland Cebu by two bridges and sits next to the international airport. It hosts most of Cebu's beach resorts and has a significant population of retiree expats who prioritise beach proximity over city access. Lapu-Lapu City on Mactan is less urban than Cebu proper, quieter, and slightly lower cost. The trade-off is a longer commute to city amenities.",
-  },
-  {
-    label: "Typical rent",
-    body: "A furnished 1-bedroom condo in a modern building in IT Park or the Ayala area: PHP 18,000–38,000 per month. A similar unit in a mid-tier building in Lahug or Mandaue: PHP 12,000–22,000. Mactan beachfront properties with resort amenities: PHP 25,000–55,000. All figures are significantly below comparable Manila districts.",
-  },
-  {
-    label: "Healthcare",
-    body: "Chong Hua Hospital and Cebu Doctors' University Hospital are the main referral centres for serious cases in the Visayas. Both are well-equipped and competent for most conditions. For highly complex procedures, some patients prefer to travel to Manila — a one-hour flight. Routine care, specialist consultations, and dental work are well-served in Cebu.",
-  },
-  {
-    label: "Getting there",
-    body: "Mactan-Cebu International Airport has direct flights to Manila (multiple daily, 1 hour 10 minutes), and direct international connections to Hong Kong, Singapore, Doha, Tokyo, Seoul, Osaka, and other Asian hubs. It is the best-connected airport in the Philippines outside Manila — a significant practical advantage for expats who travel frequently.",
-  },
-  {
-    label: "Best for",
-    body: "Remote workers and digital nomads, retirees who want beach access without full provincial isolation, those priced out of Manila who still want a genuine city, and divers or outdoor enthusiasts. Cebu is the most well-rounded choice for most expats who do not have a specific reason to be in Manila.",
-  },
-];
-
-const davao = [
-  {
-    label: "Character",
-    body: "Davao City is one of Southeast Asia's largest cities by land area, home to around 1.8 million people, and the undisputed economic centre of Mindanao. It is known for three things among expats: genuine safety, affordable living, and exceptional tropical fruit. The city has a more relaxed, provincial character than either Manila or Cebu despite its size.",
-  },
-  {
-    label: "Safety",
-    body: "Davao has a reputation — largely deserved — as one of the Philippines' safest cities. Crime rates are low, the streets are orderly, and expats living there consistently report feeling comfortable walking at night in central areas. It should be noted that Mindanao as a region has historically had security concerns in specific remote provinces; Davao City itself is distinct from these areas and has not experienced significant urban security incidents for many years.",
-  },
-  {
-    label: "Neighbourhoods",
-    body: "Poblacion (the downtown core), the NCCC Mall and SM Lanang areas in Lanang, and the Matina district are the primary expat-friendly zones. Lanang in particular — along the bay — is a growing upscale corridor with new condo developments, international restaurants, and mall infrastructure. Damosa Gateway is another newer commercial node. The city is spread out; a motorcycle or car is useful.",
-  },
-  {
-    label: "Typical rent",
-    body: "A furnished 1-bedroom condo in a modern building in Lanang or near SM Davao: PHP 12,000–28,000 per month. Older or more basic units in Poblacion or Matina: PHP 7,000–15,000. Davao is noticeably more affordable than Cebu and dramatically more affordable than Manila for equivalent quality.",
-  },
-  {
-    label: "Healthcare",
-    body: "Davao Doctors Hospital, Brokenshire Hospital, and Southern Philippines Medical Center (government) are the main facilities. Both private hospitals handle most routine and specialist needs competently. For complex cases requiring subspecialty care, Cebu or Manila is the practical referral destination. Davao is sufficiently served for everyday and moderate healthcare needs.",
-  },
-  {
-    label: "Getting there",
-    body: "Francisco Bangoy International Airport (also called Francisco Bangoy or FBIA) has multiple daily flights to Manila (1 hour 30 minutes) on Cebu Pacific, Philippine Airlines, and AirAsia. Direct international connections are limited — Cotabato is closer for some Mindanao points, but Davao is the main international entry point for the island. Connections to Cebu are also available.",
-  },
-  {
-    label: "Best for",
-    body: "Retirees who prioritise safety and affordability over city amenities, those with a specific connection to Mindanao, and expats who find both Manila and Cebu too busy or expensive. Less suited to those who need frequent international travel (limited direct connections), specialist healthcare, or a large established expat social scene.",
-  },
-];
-
-const smallerCities = [
-  {
-    name: "Dumaguete",
-    province: "Negros Oriental",
-    tagline: "The City of Gentle People",
-    character:
-      "A small university city on the eastern coast of Negros Oriental, Dumaguete is one of the most popular retirement destinations for expats in the Philippines. The expat community is well-established, English fluency is high, and the pace of life is genuinely unhurried. Apo Island — one of the best dive sites in the world — is a 30-minute boat ride away.",
-    costLevel: "Very low — among the cheapest liveable cities for expats",
-    typicalRent: "PHP 8,000–20,000 for a furnished 1-bedroom",
-    bestFor: "Retirees, divers, and remote workers seeking maximum affordability and community",
-    watchOut: "Limited specialist healthcare (Cebu for serious cases); can feel small quickly for those used to city life",
-  },
-  {
-    name: "Baguio",
-    province: "Benguet, Cordillera",
-    tagline: "The Summer Capital of the Philippines",
-    character:
-      "Sitting at 1,500 metres above sea level in the Cordillera mountains, Baguio is the only Philippine city where you do not need air-conditioning. Average temperatures of 14–23°C year-round attract Filipinos escaping the heat and a community of expats who find the tropical lowlands oppressive. The city has a genuine arts scene, excellent coffee culture, and spectacular highland scenery.",
-    costLevel: "Moderate — higher than provincial towns but well below Manila",
-    typicalRent: "PHP 10,000–25,000 for a furnished 1-bedroom",
-    bestFor: "Those who cannot tolerate tropical heat, outdoor enthusiasts, and those working remotely who want cooler highland living",
-    watchOut: "Notorious traffic during Philippine holidays (one main road in/out); sits on an active fault line; no beach access",
-  },
-  {
-    name: "Iloilo City",
-    province: "Iloilo, Western Visayas",
-    tagline: "The City of Love",
-    character:
-      "Iloilo is an underrated gem — a heritage city with well-preserved Spanish-era churches, a thriving food scene (La Paz batchoy, fresh seafood), and a rapidly growing economy driven by IT-BPO and academia. It is one of the cleanest and most liveable mid-sized cities in the country. Guimaras Island — famous for the sweetest mangoes in the Philippines — is a 15-minute ferry ride across the strait.",
-    costLevel: "Low — comparable to Dumaguete with more city amenities",
-    typicalRent: "PHP 10,000–25,000 for a furnished 1-bedroom",
-    bestFor: "Expats who want a liveable mid-sized city with heritage character, good food, and lower costs than Cebu",
-    watchOut: "Smaller expat community than Cebu or Davao; fewer international connections (via Manila or Cebu for most destinations)",
-  },
-  {
-    name: "Bacolod",
-    province: "Negros Occidental",
-    tagline: "The City of Smiles",
-    character:
-      "Bacolod is the capital of Negros Occidental and the gateway to the sugar-producing heartland of the Philippines. It is best known for chicken inasal (the original, far better than the chain versions), the MassKara Festival in October, and a warmth in its residents that lives up to the city's nickname. A growing number of expats — particularly those married to Negrense partners — have settled here for the combination of affordability, friendliness, and increasingly good infrastructure.",
-    costLevel: "Low — similar to Iloilo, below Cebu",
-    typicalRent: "PHP 9,000–22,000 for a furnished 1-bedroom",
-    bestFor: "Those with local family ties, retirees seeking affordability and a strong local culture, and anyone willing to trade expat infrastructure for a more genuine local experience",
-    watchOut: "Smaller expat network; serious medical cases go to Cebu; fewer international dining and shopping options",
-  },
-];
 
 export default function CityGuidesPage() {
   return (
@@ -187,439 +16,243 @@ export default function CityGuidesPage() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-          font-family: 'Inter', sans-serif;
-          background: #F8F6F1;
-          color: #0B1F3A;
-        }
-
-        /* ── NAV ── */
-        .nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 28px 48px;
-          border-bottom: 1px solid rgba(248,246,241,0.1);
-        }
-        .nav-logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.15rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          letter-spacing: 0.02em;
-          text-decoration: none;
-        }
-        .nav-logo span { color: #C9A84C; }
-        .nav-links {
-          display: flex;
-          gap: 32px;
-          list-style: none;
-        }
-        .nav-links a {
-          font-size: 0.82rem;
-          font-weight: 500;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
-          text-decoration: none;
-          transition: color 0.2s;
-        }
-        .nav-links a:hover,
-        .nav-links a.active { color: #F8F6F1; }
+        body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
         /* ── PAGE HEADER ── */
         .page-header { background: #0B1F3A; }
-        .page-hero {
-          padding: 72px 48px 96px;
-          max-width: 820px;
-        }
+        .page-hero { padding: 72px 48px 96px; max-width: 820px; }
         .page-eyebrow {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 0.72rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 20px;
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 20px;
         }
-        .page-eyebrow::before {
-          content: '';
-          display: block;
-          width: 28px;
-          height: 1px;
-          background: #C9A84C;
-        }
+        .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title {
           font-family: 'Playfair Display', serif;
           font-size: clamp(2.2rem, 4.5vw, 3.4rem);
-          font-weight: 700;
-          line-height: 1.12;
-          color: #F8F6F1;
-          margin-bottom: 24px;
+          font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px;
         }
         .page-sub {
-          font-size: 1.05rem;
-          font-weight: 300;
-          line-height: 1.65;
-          color: rgba(248,246,241,0.72);
-          max-width: 560px;
+          font-size: 1.05rem; font-weight: 300; line-height: 1.65;
+          color: rgba(248,246,241,0.72); max-width: 580px;
         }
 
         /* ── SECTIONS ── */
         .section { padding: 96px 48px; }
         .section-light { background: #F8F6F1; }
         .section-dark  { background: #0B1F3A; }
+        .section-inner { max-width: 1100px; margin: 0 auto; }
 
-        .section-label {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 0.7rem;
-          font-weight: 600;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 16px;
+        .section-eyebrow {
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 16px;
         }
-        .section-label::before { content: '◈'; font-size: 0.65rem; }
+        .section-eyebrow::before { content: '◈'; font-size: 0.65rem; }
+        .section-eyebrow-light { color: #C9A84C; }
         .section-heading {
           font-family: 'Playfair Display', serif;
           font-size: clamp(1.8rem, 3vw, 2.6rem);
-          font-weight: 700;
-          color: #0B1F3A;
-          line-height: 1.2;
-          margin-bottom: 56px;
-          max-width: 560px;
+          font-weight: 700; line-height: 1.15; color: #0B1F3A; margin-bottom: 12px;
         }
         .section-heading-light { color: #F8F6F1; }
-
-        /* ── OVERVIEW CARDS ── */
-        .card-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 0;
-          border-top: 1px solid #E8E4DC;
-          border-left: 1px solid #E8E4DC;
-        }
-        .card {
-          padding: 36px 32px;
-          border-right: 1px solid #E8E4DC;
-          border-bottom: 1px solid #E8E4DC;
-          text-decoration: none;
-          display: block;
-          transition: background 0.2s;
-        }
-        .card:hover { background: #fff; }
-        .card-label {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.08rem;
-          font-weight: 600;
-          color: #0B1F3A;
-          margin-bottom: 4px;
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 8px;
-        }
-        .card-label::after {
-          content: '→';
-          font-family: 'Inter', sans-serif;
-          font-size: 0.9rem;
-          color: #C9A84C;
-          flex-shrink: 0;
-          margin-top: 2px;
-          transition: transform 0.2s;
-        }
-        .card:hover .card-label::after { transform: translateX(4px); }
-        .card-subtitle {
-          font-size: 0.75rem;
-          font-weight: 500;
-          letter-spacing: 0.04em;
-          color: #C9A84C;
-          margin-bottom: 12px;
-          text-transform: uppercase;
-        }
-        .card-desc {
-          font-size: 0.85rem;
-          font-weight: 400;
-          line-height: 1.6;
-          color: #5C6B7A;
+        .section-tagline {
+          font-size: 0.9rem; font-weight: 500; letter-spacing: 0.06em;
+          color: #C9A84C; margin-bottom: 32px; font-style: italic;
         }
 
-        /* ── CITY DETAIL SECTIONS ── */
-        .detail-inner {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 80px;
-          align-items: start;
+        /* ── OPENING NOTE ── */
+        .opening-note {
+          border: 2px solid #C9A84C;
+          background: rgba(201,168,76,0.06);
+          padding: 36px 40px;
+          margin-bottom: 0;
         }
-        .detail-intro {
-          font-size: 0.95rem;
-          font-weight: 300;
-          line-height: 1.75;
-          color: #5C6B7A;
-          margin-top: 4px;
+        .opening-note-label {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 14px;
         }
-        .detail-intro-light { color: rgba(248,246,241,0.65); }
+        .opening-note-body {
+          font-size: 1rem; font-weight: 300; line-height: 1.8; color: #0B1F3A;
+        }
 
-        .detail-rows { display: flex; flex-direction: column; padding-top: 8px; }
+        /* ── CITY SECTION LAYOUT ── */
+        .city-layout {
+          display: grid; grid-template-columns: 280px 1fr; gap: 80px; align-items: start;
+        }
+        .city-intro {
+          font-size: 0.9rem; font-weight: 300; line-height: 1.8; color: #5C6B7A;
+        }
+        .city-intro-light { color: rgba(248,246,241,0.65); }
+        .city-intro p + p { margin-top: 14px; }
+
+        /* ── CITY BADGE ── */
+        .city-badge {
+          display: inline-flex; align-items: center; gap: 8px;
+          background: #C9A84C; color: #0B1F3A;
+          font-size: 0.63rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+          padding: 6px 14px; margin-bottom: 20px;
+        }
+        .city-badge::before { content: '★'; font-size: 0.6rem; }
+
+        /* ── DETAIL ROWS ── */
+        .detail-rows { display: flex; flex-direction: column; }
         .detail-row {
-          padding: 28px 0;
+          padding: 24px 0;
           border-bottom: 1px solid #E8E4DC;
-          display: grid;
-          grid-template-columns: 160px 1fr;
-          gap: 24px;
-          align-items: start;
+          display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: start;
         }
         .detail-row:first-child { border-top: 1px solid #E8E4DC; }
         .detail-row-dark { border-bottom-color: rgba(248,246,241,0.1); }
         .detail-row-dark:first-child { border-top-color: rgba(248,246,241,0.1); }
         .detail-row-label {
-          font-size: 0.75rem;
-          font-weight: 600;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          padding-top: 2px;
+          font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+          color: #C9A84C; padding-top: 3px;
         }
         .detail-row-body {
-          font-size: 0.9rem;
-          font-weight: 300;
-          line-height: 1.75;
-          color: #4A5868;
+          font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #4A5868;
         }
         .detail-row-body-light { color: rgba(248,246,241,0.72); }
 
-        /* ── SMALLER CITIES GRID ── */
-        .city-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 2px;
-          background: #E8E4DC;
-          margin-top: 0;
+        /* ── NEIGHBORHOODS SUB-BLOCK ── */
+        .neighborhoods { margin-top: 40px; }
+        .neighborhoods-heading {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 20px;
+          display: flex; align-items: center; gap: 10px;
         }
-        .city-card {
-          background: #F8F6F1;
-          padding: 44px 40px;
+        .neighborhoods-heading::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .neighborhood-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: rgba(248,246,241,0.06); }
+        .neighborhood-card { background: rgba(248,246,241,0.05); padding: 24px 28px; border-left: 3px solid transparent; }
+        .neighborhood-card-featured { border-left-color: #C9A84C; }
+        .neighborhood-name {
+          font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 8px;
         }
-        .city-card-name {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #0B1F3A;
-          margin-bottom: 4px;
-        }
-        .city-card-province {
-          font-size: 0.72rem;
-          font-weight: 600;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 6px;
-        }
-        .city-card-tagline {
-          font-size: 0.82rem;
-          font-style: italic;
-          color: #8A9AAA;
-          margin-bottom: 20px;
-        }
-        .city-card-body {
-          font-size: 0.88rem;
-          font-weight: 300;
-          line-height: 1.75;
-          color: #4A5868;
-          margin-bottom: 24px;
-        }
-        .city-card-stats {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          border-top: 1px solid #E8E4DC;
-          padding-top: 24px;
-        }
-        .city-stat {
-          display: grid;
-          grid-template-columns: 110px 1fr;
-          gap: 12px;
-          align-items: start;
-        }
-        .city-stat-label {
-          font-size: 0.68rem;
-          font-weight: 600;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          padding-top: 1px;
-        }
-        .city-stat-value {
-          font-size: 0.82rem;
-          font-weight: 300;
-          line-height: 1.6;
-          color: #4A5868;
-        }
+        .neighborhood-body { font-size: 0.83rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.65); }
 
-        /* ── DISCLAIMER ── */
-        .disclaimer-section {
-          background: #F8F6F1;
-          border-top: 3px solid #C9A84C;
-        }
-        .disclaimer-inner {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 80px;
-          align-items: start;
-        }
-        .disclaimer-icon {
-          width: 48px;
-          height: 48px;
-          background: #C9A84C;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 20px;
-          font-size: 1.2rem;
-          color: #0B1F3A;
-          font-weight: 700;
-        }
-        .disclaimer-body {
-          font-size: 0.95rem;
-          font-weight: 300;
-          line-height: 1.8;
-          color: #5C6B7A;
-          max-width: 640px;
-        }
-        .disclaimer-body strong { color: #0B1F3A; font-weight: 600; }
+        /* light variant neighborhoods */
+        .neighborhood-grid-light { background: #E8E4DC; }
+        .neighborhood-card-light { background: #F8F6F1; border-left-color: transparent; }
+        .neighborhood-card-light.neighborhood-card-featured { border-left-color: #C9A84C; }
+        .neighborhood-body-light { color: #4A5868; }
 
-        /* ── FOOTER ── */
-        .footer {
-          background: #0B1F3A;
-          border-top: 1px solid rgba(248,246,241,0.08);
-          padding: 40px 48px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+        /* ── COST BOX ── */
+        .cost-box {
+          background: rgba(201,168,76,0.08); border-left: 3px solid #C9A84C;
+          padding: 24px 28px; margin-top: 24px;
         }
-        .footer-logo {
+        .cost-box-light { background: rgba(11,31,58,0.04); }
+        .cost-box-heading {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 14px;
+        }
+        .cost-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .cost-list li {
+          font-size: 0.83rem; font-weight: 300; line-height: 1.6;
+          color: rgba(248,246,241,0.72); display: flex; gap: 8px;
+        }
+        .cost-list li::before { content: '—'; color: #C9A84C; flex-shrink: 0; }
+        .cost-list-light li { color: #4A5868; }
+
+        /* ── ALERT BOX ── */
+        .city-alert {
+          background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3);
+          padding: 20px 24px; margin-top: 24px;
+        }
+        .city-alert-light { background: rgba(201,168,76,0.08); }
+        .city-alert-label {
+          font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 8px;
+        }
+        .city-alert-body { font-size: 0.83rem; font-weight: 300; line-height: 1.7; color: rgba(248,246,241,0.72); }
+        .city-alert-body-light { color: #4A5868; }
+
+        /* ── COMPARISON TABLE ── */
+        .table-wrap { overflow-x: auto; margin-top: 8px; }
+        .comp-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+        .comp-table th {
+          text-align: left; padding: 12px 16px;
+          font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+          color: #C9A84C; background: rgba(201,168,76,0.08);
+          border-bottom: 1px solid rgba(201,168,76,0.2);
+        }
+        .comp-table td {
+          padding: 14px 16px; vertical-align: top;
+          font-size: 0.82rem; font-weight: 300; line-height: 1.6;
+          color: rgba(248,246,241,0.72);
+          border-bottom: 1px solid rgba(248,246,241,0.07);
+        }
+        .comp-table tr:last-child td { border-bottom: none; }
+        .comp-table .city-col {
+          font-weight: 600; color: #F8F6F1; white-space: nowrap;
+        }
+        .comp-table .featured-row td { background: rgba(201,168,76,0.06); }
+        .comp-table .featured-row .city-col { color: #C9A84C; }
+
+        /* ── DECISION CARDS ── */
+        .decision-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; background: #E8E4DC; }
+        .decision-card { background: #F8F6F1; padding: 28px 32px; }
+        .decision-scenario {
+          font-size: 0.8rem; font-weight: 500; line-height: 1.5; color: #0B1F3A;
+          margin-bottom: 10px;
+        }
+        .decision-scenario::before { content: 'IF  '; color: #8A9AAA; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+        .decision-answer {
           font-family: 'Playfair Display', serif;
-          font-size: 0.95rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          letter-spacing: 0.02em;
-          text-decoration: none;
+          font-size: 1.05rem; font-weight: 600; color: #C9A84C;
+          margin-bottom: 8px;
         }
-        .footer-logo span { color: #C9A84C; }
-        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
+        .decision-reason { font-size: 0.8rem; font-weight: 300; line-height: 1.65; color: #5C6B7A; }
 
         /* ── STEVE'S NOTE ── */
         .sn-section {
-          background: #0D1E30;
-          border-top: 3px solid #C9A84C;
-          padding: 80px 48px;
-          position: relative;
-          overflow: hidden;
+          background: #0D1E30; border-top: 3px solid #C9A84C;
+          padding: 80px 48px; position: relative; overflow: hidden;
         }
         .sn-section::before {
-          content: 'S';
-          font-family: 'Playfair Display', serif;
-          font-size: 320px;
-          font-weight: 700;
-          color: rgba(201,168,76,0.05);
-          position: absolute;
-          right: -10px;
-          top: -60px;
-          line-height: 1;
-          pointer-events: none;
-          user-select: none;
+          content: 'S'; font-family: 'Playfair Display', serif; font-size: 320px; font-weight: 700;
+          color: rgba(201,168,76,0.05); position: absolute; right: -10px; top: -60px;
+          line-height: 1; pointer-events: none; user-select: none;
         }
-        .sn-inner {
-          max-width: 860px;
-          position: relative;
-          z-index: 1;
-        }
-        .sn-header {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          margin-bottom: 28px;
-        }
+        .sn-inner { max-width: 860px; position: relative; z-index: 1; }
+        .sn-header { display: flex; align-items: center; gap: 20px; margin-bottom: 28px; }
         .sn-monogram {
-          width: 52px;
-          height: 52px;
-          background: #C9A84C;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: 'Playfair Display', serif;
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #0B1F3A;
-          flex-shrink: 0;
+          width: 52px; height: 52px; background: #C9A84C;
+          display: flex; align-items: center; justify-content: center;
+          font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700;
+          color: #0B1F3A; flex-shrink: 0;
         }
-        .sn-name {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.6rem;
-          font-weight: 700;
-          color: #F8F6F1;
-          line-height: 1.1;
-        }
-        .sn-tag {
-          font-size: 0.7rem;
-          font-weight: 500;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-top: 4px;
-        }
-        .sn-rule {
-          height: 1px;
-          background: rgba(201,168,76,0.2);
-          margin-bottom: 32px;
-        }
-        .sn-body {
-          font-size: 0.95rem;
-          font-weight: 300;
-          line-height: 1.85;
-          color: rgba(248,246,241,0.82);
-        }
+        .sn-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #F8F6F1; line-height: 1.1; }
+        .sn-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 4px; }
+        .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 32px; }
+        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
         .sn-body p + p { margin-top: 14px; }
         .sn-verified {
-          margin-top: 36px;
-          padding-top: 20px;
-          border-top: 1px solid rgba(201,168,76,0.2);
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 0.72rem;
-          font-weight: 600;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: #C9A84C;
+          margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.2);
+          display: inline-flex; align-items: center; gap: 8px;
+          font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A84C;
         }
         .sn-verified::before { content: '✓'; }
-        @media (max-width: 900px) {
-          .sn-section { padding: 56px 24px; }
+
+        /* ── DISCLAIMER ── */
+        .disclaimer-section { background: #F8F6F1; border-top: 3px solid #C9A84C; }
+        .disclaimer-body {
+          font-size: 0.88rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; max-width: 720px;
         }
+        .disclaimer-body strong { color: #0B1F3A; font-weight: 600; }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {
-          .nav { padding: 20px 24px; }
-          .nav-links { display: none; }
           .page-hero { padding: 52px 24px 72px; }
-          .section { padding: 72px 24px; }
-          .card-grid { grid-template-columns: repeat(2, 1fr); }
-          .detail-inner { grid-template-columns: 1fr; gap: 40px; }
-          .detail-row { grid-template-columns: 1fr; gap: 8px; }
-          .city-grid { grid-template-columns: 1fr; }
-          .city-card { padding: 36px 24px; }
-          .city-stat { grid-template-columns: 1fr; gap: 4px; }
-          .disclaimer-inner { grid-template-columns: 1fr; gap: 32px; }
-          .footer { flex-direction: column; gap: 12px; text-align: center; }
+          .section { padding: 64px 24px; }
+          .city-layout { grid-template-columns: 1fr; gap: 40px; }
+          .detail-row { grid-template-columns: 1fr; gap: 6px; }
+          .neighborhood-grid { grid-template-columns: 1fr; }
+          .decision-grid { grid-template-columns: 1fr; }
+          .sn-section { padding: 56px 24px; }
         }
         @media (max-width: 560px) {
-          .card-grid { grid-template-columns: 1fr; }
           .page-title { font-size: 2rem; }
         }
       `}</style>
@@ -629,206 +262,696 @@ export default function CityGuidesPage() {
         <Nav active="/city-guides" />
         <div className="page-hero">
           <p className="page-eyebrow">City Guides</p>
-          <h1 className="page-title">
-            Choosing where<br />to live in the Philippines.
-          </h1>
+          <h1 className="page-title">Where to Live in the Philippines</h1>
           <p className="page-sub">
-            In-depth profiles of the cities where expats actually settle —
-            their neighbourhoods, costs, healthcare, and honest assessments
-            of who each one suits best.
+            Not every city suits every expat. Honest profiles of the six cities where
+            foreigners actually settle — costs, lifestyle, healthcare, and who each one
+            is really right for.
           </p>
         </div>
       </header>
 
-      {/* OVERVIEW */}
-      <section className="section section-light" id="overview">
-        <p className="section-label">The expat cities</p>
-        <h2 className="section-heading">
-          Where most expats end up, and why.
-        </h2>
-        <div className="card-grid">
-          {overview.map((o) => (
-            <a key={o.label} href={o.href} className="card">
-              <div className="card-label">{o.label}</div>
-              <p className="card-subtitle">{o.subtitle}</p>
-              <p className="card-desc">{o.description}</p>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      {/* METRO MANILA */}
-      <section className="section section-dark" id="manila">
-        <div className="detail-inner">
-          <div>
-            <p className="section-label">Metro Manila</p>
-            <h2 className="section-heading section-heading-light">
-              The capital&rsquo;s best neighbourhoods for expats.
-            </h2>
-            <p className="detail-intro detail-intro-light">
-              Metro Manila offers the most — the best hospitals, the most
-              international restaurants, the widest career options, and the
-              strongest connections to the rest of the world. It also demands
-              the most: the highest costs, the worst traffic, and a density
-              that takes adjustment. The right neighbourhood makes a decisive
-              difference.
+      {/* OPENING NOTE */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <div className="opening-note">
+            <p className="opening-note-label">Before you choose</p>
+            <p className="opening-note-body">
+              The biggest mistake new expats make is choosing a city based on photos. The second
+              biggest mistake is choosing based on price alone. The right city depends on who you
+              are, what matters to you, and what trade-offs you can live with. These profiles are
+              written to help you make that decision honestly.
             </p>
           </div>
-          <div className="detail-rows">
-            {manila.map((d) => (
-              <div key={d.label} className="detail-row detail-row-dark">
-                <span className="detail-row-label">{d.label}</span>
-                <p className="detail-row-body detail-row-body-light">{d.body}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* CEBU */}
-      <section className="section section-light" id="cebu">
-        <div className="detail-inner">
-          <div>
-            <p className="section-label">Cebu City</p>
-            <h2 className="section-heading">
-              The most well-rounded choice for most expats.
-            </h2>
-            <p className="detail-intro">
-              Cebu consistently earns its reputation as the best all-round
-              expat city in the Philippines. It offers a genuine urban life,
-              real beach access, an international airport, and costs that are
-              25–40% lower than Manila — without the compromises of full
-              provincial living.
-            </p>
-          </div>
-          <div className="detail-rows">
-            {cebu.map((d) => (
-              <div key={d.label} className="detail-row">
-                <span className="detail-row-label">{d.label}</span>
-                <p className="detail-row-body">{d.body}</p>
+      {/* ── SECTION 1: CEBU AND MACTAN ── */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <div className="city-badge">Steve&rsquo;s Home City</div>
+              <p className="section-eyebrow section-eyebrow-light">Cebu &amp; Mactan Island</p>
+              <h2 className="section-heading section-heading-light">The Expat Sweet Spot of the Philippines</h2>
+              <p className="section-tagline">Best overall balance of infrastructure, lifestyle, healthcare, cost, and community</p>
+              <div className="city-intro city-intro-light">
+                <p>Cebu is the second largest metropolitan area in the Philippines and the undisputed
+                capital of the Visayas. For most Western expats it represents the best overall balance
+                of infrastructure, lifestyle, healthcare, cost, and community.</p>
+                <p>Mactan Island — connected to Cebu City by two bridges — is where most resort-oriented
+                expats live, combining beach access with urban convenience.</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* DAVAO */}
-      <section className="section section-dark" id="davao">
-        <div className="detail-inner">
-          <div>
-            <p className="section-label">Davao City</p>
-            <h2 className="section-heading section-heading-light">
-              Safe, affordable, and underrated.
-            </h2>
-            <p className="detail-intro detail-intro-light">
-              Davao does not get the attention it deserves in expat circles.
-              It is one of the largest cities in Southeast Asia, genuinely
-              safe, significantly more affordable than Cebu or Manila, and
-              surrounded by natural attractions. Those who live there tend
-              to stay.
-            </p>
-          </div>
-          <div className="detail-rows">
-            {davao.map((d) => (
-              <div key={d.label} className="detail-row detail-row-dark">
-                <span className="detail-row-label">{d.label}</span>
-                <p className="detail-row-body detail-row-body-light">{d.body}</p>
+              <div className="cost-box" style={{marginTop:"32px"}}>
+                <p className="cost-box-heading">Cost of Living</p>
+                <ul className="cost-list">
+                  <li>1BR Marigondon budget: ₱3,000–8,000 / month</li>
+                  <li>1BR Mactan standard: ₱15,000–30,000 / month</li>
+                  <li>1BR Mactan Newtown premium: ₱25,000–45,000 / month</li>
+                  <li>Steve&rsquo;s Movenpick 66sqm + full resort access: ₱33,000 / month</li>
+                  <li>Electricity moderate aircon: ₱4,000–8,000 / month</li>
+                  <li>Comfortable expat total: ₱60,000–100,000 ($1,000–$1,700 USD)</li>
+                  <li>Can you live on $1,500 USD/month: Yes, comfortably</li>
+                </ul>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* SMALLER CITIES */}
-      <section className="section section-light" id="smaller">
-        <p className="section-label">Smaller cities</p>
-        <h2 className="section-heading">
-          Provincial cities with real expat communities.
-        </h2>
-        <div className="city-grid">
-          {smallerCities.map((c) => (
-            <div key={c.name} className="city-card">
-              <p className="city-card-province">{c.province}</p>
-              <h3 className="city-card-name">{c.name}</h3>
-              <p className="city-card-tagline">&ldquo;{c.tagline}&rdquo;</p>
-              <p className="city-card-body">{c.character}</p>
-              <div className="city-card-stats">
-                <div className="city-stat">
-                  <span className="city-stat-label">Cost level</span>
-                  <span className="city-stat-value">{c.costLevel}</span>
+              <div className="city-alert" style={{marginTop:"20px"}}>
+                <p className="city-alert-label">Bridge Reality</p>
+                <p className="city-alert-body">
+                  Both Mactan bridges experience heavy traffic 7–9am and 5–8pm. Off-peak: 10–15 min
+                  crossing. Rush hour: 45 min to over an hour. Sunday is consistently the best day.
+                  Plan Cebu City visits accordingly.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="detail-rows">
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Who it suits best</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Expats who want a balance of city infrastructure and island lifestyle. Beach lovers
+                    who still want access to good hospitals and fast internet. People who enjoy an active
+                    expat community without the overwhelming scale of Manila. Those who want to island
+                    hop — Mactan is perfectly positioned for exploring the Visayas.
+                  </p>
                 </div>
-                <div className="city-stat">
-                  <span className="city-stat-label">Typical rent</span>
-                  <span className="city-stat-value">{c.typicalRent}</span>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Chong Hua Hospital — ranked among the world&rsquo;s best hospitals in 2026 — is the gold
+                    standard for expat healthcare in Cebu. Two campuses: Fuente Osmeña in Cebu City and
+                    Mandaue closer to Mactan Island. Cebu Doctors University Hospital, Perpetual Succour
+                    Hospital, and Vicente Sotto Memorial Medical Center also serve the area.
+                    Steve&rsquo;s personal ER experience at Chong Hua: 6 hours, IV treatment, blood tests,
+                    medications for a week, total bill $300 USD.
+                  </p>
                 </div>
-                <div className="city-stat">
-                  <span className="city-stat-label">Best for</span>
-                  <span className="city-stat-value">{c.bestFor}</span>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Almost everyone. Cebu and Mactan suit the widest range of expat profiles of any city
+                    in the Philippines. The notable exception is expats who specifically need Manila&rsquo;s
+                    international school options or highest-tier specialist medical care.
+                  </p>
                 </div>
-                <div className="city-stat">
-                  <span className="city-stat-label">Watch out for</span>
-                  <span className="city-stat-value">{c.watchOut}</span>
+              </div>
+
+              <div className="neighborhoods" style={{marginTop:"40px"}}>
+                <p className="neighborhoods-heading">Neighborhoods</p>
+                <div className="neighborhood-grid">
+                  <div className="neighborhood-card neighborhood-card-featured">
+                    <p className="neighborhood-name">Punta Engaño &amp; Mactan Newtown</p>
+                    <p className="neighborhood-body">
+                      The premium end of Mactan Island. Punta Engaño is the resort strip — Movenpick,
+                      Shangri-La, Crimson — private beaches and 5-star amenities. Mactan Newtown is a
+                      master-planned development with high-end condominiums, restaurants, bars, gyms,
+                      and retail all within walking distance. Steve lives in Punta Engaño at the
+                      Residences at Movenpick. Less than half a mile separates the two areas.
+                    </p>
+                  </div>
+                  <div className="neighborhood-card">
+                    <p className="neighborhood-name">Marigondon</p>
+                    <p className="neighborhood-body">
+                      More affordable Mactan option. Good mid-density community with 7-Eleven, restaurants,
+                      bars, and nail salons within walking distance. Studio apartments from ₱3,000 per month.
+                      Less glamorous than Mactan Newtown but completely functional and good value.
+                    </p>
+                  </div>
+                  <div className="neighborhood-card">
+                    <p className="neighborhood-name">IT Park &amp; Lahug (Cebu City)</p>
+                    <p className="neighborhood-body">
+                      The urban alternative for expats who want city life over beach life. IT Park is
+                      walkable, lively, and packed with restaurants, cafes, and bars. Home to the Sugbo
+                      Mercado night market. Talamban road can be difficult and Banilad is prone to flooding
+                      during heavy rains — verify with locals before committing.
+                    </p>
+                  </div>
+                  <div className="neighborhood-card">
+                    <p className="neighborhood-name">Banilad &amp; Lahug</p>
+                    <p className="neighborhood-body">
+                      Established mid-range residential areas with good infrastructure, quieter than IT
+                      Park. Popular with longer-term expat families. Good access to shopping and hospitals.
+                      Banilad prone to flooding in heavy rains — verify with locals before committing.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
-      {/* STEVE'S NOTE */}
+      {/* ── SECTION 2: MANILA AND BGC ── */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <p className="section-eyebrow">Manila &amp; BGC</p>
+              <h2 className="section-heading">First-World Infrastructure at Developing World Prices — With Traffic</h2>
+              <p className="section-tagline">Best hospitals, best international schools, highest cost, worst traffic</p>
+              <div className="city-intro">
+                <p>Metro Manila is the Philippines&rsquo; capital and largest metropolitan area with over 13
+                million people in the city proper. It offers the country&rsquo;s best hospitals, most
+                international schools, strongest expat infrastructure, and most direct flight connections.</p>
+                <p>The trade-offs are traffic, air quality, cost, and scale.</p>
+              </div>
+
+              <div className="cost-box cost-box-light" style={{marginTop:"32px"}}>
+                <p className="cost-box-heading">Cost of Living</p>
+                <ul className="cost-list cost-list-light">
+                  <li>1BR BGC: $700–1,200 USD / month</li>
+                  <li>1BR Makati: $600–1,000 USD / month</li>
+                  <li>1BR Pasig: $400–700 USD / month</li>
+                  <li>1BR Quezon City: $250–450 USD / month</li>
+                  <li>Comfortable single expat total BGC: $1,800–2,500 USD</li>
+                  <li>Budget expat total Quezon City: $1,000–1,400 USD</li>
+                </ul>
+              </div>
+
+              <div className="city-alert city-alert-light" style={{marginTop:"20px", border:"1px solid rgba(11,31,58,0.15)"}}>
+                <p className="city-alert-label">The Honest Trade-Offs</p>
+                <p className="city-alert-body city-alert-body-light">
+                  Manila traffic is among Asia&rsquo;s worst. Rush hour commutes of 1–3 hours are routine.
+                  Air quality is poor — regular haze especially in summer. BGC feels like a bubble:
+                  comfortable and modern but insulated from the real Philippines. Cost is significantly
+                  higher than other Philippine cities.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="detail-rows">
+                <div className="detail-row">
+                  <span className="detail-row-label">BGC — Bonifacio Global City</span>
+                  <p className="detail-row-body">
+                    The most expat-friendly neighborhood in the Philippines. Former military base turned
+                    planned urban district — clean streets, working traffic lights, wide sidewalks, no
+                    street vendors, and a thoroughly modern feel that surprises first-time visitors. BGC
+                    has the Philippines&rsquo; densest concentration of international restaurants, luxury
+                    condos, co-working spaces, and multinational offices. International School Manila and
+                    British School Manila are within or near BGC. Best for families, corporate transferees,
+                    and expats who want Singapore-level infrastructure.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Makati</span>
+                  <p className="detail-row-body">
+                    The original CBD. Legazpi and Salcedo Villages are leafy, walkable, and home to weekend
+                    markets. Poblacion has the best independent bar and restaurant scene in the Philippines.
+                    Rockwell is gated luxury. 1BR: $600–1,000 USD per month. More character than BGC with
+                    slightly lower prices and more hustle.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Pasig &amp; Ortigas</span>
+                  <p className="detail-row-body">
+                    The value play between Makati and BGC. 20–30 percent lower rents than Makati for
+                    similar amenities. Kapitolyo has an excellent food scene. Traffic on EDSA and Ortigas
+                    Avenue is relentless. Good option for cost-conscious professionals who still need Manila access.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body">
+                    Manila has the Philippines&rsquo; best hospitals. St. Luke&rsquo;s Medical Center BGC holds Global
+                    Healthcare Accreditation — the first Philippine hospital with this designation. Makati
+                    Medical Center and The Medical City are also JCI-accredited. GP consultations $10–25 USD.
+                    Specialists $17–52 USD. All major hospitals have English-speaking staff.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body">
+                    Families who need international schools. Corporate transferees. Expats who need Manila&rsquo;s
+                    specialist medical infrastructure. Those who want the most international urban experience
+                    in the Philippines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 3: DUMAGUETE ── */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <p className="section-eyebrow section-eyebrow-light">Dumaguete</p>
+              <h2 className="section-heading section-heading-light">The Quiet Achiever — Best Budget Retirement City in the Philippines</h2>
+              <p className="section-tagline">Lowest cost of living of any well-served expat city in the Philippines</p>
+              <div className="city-intro city-intro-light">
+                <p>A small university city of approximately 140,000 people on the eastern coast of
+                Negros Oriental island. Consistently tops lists of best retirement destinations in Asia —
+                lowest cost of living of any well-served expat city in the Philippines, combined with a
+                compact walkable layout, a genuine expat community, and access to world-class diving.</p>
+                <p>The presence of Silliman University gives Dumaguete an educated English-speaking
+                population, a vibrant cultural scene, and a university-town feel that most Philippine
+                cities lack. Rizal Boulevard along the waterfront is the social heart of the city.</p>
+              </div>
+
+              <div className="cost-box" style={{marginTop:"32px"}}>
+                <p className="cost-box-heading">Cost of Living — Most Affordable</p>
+                <ul className="cost-list">
+                  <li>1BR near center: $200–350 USD / month</li>
+                  <li>1BR outside center: $150–250 USD / month</li>
+                  <li>Small house with yard: $300–500 USD / month</li>
+                  <li>Comfortable single expat total: ~$800–1,000 USD / month</li>
+                  <li>Primary care doctor visit: $12–25 USD</li>
+                  <li>Monthly healthcare spend (healthy expat): ~$40–50 USD out of pocket</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="detail-rows">
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">What makes it different</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    The expat community is well established and close-knit. Rizal Boulevard along the
+                    waterfront is the social heart — cafes, restaurants, and weekend markets in a compact
+                    walkable strip that feels nothing like Manila or Cebu&rsquo;s sprawl. Apo Island, one of
+                    the world&rsquo;s top dive sites, is 30 minutes away by boat.
+                  </p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Silliman University Medical Center anchors Dumaguete&rsquo;s healthcare. Adequate for routine
+                    and most specialist care. For complex procedures and serious emergencies, Cebu —
+                    approximately 3–4 hours by fast ferry — is the standard referral destination. This is
+                    the main healthcare trade-off of choosing Dumaguete over Cebu.
+                  </p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Honest limitations</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    No Grab in Dumaguete — motorbikes, tricycles, and your own scooter are the transport
+                    reality. Expats consistently recommend learning to ride a motorcycle before arriving.
+                    Smaller selection of Western groceries and restaurants than Cebu or Manila. Ferry-dependent
+                    for island travel which adds logistical complexity.
+                  </p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Retirees on fixed income — Social Security or modest pension. Budget-conscious expats
+                    who prioritize low cost over urban amenities. Divers. People who want a genuine small-city
+                    Philippine life rather than an expat bubble. The $800–1,000 USD per month budget works
+                    here in a way it does not in Cebu or Manila.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 4: DAVAO ── */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <p className="section-eyebrow">Davao City</p>
+              <h2 className="section-heading">The Safe, Clean, Organized Alternative — Mindanao&rsquo;s Best Kept Secret</h2>
+              <p className="section-tagline">Largest city in the Philippines by land area — consistently ranked among the safest</p>
+              <div className="city-intro">
+                <p>Davao City is the largest city in the Philippines by land area at 2,444 square
+                kilometers — roughly 8 times Cebu City&rsquo;s footprint. Consistently ranked among the
+                Philippines&rsquo; safest cities and famous for its cleanliness, strict local ordinances,
+                and organized feel.</p>
+                <p>Strict ordinances that actually get enforced: total smoking ban in public spaces, total
+                firecracker ban, 1am–8am liquor ban, 30km/h CBD speed limit, helmet enforcement. Some
+                expats find this peaceful. Others find it restrictive.</p>
+              </div>
+
+              <div className="cost-box cost-box-light" style={{marginTop:"32px"}}>
+                <p className="cost-box-heading">Cost of Living</p>
+                <ul className="cost-list cost-list-light">
+                  <li>1BR condo Lanang: ~$250–450 USD / month</li>
+                  <li>Comfortable single expat total: ~$900–1,200 USD (₱45,000–55,000 / month as of May 2026)</li>
+                  <li>Electricity: Davao Light rates ranged ₱9.71–₱11.72 per kWh across 6 months in 2025–2026 — budget for the band, not a fixed number</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="detail-rows">
+                <div className="detail-row">
+                  <span className="detail-row-label">Neighborhoods</span>
+                  <p className="detail-row-body">
+                    <strong>Lanang:</strong> Northeast near SM Lanang Premier mall and the airport. Condo-heavy.
+                    The default first stop for relocating expats. Most expensive district.
+                    <br /><br />
+                    <strong>Bajada &amp; Matina:</strong> Mid-range areas with good access to hospitals and amenities.
+                    <br /><br />
+                    <strong>Buhangin:</strong> More affordable, further from center.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body">
+                    Southern Philippines Medical Center handles major cases. Davao Doctors Hospital and
+                    Brokenshire Memorial Hospital serve private patients. Adequate for most needs. For rare
+                    specialist care Manila is the reference. Davao is approximately 1.5 hours by plane from
+                    Manila and Cebu.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Honest trade-offs</span>
+                  <p className="detail-row-body">
+                    Davao&rsquo;s large land area means you cannot walk between neighborhoods the way you can in
+                    Cebu&rsquo;s IT Park triangle. Transport is primarily Grab and taxis — limited walkability
+                    outside specific commercial areas. The city is less international than Cebu or Manila
+                    with a smaller expat community and fewer Western amenities. Mindanao carries a security
+                    perception issue for some foreigners — Davao City itself is consistently rated safe and
+                    expats report feeling comfortable.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body">
+                    Expats who prioritize safety and cleanliness. Nature lovers and outdoor enthusiasts —
+                    Davao is the best base for Philippine outdoor adventure (Mount Apo, Samal Island, Mati).
+                    People who want a real Philippine city experience without Manila&rsquo;s scale. Budget-conscious
+                    expats who want urban amenities at lower cost than Cebu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 5: ILOILO ── */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <p className="section-eyebrow section-eyebrow-light">Iloilo City</p>
+              <h2 className="section-heading section-heading-light">The Underrated Gem — UNESCO Gastronomy City With a Smart Expat Community</h2>
+              <p className="section-tagline">First Philippine UNESCO Creative City of Gastronomy — consistently underrated</p>
+              <div className="city-intro city-intro-light">
+                <p>Iloilo City on the southeastern coast of Panay island is one of the Philippines&rsquo; most
+                livable cities and consistently one of the most underrated by expats who overlook it in
+                favor of Cebu or Dumaguete. Designated a UNESCO Creative City of Gastronomy — the first
+                in the Philippines.</p>
+                <p>Iloilo has the longest walkable and bikeable linear park in the Philippines along the
+                Iloilo River Esplanade. The city is genuinely clean, well-planned, and has invested heavily
+                in green spaces and cycling infrastructure.</p>
+              </div>
+
+              <div className="cost-box" style={{marginTop:"32px"}}>
+                <p className="cost-box-heading">Cost of Living</p>
+                <ul className="cost-list">
+                  <li>1BR Mandurriao: $250–450 USD / month</li>
+                  <li>1BR outside center: $180–300 USD / month</li>
+                  <li>Comfortable single expat total: ~$800–1,050 USD / month</li>
+                  <li>One of the lowest total monthly costs of any major Philippine city</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="detail-rows">
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Neighborhoods</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    <strong style={{color:"#C9A84C"}}>Mandurriao:</strong> The preferred expat neighborhood. Modern condominiums, proximity to major hospitals, walkable amenities. Iloilo Business Park is nearby.
+                    <br /><br />
+                    <strong style={{color:"#C9A84C"}}>City Proper &amp; Jaro:</strong> More affordable, more local character, good access to markets and the waterfront.
+                  </p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    The Medical City Iloilo and Healthway QualiMed are the main private hospital options.
+                    Both are well-regarded for routine and specialist care. For rare complex procedures,
+                    Cebu or Manila remain the standard referral destinations. Iloilo is approximately 1 hour
+                    by plane from Manila and 45 minutes from Cebu.
+                  </p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Honest trade-offs</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Smaller expat community than Cebu or Manila means less built-in social infrastructure
+                    when you arrive. Fewer Western grocery options. Airport connections are good but not as
+                    extensive as Cebu or Manila. Local language is Hiligaynon (Ilonggo) — distinct from
+                    Tagalog. Learning basic phrases helps significantly.
+                  </p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body detail-row-body-light">
+                    Expats who want a genuinely livable Philippine city that has not been overrun by
+                    foreigners. Foodies — Iloilo&rsquo;s restaurant and market scene is exceptional. Budget-conscious
+                    expats who want better infrastructure than Dumaguete at similar cost. People who plan
+                    to island hop the Western Visayas — Iloilo is an excellent base for Guimaras, Bacolod,
+                    and Antique.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 6: BAGUIO ── */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <p className="section-eyebrow">Baguio City</p>
+              <h2 className="section-heading">The Cool Mountain City — The Philippines Without the Tropical Heat</h2>
+              <p className="section-tagline">The only Philippine city where you can live without running aircon all day</p>
+              <div className="city-intro">
+                <p>Baguio is unlike every other city on this list in one fundamental way — the weather.
+                Sitting at approximately 1,500 meters elevation in the Cordillera mountains of northern
+                Luzon, Baguio rarely exceeds 26°C. In a country where the rest of the major cities
+                regularly hit 35°C and above, this is a genuinely remarkable distinction.</p>
+                <p>The cool climate is the primary draw and it genuinely changes daily life. You sleep
+                comfortably without aircon. You can exercise outdoors in the morning without heat
+                exhaustion. Strawberries and vegetables that cannot grow in the tropical lowlands are
+                locally produced and fresh in Baguio&rsquo;s markets.</p>
+              </div>
+
+              <div className="cost-box cost-box-light" style={{marginTop:"32px"}}>
+                <p className="cost-box-heading">Cost of Living</p>
+                <ul className="cost-list cost-list-light">
+                  <li>Budget studio or boarding house: $60–170 USD / month</li>
+                  <li>1BR center average: ~$260 USD / month</li>
+                  <li>1BR outside center average: ~$180 USD / month</li>
+                  <li>Comfortable digital nomad total: ~$800–1,200 USD / month</li>
+                  <li>No aircon electricity bill: ₱2,000–3,000 / month typical</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="detail-rows">
+                <div className="detail-row">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body">
+                    Baguio General Hospital and Medical Center handles most routine care. Private hospitals
+                    in the area are adequate for general needs. For specialist care and complex procedures,
+                    Manila is the reference — Clark International Airport is approximately 2–3 hours away.
+                    This is the most significant healthcare trade-off of choosing Baguio.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Transport reality</span>
+                  <p className="detail-row-body">
+                    No Grab in Baguio — getting around is by taxi, jeepney, or your own vehicle. Taxis
+                    can be difficult to find and are in high demand. Traffic is heavy and worsens
+                    significantly during peak tourist season December through April.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Honest trade-offs</span>
+                  <p className="detail-row-body">
+                    Multiple reviewers specifically note air quality issues — the combination of traffic,
+                    forest proximity, and geographic bowl can produce significant air pollution, particularly
+                    in summer. Globe mobile internet is often unreliable in Baguio — Smart PLDT performs better.
+                    Airport access is the most difficult of any city on this list: Clark International Airport
+                    2–3 hour drive, Manila NAIA 3–4 hours.
+                  </p>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body">
+                    Expats who genuinely cannot tolerate tropical heat — this is the primary and often
+                    decisive factor for choosing Baguio. Digital nomads who want low costs and cool
+                    temperatures and can tolerate limited mobility. Artists, hikers, and people drawn to
+                    mountain culture. People who will visit regularly rather than live permanently.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── COMPARISON TABLE ── */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <p className="section-eyebrow section-eyebrow-light">At a Glance</p>
+          <h2 className="section-heading section-heading-light" style={{marginBottom:"40px"}}>City Comparison — 2026</h2>
+          <div className="table-wrap">
+            <table className="comp-table">
+              <thead>
+                <tr>
+                  <th>City</th>
+                  <th>Monthly Budget</th>
+                  <th>Best For</th>
+                  <th>Healthcare</th>
+                  <th>Climate</th>
+                  <th>Expat Community</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="featured-row">
+                  <td className="city-col">Cebu &amp; Mactan</td>
+                  <td>$1,000–1,700</td>
+                  <td>Most expats — best overall balance</td>
+                  <td>Chong Hua — world ranked</td>
+                  <td>Hot tropical</td>
+                  <td>Large and established</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Manila BGC</td>
+                  <td>$1,800–2,500</td>
+                  <td>Families, corporate, specialist medical</td>
+                  <td>JCI-accredited, best in Philippines</td>
+                  <td>Hot tropical, poor air quality</td>
+                  <td>Largest in Philippines</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Dumaguete</td>
+                  <td>$800–1,000</td>
+                  <td>Budget retirees, divers</td>
+                  <td>Adequate; Cebu for serious cases</td>
+                  <td>Hot tropical, typhoon sheltered</td>
+                  <td>Small and close-knit</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Davao</td>
+                  <td>$900–1,200</td>
+                  <td>Safety-focused, nature lovers</td>
+                  <td>Good private hospitals</td>
+                  <td>Hot tropical, less typhoon risk</td>
+                  <td>Small but growing</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Iloilo</td>
+                  <td>$800–1,050</td>
+                  <td>Foodies, underrated gem seekers</td>
+                  <td>Medical City Iloilo</td>
+                  <td>Hot tropical</td>
+                  <td>Small but welcoming</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Baguio</td>
+                  <td>$800–1,200</td>
+                  <td>Heat-intolerant expats, artists, hikers</td>
+                  <td>Adequate; Manila for serious cases</td>
+                  <td>Cool mountain — no aircon needed</td>
+                  <td>Small, diverse</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* ── HOW TO CHOOSE ── */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <p className="section-eyebrow">Decision Guide</p>
+          <h2 className="section-heading" style={{marginBottom:"40px"}}>How to Choose Your City</h2>
+          <div className="decision-grid">
+            <div className="decision-card">
+              <p className="decision-scenario">I am retired on Social Security or a modest pension</p>
+              <p className="decision-answer">Dumaguete or Iloilo</p>
+              <p className="decision-reason">Both deliver a comfortable lifestyle on $800–1,000 per month.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I have a family with school-age children</p>
+              <p className="decision-answer">Manila BGC or Makati</p>
+              <p className="decision-reason">International schools of real quality exist only in Metro Manila.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I want the best beach and island access</p>
+              <p className="decision-answer">Cebu and Mactan</p>
+              <p className="decision-reason">Unmatched position for island hopping the Visayas.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I cannot handle tropical heat</p>
+              <p className="decision-answer">Baguio</p>
+              <p className="decision-reason">It is the only answer. Nowhere else in the Philippines offers a cool climate.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I want urban infrastructure but not Manila&rsquo;s scale and cost</p>
+              <p className="decision-answer">Cebu</p>
+              <p className="decision-reason">The clear answer.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I want the safest most orderly Philippine city</p>
+              <p className="decision-answer">Davao</p>
+              <p className="decision-reason">Reputation is well earned.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I want something authentic that has not been overrun by foreigners</p>
+              <p className="decision-answer">Iloilo</p>
+              <p className="decision-reason">The best-kept secret on this list.</p>
+            </div>
+            <div className="decision-card">
+              <p className="decision-scenario">I want the best overall quality of life if budget is not the primary concern</p>
+              <p className="decision-answer">Cebu and Mactan — Mactan Newtown or Punta Engaño</p>
+              <p className="decision-reason">Resort amenities, world-ranked healthcare, and island access in one location.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── STEVE'S NOTE ── */}
       <section className="sn-section">
         <div className="sn-inner">
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
               <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
+              <p className="sn-tag">Why I Chose Cebu — Punta Engaño, Mactan Island</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>Beyond the waterfalls and beaches around Cebu, I&rsquo;ve visited Bohol and Siargao so far.</p>
-            <p>Bohol is wonderful. Beautiful, not congested, mostly clean, and great for renting a scooter and exploring at your own pace. The Chocolate Hills are as surreal in person as they look in photos. The Tarsier sanctuary is worth the stop — those tiny primates are bizarre in the best way. The beaches down south in Panglao are excellent. The whole island felt more relaxed and tourist-oriented than Cebu. I&rsquo;d seriously consider Bohol for retirement. One caveat: if you need regular access to major hospitals or specialist care, the medical infrastructure isn&rsquo;t there yet. Factor that in.</p>
-            <p>Siargao is known as the surfing capital of the Philippines, and it earns the title. It&rsquo;s also a full-on party island — lots of young expats living their best lives. I&rsquo;m not in that demographic anymore, but I had a genuinely good time. If you&rsquo;re in your 20s or 30s and want a low-cost, high-energy expat experience, Siargao deserves serious consideration. Just know what you&rsquo;re signing up for.</p>
+            <p>I spent time in Marigondon on Mactan and a month in IT Park in Cebu City before I found my place in Punta Engaño. Those months were not wasted — they showed me exactly what I wanted and what I did not. IT Park is lively and walkable with excellent food and nightlife. But I wanted beach. I wanted resort. I wanted to wake up and see water. Marigondon gave me the community feel and the affordability — and confirmed that I wanted something a bit more peaceful.</p>
+            <p>Punta Engaño at the Residences at Movenpick is exactly what I was looking for. The sunrise over one horizon and the sunset over the other from my 11th floor balcony. Full resort access. A private beach 3 minutes from my door.</p>
+            <p>This is not what every expat needs — plenty of people would find my setup overpriced when a perfectly comfortable 22sqm studio in Marigondon costs 3,000 pesos a month. The point is this: do not pick a city from a website. Come, rent an Airbnb, and live in it for a month. The right city will reveal itself to you. Every city on this page has people who love it and people who left. Only you know which one is yours.</p>
           </div>
-          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated June 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>
       </section>
 
-      {/* DISCLAIMER */}
+      {/* ── DISCLAIMER ── */}
       <section className="section disclaimer-section">
-        <div className="disclaimer-inner">
-          <div>
-            <div className="disclaimer-icon">!</div>
-            <p className="section-label">Important note</p>
-            <h2 className="section-heading">
-              Conditions change. Visit before you commit.
-            </h2>
-          </div>
+        <div className="section-inner">
+          <p className="section-eyebrow">Important Note</p>
+          <h2 className="section-heading" style={{marginBottom:"24px"}}>Costs and Conditions Change</h2>
           <p className="disclaimer-body">
-            <strong>All city profiles and rental figures on this page are for
-            general orientation only</strong> and reflect conditions at the time
-            of writing. Rental markets, neighbourhood character, and infrastructure
-            quality change — sometimes quickly. A new development can transform a
-            district; a new expressway can change commute times significantly.
-            <br /><br />
-            Rental figures are indicative ranges based on furnished condos in
-            mid-to-upper-tier buildings. Actual prices vary by specific building,
-            floor, furnishing level, lease term, and negotiation. Always verify
-            current market rates by checking listings on Lamudi, Dot Property,
-            or Facebook Marketplace, and ideally by viewing properties in person
-            before signing anything.
-            <br /><br />
-            Security assessments reflect the general character of each city at
-            the time of writing and are not a guarantee of personal safety.
-            Check current travel advisories from your home government before
-            travelling to any Philippine destination, particularly in Mindanao.
-            This page does not constitute travel, legal, or financial advice.
+            <strong>All figures reflect conditions as of June 2026.</strong> Rental markets,
+            neighborhood character, and infrastructure quality change — sometimes quickly. Rental
+            figures are indicative ranges based on furnished condos in mid-to-upper-tier buildings.
+            Actual prices vary by specific building, floor, furnishing level, lease term, and
+            negotiation. Verify current rental prices and availability directly with local realtors
+            and landlords before making any decisions.
           </p>
         </div>
       </section>
 
-      {/* FOOTER */}
       <Footer />
     </>
   );
