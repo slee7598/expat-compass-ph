@@ -379,6 +379,33 @@ export default function SteveRecommendsPage() {
           letter-spacing: 0.02em;
         }
 
+        /* ── DISCLOSURE BANNER ── */
+        .disclosure-wrap {
+          background: #F8F6F1;
+          padding: 32px 48px 0;
+        }
+        .disclosure-card {
+          max-width: 860px;
+          border: 1px solid rgba(201,168,76,0.45);
+          border-left: 3px solid #C9A84C;
+          padding: 20px 24px;
+          display: flex;
+          align-items: flex-start;
+          gap: 14px;
+        }
+        .disclosure-icon {
+          flex-shrink: 0;
+          font-size: 0.85rem;
+          color: #C9A84C;
+          margin-top: 2px;
+        }
+        .disclosure-text {
+          font-size: 0.82rem;
+          font-weight: 300;
+          line-height: 1.75;
+          color: #4A5A6A;
+        }
+
         /* ── DISCLAIMER ── */
         .rec-disclaimer {
           background: #0B1F3A;
@@ -435,6 +462,16 @@ export default function SteveRecommendsPage() {
           <h1 className="page-title">Steve's Expat Toolkit</h1>
         </div>
       </header>
+
+      {/* AFFILIATE DISCLOSURE */}
+      <div className="disclosure-wrap">
+        <div className="disclosure-card">
+          <span className="disclosure-icon">◆</span>
+          <p className="disclosure-text">
+            Expat Compass PH is completely free — no ads, no memberships, no paywalls. It costs real time and money to research, build, and update this site daily. Some of the links on this page are affiliate links, which means if you click through and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products and services we genuinely believe in. Our opinions are never influenced by affiliate relationships — if something is not worth recommending, it does not appear on this site.
+          </p>
+        </div>
+      </div>
 
       {/* COMMUNICATIONS & TECH */}
       <section className="rec-section rec-light">
