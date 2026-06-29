@@ -794,6 +794,147 @@ export default function CityGuidesPage() {
         </div>
       </section>
 
+      {/* ── SUBIC BAY ── */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <div className="city-layout">
+            <div>
+              <p className="section-eyebrow section-eyebrow-light">Subic Bay &amp; Olongapo</p>
+              <h2 className="section-heading section-heading-light">America&rsquo;s Footprint — A Unique Philippines Experience</h2>
+              <p className="section-tagline" style={{color:'rgba(248,246,241,0.6)'}}>The former US Naval Base and the expat community that never left</p>
+              <div className="city-intro city-intro-light">
+                <p>Subic Bay and the adjacent Olongapo City occupy a unique place in Philippine expat life. This is where the US Naval Base Subic Bay operated until 1991 — one of the largest overseas US military installations in history. The American influence runs deep in the local culture, language, and community in ways you will not find anywhere else in the Philippines.</p>
+                <p>Taglish spoken locally is more English-influenced here than almost anywhere outside Metro Manila. The American Legion Post 4 in Olongapo is an active community hub. There are thousands of retired American veterans in the area who chose to stay close to where they once served.</p>
+                <p>The former naval base is now a special economic zone — the Subic Bay Freeport Zone — with its own separate governance, lower taxes, and a distinct character from the rest of Olongapo. Harbor Point Ayala Mall sits within the Freeport Zone. The zone has its own beaches, yacht club, and water sports facilities. Duty-free shopping is available within the zone.</p>
+              </div>
+
+              <div className="cost-box" style={{marginTop:'32px'}}>
+                <p className="cost-box-heading">Cost of Living</p>
+                <ul className="cost-list">
+                  <li>1BR Barretto or Kalaklan long-term: $250–500 USD / month</li>
+                  <li>Comfortable single expat total: ~$900–1,200 USD / month</li>
+                  <li>Note: electricity costs similar to Cebu for heavy aircon use</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="neighborhoods" style={{marginTop:'0'}}>
+                <p className="neighborhoods-heading">Neighborhoods</p>
+                <div className="neighborhood-grid">
+                  <div className="neighborhood-card neighborhood-card-featured">
+                    <p className="neighborhood-name">Barretto</p>
+                    <p className="neighborhood-body">Most popular expat neighborhood outside the Freeport Zone. Known for its bars and restaurants along the national highway. Affordable rents and a lively expat social scene.</p>
+                  </div>
+                  <div className="neighborhood-card">
+                    <p className="neighborhood-name">Kalaklan &amp; Mabayuan</p>
+                    <p className="neighborhood-body">More residential and quieter than Barretto. Good value rents. Preferred by expats who want community without the bar strip character.</p>
+                  </div>
+                  <div className="neighborhood-card">
+                    <p className="neighborhood-name">Olongapo City Proper</p>
+                    <p className="neighborhood-body">Urban and walkable. SM City Olongapo is the main mall. The American Legion and Frankie&rsquo;s Restaurant are community anchors.</p>
+                  </div>
+                  <div className="neighborhood-card">
+                    <p className="neighborhood-name">Subic Bay Freeport Zone</p>
+                    <p className="neighborhood-body">Premium pricing but modern facilities, good security, and beachfront access. Distinct governance from the rest of Olongapo.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="detail-rows" style={{marginTop:'32px'}}>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Healthcare</span>
+                  <p className="detail-row-body detail-row-body-light">TotalMed Subic Ambulatory and Medical Center and Lifeline Medical Center serve the area with specialist services including cardiology, urology, and general medicine. For complex cases Olongapo City hospitals handle most needs, with Manila as the referral destination. Subic is approximately 2 to 3 hours from Manila via the NLEX and SCTEX expressways.</p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Honest assessment</span>
+                  <p className="detail-row-body detail-row-body-light">The bar scene in Barretto is prominent and shapes the character of that neighborhood significantly. The expat community skews older and heavily veteran. For veterans who want to be near a piece of American history and live among people who share that connection, Subic Bay is genuinely compelling. For others it may be an interesting place to visit but not a first choice for long-term living.</p>
+                </div>
+                <div className="detail-row detail-row-dark">
+                  <span className="detail-row-label">Best for</span>
+                  <p className="detail-row-body detail-row-body-light">US military veterans who want to retire near the former Naval Base. Expats who want a strong American-influenced community. Budget-conscious expats who want proximity to Manila without Manila costs. People who enjoy a community lifestyle over a beach resort setting.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FESTIVAL CALENDAR ── */}
+      <section className="section section-light">
+        <div className="section-inner">
+          <p className="section-eyebrow">Live Like a Local</p>
+          <h2 className="section-heading">Philippines Festival Calendar — Plan Around These Dates</h2>
+          <p style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, color:'#4A5868', marginBottom:'32px', maxWidth:'760px'}}>The Philippines has some of the most spectacular festivals in Asia. As an expat living here you will want to know about them — both to enjoy them and to plan your travel around the traffic and accommodation crunches they create.</p>
+
+          {/* Sinulog — featured gold card */}
+          <div style={{background:'rgba(201,168,76,0.08)', border:'2px solid #C9A84C', padding:'28px 32px', marginBottom:'16px', maxWidth:'860px'}}>
+            <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>★ Featured — Biggest Festival in the Philippines</p>
+            <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.15rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>Sinulog — Cebu City</p>
+            <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'14px', letterSpacing:'0.06em'}}>Third Sunday of January &mdash; Sinulog 2027: January 17</p>
+            <p style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.8, color:'#4A5868', marginBottom:'12px'}}>One of the largest festivals in the Philippines attracting over 5 million attendees. A religious and cultural celebration honoring the Santo Ni&ntilde;o — the Child Jesus — combining grand parades, street dancing, novena masses, and spectacular fireworks. Activities begin as early as December 27 and run through January 31.</p>
+            <p style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.8, color:'#4A5868'}}><strong style={{color:'#0B1F3A'}}>For expats on Mactan:</strong> The bridge crossing to Cebu City during Sinulog week is extremely congested. Stay on the Mactan side if you do not plan to attend. If you want to attend, stay in Cebu City — not Mactan. Book accommodation months in advance as the city fills completely.</p>
+          </div>
+
+          <div className="detail-rows" style={{maxWidth:'860px'}}>
+            <div className="detail-row">
+              <span className="detail-row-label">Ati-Atihan<br/>Kalibo, Aklan</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>Third Sunday of January — same weekend as Sinulog</p>
+                <p className="detail-row-body">The oldest festival in the Philippines, often called the Mother of all Philippine Festivals. Wild street dancing, tribal costumes, and non-stop drumming in Kalibo in Aklan, Western Visayas. More raw and community-based than the polished Sinulog parade. Flights to Caticlan near Boracay fill up around this time.</p>
+              </div>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Dinagyang<br/>Iloilo City</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>Fourth Sunday of January — Dinagyang 2027: January 24</p>
+                <p className="detail-row-body">Iloilo&rsquo;s answer to Sinulog — equally spectacular and some argue more authentic. Warrior dance performances in elaborate tribal costumes honoring the Santo Ni&ntilde;o. If you miss Sinulog in Cebu, Dinagyang in Iloilo the following weekend is an excellent alternative with less crowding.</p>
+              </div>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Panagbenga<br/>Baguio City</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>The entire month of February</p>
+                <p className="detail-row-body">Baguio&rsquo;s annual flower festival celebrating the city&rsquo;s cool climate and highland flowers. Float parades, street dancing, and flower arrangements. February is the best time to visit Baguio — peak blooms, festive atmosphere, and still in the dry season. Accommodation fills significantly in February.</p>
+              </div>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Moriones<br/>Marinduque</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>Holy Week — March or April depending on Easter</p>
+                <p className="detail-row-body">Men dress as Roman soldiers in elaborate carved wooden masks and costumes and reenact the story of Longinus the Roman soldier who stabbed Christ. Held on the island of Marinduque accessible by ferry from Lucena or by small plane. Worth the trip for the completely unique visual spectacle.</p>
+              </div>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Pahiyas<br/>Lucban, Quezon</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>May 15 every year</p>
+                <p className="detail-row-body">Houses in Lucban are decorated with kiping — colorful leaf-shaped rice wafers — and local produce, creating the most visually striking street decoration of any Philippine festival. A 2-hour drive from Manila. Excellent day trip or overnight from Metro Manila.</p>
+              </div>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Kadayawan<br/>Davao City</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>Third week of August</p>
+                <p className="detail-row-body">Davao&rsquo;s major festival celebrating the city&rsquo;s diverse indigenous cultures, harvest, and natural bounty. Street dancing, floral floats, and tribal performances. The best time to visit Davao if you want to see the city at its most festive.</p>
+              </div>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">MassKara<br/>Bacolod City</span>
+              <div>
+                <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'6px', letterSpacing:'0.06em'}}>October — weekend nearest October 19</p>
+                <p className="detail-row-body">The Festival of Smiling Masks. Dancers in elaborate smiling mask costumes, street parties, and a genuinely joyful atmosphere. Bacolod earned the nickname City of Smiles and MassKara is the celebration of that identity. Easily accessible from Cebu by fast ferry.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="city-alert city-alert-light" style={{maxWidth:'860px', marginTop:'28px'}}>
+            <p className="city-alert-label">Practical Festival Planning Tips</p>
+            <p className="city-alert-body city-alert-body-light">Book accommodation months in advance for Sinulog, Ati-Atihan, and Dinagyang — these fill up completely. Sinulog week in Cebu: avoid crossing the Mactan-Cebu bridge unless you have hours to spare. Most major Philippine festivals fall in January to May during the dry season — ideal travel weather. Sinulog 2027: January 17. Dinagyang 2027: January 24.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ── COMPARISON TABLE ── */}
       <section className="section section-dark">
         <div className="section-inner">

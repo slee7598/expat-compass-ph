@@ -705,6 +705,28 @@ export default function VisasPage() {
         </div>
       </section>
 
+      {/* ── SECTION: TEI ── */}
+      <section className="section section-light" id="tei">
+        <div className="section-inner">
+          <p className="section-label">SRRV Benefit</p>
+          <h2 className="section-heading">TEI — Tax Exemption Indorsement for SRRV Holders Importing Goods</h2>
+          <p className="vb">SRRV holders are entitled to a one-time customs duty exemption on household goods and personal effects worth up to $7,000 USD — one of the most valuable but least understood benefits of the SRRV program. To claim this exemption you need a Tax Exemption Indorsement (TEI) from the Department of Finance Revenue Office. This must be applied for within 90 days of your SRRV visa issuance.</p>
+
+          <h3 className="vsub vsub-first">The TEI Process — Practical Notes</h3>
+          <ul className="vlist">
+            <li className="vli">Apply at the Department of Finance Revenue Office in Manila — there is no satellite office for this process. If you are based in Cebu or another city you will need to either travel to Manila or engage a Manila-based representative or attorney to handle the filing.</li>
+            <li className="vli">Processing typically takes 3 to 7 working days from the date of complete submission. Same-day processing is not available. Call the DOF Revenue Office before going to confirm current document requirements as these have changed periodically.</li>
+            <li className="vli">Bring complete documents — incomplete submissions restart the clock. Required documents typically include your SRRV certificate, passport, PRA ID, itemized list of goods to be imported, and the commercial invoice or packing list for your shipment.</li>
+            <li className="vli">The exemption applies to personal household goods and effects — not commercial goods or vehicles.</li>
+          </ul>
+
+          <div className="va-gold">
+            <p className="va-gold-label">Worth Knowing Before You Move</p>
+            <p className="va-gold-body">If you do not plan to import a container of household goods the TEI may not be relevant to you. As discussed in the Moving to Philippines section, most expats find it more cost-effective to buy furniture and appliances locally rather than ship from home. However if you have valuable personal effects worth shipping — art, specific furniture, collectibles — the TEI can save you significant customs duties on goods up to $7,000 USD in declared value.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ── DISCLAIMER ── */}
       <section className="legal-section">
         <div className="legal-inner">

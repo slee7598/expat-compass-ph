@@ -598,6 +598,41 @@ export default function HealthcarePage() {
         </div>
       </section>
 
+      {/* ── SPECIALIST CARE ── */}
+      <section className="section section-dark" id="specialist-care">
+        <div className="section-inner">
+          <p className="section-label">Specialist Medical Care</p>
+          <h2 className="section-heading section-heading-light">Specialist Medical Care in the Philippines — What Is Available and Where</h2>
+          <p className="hb hb-light">The Philippines has excellent specialist medical care in its major private hospitals. Here is what to know about accessing specialist care as an expat.</p>
+
+          <h3 className="hsub hsub-first hsub-light">Urology</h3>
+          <p className="hb hb-light">Philippine urologists are highly trained and see a high volume of cases including benign prostatic hyperplasia (BPH) which is extremely common among older expat men. TURP (transurethral resection of the prostate) is widely performed at major private hospitals. Green Light Laser and HoLEP (holmium laser enucleation) procedures are available at better-equipped facilities.</p>
+          <ul className="hlist">
+            <li className="hli hli-light">Cost comparison: TURP in the Philippines costs approximately 80,000 to 200,000 pesos ($1,300 to $3,400 USD) compared to $15,000 to $30,000 in the United States without insurance.</li>
+            <li className="hli hli-light">For urology in Cebu: Chong Hua Hospital and Cebu Doctors University Hospital both have strong urology departments.</li>
+            <li className="hli hli-light">For complex cases: St. Luke&rsquo;s Medical Center BGC in Manila is the Philippines&rsquo; top-tier referral hospital for complex urological procedures.</li>
+            <li className="hli hli-light">Practical tip: bring your medical documentation and imaging from your home country when seeking specialist consultation here. Philippine specialists will want your history and previous test results.</li>
+          </ul>
+
+          <h3 className="hsub hsub-light">Cardiology</h3>
+          <p className="hb hb-light">Cebu Doctors University Hospital has a dedicated Heart Center and is the strongest cardiac care option in Cebu. Chong Hua Hospital also has cardiology services. For cardiac surgery and complex interventional cardiology Manila remains the reference — Makati Medical Center and St. Luke&rsquo;s BGC have the strongest cardiac programs in the Philippines.</p>
+
+          <h3 className="hsub hsub-light">Oncology</h3>
+          <p className="hb hb-light">Cancer care in the Philippines has improved significantly. Cebu Doctors University Hospital has an oncology program. The Medical City Cebu handles some cancer cases. For serious cancer treatment Manila is the standard referral destination — The Medical City Manila, St. Luke&rsquo;s BGC, and Philippine General Hospital for government-subsidized care.</p>
+
+          <h3 className="hsub hsub-light">Orthopedics</h3>
+          <p className="hb hb-light">Good orthopedic care is available in Cebu. Chong Hua and Cebu Doctors both have orthopedic departments. Joint replacements are performed routinely. Cost of a total knee replacement in the Philippines is approximately 200,000 to 400,000 pesos compared to $30,000 to $50,000 in the US.</p>
+
+          <h3 className="hsub hsub-light">Finding a Specialist — Practical Tips</h3>
+          <ul className="hlist">
+            <li className="hli hli-light">Most Philippine private hospitals allow you to book directly with a specialist without a GP referral — unlike the US system.</li>
+            <li className="hli hli-light">Ask your expat Facebook group or the outpatient department of Chong Hua or Cebu Doctors directly for specialist recommendations.</li>
+            <li className="hli hli-light">English is universal at major private hospitals. Language is not a barrier.</li>
+            <li className="hli hli-light">Bring all previous medical records, imaging, and test results when seeing a specialist for the first time.</li>
+          </ul>
+        </div>
+      </section>
+
       {/* ── STEVE'S NOTE ── */}
       <section className="sn-section">
         <div className="sn-inner">

@@ -192,6 +192,13 @@ export default function MovingToPhilippinesPage() {
             <p className="ma-warning-body">Do NOT bring controlled substances beyond what is legally allowed for personal use with valid prescription documentation. Philippine drug laws are extremely strict.</p>
           </div>
 
+          <h3 className="msub">CPAP Machines and Medical Equipment</h3>
+          <p className="mb">If you use a CPAP machine you will be relieved to know that modern CPAP machines including ResMed AirSense and Philips DreamStation models are dual voltage rated 100-240V 50-60Hz and work in the Philippines without a voltage converter. You only need a plug adapter for Philippine outlets. Check the label on your CPAP power supply to confirm — it will say Input: 100-240V if it is dual voltage.</p>
+          <p className="mb">However the Philippines experiences periodic brownouts — power outages that can last minutes to hours. For CPAP users a brownout mid-sleep is not just an inconvenience — it interrupts critical therapy. Two solutions: First invest in a quality UPS — Uninterruptible Power Supply — before leaving the US. A UPS provides battery backup that keeps your CPAP running through short brownouts and protects against voltage spikes. Look for a pure sine wave UPS which is safer for sensitive medical equipment. Second consider bringing a dedicated CPAP battery backup like the EASYLONGER ES720 which provides multiple nights of therapy independent of the power grid. This is also useful for travel and island hopping where power reliability varies.</p>
+          <p className="mb">Also bring an AVR — Automatic Voltage Regulator — for general electronics protection. Philippine power fluctuations can damage electronics over time even without a full outage. An AVR smooths out voltage irregularities before they reach your devices.</p>
+          <p className="mb"><strong>Supplies and accessories:</strong> Bring at least a 6-month supply of CPAP masks, filters, tubing, and distilled water tablets. CPAP supplies are available in the Philippines through specialty suppliers but selection is limited and prices are higher than US suppliers. Stock up before you leave and order from US suppliers periodically.</p>
+          <p className="mb"><strong>Prescriptions:</strong> Your CPAP prescription from your US doctor is valid for ordering supplies but you will want to establish with a Philippine pulmonologist or sleep specialist for ongoing monitoring. Chong Hua Hospital in Cebu has pulmonology specialists experienced with foreign patients.</p>
+
           <h3 className="msub">Food and Specialty Items</h3>
           <ul className="mlist">
             <li className="mli">Your favorite spices and seasonings that may not be locally available.</li>
