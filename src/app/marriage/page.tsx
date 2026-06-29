@@ -717,6 +717,56 @@ export default function MarriagePage() {
         .compare-table .td-warn { color: #F2994A; font-weight: 500; }
         .compare-table .td-bad { color: #EB5757; font-weight: 500; }
 
+        /* ── DIVORCE SECTION EXTRAS ── */
+        .dv-amber-alert {
+          background: rgba(242,153,74,0.08);
+          border: 1px solid rgba(242,153,74,0.35);
+          border-left: 4px solid #F2994A;
+          padding: 26px 28px;
+          margin: 28px 0;
+          max-width: 760px;
+        }
+        .dv-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 12px; }
+        .dv-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .dv-navy-card {
+          background: rgba(11,31,58,0.88);
+          border: 1px solid rgba(201,168,76,0.2);
+          border-left: 4px solid #C9A84C;
+          padding: 26px 28px;
+          margin: 28px 0;
+          max-width: 760px;
+        }
+        .dv-navy-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
+        .dv-navy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); margin-bottom: 10px; }
+        .dv-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; max-width: 760px; }
+        .dv-col-card { padding: 20px 22px; }
+        .dv-col-can { background: rgba(111,207,151,0.06); border: 1px solid rgba(111,207,151,0.2); border-left: 3px solid #6FCF97; }
+        .dv-col-cannot { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.2); border-left: 3px solid #EB5757; }
+        .dv-col-heading { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 12px; }
+        .dv-col-can .dv-col-heading { color: #6FCF97; }
+        .dv-col-cannot .dv-col-heading { color: #EB5757; }
+        .dv-col-text { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.78); }
+        .dv-stat-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; max-width: 620px; }
+        .dv-stat-card { padding: 18px 22px; }
+        .dv-stat-dark { background: rgba(248,246,241,0.04); border: 1px solid rgba(201,168,76,0.12); }
+        .dv-stat-lt { background: #fff; border: 1px solid rgba(11,31,58,0.08); }
+        .dv-stat-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
+        .dv-stat-value { font-size: 0.88rem; font-weight: 300; color: rgba(248,246,241,0.85); line-height: 1.6; }
+        .dv-warn-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
+        .dv-warn-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 26px; position: relative; }
+        .dv-warn-li::before { content: '⚠'; position: absolute; left: 0; top: 1px; font-size: 0.72rem; color: #F2994A; }
+        .dv-warn-li-dark { color: rgba(248,246,241,0.78); }
+        .dv-warn-li-lt { color: #4A5868; }
+        .dv-action-list { list-style: none; counter-reset: dvctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 18px; max-width: 760px; }
+        .dv-action-item { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 40px; position: relative; counter-increment: dvctr; }
+        .dv-action-item::before { content: counter(dvctr); position: absolute; left: 0; top: 1px; width: 24px; height: 24px; background: #C9A84C; color: #0B1F3A; font-size: 0.72rem; font-weight: 700; text-align: center; line-height: 24px; }
+        .dv-muted-box { background: rgba(11,31,58,0.03); border: 1px solid rgba(11,31,58,0.08); border-left: 3px solid rgba(11,31,58,0.12); padding: 22px 26px; margin-top: 28px; max-width: 760px; }
+        .dv-muted-text { font-size: 0.82rem; font-weight: 300; line-height: 1.75; color: #6B7B8A; }
+        @media (max-width: 700px) {
+          .dv-two-col { grid-template-columns: 1fr; }
+          .dv-stat-row { grid-template-columns: 1fr; }
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -1350,6 +1400,280 @@ export default function MarriagePage() {
 
           <h3 className="uv-sub">The bottom line</h3>
           <p className="uv-para">For a Filipina with a serious American partner, a tourist visa is genuinely difficult and carries real risks if the plan involves marriage or long-term immigration. It is not impossible, but requires strong documented ties to the Philippines, a well-prepared application, and honest consistent answers at the interview. If your relationship is heading toward marriage, the K-1 or CR-1 is the correct pathway. The tourist visa is not a shortcut — and using it as one can create immigration complications that follow both of you for years.</p>
+        </div>
+      </section>
+
+      {/* === DIVORCE — INTRO + SUBSECTION 1 === */}
+      <section className="uv-section section-light">
+        <div className="uv-inner">
+          <p className="uv-eyebrow">Divorce</p>
+          <h2 className="uv-title uv-title-dark">Divorce and Ending Your Marriage — What Every Expat Needs to Know</h2>
+
+          <h3 className="uv-sub uv-sub-first uv-sub-dark">The Fundamental Reality — Two Legal Worlds</h3>
+          <p className="uv-para uv-para-dark">When an American man married to a Filipina seeks a divorce, he is navigating two completely separate legal systems that treat the marriage very differently. Understanding both is not optional — confusing them is one of the most costly mistakes in international family law.</p>
+          <p className="uv-para uv-para-dark">In the United States, your marriage can be dissolved through divorce under the laws of your state of residence. You can remarry in the US. Your US divorce is fully valid and recognized throughout America.</p>
+          <p className="uv-para uv-para-dark">In the Philippines, the same marriage continues to exist legally until a Philippine court formally recognizes your US divorce through a specific judicial proceeding. Your Filipina spouse remains legally married under Philippine law regardless of your US divorce decree. She cannot legally remarry in the Philippines and her civil status records still show her as married until a Philippine court acts.</p>
+          <p className="uv-para uv-para-dark">These are two parallel legal realities that exist simultaneously. Understanding both protects you and protects her.</p>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 2: US DIVORCE PROCESS === */}
+      <section className="uv-section section-dark">
+        <div className="uv-inner">
+          <h2 className="uv-title">Getting a US Divorce When Your Spouse Is in the Philippines</h2>
+          <p className="uv-para">The most common question from American men in this situation is whether their spouse needs to agree to or sign the divorce papers. In most US states the answer is no.</p>
+          <p className="uv-para">US divorce law does not require both parties to consent. Here is how it works:</p>
+
+          <h3 className="uv-sub">Default Divorce — When Your Spouse Does Not Respond</h3>
+          <ol className="uv-nlist">
+            <li className="uv-ni">File for divorce in your US state of residence. Most states require you to have lived there for a minimum period — typically 6 months to 1 year — before filing. File in the county where you reside.</li>
+            <li className="uv-ni">Formally serve divorce papers on your spouse in the Philippines. This is the critical legal step and the one that requires the most care. You must make a genuine legal effort to notify her. Methods typically accepted by US courts include: personal service through a licensed process server in the Philippines; service through the Philippine court system via Hague Convention procedures; certified mail with proof of delivery in some states; and as a last resort, service by publication in a newspaper if she genuinely cannot be located.</li>
+            <li className="uv-ni">Wait for the response deadline. This varies by state — typically 20 to 30 days from confirmed service. If she does not respond within the required timeframe, you can request a default.</li>
+            <li className="uv-ni">The court grants a default divorce judgment. You receive a divorce decree without her signature or participation.</li>
+          </ol>
+
+          <h3 className="uv-sub">What She Can and Cannot Block</h3>
+          <div className="dv-two-col">
+            <div className="dv-col-card dv-col-cannot">
+              <p className="dv-col-heading">She Cannot Block</p>
+              <p className="dv-col-text">She cannot block the divorce itself in most US states. US courts have jurisdiction over the marriage if you are a US resident and the marriage was legally recognized. The court can and will grant the divorce even over her objection or non-participation.</p>
+            </div>
+            <div className="dv-col-card dv-col-can">
+              <p className="dv-col-heading">She Can Complicate</p>
+              <p className="dv-col-text">She can complicate proceedings regarding division of US-based assets, alimony or spousal support claims, and any shared US property or financial matters. If she chooses to participate and contest financial elements the process becomes more complex. If she ignores proceedings entirely, a default judgment on all matters including asset division can be entered.</p>
+            </div>
+          </div>
+
+          <h3 className="uv-sub">Service of Process in the Philippines — The Procedural Hurdle</h3>
+          <div className="uv-policy-alert">
+            <p className="uv-policy-label">Important — Do Not Underestimate This Step</p>
+            <p className="uv-policy-body">Properly serving your spouse in the Philippines is the step most people underestimate. Your state court requires proof that she was legally notified before entering a default judgment. The Philippines is a signatory to the Hague Service Convention, which provides the official legal mechanism for serving court documents internationally. The process through official channels can take several months. Many attorneys recommend hiring a process server in the Philippines who can personally serve papers and provide the affidavit of service your US court requires. Do not skip this step or take shortcuts — improperly served papers can delay your case significantly or result in the default being challenged later.</p>
+          </div>
+
+          <h3 className="uv-sub">US Divorce Cost and Timeline</h3>
+          <p className="uv-para">Uncontested or default divorce with attorney: approximately $1,500 to $5,000 USD in attorney fees plus court filing fees which vary by state. Timeline from filing to decree: typically 3 to 12 months depending on state waiting periods, how quickly service is achieved, and court scheduling.</p>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 3: PHILIPPINE LEGAL REALITY === */}
+      <section className="uv-section section-light">
+        <div className="uv-inner">
+          <h2 className="uv-title uv-title-dark">The Critical Philippine Legal Reality — Your US Divorce Does Not Exist in the Philippines</h2>
+          <div className="uv-policy-alert-lt">
+            <p className="uv-policy-label">⚠ The Single Most Important Thing to Understand</p>
+            <p className="uv-policy-body-lt">Your US divorce decree, no matter how valid and final it is in America, has absolutely no automatic effect on your wife&rsquo;s legal status in the Philippines. Philippine courts do not recognize foreign divorces automatically. The marriage continues to legally exist in the Philippines until a Philippine court formally recognizes the foreign divorce through a separate judicial proceeding.</p>
+          </div>
+
+          <h3 className="uv-sub uv-sub-dark">Why This Matters Practically</h3>
+          <ul className="uv-list">
+            <li className="uv-li uv-li-dark">Her PSA records — Philippine Statistics Authority, which maintains civil registry records — will still show her as married.</li>
+            <li className="uv-li uv-li-dark">She cannot obtain a CENOMAR — Certificate of No Marriage — which is required to remarry in the Philippines or for many official transactions.</li>
+            <li className="uv-li uv-li-dark">If she remarries in the Philippines without first getting the foreign divorce judicially recognized, she risks being charged with bigamy — a criminal offense under Philippine law.</li>
+            <li className="uv-li uv-li-dark">Her passport, government benefits, and property transactions may be affected by her continued married status in Philippine records.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 4: ARTICLE 26 === */}
+      <section className="uv-section section-dark">
+        <div className="uv-inner">
+          <p className="uv-eyebrow">Article 26 — Family Code of the Philippines</p>
+          <h2 className="uv-title">Article 26 of the Family Code — The Legal Pathway for Your Filipino Spouse</h2>
+          <p className="uv-para">Article 26 Paragraph 2 of the Philippine Family Code is the legal provision that allows your Filipina spouse to have her civil status updated in the Philippines after your US divorce. It states: <em>Where a marriage between a Filipino citizen and a foreigner is validly celebrated and a divorce is thereafter validly obtained abroad by the alien spouse capacitating him or her to remarry, the Filipino spouse shall have capacity to remarry under Philippine law.</em></p>
+          <p className="uv-para">In plain terms: if you as the American spouse obtain a valid divorce in the United States and that divorce allows you to remarry, your Filipina spouse has the legal right to petition a Philippine court to recognize that divorce and update her civil status to single.</p>
+
+          <h3 className="uv-sub">Critical Updates from the Philippine Supreme Court</h3>
+          <div className="dv-navy-card">
+            <p className="dv-navy-label">Supreme Court Rulings — What Changed</p>
+            <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>Republic v. Manalo (2018):</strong> The Supreme Court expanded Article 26 to cover situations where the Filipino spouse — not just the foreign spouse — initiates the divorce abroad. Either spouse can now seek judicial recognition of the foreign divorce in the Philippines.</p>
+            <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>Republic v. Cuevas (2024):</strong> The Court confirmed that the type of divorce does not matter — whether judicial, administrative, or by mutual agreement — as long as it is valid under the foreign spouse&rsquo;s national law. This is particularly relevant for US divorces which vary in type by state.</p>
+            <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>As of mid-2026:</strong> No law allowing Filipino citizens to file for absolute domestic divorce has been enacted despite multiple legislative attempts. Judicial recognition of foreign divorces in mixed marriages remains the primary legal pathway.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 5: ARTICLE 26 PROCESS === */}
+      <section className="uv-section section-light">
+        <div className="uv-inner">
+          <h2 className="uv-title uv-title-dark">The Article 26 Judicial Recognition Process in the Philippines</h2>
+          <p className="uv-para uv-para-dark">This is a separate court proceeding that must be filed in the Philippines. It is not automatic and it is not simple.</p>
+
+          <h3 className="uv-sub uv-sub-dark">Who Can File</h3>
+          <p className="uv-para uv-para-dark">Either spouse can file the petition. Most commonly it is the Filipina spouse who files because she is the one whose Philippine civil status needs updating. The petition is filed in the Regional Trial Court — Family Court — in the city or province where the marriage was recorded or where the petitioner resides.</p>
+
+          <h3 className="uv-sub uv-sub-dark">What Must Be Proven in Court</h3>
+          <ol className="uv-nlist">
+            <li className="uv-ni uv-ni-dark">A valid marriage existed between a Filipino and a foreigner — citizenship is tested at the time the divorce was obtained. The foreign spouse must have been a non-Filipino national at the time.</li>
+            <li className="uv-ni uv-ni-dark">A divorce was validly obtained abroad under the law of the country that issued it. Philippine courts do not take judicial notice of foreign laws — the specific law of your US state on divorce must be proven as a fact in court with authenticated documentation.</li>
+            <li className="uv-ni uv-ni-dark">The divorce capacitates the foreign spouse to remarry — meaning the US divorce is final and you are legally free to remarry in the US.</li>
+          </ol>
+
+          <h3 className="uv-sub uv-sub-dark">Documents Required</h3>
+          <ul className="uv-list">
+            <li className="uv-li uv-li-dark">Authenticated Philippine marriage certificate — PSA copy.</li>
+            <li className="uv-li uv-li-dark">Authenticated US divorce decree — must be apostilled through the Secretary of State of the state where the divorce was granted. The Philippines joined the Hague Apostille Convention in 2019, making this more straightforward.</li>
+            <li className="uv-li uv-li-dark">Authenticated copy of the specific US state divorce law — a certified copy of the relevant statutes of your state confirming the divorce is valid and final under that state&rsquo;s law. This must also be apostilled. This is the document most commonly missing and most commonly causing cases to fail.</li>
+            <li className="uv-li uv-li-dark">Birth certificates of children if any.</li>
+            <li className="uv-li uv-li-dark">Proof of US citizenship — passport or naturalization certificate.</li>
+            <li className="uv-li uv-li-dark">Proof of Philippine citizenship of the Filipino spouse — PSA birth certificate or passport.</li>
+            <li className="uv-li uv-li-dark">Proof of residence.</li>
+          </ul>
+
+          <h3 className="uv-sub uv-sub-dark">The Court Process</h3>
+          <ol className="uv-nlist">
+            <li className="uv-ni uv-ni-dark">Attorney files petition at the appropriate Regional Trial Court.</li>
+            <li className="uv-ni uv-ni-dark">Court orders publication of notice in a newspaper of general circulation once a week for three consecutive weeks — this is a mandatory procedural step.</li>
+            <li className="uv-ni uv-ni-dark">Office of the Solicitor General is notified — they represent the government&rsquo;s interest and can oppose the petition.</li>
+            <li className="uv-ni uv-ni-dark">Hearing held — petitioner presents all documentary evidence and proves the three required elements.</li>
+            <li className="uv-ni uv-ni-dark">Court issues decision granting or denying recognition.</li>
+            <li className="uv-ni uv-ni-dark">If granted — decision is registered with the Local Civil Registrar where the marriage was recorded and then with the Philippine Statistics Authority.</li>
+            <li className="uv-ni uv-ni-dark">PSA annotates the marriage record showing the foreign divorce has been judicially recognized.</li>
+            <li className="uv-ni uv-ni-dark">Filipina spouse can now obtain a CENOMAR showing her as single and is legally free to remarry in the Philippines.</li>
+          </ol>
+
+          <h3 className="uv-sub uv-sub-dark">Timeline and Cost</h3>
+          <p className="uv-para uv-para-dark">Timeline: Most cases take 12 to 24 months from filing to final PSA annotation. Simpler cases with complete documents can move faster. Complex cases — multiple jurisdictions involved, missing foreign law documentation, Office of the Solicitor General opposition — can take longer.</p>
+          <p className="uv-para uv-para-dark">Cost: Philippine attorney fees for judicial recognition of foreign divorce typically range from 80,000 to 200,000 pesos depending on the law firm and complexity. Add filing fees, publication costs, and document authentication costs for a total realistic budget of 150,000 to 300,000 pesos (approximately $2,500 to $5,000 USD).</p>
+
+          <h3 className="uv-sub uv-sub-dark">Common Reasons for Denial</h3>
+          <ul className="dv-warn-list">
+            <li className="dv-warn-li dv-warn-li-lt">Insufficient proof of the foreign divorce law — the most common failure point. Many petitions fail because they present the divorce decree but not an authenticated copy of the actual divorce statute from the US state.</li>
+            <li className="dv-warn-li dv-warn-li-lt">Defective authentication of documents — using incorrect apostille procedures or missing required certifications.</li>
+            <li className="dv-warn-li dv-warn-li-lt">Failure to establish that the foreign spouse was a non-Filipino at the relevant time — particularly relevant if the American spouse ever held dual citizenship with the Philippines. These deficiencies can often be cured by a lawyer and the petition refiled.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 6: ANNULMENT === */}
+      <section className="uv-section section-dark">
+        <div className="uv-inner">
+          <h2 className="uv-title">Philippine Annulment — The Alternative Path</h2>
+          <p className="uv-para">Annulment in the Philippines is the primary legal mechanism for dissolving a marriage where the judicial recognition of foreign divorce route is unavailable — for example, where both spouses are Filipino citizens, or where no foreign divorce has been obtained.</p>
+          <p className="uv-para">For expats married to Filipinas who are pursuing a US divorce, annulment in the Philippines is generally not the primary route. However it is worth understanding because it may be relevant in some situations.</p>
+
+          <h3 className="uv-sub">What Annulment Is and Is Not</h3>
+          <p className="uv-para">Philippine annulment does not end a valid marriage the way divorce does. It declares that the marriage was never valid from the beginning due to a defect that existed at the time of the wedding. This is a fundamental legal difference from divorce, which ends a valid marriage. The most commonly used ground is psychological incapacity under Article 36 of the Family Code — defined as a personality structure or condition so severe that one or both spouses were unable to fulfill the essential obligations of marriage. This is a legal concept, not a medical diagnosis. Following the landmark <em>Tan-Andal v. Andal</em> ruling in 2021, a clinical psychiatrist&rsquo;s testimony is no longer absolutely required, though most lawyers still recommend one.</p>
+
+          <h3 className="uv-sub">Other Grounds for Annulment</h3>
+          <ul className="uv-list">
+            <li className="uv-li">Lack of parental consent if a party was between 18 and 21 at marriage.</li>
+            <li className="uv-li">Insanity — one party was of unsound mind at time of marriage.</li>
+            <li className="uv-li">Fraud — concealing pregnancy by another man, an STD, drug addiction.</li>
+            <li className="uv-li">Force or intimidation — consent was obtained through coercion.</li>
+            <li className="uv-li">Impotence existing at time of marriage and appearing incurable.</li>
+            <li className="uv-li">Incurable sexually transmissible disease existing at time of marriage.</li>
+            <li className="uv-li">Most grounds other than psychological incapacity have a 5-year statute of limitations from the date of marriage, after which they cannot be used.</li>
+          </ul>
+
+          <h3 className="uv-sub">Annulment Cost and Timeline</h3>
+          <div className="dv-stat-row">
+            <div className="dv-stat-card dv-stat-dark">
+              <p className="dv-stat-label">Timeline</p>
+              <p className="dv-stat-value">2 to 5 years uncontested. Contested cases can take significantly longer.</p>
+            </div>
+            <div className="dv-stat-card dv-stat-dark">
+              <p className="dv-stat-label">Total Cost</p>
+              <p className="dv-stat-value">₱150,000 – ₱600,000 (approx. $2,500 – $10,000 USD)</p>
+            </div>
+            <div className="dv-stat-card dv-stat-dark">
+              <p className="dv-stat-label">Attorney Fees</p>
+              <p className="dv-stat-value">₱150,000 – ₱500,000</p>
+            </div>
+            <div className="dv-stat-card dv-stat-dark">
+              <p className="dv-stat-label">Other Fees</p>
+              <p className="dv-stat-value">Psychologist ₱40,000–80,000 · Filing &amp; publication ₱20,000–50,000. Court filing fees increased 15% as of April 1, 2026.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 7: LEGAL SEPARATION === */}
+      <section className="uv-section section-light">
+        <div className="uv-inner">
+          <h2 className="uv-title uv-title-dark">Legal Separation — What It Does and Does Not Do</h2>
+          <p className="uv-para uv-para-dark">Legal separation is frequently misunderstood by both foreigners and Filipinos. Legal separation in the Philippines allows spouses to live apart and divide their property. It does <strong>not</strong> dissolve the marriage bond. Legally separated spouses remain married. Neither party can remarry.</p>
+
+          <h3 className="uv-sub uv-sub-dark">Grounds for Legal Separation</h3>
+          <ul className="uv-list">
+            <li className="uv-li uv-li-dark">Repeated physical violence or abusive conduct.</li>
+            <li className="uv-li uv-li-dark">Drug addiction or habitual alcoholism.</li>
+            <li className="uv-li uv-li-dark">Sexual infidelity.</li>
+            <li className="uv-li uv-li-dark">Abandonment without just cause for more than one year.</li>
+            <li className="uv-li uv-li-dark">Attempt against the life of the spouse or children.</li>
+            <li className="uv-li uv-li-dark">Conviction of a crime with penalty of more than 6 years.</li>
+          </ul>
+          <p className="uv-para uv-para-dark">Legal separation is not a pathway to remarriage. For expats seeking to end their marriage and eventually remarry, legal separation serves no useful purpose in most cases. It is worth knowing this because many people in the Philippines describe themselves as legally separated when in fact they have simply been living apart with no legal proceedings at all.</p>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 8: ASSETS === */}
+      <section className="uv-section section-dark">
+        <div className="uv-inner">
+          <h2 className="uv-title">Philippine Assets and Property — Critical Considerations</h2>
+          <p className="uv-para">A US divorce decree does not automatically affect Philippine-registered property or assets. Philippine property law is separate from US divorce law and requires separate attention.</p>
+          <p className="uv-para">Under Philippine law, property acquired during marriage is generally governed by the system of Absolute Community of Property unless a prenuptial agreement specifies otherwise. This means property acquired during the marriage by either spouse is jointly owned regardless of whose name it is registered in.</p>
+
+          <h3 className="uv-sub">Key Points for Expats</h3>
+          <ul className="uv-list">
+            <li className="uv-li">If you own property registered in the Philippines — including condominium units — your US divorce does not automatically transfer or divide that property. A separate proceeding or agreement is needed.</li>
+            <li className="uv-li">If property is registered in your Filipino spouse&rsquo;s name and she is the legal owner, your US divorce does not give you automatic rights to that property in the Philippines.</li>
+            <li className="uv-li">If your Filipino spouse has Philippine bank accounts, investment accounts, or other assets, your US divorce decree has no direct effect on those assets.</li>
+            <li className="uv-li">Consult a Philippine attorney about the division of any Philippine-based assets before or during your US divorce proceedings. Agreements about Philippine property should ideally be formalized in both jurisdictions.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 9: CHILDREN === */}
+      <section className="uv-section section-light">
+        <div className="uv-inner">
+          <h2 className="uv-title uv-title-dark">Children in the Philippines — International Custody Complexity</h2>
+          <div className="dv-amber-alert">
+            <p className="dv-amber-label">⚠ Requires Specialized Legal Advice</p>
+            <p className="dv-amber-body">If children from the marriage are living in the Philippines, international family law adds significant complexity that requires specialized legal advice. This is not an area where general divorce guidance applies.</p>
+          </div>
+
+          <h3 className="uv-sub uv-sub-dark">Key Issues</h3>
+          <ul className="uv-list">
+            <li className="uv-li uv-li-dark">Philippine courts generally favor giving custody of young children to the mother under Philippine law. The Tender Years Doctrine presumes children under 7 years old should remain with the mother unless there is a compelling reason otherwise.</li>
+            <li className="uv-li uv-li-dark">A US custody order is not automatically enforceable in the Philippines. Philippine courts will conduct their own custody determination based on Philippine law and the best interests of the child.</li>
+            <li className="uv-li uv-li-dark">Removing a child from the Philippines without the other parent&rsquo;s consent can constitute child abduction under both Philippine law and international law, even if you have a US custody order.</li>
+            <li className="uv-li uv-li-dark">If your child is in the Philippines and you are seeking custody, consult both a US family law attorney and a Philippine family law attorney before taking any action.</li>
+            <li className="uv-li uv-li-dark">The Hague Convention on Parental Child Abduction — which the Philippines has ratified — provides a legal mechanism for the return of children who have been wrongfully removed or retained across international borders.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 10: REMARRIAGE === */}
+      <section className="uv-section section-dark">
+        <div className="uv-inner">
+          <h2 className="uv-title">If You Plan to Remarry in the Philippines</h2>
+          <p className="uv-para">If you obtain a US divorce and later want to remarry in the Philippines — whether to your current Filipino partner or anyone else — your Philippine civil status must be updated first.</p>
+          <p className="uv-para">The steps required: Your US divorce must be judicially recognized by a Philippine court through the Article 26 process described above. Only after the Philippine court grants recognition and the PSA annotates your former wife&rsquo;s marriage record can you be considered legally free to remarry in the Philippines. If you attempt to marry in the Philippines while still legally married there, you risk a bigamy charge regardless of your US divorce status.</p>
+          <div className="uv-policy-alert">
+            <p className="uv-policy-label">The Most Common Question — Answered Directly</p>
+            <p className="uv-policy-body">For the person asking: &ldquo;I got divorced in the US, can I marry my Filipino girlfriend in the Philippines now?&rdquo; The answer is not automatically. Your US divorce must first be judicially recognized in the Philippines. This takes 12 to 24 months and requires a Philippine attorney. Plan accordingly.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === DIVORCE — SUBSECTION 11: PRACTICAL STEPS + DISCLAIMER === */}
+      <section className="uv-section section-light">
+        <div className="uv-inner">
+          <h2 className="uv-title uv-title-dark">Practical Steps and Recommendations</h2>
+          <ol className="dv-action-list">
+            <li className="dv-action-item">Consult a US family law attorney in your state before filing anything. Divorce law varies significantly by state — residency requirements, waiting periods, grounds, asset division rules, and service of process requirements all differ. Get advice specific to your jurisdiction.</li>
+            <li className="dv-action-item">Understand your service of process requirements. How you legally notify your spouse in the Philippines must satisfy your state court&rsquo;s standards. Improperly served papers can delay or derail your case.</li>
+            <li className="dv-action-item">If the split is amicable, a waiver of service or acknowledgment of proceedings from your spouse simplifies everything significantly, even though her signature is not legally required.</li>
+            <li className="dv-action-item">If there are Philippine assets involved, consult a Philippine attorney before finalizing your US divorce. Asset division affecting Philippine property requires attention in both jurisdictions.</li>
+            <li className="dv-action-item">If children are in the Philippines, consult attorneys in both countries before taking any action. Do not rely on your US custody order alone.</li>
+            <li className="dv-action-item">For the Article 26 recognition process in the Philippines, the most critical documents to prepare are: your apostilled US divorce decree AND an apostilled certified copy of your state&rsquo;s divorce law. Missing the second document is the most common reason petitions fail.</li>
+            <li className="dv-action-item">If your Filipino spouse needs her civil status updated in the Philippines, she needs a Philippine attorney who specializes in judicial recognition of foreign divorce. This is a specialized practice area — not every family law attorney handles it regularly.</li>
+            <li className="dv-action-item">Do not rely on this page as legal advice. Divorce law in both the US and the Philippines is complex, state-specific, case-specific, and changing. The consultation fee with a qualified attorney in both jurisdictions is money well spent before filing anything.</li>
+          </ol>
+
+          <div className="dv-muted-box">
+            <p className="dv-muted-text">This page provides general information about divorce law as it applies to international marriages between American men and Filipino citizens. It is not legal advice and should not be relied upon as such. Philippine and US family law is complex, jurisdiction-specific, and subject to change. Always consult a licensed US family law attorney in your state and a licensed Philippine family law attorney before taking any legal action regarding your marriage. The information on this page reflects conditions as of June 2026.</p>
+          </div>
         </div>
       </section>
 
