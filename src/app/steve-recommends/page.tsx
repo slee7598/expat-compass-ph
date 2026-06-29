@@ -261,14 +261,9 @@ export default function SteveRecommendsPage() {
         .rec-item-link:hover { border-color: #C9A84C; }
 
         /* ── NORDVPN FEATURED CARD ── */
-        .nordvpn-section {
-          padding: 72px 48px;
-          background: #0B1F3A;
-          border-top: 2px solid rgba(201,168,76,0.3);
-          border-bottom: 2px solid rgba(201,168,76,0.3);
-        }
         .nordvpn-card {
           max-width: 860px;
+          margin-top: 24px;
           border-left: 4px solid #C9A84C;
           padding: 36px 40px;
           background: rgba(201,168,76,0.06);
@@ -419,6 +414,27 @@ export default function SteveRecommendsPage() {
               </div>
             ))}
           </div>
+          <div className="nordvpn-card">
+            <p className="nordvpn-featured-label">Featured Recommendation</p>
+            <h2 className="nordvpn-card-title">NordVPN — The VPN Service I Recommend for Expats</h2>
+            <p className="nordvpn-card-body">
+              I run a personal private VPN setup for my own specific technical needs here in Punta Engaño. But if I were recommending a commercial VPN service to any expat in the Philippines — and I do recommend one — it is NordVPN without hesitation. I have followed the VPN space long enough to know NordVPN is the gold standard.
+            </p>
+            <p className="nordvpn-card-subhead">Why expats in the Philippines need a VPN</p>
+            <p className="nordvpn-card-body">
+              Your US streaming services — Netflix, Hulu, HBO Max, Disney Plus — are geo-blocked in the Philippines. NordVPN routes your connection through a US server so your full streaming library works exactly as it did at home. Your US banking apps sometimes flag Philippine IP addresses as suspicious activity — NordVPN keeps your connection appearing US-based so you never get locked out of your own accounts. The Airbnb pricing trick — I only book Airbnbs through a VPN because I consistently see better rates when my IP is not showing as a local Philippine connection. Dynamic pricing algorithms show different rates based on your location. And your Social Security account, Medicare portal, and US government services occasionally have issues with foreign IP addresses — a VPN eliminates that friction entirely.
+            </p>
+            <p className="nordvpn-card-subhead">Why NordVPN specifically</p>
+            <p className="nordvpn-card-body">
+              100% no-logs policy, independently audited. Military-grade AES-256 encryption. Servers in 111 countries including the United States. Up to 10 simultaneous devices on one subscription. Works on Windows, Mac, iOS, Android, and can be configured directly on compatible routers so every device in your home is automatically protected. At their 1 and 2-year plan pricing, it is one of the best value purchases you can make as an expat.
+            </p>
+            <div className="nordvpn-btn-wrap">
+              <a href="https://nordvpn.com" target="_blank" rel="noopener noreferrer" className="nordvpn-btn">
+                Get NordVPN
+              </a>
+              <span className="nordvpn-affiliate-note">Affiliate link coming soon.</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -544,31 +560,6 @@ export default function SteveRecommendsPage() {
                 )}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* NORDVPN FEATURED */}
-      <section className="nordvpn-section">
-        <div className="nordvpn-card">
-          <p className="nordvpn-featured-label">Featured Recommendation</p>
-          <h2 className="nordvpn-card-title">NordVPN — The VPN Service I Recommend for Expats</h2>
-          <p className="nordvpn-card-body">
-            I run a personal private VPN setup for my own specific technical needs here in Punta Engaño. But if I were recommending a commercial VPN service to any expat in the Philippines — and I do recommend one — it is NordVPN without hesitation. I have followed the VPN space long enough to know NordVPN is the gold standard.
-          </p>
-          <p className="nordvpn-card-subhead">Why expats in the Philippines need a VPN</p>
-          <p className="nordvpn-card-body">
-            Your US streaming services — Netflix, Hulu, HBO Max, Disney Plus — are geo-blocked in the Philippines. NordVPN routes your connection through a US server so your full streaming library works exactly as it did at home. Your US banking apps sometimes flag Philippine IP addresses as suspicious activity — NordVPN keeps your connection appearing US-based so you never get locked out of your own accounts. The Airbnb pricing trick — I only book Airbnbs through a VPN because I consistently see better rates when my IP is not showing as a local Philippine connection. Dynamic pricing algorithms show different rates based on your location. And your Social Security account, Medicare portal, and US government services occasionally have issues with foreign IP addresses — a VPN eliminates that friction entirely.
-          </p>
-          <p className="nordvpn-card-subhead">Why NordVPN specifically</p>
-          <p className="nordvpn-card-body">
-            100% no-logs policy, independently audited. Military-grade AES-256 encryption. Servers in 111 countries including the United States. Up to 10 simultaneous devices on one subscription. Works on Windows, Mac, iOS, Android, and can be configured directly on compatible routers so every device in your home is automatically protected. At their 1 and 2-year plan pricing, it is one of the best value purchases you can make as an expat.
-          </p>
-          <div className="nordvpn-btn-wrap">
-            <a href="https://nordvpn.com" target="_blank" rel="noopener noreferrer" className="nordvpn-btn">
-              Get NordVPN
-            </a>
-            <span className="nordvpn-affiliate-note">Affiliate link coming soon.</span>
           </div>
         </div>
       </section>
