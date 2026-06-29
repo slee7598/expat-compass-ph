@@ -7,12 +7,18 @@ import Link from "next/link";
 const links = [
   { label: "Visas", href: "/visas" },
   { label: "Marriage", href: "/marriage" },
+  { label: "Divorce Guide", href: "/divorce-philippines" },
   { label: "Cost of Living", href: "/cost-of-living" },
   { label: "Housing", href: "/housing" },
   { label: "Healthcare", href: "/healthcare" },
   { label: "Banking", href: "/banking" },
   { label: "Transportation", href: "/transportation" },
   { label: "City Guides", href: "/city-guides" },
+  { label: "Dating in the Philippines", href: "/dating-philippines" },
+  { label: "US Benefits Abroad", href: "/retirement-benefits" },
+  { label: "Moving to Philippines", href: "/moving-to-philippines" },
+  { label: "Arrival Guide", href: "/arrival-guide" },
+  { label: "Living on Income", href: "/income-abroad" },
   { label: "Steve's Expat Toolkit", href: "/steve-recommends" },
   { label: "About", href: "/about" },
 ];
