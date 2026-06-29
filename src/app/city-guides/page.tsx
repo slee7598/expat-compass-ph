@@ -242,8 +242,42 @@ export default function CityGuidesPage() {
         }
         .disclaimer-body strong { color: #0B1F3A; font-weight: 600; }
 
+        /* ── CITY SELECTOR ── */
+        .cs-label {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 24px;
+          display: flex; align-items: center; gap: 12px;
+        }
+        .cs-label::before, .cs-label::after {
+          content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25);
+        }
+        .cs-grid {
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+        }
+        .cs-card {
+          display: block; text-decoration: none;
+          background: #0B1F3A; padding: 22px 24px;
+          border: 1px solid rgba(201,168,76,0.15);
+          transition: border-color 0.18s, background 0.18s;
+          cursor: pointer;
+        }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city {
+          font-family: 'Playfair Display', serif;
+          font-size: 1rem; font-weight: 700; color: #F8F6F1;
+          display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+          margin-bottom: 6px;
+        }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline {
+          font-size: 0.8rem; font-weight: 300; line-height: 1.55;
+          color: rgba(248,246,241,0.5);
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .page-hero { padding: 52px 24px 72px; }
           .section { padding: 64px 24px; }
           .city-layout { grid-template-columns: 1fr; gap: 40px; }
@@ -286,8 +320,45 @@ export default function CityGuidesPage() {
         </div>
       </section>
 
+      {/* ── CITY SELECTOR ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a City</p>
+          <div className="cs-grid">
+            <a href="#cebu" className="cs-card">
+              <p className="cs-city">Cebu &amp; Mactan</p>
+              <p className="cs-tagline">Best overall balance for most expats</p>
+            </a>
+            <a href="#manila" className="cs-card">
+              <p className="cs-city">Manila &amp; BGC</p>
+              <p className="cs-tagline">Families, schools, and specialist medical</p>
+            </a>
+            <a href="#dumaguete" className="cs-card">
+              <p className="cs-city">Dumaguete</p>
+              <p className="cs-tagline">Best budget retirement city</p>
+            </a>
+            <a href="#davao" className="cs-card">
+              <p className="cs-city">Davao</p>
+              <p className="cs-tagline">Safest and most orderly Philippine city</p>
+            </a>
+            <a href="#iloilo" className="cs-card">
+              <p className="cs-city">Iloilo</p>
+              <p className="cs-tagline">The underrated gem</p>
+            </a>
+            <a href="#baguio" className="cs-card">
+              <p className="cs-city">Baguio</p>
+              <p className="cs-tagline">The only city where you don&rsquo;t need aircon</p>
+            </a>
+            <a href="#subic" className="cs-card">
+              <p className="cs-city">Subic Bay</p>
+              <p className="cs-tagline">America&rsquo;s footprint in the Philippines</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 1: CEBU AND MACTAN ── */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="cebu">
         <div className="section-inner">
           <div className="city-layout">
             <div>
@@ -404,7 +475,7 @@ export default function CityGuidesPage() {
       </section>
 
       {/* ── SECTION 2: MANILA AND BGC ── */}
-      <section className="section section-light">
+      <section className="section section-light" id="manila">
         <div className="section-inner">
           <div className="city-layout">
             <div>
@@ -496,7 +567,7 @@ export default function CityGuidesPage() {
       </section>
 
       {/* ── SECTION 3: DUMAGUETE ── */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="dumaguete">
         <div className="section-inner">
           <div className="city-layout">
             <div>
@@ -571,7 +642,7 @@ export default function CityGuidesPage() {
       </section>
 
       {/* ── SECTION 4: DAVAO ── */}
-      <section className="section section-light">
+      <section className="section section-light" id="davao">
         <div className="section-inner">
           <div className="city-layout">
             <div>
@@ -647,7 +718,7 @@ export default function CityGuidesPage() {
       </section>
 
       {/* ── SECTION 5: ILOILO ── */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="iloilo">
         <div className="section-inner">
           <div className="city-layout">
             <div>
@@ -720,7 +791,7 @@ export default function CityGuidesPage() {
       </section>
 
       {/* ── SECTION 6: BAGUIO ── */}
-      <section className="section section-light">
+      <section className="section section-light" id="baguio">
         <div className="section-inner">
           <div className="city-layout">
             <div>
@@ -795,7 +866,7 @@ export default function CityGuidesPage() {
       </section>
 
       {/* ── SUBIC BAY ── */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="subic">
         <div className="section-inner">
           <div className="city-layout">
             <div>
