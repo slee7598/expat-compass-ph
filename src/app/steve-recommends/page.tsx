@@ -266,7 +266,7 @@ export default function SteveRecommendsPage() {
           margin-top: 24px;
           border-left: 4px solid #C9A84C;
           padding: 36px 40px;
-          background: rgba(201,168,76,0.06);
+          background: #0B1F3A;
           border-top: 1px solid rgba(201,168,76,0.2);
           border-right: 1px solid rgba(201,168,76,0.2);
           border-bottom: 1px solid rgba(201,168,76,0.2);
