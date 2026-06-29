@@ -802,6 +802,24 @@ export default function MarriagePage() {
         </div>
       </header>
 
+      {/* DIVORCE CALLOUT */}
+      <div style={{background:'#F8F6F1', padding:'36px 48px 0'}}>
+        <div style={{maxWidth:'860px', border:'1px solid rgba(201,168,76,0.4)', borderLeft:'4px solid #C9A84C', padding:'24px 28px', background:'rgba(201,168,76,0.04)', display:'flex', alignItems:'flex-start', gap:'20px'}}>
+          <div style={{flexShrink:0, marginTop:'2px'}}>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2L12.09 7.26L18 7.27L13.45 10.97L15.18 16.18L10 13L4.82 16.18L6.55 10.97L2 7.27L7.91 7.26L10 2Z" fill="#C9A84C"/>
+            </svg>
+          </div>
+          <div>
+            <p style={{fontSize:'0.65rem', fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>Going Through a Divorce?</p>
+            <p style={{fontSize:'0.92rem', fontWeight:300, lineHeight:1.8, color:'#4A5868', marginBottom:'10px'}}>Going through a divorce from a Filipino spouse? This is one of the most searched and least explained topics for expats. We cover everything — US divorce consent rules, service of process, Article 26 judicial recognition, what happens to your spouse&rsquo;s civil status, timeline, cost, and how to avoid the most common mistakes.</p>
+            <a href="/divorce-philippines" style={{display:'inline-flex', alignItems:'center', gap:'6px', fontSize:'0.82rem', fontWeight:600, color:'#C9A84C', textDecoration:'none', letterSpacing:'0.04em'}}>
+              Read the Complete Divorce Guide &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* OVERVIEW */}
       <section className="section section-light" id="overview">
         <p className="section-label">How the process works</p>

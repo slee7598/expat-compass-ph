@@ -7,6 +7,7 @@ import Link from "next/link";
 const links = [
   { label: "Visas", href: "/visas" },
   { label: "Marriage", href: "/marriage" },
+  { label: "Divorce Guide", href: "/divorce-philippines" },
   { label: "Cost of Living", href: "/cost-of-living" },
   { label: "Housing", href: "/housing" },
   { label: "Healthcare", href: "/healthcare" },
