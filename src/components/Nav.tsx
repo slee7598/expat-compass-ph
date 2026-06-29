@@ -11,16 +11,16 @@ const links = [
   { label: "Cost of Living", href: "/cost-of-living" },
   { label: "Housing", href: "/housing" },
   { label: "Healthcare", href: "/healthcare" },
-  { label: "US Benefits", href: "/retirement-benefits" },
   { label: "Banking", href: "/banking" },
   { label: "Transportation", href: "/transportation" },
   { label: "City Guides", href: "/city-guides" },
-  { label: "Dating", href: "/dating-philippines" },
+  { label: "Dating in the Philippines", href: "/dating-philippines" },
+  { label: "US Benefits Abroad", href: "/retirement-benefits" },
+  { label: "Moving to Philippines", href: "/moving-to-philippines" },
+  { label: "Arrival Guide", href: "/arrival-guide" },
+  { label: "Living on Income", href: "/income-abroad" },
   { label: "Steve's Expat Toolkit", href: "/steve-recommends" },
   { label: "About", href: "/about" },
-  { label: "Moving Guide", href: "/moving-to-philippines" },
-  { label: "Arrival Guide", href: "/arrival-guide" },
-  { label: "Income Abroad", href: "/income-abroad" },
 ];
 
 interface NavProps {

@@ -28,6 +28,24 @@ const topics = [
     href: "/marriage",
   },
   {
+    label: "Divorce Guide",
+    description:
+      "Divorcing a Filipino spouse involves two legal systems. US divorce process, Article 26 Philippine recognition, annulment, assets, and remarriage explained.",
+    href: "/divorce-philippines",
+  },
+  {
+    label: "Dating in the Philippines",
+    description:
+      "Dating apps, cultural realities, scam operations, legal risks, and the honest guide no other expat site will write.",
+    href: "/dating-philippines",
+  },
+  {
+    label: "US Benefits Abroad",
+    description:
+      "Social Security, Medicare, SSI, SSDI, and VA benefits for Americans living permanently in the Philippines. What continues and what stops.",
+    href: "/retirement-benefits",
+  },
+  {
     label: "Cost of Living",
     description:
       "Realistic monthly budgets across cities, from frugal to comfortable.",
