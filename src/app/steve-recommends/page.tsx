@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://expatcompassph.com/steve-recommends" },
 };
 
-type RecItem = { name: string; body: string; link?: string; linkLabel?: string };
+type RecItem = { name: string; body: string; link?: string; linkLabel?: string; note?: string };
 
 const comms: RecItem[] = [
   {
@@ -67,6 +67,23 @@ const health: RecItem[] = [
   },
 ];
 
+const banking: RecItem[] = [
+  {
+    name: "Wise — Best Exchange Rates for Moving Money to the Philippines",
+    body: "If you are moving money regularly from the United States to the Philippines, Wise is the transfer service I recommend above everything else. The reason is simple: Wise uses the mid-market exchange rate — the real rate you see when you search the exchange rate on Google. Not a marked-up rate, not a promotional rate that expires after your first transfer. The actual rate every single time. Most banks and transfer services make their money by quietly giving you a worse exchange rate. They call it a zero-fee transfer and then take their cut in the margin. Wise does the opposite — they show you a small transparent fee upfront and give you the real rate. On a $1,000 transfer from the US to the Philippines, the difference between Wise and a typical bank wire can be $30 to $80 in your favor every month. Fees start from as low as 0.4 percent of the transfer amount. 74 percent of transfers arrive in under 20 seconds. 95 percent complete within a day. New in 2026 — the Wise Debit Card Mastercard is now available for Philippine residents, meaning your Filipina partner can hold a Wise account and receive transfers with no hidden fees. Wise-to-Wise transfers between account holders are free for same-currency transfers. For regular monthly transfers from your US account to your Philippine bank account, Wise is the most cost-effective solution available.",
+    link: "https://wise.com",
+    linkLabel: "Open a Wise Account →",
+    note: "Affiliate link coming soon — genuine personal recommendation",
+  },
+  {
+    name: "Remitly — Fast Transfers When Speed Matters",
+    body: "Remitly is a solid money transfer service with one important caveat you need to understand before using it. What Remitly does well: the app is excellent, consistently rated 4.9 out of 5 on the Apple App Store across millions of reviews. The interface is clean and simple. For a first-time transfer or when you need money to arrive fast, Remitly Express delivers quickly. Cash pickup and home delivery options are available in the Philippines through major banking partners. 24/7 customer support. Transfer limits up to $30,000 for fully verified accounts with no fee on transfers over $1,000. The important caveat: Remitly's promotional exchange rate only applies to your first transfer. After that you move to Remitly's standard rate, which is typically 1 to 3 percent below the mid-market rate. The difference on a $1,000 transfer can be $10 to $30 less in your pocket compared to the promotional rate. This is not hidden — Remitly discloses it — but it catches many people by surprise when their second transfer delivers noticeably fewer pesos than their first. When Remitly makes sense: for your first transfer when the promotional rate is excellent, and for Express transfers when speed is critical. For regular monthly transfers where you want the best ongoing exchange rate, use Wise instead.",
+    link: "https://remitly.com",
+    linkLabel: "Send with Remitly →",
+    note: "Affiliate link coming soon",
+  },
+];
+
 const immigration: RecItem[] = [
   {
     name: "Bureau of Immigration — Gaisano Mall, Pasak, Lapu-Lapu City",
@@ -95,6 +112,20 @@ const activities: RecItem[] = [
     body: "Klook is my go-to for booking activities and experiences across the Philippines and Southeast Asia. Island hopping, diving, city tours, transfers — it is all on there, with instant confirmation and competitive prices.",
     link: "https://www.klook.com/destination/co1016-philippines/?aid=125611",
     linkLabel: "Browse Philippines Activities →",
+  },
+  {
+    name: "Agoda — Best Hotel and Resort Booking for the Philippines and Asia",
+    body: "When I am planning travel within the Philippines — whether it is a resort stay in Boracay, a dive trip hotel in Dumaguete, or a night in Manila between flights — Agoda is the first place I check. Agoda is part of Booking Holdings but focuses specifically on the Asia-Pacific market. That regional focus means their Philippines inventory is exceptional. Every resort in Cebu, every beach hotel in Palawan, every guesthouse in Siargao is on Agoda, often at lower rates than anywhere else for Asian properties. The search and filter tools are excellent. The reviews are genuine and plentiful. The mobile app is outstanding for booking on the go. For expats in the Philippines, Agoda covers short-term accommodation when you first arrive, finding resort deals for weekend escapes, booking for visiting family and friends, and planning island hopping trips throughout the Visayas, Palawan, Siargao, and beyond. Over 2 million properties worldwide. Available in 38 languages. One of the most trusted booking platforms in Asia since 2005. Ambassador promo codes ExpatPH, CompassPH, StevePH, and IrishPH coming soon once Ambassador approval is confirmed.",
+    link: "https://www.agoda.com",
+    linkLabel: "Search Hotels on Agoda →",
+    note: "Ambassador approval in progress — promo codes and affiliate link coming soon",
+  },
+  {
+    name: "Booking.com — Best for International Travel Outside Asia",
+    body: "Booking.com is the largest online accommodation marketplace in the world — 28 million listings across 226 countries and over 1 million room nights booked every single day. For expats in the Philippines, it is a valuable complement to Agoda, particularly for international travel outside Asia. When you are booking accommodation in the US for family visits, in Europe, or anywhere outside the Asia-Pacific region, Booking.com typically has more options and better rates. Within the Philippines, Agoda often offers better rates due to its Asia-Pacific focus. For international travel, Booking.com is the stronger choice. Use both and compare for your specific destination and dates. Free cancellation on most properties. 30-day cookie window.",
+    link: "https://www.booking.com",
+    linkLabel: "Search Booking.com →",
+    note: "Affiliate link coming soon",
   },
   {
     name: "Airbnb",
@@ -259,6 +290,15 @@ export default function SteveRecommendsPage() {
           transition: border-color 0.2s;
         }
         .rec-item-link:hover { border-color: #C9A84C; }
+        .rec-item-note {
+          display: block;
+          margin-top: 8px;
+          font-size: 0.72rem;
+          font-weight: 300;
+          letter-spacing: 0.02em;
+        }
+        .rec-light .rec-item-note { color: rgba(11,31,58,0.42); }
+        .rec-dark .rec-item-note { color: rgba(248,246,241,0.38); }
 
         /* ── NORDVPN FEATURED CARD ── */
         .nordvpn-card {
@@ -411,6 +451,9 @@ export default function SteveRecommendsPage() {
                     {item.linkLabel}
                   </a>
                 )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
+                )}
               </div>
             ))}
           </div>
@@ -453,6 +496,9 @@ export default function SteveRecommendsPage() {
                     {item.linkLabel}
                   </a>
                 )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
+                )}
               </div>
             ))}
           </div>
@@ -473,6 +519,9 @@ export default function SteveRecommendsPage() {
                   <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
                     {item.linkLabel}
                   </a>
+                )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
                 )}
               </div>
             ))}
@@ -495,6 +544,33 @@ export default function SteveRecommendsPage() {
                     {item.linkLabel}
                   </a>
                 )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BANKING & MONEY TRANSFER */}
+      <section className="rec-section rec-light">
+        <div className="rec-inner">
+          <p className="cat-label">Banking &amp; Money Transfer</p>
+          <h2 className="cat-heading">Moving money the smart way.</h2>
+          <div className="rec-items">
+            {banking.map((item) => (
+              <div key={item.name} className="rec-item">
+                <p className="rec-item-name">{item.name}</p>
+                <p className="rec-item-body">{item.body}</p>
+                {item.link && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
+                    {item.linkLabel}
+                  </a>
+                )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
+                )}
               </div>
             ))}
           </div>
@@ -502,7 +578,7 @@ export default function SteveRecommendsPage() {
       </section>
 
       {/* IMMIGRATION */}
-      <section className="rec-section rec-light">
+      <section className="rec-section rec-dark">
         <div className="rec-inner">
           <p className="cat-label">Immigration</p>
           <h2 className="cat-heading">Navigating the Bureau of Immigration.</h2>
@@ -516,6 +592,9 @@ export default function SteveRecommendsPage() {
                     {item.linkLabel}
                   </a>
                 )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
+                )}
               </div>
             ))}
           </div>
@@ -523,7 +602,7 @@ export default function SteveRecommendsPage() {
       </section>
 
       {/* ENTERTAINMENT */}
-      <section className="rec-section rec-dark">
+      <section className="rec-section rec-light">
         <div className="rec-inner">
           <p className="cat-label">Entertainment</p>
           <h2 className="cat-heading">Watching what you love from home.</h2>
@@ -537,6 +616,9 @@ export default function SteveRecommendsPage() {
                     {item.linkLabel}
                   </a>
                 )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
+                )}
               </div>
             ))}
           </div>
@@ -544,7 +626,7 @@ export default function SteveRecommendsPage() {
       </section>
 
       {/* ACTIVITIES */}
-      <section className="rec-section rec-light">
+      <section className="rec-section rec-dark">
         <div className="rec-inner">
           <p className="cat-label">Activities</p>
           <h2 className="cat-heading">Getting out and exploring.</h2>
@@ -557,6 +639,9 @@ export default function SteveRecommendsPage() {
                   <a href={item.link} target="_blank" rel="noopener noreferrer" className="rec-item-link">
                     {item.linkLabel}
                   </a>
+                )}
+                {item.note && (
+                  <span className="rec-item-note">{item.note}</span>
                 )}
               </div>
             ))}
