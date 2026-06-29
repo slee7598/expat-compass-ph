@@ -382,28 +382,27 @@ export default function SteveRecommendsPage() {
         /* ── DISCLOSURE BANNER ── */
         .disclosure-wrap {
           background: #F8F6F1;
-          padding: 32px 48px 0;
+          padding: 40px 48px 0;
         }
         .disclosure-card {
           max-width: 860px;
-          border: 1px solid rgba(201,168,76,0.45);
-          border-left: 3px solid #C9A84C;
-          padding: 20px 24px;
+          background: #C9A84C;
+          padding: 28px 32px;
           display: flex;
           align-items: flex-start;
-          gap: 14px;
+          gap: 18px;
         }
         .disclosure-icon {
           flex-shrink: 0;
-          font-size: 0.85rem;
-          color: #C9A84C;
+          font-size: 1.4rem;
+          line-height: 1;
           margin-top: 2px;
         }
         .disclosure-text {
-          font-size: 0.82rem;
-          font-weight: 300;
+          font-size: 0.88rem;
+          font-weight: 600;
           line-height: 1.75;
-          color: #4A5A6A;
+          color: #0B1F3A;
         }
 
         /* ── DISCLAIMER ── */
