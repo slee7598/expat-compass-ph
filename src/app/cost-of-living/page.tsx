@@ -198,9 +198,21 @@ export default function CostOfLivingPage() {
         .legal-body { font-size: 0.88rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; }
         .legal-body strong { color: #0B1F3A; font-weight: 600; }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .page-hero, .section, .sn-section, .legal-section { padding-left: 24px; padding-right: 24px; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .tier-grid { grid-template-columns: 1fr; }
           .tier-card:not(:last-child) { border-right: 1px solid rgba(248,246,241,0.07); border-bottom: none; }
           .shop-row { grid-template-columns: 1fr; }
@@ -237,8 +249,49 @@ export default function CostOfLivingPage() {
         </div>
       </section>
 
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#budget-tiers" className="cs-card">
+              <p className="cs-city">Budget Tiers</p>
+              <p className="cs-tagline">Frugal to comfortable to Steve&rsquo;s level</p>
+            </a>
+            <a href="#housing" className="cs-card">
+              <p className="cs-city">Housing Costs</p>
+              <p className="cs-tagline">Rent across the price spectrum</p>
+            </a>
+            <a href="#electricity" className="cs-card">
+              <p className="cs-city">Electricity</p>
+              <p className="cs-tagline">The cost that surprises everyone</p>
+            </a>
+            <a href="#food" className="cs-card">
+              <p className="cs-city">Food &amp; Groceries</p>
+              <p className="cs-tagline">Where to shop and what it costs</p>
+            </a>
+            <a href="#transport" className="cs-card">
+              <p className="cs-city">Transportation</p>
+              <p className="cs-tagline">Grab, jeepney, and fuel reality</p>
+            </a>
+            <a href="#healthcare-costs" className="cs-card">
+              <p className="cs-city">Healthcare Costs</p>
+              <p className="cs-tagline">A $300 hospital visit</p>
+            </a>
+            <a href="#budget-breakdown" className="cs-card">
+              <p className="cs-city">Steve&rsquo;s Full Budget</p>
+              <p className="cs-tagline">Real numbers, real life</p>
+            </a>
+            <a href="#budget-planning" className="cs-card">
+              <p className="cs-city">Plan Your Budget</p>
+              <p className="cs-tagline">What $1,500 a month buys you</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 1: THREE TIERS ── */}
-      <section className="section section-dark" id="tiers">
+      <section className="section section-dark" id="budget-tiers">
         <div className="section-inner">
           <p className="section-label">Budget Overview</p>
           <h2 className="section-heading section-heading-light">The Three Budget Tiers</h2>
@@ -496,7 +549,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* ── SECTION 7: SERVICES ── */}
-      <section className="section section-dark" id="services">
+      <section className="section section-dark" id="domestic-help">
         <div className="section-inner">
           <p className="section-label">Domestic &amp; Personal</p>
           <h2 className="section-heading section-heading-light">Domestic Help &amp; Services</h2>
@@ -513,7 +566,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* ── SECTION 8: HEALTHCARE ── */}
-      <section className="section section-light" id="healthcare">
+      <section className="section section-light" id="healthcare-costs">
         <div className="section-inner">
           <p className="section-label">Medical Costs</p>
           <h2 className="section-heading">Healthcare — The Number That Will Surprise You</h2>
@@ -580,7 +633,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* ── SECTION 9: STEVE'S COMPLETE BUDGET ── */}
-      <section className="section section-mid" id="budget">
+      <section className="section section-mid" id="budget-breakdown">
         <div className="section-inner">
           <p className="section-label">The Real Numbers</p>
           <h2 className="section-heading section-heading-light">Steve&rsquo;s Complete Monthly Budget</h2>
@@ -646,7 +699,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* ── SECTION 10: BUDGET PLANNING ── */}
-      <section className="section section-light" id="planning">
+      <section className="section section-light" id="budget-planning">
         <div className="section-inner">
           <p className="section-label">Planning Tool</p>
           <h2 className="section-heading">Budget Planning by Lifestyle</h2>

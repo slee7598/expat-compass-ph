@@ -91,8 +91,20 @@ export default function MovingToPhilippinesPage() {
         .legal-body { font-size: 0.9rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; max-width: 640px; }
         .legal-body strong { color: #0B1F3A; font-weight: 600; }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         @media (max-width: 900px) {
           .page-hero { padding: 56px 24px 72px; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .section { padding: 64px 24px; }
           .sn-section { padding: 56px 24px; }
           .legal-section { padding: 48px 24px; }
@@ -119,6 +131,43 @@ export default function MovingToPhilippinesPage() {
           <div className="ma-gold">
             <p className="ma-gold-label">Before You Pack</p>
             <p className="ma-gold-body">The biggest mistake people make when moving to the Philippines is treating it like a domestic move. You are not relocating your American life to a new zip code. You are starting a new life in a tropical country with different voltage, different infrastructure, and dramatically different costs. The sooner you embrace this, the better your move will go.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#documents" className="cs-card">
+              <p className="cs-city">Documents to Prepare</p>
+              <p className="cs-tagline">Get these before you leave</p>
+            </a>
+            <a href="#what-to-bring" className="cs-card">
+              <p className="cs-city">What to Bring</p>
+              <p className="cs-tagline">The essential packing list</p>
+            </a>
+            <a href="#what-not-to-bring" className="cs-card">
+              <p className="cs-city">What NOT to Bring</p>
+              <p className="cs-tagline">Save your luggage space</p>
+            </a>
+            <a href="#first-week" className="cs-card">
+              <p className="cs-city">First Week Checklist</p>
+              <p className="cs-tagline">Ten things to do immediately</p>
+            </a>
+            <a href="#airport" className="cs-card">
+              <p className="cs-city">Airport Arrival</p>
+              <p className="cs-tagline">NAIA and Mactan-Cebu explained</p>
+            </a>
+            <a href="#pets" className="cs-card">
+              <p className="cs-city">Bringing Your Pet</p>
+              <p className="cs-tagline">The SPSIC process</p>
+            </a>
+            <a href="#cpap" className="cs-card">
+              <p className="cs-city">CPAP &amp; Medical Gear</p>
+              <p className="cs-tagline">Voltage, UPS, and supplies</p>
+            </a>
           </div>
         </div>
       </section>
@@ -158,7 +207,7 @@ export default function MovingToPhilippinesPage() {
       </section>
 
       {/* WHAT TO BRING */}
-      <section className="section section-light" id="bring">
+      <section className="section section-light" id="what-to-bring">
         <div className="section-inner">
           <p className="section-label">Packing List</p>
           <h2 className="section-heading">What to Bring — The Essential List</h2>
@@ -192,7 +241,7 @@ export default function MovingToPhilippinesPage() {
             <p className="ma-warning-body">Do NOT bring controlled substances beyond what is legally allowed for personal use with valid prescription documentation. Philippine drug laws are extremely strict.</p>
           </div>
 
-          <h3 className="msub">CPAP Machines and Medical Equipment</h3>
+          <h3 className="msub" id="cpap">CPAP Machines and Medical Equipment</h3>
           <p className="mb">If you use a CPAP machine you will be relieved to know that modern CPAP machines including ResMed AirSense and Philips DreamStation models are dual voltage rated 100-240V 50-60Hz and work in the Philippines without a voltage converter. You only need a plug adapter for Philippine outlets. Check the label on your CPAP power supply to confirm — it will say Input: 100-240V if it is dual voltage.</p>
           <p className="mb">However the Philippines experiences periodic brownouts — power outages that can last minutes to hours. For CPAP users a brownout mid-sleep is not just an inconvenience — it interrupts critical therapy. Two solutions: First invest in a quality UPS — Uninterruptible Power Supply — before leaving the US. A UPS provides battery backup that keeps your CPAP running through short brownouts and protects against voltage spikes. Look for a pure sine wave UPS which is safer for sensitive medical equipment. Second consider bringing a dedicated CPAP battery backup like the EASYLONGER ES720 which provides multiple nights of therapy independent of the power grid. This is also useful for travel and island hopping where power reliability varies.</p>
           <p className="mb">Also bring an AVR — Automatic Voltage Regulator — for general electronics protection. Philippine power fluctuations can damage electronics over time even without a full outage. An AVR smooths out voltage irregularities before they reach your devices.</p>
@@ -209,7 +258,7 @@ export default function MovingToPhilippinesPage() {
       </section>
 
       {/* WHAT NOT TO BRING */}
-      <section className="section section-dark" id="leave-behind">
+      <section className="section section-dark" id="what-not-to-bring">
         <div className="section-inner">
           <p className="section-label">Leave Behind</p>
           <h2 className="section-heading section-heading-light">What NOT to Bring</h2>
