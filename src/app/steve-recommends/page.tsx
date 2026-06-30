@@ -508,10 +508,32 @@ export default function SteveRecommendsPage() {
               100% no-logs policy, independently audited. Military-grade AES-256 encryption. Servers in 111 countries including the United States. Up to 10 simultaneous devices on one subscription. Works on Windows, Mac, iOS, Android, and can be configured directly on compatible routers so every device in your home is automatically protected. At their 1 and 2-year plan pricing, it is one of the best value purchases you can make as an expat.
             </p>
             <div className="nordvpn-btn-wrap">
-              <a href="https://nordvpn.com" target="_blank" rel="noopener noreferrer" className="nordvpn-btn">
+              <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=151612&url_id=902" target="_blank" rel="noopener noreferrer" className="nordvpn-btn">
                 Get NordVPN
               </a>
-              <span className="nordvpn-affiliate-note">Affiliate link coming soon.</span>
+            </div>
+          </div>
+
+          <div className="nordvpn-card" style={{marginTop: "16px"}}>
+            <p className="nordvpn-featured-label">Featured Recommendation</p>
+            <h2 className="nordvpn-card-title">NordPass — One Password Manager for Two Countries</h2>
+            <p className="nordvpn-card-body">
+              Living between two countries means juggling an enormous number of logins — US banking, Philippine banking, Social Security, Medicare, visa portals, GCash, Maya, your Philippine landlord payment app, US brokerage accounts, and dozens of other services. Using the same password across multiple accounts or trying to remember unique passwords for each one is a real security risk, especially when accessing financial accounts from a different country regularly raises fraud flags in the first place.
+            </p>
+            <p className="nordvpn-card-body">
+              NordPass is the password manager I recommend pairing with NordVPN. It generates and stores strong unique passwords for every account, autofills logins securely across your devices, and syncs between your phone and computer so you always have access whether you are at your condo in the Philippines or traveling.
+            </p>
+            <p className="nordvpn-card-subhead">Specifically useful for expats</p>
+            <p className="nordvpn-card-body">
+              Secure storage for sensitive documents like your passport scan, visa documents, and ACR I-Card photos that you may need to access quickly when dealing with banks or government offices. A secure notes feature for storing important reference numbers like your SSA case number, PRA membership number, or insurance policy details. Cross-platform sync so your passwords work the same whether you are on a Philippine SIM or connected through your VPN.
+            </p>
+            <p className="nordvpn-card-body">
+              From the same company as NordVPN, NordPass integrates cleanly if you are already using their VPN service.
+            </p>
+            <div className="nordvpn-btn-wrap">
+              <a href="https://go.nordpass.io/aff_c?offer_id=488&aff_id=151612&url_id=9356" target="_blank" rel="noopener noreferrer" className="nordvpn-btn">
+                Get NordPass
+              </a>
             </div>
           </div>
         </div>
