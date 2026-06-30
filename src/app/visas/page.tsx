@@ -166,6 +166,17 @@ export default function VisasPage() {
         .legal-body { font-size: 0.9rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; max-width: 640px; }
         .legal-body strong { color: #0B1F3A; font-weight: 600; }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .page-hero, .section, .sn-section, .legal-section { padding-left: 24px; padding-right: 24px; }
@@ -175,6 +186,7 @@ export default function VisasPage() {
           .scenario-q { border-bottom: 2px solid #C9A84C; }
           .scenario-a { border-left: none; border-top: none; }
           .deposit-row { grid-template-columns: 1fr; gap: 6px; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
           .page-title { font-size: 2rem; }
@@ -191,8 +203,49 @@ export default function VisasPage() {
         </div>
       </div>
 
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#document-types" className="cs-card">
+              <p className="cs-city">Document Types</p>
+              <p className="cs-tagline">ACR I-Card vs PRA ID explained</p>
+            </a>
+            <a href="#tourist-extension" className="cs-card">
+              <p className="cs-city">Tourist Extensions</p>
+              <p className="cs-tagline">Real costs and the process</p>
+            </a>
+            <a href="#srrv" className="cs-card">
+              <p className="cs-city">SRRV</p>
+              <p className="cs-tagline">Retirement visa now available from age 40</p>
+            </a>
+            <a href="#13a" className="cs-card">
+              <p className="cs-city">13A Spousal Visa</p>
+              <p className="cs-tagline">For spouses of Filipino citizens</p>
+            </a>
+            <a href="#digital-nomad" className="cs-card">
+              <p className="cs-city">Digital Nomad Visa</p>
+              <p className="cs-tagline">New for remote workers</p>
+            </a>
+            <a href="#comparison" className="cs-card">
+              <p className="cs-city">Which Visa Is Right</p>
+              <p className="cs-tagline">Compare your options</p>
+            </a>
+            <a href="#criminal-records" className="cs-card">
+              <p className="cs-city">Criminal Records</p>
+              <p className="cs-tagline">How they affect your visa</p>
+            </a>
+            <a href="#ra9225" className="cs-card">
+              <p className="cs-city">Dual Citizenship</p>
+              <p className="cs-tagline">Reclaiming Philippine citizenship</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 1: THREE DOCUMENTS ── */}
-      <section className="section section-light" id="documents">
+      <section className="section section-light" id="document-types">
         <div className="section-inner">
           <p className="section-label">Start Here</p>
           <h2 className="section-heading">Understanding the Three Long-Stay Documents</h2>
@@ -249,7 +302,7 @@ export default function VisasPage() {
       </section>
 
       {/* ── SECTION 2: 9(a) TOURIST VISA ── */}
-      <section className="section section-dark" id="tourist">
+      <section className="section section-dark" id="tourist-extension">
         <div className="section-inner">
           <p className="section-label">Tourist Visa</p>
           <h2 className="section-heading section-heading-light">The 9(a) Tourist Visa — Extending Your Stay</h2>
@@ -495,7 +548,7 @@ export default function VisasPage() {
       </section>
 
       {/* ── SECTION 5: DIGITAL NOMAD VISA ── */}
-      <section className="section section-light" id="dnv">
+      <section className="section section-light" id="digital-nomad">
         <div className="section-inner">
           <p className="section-label">Digital Nomad Visa</p>
           <h2 className="section-heading">The Digital Nomad Visa — New in 2025</h2>
@@ -560,7 +613,7 @@ export default function VisasPage() {
       </section>
 
       {/* ── SECTION 7: EXIT CLEARANCE ── */}
-      <section className="section section-light" id="ecc">
+      <section className="section section-light" id="exit-clearance">
         <div className="section-inner">
           <p className="section-label">Departing the Philippines</p>
           <h2 className="section-heading">Exit Clearance Certificate — When You Need One</h2>
@@ -585,7 +638,7 @@ export default function VisasPage() {
       </section>
 
       {/* ── SECTION 8: WHICH IS RIGHT FOR YOU ── */}
-      <section className="section section-dark" id="compare">
+      <section className="section section-dark" id="comparison">
         <div className="section-inner">
           <p className="section-label">Visa Comparison</p>
           <h2 className="section-heading section-heading-light">Which Visa Is Right For You?</h2>

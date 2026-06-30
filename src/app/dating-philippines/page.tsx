@@ -173,6 +173,17 @@ export default function DatingPhilippinesPage() {
         .checklist-item-dark { color: #4A5868; }
         .checklist-head { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-bottom: 4px; }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .page-hero, .section, .sn-section, .legal-section { padding-left: 24px; padding-right: 24px; }
@@ -183,6 +194,7 @@ export default function DatingPhilippinesPage() {
           .app-grid { grid-template-columns: 1fr; }
           .checklist-card { padding: 24px; }
           .irish-note { padding: 28px 24px; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
           .stat-grid { grid-template-columns: 1fr; }
@@ -203,8 +215,49 @@ export default function DatingPhilippinesPage() {
         <p className="opening-card-text">This page exists because the questions never stop. Every day in expat Facebook groups and Reddit threads, foreign men ask the same things — which apps work, why she showed up with her entire family, what tampo means, whether she is really separated or just saying that, and how to know if the person they are talking to online is who they say they are. Most sites either ignore these questions entirely or answer them with sanitized advice that helps nobody. This page answers them honestly, from the perspective of a couple who has lived it — an American man who has spent years in the Philippines, and a Filipina woman who knows her own culture from the inside. This is not a guide to exploiting anyone. It is a guide to understanding a culture that is genuinely different from Western culture, navigating it honestly, and building real connections with real people.</p>
       </div>
 
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#apps" className="cs-card">
+              <p className="cs-city">Dating Apps</p>
+              <p className="cs-tagline">Which ones actually work</p>
+            </a>
+            <a href="#money-requests" className="cs-card">
+              <p className="cs-city">Money Requests</p>
+              <p className="cs-tagline">Read this before sending anything</p>
+            </a>
+            <a href="#tampo" className="cs-card">
+              <p className="cs-city">Understanding Tampo</p>
+              <p className="cs-tagline">The silent treatment explained</p>
+            </a>
+            <a href="#separated" className="cs-card">
+              <p className="cs-city">Separated But Married</p>
+              <p className="cs-tagline">The legal minefield</p>
+            </a>
+            <a href="#scams" className="cs-card">
+              <p className="cs-city">The Scam Industry</p>
+              <p className="cs-tagline">Organized operations targeting you</p>
+            </a>
+            <a href="#transgender" className="cs-card">
+              <p className="cs-city">Transgender Community</p>
+              <p className="cs-tagline">What to understand</p>
+            </a>
+            <a href="#red-flags" className="cs-card">
+              <p className="cs-city">Red and Green Flags</p>
+              <p className="cs-tagline">Practical guide</p>
+            </a>
+            <a href="#sexual-health" className="cs-card">
+              <p className="cs-city">Sexual Health</p>
+              <p className="cs-tagline">Facts, stats, and sources</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 1 — DATING APPS */}
-      <section className="section section-light">
+      <section className="section section-light" id="apps">
         <div className="section-inner">
           <p className="section-label">Online Dating</p>
           <h2 className="section-heading">The Dating App Landscape in the Philippines</h2>
@@ -242,7 +295,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 2 — MONEY REQUEST */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="money-requests">
         <div className="section-inner">
           <p className="section-label">Read This First</p>
           <h2 className="section-heading section-heading-light">The Money Request — Read This First</h2>
@@ -284,7 +337,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 5 — TAMPO */}
-      <section className="section section-light">
+      <section className="section section-light" id="tampo">
         <div className="section-inner">
           <p className="section-label">Culture Guide</p>
           <h2 className="section-heading">Understanding Tampo — The Silent Treatment That Is Not What You Think</h2>
@@ -311,7 +364,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 7 — SEPARATED BUT NOT ANNULLED */}
-      <section className="section section-light">
+      <section className="section section-light" id="separated">
         <div className="section-inner">
           <p className="section-label">Legal Reality</p>
           <h2 className="section-heading">The Separated But Not Annulled Problem</h2>
@@ -355,7 +408,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 9 — SCAM INDUSTRY */}
-      <section className="section section-dark" style={{background: '#06121F'}}>
+      <section className="section section-dark" id="scams" style={{background: '#06121F'}}>
         <div className="section-inner">
           <p className="section-label">Scam Operations</p>
           <h2 className="section-heading section-heading-light">The Scam Industry — What Every Foreign Man Must Understand</h2>
@@ -426,7 +479,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 10 — TRANSGENDER COMMUNITY */}
-      <section className="section section-light">
+      <section className="section section-light" id="transgender">
         <div className="section-inner">
           <p className="section-label">Community and Diversity</p>
           <h2 className="section-heading">The Transgender Community in the Philippines</h2>
@@ -464,7 +517,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 11 — RED FLAGS AND GREEN FLAGS */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="red-flags">
         <div className="section-inner">
           <p className="section-label">At a Glance</p>
           <h2 className="section-heading section-heading-light">Red Flags and Green Flags</h2>
@@ -501,7 +554,7 @@ export default function DatingPhilippinesPage() {
       </section>
 
       {/* SECTION 12 — SEXUAL HEALTH */}
-      <section className="section section-light">
+      <section className="section section-light" id="sexual-health">
         <div className="section-inner">
           <p className="section-label">Public Health</p>
           <h2 className="section-heading">Sexual Health in the Philippines — What Every Expat Needs to Know</h2>

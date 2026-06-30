@@ -176,6 +176,17 @@ export default function DivorcePhilippinesPage() {
         .footer-logo span { color: #C9A84C; }
         .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .page-hero { padding: 48px 24px 64px; }
@@ -186,6 +197,7 @@ export default function DivorcePhilippinesPage() {
           .dv-disclaimer { padding: 48px 24px; }
           .dv-action-wrap { padding: 24px 20px; }
           .footer { flex-direction: column; gap: 12px; text-align: center; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
         }
       `}</style>
 
@@ -207,8 +219,49 @@ export default function DivorcePhilippinesPage() {
         </div>
       </div>
 
+      {/* ── JUMP NAV ── */}
+      <section className="dv-section dv-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="dv-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#us-divorce" className="cs-card">
+              <p className="cs-city">US Divorce Process</p>
+              <p className="cs-tagline">Filing without her signature</p>
+            </a>
+            <a href="#philippine-reality" className="cs-card">
+              <p className="cs-city">The Philippine Reality</p>
+              <p className="cs-tagline">Why your US divorce is not enough</p>
+            </a>
+            <a href="#article-26" className="cs-card">
+              <p className="cs-city">Article 26</p>
+              <p className="cs-tagline">The legal pathway for recognition</p>
+            </a>
+            <a href="#recognition-process" className="cs-card">
+              <p className="cs-city">Recognition Process</p>
+              <p className="cs-tagline">Step by step in Philippine court</p>
+            </a>
+            <a href="#annulment" className="cs-card">
+              <p className="cs-city">Annulment</p>
+              <p className="cs-tagline">The alternative path</p>
+            </a>
+            <a href="#assets" className="cs-card">
+              <p className="cs-city">Philippine Assets</p>
+              <p className="cs-tagline">What happens to property</p>
+            </a>
+            <a href="#children" className="cs-card">
+              <p className="cs-city">Children and Custody</p>
+              <p className="cs-tagline">International custody warning</p>
+            </a>
+            <a href="#remarry" className="cs-card">
+              <p className="cs-city">Remarrying in PH</p>
+              <p className="cs-tagline">What you need first</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 1: TWO LEGAL WORLDS */}
-      <section className="dv-section dv-light">
+      <section className="dv-section dv-light" id="two-worlds">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 1</p>
           <h2 className="dv-title dv-title-lt">The Fundamental Reality — Two Legal Worlds</h2>
@@ -220,7 +273,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 2: US DIVORCE PROCESS */}
-      <section className="dv-section dv-dark">
+      <section className="dv-section dv-dark" id="us-divorce">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 2</p>
           <h2 className="dv-title">Getting a US Divorce When Your Spouse Is in the Philippines</h2>
@@ -267,7 +320,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 3: US DIVORCE DOES NOT EXIST IN PHILIPPINES */}
-      <section className="dv-section dv-light dv-gold-top">
+      <section className="dv-section dv-light dv-gold-top" id="philippine-reality">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 3 — Critical</p>
           <h2 className="dv-title dv-title-lt">Your US Divorce Does Not Exist in the Philippines</h2>
@@ -287,7 +340,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 4: ARTICLE 26 */}
-      <section className="dv-section dv-dark">
+      <section className="dv-section dv-dark" id="article-26">
         <div className="dv-inner">
           <p className="dv-eyebrow">Article 26 — Family Code of the Philippines</p>
           <h2 className="dv-title">Article 26 of the Family Code — The Legal Pathway</h2>
@@ -306,7 +359,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 5: ARTICLE 26 PROCESS */}
-      <section className="dv-section dv-light">
+      <section className="dv-section dv-light" id="recognition-process">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 5</p>
           <h2 className="dv-title dv-title-lt">The Article 26 Judicial Recognition Process — Step by Step</h2>
@@ -380,7 +433,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 6: ANNULMENT */}
-      <section className="dv-section dv-dark">
+      <section className="dv-section dv-dark" id="annulment">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 6</p>
           <h2 className="dv-title">Philippine Annulment — What It Is and When It Applies</h2>
@@ -423,7 +476,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 7: LEGAL SEPARATION */}
-      <section className="dv-section dv-light">
+      <section className="dv-section dv-light" id="legal-separation">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 7</p>
           <h2 className="dv-title dv-title-lt">Legal Separation — What It Does and Does Not Do</h2>
@@ -443,7 +496,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 8: PHILIPPINE ASSETS */}
-      <section className="dv-section dv-dark">
+      <section className="dv-section dv-dark" id="assets">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 8</p>
           <h2 className="dv-title">Philippine Assets and Property — Critical Considerations</h2>
@@ -465,7 +518,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 9: CHILDREN */}
-      <section className="dv-section dv-light">
+      <section className="dv-section dv-light" id="children">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 9</p>
           <h2 className="dv-title dv-title-lt">Children in the Philippines — International Custody Warning</h2>
@@ -486,7 +539,7 @@ export default function DivorcePhilippinesPage() {
       </section>
 
       {/* SECTION 10: REMARRIAGE */}
-      <section className="dv-section dv-dark">
+      <section className="dv-section dv-dark" id="remarry">
         <div className="dv-inner">
           <p className="dv-eyebrow">Section 10</p>
           <h2 className="dv-title">If You Want to Remarry in the Philippines</h2>

@@ -193,6 +193,17 @@ export default function RetirementBenefitsPage() {
         .legal-heading { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #0B1F3A; margin-bottom: 6px; }
         .legal-body { font-size: 0.85rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .page-hero { padding: 56px 24px 72px; }
@@ -202,6 +213,7 @@ export default function RetirementBenefitsPage() {
           .legal-inner { grid-template-columns: 1fr; gap: 32px; }
           .stat-grid { grid-template-columns: 1fr 1fr; }
           .checklist-card { padding: 28px 24px; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
           .stat-grid { grid-template-columns: 1fr; }
@@ -218,8 +230,49 @@ export default function RetirementBenefitsPage() {
         </div>
       </div>
 
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#social-security" className="cs-card">
+              <p className="cs-city">Social Security</p>
+              <p className="cs-tagline">Continues uninterrupted abroad</p>
+            </a>
+            <a href="#ssi" className="cs-card">
+              <p className="cs-city">SSI Warning</p>
+              <p className="cs-tagline">Stops after 30 days outside US</p>
+            </a>
+            <a href="#spousal-benefits" className="cs-card">
+              <p className="cs-city">Spousal Benefits</p>
+              <p className="cs-tagline">Rules for your Filipina spouse</p>
+            </a>
+            <a href="#medicare" className="cs-card">
+              <p className="cs-city">Medicare Abroad</p>
+              <p className="cs-tagline">The reality every expat must know</p>
+            </a>
+            <a href="#va-benefits" className="cs-card">
+              <p className="cs-city">VA Benefits</p>
+              <p className="cs-tagline">For military veterans</p>
+            </a>
+            <a href="#cutting-ties" className="cs-card">
+              <p className="cs-city">Cutting US Ties</p>
+              <p className="cs-tagline">Moving everything abroad</p>
+            </a>
+            <a href="#wep" className="cs-card">
+              <p className="cs-city">WEP and GPO</p>
+              <p className="cs-tagline">Critical update for teachers</p>
+            </a>
+            <a href="#canadian" className="cs-card">
+              <p className="cs-city">Canadian Expats</p>
+              <p className="cs-tagline">Provincial coverage deadline</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 1 — SOCIAL SECURITY RETIREMENT */}
-      <section className="section section-light">
+      <section className="section section-light" id="social-security">
         <div className="section-inner">
           <p className="section-label">Social Security</p>
           <h2 className="section-heading">Social Security Retirement — The Good News</h2>
@@ -260,7 +313,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 2 — SSI */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="ssi">
         <div className="section-inner">
           <p className="section-label">Supplemental Security Income</p>
           <h2 className="section-heading section-heading-light">SSI — Supplemental Security Income — The Bad News</h2>
@@ -275,7 +328,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 3 — SSDI */}
-      <section className="section section-light">
+      <section className="section section-light" id="ssdi">
         <div className="section-inner">
           <p className="section-label">Disability Insurance</p>
           <h2 className="section-heading">SSDI — Social Security Disability Insurance</h2>
@@ -284,7 +337,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 4 — SPOUSAL BENEFITS */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="spousal-benefits">
         <div className="section-inner">
           <p className="section-label">Spousal & Survivor Benefits</p>
           <h2 className="section-heading section-heading-light">Social Security for Your Filipina Spouse — Critical Rules</h2>
@@ -318,7 +371,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 5 — MEDICARE */}
-      <section className="section section-light">
+      <section className="section section-light" id="medicare">
         <div className="section-inner">
           <p className="section-label">Medicare</p>
           <h2 className="section-heading">Medicare — The Reality Every Expat Must Understand</h2>
@@ -356,7 +409,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 6 — VA BENEFITS */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="va-benefits">
         <div className="section-inner">
           <p className="section-label">Military Veterans</p>
           <h2 className="section-heading section-heading-light">VA Benefits for Military Veterans</h2>
@@ -368,7 +421,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 7 — CUTTING ALL US TIES */}
-      <section className="section section-light">
+      <section className="section section-light" id="cutting-ties">
         <div className="section-inner">
           <p className="section-label">Full Commitment</p>
           <h2 className="section-heading">Cutting All US Ties — What Happens When You Move Everything Abroad</h2>
@@ -394,7 +447,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* SECTION 8 — US TAX OBLIGATIONS */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="taxes">
         <div className="section-inner">
           <p className="section-label">Tax Obligations</p>
           <h2 className="section-heading section-heading-light">US Tax Obligations — The One Thing That Never Leaves</h2>
@@ -439,7 +492,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* WEP AND GPO */}
-      <section className="section section-light">
+      <section className="section section-light" id="wep">
         <div className="section-inner">
           <p className="section-label">2025 Law Change</p>
           <h2 className="section-heading">WEP and GPO Elimination — Critical Update for Teachers and Government Workers</h2>
@@ -466,7 +519,7 @@ export default function RetirementBenefitsPage() {
       </section>
 
       {/* CANADIAN EXPATS */}
-      <section className="section section-dark">
+      <section className="section section-dark" id="canadian">
         <div className="section-inner">
           <p className="section-label">Canadian Expats</p>
           <h2 className="section-heading section-heading-light">Canadian Expats — Your Provincial Health Coverage Has a Deadline</h2>
