@@ -16,7 +16,7 @@ const aspects = [
     subtitle: "Requirements for foreigners",
     description:
       "It is possible to open a Philippine bank account as a foreigner, but it takes more documentation than for citizens. Requirements vary by bank — BDO, BPI, and Security Bank are the most accommodating.",
-    href: "#opening",
+    href: "#accounts",
   },
   {
     label: "Sending Money In",
@@ -30,7 +30,7 @@ const aspects = [
     subtitle: "GCash, Maya & beyond",
     description:
       "GCash and Maya dominate everyday digital payments and are accepted at markets, utilities, and government services. A Philippine mobile number and basic ID verification are all you need to start.",
-    href: "#digital",
+    href: "#gcash",
   },
   {
     label: "Day-to-Day Banking",
@@ -543,6 +543,39 @@ export default function BankingPage() {
         .phone-rec-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .phone-rec-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #4A5868; }
 
+        /* ── JUMP NAV ── */
+        .cs-label {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 24px;
+          display: flex; align-items: center; gap: 12px;
+        }
+        .cs-label::before, .cs-label::after {
+          content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25);
+        }
+        .cs-grid {
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+        }
+        .cs-card {
+          display: block; text-decoration: none;
+          background: #0B1F3A; padding: 22px 24px;
+          border: 1px solid rgba(201,168,76,0.15);
+          transition: border-color 0.18s, background 0.18s;
+          cursor: pointer;
+        }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city {
+          font-family: 'Playfair Display', serif;
+          font-size: 1rem; font-weight: 700; color: #F8F6F1;
+          display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+          margin-bottom: 6px;
+        }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline {
+          font-size: 0.8rem; font-weight: 300; line-height: 1.55;
+          color: rgba(248,246,241,0.5);
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -550,6 +583,7 @@ export default function BankingPage() {
           .page-hero { padding: 52px 24px 72px; }
           .section { padding: 72px 24px; }
           .card-grid { grid-template-columns: repeat(2, 1fr); }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .detail-inner { grid-template-columns: 1fr; gap: 40px; }
           .detail-row { grid-template-columns: 1fr; gap: 8px; }
           .disclaimer-inner { grid-template-columns: 1fr; gap: 32px; }
@@ -564,7 +598,7 @@ export default function BankingPage() {
       {/* PAGE HEADER */}
       <header className="page-header">
         <Nav active="/banking" />
-        <div className="page-hero">
+        <div className="page-hero" id="exchange-rate">
           <ExchangeRate />
           <p className="page-eyebrow">Banking</p>
           <h1 className="page-title">
@@ -577,6 +611,33 @@ export default function BankingPage() {
           </p>
         </div>
       </header>
+
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <p className="cs-label">Jump to a Section</p>
+        <div className="cs-grid">
+          <a href="#accounts" className="cs-card">
+            <p className="cs-city">Bank Accounts</p>
+            <p className="cs-tagline">Opening an account as a foreigner</p>
+          </a>
+          <a href="#gcash" className="cs-card">
+            <p className="cs-city">GCash and Digital Wallets</p>
+            <p className="cs-tagline">Maya, GCash, and mobile payments</p>
+          </a>
+          <a href="#exchange-rate" className="cs-card">
+            <p className="cs-city">Live Exchange Rate</p>
+            <p className="cs-tagline">USD to PHP updated in real time</p>
+          </a>
+          <a href="#brokerage" className="cs-card">
+            <p className="cs-city">US Brokerage Accounts</p>
+            <p className="cs-tagline">Managing investments from abroad</p>
+          </a>
+          <a href="#phone-numbers" className="cs-card">
+            <p className="cs-city">US Phone Numbers</p>
+            <p className="cs-tagline">Mint Mobile, Google Fi, and OTP access</p>
+          </a>
+        </div>
+      </section>
 
       {/* OVERVIEW */}
       <section className="section section-light" id="overview">
@@ -596,7 +657,7 @@ export default function BankingPage() {
       </section>
 
       {/* OPENING AN ACCOUNT */}
-      <section className="section section-dark" id="opening">
+      <section className="section section-dark" id="accounts">
         <div className="detail-inner">
           <div>
             <p className="section-label">Opening an Account</p>
@@ -650,7 +711,7 @@ export default function BankingPage() {
       </section>
 
       {/* DIGITAL WALLETS */}
-      <section className="section section-dark" id="digital">
+      <section className="section section-dark" id="gcash">
         <div className="detail-inner">
           <div>
             <p className="section-label">Digital Wallets</p>
@@ -741,7 +802,7 @@ export default function BankingPage() {
       </section>
 
       {/* US INVESTMENT PORTFOLIO */}
-      <section className="section section-dark" id="investment-portfolio">
+      <section className="section section-dark" id="brokerage">
         <div style={{maxWidth: '860px'}}>
           <p className="section-label">US Investment Accounts</p>
           <h2 className="section-heading section-heading-light">Managing Your US Investment Portfolio from the Philippines</h2>
@@ -803,7 +864,7 @@ export default function BankingPage() {
       </section>
 
       {/* US PHONE NUMBER */}
-      <section className="section section-light" id="us-phone">
+      <section className="section section-light" id="phone-numbers">
         <div style={{maxWidth: '860px'}}>
           <p className="section-label">Keeping Your US Number</p>
           <h2 className="section-heading">Keeping Your US Phone Number — Critical for Banking OTP and Social Security</h2>

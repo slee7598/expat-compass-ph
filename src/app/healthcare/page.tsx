@@ -164,6 +164,39 @@ export default function HealthcarePage() {
         .pharmacy-featured { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.3); }
         .pharmacy-featured .pharmacy-name { color: #C9A84C; }
 
+        /* ── JUMP NAV ── */
+        .cs-label {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 24px;
+          display: flex; align-items: center; gap: 12px;
+        }
+        .cs-label::before, .cs-label::after {
+          content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25);
+        }
+        .cs-grid {
+          display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+        }
+        .cs-card {
+          display: block; text-decoration: none;
+          background: #0B1F3A; padding: 22px 24px;
+          border: 1px solid rgba(201,168,76,0.15);
+          transition: border-color 0.18s, background 0.18s;
+          cursor: pointer;
+        }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city {
+          font-family: 'Playfair Display', serif;
+          font-size: 1rem; font-weight: 700; color: #F8F6F1;
+          display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+          margin-bottom: 6px;
+        }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline {
+          font-size: 0.8rem; font-weight: 300; line-height: 1.55;
+          color: rgba(248,246,241,0.5);
+        }
+
         /* ── STEVE'S NOTE ── */
         .sn-section {
           background: #0D1E30; border-top: 3px solid #C9A84C;
@@ -204,6 +237,7 @@ export default function HealthcarePage() {
           .pharmacy-grid { grid-template-columns: repeat(2, 1fr); }
           .situation-row { grid-template-columns: 1fr; }
           .situation-a { border-left: none; border-top: 2px solid #C9A84C; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
           .page-title { font-size: 2rem; }
@@ -227,6 +261,47 @@ export default function HealthcarePage() {
           <div className="hook-card">
             <p className="hook-card-label">The number that changes how you think about Philippine healthcare</p>
             <p className="hook-card-body">In the United States, a 6-hour emergency room visit with IV treatment, blood tests, and a week of prescription medications would cost $3,000 to $5,000 minimum without insurance — and often significantly more. My total bill at Chong Hua Hospital in Cebu for exactly that treatment was $300 USD. That is not a typo. That is healthcare in the Philippines.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#chong-hua" className="cs-card">
+              <p className="cs-city">Chong Hua Hospital</p>
+              <p className="cs-tagline">The expat standard in Cebu</p>
+            </a>
+            <a href="#other-hospitals" className="cs-card">
+              <p className="cs-city">Other Hospitals</p>
+              <p className="cs-tagline">More options across Cebu</p>
+            </a>
+            <a href="#dental" className="cs-card">
+              <p className="cs-city">Dental Care</p>
+              <p className="cs-tagline">Implants for a fraction of US cost</p>
+            </a>
+            <a href="#pharmacies" className="cs-card">
+              <p className="cs-city">Pharmacies</p>
+              <p className="cs-tagline">Where to fill prescriptions</p>
+            </a>
+            <a href="#insurance" className="cs-card">
+              <p className="cs-city">Health Insurance</p>
+              <p className="cs-tagline">SafetyWing, Cigna, and more</p>
+            </a>
+            <a href="#medicare" className="cs-card">
+              <p className="cs-city">Medicare Abroad</p>
+              <p className="cs-tagline">What it does and does not cover</p>
+            </a>
+            <a href="#specialist-care" className="cs-card">
+              <p className="cs-city">Specialist Care</p>
+              <p className="cs-tagline">Urology, cardiology, oncology, orthopedics</p>
+            </a>
+            <a href="#tips" className="cs-card">
+              <p className="cs-city">Practical Tips</p>
+              <p className="cs-tagline">Ten things to know before you need them</p>
+            </a>
           </div>
         </div>
       </section>
@@ -328,7 +403,7 @@ export default function HealthcarePage() {
       </section>
 
       {/* ── SECTION 3: OTHER HOSPITALS ── */}
-      <section className="section section-dark" id="hospitals">
+      <section className="section section-dark" id="other-hospitals">
         <div className="section-inner">
           <p className="section-label">Cebu Private Hospitals</p>
           <h2 className="section-heading section-heading-light">Other Major Hospitals in Cebu</h2>

@@ -767,6 +767,39 @@ export default function MarriagePage() {
           .dv-stat-row { grid-template-columns: 1fr; }
         }
 
+        /* ── JUMP NAV ── */
+        .cs-label {
+          font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 24px;
+          display: flex; align-items: center; gap: 12px;
+        }
+        .cs-label::before, .cs-label::after {
+          content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25);
+        }
+        .cs-grid {
+          display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+        }
+        .cs-card {
+          display: block; text-decoration: none;
+          background: #0B1F3A; padding: 22px 24px;
+          border: 1px solid rgba(201,168,76,0.15);
+          transition: border-color 0.18s, background 0.18s;
+          cursor: pointer;
+        }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city {
+          font-family: 'Playfair Display', serif;
+          font-size: 1rem; font-weight: 700; color: #F8F6F1;
+          display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+          margin-bottom: 6px;
+        }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline {
+          font-size: 0.8rem; font-weight: 300; line-height: 1.55;
+          color: rgba(248,246,241,0.5);
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -774,6 +807,7 @@ export default function MarriagePage() {
           .page-hero { padding: 52px 24px 72px; }
           .section { padding: 72px 24px; }
           .card-grid { grid-template-columns: repeat(2, 1fr); }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .detail-inner { grid-template-columns: 1fr; gap: 40px; }
           .legal-inner { grid-template-columns: 1fr; gap: 32px; }
           .detail-row { grid-template-columns: 1fr; gap: 8px; }
@@ -1015,8 +1049,49 @@ export default function MarriagePage() {
         </div>
       </section>
 
+      {/* ── JUMP NAV ── */}
+      <section className="uv-section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="uv-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#k1-visa" className="cs-card">
+              <p className="cs-city">K-1 Fiancée Visa</p>
+              <p className="cs-tagline">The full process and real costs</p>
+            </a>
+            <a href="#policy-change" className="cs-card">
+              <p className="cs-city">2026 Policy Change</p>
+              <p className="cs-tagline">Why K-1 changed this year</p>
+            </a>
+            <a href="#cr1-visa" className="cs-card">
+              <p className="cs-city">CR-1 Spousal Visa</p>
+              <p className="cs-tagline">The recommended path in 2026</p>
+            </a>
+            <a href="#comparison" className="cs-card">
+              <p className="cs-city">K-1 vs CR-1</p>
+              <p className="cs-tagline">Side by side comparison</p>
+            </a>
+            <a href="#interview" className="cs-card">
+              <p className="cs-city">Embassy Interview</p>
+              <p className="cs-tagline">What to expect in Manila</p>
+            </a>
+            <a href="#evidence" className="cs-card">
+              <p className="cs-city">Evidence Package</p>
+              <p className="cs-tagline">Proving your relationship is real</p>
+            </a>
+            <a href="#attorney" className="cs-card">
+              <p className="cs-city">Do You Need an Attorney</p>
+              <p className="cs-tagline">When to hire help</p>
+            </a>
+            <a href="#b2-tourist" className="cs-card">
+              <p className="cs-city">B-2 Tourist Visa</p>
+              <p className="cs-tagline">Why it is harder than it looks</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* === K-1 FIANCÉE VISA === */}
-      <section className="uv-section section-light">
+      <section className="uv-section section-light" id="k1-visa">
         <div className="uv-inner">
           <p className="uv-eyebrow">K-1 Fiancée Visa</p>
           <h2 className="uv-title uv-title-dark">The K-1 Fiancée Visa</h2>
@@ -1083,7 +1158,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === 2026 POLICY CHANGE === */}
-      <section className="uv-section section-dark">
+      <section className="uv-section section-dark" id="policy-change">
         <div className="uv-inner">
           <p className="uv-eyebrow">Critical 2026 Policy Change</p>
           <h2 className="uv-title">The K-1 Strategy No Longer Works the Way It Did.</h2>
@@ -1098,7 +1173,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === CR-1 SPOUSAL VISA === */}
-      <section className="uv-section section-light">
+      <section className="uv-section section-light" id="cr1-visa">
         <div className="uv-inner">
           <p className="uv-eyebrow">CR-1 Spousal Immigrant Visa</p>
           <h2 className="uv-title uv-title-dark">The CR-1 Spousal Immigrant Visa</h2>
@@ -1152,7 +1227,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === K-1 vs CR-1 COMPARISON TABLE === */}
-      <section className="uv-section section-dark">
+      <section className="uv-section section-dark" id="comparison">
         <div className="uv-inner">
           <p className="uv-eyebrow">K-1 vs CR-1 — 2026</p>
           <h2 className="uv-title">Side-by-Side Comparison</h2>
@@ -1221,7 +1296,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === US EMBASSY MANILA INTERVIEW === */}
-      <section className="uv-section section-light">
+      <section className="uv-section section-light" id="interview">
         <div className="uv-inner">
           <p className="uv-eyebrow">US Embassy Manila</p>
           <h2 className="uv-title uv-title-dark">The US Embassy Manila Interview</h2>
@@ -1280,7 +1355,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === EVIDENCE PACKAGE === */}
-      <section className="uv-section section-dark">
+      <section className="uv-section section-dark" id="evidence">
         <div className="uv-inner">
           <p className="uv-eyebrow">Evidence Package</p>
           <h2 className="uv-title">Building Your Relationship Evidence Package</h2>
@@ -1330,7 +1405,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === DO YOU NEED AN ATTORNEY === */}
-      <section className="uv-section section-light">
+      <section className="uv-section section-light" id="attorney">
         <div className="uv-inner">
           <p className="uv-eyebrow">Legal Representation</p>
           <h2 className="uv-title uv-title-dark">Do You Need an Immigration Attorney?</h2>
@@ -1366,7 +1441,7 @@ export default function MarriagePage() {
       </section>
 
       {/* === B-2 TOURIST VISA === */}
-      <section className="uv-section section-dark">
+      <section className="uv-section section-dark" id="b2-tourist">
         <div className="uv-inner">
           <p className="uv-eyebrow">Tourist Visa</p>
           <h2 className="uv-title">The B-2 Tourist Visa — Can Your Filipina Girlfriend Just Visit the US First?</h2>
