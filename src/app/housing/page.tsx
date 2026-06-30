@@ -152,9 +152,21 @@ export default function HousingPage() {
         .legal-body { font-size: 0.88rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; }
         .legal-body strong { color: #0B1F3A; font-weight: 600; }
 
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .page-hero, .section, .sn-section, .legal-section { padding-left: 24px; padding-right: 24px; }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .check-row { grid-template-columns: 1fr; }
           .check-label { border-bottom: 1px solid rgba(201,168,76,0.2); }
         }
@@ -185,8 +197,49 @@ export default function HousingPage() {
         </div>
       </section>
 
+      {/* ── JUMP NAV ── */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div className="section-inner">
+          <p className="cs-label">Jump to a Section</p>
+          <div className="cs-grid">
+            <a href="#mactan-areas" className="cs-card">
+              <p className="cs-city">Mactan Neighborhoods</p>
+              <p className="cs-tagline">Punta Engaño to IT Park</p>
+            </a>
+            <a href="#airbnb-first" className="cs-card">
+              <p className="cs-city">Start With Airbnb</p>
+              <p className="cs-tagline">Why this is not optional advice</p>
+            </a>
+            <a href="#realtor" className="cs-card">
+              <p className="cs-city">Finding a Realtor</p>
+              <p className="cs-tagline">Use a trusted agent not a stranger</p>
+            </a>
+            <a href="#what-to-check" className="cs-card">
+              <p className="cs-city">What to Check</p>
+              <p className="cs-tagline">Before you sign anything</p>
+            </a>
+            <a href="#lease-terms" className="cs-card">
+              <p className="cs-city">Lease Terms</p>
+              <p className="cs-tagline">Post-dated checks and deposits</p>
+            </a>
+            <a href="#furnished" className="cs-card">
+              <p className="cs-city">Furnished vs Unfurnished</p>
+              <p className="cs-tagline">Always go furnished</p>
+            </a>
+            <a href="#shipping" className="cs-card">
+              <p className="cs-city">Do Not Ship</p>
+              <p className="cs-tagline">Buy it here instead</p>
+            </a>
+            <a href="#rental-costs" className="cs-card">
+              <p className="cs-city">Rental Costs</p>
+              <p className="cs-tagline">What things actually cost in 2026</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 1: MACTAN AREAS ── */}
-      <section className="section section-dark" id="areas">
+      <section className="section section-dark" id="mactan-areas">
         <div className="section-inner">
           <p className="section-label">Where Expats Actually Live</p>
           <h2 className="section-heading section-heading-light">Understanding the Mactan Island Area</h2>
@@ -245,7 +298,7 @@ export default function HousingPage() {
       </section>
 
       {/* ── SECTION 2: AIRBNB FIRST ── */}
-      <section className="section section-light" id="airbnb">
+      <section className="section section-light" id="airbnb-first">
         <div className="section-inner">
           <p className="section-label">Non-Negotiable First Step</p>
           <h2 className="section-heading">Start With Airbnb or Booking.com</h2>
@@ -308,7 +361,7 @@ export default function HousingPage() {
       </section>
 
       {/* ── SECTION 4: WHAT TO CHECK ── */}
-      <section className="section section-light" id="checklist">
+      <section className="section section-light" id="what-to-check">
         <div className="section-inner">
           <p className="section-label">Before You Sign Anything</p>
           <h2 className="section-heading">What to Check When Viewing a Condo</h2>
@@ -350,7 +403,7 @@ export default function HousingPage() {
       </section>
 
       {/* ── SECTION 5: LEASE TERMS ── */}
-      <section className="section section-dark" id="lease">
+      <section className="section section-dark" id="lease-terms">
         <div className="section-inner">
           <p className="section-label">Know Before You Sign</p>
           <h2 className="section-heading section-heading-light">Understanding Philippine Lease Terms</h2>
@@ -422,7 +475,7 @@ export default function HousingPage() {
       </section>
 
       {/* ── SECTION 8: RENTAL COSTS ── */}
-      <section className="section section-light" id="costs">
+      <section className="section section-light" id="rental-costs">
         <div className="section-inner">
           <p className="section-label">Market Reference 2026</p>
           <h2 className="section-heading">What Long-Term Rental Actually Costs in Mactan &amp; Cebu</h2>
