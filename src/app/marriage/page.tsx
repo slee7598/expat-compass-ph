@@ -1086,6 +1086,10 @@ export default function MarriagePage() {
               <p className="cs-city">B-2 Tourist Visa</p>
               <p className="cs-tagline">Why it is harder than it looks</p>
             </a>
+            <a href="#uk-european-visas" className="cs-card">
+              <p className="cs-city">UK and European Visas</p>
+              <p className="cs-tagline">Bringing her to the UK</p>
+            </a>
           </div>
         </div>
       </section>
@@ -1493,6 +1497,59 @@ export default function MarriagePage() {
 
           <h3 className="uv-sub">The bottom line</h3>
           <p className="uv-para">For a Filipina with a serious American partner, a tourist visa is genuinely difficult and carries real risks if the plan involves marriage or long-term immigration. It is not impossible, but requires strong documented ties to the Philippines, a well-prepared application, and honest consistent answers at the interview. If your relationship is heading toward marriage, the K-1 or CR-1 is the correct pathway. The tourist visa is not a shortcut — and using it as one can create immigration complications that follow both of you for years.</p>
+        </div>
+      </section>
+
+      {/* === UK AND EUROPEAN VISA OPTIONS === */}
+      <section className="uv-section section-light" id="uk-european-visas">
+        <div className="uv-inner">
+          <p className="uv-eyebrow">UK and European Visa Options</p>
+          <h2 className="uv-title uv-title-dark">UK and European Visa Options for Filipino Partners</h2>
+          <p className="uv-para uv-para-dark">The Expat Compass PH audience includes significant numbers of British, Australian, Canadian, and European expats in the Philippines. While our marriage and visa pages focus primarily on US immigration pathways, this section covers the key information for British nationals bringing a Filipina partner to the UK. Australian, Canadian, and European readers should consult their respective embassy websites as the details differ significantly by country.</p>
+
+          <h3 className="uv-sub uv-sub-first uv-sub-dark">UK Standard Visitor Visa</h3>
+          <div className="uv-policy-alert-lt">
+            <p className="uv-policy-label">Good News for British Nationals — 86% Approval Rate</p>
+            <p className="uv-policy-body-lt">The good news for British nationals: Filipino applicants have an 86 percent approval rate for UK Standard Visitor Visas — significantly above the global average of 77 percent. The visa costs £135 for a 6-month visit. Processing takes approximately 15 working days from biometrics submission at VFS Global in Manila or Cebu. There is no physical visa or sticker — the UK now operates a fully digital eVisa system linked to your UKVI account.</p>
+          </div>
+
+          <h3 className="uv-sub uv-sub-dark">What Makes a Strong UK Visitor Visa Application</h3>
+          <ul className="uv-list">
+            <li className="uv-li uv-li-dark">6 months of consistent bank statements showing regular income deposits — not a lump sum that appeared before application.</li>
+            <li className="uv-li uv-li-dark">Employment certificate confirming position, salary, and approved leave.</li>
+            <li className="uv-li uv-li-dark">Evidence of strong ties to the Philippines — family, property, ongoing obligations.</li>
+            <li className="uv-li uv-li-dark">A genuine itinerary with confirmed accommodation and return flights.</li>
+            <li className="uv-li uv-li-dark">An invitation letter from the UK sponsor explaining the visit, accommodation, and financial support.</li>
+          </ul>
+          <p className="uv-para uv-para-dark">Having a British boyfriend is an immigrant intent risk factor — the visa officer may conclude she intends to stay permanently rather than visit temporarily. This does not make approval impossible but it requires stronger evidence of genuine return intent. The shorter and more specific the itinerary the better. A 2-week trip with a specific purpose is easier to approve than an open-ended 6-month maximum stay request.</p>
+
+          <h3 className="uv-sub uv-sub-dark">UK Fianc&eacute;e Visa</h3>
+          <div className="uv-policy-alert-lt">
+            <p className="uv-policy-label">The Correct Pathway for Marriage Intentions</p>
+            <p className="uv-policy-body-lt">If your intention is marriage and long-term settlement in the UK the UK Fianc&eacute;e Visa is the appropriate pathway — not the Standard Visitor Visa. Applying for a visitor visa when the real intention is to remain and marry is grounds for refusal if the officer identifies the true intent. The Fianc&eacute;e Visa allows her to travel to the UK, marry within 6 months of arrival, and then switch to a Spouse Visa to remain.</p>
+          </div>
+          <ul className="uv-list">
+            <li className="uv-li uv-li-dark">Fee: £1,846 in 2026.</li>
+            <li className="uv-li uv-li-dark">Processing time: 12 to 24 weeks from submission.</li>
+            <li className="uv-li uv-li-dark">She cannot work while on the Fianc&eacute;e Visa.</li>
+            <li className="uv-li uv-li-dark">English language requirement at A1 level must be met through an approved test or exemption.</li>
+            <li className="uv-li uv-li-dark">You must have suitable accommodation for her in the UK.</li>
+            <li className="uv-li uv-li-dark">After marriage she applies for a Spouse Visa to remain.</li>
+          </ul>
+
+          <h3 className="uv-sub uv-sub-dark">UK Spouse Visa</h3>
+          <div className="uv-policy-alert-lt">
+            <p className="uv-policy-label">For Couples Already Married</p>
+            <p className="uv-policy-body-lt">For couples already married the UK Spouse Visa allows the Filipina spouse to live and work in the UK. The sponsoring UK partner must earn a minimum of £29,000 per year gross in 2026 — this threshold increased significantly from previous years. The initial visa grants 2 years and 9 months with a pathway to Indefinite Leave to Remain after 5 years total residence. Fee: £1,846 from outside the UK in 2026. The Immigration Health Surcharge is £1,035 per year payable in addition to the visa fee — approximately £2,587 for a standard 2.5-year initial visa.</p>
+          </div>
+          <p className="uv-para uv-para-dark">The Filipina spouse must demonstrate English language proficiency at A1 level for entry and B1 level for extensions. Given that the Philippines is an English-speaking country and English is a medium of instruction in Philippine schools, most Filipinas can meet this requirement — but it must be formally demonstrated through an approved test unless an exemption applies.</p>
+
+          <p className="uv-para uv-para-dark">For Australian, Canadian, and New Zealand nationals — note that each country has its own partner visa pathway with different income requirements, processing times, and conditions. Consult your country&rsquo;s immigration authority website directly. Australian Partner Visa, Canadian Spousal Sponsorship, and New Zealand Partner Visa are the primary routes — each has different processing times ranging from several months to over a year.</p>
+
+          <div className="uv-policy-alert-lt" style={{borderLeftColor:'#F2994A', borderColor:'rgba(242,153,74,0.3)', background:'rgba(242,153,74,0.05)'}}>
+            <p className="uv-policy-label" style={{color:'#F2994A'}}>Disclaimer — Verify Current Requirements</p>
+            <p className="uv-policy-body-lt">UK and international immigration law changes regularly. The information above reflects conditions as of June 2026. Always verify current fees, income thresholds, and requirements directly at gov.uk/visas-immigration before making any application decisions. Consider consulting a licensed UK immigration solicitor for complex cases.</p>
+          </div>
         </div>
       </section>
 

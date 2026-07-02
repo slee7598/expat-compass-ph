@@ -267,6 +267,10 @@ export default function RetirementBenefitsPage() {
               <p className="cs-city">Canadian Expats</p>
               <p className="cs-tagline">Provincial coverage deadline</p>
             </a>
+            <a href="#british-expats" className="cs-card">
+              <p className="cs-city">British Expats</p>
+              <p className="cs-tagline">UK State Pension uprated in Philippines</p>
+            </a>
           </div>
         </div>
       </section>
@@ -548,6 +552,72 @@ export default function RetirementBenefitsPage() {
 
           <h3 className="rb-sub rb-sub-light">CPP and OAS Abroad</h3>
           <p className="rb-body rb-body-light">Canada Pension Plan and Old Age Security payments continue regardless of where you live. Canada has a tax treaty with the Philippines. Non-resident withholding tax on CPP and OAS is 25 percent unless you qualify for reduced treaty rates. Consult a Canadian expat tax specialist before moving.</p>
+        </div>
+      </section>
+
+      {/* BRITISH EXPATS */}
+      <section className="section section-light" id="british-expats">
+        <div className="section-inner">
+          <p className="section-label">British Expats</p>
+          <h2 className="section-heading">British Expats — UK State Pension in the Philippines</h2>
+
+          <p className="rb-body">Good news for British expats that many people get wrong — the Philippines has a bilateral social security agreement with the United Kingdom that includes pension uprating. This means your UK State Pension DOES increase annually in the Philippines under the Triple Lock system — unlike many other popular expat destinations.</p>
+
+          <h3 className="rb-sub rb-sub-first">Frozen Pension Countries vs. the Philippines</h3>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:'2px', margin:'20px 0 28px', maxWidth:'760px'}}>
+            <div style={{background:'rgba(235,87,87,0.06)', border:'1px solid rgba(235,87,87,0.2)', borderLeft:'4px solid #EB5757', padding:'24px 26px'}}>
+              <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#EB5757', marginBottom:'12px'}}>Countries Where UK State Pension is FROZEN</p>
+              <p style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.78, color:'#4A5868'}}>Australia, Canada, New Zealand, South Africa, and most Commonwealth nations. Pensioners receive the pension rate first paid and it never increases. A pensioner who retired 20 years ago in Australia receives approximately £4,140 per year compared to £11,500 if they had remained in the UK.</p>
+            </div>
+            <div style={{background:'rgba(39,174,96,0.06)', border:'1px solid rgba(39,174,96,0.2)', borderLeft:'4px solid #27AE60', padding:'24px 26px'}}>
+              <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#27AE60', marginBottom:'12px'}}>The Philippines is DIFFERENT</p>
+              <p style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.78, color:'#4A5868'}}>The Philippines has a bilateral agreement with the UK covering pension uprating. British expats living in the Philippines receive annual Triple Lock increases just like UK residents. This is one of the most valuable and least-known advantages of retiring to the Philippines for British nationals.</p>
+            </div>
+          </div>
+
+          <p className="rb-body">The Triple Lock increases UK State Pension by the highest of price inflation, average earnings growth, or 2.5% each year. In 2024 alone the increase was 8.5%. Over a 20-year retirement the difference between a frozen and an uprated pension can be tens of thousands of pounds. British expats choosing the Philippines over Australia or New Zealand retain this benefit entirely.</p>
+
+          <h3 className="rb-sub">2026 State Pension Rates</h3>
+          <div className="stat-grid">
+            <div className="stat-card">
+              <p className="stat-label">Full New State Pension</p>
+              <p className="stat-value">£241.30</p>
+              <p className="stat-note">Per week as of 2026/27 tax year</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-label">Annual Amount</p>
+              <p className="stat-value">~£12,548</p>
+              <p className="stat-note">Approximately per year</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-label">Payment Schedule</p>
+              <p className="stat-value">Every 4 weeks</p>
+              <p className="stat-note">Paid in arrears</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-label">Payment Method</p>
+              <p className="stat-value">UK or overseas</p>
+              <p className="stat-note">Direct to UK bank account or via IBAN/BIC to Philippine bank</p>
+            </div>
+          </div>
+
+          <h3 className="rb-sub">Practical Steps for British Expats</h3>
+          <ol className="rb-nlist">
+            <li className="rb-ni">Notify the DWP International Pension Centre before leaving the UK — not after. Contact them approximately 4 months before reaching State Pension age to begin your claim. The pension is not paid automatically — you must apply.</li>
+            <li className="rb-ni">Complete P85 form for HMRC to notify them of your departure from the UK and establish your tax status as a non-resident.</li>
+            <li className="rb-ni">Check your National Insurance record — you need at least 10 qualifying years for any State Pension and 35 qualifying years for the full amount. Check your forecast at gov.uk/check-state-pension.</li>
+            <li className="rb-ni">Voluntary NI contributions from abroad — if you have gaps in your NI record you can pay voluntary Class 3 contributions to fill them. From April 2026 Class 2 contributions for overseas periods are no longer available — Class 3 at £18.40 per week is now the primary option. Check whether topping up your record makes financial sense based on your expected pension age and retirement timeline.</li>
+            <li className="rb-ni">Choose your payment account — UK bank account then transfer via Wise, or directly to a Philippine bank account via IBAN/BIC. The Wise debit card is popular among British expats in the Philippines for converting GBP pension payments to pesos efficiently.</li>
+          </ol>
+
+          <h3 className="rb-sub">UK Taxation of State Pension Abroad</h3>
+          <p className="rb-body">The UK has a Double Taxation Agreement with the Philippines. Check your specific situation with HMRC or a UK expat tax specialist to understand whether your pension income is taxable in the UK, the Philippines, or both.</p>
+
+          <h3 className="rb-sub">NHS and Healthcare</h3>
+          <p className="rb-body">The NHS does not cover care in the Philippines. British expats must arrange private international health insurance before arriving. Cigna Global, Pacific Cross, and AXA are the most recommended among British expats in the Philippines. Do not arrive without coverage in place — arrange it before you leave the UK.</p>
+
+          <h3 className="rb-sub">Medications</h3>
+          <p className="rb-body">Bring a 3 to 6 month supply of any regular prescription medications. Establish with a Philippine doctor early. Some UK medications are not available in the Philippines or are available under different brand names.</p>
         </div>
       </section>
 

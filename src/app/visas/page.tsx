@@ -544,6 +544,25 @@ export default function VisasPage() {
 
           <h3 className="vsub vsub-light">Work rights on the 13A</h3>
           <p className="vb vb-light">The 13A grants the right to work in the Philippines with fewer requirements than most other foreign workers face. You are exempt from the Labor Market Test. However you must obtain a Certificate of Exclusion from DOLE before beginning formal employment. You can own and operate a business subject to Philippine foreign investment laws. Certain licensed professions such as medicine and law are generally reserved for Filipino citizens.</p>
+
+          <div className="va-gold" style={{marginTop:'40px'}}>
+            <p className="va-gold-label">ACRO Police Certificate — What British Applicants Need to Know</p>
+            <p className="va-gold-body-light">British nationals applying for the 13A visa need an ACRO criminal records certificate — issued by ACRO Criminal Records Office — rather than a standard DBS check. The ACRO certificate covers the applicant&rsquo;s full criminal record history and is the document Philippine immigration accepts for UK nationals.</p>
+          </div>
+
+          <h3 className="vsub vsub-light">ACRO Certificate Validity</h3>
+          <p className="vb vb-light">The Bureau of Immigration does not publish a definitive validity period for the ACRO certificate. In practice, 6 months from the date of issue is most commonly accepted. Some BI offices have accepted certificates up to 12 months old. The safest approach is to get your ACRO as close to your planned submission date as possible — and to call your specific BI office directly to confirm their current accepted validity period before applying, as requirements vary between offices.</p>
+
+          <h3 className="vsub vsub-light">Processing Time</h3>
+          <p className="vb vb-light">ACRO standard service takes 10 to 20 working days from submission. An enhanced service is available for faster processing. Add 4 to 6 weeks for FCDO apostille after the ACRO certificate is issued — the Philippines requires the apostille to authenticate the document. Total timeline from application to apostilled certificate ready for submission: plan for 8 to 10 weeks minimum. Do not leave this to the last minute.</p>
+
+          <h3 className="vsub vsub-light">Where to Apply</h3>
+          <p className="vb vb-light">Online at acro.police.uk. The certificate is issued digitally. You then send it to the FCDO for apostille — this can be done by post or through an apostille agent.</p>
+
+          <div className="va-amber">
+            <p className="va-amber-label">Other Nationalities — Equivalent Documents</p>
+            <p className="va-amber-body">For 13A applicants from other countries, the equivalent document is the FBI Identification Record for Americans, the RCMP criminal record check for Canadians, the Australian National Police Check for Australians, and the equivalent national police authority certificate for other nationalities. All must be apostilled by the relevant national authority before submission to Philippine immigration.</p>
+          </div>
         </div>
       </section>
 

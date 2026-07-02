@@ -636,6 +636,10 @@ export default function BankingPage() {
             <p className="cs-city">US Phone Numbers</p>
             <p className="cs-tagline">Mint Mobile, Google Fi, and OTP access</p>
           </a>
+          <a href="#exchange-tips" className="cs-card">
+            <p className="cs-city">Money Exchange Tips</p>
+            <p className="cs-tagline">Avoiding bad rates in the Philippines</p>
+          </a>
         </div>
       </section>
 
@@ -900,6 +904,33 @@ export default function BankingPage() {
           <div className="phone-rec-box">
             <p className="phone-rec-label">Recommended Setup</p>
             <p className="phone-rec-body">Mint Mobile with WiFi Calling enabled before departure as your primary US number plus Traveling Mailbox for your US address. This combination handles virtually every US institution requirement from the Philippines.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* MONEY EXCHANGE TIPS */}
+      <section className="section section-dark" id="exchange-tips">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">Money Exchange</p>
+          <h2 className="section-heading section-heading-light">Money Exchange Tips — Avoiding Bad Rates in the Philippines</h2>
+          <p className="section-body section-body-light">One of the most common mistakes new arrivals make in the Philippines is getting a bad exchange rate at a tourist area money changer. Here is how to protect your money.</p>
+
+          <h3 className="section-sub section-sub-first section-sub-light">The Siargao Lesson</h3>
+          <p className="section-body section-body-light">A common real-world example — exchanging $400 USD at a tourist money changer in Siargao results in receiving approximately 21,800 pesos. At the mid-market rate that same $400 should yield approximately 23,200 to 23,500 pesos. That is a difference of 1,400 to 1,700 pesos — lost to the money changer&rsquo;s spread in a single transaction. Multiply that across a year of regular exchanges and the losses add up significantly.</p>
+
+          <h3 className="section-sub section-sub-light">How to Get the Best Exchange Rate</h3>
+          <ul className="section-list">
+            <li className="section-li section-li-light">Always choose PHP pesos not USD when your ATM prompts you to choose currency — this is called Dynamic Currency Conversion and selecting USD allows the ATM to apply its own poor exchange rate instead of your home bank&rsquo;s rate. Always choose PHP and let your home bank handle the conversion.</li>
+            <li className="section-li section-li-light">Use a Wise debit card for ATM withdrawals — Wise uses the mid-market rate and charges a small transparent fee. Dramatically better than using a regular US or UK debit card at Philippine ATMs.</li>
+            <li className="section-li section-li-light">For large transfers use Wise or Remitly — see the Banking section above for full comparison. Both offer significantly better rates than bank wire transfers or money changers.</li>
+            <li className="section-li section-li-light">Avoid tourist area money changers — money changers in resort towns like Boracay, Siargao, Palawan, and airport terminals typically offer the worst rates available. The spread between buy and sell rates is where they make their money.</li>
+            <li className="section-li section-li-light">SM department stores and Villarica Pawnshop chains typically offer better rates than tourist area money changers if you must exchange cash in person.</li>
+            <li className="section-li section-li-light">Check the live mid-market rate on our homepage before any exchange so you know exactly what rate you should be getting.</li>
+          </ul>
+
+          <div className="bank-alert">
+            <p className="bank-alert-label">Live Exchange Rate</p>
+            <p className="bank-alert-body">The live USD to PHP exchange rate is always displayed on the Expat Compass PH homepage — bookmark it and check it before any significant currency transaction.</p>
           </div>
         </div>
       </section>
