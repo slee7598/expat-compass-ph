@@ -545,7 +545,10 @@ export default function Home() {
             it right.
           </p>
           <HeroSearch />
-          <p style={{marginTop:'14px', fontSize:'0.68rem', fontWeight:300, lineHeight:1.65, color:'rgba(248,246,241,0.35)', maxWidth:'480px'}}>Our AI-powered search is a custom tool built for Philippines expat questions. Updated from real expat community questions and tracked policy changes. Provides directional guidance — verify immigration, legal, and financial decisions with qualified professionals.</p>
+          <div style={{marginTop:'20px', maxWidth:'520px', background:'rgba(11,31,58,0.72)', borderLeft:'3px solid #C9A84C', backdropFilter:'blur(12px)', WebkitBackdropFilter:'blur(12px)', padding:'18px 22px'}}>
+            <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>About Our AI Expat Advisor</p>
+            <p style={{fontSize:'0.82rem', fontWeight:300, lineHeight:1.75, color:'rgba(248,246,241,0.88)'}}>Our AI Expat Advisor is a custom tool built specifically for Philippines expat questions — not a generic AI search. It is updated continuously from real expat community questions, Philippine government agency announcements, and tracked policy changes in immigration, healthcare, banking, and daily life. It provides honest, current, directional guidance. Always verify immigration, legal, and financial decisions with qualified professionals.</p>
+          </div>
         </div>
       </section>
 
