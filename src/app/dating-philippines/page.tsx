@@ -236,6 +236,10 @@ export default function DatingPhilippinesPage() {
               <p className="cs-city">Separated But Married</p>
               <p className="cs-tagline">The legal minefield</p>
             </a>
+            <a href="#concubinage-laws" className="cs-card">
+              <p className="cs-city">Concubinage Laws</p>
+              <p className="cs-tagline">What every foreign man must understand</p>
+            </a>
             <a href="#scams" className="cs-card">
               <p className="cs-city">The Scam Industry</p>
               <p className="cs-tagline">Organized operations targeting you</p>
@@ -378,6 +382,40 @@ export default function DatingPhilippinesPage() {
           <p className="rb-body">When a woman on a dating app says she is &ldquo;separated&rdquo; she may mean: she has been living apart from her husband for years with no legal proceedings and is still legally married; she has filed for annulment but it has not been granted and is still legally married; her annulment has been granted and she is legally single; or she is divorced from a foreign husband under foreign law which may or may not be recognized in the Philippines.</p>
           <p className="rb-body">Why this matters to you: a foreigner can be charged under Philippine law if within Philippine jurisdiction and the elements of a crime are met. If you move in with a woman who is still legally married to someone else you may be exposed to legal risk. Criminal complaints can also be used to pressure immigration action — a foreigner can discover a case only when trying to renew their ACR I-Card and find an immigration hold-departure order has been filed.</p>
           <p className="rb-body">The practical steps: before a relationship becomes serious with a woman who describes herself as separated, ask directly whether she has an annulment decree or just a de facto separation. If she says annulment is in process, ask to see the case number. Consult a Philippine attorney if you have any doubt about your legal exposure.</p>
+        </div>
+      </section>
+
+      {/* SECTION 7B — CONCUBINAGE AND ADULTERY LAWS */}
+      <section className="section section-dark" id="concubinage-laws">
+        <div className="section-inner">
+          <p className="section-label">Philippine Law</p>
+          <h2 className="section-heading section-heading-light">Concubinage and Adultery Laws — What Foreign Men Must Understand</h2>
+          <p className="rb-body rb-body-light">The Philippines has criminal laws covering marital infidelity that remain actively enforceable in 2026. Every foreign man dating in the Philippines should understand these laws — not to be scared away from relationships, but to navigate the dating landscape with clear eyes.</p>
+
+          <div className="rb-warning">
+            <p className="rb-warning-label">Concubinage — Article 334 of the Revised Penal Code</p>
+            <p className="rb-warning-body-light">Concubinage is a criminal offense that applies to married men who engage in specific acts of infidelity. The law requires the man to be legally married AND to have committed one of three specific acts: keeping a mistress in the conjugal home; having sexual intercourse under scandalous circumstances with a woman who is not his wife; or cohabiting with another woman in any other place. A simple affair or a single sexual encounter does not automatically constitute concubinage — the law requires one of these specific aggravated modes. As of January 2026 the Philippine Supreme Court reaffirmed these provisions remain fully enforceable.</p>
+          </div>
+
+          <h3 className="rb-sub rb-sub-first rb-sub-light">How This Affects Foreign Men</h3>
+          <p className="rb-body rb-body-light">Nationality does not exempt you from Philippine criminal law if the offense is committed on Philippine soil. A married foreign man — married under any law recognized by the Philippines — who cohabits with a Filipina in the Philippines can be charged with concubinage. If you are legally married anywhere in the world and you move in with a Filipina girlfriend in the Philippines you have potential criminal exposure.</p>
+
+          <h3 className="rb-sub rb-sub-light">Penalties</h3>
+          <p className="rb-body rb-body-light">For the husband or foreign partner: imprisonment from 6 months and 1 day up to 4 years and 2 months. For the Filipino woman: destierro — a form of banishment from certain areas rather than imprisonment.</p>
+
+          <h3 className="rb-sub rb-sub-light">The Private Crime Protection</h3>
+          <p className="rb-body rb-body-light">Concubinage is classified as a private crime. This means only the offended wife can file the complaint — not the police, not a neighbor, not a government agency. The complaint must include both the husband and the woman. If the wife pardons the offense before charges are filed the case cannot proceed. This is important protective context — random third parties cannot weaponize this law against you. Only an actual legal spouse can file.</p>
+
+          <h3 className="rb-sub rb-sub-light">The Scam Angle</h3>
+          <p className="rb-body rb-body-light">The concern raised regularly in expat communities is that some Filipinas claiming to be single or separated use the threat of concubinage complaints as leverage — particularly when relationships end or when money is involved. The risk is real but it requires the woman to actually be legally married to someone who is willing to file a complaint against you. If she claims to be single and has a CENOMAR from PSA proving no marriage record, your exposure is dramatically reduced. Getting a CENOMAR before any serious relationship develops is the clearest protection.</p>
+
+          <h3 className="rb-sub rb-sub-light">Adultery — A Separate Offense</h3>
+          <p className="rb-body rb-body-light">Adultery is a separate offense that applies to married women — it covers a married Filipina having intercourse with a man who knows she is married. If you date a woman you know is legally married, you could be charged as the paramour in an adultery case even if you are not yourself married. The standard of proof is different from concubinage — adultery requires proof of sexual intercourse rather than cohabitation.</p>
+
+          <div className="rb-amber">
+            <p className="rb-amber-label">Practical Protective Steps</p>
+            <p className="rb-amber-body-light">Ask specifically: is she legally annulled or widowed — not just is she single or separated. Separated without annulment means legally married. Request a CENOMAR from PSA before a relationship becomes serious. A legitimate woman in an honest relationship has no reason to refuse this request. Never move in with a woman you have reasonable grounds to believe is still legally married. If threatened with concubinage charges, consult a Philippine attorney immediately — do not pay anyone anything without legal advice. Keep records of all communications in any relationship that involves financial transactions.</p>
+          </div>
         </div>
       </section>
 

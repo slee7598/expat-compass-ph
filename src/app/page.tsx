@@ -545,6 +545,7 @@ export default function Home() {
             it right.
           </p>
           <HeroSearch />
+          <p style={{marginTop:'14px', fontSize:'0.68rem', fontWeight:300, lineHeight:1.65, color:'rgba(248,246,241,0.35)', maxWidth:'480px'}}>Our AI-powered search is a custom tool built for Philippines expat questions. Updated from real expat community questions and tracked policy changes. Provides directional guidance — verify immigration, legal, and financial decisions with qualified professionals.</p>
         </div>
       </section>
 

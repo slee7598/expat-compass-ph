@@ -353,6 +353,10 @@ export default function CityGuidesPage() {
               <p className="cs-city">Subic Bay</p>
               <p className="cs-tagline">America&rsquo;s footprint in the Philippines</p>
             </a>
+            <a href="#dive-destinations" className="cs-card">
+              <p className="cs-city">Dive Destinations</p>
+              <p className="cs-tagline">Philippines is a top 3 dive destination</p>
+            </a>
           </div>
         </div>
       </section>
@@ -1002,6 +1006,208 @@ export default function CityGuidesPage() {
           <div className="city-alert city-alert-light" style={{maxWidth:'860px', marginTop:'28px'}}>
             <p className="city-alert-label">Practical Festival Planning Tips</p>
             <p className="city-alert-body city-alert-body-light">Book accommodation months in advance for Sinulog, Ati-Atihan, and Dinagyang — these fill up completely. Sinulog week in Cebu: avoid crossing the Mactan-Cebu bridge unless you have hours to spare. Most major Philippine festivals fall in January to May during the dry season — ideal travel weather. Sinulog 2027: January 17. Dinagyang 2027: January 24.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIVE DESTINATIONS ── */}
+      <section className="section section-dark" id="dive-destinations">
+        <div className="section-inner">
+          <p className="section-eyebrow section-eyebrow-light">For Expat Divers</p>
+          <h2 className="section-heading section-heading-light">Philippines Dive Destinations — The Complete Guide for Expat Divers</h2>
+          <p style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, color:'rgba(248,246,241,0.8)', marginBottom:'40px', maxWidth:'760px'}}>The Philippines is one of the top three scuba diving destinations in the world, sitting at the heart of the Coral Triangle with more than 3,000 species of reef fish, 600 species of coral, and over 7,000 islands to explore. For expats living here, world-class diving is not a vacation — it is a weekend activity.</p>
+
+          {/* MALAPASCUA */}
+          <div style={{marginBottom:'48px'}}>
+            <div style={{display:'flex', alignItems:'center', gap:'16px', marginBottom:'16px'}}>
+              <div style={{background:'#C9A84C', padding:'4px 12px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', color:'#0B1F3A', flexShrink:0}}>★ Bucket List</div>
+              <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.2rem', fontWeight:700, color:'#F8F6F1'}}>Malapascua Island</p>
+            </div>
+            <div className="detail-rows" style={{maxWidth:'860px'}}>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Location</span>
+                <p className="detail-row-body detail-row-body-light">Northern tip of Cebu Island — 30 minutes by boat from Maya Port in northern Cebu. Plan at least 2 to 3 nights; day trips are not practical.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">What makes it world famous</span>
+                <p className="detail-row-body detail-row-body-light">Malapascua is the only place on earth where you can reliably dive with thresher sharks year-round. Every morning at Kimud Shoal — a submerged seamount 45 minutes from the island — these deep-water predators rise for cleaning stations. Daily encounters are virtually guaranteed. Dives start before sunrise, typically 4:30am departure.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Beyond threshers</span>
+                <p className="detail-row-body detail-row-body-light">Vibrant coral walls, mandarin fish mating dives at sunset, macro critters, and Gato Island cave systems with white-tip reef sharks. The Pioneer WWII wreck at 55 metres for technical divers.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Skill level</span>
+                <p className="detail-row-body detail-row-body-light">Advanced Open Water minimum for the thresher shark dive. Beginner sites also available on the island.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Best season</span>
+                <p className="detail-row-body detail-row-body-light">Year-round for thresher sharks. Best visibility November to May.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* MOALBOAL */}
+          <div style={{marginBottom:'48px'}}>
+            <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.2rem', fontWeight:700, color:'#F8F6F1', marginBottom:'16px'}}>Moalboal — Cebu</p>
+            <div className="detail-rows" style={{maxWidth:'860px'}}>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Location</span>
+                <p className="detail-row-body detail-row-body-light">Southwest coast of Cebu, approximately 2 hours from Cebu City. Day trips possible from Cebu City.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">What makes it special</span>
+                <p className="detail-row-body detail-row-body-light">The Moalboal sardine run is one of the most spectacular underwater spectacles in the Philippines. Up to 7 million sardines form a constantly moving, swirling bait ball just metres from the shore of Panagsama Beach — accessible to snorkelers and divers alike. The bait ball is present year-round, not just seasonally.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Beyond the sardines</span>
+                <p className="detail-row-body detail-row-body-light">Pescador Island wall diving with canyons and swim-throughs. Resident sea turtles. Good macro diving. Kawasan Falls nearby for above-water activities.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Honest note</span>
+                <p className="detail-row-body detail-row-body-light">Moalboal town has a party backpacker scene that contrasts with the diving quality. Choose your accommodation accordingly if quiet is a priority.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* DUMAGUETE AND DAUIN */}
+          <div style={{marginBottom:'48px'}}>
+            <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.2rem', fontWeight:700, color:'#F8F6F1', marginBottom:'16px'}}>Dumaguete and Dauin — Negros Oriental</p>
+            <div className="detail-rows" style={{maxWidth:'860px'}}>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Location</span>
+                <p className="detail-row-body detail-row-body-light">Eastern coast of Negros island, 2 to 3 hours from Cebu by fast ferry.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">What makes it special</span>
+                <p className="detail-row-body detail-row-body-light">Dumaguete is the best base for expat divers wanting to combine world-class diving with affordable cost of living. Apo Island — 30 minutes by boat — is one of the Philippines&rsquo; great marine conservation success stories. Sea turtle encounters are virtually guaranteed on every dive. Dauin, just south of Dumaguete, is among the best macro diving in the country — frogfish, nudibranchs, seahorses, mandarin fish, blue-ring octopus, and ghost pipefish on black volcanic sand slopes.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Apo Island</span>
+                <p className="detail-row-body detail-row-body-light">30 minutes from Dauin or 1 hour from Dumaguete. Community-managed marine sanctuary with pristine coral recovery and turtle encounters on virtually every dive. Day trip only — no overnight accommodation on the island.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Beyond diving</span>
+                <p className="detail-row-body detail-row-body-light">Dumaguete is a university town with genuine cafe culture, excellent restaurants along Rizal Boulevard, and one of the lowest costs of living in the Philippines.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* CORON */}
+          <div style={{marginBottom:'48px'}}>
+            <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.2rem', fontWeight:700, color:'#F8F6F1', marginBottom:'16px'}}>Coron — Palawan</p>
+            <div className="detail-rows" style={{maxWidth:'860px'}}>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Location</span>
+                <p className="detail-row-body detail-row-body-light">Northern Palawan. Fly to Busuanga airport then 50-minute transfer to Coron town.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">What makes it special</span>
+                <p className="detail-row-body detail-row-body-light">Coron is the wreck diving capital of Southeast Asia. In 1944 US Navy aircraft sank a fleet of Japanese Imperial Navy ships in Coron Bay. Today over 10 of those wrecks rest at recreational diving depths of 15 to 35 metres, encrusted with coral and teeming with marine life. The Irako, Akitsushima, and Olympia Maru are the standouts. Barracuda Lake — a thermocline-layered lake inside a limestone formation — is one of the most unique diving experiences in the Philippines.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Skill level</span>
+                <p className="detail-row-body detail-row-body-light">Advanced Open Water minimum for most wreck penetration dives. Some wrecks accessible to Open Water.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Best season</span>
+                <p className="detail-row-body detail-row-body-light">October to June for best visibility. July to September rainy season reduces visibility significantly.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* BOHOL */}
+          <div style={{marginBottom:'48px'}}>
+            <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.2rem', fontWeight:700, color:'#F8F6F1', marginBottom:'16px'}}>Bohol and Panglao</p>
+            <div className="detail-rows" style={{maxWidth:'860px'}}>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Location</span>
+                <p className="detail-row-body detail-row-body-light">Panglao Island connected by bridge to Bohol mainland. 2 hour fast ferry from Cebu.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">What makes it special</span>
+                <p className="detail-row-body detail-row-body-light">Three dive experiences in one: Panglao Island reef diving for beginners and intermediates; Balicasag Island walls and reef sharks; Anda on the eastern side with pristine walls, caves, and macro life. Cabilao Island between Cebu and Bohol has hammerhead sightings in season.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Mixed groups</span>
+                <p className="detail-row-body detail-row-body-light">Above water Bohol has the Chocolate Hills, Philippine tarsiers, and Loboc River cruises — excellent for non-diving companions. Best destination on this list for mixed diver and non-diver groups.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* SIARGAO */}
+          <div style={{marginBottom:'48px'}}>
+            <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.2rem', fontWeight:700, color:'#F8F6F1', marginBottom:'16px'}}>Siargao</p>
+            <div className="detail-rows" style={{maxWidth:'860px'}}>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Location</span>
+                <p className="detail-row-body detail-row-body-light">Surigao del Norte, eastern Mindanao. Accessible by domestic flight from Manila or Cebu.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">What makes it special</span>
+                <p className="detail-row-body detail-row-body-light">Best known internationally for surfing at Cloud 9. For divers, the reefs around the island and nearby Bucas Grande offer excellent and largely uncrowded diving with good visibility. The island lifestyle is genuinely special — small, relaxed, coconut-lined roads, a growing expat community.</p>
+              </div>
+              <div className="detail-row detail-row-dark">
+                <span className="detail-row-label">Practical note</span>
+                <p className="detail-row-body detail-row-body-light">Flight connections can be limited. Weather during typhoon season June to November can significantly affect access and diving conditions. Best months: November to May.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* SEASON SUMMARY TABLE */}
+          <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.1rem', fontWeight:700, color:'#F8F6F1', marginBottom:'16px', marginTop:'8px'}}>Dive Season Quick Reference</p>
+          <div className="table-wrap">
+            <table className="comp-table">
+              <thead>
+                <tr>
+                  <th>Destination</th>
+                  <th>Best Season</th>
+                  <th>Key Attraction</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="city-col">Malapascua</td>
+                  <td>Year-round; best Nov–May</td>
+                  <td>Thresher sharks — the only place on earth</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Moalboal</td>
+                  <td>Year-round</td>
+                  <td>Sardine run — 7 million fish metres from shore</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Dumaguete &amp; Apo Island</td>
+                  <td>Year-round; best Mar–Jun</td>
+                  <td>Sea turtles, macro, best expat diving base</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Coron wrecks</td>
+                  <td>Oct–Jun; best Nov–Mar</td>
+                  <td>WWII Japanese fleet — wreck capital of SEA</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Bohol &amp; Panglao</td>
+                  <td>Year-round; best Dec–May</td>
+                  <td>Reefs, walls, mixed diver/non-diver groups</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Siargao</td>
+                  <td>Nov–May only</td>
+                  <td>Uncrowded reefs, island lifestyle, surfing</td>
+                </tr>
+                <tr>
+                  <td className="city-col">Tubbataha liveaboard</td>
+                  <td>Mar–Jun only</td>
+                  <td>UNESCO pristine reef — serious divers only</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="city-alert" style={{maxWidth:'860px', marginTop:'32px'}}>
+            <p className="city-alert-label">Getting Certified in Cebu</p>
+            <p className="city-alert-body">If you are not yet a certified diver, Cebu is one of the best places in the world to get your Open Water certification. Several reputable dive schools operate in Mactan, Moalboal, and Malapascua offering PADI and SSI certification courses. Open Water certification typically takes 3 to 4 days and costs approximately 15,000 to 25,000 pesos at reputable schools. With certification in hand, every destination on this page is accessible to you.</p>
           </div>
         </div>
       </section>

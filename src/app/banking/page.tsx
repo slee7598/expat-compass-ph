@@ -685,6 +685,35 @@ export default function BankingPage() {
             ))}
           </div>
         </div>
+        <div style={{marginTop:'56px', paddingTop:'48px', borderTop:'1px solid rgba(248,246,241,0.08)', maxWidth:'860px'}}>
+          <div className="bank-alert">
+            <p className="bank-alert-label">Which Bank and Which Branch — What Actually Works in Cebu in 2026</p>
+            <p className="bank-alert-body">Opening a bank account as a foreigner in the Philippines requires patience and the right branch. Not all branches handle foreign accounts — and not all staff at foreign-friendly branches know the current procedures. Here is what actually works in Cebu in 2026.</p>
+          </div>
+
+          <h3 className="section-sub section-sub-first section-sub-light">BDO (Banco de Oro)</h3>
+          <p className="section-body section-body-light">Most consistently foreigner-friendly of all Philippine banks. Major branches in SM Seaside City, SM City Cebu, and Ayala Center are the most experienced at handling foreign national accounts. BDO requires your passport, visa or ACR I-Card, and proof of address. Most consistent experience across expat reports.</p>
+
+          <h3 className="section-sub section-sub-light">UnionBank</h3>
+          <p className="section-body section-body-light">Increasingly popular with expats for its strong digital banking and online account management. The UnionBank app is the most sophisticated of any Philippine bank. Good option for expats who want to manage their account remotely.</p>
+
+          <h3 className="section-sub section-sub-light">Metrobank</h3>
+          <p className="section-body section-body-light">Generally open to foreign account holders. Major branches more reliable than smaller community branches. Good for expats who want a well-established traditional bank.</p>
+
+          <h3 className="section-sub section-sub-light">BPI (Bank of the Philippine Islands)</h3>
+          <p className="section-body section-body-light">Has become more restrictive with foreign national accounts in recent years. Not entirely closed to foreigners but inconsistent — some branches refuse while others accommodate. If you want BPI try a major branch in a large mall rather than a small community branch. Ask for the branch manager if counter staff says no — manager discretion often overrides the front-line response.</p>
+
+          <h3 className="section-sub section-sub-light">Practical Tips for Opening Your Account</h3>
+          <ol className="section-nlist">
+            <li className="section-ni section-ni-light">Go weekday morning — ideally Tuesday to Thursday between 9am and 11am. Avoid Mondays (backlog from weekend) and Fridays (reduced staffing).</li>
+            <li className="section-ni section-ni-light">Go to a major branch in a large mall — not a mall kiosk or small community branch. Major mall branches handle foreign accounts more regularly and have more experienced staff.</li>
+            <li className="section-ni section-ni-light">Ask for the branch manager if counter staff refuses or says they do not process foreign accounts. Manager discretion frequently overrides the initial front-line response. This is a documented pattern across expat experience.</li>
+            <li className="section-ni section-ni-light">Bring everything: passport, all visa pages showing current visa and extensions, ACR I-Card if you have one, proof of local address (utility bill, lease agreement, or Barangay clearance), and your TIN if you have one.</li>
+            <li className="section-ni section-ni-light">Bring 2 to 3 sets of photocopies of everything — banks make their own copies but having yours saves time.</li>
+            <li className="section-ni section-ni-light">Expect the process to take 30 to 60 minutes even at a foreign-friendly branch. Bring something to read.</li>
+            <li className="section-ni section-ni-light">Initial deposit requirements vary — typically 2,000 to 10,000 pesos depending on account type. Ask about minimum maintaining balance to avoid monthly fees.</li>
+          </ol>
+        </div>
       </section>
 
       {/* REMITTANCES */}

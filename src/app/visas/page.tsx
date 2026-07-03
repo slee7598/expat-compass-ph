@@ -240,6 +240,10 @@ export default function VisasPage() {
               <p className="cs-city">Dual Citizenship</p>
               <p className="cs-tagline">Reclaiming Philippine citizenship</p>
             </a>
+            <a href="#passport-renewal" className="cs-card">
+              <p className="cs-city">US Passport Renewal</p>
+              <p className="cs-tagline">From the Philippines with or without Manila trip</p>
+            </a>
           </div>
         </div>
       </section>
@@ -795,6 +799,46 @@ export default function VisasPage() {
           <div className="va-gold">
             <p className="va-gold-label">Worth Knowing Before You Move</p>
             <p className="va-gold-body">If you do not plan to import a container of household goods the TEI may not be relevant to you. As discussed in the Moving to Philippines section, most expats find it more cost-effective to buy furniture and appliances locally rather than ship from home. However if you have valuable personal effects worth shipping — art, specific furniture, collectibles — the TEI can save you significant customs duties on goods up to $7,000 USD in declared value.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── US PASSPORT RENEWAL ── */}
+      <section className="section section-dark" id="passport-renewal">
+        <div className="section-inner">
+          <p className="section-label">US Citizens</p>
+          <h2 className="section-heading section-heading-light">US Passport Renewal and Services from the Philippines</h2>
+          <p className="vb vb-light">US passport renewal from the Philippines is straightforward but requires understanding the process — which has changed significantly from the old mail-in-without-appointment approach some expats remember.</p>
+
+          <h3 className="vsub vsub-first vsub-light">Mail-In Renewal — DS-82</h3>
+          <div className="va-gold">
+            <p className="va-gold-label">Most Renewals Qualify for Mail-In</p>
+            <p className="va-gold-body-light">You can renew by mail if: you are at least 16 years old, your current passport was issued when you were 16 or older, it was issued less than 15 years ago, it had a 10-year validity, and you have a valid mailing address in the Philippines. Complete Form DS-82 online at travel.state.gov — it must be printed with the barcode in the upper left corner. Do not fill it out by hand. Mail your completed DS-82, current passport, one 2x2 inch photo on white background, and payment confirmation from pay.gov to: Passport Team, American Citizens Services, Consular Section, US Embassy, 1201 Roxas Boulevard, Ermita, Manila, 1000. Use DHL, FedEx, or another trackable courier — do not use Philippine postal mail for your passport. Wait until your tracking shows delivered before inquiring with the Embassy. Processing time: approximately 4 to 6 weeks. Your cancelled old passport is returned with your new one.</p>
+          </div>
+
+          <h3 className="vsub vsub-light">In Person Renewal — DS-11</h3>
+          <div className="va-amber">
+            <p className="va-amber-label">Walk-In Services Are NOT Available — Appointment Required</p>
+            <p className="va-amber-body">Walk-in services are not available. Each individual requires an appointment. Do not show up without one. No exceptions. Schedule appointments online through the Embassy portal at ph.usembassy.gov. Cell phones and other electronic devices are prohibited inside the Embassy — do not bring them to your appointment. Arrive 15 to 30 minutes before your scheduled appointment with printed color photos, originals and photocopies of all required documents, and proof of payment from pay.gov. The fee must be paid online before your appointment. DS-11 is required for first-time applicants and lost or stolen passports.</p>
+          </div>
+
+          <h3 className="vsub vsub-light">Cebu-Based Americans — Use the Consular Agency</h3>
+          <p className="vb vb-light">The US Consular Agency in Cebu handles passport and notarial services for Americans living in Cebu and the Visayas — you do not need to travel to Manila for routine services. Located in Waterfront Hotel, Lahug, Cebu City. Schedule Cebu appointments through the Embassy appointment scheduling system at ph.usembassy.gov — Cebu appointments are booked separately from Manila appointments.</p>
+
+          <h3 className="vsub vsub-light">Emergency Passport</h3>
+          <p className="vb vb-light">If you have confirmed travel within the next two weeks email ACSInfoManila@state.gov with &ldquo;Emergency Passport&rdquo; in the subject line. Do not call — email is the correct channel.</p>
+
+          <div className="va-warning">
+            <p className="va-warning-label">⚠ Timing Around Visa Extensions</p>
+            <p className="va-warning-body">While your passport is being processed by the Embassy you will have limited ability to complete BI transactions that require your passport. Time your passport renewal to avoid overlapping with your visa extension deadline. Complete your BI extension first, then submit passport renewal, or ensure your current extension gives you enough time for the 4 to 6 week processing window.</p>
+          </div>
+
+          <h3 className="vsub vsub-light">Notarial Services</h3>
+          <p className="vb vb-light">US notarial services — for authenticating US documents — are available at both the Manila Embassy and the Cebu Consular Agency by appointment only. Fee is $50 USD per notarial signature. Documents must be of US origin or intended for use in the United States. Only one appointment needed for multiple documents in the same session.</p>
+
+          <div className="va-gold">
+            <p className="va-gold-label">Contact Information</p>
+            <p className="va-gold-body-light">Email ACSInfoManila@state.gov for Manila Embassy services or ACSInfoCebu@state.gov for the Cebu Consular Agency. Official website: ph.usembassy.gov. All scheduling is done online through the Embassy portal.</p>
           </div>
         </div>
       </section>

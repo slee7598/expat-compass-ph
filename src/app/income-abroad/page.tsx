@@ -131,6 +131,37 @@ export default function IncomeAbroadPage() {
         </div>
       </section>
 
+      {/* REMOTE WORK TAX IMPLICATIONS */}
+      <section className="section section-light" id="remote-work-tax">
+        <div className="section-inner">
+          <p className="section-label">Tax Implications</p>
+          <h2 className="section-heading">Remote Work Tax Implications — What You Must Know</h2>
+          <p className="ib">Working remotely from the Philippines as a US citizen has specific tax implications that go beyond just filing a US return. Understanding the rules before you commit to an extended stay protects you from unexpected tax bills in two countries.</p>
+
+          <h3 className="isub isub-first">US Tax Obligations — You Always Owe</h3>
+          <p className="ib">As a US citizen you must file a US tax return every year on your worldwide income regardless of where you live or where your employer is based. The Foreign Earned Income Exclusion (FEIE) allows you to exclude approximately $126,500 of foreign earned income from US tax in 2026 if you meet the bona fide residence test or physical presence test — 330 days outside the US in a 12-month period. This can significantly reduce or eliminate US income tax on remote work income.</p>
+
+          <div className="ia-warning">
+            <p className="ia-warning-label">⚠ Philippine Tax Residency — The 180 Day Trigger</p>
+            <p className="ia-warning-body">This is where many remote workers get surprised. Under Philippine tax law, a foreign national who stays in the Philippines for more than 180 days in a calendar year may be considered a resident alien and subject to Philippine income tax on Philippine-sourced income. For most remote workers employed by foreign companies with no Philippine-sourced income this may not create a tax liability on their employment income. However the threshold matters and should be discussed with a Philippine tax attorney if you plan to stay more than 180 days in the calendar year.</p>
+          </div>
+
+          <h3 className="isub">The Digital Nomad Visa Solution</h3>
+          <p className="ib">The Digital Nomad Visa launched under Executive Order 86 in 2025 provides the cleanest tax structure for remote workers in the Philippines. Holders of the Digital Nomad Visa are specifically exempt from Philippine income tax on their foreign-sourced income — you pay taxes only in your home country. The visa requires a minimum income of $24,000 per year from non-Philippine sources. See the <a href="/visas" style={{color:'#C9A84C', fontWeight:500}}>Visas page</a> for full requirements and application process.</p>
+
+          <h3 className="isub">Permanent Establishment Risk for Your Employer</h3>
+          <p className="ib">This is a corporate tax concern that affects some remote workers. If your US employer has you working from the Philippines on an ongoing basis, Philippine tax authorities may potentially argue that this creates a permanent establishment of the company in the Philippines — which would expose the company to Philippine corporate tax obligations. This is most relevant for senior employees or those who sign contracts or conduct business activities on behalf of their employer from the Philippines. Raise this with your company&rsquo;s legal team before committing to a long-term remote work arrangement. Many companies have policies about employees working from foreign countries precisely because of this concern.</p>
+
+          <h3 className="isub">No Totalization Agreement</h3>
+          <p className="ib">The United States and the Philippines do not have a totalization agreement. This means there is no mechanism to avoid double taxation of Social Security contributions if you are self-employed or if your situation creates Social Security obligations in both countries. Self-employed remote workers and freelancers should consult a US expat tax specialist about self-employment tax obligations.</p>
+
+          <div className="ia-gold">
+            <p className="ia-gold-label">Practical Recommendation</p>
+            <p className="ia-gold-body">Consult a US expat tax specialist before committing to working remotely from the Philippines for an extended period. Services like Greenback Tax Services and Taxes for Expats specialize in exactly this situation. The Digital Nomad Visa is the cleanest legal structure for most remote workers and its tax exemption on foreign-sourced income is a significant benefit worth understanding before you arrive.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ONLINE BUSINESS */}
       <section className="section section-light" id="online-business">
         <div className="section-inner">

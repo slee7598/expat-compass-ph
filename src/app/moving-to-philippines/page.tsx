@@ -168,6 +168,10 @@ export default function MovingToPhilippinesPage() {
               <p className="cs-city">CPAP &amp; Medical Gear</p>
               <p className="cs-tagline">Voltage, UPS, and supplies</p>
             </a>
+            <a href="#shopping-guide" className="cs-card">
+              <p className="cs-city">Shopping Guide</p>
+              <p className="cs-tagline">Where to find everything in Cebu</p>
+            </a>
           </div>
         </div>
       </section>
@@ -304,6 +308,51 @@ export default function MovingToPhilippinesPage() {
               <li className="checklist-item">Join local expat Facebook groups — Expats in Cebu and Foreigners in the Philippines.</li>
               <li className="checklist-item">Get Hepatitis B vaccination if not already vaccinated — walk into any Chong Hua clinic; three doses over 6 months; single most important preventive health action for new arrivals.</li>
             </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* SHOPPING GUIDE */}
+      <section className="section section-dark" id="shopping-guide">
+        <div className="section-inner">
+          <p className="section-label">Shopping Guide</p>
+          <h2 className="section-heading section-heading-light">Shopping Guide — Where to Go for Everything in Cebu and Mactan</h2>
+          <p className="mb mb-light">One of the first things new arrivals ask is where to shop. The Philippines has an excellent range of options from cheap wet markets to international brands. Here is where to go for everything you need.</p>
+
+          <h3 className="msub msub-light">Groceries</h3>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>SM Supermarket and Robinsons Supermarket:</strong> The two most ubiquitous supermarket chains in the Philippines. Found in virtually every major mall. Good selection of local and some imported products at reasonable prices. SM Seaside City, SM City, and Robinsons Galleria are the main Cebu options.</p>
+
+          <div className="ma-gold">
+            <p className="ma-gold-label">Steve&rsquo;s Grocery Choice</p>
+            <p className="ma-gold-body-light">S&amp;R Membership Shopping — The Philippines equivalent of Costco. Membership warehouse pricing on bulk items and the best selection of Western imported products in Cebu — peanut butter, cereals, imported meats, snacks, wine, and more. Free delivery with a 5,000 peso minimum order. Steve shops here for the majority of his groceries. Membership required. Locations: Mandaue City and SM Seaside area.</p>
+          </div>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Landers Superstore:</strong> Strong competitor to S&amp;R with excellent imported product selection and no membership required. Good for Western pantry staples and imported goods. Located in Cebu Business Park and other major areas.</p>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Wet Markets — Taboan and Carbon:</strong> For the cheapest fresh produce, fish, pork, and chicken in Cebu, nothing beats the wet markets. Taboan Market in Cebu City is famous for dried fish and local preserved goods — worth visiting once for the experience. Carbon Market is one of the largest in the Visayas for fresh produce. Prices dramatically lower than supermarkets. Irish handles the wet market shopping — a Filipina partner&rsquo;s knowledge of local markets is invaluable for food budgeting.</p>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Delivery Options:</strong> Most supermarkets and S&amp;R offer delivery. Grab Food, Foodpanda, and LalaFood deliver groceries and prepared food. In Mactan, S&amp;R delivery is the most popular among expats for bulk grocery runs.</p>
+
+          <h3 className="msub msub-light">Home Essentials and Hardware</h3>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>ACE Hardware:</strong> The largest and best-stocked hardware chain in the Philippines. Found in major malls. Good for tools, home maintenance items, electrical supplies, and basic furniture accessories.</p>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Wilcon Depot:</strong> Philippines equivalent of Home Depot. Larger format than ACE, better for tiles, plumbing, electrical, and renovation materials. Located in Mandaue City and Cebu City.</p>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>SM Home and Appliances:</strong> SM Department Store has a home section with furniture, appliances, and housewares. For quality furniture The Home Store at SM Seaside is the best option — Steve bought his LazyBoy there for 10,000 pesos. For appliances Abenson and Anson&rsquo;s are the most reliable chains.</p>
+
+          <h3 className="msub msub-light">Clothing</h3>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Ayala Center Cebu:</strong> The premium mall for branded clothing in Cebu. Uniqlo is here and offers excellent quality at very reasonable Philippines prices — comparable to or cheaper than US Uniqlo. Zara, H&amp;M, and other international brands also present.</p>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>SM Malls:</strong> SM Department Store has the widest selection of affordable local and international clothing brands. SM Seaside City is the largest SM mall in the Visayas.</p>
+
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Ukay-Ukay:</strong> Filipino term for secondhand clothing shops. Quality varies enormously but you can find excellent Western branded items — Levi&rsquo;s, Nike, Under Armour, Columbia — at tiny fractions of retail price. Worth exploring once you know the good shops in your area. Ask local expats for recommendations on the best ukay-ukay stores near you.</p>
+
+          <div className="ma-warning">
+            <p className="ma-warning-label">⚠ Important — Western Sizes Are Extremely Limited</p>
+            <p className="ma-warning-body">Western sizing above XL is extremely limited in Philippine retail stores. If you are above XL or wear shoe sizes US 11 or larger bring sufficient clothing and shoes from home. This is one of the most consistently cited packing regrets among expats — do not underestimate it.</p>
           </div>
         </div>
       </section>
