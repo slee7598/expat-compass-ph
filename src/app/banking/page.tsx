@@ -190,7 +190,7 @@ export default function BankingPage() {
           font-weight: 500;
           letter-spacing: 0.08em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           text-decoration: none;
           transition: color 0.2s;
         }
@@ -233,7 +233,7 @@ export default function BankingPage() {
           font-size: 1.05rem;
           font-weight: 300;
           line-height: 1.65;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
           max-width: 560px;
         }
 
@@ -332,7 +332,7 @@ export default function BankingPage() {
           color: #5C6B7A;
           margin-top: 4px;
         }
-        .detail-intro-light { color: rgba(248,246,241,0.65); }
+        .detail-intro-light { color: #F8F6F1; }
 
         .detail-rows { display: flex; flex-direction: column; padding-top: 8px; }
         .detail-row {
@@ -360,7 +360,7 @@ export default function BankingPage() {
           line-height: 1.75;
           color: #4A5868;
         }
-        .detail-row-body-light { color: rgba(248,246,241,0.72); }
+        .detail-row-body-light { color: #F8F6F1; }
 
         /* ── DISCLAIMER ── */
         .disclaimer-section {
@@ -506,18 +506,18 @@ export default function BankingPage() {
 
         /* ── BROKERAGE CARDS ── */
         .section-body { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 24px; max-width: 760px; }
-        .section-body-light { color: rgba(248,246,241,0.8); }
+        .section-body-light { color: #F8F6F1; }
         .section-sub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem,1.8vw,1.28rem); font-weight: 700; color: #0B1F3A; margin: 36px 0 12px; padding-top: 32px; border-top: 1px solid rgba(11,31,58,0.08); max-width: 760px; }
         .section-sub-first { border-top: none; padding-top: 0; margin-top: 0; }
         .section-sub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
         .section-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .section-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .section-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .section-li-light { color: rgba(248,246,241,0.78); }
+        .section-li-light { color: #F8F6F1; }
         .section-nlist { list-style: none; counter-reset: sctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
         .section-ni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: sctr; }
         .section-ni::before { content: counter(sctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
-        .section-ni-light { color: rgba(248,246,241,0.78); }
+        .section-ni-light { color: #F8F6F1; }
         .broker-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
         .broker-card { border: 1px solid rgba(248,246,241,0.1); border-bottom: none; padding: 26px 30px; background: rgba(248,246,241,0.03); }
         .broker-card:last-child { border-bottom: 1px solid rgba(248,246,241,0.1); }
@@ -528,7 +528,7 @@ export default function BankingPage() {
         .broker-verdict-caution { background: rgba(242,153,74,0.12); color: #F2994A; border: 1px solid rgba(242,153,74,0.3); }
         .broker-verdict-risk { background: rgba(235,87,87,0.12); color: #EB5757; border: 1px solid rgba(235,87,87,0.25); }
         .broker-verdict-alt { background: rgba(201,168,76,0.1); color: #C9A84C; border: 1px solid rgba(201,168,76,0.25); }
-        .broker-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: rgba(248,246,241,0.72); }
+        .broker-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #F8F6F1; }
         .bank-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
         .bank-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .bank-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: rgba(248,246,241,0.82); }

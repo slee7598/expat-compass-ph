@@ -27,7 +27,7 @@ export default function IncomeAbroadPage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 580px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 580px; }
 
         .section { padding: 88px 48px; }
         .section-light { background: #F8F6F1; }
@@ -44,7 +44,7 @@ export default function IncomeAbroadPage() {
         .section-heading-light { color: #F8F6F1; }
 
         .ib { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .ib-light { color: rgba(248,246,241,0.8); }
+        .ib-light { color: #F8F6F1; }
         .isub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem,1.8vw,1.28rem); font-weight: 700; color: #0B1F3A; margin: 36px 0 12px; padding-top: 32px; border-top: 1px solid rgba(11,31,58,0.08); max-width: 760px; }
         .isub-first { border-top: none; padding-top: 0; margin-top: 0; }
         .isub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -52,16 +52,16 @@ export default function IncomeAbroadPage() {
         .ilist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .ili { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .ili::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .ili-light { color: rgba(248,246,241,0.78); }
+        .ili-light { color: #F8F6F1; }
 
         .ia-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ia-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .ia-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .ia-gold-body-light { color: rgba(248,246,241,0.85); }
+        .ia-gold-body-light { color: #F8F6F1; }
 
         .ia-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ia-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .ia-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .ia-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── COMPARISON CARDS ── */
         .transfer-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
@@ -79,7 +79,7 @@ export default function IncomeAbroadPage() {
         .sn-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #F8F6F1; line-height: 1.1; }
         .sn-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 4px; }
         .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 32px; }
-        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .sn-body p + p { margin-top: 16px; }
         .sn-verified { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.2); display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A84C; }
         .sn-verified::before { content: '✓'; }

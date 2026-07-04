@@ -34,7 +34,7 @@ export default function CityGuidesPage() {
         }
         .page-sub {
           font-size: 1.05rem; font-weight: 300; line-height: 1.65;
-          color: rgba(248,246,241,0.72); max-width: 580px;
+          color: #F8F6F1; max-width: 580px;
         }
 
         /* ── SECTIONS ── */
@@ -83,7 +83,7 @@ export default function CityGuidesPage() {
         .city-intro {
           font-size: 0.9rem; font-weight: 300; line-height: 1.8; color: #5C6B7A;
         }
-        .city-intro-light { color: rgba(248,246,241,0.65); }
+        .city-intro-light { color: #F8F6F1; }
         .city-intro p + p { margin-top: 14px; }
 
         /* ── CITY BADGE ── */
@@ -112,7 +112,7 @@ export default function CityGuidesPage() {
         .detail-row-body {
           font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #4A5868;
         }
-        .detail-row-body-light { color: rgba(248,246,241,0.72); }
+        .detail-row-body-light { color: #F8F6F1; }
 
         /* ── NEIGHBORHOODS SUB-BLOCK ── */
         .neighborhoods { margin-top: 40px; }
@@ -129,7 +129,7 @@ export default function CityGuidesPage() {
           font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
           color: #C9A84C; margin-bottom: 8px;
         }
-        .neighborhood-body { font-size: 0.83rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.65); }
+        .neighborhood-body { font-size: 0.83rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* light variant neighborhoods */
         .neighborhood-grid-light { background: #E8E4DC; }
@@ -150,7 +150,7 @@ export default function CityGuidesPage() {
         .cost-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
         .cost-list li {
           font-size: 0.83rem; font-weight: 300; line-height: 1.6;
-          color: rgba(248,246,241,0.72); display: flex; gap: 8px;
+          color: #F8F6F1; display: flex; gap: 8px;
         }
         .cost-list li::before { content: '—'; color: #C9A84C; flex-shrink: 0; }
         .cost-list-light li { color: #4A5868; }
@@ -165,7 +165,7 @@ export default function CityGuidesPage() {
           font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
           color: #C9A84C; margin-bottom: 8px;
         }
-        .city-alert-body { font-size: 0.83rem; font-weight: 300; line-height: 1.7; color: rgba(248,246,241,0.72); }
+        .city-alert-body { font-size: 0.83rem; font-weight: 300; line-height: 1.7; color: #F8F6F1; }
         .city-alert-body-light { color: #4A5868; }
 
         /* ── COMPARISON TABLE ── */
@@ -180,7 +180,7 @@ export default function CityGuidesPage() {
         .comp-table td {
           padding: 14px 16px; vertical-align: top;
           font-size: 0.82rem; font-weight: 300; line-height: 1.6;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
           border-bottom: 1px solid rgba(248,246,241,0.07);
         }
         .comp-table tr:last-child td { border-bottom: none; }

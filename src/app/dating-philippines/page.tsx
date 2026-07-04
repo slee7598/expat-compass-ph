@@ -33,7 +33,7 @@ export default function DatingPhilippinesPage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 600px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 600px; }
 
         /* ── SECTIONS ── */
         .section { padding: 88px 48px; }
@@ -52,7 +52,7 @@ export default function DatingPhilippinesPage() {
 
         /* ── BODY TEXT ── */
         .rb-body { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .rb-body-light { color: rgba(248,246,241,0.8); }
+        .rb-body-light { color: #F8F6F1; }
         .rb-sub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem, 1.8vw, 1.28rem); font-weight: 700; line-height: 1.25; color: #0B1F3A; margin: 40px 0 14px; padding-top: 36px; border-top: 1px solid rgba(11,31,58,0.08); }
         .rb-sub-first { border-top: none; padding-top: 0; margin-top: 0; }
         .rb-sub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -73,27 +73,27 @@ export default function DatingPhilippinesPage() {
         .rb-list { list-style: none; margin: 12px 0 20px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .rb-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .rb-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .rb-li-light { color: rgba(248,246,241,0.78); }
+        .rb-li-light { color: #F8F6F1; }
 
         /* ── ALERT BOXES ── */
         .rb-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.25); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
         .rb-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .rb-warning-body-light { color: rgba(248,246,241,0.85); }
+        .rb-warning-body-light { color: #F8F6F1; }
 
         .rb-amber { background: rgba(242,153,74,0.07); border: 1px solid rgba(242,153,74,0.3); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
         .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .rb-amber-body-light { color: rgba(248,246,241,0.85); }
+        .rb-amber-body-light { color: #F8F6F1; }
 
         .rb-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .rb-alert-body-dark { color: #4A5868; }
 
         .rb-info { background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2); border-left: 4px solid #2979FF; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-info-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
-        .rb-info-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .rb-info-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         .rb-green { background: rgba(111,207,151,0.06); border: 1px solid rgba(111,207,151,0.25); border-left: 4px solid #6FCF97; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-green-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #27AE60; margin-bottom: 10px; }
@@ -103,13 +103,13 @@ export default function DatingPhilippinesPage() {
         .scam-grid { display: flex; flex-direction: column; gap: 16px; max-width: 760px; margin: 24px 0; }
         .scam-card { border: 1px solid rgba(235,87,87,0.2); border-left: 4px solid #EB5757; padding: 22px 24px; background: rgba(235,87,87,0.03); }
         .scam-card-name { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #EB5757; margin-bottom: 8px; }
-        .scam-card-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.78); }
+        .scam-card-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── VERIFY CHECKLIST ── */
         .verify-list { list-style: none; display: flex; flex-direction: column; gap: 20px; max-width: 760px; margin: 24px 0; }
         .verify-item { border-left: 3px solid #C9A84C; padding: 16px 20px; background: rgba(201,168,76,0.04); }
         .verify-item-name { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
-        .verify-item-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.78); }
+        .verify-item-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── FLAGS ── */
         .flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 860px; }
@@ -133,7 +133,7 @@ export default function DatingPhilippinesPage() {
         .stat-card-dark { background: rgba(248,246,241,0.04); }
         .stat-label-dark { color: #C9A84C; }
         .stat-value-dark { color: #F8F6F1; }
-        .stat-note-dark { color: rgba(248,246,241,0.45); }
+        .stat-note-dark { color: rgba(248,246,241,0.78); }
 
         /* ── IRISH'S NOTE ── */
         .irish-note { background: #F0E8D0; border: 1px solid rgba(201,168,76,0.4); border-top: 3px solid #C9A84C; padding: 36px 40px; max-width: 700px; margin: 32px 0; }
@@ -168,7 +168,7 @@ export default function DatingPhilippinesPage() {
         .checklist-card { background: rgba(248,246,241,0.04); border: 1px solid rgba(248,246,241,0.08); padding: 36px 40px; max-width: 760px; margin-top: 8px; }
         .checklist-card-light { background: #fff; border: 1px solid #E8E4DC; }
         .checklist-items { list-style: none; display: flex; flex-direction: column; gap: 12px; counter-reset: chkctr; }
-        .checklist-item { font-size: 0.9rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.78); padding-left: 36px; position: relative; counter-increment: chkctr; }
+        .checklist-item { font-size: 0.9rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; padding-left: 36px; position: relative; counter-increment: chkctr; }
         .checklist-item::before { content: counter(chkctr); position: absolute; left: 0; top: 0; width: 24px; height: 24px; background: #C9A84C; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 0.75rem; font-weight: 700; color: #0B1F3A; }
         .checklist-item-dark { color: #4A5868; }
         .checklist-head { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-bottom: 4px; }

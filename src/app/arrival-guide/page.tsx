@@ -27,7 +27,7 @@ export default function ArrivalGuidePage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 580px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 580px; }
 
         .section { padding: 88px 48px; }
         .section-light { background: #F8F6F1; }
@@ -44,7 +44,7 @@ export default function ArrivalGuidePage() {
         .section-heading-light { color: #F8F6F1; }
 
         .ab { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .ab-light { color: rgba(248,246,241,0.8); }
+        .ab-light { color: #F8F6F1; }
         .asub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem,1.8vw,1.28rem); font-weight: 700; color: #0B1F3A; margin: 36px 0 12px; padding-top: 32px; border-top: 1px solid rgba(11,31,58,0.08); max-width: 760px; }
         .asub-first { border-top: none; padding-top: 0; margin-top: 0; }
         .asub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -52,27 +52,27 @@ export default function ArrivalGuidePage() {
         .alist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .ali { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .ali::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .ali-light { color: rgba(248,246,241,0.78); }
+        .ali-light { color: #F8F6F1; }
 
         .anlist { list-style: none; counter-reset: actr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
         .ani { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: actr; }
         .ani::before { content: counter(actr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
-        .ani-light { color: rgba(248,246,241,0.78); }
+        .ani-light { color: #F8F6F1; }
 
         .aa-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .aa-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .aa-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .aa-gold-body-light { color: rgba(248,246,241,0.85); }
+        .aa-gold-body-light { color: #F8F6F1; }
 
         .aa-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .aa-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .aa-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .aa-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* 24-hour checklist card */
         .checklist-24 { background: #0B1F3A; padding: 40px 44px; margin: 28px 0; max-width: 760px; }
         .checklist-24-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #C9A84C; margin-bottom: 24px; letter-spacing: 0.02em; }
         .checklist-24-items { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-        .checklist-24-item { font-size: 0.9rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.82); padding-left: 26px; position: relative; }
+        .checklist-24-item { font-size: 0.9rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; padding-left: 26px; position: relative; }
         .checklist-24-item::before { content: '✓'; position: absolute; left: 0; color: #C9A84C; font-weight: 700; font-size: 0.8rem; }
 
         .checklist-card { background: #fff; border: 1px solid #E8E4DC; padding: 40px 44px; margin-top: 8px; max-width: 760px; }
@@ -88,7 +88,7 @@ export default function ArrivalGuidePage() {
         .sn-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #F8F6F1; line-height: 1.1; }
         .sn-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 4px; }
         .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 32px; }
-        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .sn-body p + p { margin-top: 16px; }
         .sn-verified { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.2); display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A84C; }
         .sn-verified::before { content: '✓'; }

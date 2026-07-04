@@ -167,7 +167,7 @@ export default function Home() {
           font-family: 'Inter', sans-serif;
           font-size: 0.71rem; font-weight: 500;
           letter-spacing: 0.09em; text-transform: uppercase;
-          color: rgba(248,246,241,0.62);
+          color: rgba(248,246,241,0.82);
           text-decoration: none;
           padding: 11px 18px 11px 20px;
           border-left: 2px solid transparent;
@@ -276,7 +276,7 @@ export default function Home() {
           0%,80%,100% { opacity: 0.25; transform: scale(0.85); }
           40% { opacity: 1; transform: scale(1); }
         }
-        .hs-error { margin-top: 12px; font-size: 0.82rem; color: rgba(248,246,241,0.55); font-weight: 300; }
+        .hs-error { margin-top: 12px; font-size: 0.82rem; color: rgba(248,246,241,0.82); font-weight: 300; }
         .hs-answer {
           margin-top: 16px; background: rgba(248,246,241,0.96);
           border-left: 3px solid #C9A84C; padding: 24px 28px;
@@ -359,7 +359,7 @@ export default function Home() {
         }
         .nl-sub {
           font-size: 0.95rem; font-weight: 300; line-height: 1.7;
-          color: rgba(248,246,241,0.65);
+          color: #F8F6F1;
           margin-bottom: 32px;
         }
         .nl-form {
@@ -424,7 +424,7 @@ export default function Home() {
         .pillar { display: grid; grid-template-columns: 1fr; gap: 8px; padding-bottom: 40px; border-bottom: 1px solid rgba(248,246,241,0.1); }
         .pillar:last-child { border-bottom: none; padding-bottom: 0; }
         .pillar-heading { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: #C9A84C; }
-        .pillar-body { font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: rgba(248,246,241,0.7); }
+        .pillar-body { font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: #F8F6F1; }
 
         .footer { background: #0B1F3A; border-top: 1px solid rgba(248,246,241,0.08); padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; }
         .footer-logo { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: #F8F6F1; letter-spacing: 0.02em; }
@@ -486,7 +486,7 @@ export default function Home() {
           font-family: 'Inter', sans-serif;
           font-size: 0.72rem; font-weight: 500;
           letter-spacing: 0.1em; text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.82);
           text-decoration: none;
           padding: 14px 24px;
           border-left: 2px solid transparent;

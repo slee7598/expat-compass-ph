@@ -96,7 +96,7 @@ export default function AboutPage() {
         .page-subtitle {
           font-size: 0.88rem;
           font-weight: 400;
-          color: rgba(248,246,241,0.45);
+          color: rgba(248,246,241,0.72);
           letter-spacing: 0.04em;
         }
 
@@ -169,7 +169,7 @@ export default function AboutPage() {
           font-size: 0.97rem;
           font-weight: 300;
           line-height: 1.9;
-          color: rgba(248,246,241,0.82);
+          color: #F8F6F1;
         }
         .story-rule {
           width: 48px;
@@ -192,7 +192,7 @@ export default function AboutPage() {
         .story-sign-location {
           font-size: 0.78rem;
           font-weight: 400;
-          color: rgba(248,246,241,0.45);
+          color: rgba(248,246,241,0.72);
           letter-spacing: 0.04em;
         }
 

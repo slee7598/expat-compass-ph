@@ -28,7 +28,7 @@ export default function HealthcarePage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 600px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 600px; }
 
         /* ── SECTIONS ── */
         .section { padding: 88px 48px; }
@@ -56,7 +56,7 @@ export default function HealthcarePage() {
 
         /* ── BODY TEXT ── */
         .hb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .hb-light { color: rgba(248,246,241,0.8); }
+        .hb-light { color: #F8F6F1; }
         .hsub { font-family: 'Playfair Display', serif; font-size: clamp(1rem, 1.8vw, 1.22rem); font-weight: 700; line-height: 1.25; color: #0B1F3A; margin: 40px 0 14px; padding-top: 36px; border-top: 1px solid rgba(11,31,58,0.08); }
         .hsub-first { border-top: none; padding-top: 0; margin-top: 4px; }
         .hsub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -65,7 +65,7 @@ export default function HealthcarePage() {
         .hlist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .hli { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .hli::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .hli-light { color: rgba(248,246,241,0.78); }
+        .hli-light { color: #F8F6F1; }
         .hnlist { list-style: none; counter-reset: hctr; display: flex; flex-direction: column; gap: 14px; max-width: 760px; margin: 16px 0; }
         .hni { font-size: 0.9rem; font-weight: 300; line-height: 1.75; color: #4A5868; padding-left: 38px; position: relative; counter-increment: hctr; }
         .hni::before { content: counter(hctr); position: absolute; left: 0; top: 1px; width: 22px; height: 22px; background: #C9A84C; color: #0B1F3A; font-size: 0.68rem; font-weight: 700; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; }
@@ -78,22 +78,22 @@ export default function HealthcarePage() {
         .ha-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
         .ha-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .ha-amber-body-light { color: rgba(248,246,241,0.85); }
+        .ha-amber-body-light { color: #F8F6F1; }
 
         .ha-blue { background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2); border-left: 4px solid #2979FF; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-blue-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
-        .ha-blue-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .ha-blue-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         .ha-red { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-red-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .ha-red-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .ha-red-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── FEATURED HOSPITAL CARD ── */
         .hospital-hero { border: 1px solid rgba(201,168,76,0.25); background: rgba(201,168,76,0.03); max-width: 820px; margin-bottom: 28px; }
         .hospital-hero-head { background: #0B1F3A; padding: 32px 36px; display: flex; align-items: flex-start; gap: 24px; }
         .hospital-icon { width: 56px; height: 56px; background: #C9A84C; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; color: #0B1F3A; font-weight: 700; font-family: 'Playfair Display', serif; letter-spacing: -0.02em; }
         .hospital-name { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: #F8F6F1; line-height: 1.2; }
-        .hospital-tagline { font-size: 0.8rem; font-weight: 300; color: rgba(248,246,241,0.6); margin-top: 6px; line-height: 1.5; }
+        .hospital-tagline { font-size: 0.8rem; font-weight: 300; color: rgba(248,246,241,0.85); margin-top: 6px; line-height: 1.5; }
         .hospital-body { padding: 24px 36px 28px; }
 
         /* ── ACHIEVEMENT CALLOUT ── */
@@ -106,7 +106,7 @@ export default function HealthcarePage() {
         .personal-callout { background: #0D1E30; border-left: 4px solid #C9A84C; padding: 32px 36px; margin: 28px 0; max-width: 760px; }
         .personal-callout-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
         .personal-callout-label::before { content: ''; display: block; width: 20px; height: 1px; background: #C9A84C; }
-        .personal-callout-body { font-size: 0.94rem; font-weight: 300; line-height: 1.88; color: rgba(248,246,241,0.82); }
+        .personal-callout-body { font-size: 0.94rem; font-weight: 300; line-height: 1.88; color: #F8F6F1; }
 
         /* ── CAMPUS GRID ── */
         .campus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 760px; margin: 20px 0; }
@@ -135,13 +135,13 @@ export default function HealthcarePage() {
         .hosp-label { background: rgba(248,246,241,0.05); padding: 22px 24px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(248,246,241,0.08); }
         .hosp-label-name { font-family: 'Playfair Display', serif; font-size: 0.92rem; font-weight: 700; color: #F8F6F1; line-height: 1.3; }
         .hosp-label-tag { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 6px; }
-        .hosp-content { padding: 22px 24px; font-size: 0.87rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.75); }
+        .hosp-content { padding: 22px 24px; font-size: 0.87rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── SITUATION TABLE ── */
         .situation-list { display: flex; flex-direction: column; gap: 0; max-width: 720px; margin: 16px 0; }
         .situation-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 0; border: 1px solid rgba(248,246,241,0.07); border-bottom: none; }
         .situation-row:last-child { border-bottom: 1px solid rgba(248,246,241,0.07); }
-        .situation-q { padding: 16px 20px; background: rgba(248,246,241,0.03); font-size: 0.85rem; font-weight: 300; line-height: 1.6; color: rgba(248,246,241,0.72); }
+        .situation-q { padding: 16px 20px; background: rgba(248,246,241,0.03); font-size: 0.85rem; font-weight: 300; line-height: 1.6; color: #F8F6F1; }
         .situation-a { padding: 16px 20px; border-left: 2px solid #C9A84C; font-size: 0.85rem; font-weight: 500; color: #C9A84C; line-height: 1.6; }
 
         /* ── INSURANCE CARDS ── */
@@ -160,7 +160,7 @@ export default function HealthcarePage() {
         .pharmacy-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 760px; margin: 20px 0; }
         .pharmacy-card { padding: 16px 18px; border: 1px solid rgba(248,246,241,0.08); background: rgba(248,246,241,0.04); text-align: center; }
         .pharmacy-name { font-size: 0.82rem; font-weight: 600; color: #F8F6F1; }
-        .pharmacy-note { font-size: 0.72rem; font-weight: 300; color: rgba(248,246,241,0.55); margin-top: 4px; line-height: 1.4; }
+        .pharmacy-note { font-size: 0.72rem; font-weight: 300; color: rgba(248,246,241,0.82); margin-top: 4px; line-height: 1.4; }
         .pharmacy-featured { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.3); }
         .pharmacy-featured .pharmacy-name { color: #C9A84C; }
 

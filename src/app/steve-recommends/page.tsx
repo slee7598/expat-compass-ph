@@ -275,7 +275,7 @@ export default function SteveRecommendsPage() {
           line-height: 1.82;
         }
         .rec-light .rec-item-body { color: #2A3A4A; }
-        .rec-dark .rec-item-body { color: rgba(248,246,241,0.75); }
+        .rec-dark .rec-item-body { color: #F8F6F1; }
         .rec-item-link {
           display: inline-block;
           margin-top: 14px;
@@ -298,7 +298,7 @@ export default function SteveRecommendsPage() {
           letter-spacing: 0.02em;
         }
         .rec-light .rec-item-note { color: rgba(11,31,58,0.42); }
-        .rec-dark .rec-item-note { color: rgba(248,246,241,0.38); }
+        .rec-dark .rec-item-note { color: rgba(248,246,241,0.65); }
 
         /* ── NORDVPN FEATURED CARD ── */
         .nordvpn-card {
@@ -341,7 +341,7 @@ export default function SteveRecommendsPage() {
           font-size: 0.9rem;
           font-weight: 300;
           line-height: 1.82;
-          color: rgba(248,246,241,0.78);
+          color: #F8F6F1;
           margin-bottom: 16px;
         }
         .nordvpn-card-subhead {
@@ -375,7 +375,7 @@ export default function SteveRecommendsPage() {
         .nordvpn-affiliate-note {
           font-size: 0.72rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.38);
+          color: rgba(248,246,241,0.65);
           letter-spacing: 0.02em;
         }
 
@@ -414,7 +414,7 @@ export default function SteveRecommendsPage() {
         .rec-disclaimer p {
           font-size: 0.78rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.4);
+          color: rgba(248,246,241,0.65);
           line-height: 1.7;
           max-width: 680px;
         }

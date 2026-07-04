@@ -59,7 +59,7 @@ export default function HeroRate() {
         .hrate-usd {
           font-size: 0.75em;
           font-weight: 400;
-          color: rgba(248,246,241,0.55);
+          color: rgba(248,246,241,0.78);
           letter-spacing: 0.06em;
         }
         .hrate-php {
@@ -81,7 +81,7 @@ export default function HeroRate() {
           font-weight: 500;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.32);
+          color: rgba(248,246,241,0.65);
           margin-top: 8px;
           margin-left: 54px;
         }

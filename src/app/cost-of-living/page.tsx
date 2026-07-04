@@ -44,7 +44,7 @@ export default function CostOfLivingPage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 600px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 600px; }
 
         /* ── OPENING CARD ── */
         .opening-card {
@@ -57,7 +57,7 @@ export default function CostOfLivingPage() {
 
         /* ── BODY TEXT ── */
         .cb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .cb-light { color: rgba(248,246,241,0.8); }
+        .cb-light { color: #F8F6F1; }
         .csub { font-family: 'Playfair Display', serif; font-size: clamp(1rem, 1.8vw, 1.22rem); font-weight: 700; line-height: 1.25; color: #0B1F3A; margin: 40px 0 14px; padding-top: 36px; border-top: 1px solid rgba(11,31,58,0.08); }
         .csub-first { border-top: none; padding-top: 0; margin-top: 4px; }
         .csub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -66,7 +66,7 @@ export default function CostOfLivingPage() {
         .clist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .cli { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .cli::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .cli-light { color: rgba(248,246,241,0.78); }
+        .cli-light { color: #F8F6F1; }
         .cli-light::before { color: #C9A84C; }
 
         /* ── TIER CARDS ── */
@@ -76,14 +76,14 @@ export default function CostOfLivingPage() {
         .tier-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .tier-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #F8F6F1; margin-bottom: 6px; }
         .tier-range { font-size: 0.82rem; font-weight: 600; color: #C9A84C; margin-bottom: 16px; }
-        .tier-desc { font-size: 0.85rem; font-weight: 300; line-height: 1.72; color: rgba(248,246,241,0.72); }
+        .tier-desc { font-size: 0.85rem; font-weight: 300; line-height: 1.72; color: #F8F6F1; }
         .tier-card-highlight { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.3) !important; }
-        .tier-note { font-size: 0.8rem; font-weight: 300; color: rgba(248,246,241,0.5); margin-top: 20px; max-width: 760px; }
+        .tier-note { font-size: 0.8rem; font-weight: 300; color: rgba(248,246,241,0.78); margin-top: 20px; max-width: 760px; }
 
         /* ── ALERT BOXES ── */
         .ca-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ca-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .ca-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .ca-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .ca-gold-body-light { color: #4A5868; }
 
         .ca-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
@@ -96,7 +96,7 @@ export default function CostOfLivingPage() {
         .data-card-title { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A84C; }
         .data-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 14px 24px; border-bottom: 1px solid rgba(248,246,241,0.06); align-items: baseline; }
         .data-row:last-child { border-bottom: none; }
-        .data-label { font-size: 0.88rem; font-weight: 300; color: rgba(248,246,241,0.72); }
+        .data-label { font-size: 0.88rem; font-weight: 300; color: #F8F6F1; }
         .data-value { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #C9A84C; white-space: nowrap; }
 
         /* ── SHOP LIST ── */
@@ -118,8 +118,8 @@ export default function CostOfLivingPage() {
         .budget-section-head { background: rgba(201,168,76,0.12); padding: 14px 22px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A84C; border: 1px solid rgba(201,168,76,0.2); border-bottom: none; }
         .budget-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 14px 22px; border: 1px solid rgba(248,246,241,0.07); border-top: none; align-items: baseline; }
         .budget-row:hover { background: rgba(248,246,241,0.02); }
-        .budget-item { font-size: 0.88rem; font-weight: 300; color: rgba(248,246,241,0.78); }
-        .budget-item small { display: block; font-size: 0.75rem; color: rgba(248,246,241,0.45); margin-top: 3px; }
+        .budget-item { font-size: 0.88rem; font-weight: 300; color: #F8F6F1; }
+        .budget-item small { display: block; font-size: 0.75rem; color: rgba(248,246,241,0.78); margin-top: 3px; }
         .budget-amount { font-family: 'Playfair Display', serif; font-size: 0.97rem; font-weight: 700; color: #C9A84C; white-space: nowrap; text-align: right; }
         .budget-subtotal { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 14px 22px; border: 1px solid rgba(201,168,76,0.2); border-top: none; background: rgba(201,168,76,0.06); align-items: baseline; }
         .budget-subtotal-label { font-size: 0.78rem; font-weight: 600; color: #C9A84C; }
@@ -464,27 +464,27 @@ export default function CostOfLivingPage() {
 
           <div className="resto-list">
             <div className="resto-row">
-              <span className="resto-type" style={{color: 'rgba(248,246,241,0.6)', fontWeight: 500, fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase'}}>Venue type</span>
-              <span className="resto-cost" style={{color: 'rgba(248,246,241,0.6)', fontFamily: 'Inter', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase'}}>Per person</span>
+              <span className="resto-type" style={{color: 'rgba(248,246,241,0.78)', fontWeight: 500, fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase'}}>Venue type</span>
+              <span className="resto-cost" style={{color: 'rgba(248,246,241,0.78)', fontFamily: 'Inter', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase'}}>Per person</span>
             </div>
             <div className="resto-row" style={{borderBottomColor: 'rgba(248,246,241,0.07)'}}>
-              <span className="resto-type" style={{color: 'rgba(248,246,241,0.75)'}}>Carinderia or turo-turo (local Filipino canteen)</span>
+              <span className="resto-type" style={{color: '#F8F6F1'}}>Carinderia or turo-turo (local Filipino canteen)</span>
               <span className="resto-cost" style={{color: '#C9A84C'}}>100–200 pesos</span>
             </div>
             <div className="resto-row" style={{borderBottomColor: 'rgba(248,246,241,0.07)'}}>
-              <span className="resto-type" style={{color: 'rgba(248,246,241,0.75)'}}>Mid-range Filipino or Asian restaurant</span>
+              <span className="resto-type" style={{color: '#F8F6F1'}}>Mid-range Filipino or Asian restaurant</span>
               <span className="resto-cost" style={{color: '#C9A84C'}}>300–600 pesos</span>
             </div>
             <div className="resto-row" style={{borderBottomColor: 'rgba(248,246,241,0.07)'}}>
-              <span className="resto-type" style={{color: 'rgba(248,246,241,0.75)'}}>Good Western or fusion restaurant, mall dining</span>
+              <span className="resto-type" style={{color: '#F8F6F1'}}>Good Western or fusion restaurant, mall dining</span>
               <span className="resto-cost" style={{color: '#C9A84C'}}>600–1,200 pesos</span>
             </div>
             <div className="resto-row" style={{borderBottomColor: 'rgba(248,246,241,0.07)'}}>
-              <span className="resto-type" style={{color: 'rgba(248,246,241,0.75)'}}>Nice restaurant, resort dining, Japanese</span>
+              <span className="resto-type" style={{color: '#F8F6F1'}}>Nice restaurant, resort dining, Japanese</span>
               <span className="resto-cost" style={{color: '#C9A84C'}}>1,000–2,500 pesos</span>
             </div>
             <div className="resto-row" style={{borderBottomColor: 'rgba(248,246,241,0.07)'}}>
-              <span className="resto-type" style={{color: 'rgba(248,246,241,0.75)'}}>Fine dining at resort restaurants</span>
+              <span className="resto-type" style={{color: '#F8F6F1'}}>Fine dining at resort restaurants</span>
               <span className="resto-cost" style={{color: '#C9A84C'}}>2,000–5,000 pesos</span>
             </div>
           </div>

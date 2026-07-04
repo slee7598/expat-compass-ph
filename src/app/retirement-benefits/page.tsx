@@ -38,7 +38,7 @@ export default function RetirementBenefitsPage() {
           font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12;
           color: #F8F6F1; margin-bottom: 24px;
         }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 580px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 580px; }
 
         /* ── SECTIONS ── */
         .section { padding: 88px 48px; }
@@ -66,7 +66,7 @@ export default function RetirementBenefitsPage() {
           font-size: 0.93rem; font-weight: 300; line-height: 1.85;
           color: #4A5868; margin-bottom: 16px; max-width: 760px;
         }
-        .rb-body-light { color: rgba(248,246,241,0.8); }
+        .rb-body-light { color: #F8F6F1; }
         .rb-sub {
           font-family: 'Playfair Display', serif;
           font-size: clamp(1.05rem, 1.8vw, 1.28rem); font-weight: 700; line-height: 1.25;
@@ -88,17 +88,17 @@ export default function RetirementBenefitsPage() {
         .stat-value { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 2.5vw, 1.7rem); font-weight: 700; color: #0B1F3A; line-height: 1.2; }
         .stat-value-light { color: #F8F6F1; }
         .stat-note { font-size: 0.78rem; font-weight: 300; color: #6B7B8A; margin-top: 6px; line-height: 1.5; }
-        .stat-note-light { color: rgba(248,246,241,0.5); }
+        .stat-note-light { color: rgba(248,246,241,0.78); }
 
         /* ── LISTS ── */
         .rb-list { list-style: none; margin: 12px 0 20px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .rb-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .rb-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .rb-li-light { color: rgba(248,246,241,0.78); }
+        .rb-li-light { color: #F8F6F1; }
         .rb-nlist { list-style: none; counter-reset: rbctr; margin: 12px 0 20px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .rb-ni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 28px; position: relative; counter-increment: rbctr; }
         .rb-ni::before { content: counter(rbctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
-        .rb-ni-light { color: rgba(248,246,241,0.78); }
+        .rb-ni-light { color: #F8F6F1; }
 
         /* ── ALERT BOXES ── */
         .rb-warning {
@@ -113,7 +113,7 @@ export default function RetirementBenefitsPage() {
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .rb-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .rb-alert-body-dark { color: #4A5868; }
 
         .rb-info {
@@ -128,7 +128,7 @@ export default function RetirementBenefitsPage() {
           border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .rb-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
-        .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── EXCEPTION CARDS ── */
         .exception-list { display: flex; flex-direction: column; gap: 16px; margin: 20px 0; max-width: 760px; }
@@ -141,7 +141,7 @@ export default function RetirementBenefitsPage() {
           font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700;
           color: #C9A84C; line-height: 1;
         }
-        .exception-body { font-size: 0.9rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.78); }
+        .exception-body { font-size: 0.9rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── CHECKLIST CARD ── */
         .checklist-card {
@@ -179,7 +179,7 @@ export default function RetirementBenefitsPage() {
         .sn-tag { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(201,168,76,0.65); margin-top: 3px; }
         .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 28px; }
         .sn-body { display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px; }
-        .sn-body p { font-size: 0.95rem; font-weight: 300; line-height: 1.88; color: rgba(248,246,241,0.82); }
+        .sn-body p { font-size: 0.95rem; font-weight: 300; line-height: 1.88; color: #F8F6F1; }
         .sn-verified { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(201,168,76,0.5); }
 
         /* ── LEGAL NOTE ── */
@@ -202,7 +202,7 @@ export default function RetirementBenefitsPage() {
         .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
         .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
-        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.78); }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {
@@ -539,10 +539,10 @@ export default function RetirementBenefitsPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>British Columbia</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>7 months</td></tr>
-                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>Ontario</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>212 days (~7 months)</td></tr>
-                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>Alberta</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>6 months</td></tr>
-                <tr><td style={{padding: '12px 18px', fontWeight: 600, color: '#F8F6F1'}}>Quebec</td><td style={{padding: '12px 18px', fontWeight: 300, color: 'rgba(248,246,241,0.78)'}}>Contact RAMQ directly — rules differ</td></tr>
+                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>British Columbia</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: '#F8F6F1'}}>7 months</td></tr>
+                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>Ontario</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: '#F8F6F1'}}>212 days (~7 months)</td></tr>
+                <tr><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 600, color: '#F8F6F1'}}>Alberta</td><td style={{padding: '12px 18px', borderBottom: '1px solid rgba(248,246,241,0.07)', fontWeight: 300, color: '#F8F6F1'}}>6 months</td></tr>
+                <tr><td style={{padding: '12px 18px', fontWeight: 600, color: '#F8F6F1'}}>Quebec</td><td style={{padding: '12px 18px', fontWeight: 300, color: '#F8F6F1'}}>Contact RAMQ directly — rules differ</td></tr>
               </tbody>
             </table>
           </div>

@@ -28,7 +28,7 @@ export default function HousingPage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 600px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 600px; }
 
         /* ── SECTIONS ── */
         .section { padding: 88px 48px; }
@@ -53,7 +53,7 @@ export default function HousingPage() {
 
         /* ── BODY TEXT ── */
         .hb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .hb-light { color: rgba(248,246,241,0.8); }
+        .hb-light { color: #F8F6F1; }
         .hsub { font-family: 'Playfair Display', serif; font-size: clamp(1rem, 1.8vw, 1.22rem); font-weight: 700; line-height: 1.25; color: #0B1F3A; margin: 40px 0 14px; padding-top: 36px; border-top: 1px solid rgba(11,31,58,0.08); }
         .hsub-first { border-top: none; padding-top: 0; margin-top: 4px; }
         .hsub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -62,7 +62,7 @@ export default function HousingPage() {
         .hlist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .hli { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .hli::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .hli-light { color: rgba(248,246,241,0.78); }
+        .hli-light { color: #F8F6F1; }
 
         /* ── ALERT BOXES ── */
         .ha-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
@@ -73,13 +73,13 @@ export default function HousingPage() {
         .ha-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
         .ha-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .ha-amber-body-light { color: rgba(248,246,241,0.85); }
+        .ha-amber-body-light { color: #F8F6F1; }
 
         /* ── PERSONAL CALLOUT ── */
         .personal-callout { background: #0D1E30; border-left: 4px solid #C9A84C; padding: 28px 32px; margin: 24px 0; max-width: 760px; }
         .personal-callout-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
         .personal-callout-label::before { content: ''; display: block; width: 20px; height: 1px; background: #C9A84C; }
-        .personal-callout-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .personal-callout-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .personal-callout-link { display: inline-block; margin-top: 12px; font-size: 0.82rem; font-weight: 600; color: #C9A84C; text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.4); }
 
         /* ── AREA CARDS ── */
@@ -107,7 +107,7 @@ export default function HousingPage() {
         /* ── NOISE CALLOUT ── */
         .noise-callout { background: #0D1E30; border: 1px solid rgba(248,246,241,0.08); border-left: 4px solid #F2994A; padding: 28px 32px; margin: 24px 0; max-width: 760px; }
         .noise-callout-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 12px; }
-        .noise-callout-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .noise-callout-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── RENTAL MARKET TABLE ── */
         .rent-table { max-width: 760px; margin: 20px 0; }
@@ -120,8 +120,8 @@ export default function HousingPage() {
         .rent-row-highlight .rent-cost { color: #C9A84C; }
 
         .rent-table-light .rent-row { border-bottom-color: rgba(248,246,241,0.07); }
-        .rent-table-light .rent-cat { color: rgba(248,246,241,0.75); }
-        .rent-table-light .rent-cat small { color: rgba(248,246,241,0.4); }
+        .rent-table-light .rent-cat { color: #F8F6F1; }
+        .rent-table-light .rent-cat small { color: rgba(248,246,241,0.72); }
         .rent-table-light .rent-cost { color: #F8F6F1; }
         .rent-table-light .rent-row-highlight .rent-cat { color: #F8F6F1; }
 
@@ -141,7 +141,7 @@ export default function HousingPage() {
         .sn-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #F8F6F1; line-height: 1.1; }
         .sn-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 4px; }
         .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 32px; }
-        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .sn-body p + p { margin-top: 16px; }
         .sn-verified { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.2); display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A84C; }
         .sn-verified::before { content: '✓'; }
@@ -161,7 +161,7 @@ export default function HousingPage() {
         .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
         .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
-        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.78); }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {

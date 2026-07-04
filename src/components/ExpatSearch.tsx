@@ -115,7 +115,7 @@ export default function ExpatSearch() {
         .search-sub {
           font-size: 0.92rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.5);
+          color: rgba(248,246,241,0.82);
           margin-bottom: 36px;
           line-height: 1.6;
         }
@@ -169,7 +169,7 @@ export default function ExpatSearch() {
         .search-pill {
           font-size: 0.75rem;
           font-weight: 400;
-          color: rgba(248,246,241,0.55);
+          color: rgba(248,246,241,0.78);
           border: 1px solid rgba(248,246,241,0.15);
           padding: 6px 14px;
           cursor: pointer;
@@ -243,7 +243,7 @@ export default function ExpatSearch() {
           border-left: 3px solid #C9A84C;
           background: rgba(248,246,241,0.08);
           font-size: 0.9rem;
-          color: rgba(248,246,241,0.6);
+          color: #F8F6F1;
           font-weight: 300;
         }
         .loading-dots {

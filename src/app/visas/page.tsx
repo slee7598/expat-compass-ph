@@ -33,7 +33,7 @@ export default function VisasPage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 580px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 580px; }
 
         /* ── SECTIONS ── */
         .section { padding: 88px 48px; }
@@ -52,7 +52,7 @@ export default function VisasPage() {
 
         /* ── BODY TEXT ── */
         .vb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .vb-light { color: rgba(248,246,241,0.8); }
+        .vb-light { color: #F8F6F1; }
         .vsub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem, 1.8vw, 1.28rem); font-weight: 700; line-height: 1.25; color: #0B1F3A; margin: 40px 0 14px; padding-top: 36px; border-top: 1px solid rgba(11,31,58,0.08); }
         .vsub-first { border-top: none; padding-top: 0; margin-top: 4px; }
         .vsub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -61,7 +61,7 @@ export default function VisasPage() {
         .vlist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .vli { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .vli::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .vli-light { color: rgba(248,246,241,0.78); }
+        .vli-light { color: #F8F6F1; }
         .vnlist { list-style: none; counter-reset: vctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
         .vni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: vctr; }
         .vni::before { content: counter(vctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
@@ -70,7 +70,7 @@ export default function VisasPage() {
         .va-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .va-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .va-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .va-gold-body-light { color: rgba(248,246,241,0.85); }
+        .va-gold-body-light { color: #F8F6F1; }
 
         .va-blue { background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2); border-left: 4px solid #2979FF; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .va-blue-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
@@ -79,19 +79,19 @@ export default function VisasPage() {
         .va-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .va-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
         .va-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .va-amber-body-light { color: rgba(248,246,241,0.85); }
+        .va-amber-body-light { color: #F8F6F1; }
 
         .va-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .va-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .va-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .va-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── TABLES ── */
         .vtable-wrap { overflow-x: auto; margin: 24px 0; max-width: 780px; }
         .vtable { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
         .vtable th { background: #C9A84C; color: #0B1F3A; font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 700; padding: 13px 18px; text-align: left; }
         .vtable th.th-dim { background: rgba(201,168,76,0.12); color: rgba(248,246,241,0.5); font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
-        .vtable td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.07); font-weight: 300; line-height: 1.5; color: rgba(248,246,241,0.78); vertical-align: top; }
-        .vtable td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.4); background: rgba(248,246,241,0.02); }
+        .vtable td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.07); font-weight: 300; line-height: 1.5; color: #F8F6F1; vertical-align: top; }
+        .vtable td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.65); background: rgba(248,246,241,0.02); }
         .vtable-light th { background: #0B1F3A; color: #F8F6F1; }
         .vtable-light th.th-dim { background: rgba(11,31,58,0.08); color: rgba(11,31,58,0.45); }
         .vtable-light td { border-bottom-color: rgba(11,31,58,0.07); color: #4A5868; }
@@ -124,7 +124,7 @@ export default function VisasPage() {
         .deposit-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 18px 24px; border: 1px solid rgba(248,246,241,0.08); border-bottom: none; align-items: center; background: rgba(248,246,241,0.03); }
         .deposit-row:last-child { border-bottom: 1px solid rgba(248,246,241,0.08); }
         .deposit-row:nth-child(even) { background: rgba(248,246,241,0.015); }
-        .deposit-label { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: rgba(248,246,241,0.75); }
+        .deposit-label { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: #F8F6F1; }
         .deposit-label strong { font-weight: 600; color: #F8F6F1; }
         .deposit-amount { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #C9A84C; white-space: nowrap; }
         .deposit-head { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.2); }
@@ -175,7 +175,7 @@ export default function VisasPage() {
         .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
         .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
-        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.78); }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {

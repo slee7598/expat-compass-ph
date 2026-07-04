@@ -81,7 +81,7 @@ export default function ExchangeRate() {
         .er-loading {
           font-size: 1.4rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.4);
+          color: rgba(248,246,241,0.72);
         }
         .er-rate {
           font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -100,7 +100,7 @@ export default function ExchangeRate() {
           margin-top: 10px;
           font-size: 0.72rem;
           font-weight: 400;
-          color: rgba(248,246,241,0.35);
+          color: rgba(248,246,241,0.65);
           letter-spacing: 0.04em;
         }
         @media (max-width: 900px) {

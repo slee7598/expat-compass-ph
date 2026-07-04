@@ -33,7 +33,7 @@ export default function DivorcePhilippinesPage() {
         }
         .page-sub {
           font-size: 1.05rem; font-weight: 300; line-height: 1.65;
-          color: rgba(248,246,241,0.72); max-width: 640px;
+          color: #F8F6F1; max-width: 640px;
         }
 
         /* ── OPENING NOTE ── */
@@ -85,19 +85,19 @@ export default function DivorcePhilippinesPage() {
         /* ── BODY TEXT ── */
         .dv-para {
           font-size: 0.92rem; font-weight: 300; line-height: 1.85;
-          color: rgba(248,246,241,0.8); margin-bottom: 14px; max-width: 760px;
+          color: #F8F6F1; margin-bottom: 14px; max-width: 760px;
         }
         .dv-para-lt { color: #4A5868; }
 
         /* ── BULLET LIST ── */
         .dv-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
-        .dv-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 22px; position: relative; color: rgba(248,246,241,0.78); }
+        .dv-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 22px; position: relative; color: #F8F6F1; }
         .dv-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
         .dv-li-lt { color: #4A5868; }
 
         /* ── NUMBERED LIST ── */
         .dv-nlist { list-style: none; counter-reset: dvctr2; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
-        .dv-ni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 28px; position: relative; counter-increment: dvctr2; color: rgba(248,246,241,0.78); }
+        .dv-ni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 28px; position: relative; counter-increment: dvctr2; color: #F8F6F1; }
         .dv-ni::before { content: counter(dvctr2) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
         .dv-ni-lt { color: #4A5868; }
 
@@ -111,7 +111,7 @@ export default function DivorcePhilippinesPage() {
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .dv-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
-        .dv-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .dv-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .dv-alert-body-lt { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
         .dv-amber-alert {
           background: rgba(242,153,74,0.08); border: 1px solid rgba(242,153,74,0.35);
@@ -119,13 +119,13 @@ export default function DivorcePhilippinesPage() {
         }
         .dv-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 12px; }
         .dv-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .dv-amber-body-dark { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .dv-amber-body-dark { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .dv-navy-card {
           background: rgba(11,31,58,0.88); border: 1px solid rgba(201,168,76,0.2);
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .dv-navy-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
-        .dv-navy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); margin-bottom: 10px; }
+        .dv-navy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; margin-bottom: 10px; }
 
         /* ── CAN / CANNOT CARDS ── */
         .dv-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; max-width: 760px; }
@@ -135,7 +135,7 @@ export default function DivorcePhilippinesPage() {
         .dv-col-heading { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 12px; }
         .dv-col-can .dv-col-heading { color: #6FCF97; }
         .dv-col-cannot .dv-col-heading { color: #EB5757; }
-        .dv-col-text { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.78); }
+        .dv-col-text { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── STAT CARDS ── */
         .dv-stat-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; max-width: 640px; }
@@ -143,7 +143,7 @@ export default function DivorcePhilippinesPage() {
         .dv-stat-dk { background: rgba(248,246,241,0.04); border: 1px solid rgba(201,168,76,0.12); }
         .dv-stat-lk { background: #fff; border: 1px solid rgba(11,31,58,0.08); }
         .dv-stat-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
-        .dv-stat-value { font-size: 0.88rem; font-weight: 300; color: rgba(248,246,241,0.85); line-height: 1.6; }
+        .dv-stat-value { font-size: 0.88rem; font-weight: 300; color: #F8F6F1; line-height: 1.6; }
         .dv-stat-value-lt { font-size: 0.88rem; font-weight: 300; color: #0B1F3A; line-height: 1.6; }
 
         /* ── THREE ELEMENT CARDS ── */
@@ -168,7 +168,7 @@ export default function DivorcePhilippinesPage() {
         .dv-disclaimer { background: #0B1F3A; border-top: 3px solid #C9A84C; padding: 56px 48px; }
         .dv-disclaimer-inner { max-width: 760px; }
         .dv-disclaimer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A84C; margin-bottom: 16px; }
-        .dv-disclaimer-text { font-size: 0.85rem; font-weight: 300; line-height: 1.8; color: rgba(248,246,241,0.55); }
+        .dv-disclaimer-text { font-size: 0.85rem; font-weight: 300; line-height: 1.8; color: rgba(248,246,241,0.82); }
 
         /* ── FOOTER ── */
         .footer { background: #0B1F3A; border-top: 1px solid rgba(248,246,241,0.08); padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; }

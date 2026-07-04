@@ -27,7 +27,7 @@ export default function MovingToPhilippinesPage() {
         }
         .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: #C9A84C; }
         .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.12; color: #F8F6F1; margin-bottom: 24px; }
-        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: rgba(248,246,241,0.72); max-width: 580px; }
+        .page-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; max-width: 580px; }
 
         .section { padding: 88px 48px; }
         .section-light { background: #F8F6F1; }
@@ -44,7 +44,7 @@ export default function MovingToPhilippinesPage() {
         .section-heading-light { color: #F8F6F1; }
 
         .mb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
-        .mb-light { color: rgba(248,246,241,0.8); }
+        .mb-light { color: #F8F6F1; }
         .msub { font-family: 'Playfair Display', serif; font-size: clamp(1.05rem,1.8vw,1.28rem); font-weight: 700; color: #0B1F3A; margin: 36px 0 12px; padding-top: 32px; border-top: 1px solid rgba(11,31,58,0.08); max-width: 760px; }
         .msub-first { border-top: none; padding-top: 0; margin-top: 0; }
         .msub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
@@ -52,16 +52,16 @@ export default function MovingToPhilippinesPage() {
         .mlist { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 9px; max-width: 760px; }
         .mli { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 22px; position: relative; }
         .mli::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
-        .mli-light { color: rgba(248,246,241,0.78); }
+        .mli-light { color: #F8F6F1; }
         .mnlist { list-style: none; counter-reset: mctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
         .mni { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 30px; position: relative; counter-increment: mctr; }
         .mni::before { content: counter(mctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
-        .mni-light { color: rgba(248,246,241,0.78); }
+        .mni-light { color: #F8F6F1; }
 
         .ma-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ma-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .ma-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .ma-gold-body-light { color: rgba(248,246,241,0.85); }
+        .ma-gold-body-light { color: #F8F6F1; }
 
         .ma-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ma-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
@@ -80,7 +80,7 @@ export default function MovingToPhilippinesPage() {
         .sn-name { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #F8F6F1; line-height: 1.1; }
         .sn-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-top: 4px; }
         .sn-rule { height: 1px; background: rgba(201,168,76,0.2); margin-bottom: 32px; }
-        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); }
+        .sn-body { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .sn-body p + p { margin-top: 16px; }
         .sn-verified { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.2); display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9A84C; }
         .sn-verified::before { content: '✓'; }
@@ -100,7 +100,7 @@ export default function MovingToPhilippinesPage() {
         .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
         .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
-        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.78); }
 
         @media (max-width: 900px) {
           .page-hero { padding: 56px 24px 72px; }

@@ -201,7 +201,7 @@ export default function MarriagePage() {
           font-weight: 500;
           letter-spacing: 0.08em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           text-decoration: none;
           transition: color 0.2s;
         }
@@ -244,7 +244,7 @@ export default function MarriagePage() {
           font-size: 1.05rem;
           font-weight: 300;
           line-height: 1.65;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
           max-width: 560px;
         }
 
@@ -346,7 +346,7 @@ export default function MarriagePage() {
           color: #5C6B7A;
           margin-top: 4px;
         }
-        .detail-intro-light { color: rgba(248,246,241,0.65); }
+        .detail-intro-light { color: #F8F6F1; }
 
         .detail-rows {
           display: flex;
@@ -378,7 +378,7 @@ export default function MarriagePage() {
           line-height: 1.75;
           color: #4A5868;
         }
-        .detail-row-body-light { color: rgba(248,246,241,0.72); }
+        .detail-row-body-light { color: #F8F6F1; }
 
         /* ── LEGAL NOTE ── */
         .legal-section {
@@ -587,7 +587,7 @@ export default function MarriagePage() {
           font-size: 0.88rem;
           font-weight: 300;
           line-height: 1.65;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
         }
         .sn-fee {
           display: inline-flex;
@@ -603,7 +603,7 @@ export default function MarriagePage() {
           font-weight: 600;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.45);
+          color: rgba(248,246,241,0.72);
         }
         .sn-fee-amount {
           font-size: 1.05rem;
@@ -628,7 +628,7 @@ export default function MarriagePage() {
           font-size: 0.85rem;
           font-weight: 300;
           line-height: 1.65;
-          color: rgba(248,246,241,0.7);
+          color: rgba(248,246,241,0.88);
           padding: 5px 0;
           padding-left: 16px;
           position: relative;
@@ -670,21 +670,21 @@ export default function MarriagePage() {
         .uv-sub-dark { color: #0B1F3A; border-top-color: rgba(11,31,58,0.1); }
         .uv-para {
           font-size: 0.92rem; font-weight: 300; line-height: 1.85;
-          color: rgba(248,246,241,0.8); margin-bottom: 14px; max-width: 760px;
+          color: #F8F6F1; margin-bottom: 14px; max-width: 760px;
         }
         .uv-para-dark { color: #4A5868; }
         .uv-footnote { font-size: 0.82rem; font-weight: 300; color: #6B7B8A; margin-top: 6px; }
         .uv-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
         .uv-li {
           font-size: 0.9rem; font-weight: 300; line-height: 1.72;
-          color: rgba(248,246,241,0.78); padding-left: 22px; position: relative;
+          color: #F8F6F1; padding-left: 22px; position: relative;
         }
         .uv-li::before { content: '—'; position: absolute; left: 0; color: #C9A84C; font-weight: 600; }
         .uv-li-dark { color: #4A5868; }
         .uv-nlist { list-style: none; counter-reset: uvctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
         .uv-ni {
           font-size: 0.9rem; font-weight: 300; line-height: 1.72;
-          color: rgba(248,246,241,0.78); padding-left: 28px; position: relative; counter-increment: uvctr;
+          color: #F8F6F1; padding-left: 28px; position: relative; counter-increment: uvctr;
         }
         .uv-ni::before { content: counter(uvctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
         .uv-ni-dark { color: #4A5868; }
@@ -697,7 +697,7 @@ export default function MarriagePage() {
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .uv-policy-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
-        .uv-policy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.85); }
+        .uv-policy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
         .uv-policy-body-lt { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
         .uv-fee-total {
           display: inline-flex; align-items: center; gap: 18px;
@@ -711,8 +711,8 @@ export default function MarriagePage() {
         .compare-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
         .compare-table th { background: #C9A84C; color: #0B1F3A; font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; padding: 14px 18px; text-align: left; }
         .compare-table th.th-dim { background: rgba(201,168,76,0.12); color: rgba(248,246,241,0.5); font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
-        .compare-table td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.06); font-weight: 300; line-height: 1.5; color: rgba(248,246,241,0.78); vertical-align: top; }
-        .compare-table td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.4); background: rgba(248,246,241,0.02); }
+        .compare-table td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.06); font-weight: 300; line-height: 1.5; color: #F8F6F1; vertical-align: top; }
+        .compare-table td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.65); background: rgba(248,246,241,0.02); }
         .compare-table .td-good { color: #6FCF97; font-weight: 500; }
         .compare-table .td-warn { color: #F2994A; font-weight: 500; }
         .compare-table .td-bad { color: #EB5757; font-weight: 500; }
@@ -737,7 +737,7 @@ export default function MarriagePage() {
           max-width: 760px;
         }
         .dv-navy-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
-        .dv-navy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: rgba(248,246,241,0.82); margin-bottom: 10px; }
+        .dv-navy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; margin-bottom: 10px; }
         .dv-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; max-width: 760px; }
         .dv-col-card { padding: 20px 22px; }
         .dv-col-can { background: rgba(111,207,151,0.06); border: 1px solid rgba(111,207,151,0.2); border-left: 3px solid #6FCF97; }
@@ -745,17 +745,17 @@ export default function MarriagePage() {
         .dv-col-heading { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 12px; }
         .dv-col-can .dv-col-heading { color: #6FCF97; }
         .dv-col-cannot .dv-col-heading { color: #EB5757; }
-        .dv-col-text { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: rgba(248,246,241,0.78); }
+        .dv-col-text { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
         .dv-stat-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; max-width: 620px; }
         .dv-stat-card { padding: 18px 22px; }
         .dv-stat-dark { background: rgba(248,246,241,0.04); border: 1px solid rgba(201,168,76,0.12); }
         .dv-stat-lt { background: #fff; border: 1px solid rgba(11,31,58,0.08); }
         .dv-stat-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
-        .dv-stat-value { font-size: 0.88rem; font-weight: 300; color: rgba(248,246,241,0.85); line-height: 1.6; }
+        .dv-stat-value { font-size: 0.88rem; font-weight: 300; color: #F8F6F1; line-height: 1.6; }
         .dv-warn-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
         .dv-warn-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 26px; position: relative; }
         .dv-warn-li::before { content: '⚠'; position: absolute; left: 0; top: 1px; font-size: 0.72rem; color: #F2994A; }
-        .dv-warn-li-dark { color: rgba(248,246,241,0.78); }
+        .dv-warn-li-dark { color: #F8F6F1; }
         .dv-warn-li-lt { color: #4A5868; }
         .dv-action-list { list-style: none; counter-reset: dvctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 18px; max-width: 760px; }
         .dv-action-item { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 40px; position: relative; counter-increment: dvctr; }

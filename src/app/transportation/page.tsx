@@ -181,7 +181,7 @@ export default function TransportationPage() {
           font-weight: 500;
           letter-spacing: 0.08em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           text-decoration: none;
           transition: color 0.2s;
         }
@@ -224,7 +224,7 @@ export default function TransportationPage() {
           font-size: 1.05rem;
           font-weight: 300;
           line-height: 1.65;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
           max-width: 560px;
         }
 
@@ -323,7 +323,7 @@ export default function TransportationPage() {
           color: #5C6B7A;
           margin-top: 4px;
         }
-        .detail-intro-light { color: rgba(248,246,241,0.65); }
+        .detail-intro-light { color: #F8F6F1; }
 
         .detail-rows { display: flex; flex-direction: column; padding-top: 8px; }
         .detail-row {
@@ -351,7 +351,7 @@ export default function TransportationPage() {
           line-height: 1.75;
           color: #4A5868;
         }
-        .detail-row-body-light { color: rgba(248,246,241,0.72); }
+        .detail-row-body-light { color: #F8F6F1; }
 
         /* ── DISCLAIMER ── */
         .disclaimer-section {
