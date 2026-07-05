@@ -508,6 +508,20 @@ export default function TransportationPage() {
         .lto-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
         .lto-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
         .lto-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #4A5868; }
+        .lto-body-light { color: #F8F6F1; }
+        .lto-sub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
+        .lto-li-light { color: #F8F6F1; }
+
+        /* ── JUMP NAV ── */
+        .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+        .cs-label::before, .cs-label::after { content: ''; display: block; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+        .cs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+        .cs-card { display: block; text-decoration: none; background: #0B1F3A; padding: 22px 24px; border: 1px solid rgba(201,168,76,0.15); transition: border-color 0.18s, background 0.18s; cursor: pointer; }
+        .cs-card:hover { border-color: #C9A84C; background: rgba(11,31,58,0.92); }
+        .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+        .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
+        .cs-card:hover .cs-city::after { transform: translateX(4px); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.78); }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {
@@ -516,6 +530,7 @@ export default function TransportationPage() {
           .page-hero { padding: 52px 24px 72px; }
           .section { padding: 72px 24px; }
           .card-grid { grid-template-columns: repeat(2, 1fr); }
+          .cs-grid { grid-template-columns: repeat(2, 1fr); }
           .detail-inner { grid-template-columns: 1fr; gap: 40px; }
           .detail-row { grid-template-columns: 1fr; gap: 8px; }
           .disclaimer-inner { grid-template-columns: 1fr; gap: 32px; }
@@ -726,6 +741,116 @@ export default function TransportationPage() {
 
           <h3 className="lto-sub">Motorcycle Note</h3>
           <p className="lto-body">A standard car license conversion covers passenger vehicles. If you want to ride a motorcycle or scooter, confirm requirements at your specific LTO branch as this may require additional steps.</p>
+        </div>
+      </section>
+
+      {/* JUMP NAV — NEW SECTIONS */}
+      <section className="section section-light" style={{paddingTop:'40px', paddingBottom:'48px'}}>
+        <div style={{maxWidth: '860px'}}>
+          <p className="cs-label">More Transportation Guides</p>
+          <div className="cs-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)'}}>
+            <a href="#motorcycle-purchase" className="cs-card">
+              <p className="cs-city">Motorcycle Purchase Guide</p>
+              <p className="cs-tagline">Honda ADV 160, LTO transfer, CTPL insurance</p>
+            </a>
+            <a href="#driving-philippines" className="cs-card">
+              <p className="cs-city">Driving in the Philippines</p>
+              <p className="cs-tagline">What to expect on Philippine roads</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* MOTORCYCLE PURCHASE */}
+      <section className="section section-light" id="motorcycle-purchase">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">Two-Wheel Transport</p>
+          <h2 className="section-heading">Buying a Motorcycle in the Philippines — Complete Guide</h2>
+          <p className="lto-body">A motorcycle is the most practical personal transport option for many expats in Cebu and the provinces. Lower purchase price, minimal fuel cost, no parking problems, and the ability to filter through traffic that would stop a car. Here is what you need to know before buying.</p>
+
+          <div className="lto-alert">
+            <p className="lto-alert-label">Most Recommended for Expats — Honda ADV 160</p>
+            <p className="lto-alert-body">The Honda ADV 160 is consistently the top recommendation among long-term expats in Cebu. Adventure scooter design with 160cc engine, automatic transmission, good ground clearance for rough Philippine roads, underseat storage, ABS, and an excellent dealer service network throughout the Philippines. No clutch or manual shifting required — accessible to riders with limited motorcycle experience. Approximate new price: PHP 130,000 to 160,000 from an authorized Honda dealer. Other solid choices: Honda Click 125i or 160i (city commuter, lighter and cheaper), Yamaha NMAX 155 (performance-oriented, popular with daily commuters), Honda PCX 160 (comfort-focused, larger body).</p>
+          </div>
+
+          <h3 className="lto-sub lto-sub-first">Buying New — From an Authorized Dealer</h3>
+          <p className="lto-body">Buying new from an authorized dealer is the cleanest and most straightforward option. The dealer handles all LTO paperwork, the Certificate of Registration (CR), the Official Receipt (OR), and initial registration. CTPL insurance (see below) is typically bundled with purchase.</p>
+          <ul className="lto-list">
+            <li className="lto-li">Bring your passport and ACR I-Card if you hold one. Foreigners can legally own and register motorcycles in the Philippines — no citizenship restriction.</li>
+            <li className="lto-li">Pay the purchase price plus registration fees. Dealer submits LTO documents.</li>
+            <li className="lto-li">CR and OR are your most important ownership documents — keep them in a safe place, not in the motorcycle. You will need them for every registration renewal and any transfer of ownership.</li>
+          </ul>
+
+          <h3 className="lto-sub">Buying Second-Hand — The 20-Working-Day Rule</h3>
+          <p className="lto-body">Second-hand motorcycles are widely available at significantly lower prices. However the LTO transfer of ownership process has a practical reality every buyer must understand: the transfer takes 20 working days from submission of documents to completion. During this period, the motorcycle is in a registration limbo. Plan accordingly — do not buy a second-hand motorcycle if you need it registered and road-legal by a specific date.</p>
+
+          <div className="lto-alert">
+            <p className="lto-alert-label">Second-Hand Purchase Checklist — Verify Before You Buy</p>
+            <p className="lto-alert-body">Verify that the CR and OR are in the seller's name and match the motorcycle engine and chassis numbers. Request a PNP-HPG (Highway Patrol Group) clearance to confirm the unit is not stolen — the seller should facilitate this or it can be processed at Camp Crame or accredited HPG offices. A clean HPG clearance is required for LTO transfer of ownership. Never pay full price before verifying HPG clearance and confirming the documents are clean. Skipping this step has caught out more than a few expats who ended up with paperwork problems that were expensive to resolve.</p>
+          </div>
+
+          <h3 className="lto-sub">LTO Transfer of Ownership — Documents Required</h3>
+          <ul className="lto-list">
+            <li className="lto-li">Original Certificate of Registration (CR) endorsed/signed by the seller.</li>
+            <li className="lto-li">Original Official Receipt (OR) — proof of taxes paid.</li>
+            <li className="lto-li">Notarized Deed of Sale — have this prepared by a notary public; cost approximately 200 to 500 pesos.</li>
+            <li className="lto-li">PNP-HPG clearance certificate.</li>
+            <li className="lto-li">Valid CTPL insurance policy.</li>
+            <li className="lto-li">Your passport and ACR I-Card as the buyer.</li>
+            <li className="lto-li">Transfer fee — approximately 300 to 600 pesos depending on motorcycle type.</li>
+          </ul>
+
+          <h3 className="lto-sub">CTPL — Compulsory Third Party Liability Insurance</h3>
+          <p className="lto-body">CTPL insurance is required by law for all registered motor vehicles in the Philippines. Without a valid CTPL policy, you cannot register a motorcycle or renew its registration. CTPL covers third-party bodily injury and death — it does not cover damage to your own motorcycle or property.</p>
+          <ul className="lto-list">
+            <li className="lto-li">Annual CTPL cost: approximately PHP 500 to 700 for a motorcycle.</li>
+            <li className="lto-li">Typically bundled with new motorcycle purchase at the dealer.</li>
+            <li className="lto-li">Available at LTO offices, insurance offices, and online through CTPL providers.</li>
+            <li className="lto-li">Comprehensive insurance is separate from CTPL and optional — strongly recommended; covers theft, accidents, and third-party property damage.</li>
+          </ul>
+
+          <h3 className="lto-sub">RA 12209 — Motorcycle Plate Requirements</h3>
+          <p className="lto-body">Republic Act 12209, the Motorcycles Under Road Safety Act (MUSRA), introduced requirements for larger, more visible motorcycle license plates — both front and rear — to improve identification and road safety. Ensure any motorcycle you purchase (new or second-hand) has compliant plates per current LTO standards. Non-compliant plates are a citable traffic offense. When buying second-hand, verify the current plates are LTO-compliant before completing the purchase.</p>
+        </div>
+      </section>
+
+      {/* DRIVING IN THE PHILIPPINES */}
+      <section className="section section-dark" id="driving-philippines">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">On Philippine Roads</p>
+          <h2 className="section-heading section-heading-light">Driving in the Philippines — What to Expect</h2>
+          <p className="lto-body lto-body-light">Philippine road culture is significantly different from Western driving norms. Understanding it before you get behind the wheel makes the experience less stressful and considerably safer.</p>
+
+          <h3 className="lto-sub lto-sub-first lto-sub-light">Traffic Culture — The Unwritten Rules</h3>
+          <ul className="lto-list">
+            <li className="lto-li lto-li-light">Beeping is communication, not aggression. A short beep means "I am here" or "I am overtaking." A long beep means "move aside." Do not take horn use personally — it is simply part of road communication.</li>
+            <li className="lto-li lto-li-light">Lane discipline is loose. Vehicles drift between lanes, overtaking from the left or right is common, and lane markings are treated as suggestions. Expect it and drive defensively.</li>
+            <li className="lto-li lto-li-light">Flashing headlights has multiple meanings depending on context — sometimes "I am coming through," sometimes "I am giving way to you." Read the situation, not just the signal.</li>
+            <li className="lto-li lto-li-light">Right of way at intersections is often determined informally by vehicle size, driver confidence, and local convention rather than strict traffic rules. Be cautious even when you technically have right of way.</li>
+            <li className="lto-li lto-li-light">Vehicles stop anywhere — for passengers, for food, for conversation. Always scan ahead for sudden stops.</li>
+          </ul>
+
+          <h3 className="lto-sub lto-sub-light">Night Driving</h3>
+          <p className="lto-body lto-body-light">Night driving outside cities carries significant additional hazards. Motorcycles with broken or absent headlights are common. Livestock on the road is a genuine risk in provincial areas. Road surfaces may be poorly lit, unmarked, or deteriorate without warning. If you are not familiar with a route, avoid driving it after dark until you know what to expect. In Cebu City and Mactan, night driving is generally manageable but the same defensive principles apply.</p>
+
+          <h3 className="lto-sub lto-sub-light">Wet Season and Flooding</h3>
+          <p className="lto-body lto-body-light">The wet season from June to November brings heavy rainfall and flooding to many Cebu and Metro Manila roads. Learn which roads in your area flood and have alternate routes planned. Never drive through water of unknown depth — floodwater conceals road damage, open manholes, and can stall your vehicle quickly. Check weather apps and local Facebook groups before setting out in heavy rain.</p>
+
+          <h3 className="lto-sub lto-sub-light">Traffic Violations and Fines</h3>
+          <p className="lto-body lto-body-light">Traffic violations carry official fines. If stopped, ask for the official ticket and pay through the proper channel — get a receipt. Do not pay cash directly to officers without an official receipt. Speed limits: expressways 100 kph, national highways 80 kph, school and residential zones 30 to 40 kph. Number coding (UVVRP) in Metro Manila bans vehicles with certain plate number endings on specific weekdays from 7 am to 8 pm.</p>
+
+          <h3 className="lto-sub lto-sub-light">Fuel and Practical Costs</h3>
+          <ul className="lto-list">
+            <li className="lto-li lto-li-light">Petrol: unleaded RON 91 or 95 available at Petron, Shell, Caltex, and Seaoil stations throughout the country. As of 2026, approximately PHP 70 to 100 per liter following fuel price increases.</li>
+            <li className="lto-li lto-li-light">Parking at malls: approximately PHP 40 to 60 for the first hour, PHP 25 to 40 for each additional hour.</li>
+            <li className="lto-li lto-li-light">Dashcam: strongly recommended. It is standard practice among local drivers and invaluable in the event of an accident or insurance dispute.</li>
+            <li className="lto-li lto-li-light">Comprehensive vehicle insurance beyond mandatory CTPL: approximately PHP 10,000 to 25,000 per year depending on vehicle value. Shop through reputable Philippine insurance brokers.</li>
+          </ul>
+
+          <div className="lto-alert">
+            <p className="lto-alert-label">Should You Drive in the Philippines?</p>
+            <p className="lto-alert-body">Whether driving makes sense depends entirely on where you live. In Metro Manila, most long-term expats eventually conclude the answer is no — traffic is genuinely severe, parking is costly, and Grab and Maxim cover the need competently. In Cebu, especially outside the city core, having a car or motorcycle is genuinely convenient and the traffic, while real, is far more manageable. In provincial areas a vehicle is often essential. If you are new to the Philippines, consider spending your first few months using Grab and Maxim before deciding whether to buy. You will learn the roads without the pressure of ownership, and your decision will be better informed by actual experience.</p>
+          </div>
         </div>
       </section>
 

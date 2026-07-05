@@ -154,7 +154,7 @@ export default function MovingToPhilippinesPage() {
             </a>
             <a href="#first-week" className="cs-card">
               <p className="cs-city">First Week Checklist</p>
-              <p className="cs-tagline">Ten things to do immediately</p>
+              <p className="cs-tagline">Twelve things to do immediately</p>
             </a>
             <a href="#airport" className="cs-card">
               <p className="cs-city">Airport Arrival</p>
@@ -171,6 +171,10 @@ export default function MovingToPhilippinesPage() {
             <a href="#shopping-guide" className="cs-card">
               <p className="cs-city">Shopping Guide</p>
               <p className="cs-tagline">Where to find everything in Cebu</p>
+            </a>
+            <a href="#balikbayan" className="cs-card">
+              <p className="cs-city">Balikbayan Privilege</p>
+              <p className="cs-tagline">Duty-free benefits for you and your partner</p>
             </a>
           </div>
         </div>
@@ -245,6 +249,32 @@ export default function MovingToPhilippinesPage() {
             <p className="ma-warning-body">Do NOT bring controlled substances beyond what is legally allowed for personal use with valid prescription documentation. Philippine drug laws are extremely strict.</p>
           </div>
 
+          <h3 className="msub">OTC Medications — What Is and Is Not Available in the Philippines</h3>
+          <p className="mb">Many medications that require a prescription in the United States are available over the counter in the Philippines. However the specific branded formulations you rely on may not be stocked, and some common US OTC ingredients are controlled or absent entirely.</p>
+
+          <p className="mb"><strong>Widely available without prescription:</strong></p>
+          <ul className="mlist">
+            <li className="mli">Paracetamol — sold as Panadol, Biogesic, and generics. The standard Philippine pain reliever and fever reducer. Equivalent to Tylenol.</li>
+            <li className="mli">Ibuprofen — available as Advil, Motrin, and generics.</li>
+            <li className="mli">Mefenamic acid — sold as Ponstan; extremely common in the Philippines for pain relief, less familiar to Westerners but effective.</li>
+            <li className="mli">Antihistamines — cetirizine (Zyrtec equivalent) and loratadine (Claritin equivalent) widely available.</li>
+            <li className="mli">Antacids — omeprazole (Omepron, generics), famotidine, and antacid tablets readily available.</li>
+            <li className="mli">Loperamide — the Imodium equivalent for diarrhea; important for new arrivals adjusting to local food.</li>
+            <li className="mli">Oral rehydration salts — cheap and widely available at every pharmacy. Essential for dengue recovery and stomach illness.</li>
+          </ul>
+
+          <p className="mb"><strong>Not available or significantly different:</strong></p>
+          <ul className="mlist">
+            <li className="mli">US combination cold medicines — no exact NyQuil, DayQuil, Robitussin, or Mucinex equivalents. Philippines pharmacies have their own local formulations.</li>
+            <li className="mli">Pseudoephedrine — strictly controlled in the Philippines because it is a precursor for methamphetamine (shabu). Sudafed and other pseudoephedrine decongestants are not available OTC. Bring an adequate supply if you rely on pseudoephedrine-based decongestants.</li>
+            <li className="mli">Specific US brand supplement formulations — particular vitamin blends, protein powders, and specialty supplements may not be available or will be significantly more expensive than at US prices.</li>
+          </ul>
+
+          <div className="ma-warning">
+            <p className="ma-warning-label">⚠ Pseudoephedrine Is Controlled in the Philippines</p>
+            <p className="ma-warning-body">Pseudoephedrine — the active ingredient in Sudafed and many US decongestants — is tightly controlled in the Philippines due to its use in manufacturing shabu (methamphetamine). It is not available over the counter. If you depend on pseudoephedrine for chronic sinus issues or allergies, bring a sufficient supply from the US with supporting documentation from your doctor. Ask your doctor about alternatives available locally before you leave.</p>
+          </div>
+
           <h3 className="msub" id="cpap">CPAP Machines and Medical Equipment</h3>
           <p className="mb">If you use a CPAP machine you will be relieved to know that modern CPAP machines including ResMed AirSense and Philips DreamStation models are dual voltage rated 100-240V 50-60Hz and work in the Philippines without a voltage converter. You only need a plug adapter for Philippine outlets. Check the label on your CPAP power supply to confirm — it will say Input: 100-240V if it is dual voltage.</p>
           <p className="mb">However the Philippines experiences periodic brownouts — power outages that can last minutes to hours. For CPAP users a brownout mid-sleep is not just an inconvenience — it interrupts critical therapy. Two solutions: First invest in a quality UPS — Uninterruptible Power Supply — before leaving the US. A UPS provides battery backup that keeps your CPAP running through short brownouts and protects against voltage spikes. Look for a pure sine wave UPS which is safer for sensitive medical equipment. Second consider bringing a dedicated CPAP battery backup like the EASYLONGER ES720 which provides multiple nights of therapy independent of the power grid. This is also useful for travel and island hopping where power reliability varies.</p>
@@ -307,6 +337,8 @@ export default function MovingToPhilippinesPage() {
               <li className="checklist-item">Save nearest private hospital number — Chong Hua Mandaue for Mactan Island residents. Do this before you need it.</li>
               <li className="checklist-item">Join local expat Facebook groups — Expats in Cebu and Foreigners in the Philippines.</li>
               <li className="checklist-item">Get Hepatitis B vaccination if not already vaccinated — walk into any Chong Hua clinic; three doses over 6 months; single most important preventive health action for new arrivals.</li>
+              <li className="checklist-item">Get your Barangay Clearance — go to the barangay hall serving your home address within your first two weeks. Bring your passport and lease contract. Required for bank account opening and various government transactions. Cost is 20 to 100 pesos and it is usually issued the same day.</li>
+              <li className="checklist-item">Find your nearest water refilling station — tap water in the Philippines is not safe to drink directly. Water refilling stations sell purified water in 5-gallon jugs for 25 to 35 pesos per jug. Most condos have a water dispenser; ask your landlord or building management for the supplier number on day one. Do not spend 100 to 150 pesos per bottle at convenience stores when the refilling station jug costs 30 pesos.</li>
             </ol>
           </div>
         </div>
@@ -416,6 +448,52 @@ export default function MovingToPhilippinesPage() {
             <li className="mli">Heat is significant — monitor your pet carefully and ensure shade and water are always available.</li>
             <li className="mli">Find a local vet before arrival through expat Facebook groups.</li>
           </ul>
+        </div>
+      </section>
+
+      {/* BALIKBAYAN PRIVILEGE */}
+      <section className="section section-light" id="balikbayan">
+        <div className="section-inner">
+          <p className="section-label">Balikbayan Privilege</p>
+          <h2 className="section-heading">The Balikbayan Privilege — Duty-Free Benefits for You and Your Filipino Partner</h2>
+
+          <p className="mb">If you are moving to the Philippines with or to be with a Filipino partner, the Balikbayan Program may provide meaningful duty-free benefits when you first arrive — and on every subsequent return trip. Understanding how it works prevents you from leaving money on the table at customs.</p>
+
+          <h3 className="msub msub-first">What Is the Balikbayan Privilege?</h3>
+          <p className="mb">The Balikbayan Program is established under Republic Act 6768, as amended by Republic Act 9174. "Balikbayan" literally means a Filipino who returns to the Philippines after residing abroad. The law grants qualifying balikbayans — and their accompanying foreign spouses and minor children — duty-free importation of personal effects and goods up to a defined value threshold.</p>
+
+          <div className="ma-gold">
+            <p className="ma-gold-label">2026 Duty-Free Threshold</p>
+            <p className="ma-gold-body-light">Duty-free goods worth up to PHP 150,000 (approximately $2,500 USD at current exchange rates) per qualifying balikbayan per arrival. The foreign spouse and minor children traveling with the balikbayan are included in this privilege as a family unit. Threshold is set by the Bangko Sentral ng Pilipinas and may be updated periodically.</p>
+          </div>
+
+          <h3 className="msub">Who Qualifies as a Balikbayan?</h3>
+          <ul className="mlist">
+            <li className="mli">Filipino citizens who have been continuously residing abroad for at least one year and are returning to the Philippines.</li>
+            <li className="mli">Former natural-born Filipino citizens who have been naturalized as foreign citizens (covered under RA 9225 dual citizenship framework).</li>
+            <li className="mli">Overseas Filipino Workers (OFWs) returning from abroad.</li>
+            <li className="mli">Filipino crew members of international vessels.</li>
+          </ul>
+
+          <h3 className="msub">The Foreign Spouse and Children Benefit</h3>
+          <p className="mb">The foreign spouse and minor children of a qualifying balikbayan who travel with that balikbayan on the same trip also receive the duty-free privilege as part of the family unit. This means if your Filipino partner qualifies as a balikbayan and you are arriving together, you benefit from the duty-free allowance when bringing in goods.</p>
+
+          <div className="ma-warning">
+            <p className="ma-warning-label">⚠ Important Limitation — You Must Travel Together</p>
+            <p className="ma-warning-body">The duty-free privilege for foreign spouses and children applies only when traveling together with the qualifying balikbayan on the same arrival. A foreign spouse arriving separately — without the Filipino balikbayan — does not receive the balikbayan duty-free benefit. Your Filipino partner must be present and must independently qualify as a balikbayan (at least one year continuous residence abroad).</p>
+          </div>
+
+          <h3 className="msub">The Balikbayan Box</h3>
+          <p className="mb">Separately from arriving in person, qualified balikbayans can ship packages to the Philippines duty-free — known as "balikbayan boxes." The boxes are entitled to duty-free treatment once per calendar year, up to the applicable threshold value, administered by the Bureau of Customs. This is how OFWs routinely ship goods to family in the Philippines without paying customs duties.</p>
+          <ul className="mlist">
+            <li className="mli">Must be addressed to a qualified balikbayan or their immediate family in the Philippines.</li>
+            <li className="mli">Subject to Bureau of Customs inspection and valuation.</li>
+            <li className="mli">Commercial quantities or goods clearly intended for resale are excluded from the duty-free privilege.</li>
+            <li className="mli">Prohibited items still apply regardless of balikbayan status — verify current Bureau of Customs restrictions.</li>
+          </ul>
+
+          <h3 className="msub">Duty-Free Shopping in the Philippines</h3>
+          <p className="mb">Qualifying balikbayans can also shop at designated duty-free facilities within the Philippines. The most prominent is DFS (Duty Free Philippines) located at NAIA Terminal 3 and other locations. Eligible purchases from duty-free shops count against your balikbayan allowance. Shops are open to arriving international passengers and qualified balikbayans within a specified period of arrival.</p>
         </div>
       </section>
 

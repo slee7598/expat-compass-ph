@@ -406,6 +406,14 @@ export default function CostOfLivingPage() {
           </ul>
 
           <p className="cb cb-light">For budget planning: for a typical 1–2 bedroom condo with moderate aircon use, budget 4,000 to 8,000 pesos per month. If you run aircon heavily, budget up to 12,000–15,000 pesos.</p>
+
+          <h3 className="csub csub-light">MECO vs VECO — Which Provider Serves Your Address</h3>
+          <p className="cb cb-light">Electricity in Metro Cebu is served by two separate distribution companies and knowing which one covers your address matters for budgeting.</p>
+
+          <div className="ca-gold">
+            <p className="ca-gold-label">MECO vs VECO — Know Before You Rent</p>
+            <p className="ca-gold-body">VECO (Visayan Electric Company, now operating as MORE Electric and Power) serves Cebu City, Mandaue City, Talisay City, and the main Cebu island corridor. MECO (Mactan Electric Company) serves Mactan Island — Lapu-Lapu City, Cordova, and everything in the Mactan-Cebu Economic Zone including Punta Engaño. MECO rates have historically run higher than VECO rates. Steve pays MECO rates at his Movenpick condo — so his real electricity numbers already reflect this premium. If you are comparing condos on main Cebu island versus Mactan: budget approximately 10 to 15 percent more for electricity on Mactan under MECO. MECO also has a somewhat worse brownout reputation than some VECO service areas — generator coverage in your building becomes even more important on Mactan.</p>
+          </div>
         </div>
       </section>
 

@@ -621,7 +621,7 @@ export default function HealthcarePage() {
                 <p className="ins-card-tier">Government Program</p>
                 <p className="ins-card-name">PhilHealth</p>
               </div>
-              <div className="ins-card-body">The Philippine government health insurance program. Foreigners holding certain visas including the SRRV and 13A can enroll. Coverage is basic but provides a meaningful subsidy at accredited hospitals including VSMMC. Monthly contributions are low — approximately 500 to 2,500 pesos depending on income bracket. Worth enrolling in as a supplement to private insurance, not as a replacement.</div>
+              <div className="ins-card-body">The Philippine government health insurance program. Foreigners holding certain visas including the SRRV and 13A can enroll. Coverage is basic but provides a meaningful subsidy at accredited hospitals including VSMMC. Worth enrolling in as a supplement to private insurance, not as a replacement. See the full PhilHealth breakdown below.</div>
             </div>
 
             <div className="ins-card" style={{borderColor: 'rgba(242,153,74,0.3)', background: 'rgba(242,153,74,0.03)'}}>
@@ -631,6 +631,44 @@ export default function HealthcarePage() {
               </div>
               <div className="ins-card-body">For many healthy expats, especially younger ones, the math sometimes favors paying out of pocket rather than maintaining expensive insurance. At Philippine private hospital rates, even a significant illness costs $300 USD. However this calculation changes dramatically for serious conditions. Out-of-pocket works only with a substantial emergency fund. The recommended approach: a basic plan like SafetyWing plus a $5,000 to $10,000 USD cash emergency fund.</div>
             </div>
+          </div>
+
+          <h3 className="hsub">PhilHealth for Foreign Residents — 2026 Rates and Enrollment</h3>
+          <p className="hb">Foreigners on certain long-stay visas can enroll in PhilHealth as direct contributors. Here is what you need to know in 2026.</p>
+
+          <div className="ha-gold">
+            <p className="ha-gold-label">2026 Annual Contribution Rates — Foreign Residents</p>
+            <p className="ha-gold-body">SRRV (Special Resident Retiree Visa) holders: approximately PHP 15,000 per year. &nbsp;·&nbsp; 13(a) spousal visa holders: approximately PHP 17,000 per year. These are direct contributor rates for foreigners not employed by a Philippine company. Rates are set by PhilHealth and may be adjusted — verify current rates at philhealth.gov.ph before enrolling.</p>
+          </div>
+
+          <h3 className="hsub">Who Qualifies</h3>
+          <ul className="hlist">
+            <li className="hli">Foreigners holding a valid SRRV issued by the Philippine Retirement Authority.</li>
+            <li className="hli">Foreigners holding a valid 13(a) spousal visa — both probationary and permanent.</li>
+            <li className="hli">Foreigners employed by a Philippine-registered company — mandatory enrollment with different contribution structure.</li>
+            <li className="hli">Other long-stay visa holders — verify eligibility directly with PhilHealth at philhealth.gov.ph.</li>
+          </ul>
+
+          <h3 className="hsub">What PhilHealth Covers</h3>
+          <ul className="hlist">
+            <li className="hli">Inpatient hospitalization — case rates for common conditions including pneumonia, dengue, typhoid, appendectomy, and more. Directly reduces your hospital bill at PhilHealth-accredited facilities.</li>
+            <li className="hli">Outpatient package — selected procedures and consultations at accredited outpatient clinics.</li>
+            <li className="hli">Z-benefit packages — coverage for catastrophic conditions including dialysis, cancer treatment chemotherapy and radiation, and selected major surgeries at significantly reduced patient cost.</li>
+            <li className="hli">Accepted at: VSMMC, Chong Hua Hospital, Cebu Doctors University Hospital, Perpetual Succour Hospital, and most major accredited government and private hospitals.</li>
+          </ul>
+
+          <h3 className="hsub">How to Enroll</h3>
+          <ol className="hnlist">
+            <li className="hni">Go to the nearest PhilHealth office — in Cebu, the main office is in Cebu City with satellite offices in Mandaue and other areas.</li>
+            <li className="hni">Bring your passport, ACR I-Card or SRRV identification, and visa documentation.</li>
+            <li className="hni">Fill out the PhilHealth Membership Registration Form (PMRF).</li>
+            <li className="hni">Pay your first annual contribution. You will receive your PhilHealth Identification Number (PIN).</li>
+            <li className="hni">Present your PhilHealth PIN or card at accredited hospitals when seeking inpatient care to apply the benefit at the time of discharge.</li>
+          </ol>
+
+          <div className="ha-amber">
+            <p className="ha-amber-label">Honest Assessment — Is PhilHealth Worth It for Foreign Residents?</p>
+            <p className="ha-amber-body">At PHP 15,000 to 17,000 per year, PhilHealth is worth enrolling in if you qualify on SRRV or 13A. The inpatient case rate reductions can meaningfully cut a hospital bill for a significant illness or surgery. However PhilHealth is not a substitute for comprehensive private insurance — coverage gaps for outpatient care, specialist consultations, and medications are real. The recommended combination for most foreign residents: PhilHealth plus SafetyWing Nomad Insurance or similar international plan. That gives you both the government subsidy at accredited hospitals and proper international coverage for emergencies. <a href="https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador" target="_blank" rel="noopener noreferrer" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>Get a SafetyWing quote →</a></p>
           </div>
         </div>
       </section>

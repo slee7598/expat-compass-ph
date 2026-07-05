@@ -640,6 +640,14 @@ export default function BankingPage() {
             <p className="cs-city">Money Exchange Tips</p>
             <p className="cs-tagline">Avoiding bad rates in the Philippines</p>
           </a>
+          <a href="#pag-ibig-sss" className="cs-card">
+            <p className="cs-city">Pag-IBIG &amp; SSS</p>
+            <p className="cs-tagline">Do expats need to contribute?</p>
+          </a>
+          <a href="#pdic" className="cs-card">
+            <p className="cs-city">PDIC Insurance</p>
+            <p className="cs-tagline">Philippine deposit insurance explained</p>
+          </a>
         </div>
       </section>
 
@@ -739,6 +747,11 @@ export default function BankingPage() {
                 <p className="detail-row-body">{d.body}</p>
               </div>
             ))}
+          </div>
+
+          <div className="bank-alert" style={{marginTop: '48px', background: 'rgba(201,168,76,0.06)', border: '2px solid #C9A84C', borderLeft: '4px solid #C9A84C'}}>
+            <p className="bank-alert-label">Important — Remittances from Abroad Are NOT Taxed in the Philippines</p>
+            <p className="bank-alert-body">Money you transfer from your US bank account or foreign income to your Philippine bank account is not subject to Philippine income tax. Under the Philippine National Internal Revenue Code, remittances from abroad are not classified as Philippine-sourced income for non-resident aliens. For expats living in the Philippines on SRRV, 13A, or tourist visa extensions who receive income from abroad — Social Security, pension, investment distributions, foreign employment — that income is not taxed by the Philippine government simply because you wire it to a local account. This is one of the most commonly misunderstood aspects of Philippine taxation for foreign residents. Your obligation to file and pay US taxes on that income continues regardless — but the Philippines does not take a second cut.</p>
           </div>
         </div>
       </section>
@@ -961,6 +974,60 @@ export default function BankingPage() {
             <p className="bank-alert-label">Live Exchange Rate</p>
             <p className="bank-alert-body">The live USD to PHP exchange rate is always displayed on the Expat Compass PH homepage — bookmark it and check it before any significant currency transaction.</p>
           </div>
+        </div>
+      </section>
+
+      {/* PAG-IBIG AND SSS */}
+      <section className="section section-light" id="pag-ibig-sss">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">Government Social Programs</p>
+          <h2 className="section-heading">Pag-IBIG and SSS — Do Expats Need to Contribute?</h2>
+          <p className="section-body">Two Philippine government programs — SSS and Pag-IBIG — are mandatory for employees of Philippine companies. Whether they apply to you as an expat depends on your situation.</p>
+
+          <h3 className="section-sub section-sub-first">SSS — Social Security System</h3>
+          <p className="section-body">SSS is the social security system for Philippine private sector workers. If you are employed by a Philippine-registered company, SSS contributions are mandatory regardless of your nationality — both you and your employer contribute. Benefits include sickness, maternity, disability, retirement, and death benefits, as well as SSS salary loans.</p>
+          <p className="section-body">If you are a pure expat living on foreign income — Social Security, pension, investments, or remote work for a foreign employer — SSS is generally not required. Voluntary SSS membership is available but the benefits (retirement credit after 120 monthly contributions, disability coverage) are of limited practical value for most foreigners who do not plan to claim Philippine benefits.</p>
+
+          <h3 className="section-sub">Pag-IBIG — Home Development Mutual Fund (HDMF)</h3>
+          <p className="section-body">Pag-IBIG is the government housing savings and loan fund. Like SSS, it is mandatory for employees of Philippine companies regardless of nationality. Contributions are two percent of monthly salary, matched by the employer.</p>
+          <p className="section-body">For pure expats not employed by a Philippine entity: Pag-IBIG is not required. Voluntary membership is available and the primary benefit is eligibility for Pag-IBIG housing loans — useful only if you intend to purchase Philippine property through Pag-IBIG financing, which requires years of qualifying contributions. Most expats renting long-term have no practical use for voluntary Pag-IBIG.</p>
+
+          <div className="phone-rec-box">
+            <p className="phone-rec-label">Bottom Line for Most Expats</p>
+            <p className="phone-rec-body">If you are living in the Philippines on SRRV, 13A, or tourist visa extension and receiving income from abroad — you are generally not required to contribute to SSS or Pag-IBIG. If you take employment with a Philippine company, both become mandatory. If you are working remotely for a foreign employer while living in the Philippines, consult a Philippine tax and labor attorney to confirm your status.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* PDIC */}
+      <section className="section section-dark" id="pdic">
+        <div style={{maxWidth: '860px'}}>
+          <p className="section-label">Deposit Protection</p>
+          <h2 className="section-heading section-heading-light">PDIC — Philippine Deposit Insurance Corporation</h2>
+          <p className="section-body section-body-light">The PDIC is the Philippine equivalent of the US FDIC — a government agency that insures deposits at member banks to protect depositors in the event of bank failure.</p>
+
+          <div className="bank-alert">
+            <p className="bank-alert-label">Coverage Limit — PHP 500,000 Per Depositor Per Bank</p>
+            <p className="bank-alert-body">PDIC covers up to PHP 500,000 per depositor per member bank. If you hold PHP 800,000 in a single bank, only PHP 500,000 is insured. If you hold PHP 500,000 at BDO and PHP 500,000 at UnionBank, both are fully insured — each bank is covered separately. A joint account between two depositors receives maximum coverage of PHP 1,000,000 (PHP 500,000 per depositor).</p>
+          </div>
+
+          <h3 className="section-sub section-sub-first section-sub-light">What PDIC Covers</h3>
+          <ul className="section-list">
+            <li className="section-li section-li-light">Savings accounts, checking accounts, and time deposits at BSP-regulated member banks.</li>
+            <li className="section-li section-li-light">Money market deposit accounts.</li>
+            <li className="section-li section-li-light">Peso and foreign currency deposits at covered institutions.</li>
+          </ul>
+
+          <h3 className="section-sub section-sub-light">What PDIC Does NOT Cover</h3>
+          <ul className="section-list">
+            <li className="section-li section-li-light">Investment products sold by banks — UITFs, mutual funds, bonds.</li>
+            <li className="section-li section-li-light">Trust accounts and fiduciary instruments.</li>
+            <li className="section-li section-li-light">Deposits in non-BSP-regulated institutions (lending companies, cooperatives, informal savings groups).</li>
+            <li className="section-li section-li-light">Negotiable instruments and securities.</li>
+          </ul>
+
+          <h3 className="section-sub section-sub-light">Practical Advice for Expats</h3>
+          <p className="section-body section-body-light">All major Philippine commercial banks including BDO, UnionBank, BPI, Metrobank, and Security Bank are PDIC members. If you are holding significant peso balances in excess of PHP 500,000, spreading deposits across two or more member banks ensures each balance is separately insured. This is the same approach recommended with US FDIC coverage — do not concentrate more than the insured limit at any single institution.</p>
         </div>
       </section>
 
