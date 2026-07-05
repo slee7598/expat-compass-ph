@@ -357,6 +357,10 @@ export default function CityGuidesPage() {
               <p className="cs-city">Dive Destinations</p>
               <p className="cs-tagline">Philippines is a top 3 dive destination</p>
             </a>
+            <a href="#education" className="cs-card">
+              <p className="cs-city">Education Guide</p>
+              <p className="cs-tagline">Schools for expat families by city</p>
+            </a>
           </div>
         </div>
       </section>
@@ -1208,6 +1212,67 @@ export default function CityGuidesPage() {
           <div className="city-alert" style={{maxWidth:'860px', marginTop:'32px'}}>
             <p className="city-alert-label">Getting Certified in Cebu</p>
             <p className="city-alert-body">If you are not yet a certified diver, Cebu is one of the best places in the world to get your Open Water certification. Several reputable dive schools operate in Mactan, Moalboal, and Malapascua offering PADI and SSI certification courses. Open Water certification typically takes 3 to 4 days and costs approximately 15,000 to 25,000 pesos at reputable schools. With certification in hand, every destination on this page is accessible to you.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── EDUCATION SECTION ── */}
+      <section className="section section-light" id="education">
+        <div className="section-inner">
+          <p className="section-eyebrow">For Expat Families</p>
+          <h2 className="section-heading">Philippine Education System — A Guide for Expat Families</h2>
+          <p style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.85, color:'#4A5868', marginBottom:'40px', maxWidth:'760px'}}>For expat families with school-age children, understanding the Philippine education system is critical to choosing the right city. The quality gap between school types is significant and the best options vary by location.</p>
+
+          <div className="neighborhood-grid neighborhood-grid-light" style={{marginBottom:'40px'}}>
+            <div className="neighborhood-card neighborhood-card-light">
+              <p className="neighborhood-name">Public Schools — Honest Assessment</p>
+              <p className="neighborhood-body neighborhood-body-light">The Philippine public school system is functional but resource-constrained and generally not recommended for expat children. Average class sizes of 50 to 60 students are common. The K-12 curriculum introduced in 2013 is still being unevenly implemented across regions. English is used as a medium of instruction from Grade 4 onwards but consistency varies. Public schools are appropriate for Filipino children and for expat families on extremely tight budgets, but the classroom experience is significantly different from what most Western children are accustomed to.</p>
+            </div>
+            <div className="neighborhood-card neighborhood-card-light">
+              <p className="neighborhood-name">Private Schools — Strong and Affordable</p>
+              <p className="neighborhood-body neighborhood-body-light">Established Philippine private schools are genuinely good and remarkably affordable by Western standards. La Salle, Ateneo, and San Carlos networks have strong academic reputations across the Philippines. English is the primary medium of instruction. Small class sizes, strong discipline, and Filipino values-based education. Annual tuition typically ranges from 50,000 to 200,000 pesos depending on the school and city. Cebu has the strongest selection of quality private schools outside Manila.</p>
+            </div>
+            <div className="neighborhood-card neighborhood-card-light neighborhood-card-featured">
+              <p className="neighborhood-name">International Schools — Best for Western Curriculum</p>
+              <p className="neighborhood-body neighborhood-body-light">For families who need recognized international curriculum — particularly those planning to return to their home country for university — international schools are the clear choice. They offer IB, Cambridge, or American curriculum that transfers seamlessly to Western educational systems. Cebu options: International School Cebu and Cebu International School are the most established and well-regarded. Manila has the widest selection including International School Manila, British School Manila, and Brent International School. Annual tuition ranges from $5,000 to $15,000 USD or more depending on the school and grade level. Factor this cost into any family budget planning for Philippines relocation.</p>
+            </div>
+            <div className="neighborhood-card neighborhood-card-light">
+              <p className="neighborhood-name">Homeschooling — A Growing Option</p>
+              <p className="neighborhood-body neighborhood-body-light">Homeschooling is growing significantly in the Philippines and is a practical option for many expat families. Philippine-based programs: Homeschool Global, PAREF, and Angelicum College all offer DepEd-recognized homeschool programs. US-based online schools: Connections Academy, K12, and Calvert Education continue seamlessly from the Philippines — useful if the family plans to return to the US for high school or university. DepEd recognition matters if the child plans to attend a Philippine university — verify whether your chosen program is DepEd-recognized before enrolling.</p>
+            </div>
+          </div>
+
+          <p style={{fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.14em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'24px', display:'flex', alignItems:'center', gap:'12px'}}>
+            <span style={{flex:1, height:'1px', background:'rgba(201,168,76,0.25)', display:'block'}} />
+            Education by City — Quick Reference
+            <span style={{flex:1, height:'1px', background:'rgba(201,168,76,0.25)', display:'block'}} />
+          </p>
+
+          <div className="detail-rows" style={{maxWidth:'860px'}}>
+            <div className="detail-row">
+              <span className="detail-row-label">Cebu</span>
+              <p className="detail-row-body">Strongest selection of quality private and international schools outside Manila. International School Cebu, Cebu International School. Best for families needing international curriculum in the Visayas.</p>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Manila BGC &amp; Makati</span>
+              <p className="detail-row-body">Widest selection of international schools in the Philippines. International School Manila, British School Manila, Brent International School. Best for families needing the full range of international options.</p>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Dumaguete</span>
+              <p className="detail-row-body">Silliman University has excellent primary and secondary schools. More limited international options but strong local private schools.</p>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Davao</span>
+              <p className="detail-row-body">Good private school selection. Limited international options compared to Cebu and Manila.</p>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Baguio</span>
+              <p className="detail-row-body">Brent International School Baguio campus is one of the Philippines&rsquo; most established international schools. Good option for families in northern Luzon.</p>
+            </div>
+            <div className="detail-row">
+              <span className="detail-row-label">Iloilo</span>
+              <p className="detail-row-body">Growing private school selection. Limited international options.</p>
+            </div>
           </div>
         </div>
       </section>

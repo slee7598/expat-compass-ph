@@ -244,6 +244,10 @@ export default function VisasPage() {
               <p className="cs-city">US Passport Renewal</p>
               <p className="cs-tagline">From the Philippines with or without Manila trip</p>
             </a>
+            <a href="#minor-children" className="cs-card">
+              <p className="cs-city">Minor Children</p>
+              <p className="cs-tagline">Guardian authorization and visa requirements</p>
+            </a>
           </div>
         </div>
       </section>
@@ -373,6 +377,11 @@ export default function VisasPage() {
         <div className="section-inner">
           <p className="section-label">Retirement Visa</p>
           <h2 className="section-heading">The SRRV — Special Resident Retiree&rsquo;s Visa</h2>
+
+          <div className="va-gold" style={{border:'2px solid #C9A84C', background:'rgba(201,168,76,0.08)', marginBottom:'28px'}}>
+            <p className="va-gold-label">⚠ Important — Outdated Deposit Figures Circulating Online</p>
+            <p className="va-gold-body">Many websites and expat forums still quote a $10,000 deposit figure for the Classic SRRV. This figure is outdated and no longer accurate. The correct 2026 deposit structure is: Over 50 with qualifying pension of $800 per month or more: $15,000 deposit. Over 50 without qualifying pension: $30,000 deposit. Age 40 to 49 with qualifying pension: $25,000 deposit. Age 40 to 49 without qualifying pension: $50,000 deposit. The deposit is fully yours — it earns interest in a PRA-accredited bank and is returned in full when you permanently leave the program. Do not make financial plans based on the $10,000 figure you may have seen elsewhere.</p>
+          </div>
 
           <p className="vb">The SRRV is the Philippines&rsquo; premier long-term residency visa for qualifying foreign nationals and former Filipino citizens. It provides indefinite stay, multiple entry, and freedom from the monthly Bureau of Immigration visits that define life on a tourist extension. It is administered by the Philippine Retirement Authority — a separate government agency from the Bureau of Immigration — which creates important differences in how the visa works and what documents you carry.</p>
 
@@ -566,6 +575,80 @@ export default function VisasPage() {
           <div className="va-amber">
             <p className="va-amber-label">Other Nationalities — Equivalent Documents</p>
             <p className="va-amber-body">For 13A applicants from other countries, the equivalent document is the FBI Identification Record for Americans, the RCMP criminal record check for Canadians, the Australian National Police Check for Australians, and the equivalent national police authority certificate for other nationalities. All must be apostilled by the relevant national authority before submission to Philippine immigration.</p>
+          </div>
+
+          <div id="13a-exit-requirements">
+            <h3 className="vsub vsub-light">13A Exit Requirements — ECC-B and What You Need to Know Before You Fly</h3>
+            <p className="vb vb-light">One of the most commonly misunderstood aspects of the 13A visa is the exit clearance requirement. Many expats describe the 13A as completely hassle-free for travel — this is true for permanent holders but requires more nuance for probationary holders.</p>
+
+            <div className="va-gold" style={{marginTop:'24px'}}>
+              <p className="va-gold-label">ECC-B — Who Needs It and What It Is</p>
+              <p className="va-gold-body-light">The ECC-B — Emigration Clearance Certificate Type B — is required for all holders of immigrant and non-immigrant visas with valid ACR I-Cards who are leaving the Philippines temporarily. This includes BOTH probationary and permanent 13A holders.</p>
+              <p className="va-gold-body-light" style={{marginTop:'10px'}}><strong>What the ECC-B actually is:</strong> It serves simultaneously as your exit clearance and your Special Return Certificate — essentially your re-entry permit in one document. It is valid for one year from issuance and is single-use. Cost is approximately 2,800 pesos payable at the BI or at the airport.</p>
+            </div>
+
+            <p className="vb vb-light" style={{marginTop:'28px', marginBottom:'12px', fontWeight:500, color:'rgba(248,246,241,0.9)'}}>The key difference between probationary and permanent 13A:</p>
+
+            <div className="scenario-grid" style={{marginTop:'0'}}>
+              <div className="scenario-card">
+                <div className="scenario-q">Probationary 13A Exit Requirements</div>
+                <div className="scenario-a">ECC-B required before departure. Must be obtained in advance at a BI office — cannot always be processed at the airport on the day of departure during probationary status. Apply at least 3 to 5 working days before your flight — do not leave this to the last minute. Annual Report must be current — outstanding Annual Report will flag at departure and can prevent issuance of ECC-B. Important: If you leave the Philippines while your probationary 13A application is still pending without first obtaining a BI-issued Re-entry Permit, you abandon the petition and must start over.</div>
+              </div>
+              <div className="scenario-card">
+                <div className="scenario-q">Permanent 13A Exit Requirements</div>
+                <div className="scenario-a">ECC-B still required but the process is significantly simpler. Can be processed at the airport on the day of departure at NAIA or Cebu-Mactan international terminals. Also available 24 hours a day 7 days a week via the BI e-Services portal at bi.gov.ph. Annual Report must be current — ensure your Annual Report is completed at least 72 hours before your flight to avoid system delays at the airport cashier. Carry your ACR I-Card and passport together — have both ready at the immigration counter. Bring a hard copy of your latest Annual Report official receipt — immigration officers sometimes ask for it even though your ACR I-Card chip shows compliance.</div>
+              </div>
+            </div>
+
+            <h3 className="vsub vsub-light">Practical Tips</h3>
+            <ul className="vlist">
+              <li className="vli vli-light">Never leave for an international trip on the day your ECC-B expires — the one-year validity catches people off guard.</li>
+              <li className="vli vli-light">If your Annual Report is overdue sort it immediately — an outstanding Annual Report is the single most common reason for departure complications even for permanent 13A holders.</li>
+              <li className="vli vli-light">For your very first international departure after receiving 13A status — whether probationary or permanent — verify current requirements with BI or your immigration attorney before booking. Requirements occasionally change and your first departure is not the time to discover a procedural change.</li>
+              <li className="vli vli-light">Keep a physical binder with your ACR I-Card photocopy, latest Annual Report official receipt, and passport copies — BI loves paper trails and having these ready prevents delays.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION: MINOR CHILDREN ── */}
+      <section className="section section-light" id="minor-children">
+        <div className="section-inner">
+          <p className="section-label">Foreign National Families</p>
+          <h2 className="section-heading">Foreign National Minor Children in the Philippines — Guardian Authorization</h2>
+
+          <p className="vb">If you have a foreign national child living in the Philippines — whether temporarily with grandparents, extended family, or any guardian while parents are abroad — Philippine immigration law requires specific documentation to protect that child and protect the guardian. This is a common situation for binational families and one that catches many people off guard.</p>
+
+          <h3 className="vsub vsub-first">Visa Requirements for Foreign National Children</h3>
+          <p className="vb">A US citizen or other Western national child entering the Philippines is treated as a foreign national. They receive the same visa-free entry as their nationality allows — typically 30 days for most Western passports, 59 days for US passports. If the child will stay beyond the initial visa-free period, extensions must be processed at the Bureau of Immigration the same as for any adult foreign national — approximately 5,000 pesos per extension. ACR I-Card is required after 59 days of continuous stay.</p>
+
+          <h3 className="vsub">Dual Citizenship as the Cleanest Solution</h3>
+          <p className="vb">If the child has Filipino heritage through a Filipino parent or grandparent, pursuing dual citizenship through RA 9225 is the most practical long-term solution for a child living in the Philippines. A child with Philippine citizenship can live in the Philippines indefinitely with no visa fees, no extensions, and no BI visits. Consult a Philippine immigration attorney and the Philippine Embassy in your country of residence about the child&rsquo;s eligibility.</p>
+
+          <div className="va-gold" style={{border:'2px solid #C9A84C', background:'rgba(201,168,76,0.08)'}}>
+            <p className="va-gold-label">Guardian Authorization — Essential Documentation</p>
+            <p className="va-gold-body">Any foreign national child living in the Philippines with someone other than their legal parent requires a properly executed guardian authorization. Without this documentation the guardian has no legal authority to make decisions for the child in the Philippines including medical decisions, school enrollment, and government transactions.</p>
+            <p className="va-gold-body" style={{marginTop:'12px'}}>The guardian authorization must be:</p>
+            <ul className="vlist" style={{marginTop:'8px'}}>
+              <li className="vli">Notarized in the country where the parent is signing.</li>
+              <li className="vli">Apostilled by the appropriate national authority — for US parents this means the Secretary of State of the state where the document is notarized.</li>
+              <li className="vli">Translated to English if not originally in English.</li>
+            </ul>
+            <p className="va-gold-body" style={{marginTop:'12px'}}>The document should explicitly authorize the named guardian to: make medical decisions, enroll the child in school, sign government documents on behalf of the child, and authorize international travel if applicable.</p>
+          </div>
+
+          <h3 className="vsub">Travel Authorization for Minors</h3>
+          <p className="vb">A foreign national child traveling to or from the Philippines without both parents present may be questioned at immigration. Philippine immigration officers are trained to watch for child trafficking and unaccompanied or irregularly accompanied minors receive extra scrutiny. If a child is traveling with only one parent or with a guardian the following documentation is strongly recommended:</p>
+          <ul className="vlist">
+            <li className="vli">Notarized apostilled letter from the absent parent authorizing travel.</li>
+            <li className="vli">Copy of the child&rsquo;s birth certificate showing both parents.</li>
+            <li className="vli">Copy of the guardian&rsquo;s identification.</li>
+            <li className="vli">If the sole-traveling parent has sole custody, a copy of the custody order.</li>
+          </ul>
+
+          <div className="va-amber">
+            <p className="va-amber-label">Consult a Philippine Immigration Attorney</p>
+            <p className="va-amber-body">Consult a Philippine immigration attorney for any complex family situation involving foreign national children living in the Philippines long-term. The rules are specific and the consequences of getting documentation wrong can significantly affect the child&rsquo;s legal status and the guardian&rsquo;s ability to care for them.</p>
           </div>
         </div>
       </section>

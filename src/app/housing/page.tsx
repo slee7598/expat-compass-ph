@@ -276,6 +276,28 @@ export default function HousingPage() {
               <div className="area-card-body">
                 <p className="area-card-title">IT Park — Cebu City</p>
                 <p className="area-card-text">For expats who want to be in the heart of Cebu City rather than on Mactan Island, IT Park (Cebu IT Park in Lahug) is worth serious consideration. Steve spent a month here in a 22sqm studio from Airbnb at approximately $500 USD per month. The condo itself was nowhere near as nice as Saekyung — no comparable amenities — but IT Park compensates with what is outside your door. The area is walkable, lively, and packed with restaurants, cafes, bars, and conveniences. The Sugbo Mercado — a beloved weekend night market with Filipino street food, local vendors, live music, and an electric atmosphere — is right there. The trade-off is traffic. IT Park sits in central Cebu City and the surrounding roads can be heavily congested, especially during rush hours. Steve found IT Park and Saekyung together gave him the full picture of what he wanted — and what he did not want. The conclusion: more of a beach resort lifestyle, which led him to Punta Engaño. That is exactly the point of the Airbnb-first strategy — you discover what actually matters to you by living it, not by reading about it.</p>
+
+                <div style={{background:'rgba(201,168,76,0.06)', border:'1px solid rgba(201,168,76,0.3)', borderLeft:'3px solid #C9A84C', padding:'24px 28px', marginTop:'20px'}}>
+                  <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>IT Park Specific Living Guide — What Five Years Teaches You</p>
+
+                  <p style={{fontSize:'0.8rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>Infrastructure — The Best in Cebu</p>
+                  <p style={{fontSize:'0.87rem', fontWeight:300, lineHeight:1.75, color:'#4A5868', marginBottom:'16px'}}>IT Park has the most reliable power infrastructure of any residential area in Cebu. Multiple backup generators serve the commercial and residential towers. Internet is excellent — PLDT, Converge, and Globe all have strong coverage and most buildings have fiber backbone. For remote workers this infrastructure advantage over other Mactan and Cebu areas is significant. The digital infrastructure is genuinely better here than anywhere else in Cebu.</p>
+
+                  <p style={{fontSize:'0.8rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>The Noise Reality</p>
+                  <p style={{fontSize:'0.87rem', fontWeight:300, lineHeight:1.75, color:'#4A5868', marginBottom:'16px'}}>IT Park houses major BPO operations — call centers and back-office operations running 24 hours a day 7 days a week. This means shift workers coming and going at 2am, 4am, and 6am. The areas immediately surrounding the BPO buildings — particularly the ground floor restaurant and retail strip — are active at unusual hours. Expats who live in upper floors facing the interior park space rather than the street report significantly quieter conditions. If noise is a concern ask specifically which direction the unit faces and what floor it is on before committing.</p>
+
+                  <p style={{fontSize:'0.8rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>No-Car Lifestyle</p>
+                  <p style={{fontSize:'0.87rem', fontWeight:300, lineHeight:1.75, color:'#4A5868', marginBottom:'16px'}}>IT Park is one of the few areas in Cebu where a car is genuinely optional. The Sugbo Mercado night market, Ayala Center Cebu, SM Seaside City via Grab, restaurants, cafes, gyms, convenience stores, and medical clinics are all accessible without a vehicle. Grab pickup is fast and reliable within IT Park at virtually any hour due to the constant BPO traffic keeping drivers in the area.</p>
+
+                  <p style={{fontSize:'0.8rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>Avida Towers Specifically</p>
+                  <p style={{fontSize:'0.87rem', fontWeight:300, lineHeight:1.75, color:'#4A5868', marginBottom:'16px'}}>Avida Tower 1 is frequently recommended by long-term IT Park expats as one of the better-managed buildings in the area. Backup power coverage, professional management, and good security track record. Worth specifically asking about when looking for IT Park accommodation.</p>
+
+                  <p style={{fontSize:'0.8rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>Rental Agent Over Online Portals</p>
+                  <p style={{fontSize:'0.87rem', fontWeight:300, lineHeight:1.75, color:'#4A5868', marginBottom:'16px'}}>Multiple experienced IT Park expats specifically recommend using local rental agents rather than relying solely on online property portals for IT Park units. Agents know which buildings have management issues, which units have recurring maintenance problems, and which landlords are reliable. The commission is typically paid by the landlord not the tenant. Ask in Cebu expat Facebook groups for current rental agent recommendations.</p>
+
+                  <p style={{fontSize:'0.8rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>Working From Home Aircon Consideration</p>
+                  <p style={{fontSize:'0.87rem', fontWeight:300, lineHeight:1.75, color:'#4A5868', marginBottom:'0'}}>Working from home in IT Park means running aircon significantly more than someone who leaves for an office. Budget your electricity at the higher end of the range — 8,000 to 12,000 pesos per month if you run aircon during working hours in a typical 1BR unit. Factor this into your total budget calculation.</p>
+                </div>
               </div>
             </div>
 

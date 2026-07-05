@@ -2,6 +2,17 @@
 
 import { useState, useRef, FormEvent } from "react";
 
+const EXAMPLE_QUESTIONS = [
+  "What does a tourist visa extension really cost at the BI office?",
+  "Is my Schwab account safe if I move to the Philippines?",
+  "What is the difference between K-1 and CR-1 visa in 2026?",
+  "Does Medicare cover me in the Philippines?",
+  "Can I live comfortably in Cebu on $1,500 a month?",
+  "What is tampo and how do I handle it?",
+  "How do I open a bank account as a foreigner in Cebu?",
+  "What is the SRRV minimum deposit in 2026?",
+];
+
 export default function HeroSearch() {
   const [query, setQuery] = useState("");
   const [answer, setAnswer] = useState("");
@@ -59,6 +70,11 @@ export default function HeroSearch() {
     runSearch(query);
   }
 
+  function onPillClick(q: string) {
+    setQuery(q);
+    runSearch(q);
+  }
+
   return (
     <div className="hs-wrap">
       <p className="hs-label">AI Powered Expat Search</p>
@@ -80,6 +96,24 @@ export default function HeroSearch() {
           {loading ? "…" : "Search →"}
         </button>
       </form>
+
+      {!answer && !loading && (
+        <div className="hs-pills-wrap">
+          <p className="hs-pills-label">Try asking:</p>
+          <div className="hs-pills">
+            {EXAMPLE_QUESTIONS.map((q) => (
+              <button
+                key={q}
+                className="hs-pill"
+                type="button"
+                onClick={() => onPillClick(q)}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {loading && !answer && (
         <div className="hs-dots">

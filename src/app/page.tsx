@@ -520,6 +520,50 @@ export default function Home() {
           .hs-form { flex-direction: column; }
           .hs-btn { padding: 14px 20px; }
         }
+
+        /* ── EXAMPLE PILLS ── */
+        .hs-pills-wrap { margin-top: 16px; max-width: 520px; }
+        .hs-pills-label {
+          font-family: 'Inter', sans-serif;
+          font-size: 0.6rem; font-weight: 700;
+          letter-spacing: 0.18em; text-transform: uppercase;
+          color: rgba(201,168,76,0.75);
+          margin-bottom: 10px;
+        }
+        .hs-pills {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 8px;
+        }
+        .hs-pill {
+          font-family: 'Inter', sans-serif;
+          font-size: 0.72rem; font-weight: 500; line-height: 1.45;
+          color: rgba(248,246,241,0.9);
+          background: rgba(11,31,58,0.65);
+          border: 1px solid rgba(201,168,76,0.38);
+          border-radius: 20px;
+          padding: 8px 14px;
+          cursor: pointer;
+          transition: background 0.18s, border-color 0.18s, color 0.18s;
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          text-align: left;
+        }
+        .hs-pill:hover {
+          background: #0B1F3A;
+          border-color: #C9A84C;
+          color: #F8F6F1;
+        }
+        @media (min-width: 640px) {
+          .hs-pills { grid-template-columns: 1fr 1fr 1fr; }
+        }
+        @media (min-width: 1024px) {
+          .hs-pills { grid-template-columns: 1fr 1fr 1fr 1fr; }
+          .hs-pills-wrap { max-width: 620px; }
+        }
+        @media (max-width: 768px) {
+          .hs-pills-wrap { max-width: 100%; }
+        }
       `}</style>
 
       {/* HERO — sidebar sits inside, scrolls away with the hero */}
