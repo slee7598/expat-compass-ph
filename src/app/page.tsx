@@ -290,6 +290,9 @@ export default function Home() {
         .hs-answer-text { font-size: 0.9rem; font-weight: 300; line-height: 1.8; color: #1A2D42; white-space: pre-wrap; }
         .hs-cursor { display: inline-block; width: 2px; height: 0.9em; background: #C9A84C; vertical-align: text-bottom; margin-left: 2px; animation: hsBlink 0.8s step-end infinite; }
         @keyframes hsBlink { 50% { opacity: 0; } }
+        .hs-followup { margin-top: 16px; border-top: 1px solid rgba(201,168,76,0.35); background: rgba(201,168,76,0.05); padding: 12px 16px; }
+        .hs-followup-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
+        .hs-followup-text { font-size: 0.88rem; font-weight: 400; line-height: 1.65; color: #1A2D42; }
         .hs-answer-foot { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(11,31,58,0.1); font-size: 0.68rem; color: #8A9AAA; }
 
         /* ── SECTIONS ── */

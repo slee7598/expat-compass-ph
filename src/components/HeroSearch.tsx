@@ -13,6 +13,16 @@ const EXAMPLE_QUESTIONS = [
   "What is the SRRV minimum deposit in 2026?",
 ];
 
+function parseFollowUp(text: string): { main: string; followUp: string } {
+  const trimmed = text.trimEnd();
+  const blocks = trimmed.split(/\n\n+/);
+  const last = (blocks[blocks.length - 1] ?? "").trim();
+  if (blocks.length > 1 && last.endsWith("?")) {
+    return { main: blocks.slice(0, -1).join("\n\n"), followUp: last };
+  }
+  return { main: text, followUp: "" };
+}
+
 export default function HeroSearch() {
   const [query, setQuery] = useState("");
   const [answer, setAnswer] = useState("");
@@ -123,20 +133,29 @@ export default function HeroSearch() {
 
       {error && <p className="hs-error">{error}</p>}
 
-      {(answer || (loading && answer)) && (
-        <div className="hs-answer">
-          <p className="hs-answer-q">{asked}</p>
-          <div className="hs-answer-text">
-            {answer}
-            {loading && <span className="hs-cursor" />}
+      {(answer || (loading && answer)) && (() => {
+        const { main, followUp } = !loading ? parseFollowUp(answer) : { main: answer, followUp: "" };
+        return (
+          <div className="hs-answer">
+            <p className="hs-answer-q">{asked}</p>
+            <div className="hs-answer-text">
+              {main}
+              {loading && <span className="hs-cursor" />}
+            </div>
+            {!loading && followUp && (
+              <div className="hs-followup">
+                <p className="hs-followup-label">You might also ask</p>
+                <p className="hs-followup-text">{followUp}</p>
+              </div>
+            )}
+            {!loading && (
+              <p className="hs-answer-foot">
+                Powered by Claude · For informational purposes only
+              </p>
+            )}
           </div>
-          {!loading && (
-            <p className="hs-answer-foot">
-              Powered by Claude · For informational purposes only
-            </p>
-          )}
-        </div>
-      )}
+        );
+      })()}
     </div>
   );
 }
