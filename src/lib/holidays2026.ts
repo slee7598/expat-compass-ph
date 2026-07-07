@@ -74,14 +74,17 @@ export const JURISDICTIONS: { id: string; name: string }[] = [
   { id: "dumaguete",    name: "Dumaguete" },
 ];
 
-// Returns the current date in Philippine Time (UTC+8)
+// Returns the current date in Asia/Manila time (UTC+8, no DST).
+// Uses the IANA timezone name so the result is unaffected by the server's
+// local timezone, the visitor's device clock, or VPN routing.
+// en-CA locale produces YYYY-MM-DD output that matches the holiday data format.
 export function getTodayPHT(): string {
-  const now = new Date();
-  const pht = new Date(now.getTime() + 8 * 60 * 60 * 1000);
-  const yyyy = pht.getUTCFullYear();
-  const mm = String(pht.getUTCMonth() + 1).padStart(2, "0");
-  const dd = String(pht.getUTCDate()).padStart(2, "0");
-  return `${yyyy}-${mm}-${dd}`;
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Manila",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
 }
 
 // Returns the active non-working holiday for a jurisdiction on dateStr, or null (open).
