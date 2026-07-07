@@ -171,7 +171,7 @@ export default function Home() {
           flex-direction: row;
           align-items: flex-start;
           flex-wrap: wrap;
-          padding: 20px 48px 16px 32px;
+          padding: 8px 48px 12px 32px;
         }
         .hb-logo-link { display: block; line-height: 0; flex-shrink: 0; }
         .hb-logo {
