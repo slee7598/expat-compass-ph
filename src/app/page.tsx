@@ -126,32 +126,14 @@ export default function Home() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
-        /* ── SIDEBAR — inside hero, scrolls away with it ── */
+        /* ── SIDEBAR — desktop nav links; logo sits in hero-banner ── */
         .lsb {
-          position: absolute;
-          left: 0; top: 0;
-          height: 100%;
           width: 200px;
+          flex-shrink: 0;
+          align-self: stretch;
           z-index: 10;
           display: flex;
           flex-direction: column;
-        }
-        .lsb-head {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 24px 16px 18px;
-          flex-shrink: 0;
-          /* transparent — hero image shows through */
-        }
-        .lsb-logo-link { display: block; line-height: 0; }
-        .lsb-logo-img {
-          display: block;
-          width: 110px; height: auto;
-          border-radius: 12px;
-          padding: 6px;
-          background: white;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         .lsb-nav {
           flex: 1;
@@ -160,7 +142,6 @@ export default function Home() {
           background: rgba(11,31,58,0.88);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
-          border-top: 2px solid #C9A84C;
           border-right: 1px solid rgba(201,168,76,0.15);
         }
         .lsb-link {
@@ -181,12 +162,65 @@ export default function Home() {
         }
         .lsb-link.active { color: #C9A84C; border-left-color: #C9A84C; }
 
+        /* ── HERO BANNER (desktop: full-width top band) ── */
+        .hero-banner {
+          position: relative;
+          z-index: 15;
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 20px 48px 16px 32px;
+          background: rgba(11,31,58,0.90);
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+          border-bottom: 1px solid rgba(201,168,76,0.20);
+        }
+        .hb-top-row {
+          display: flex;
+          align-items: center;
+          gap: 28px;
+        }
+        .hb-logo-link { display: block; line-height: 0; }
+        .hb-logo {
+          display: block;
+          width: 88px; height: auto;
+          border-radius: 10px;
+          padding: 5px;
+          background: white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .hb-sep {
+          display: block;
+          width: 1px;
+          height: 52px;
+          background: rgba(201,168,76,0.30);
+          flex-shrink: 0;
+        }
+        .hb-grid-row {
+          margin-top: 6px;
+        }
+        /* Reset margins on widgets inside the banner */
+        .hero-banner .hrate-wrap { margin-bottom: 0; }
+
+        /* ── HERO BODY (sidebar nav + hero content) ── */
+        .hero-body {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          position: relative;
+          min-height: 0;
+        }
+
+        /* ── MOBILE CITY GRID (shown below mob-bar; hidden on desktop) ── */
+        .hero-mob-grid { display: none; }
+
         /* ── HERO ── */
         .hero {
           position: relative;
           min-height: 100vh;
           display: flex;
-          align-items: center;
+          flex-direction: column;
         }
         .hero-img {
           object-fit: cover;
@@ -204,23 +238,8 @@ export default function Home() {
         .hero-content {
           position: relative;
           z-index: 2;
-          padding: 60px 64px 72px 260px;
-          width: 100%;
-        }
-        .hero-eyebrow {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 0.72rem; font-weight: 600;
-          letter-spacing: 0.14em; text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 20px;
-        }
-        .hero-eyebrow::before {
-          content: '';
-          display: block;
-          width: 28px; height: 1px;
-          background: #C9A84C;
+          flex: 1;
+          padding: 60px 64px 72px 60px;
         }
         .hero-title {
           font-family: 'Playfair Display', serif;
@@ -234,29 +253,6 @@ export default function Home() {
           color: rgba(248,246,241,0.78);
           max-width: 500px;
           margin-bottom: 28px;
-        }
-
-        /* ── HERO RATE + HOLIDAY GRID ROW ── */
-        .hero-status-row {
-          display: flex;
-          align-items: flex-start;
-          gap: 44px;
-          margin-bottom: 32px;
-          flex-wrap: wrap;
-        }
-        .hero-status-row .hrate-wrap { margin-bottom: 0; }
-        .hero-status-divider {
-          display: block;
-          width: 1px;
-          background: rgba(201,168,76,0.3);
-          flex-shrink: 0;
-          align-self: stretch;
-          min-height: 60px;
-          margin-top: 2px;
-        }
-        @media (max-width: 700px) {
-          .hero-status-row { gap: 20px; }
-          .hero-status-divider { display: none; }
         }
 
         /* ── HERO SEARCH ── */
@@ -511,13 +507,24 @@ export default function Home() {
         /* ── MOBILE NAV BAR (hero page) ── */
         .lsb-mob-bar {
           display: none;
-          position: absolute;
-          top: 0; left: 0; right: 0;
           z-index: 20;
           padding: 12px 20px;
           align-items: center;
           gap: 12px;
+          background: rgba(11,31,58,0.92);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-bottom: 1px solid rgba(201,168,76,0.15);
+          flex-shrink: 0;
         }
+        /* Compact rate display inside mobile bar */
+        .lsb-mob-bar .hrate-wrap { margin: 0 0 0 auto; }
+        .lsb-mob-bar .hrate-label { display: none; }
+        .lsb-mob-bar .hrate-line { display: none; }
+        .lsb-mob-bar .hrate-text { font-size: 0.82rem; }
+        .lsb-mob-bar .hrate-php { font-size: 1rem; }
+        .lsb-mob-bar .hrate-loading { font-size: 1rem; }
+
         .lsb-mob-burger {
           background: none; border: none; cursor: pointer;
           padding: 4px;
@@ -581,9 +588,18 @@ export default function Home() {
         @media (max-width: 768px) {
           .lsb { display: none; }
           .lsb-mob-bar { display: flex; }
-          .hero-content { padding: 96px 24px 48px; }
+          .hero-banner { display: none; }
+          .hero-body { flex-direction: column; align-items: stretch; }
+          .hero-mob-grid {
+            display: block;
+            padding: 12px 20px 14px;
+            background: rgba(11,31,58,0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(201,168,76,0.12);
+          }
+          .hero-content { padding: 32px 24px 48px; }
           .hs-wrap { max-width: 100%; }
-          .lsb-logo-img { width: 70px; }
         }
         @media (max-width: 900px) {
           .section { padding: 72px 24px; }
@@ -643,7 +659,7 @@ export default function Home() {
         }
       `}</style>
 
-      {/* HERO — sidebar sits inside, scrolls away with the hero */}
+      {/* HERO — banner spans full width on desktop; mobile bar stacks on mobile */}
       <section className="hero">
         <Image
           src="/images/sunrise.jpg"
@@ -653,26 +669,52 @@ export default function Home() {
           className="hero-img"
         />
         <div className="hero-overlay" />
-        <HomeSidebar />
-        <div className="hero-content">
-          <p className="hero-eyebrow">Your relocation resource</p>
-          <div className="hero-status-row">
+
+        {/* Desktop top band: logo | live rate + city closure grid below */}
+        <div className="hero-banner">
+          <div className="hb-top-row">
+            <Link href="/" className="hb-logo-link">
+              <Image
+                src="/images/logo.png"
+                alt="Expat Compass PH"
+                width={120}
+                height={120}
+                className="hb-logo"
+                priority
+              />
+            </Link>
+            <span className="hb-sep" />
             <HeroRate />
-            <span className="hero-status-divider" />
+          </div>
+          <div className="hb-grid-row">
             <HeroHolidayGrid />
           </div>
-          <h1 className="hero-title">
-            Living in the Philippines,<br />done properly.
-          </h1>
-          <p className="hero-sub">
-            Clear, practical, up-to-date guidance on visas, housing,
-            healthcare, and daily life — for foreigners who want to do
-            it right.
-          </p>
-          <HeroSearch />
-          <div style={{marginTop:'20px', maxWidth:'520px', background:'rgba(11,31,58,0.72)', borderLeft:'3px solid #C9A84C', backdropFilter:'blur(12px)', WebkitBackdropFilter:'blur(12px)', padding:'18px 22px'}}>
-            <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>About Our AI Expat Advisor</p>
-            <p style={{fontSize:'0.82rem', fontWeight:300, lineHeight:1.75, color:'rgba(248,246,241,0.88)'}}>Our AI Expat Advisor is a custom tool built specifically for Philippines expat questions — not a generic AI search. It is updated continuously from real expat community questions, Philippine government agency announcements, and tracked policy changes in immigration, healthcare, banking, and daily life. It provides honest, current, directional guidance. Always verify immigration, legal, and financial decisions with qualified professionals.</p>
+        </div>
+
+        {/* Sidebar nav + content body */}
+        <div className="hero-body">
+          {/* Desktop nav sidebar + mobile bar (with compact rate) + slide drawer */}
+          <HomeSidebar mobileBarSlot={<HeroRate />} />
+
+          {/* Mobile only: city closure grid between bar and content */}
+          <div className="hero-mob-grid">
+            <HeroHolidayGrid />
+          </div>
+
+          <div className="hero-content">
+            <h1 className="hero-title">
+              Living in the Philippines,<br />done properly.
+            </h1>
+            <p className="hero-sub">
+              Clear, practical, up-to-date guidance on visas, housing,
+              healthcare, and daily life — for foreigners who want to do
+              it right.
+            </p>
+            <HeroSearch />
+            <div style={{marginTop:'20px', maxWidth:'520px', background:'rgba(11,31,58,0.72)', borderLeft:'3px solid #C9A84C', backdropFilter:'blur(12px)', WebkitBackdropFilter:'blur(12px)', padding:'18px 22px'}}>
+              <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>About Our AI Expat Advisor</p>
+              <p style={{fontSize:'0.82rem', fontWeight:300, lineHeight:1.75, color:'rgba(248,246,241,0.88)'}}>Our AI Expat Advisor is a custom tool built specifically for Philippines expat questions — not a generic AI search. It is updated continuously from real expat community questions, Philippine government agency announcements, and tracked policy changes in immigration, healthcare, banking, and daily life. It provides honest, current, directional guidance. Always verify immigration, legal, and financial decisions with qualified professionals.</p>
+            </div>
           </div>
         </div>
       </section>
