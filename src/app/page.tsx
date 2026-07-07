@@ -322,7 +322,7 @@ export default function Home() {
         }
         .hs-followup-prompt {
           font-size: 0.8rem; font-weight: 300;
-          color: rgba(248,246,241,0.78); margin-bottom: 12px; line-height: 1.5;
+          color: #F8F6F1; margin-bottom: 12px; line-height: 1.5;
         }
         .hs-followup-panel-label {
           font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em;

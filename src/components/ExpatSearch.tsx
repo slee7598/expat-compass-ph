@@ -384,7 +384,7 @@ export default function ExpatSearch() {
         .followup-prompt {
           font-size: 0.82rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.78);
+          color: #F8F6F1;
           margin-bottom: 16px;
           line-height: 1.5;
         }
