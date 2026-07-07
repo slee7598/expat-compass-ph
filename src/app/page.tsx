@@ -499,18 +499,20 @@ export default function Home() {
         .lsb-mob-bar {
           display: none;
           z-index: 20;
-          padding: 12px 20px;
+          padding: 10px 16px;
           align-items: center;
-          gap: 12px;
+          gap: 10px;
           flex-shrink: 0;
+          overflow: hidden;
         }
-        /* Compact rate display inside mobile bar */
-        .lsb-mob-bar .hrate-wrap { margin: 0 0 0 auto; }
+        /* Compact rate display inside mobile bar — no lines, no label */
+        .lsb-mob-bar .hrate-wrap { margin: 0 0 0 auto; flex-shrink: 0; }
         .lsb-mob-bar .hrate-label { display: none; }
         .lsb-mob-bar .hrate-line { display: none; }
-        .lsb-mob-bar .hrate-text { font-size: 0.82rem; }
-        .lsb-mob-bar .hrate-php { font-size: 1rem; }
-        .lsb-mob-bar .hrate-loading { font-size: 1rem; }
+        .lsb-mob-bar .hrate-row { gap: 0; }
+        .lsb-mob-bar .hrate-text { font-size: 0.78rem; white-space: nowrap; }
+        .lsb-mob-bar .hrate-php { font-size: 0.92rem; }
+        .lsb-mob-bar .hrate-loading { font-size: 0.92rem; }
 
         .lsb-mob-burger {
           background: none; border: none; cursor: pointer;
@@ -579,7 +581,7 @@ export default function Home() {
           .hero-body { flex-direction: column; align-items: stretch; }
           .hero-mob-grid {
             display: block;
-            padding: 8px 20px 12px;
+            padding: 6px 16px 10px;
           }
           .hero-content { padding: 32px 24px 48px; }
           .hs-wrap { max-width: 100%; }

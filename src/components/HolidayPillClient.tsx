@@ -33,11 +33,14 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
         }
         @media (max-width: 700px) {
           .hsg-grid {
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
           }
           .hsg-pill {
             width: 100%;
+            min-width: 0;
             justify-content: flex-start;
+            white-space: normal;
           }
         }
         .hsg-pill {
