@@ -553,6 +553,14 @@ export default function CostOfLivingPage() {
             <li className="cli">Comfortable (regular Grab) — 8,000 to 15,000 pesos per month.</li>
             <li className="cli">Steve&rsquo;s level (Grab and Maxim exclusively, occasional rentals) — included in his 20,000 peso bi-weekly discretionary cash withdrawal.</li>
           </ul>
+
+          <h3 className="csub">Motorcycle Ownership — Real Running Costs</h3>
+          <p className="cb">Honda ADV 160 motorcycle — annual registration approximately PHP 1,500 to 2,500, CTPL insurance approximately PHP 500 per year, fuel at current prices approximately PHP 200 to 300 per week for daily use. Total monthly motorcycle cost approximately PHP 1,200 to 1,800 versus PHP 3,000 to 6,000 per month in Grab fares for an active expat. Ownership pays for itself within 18 to 24 months for most expats who use transport daily.</p>
+
+          <div className="ca-gold">
+            <p className="ca-gold-label">Steve&rsquo;s Real Purchase — July 2026</p>
+            <p className="ca-gold-body-light">Steve purchased a 2024 Honda ADV 160 ABS Keyless in July 2026 for PHP 115,000 negotiated from PHP 120,000 plus PHP 13,000 attorney fee for a total of PHP 128,000 all-in. This represents the real market for a low-mileage 2024 ADV 160 in Cebu.</p>
+          </div>
         </div>
       </section>
 

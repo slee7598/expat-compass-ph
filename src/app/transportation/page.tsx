@@ -814,6 +814,29 @@ export default function TransportationPage() {
         </div>
       </section>
 
+      {/* STEVE'S NOTE — ADV 160 PURCHASE */}
+      <section className="sn-section">
+        <div className="sn-inner">
+          <div className="sn-header">
+            <div className="sn-monogram">S</div>
+            <div>
+              <p className="sn-name">Steve&rsquo;s Note &mdash; I Just Bought My First Philippine Vehicle</p>
+              <p className="sn-tag">REAL PURCHASE EXPERIENCE &middot; MACTAN ISLAND CEBU</p>
+            </div>
+          </div>
+          <div className="sn-rule" />
+          <div className="sn-body">
+            <p>I just bought my first vehicle in the Philippines and I want to share exactly what it cost and how the process worked so you have real numbers to plan with.</p>
+            <p>The bike: 2024 Honda ADV 160 ABS TCS Keyless — the top specification model with ABS brakes, traction control, and keyless ignition. 17,000 kilometers on the odometer. All original stock, engine never opened, complete OR/CR, 2027 registration already paid, original plates, no LTO violations or alarms.</p>
+            <p>The numbers: Listed at PHP 120,000. Negotiated to PHP 115,000. I hired a local attorney to handle the entire transaction — verifying the documents, closing the open deed of sale, handling the LTO transfer paperwork, and ensuring everything was done correctly. Attorney fee: PHP 13,000. Total all-in cost: PHP 128,000.</p>
+            <p>Why I used an attorney: The listing had an open deed of sale — a common but risky situation where the buyer information is left blank. An open deed creates legal uncertainty and the LTO does not accept them. My attorney closed the deed properly, verified the OR/CR numbers matched the physical bike, handled the PNP-HPG clearance, and filed all the LTO transfer paperwork within the required 20-working-day window. For PHP 13,000 I got complete peace of mind that the transfer was done correctly. I would do it again.</p>
+            <p>My attorney recommendation for Mactan Island expats: Atty. Al M. Limalima, Lawyer and Notary Public. Office on M.L. Quezon Highway, Lapu-Lapu City, in front of the Hall of Justice. Contact: 0977-849-7678 or 0922-820-0382. He handled my transaction efficiently and professionally.</p>
+            <p>The ride: The ADV 160 is everything expats say it is. Comfortable, powerful enough for Cebu roads, smooth on the Mactan highways, and practical for two-up riding. The keyless ignition and ABS are worth paying for. After spending years paying PHP 600 roundtrip for a dart tournament 10 minutes away by scooter, owning my own transportation feels like a genuine quality of life upgrade. No more waiting 30 minutes for a Grab driver. No more no change problem. No more surge pricing.</p>
+          </div>
+          <p className="sn-verified">LAST UPDATED JULY 2026 &middot; PUNTA ENGANO MACTAN ISLAND CEBU</p>
+        </div>
+      </section>
+
       {/* DRIVING IN THE PHILIPPINES */}
       <section className="section section-dark" id="driving-philippines">
         <div style={{maxWidth: '860px'}}>

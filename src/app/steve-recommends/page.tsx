@@ -41,6 +41,11 @@ const transport: RecItem[] = [
     name: "Maxim",
     body: "About half the price of Grab. My go-to when I’m not in a rush.",
   },
+  {
+    name: "Honda ADV 160 — The Expat Scooter of Choice in Cebu",
+    body: "I recently bought my first vehicle in the Philippines — a 2024 Honda ADV 160 ABS TCS Keyless — and it has immediately transformed daily life on Mactan Island. This is not a sponsored recommendation. It is what I personally bought with my own money after researching the market and talking to other expats. The ADV 160 is the gold standard for expat scooters in Cebu for good reason. Automatic transmission means anyone can ride it. The 160cc engine handles Cebu highways and Mactan roads with power to spare without being intimidating. ABS brakes are essential for safety in Philippine traffic — do not buy a bike without ABS. Traction control adds another safety layer in wet conditions during rainy season. The keyless ignition is a genuine daily convenience. Large underseat storage handles daily essentials. Comfortable two-person seating for riding with a partner. Fuel economy of approximately 35 to 45 kilometers per liter at current fuel prices makes it dramatically cheaper per kilometer than Grab. My purchase: PHP 115,000 for a 2024 model with 17,000 kilometers, negotiated from PHP 120,000. I used a local attorney to handle the transfer — PHP 13,000 well spent for complete peace of mind on the paperwork. Total all-in: PHP 128,000. New retail price is approximately PHP 155,000 to 165,000. Used 2023 and 2024 models in good condition typically run PHP 110,000 to 130,000 on Facebook Marketplace in Cebu. Attorney recommendation for the transfer process: Atty. Al M. Limalima, Lawyer and Notary Public, M.L. Quezon Highway Lapu-Lapu City in front of the Hall of Justice. Contact 0977-849-7678 or 0922-820-0382. He handled my purchase and transfer professionally.",
+    note: "Photo of Steve’s actual ADV 160 coming soon.",
+  },
 ];
 
 const food: RecItem[] = [
