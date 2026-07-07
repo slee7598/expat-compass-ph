@@ -403,7 +403,7 @@ export default function TransportationPage() {
           text-decoration: none;
         }
         .footer-logo span { color: #C9A84C; }
-        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
+        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.6); }
 
         /* ── STEVE'S NOTE ── */
         .sn-section {

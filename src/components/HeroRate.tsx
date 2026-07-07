@@ -81,7 +81,7 @@ export default function HeroRate() {
           font-weight: 500;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           margin-top: 8px;
           margin-left: 54px;
         }

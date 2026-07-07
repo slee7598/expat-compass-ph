@@ -174,7 +174,7 @@ export default function SteveRecommendsPage() {
           font-size: 0.75rem;
           font-weight: 500;
           letter-spacing: 0.04em;
-          color: rgba(248,246,241,0.6);
+          color: rgba(248,246,241,0.78);
           text-decoration: none;
           transition: color 0.2s;
         }
@@ -303,7 +303,7 @@ export default function SteveRecommendsPage() {
           letter-spacing: 0.02em;
         }
         .rec-light .rec-item-note { color: rgba(11,31,58,0.42); }
-        .rec-dark .rec-item-note { color: rgba(248,246,241,0.65); }
+        .rec-dark .rec-item-note { color: rgba(248,246,241,0.78); }
 
         /* ── NORDVPN FEATURED CARD ── */
         .nordvpn-card {
@@ -380,7 +380,7 @@ export default function SteveRecommendsPage() {
         .nordvpn-affiliate-note {
           font-size: 0.72rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           letter-spacing: 0.02em;
         }
 
@@ -419,7 +419,7 @@ export default function SteveRecommendsPage() {
         .rec-disclaimer p {
           font-size: 0.78rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           line-height: 1.7;
           max-width: 680px;
         }
@@ -444,7 +444,7 @@ export default function SteveRecommendsPage() {
         .footer-logo span { color: #C9A84C; }
         .footer-note {
           font-size: 0.75rem;
-          color: rgba(248,246,241,0.35);
+          color: rgba(248,246,241,0.6);
         }
 
         /* ── MOBILE ── */

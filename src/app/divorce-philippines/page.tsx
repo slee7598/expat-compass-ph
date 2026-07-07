@@ -174,7 +174,7 @@ export default function DivorcePhilippinesPage() {
         .footer { background: #0B1F3A; border-top: 1px solid rgba(248,246,241,0.08); padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; }
         .footer-logo { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: #F8F6F1; letter-spacing: 0.02em; text-decoration: none; }
         .footer-logo span { color: #C9A84C; }
-        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
+        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.6); }
 
         /* ── JUMP NAV ── */
         .cs-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
@@ -185,7 +185,7 @@ export default function DivorcePhilippinesPage() {
         .cs-city { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #F8F6F1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
         .cs-city::after { content: '→'; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #C9A84C; flex-shrink: 0; transition: transform 0.18s; }
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
-        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.5); }
+        .cs-tagline { font-size: 0.8rem; font-weight: 300; line-height: 1.55; color: rgba(248,246,241,0.72); }
 
         /* ── MOBILE ── */
         @media (max-width: 900px) {

@@ -100,7 +100,7 @@ export default function ExchangeRate() {
           margin-top: 10px;
           font-size: 0.72rem;
           font-weight: 400;
-          color: rgba(248,246,241,0.65);
+          color: rgba(248,246,241,0.78);
           letter-spacing: 0.04em;
         }
         @media (max-width: 900px) {

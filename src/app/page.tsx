@@ -408,12 +408,12 @@ export default function Home() {
         }
         .nl-error {
           font-size: 0.82rem;
-          color: rgba(248,246,241,0.5);
+          color: rgba(248,246,241,0.78);
           margin-top: 8px;
         }
         .nl-note {
           font-size: 0.72rem;
-          color: rgba(248,246,241,0.3);
+          color: rgba(248,246,241,0.6);
           margin-top: 12px;
         }
 
@@ -429,7 +429,7 @@ export default function Home() {
         .footer { background: #0B1F3A; border-top: 1px solid rgba(248,246,241,0.08); padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; }
         .footer-logo { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: #F8F6F1; letter-spacing: 0.02em; }
         .footer-logo span { color: #C9A84C; }
-        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
+        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.6); }
 
         /* ── MOBILE NAV BAR (hero page) ── */
         .lsb-mob-bar {
@@ -475,7 +475,7 @@ export default function Home() {
         .lsb-mob-close {
           align-self: flex-end;
           background: none; border: none;
-          color: rgba(248,246,241,0.45); font-size: 1.8rem;
+          color: rgba(248,246,241,0.72); font-size: 1.8rem;
           cursor: pointer; padding: 18px 20px 10px;
           transition: color 0.15s;
         }

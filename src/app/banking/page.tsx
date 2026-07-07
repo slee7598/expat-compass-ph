@@ -412,7 +412,7 @@ export default function BankingPage() {
           text-decoration: none;
         }
         .footer-logo span { color: #C9A84C; }
-        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.35); }
+        .footer-note { font-size: 0.75rem; color: rgba(248,246,241,0.6); }
 
         /* ── STEVE'S NOTE ── */
         .sn-section {
@@ -573,7 +573,7 @@ export default function BankingPage() {
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
         .cs-tagline {
           font-size: 0.8rem; font-weight: 300; line-height: 1.55;
-          color: rgba(248,246,241,0.5);
+          color: rgba(248,246,241,0.72);
         }
 
         /* ── MOBILE ── */

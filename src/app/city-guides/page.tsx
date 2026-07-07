@@ -272,7 +272,7 @@ export default function CityGuidesPage() {
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
         .cs-tagline {
           font-size: 0.8rem; font-weight: 300; line-height: 1.55;
-          color: rgba(248,246,241,0.5);
+          color: rgba(248,246,241,0.72);
         }
 
         /* ── MOBILE ── */
@@ -880,7 +880,7 @@ export default function CityGuidesPage() {
             <div>
               <p className="section-eyebrow section-eyebrow-light">Subic Bay &amp; Olongapo</p>
               <h2 className="section-heading section-heading-light">America&rsquo;s Footprint — A Unique Philippines Experience</h2>
-              <p className="section-tagline" style={{color:'rgba(248,246,241,0.6)'}}>The former US Naval Base and the expat community that never left</p>
+              <p className="section-tagline" style={{color:'rgba(248,246,241,0.78)'}}>The former US Naval Base and the expat community that never left</p>
               <div className="city-intro city-intro-light">
                 <p>Subic Bay and the adjacent Olongapo City occupy a unique place in Philippine expat life. This is where the US Naval Base Subic Bay operated until 1991 — one of the largest overseas US military installations in history. The American influence runs deep in the local culture, language, and community in ways you will not find anywhere else in the Philippines.</p>
                 <p>Taglish spoken locally is more English-influenced here than almost anywhere outside Metro Manila. The American Legion Post 4 in Olongapo is an active community hub. There are thousands of retired American veterans in the area who chose to stay close to where they once served.</p>

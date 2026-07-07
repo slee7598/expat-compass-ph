@@ -98,7 +98,7 @@ export default function VisasPage() {
         .vtable-light td.td-dim { color: rgba(11,31,58,0.4); background: rgba(11,31,58,0.02); }
         .vtable .td-good { color: #6FCF97; font-weight: 500; }
         .vtable .td-warn { color: #F2994A; font-weight: 500; }
-        .vtable .td-na { color: rgba(248,246,241,0.3); }
+        .vtable .td-na { color: rgba(248,246,241,0.6); }
         .vtable-light .td-good { color: #27AE60; }
         .vtable-light .td-na { color: rgba(11,31,58,0.25); }
 

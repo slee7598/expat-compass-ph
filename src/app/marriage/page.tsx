@@ -435,7 +435,7 @@ export default function MarriagePage() {
         .footer-logo span { color: #C9A84C; }
         .footer-note {
           font-size: 0.75rem;
-          color: rgba(248,246,241,0.35);
+          color: rgba(248,246,241,0.6);
         }
 
         /* ── STEVE'S NOTE ── */
@@ -529,7 +529,7 @@ export default function MarriagePage() {
           font-weight: 700;
           letter-spacing: 0.12em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.35);
+          color: rgba(248,246,241,0.6);
           margin: 40px 0 16px;
           padding-bottom: 10px;
           border-bottom: 1px solid rgba(201,168,76,0.15);
@@ -797,7 +797,7 @@ export default function MarriagePage() {
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
         .cs-tagline {
           font-size: 0.8rem; font-weight: 300; line-height: 1.55;
-          color: rgba(248,246,241,0.5);
+          color: rgba(248,246,241,0.72);
         }
 
         /* ── MOBILE ── */

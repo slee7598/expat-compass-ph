@@ -57,7 +57,7 @@ export default function AboutPage() {
           font-size: 0.75rem;
           font-weight: 500;
           letter-spacing: 0.04em;
-          color: rgba(248,246,241,0.6);
+          color: rgba(248,246,241,0.78);
           text-decoration: none;
           transition: color 0.2s;
         }
@@ -216,7 +216,7 @@ export default function AboutPage() {
         .footer-logo span { color: #C9A84C; }
         .footer-note {
           font-size: 0.75rem;
-          color: rgba(248,246,241,0.35);
+          color: rgba(248,246,241,0.6);
         }
 
         /* ── PHOTO SECTIONS ── */
@@ -251,7 +251,7 @@ export default function AboutPage() {
           font-size: 0.72rem;
           font-weight: 400;
           letter-spacing: 0.06em;
-          color: rgba(248,246,241,0.35);
+          color: rgba(248,246,241,0.6);
           line-height: 1;
           text-align: center;
         }
