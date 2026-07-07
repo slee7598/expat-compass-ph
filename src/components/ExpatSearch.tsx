@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, FormEvent } from "react";
+import { renderMarkdown } from "@/lib/renderMarkdown";
 
 const SUGGESTIONS = [
   "What visa do I need to retire here?",
@@ -229,6 +230,45 @@ export default function ExpatSearch() {
         .answer-text li {
           margin-bottom: 6px;
         }
+
+        /* ── MARKDOWN RENDERED MODE ── */
+        .answer-text-md { white-space: normal; }
+        .answer-text-md p { margin-bottom: 12px; line-height: 1.85; }
+        .answer-text-md p:last-child { margin-bottom: 0; }
+        .answer-text-md h2 {
+          font-family: 'Playfair Display', serif;
+          font-size: 1.05rem; font-weight: 700; color: #0B1F3A;
+          margin: 20px 0 10px;
+          padding-bottom: 6px;
+          border-bottom: 1px solid rgba(201,168,76,0.3);
+        }
+        .answer-text-md h3 {
+          font-family: 'Playfair Display', serif;
+          font-size: 0.95rem; font-weight: 700; color: #0B1F3A;
+          margin: 16px 0 8px;
+        }
+        .answer-text-md hr { border: none; border-top: 1px solid rgba(201,168,76,0.35); margin: 18px 0; }
+        .answer-text-md ul { margin: 10px 0 12px 18px; list-style: disc; }
+        .answer-text-md ol { margin: 10px 0 12px 18px; list-style: decimal; }
+        .answer-text-md li { margin-bottom: 5px; line-height: 1.72; }
+        .answer-text-md strong { font-weight: 600; color: #0B1F3A; }
+        .answer-text-md code { background: rgba(11,31,58,0.07); padding: 1px 5px; border-radius: 2px; font-size: 0.87em; font-family: 'Courier New', monospace; }
+        .md-table-wrap { overflow-x: auto; margin: 14px 0; }
+        .md-table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+        .md-table-wrap th {
+          background: #0B1F3A; color: #F8F6F1;
+          padding: 9px 14px; text-align: left;
+          font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em;
+          text-transform: uppercase; white-space: nowrap;
+        }
+        .md-table-wrap td {
+          padding: 9px 14px;
+          border-bottom: 1px solid rgba(11,31,58,0.07);
+          color: #2A3A4A; vertical-align: top; line-height: 1.6;
+        }
+        .md-table-wrap tr:last-child td { border-bottom: none; }
+        .md-table-wrap tr:nth-child(even) td { background: rgba(11,31,58,0.03); }
+
         .answer-cursor {
           display: inline-block;
           width: 2px;
@@ -367,10 +407,17 @@ export default function ExpatSearch() {
             return (
               <div className="answer-panel">
                 <p className="answer-question">{asked}</p>
-                <div className="answer-text">
-                  {main}
-                  {loading && <span className="answer-cursor" />}
-                </div>
+                {loading ? (
+                  <div className="answer-text">
+                    {answer}
+                    <span className="answer-cursor" />
+                  </div>
+                ) : (
+                  <div
+                    className="answer-text answer-text-md"
+                    dangerouslySetInnerHTML={{ __html: renderMarkdown(main) }}
+                  />
+                )}
                 {!loading && followUp && (
                   <div className="answer-followup">
                     <p className="answer-followup-label">You might also ask</p>

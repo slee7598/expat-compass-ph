@@ -290,6 +290,23 @@ export default function Home() {
         .hs-answer-text { font-size: 0.9rem; font-weight: 300; line-height: 1.8; color: #1A2D42; white-space: pre-wrap; }
         .hs-cursor { display: inline-block; width: 2px; height: 0.9em; background: #C9A84C; vertical-align: text-bottom; margin-left: 2px; animation: hsBlink 0.8s step-end infinite; }
         @keyframes hsBlink { 50% { opacity: 0; } }
+        .hs-answer-text-md { white-space: normal; }
+        .hs-answer-text-md p { margin-bottom: 10px; line-height: 1.8; }
+        .hs-answer-text-md p:last-child { margin-bottom: 0; }
+        .hs-answer-text-md h2 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #0B1F3A; margin: 16px 0 8px; padding-bottom: 5px; border-bottom: 1px solid rgba(201,168,76,0.3); }
+        .hs-answer-text-md h3 { font-family: 'Playfair Display', serif; font-size: 0.92rem; font-weight: 700; color: #0B1F3A; margin: 12px 0 6px; }
+        .hs-answer-text-md hr { border: none; border-top: 1px solid rgba(201,168,76,0.35); margin: 14px 0; }
+        .hs-answer-text-md ul { margin: 8px 0 10px 16px; list-style: disc; }
+        .hs-answer-text-md ol { margin: 8px 0 10px 16px; list-style: decimal; }
+        .hs-answer-text-md li { margin-bottom: 4px; line-height: 1.65; }
+        .hs-answer-text-md strong { font-weight: 600; color: #0B1F3A; }
+        .hs-answer-text-md code { background: rgba(11,31,58,0.07); padding: 1px 4px; border-radius: 2px; font-size: 0.85em; font-family: 'Courier New', monospace; }
+        .hs-answer-text-md .md-table-wrap { overflow-x: auto; margin: 10px 0; }
+        .hs-answer-text-md .md-table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        .hs-answer-text-md .md-table-wrap th { background: #0B1F3A; color: #F8F6F1; padding: 7px 12px; text-align: left; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }
+        .hs-answer-text-md .md-table-wrap td { padding: 7px 12px; border-bottom: 1px solid rgba(11,31,58,0.07); color: #1A2D42; vertical-align: top; line-height: 1.55; }
+        .hs-answer-text-md .md-table-wrap tr:last-child td { border-bottom: none; }
+        .hs-answer-text-md .md-table-wrap tr:nth-child(even) td { background: rgba(11,31,58,0.03); }
         .hs-followup { margin-top: 16px; border-top: 1px solid rgba(201,168,76,0.35); background: rgba(201,168,76,0.05); padding: 12px 16px; }
         .hs-followup-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
         .hs-followup-text { font-size: 0.88rem; font-weight: 400; line-height: 1.65; color: #1A2D42; }

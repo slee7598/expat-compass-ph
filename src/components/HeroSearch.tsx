@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, FormEvent } from "react";
+import { renderMarkdown } from "@/lib/renderMarkdown";
 
 const EXAMPLE_QUESTIONS = [
   "What does a tourist visa extension really cost at the BI office?",
@@ -140,10 +141,17 @@ export default function HeroSearch() {
         return (
           <div className="hs-answer">
             <p className="hs-answer-q">{asked}</p>
-            <div className="hs-answer-text">
-              {main}
-              {loading && <span className="hs-cursor" />}
-            </div>
+            {loading ? (
+              <div className="hs-answer-text">
+                {answer}
+                <span className="hs-cursor" />
+              </div>
+            ) : (
+              <div
+                className="hs-answer-text hs-answer-text-md"
+                dangerouslySetInnerHTML={{ __html: renderMarkdown(main) }}
+              />
+            )}
             {!loading && followUp && (
               <div className="hs-followup">
                 <p className="hs-followup-label">You might also ask</p>
