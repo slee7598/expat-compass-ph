@@ -12,11 +12,13 @@ const SUGGESTIONS = [
 ];
 
 function parseFollowUp(text: string): { main: string; followUp: string } {
-  const trimmed = text.trimEnd();
-  const blocks = trimmed.split(/\n\n+/);
-  const last = (blocks[blocks.length - 1] ?? "").trim();
-  if (blocks.length > 1 && last.endsWith("?")) {
-    return { main: blocks.slice(0, -1).join("\n\n"), followUp: last };
+  const marker = "FOLLOWUP:";
+  const idx = text.lastIndexOf(marker);
+  if (idx !== -1) {
+    return {
+      main: text.slice(0, idx).trimEnd(),
+      followUp: text.slice(idx + marker.length).trim(),
+    };
   }
   return { main: text, followUp: "" };
 }
