@@ -383,9 +383,10 @@ export default function ExpatSearch() {
         }
         .followup-prompt {
           font-size: 0.82rem;
-          font-weight: 300;
-          color: #F8F6F1;
-          margin-bottom: 16px;
+          font-weight: 400;
+          color: #C9A84C;
+          margin-top: 20px;
+          margin-bottom: 0;
           line-height: 1.5;
         }
         .followup-panel-label {
@@ -521,6 +522,9 @@ export default function ExpatSearch() {
                   dangerouslySetInnerHTML={{ __html: renderMarkdown(parsedAnswer.main) }}
                 />
               )}
+              {!loading && (
+                <p className="followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
+              )}
               {!loading && parsedAnswer.followUp && (
                 <div className="answer-followup">
                   <p className="answer-followup-label">You might also ask</p>
@@ -537,7 +541,6 @@ export default function ExpatSearch() {
 
           {answer && !loading && (
             <div className="followup-panel">
-              <p className="followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
               <p className="followup-panel-label">Follow Up</p>
               <form className="followup-form" onSubmit={handleFollowUp}>
                 <input

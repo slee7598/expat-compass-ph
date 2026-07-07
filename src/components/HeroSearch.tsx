@@ -177,6 +177,9 @@ export default function HeroSearch() {
               dangerouslySetInnerHTML={{ __html: renderMarkdown(parsedAnswer.main) }}
             />
           )}
+          {!loading && (
+            <p className="hs-followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
+          )}
           {!loading && parsedAnswer.followUp && (
             <div className="hs-followup">
               <p className="hs-followup-label">You might also ask</p>
@@ -193,7 +196,6 @@ export default function HeroSearch() {
 
       {answer && !loading && (
         <div className="hs-followup-panel">
-          <p className="hs-followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
           <p className="hs-followup-panel-label">Follow Up</p>
           <form className="hs-followup-panel-form" onSubmit={onFollowUpSubmit}>
             <input
