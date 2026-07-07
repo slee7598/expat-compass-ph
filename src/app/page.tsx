@@ -198,7 +198,7 @@ export default function Home() {
         .hero-body {
           flex: 1;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           position: relative;
           min-height: 0;
         }
