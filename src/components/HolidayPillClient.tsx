@@ -33,15 +33,31 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
         }
         @media (max-width: 700px) {
           .hsg-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2px;
             width: 100%;
           }
+          /* Reflow single-line pill into 2 rows: [● city] / [OPEN] */
           .hsg-pill {
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 0 2px;
+            padding: 3px 4px;
             width: 100%;
             min-width: 0;
-            justify-content: flex-start;
             white-space: normal;
           }
+          .hsg-dot { font-size: 0.32rem; flex-shrink: 0; }
+          .hsg-city {
+            font-size: 0.5rem;
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .hsg-sep { display: none; }
+          .hsg-status { width: 100%; font-size: 0.44rem; letter-spacing: 0.06em; }
         }
         .hsg-pill {
           display: inline-flex;

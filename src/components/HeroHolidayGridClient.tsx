@@ -61,16 +61,18 @@ export function HeroHolidayGridClient({
           margin-left: 38px; /* 24px line + 14px gap */
           margin-bottom: 14px;
         }
-        /* 5×2 pill grid on desktop, 2×5 on mobile */
+        /* 5×2 pill grid — desktop auto-sized, mobile 1fr columns */
         .hhg-grid {
           display: grid;
           grid-template-columns: repeat(5, auto);
           gap: 5px;
         }
         @media (max-width: 700px) {
-          .hhg-grid { grid-template-columns: repeat(2, 1fr); width: 100%; }
-          .hhg-pill { min-width: 0; width: 100%; }
-          .hhg-city { white-space: normal; }
+          .hhg-grid { grid-template-columns: repeat(5, 1fr); gap: 2px; width: 100%; }
+          .hhg-pill { min-width: 0; width: 100%; padding: 4px 3px 5px; gap: 2px; }
+          .hhg-city { font-size: 0.55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; }
+          .hhg-status { font-size: 0.44rem; }
+          .hhg-dot { font-size: 0.32rem; }
         }
         .hhg-pill {
           display: flex;
