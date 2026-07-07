@@ -126,11 +126,13 @@ export default function Home() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
-        /* ── SIDEBAR — desktop nav links; logo sits in hero-banner ── */
+        /* ── SIDEBAR — absolute within .hero so nav starts under the logo ── */
         .lsb {
+          position: absolute;
+          top: 96px;
+          left: 0;
+          bottom: 0;
           width: 200px;
-          flex-shrink: 0;
-          align-self: stretch;
           z-index: 10;
           display: flex;
           flex-direction: column;
@@ -203,8 +205,7 @@ export default function Home() {
           min-height: 0;
         }
 
-        /* ── MOBILE RATE + CITY GRID (hidden on desktop) ── */
-        .hero-mob-rate { display: none; }
+        /* ── MOBILE CITY GRID (shown below mob-bar; hidden on desktop) ── */
         .hero-mob-grid { display: none; }
 
         /* ── HERO ── */
@@ -231,7 +232,7 @@ export default function Home() {
           position: relative;
           z-index: 2;
           flex: 1;
-          padding: 60px 64px 72px 60px;
+          padding: 40px 64px 72px 260px;
         }
         .hero-title {
           font-family: 'Playfair Display', serif;
@@ -506,7 +507,16 @@ export default function Home() {
           flex-shrink: 0;
           overflow: hidden;
         }
-.lsb-mob-burger {
+        /* Rate in mobile bar — enlarged, centered in remaining space */
+        .lsb-mob-bar .hrate-wrap { margin: 0; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .lsb-mob-bar .hrate-label { display: none; }
+        .lsb-mob-bar .hrate-line { display: none; }
+        .lsb-mob-bar .hrate-row { gap: 4px; justify-content: center; }
+        .lsb-mob-bar .hrate-text { font-size: 1.0rem; white-space: nowrap; }
+        .lsb-mob-bar .hrate-php { font-size: 1.3rem; }
+        .lsb-mob-bar .hrate-loading { font-size: 1.3rem; }
+
+        .lsb-mob-burger {
           background: none; border: none; cursor: pointer;
           padding: 4px;
           display: flex; flex-direction: column; gap: 5px;
@@ -571,30 +581,6 @@ export default function Home() {
           .lsb-mob-bar { display: flex; }
           .hero-banner { display: none; }
           .hero-body { flex-direction: column; align-items: stretch; }
-          /* Live rate — prominent centered row between bar and office grid */
-          .hero-mob-rate {
-            display: flex;
-            justify-content: center;
-            padding: 12px 16px 6px;
-            flex-shrink: 0;
-          }
-          .hero-mob-rate .hrate-wrap {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-          .hero-mob-rate .hrate-row { justify-content: center; gap: 16px; }
-          .hero-mob-rate .hrate-text { font-size: 1.25rem; }
-          .hero-mob-rate .hrate-php { font-size: 1.85rem; }
-          .hero-mob-rate .hrate-loading { font-size: 1.85rem; }
-          .hero-mob-rate .hrate-label {
-            margin-left: 0;
-            margin-top: 6px;
-            font-size: 0.68rem;
-            letter-spacing: 0.22em;
-            color: rgba(248,246,241,0.82);
-          }
           .hero-mob-grid {
             display: block;
             padding: 6px 16px 10px;
@@ -691,15 +677,10 @@ export default function Home() {
 
         {/* Sidebar nav + content body */}
         <div className="hero-body">
-          {/* Desktop nav sidebar + mobile bar (burger + logo) + slide drawer */}
-          <HomeSidebar />
+          {/* Desktop sidebar (absolute) + mobile bar (burger | logo | rate) + drawer */}
+          <HomeSidebar mobileBarSlot={<HeroRate />} />
 
-          {/* Mobile only: live rate widget — large, centered, below the bar */}
-          <div className="hero-mob-rate">
-            <HeroRate />
-          </div>
-
-          {/* Mobile only: city closure grid below rate widget */}
+          {/* Mobile only: city closure grid below mobile bar */}
           <div className="hero-mob-grid">
             <HeroHolidayGrid />
           </div>
