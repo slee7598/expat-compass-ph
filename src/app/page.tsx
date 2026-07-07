@@ -321,8 +321,8 @@ export default function Home() {
           animation: hsFade 0.25s ease;
         }
         .hs-followup-prompt {
-          font-size: 0.8rem; font-weight: 400;
-          color: #C9A84C; margin-top: 16px; margin-bottom: 0; line-height: 1.5;
+          font-size: 0.8rem; font-weight: 700;
+          color: #1A1A1A; margin-top: 16px; margin-bottom: 0; line-height: 1.5;
         }
         .hs-followup-panel-label {
           font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em;

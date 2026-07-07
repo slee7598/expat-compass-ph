@@ -178,7 +178,7 @@ export default function HeroSearch() {
             />
           )}
           {!loading && (
-            <p className="hs-followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
+            <p className="hs-followup-prompt">↓ Want to dig deeper? Enter a follow-up question below. ↓</p>
           )}
           {!loading && parsedAnswer.followUp && (
             <div className="hs-followup">

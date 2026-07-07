@@ -383,8 +383,8 @@ export default function ExpatSearch() {
         }
         .followup-prompt {
           font-size: 0.82rem;
-          font-weight: 400;
-          color: #C9A84C;
+          font-weight: 700;
+          color: #1A1A1A;
           margin-top: 20px;
           margin-bottom: 0;
           line-height: 1.5;
@@ -523,7 +523,7 @@ export default function ExpatSearch() {
                 />
               )}
               {!loading && (
-                <p className="followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
+                <p className="followup-prompt">↓ Want to dig deeper? Enter a follow-up question below. ↓</p>
               )}
               {!loading && parsedAnswer.followUp && (
                 <div className="answer-followup">
