@@ -1100,6 +1100,69 @@ export default function CityGuidesPage() {
               <strong style={{color:'#C9A84C'}}>Eidul Fitr and Eidul Adha</strong> — exact 2026 dates are TBA pending official Islamic calendar determination and a subsequent Presidential Proclamation. Check the Official Gazette of the Philippines for the announcement.
             </p>
           </div>
+
+          {/* ── LOCAL & PROVINCIAL HOLIDAYS ── */}
+          <div style={{marginTop:'48px'}}>
+            <p className="section-eyebrow section-eyebrow-light" style={{marginBottom:'6px'}}>City & Provincial Proclamations</p>
+            <h3 style={{fontFamily:"'Playfair Display', serif", fontSize:'1.3rem', fontWeight:700, color:'#F8F6F1', marginBottom:'10px'}}>
+              Local &amp; Provincial Holidays 2026
+            </h3>
+            <p style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.8, color:'rgba(248,246,241,0.78)', marginBottom:'24px', maxWidth:'760px'}}>
+              In addition to national holidays, individual cities and provinces observe non-working days for their own charter anniversaries and local festivals. These apply only within that city or municipality. Dates are subject to annual local proclamation — verify with the relevant local government unit (LGU) before making plans.
+            </p>
+
+            <div style={{overflowX:'auto', maxWidth:'860px'}}>
+              <table style={{width:'100%', borderCollapse:'collapse', fontSize:'0.87rem'}}>
+                <thead>
+                  <tr>
+                    <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 16px', textAlign:'left', fontSize:'0.65rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase', whiteSpace:'nowrap'}}>City / Area</th>
+                    <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 16px', textAlign:'left', fontSize:'0.65rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase', whiteSpace:'nowrap'}}>Date</th>
+                    <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 16px', textAlign:'left', fontSize:'0.65rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase'}}>Holiday</th>
+                    <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 16px', textAlign:'left', fontSize:'0.65rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase'}}>Source</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { city:"Manila",        date:"Jun 24", name:"Araw ng Maynila (Manila Day)", source:"Proc. No. 1320", type:"special" },
+                    { city:"Cebu City",     date:"Jan 18", name:"Sinulog Sunday",                source:"Annual local proc.", type:"special" },
+                    { city:"Cebu City",     date:"Feb 24", name:"Cebu City Charter Day",         source:"Annual local proc.", type:"regular" },
+                    { city:"Lapu-Lapu City", date:"Apr 27", name:"Lapu-Lapu City Charter Day",  source:"Annual local proc.", type:"regular" },
+                    { city:"Mandaue City (Cebu Prov.)", date:"Jun 21", name:"Mandaue City Charter Day", source:"Annual local proc.", type:"regular" },
+                    { city:"Baguio City",   date:"Sep 1",  name:"Baguio City Charter Day",       source:"Annual local proc.", type:"regular" },
+                    { city:"Davao City",    date:"Oct 16", name:"Araw ng Davao (Charter Day)",   source:"Annual local proc.", type:"regular" },
+                    { city:"Iloilo City",   date:"Jan 25", name:"Dinagyang Sunday",              source:"Annual local proc.", type:"special" },
+                    { city:"Olongapo City / Subic", date:"Jun 1", name:"Olongapo City Charter Day", source:"Annual local proc.", type:"regular" },
+                  ].map((row, i) => {
+                    const typePill = row.type === "regular"
+                      ? { label:"Regular Holiday",      bg:"#0B1F3A", border:"rgba(248,246,241,0.25)", color:"#F8F6F1" }
+                      : { label:"Special Non-Working",  bg:"rgba(201,168,76,0.15)", border:"#C9A84C", color:"#C9A84C" };
+                    const rowBg = i % 2 === 0 ? "rgba(248,246,241,0.03)" : "transparent";
+                    return (
+                      <tr key={`${row.city}-${row.date}`} style={{background:rowBg}}>
+                        <td style={{padding:'11px 16px', borderBottom:'1px solid rgba(248,246,241,0.07)', color:'#F8F6F1', fontWeight:600, whiteSpace:'nowrap', verticalAlign:'top'}}>{row.city}</td>
+                        <td style={{padding:'11px 16px', borderBottom:'1px solid rgba(248,246,241,0.07)', color:'#F8F6F1', fontWeight:600, whiteSpace:'nowrap', verticalAlign:'top'}}>{row.date}</td>
+                        <td style={{padding:'11px 16px', borderBottom:'1px solid rgba(248,246,241,0.07)', color:'#F8F6F1', verticalAlign:'top', lineHeight:1.55}}>{row.name}</td>
+                        <td style={{padding:'11px 16px', borderBottom:'1px solid rgba(248,246,241,0.07)', verticalAlign:'top'}}>
+                          <span style={{display:'inline-block', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', background:typePill.bg, border:`1px solid ${typePill.border}`, color:typePill.color, padding:'3px 8px', whiteSpace:'nowrap', marginBottom:'4px'}}>{typePill.label}</span>
+                          <br />
+                          <span style={{fontSize:'0.6rem', color:'rgba(248,246,241,0.60)', letterSpacing:'0.04em'}}>{row.source}</span>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Severe weather advisory */}
+            <div className="city-alert" style={{maxWidth:'860px', marginTop:'24px', borderLeftColor:'rgba(201,168,76,0.45)'}}>
+              <p className="city-alert-label" style={{color:'#C9A84C'}}>⚠ Severe Weather Advisory</p>
+              <p className="city-alert-body" style={{color:'rgba(248,246,241,0.78)'}}>
+                <strong style={{color:'#C9A84C'}}>Typhoons, flooding, and other severe weather events</strong> can cause temporary unplanned closure of government offices, Bureau of Immigration branches, courts, and banks — even outside declared national or local holidays. This is most common during typhoon season (June to November), especially in Metro Manila and coastal cities. Always confirm appointment availability directly with the relevant office before traveling during storm season, particularly if PAGASA has issued a storm signal for your area. Signal 2 or higher typically results in government work/school suspension in the affected region.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 

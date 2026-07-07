@@ -59,6 +59,10 @@ export const LOCAL_HOLIDAYS_2026: Record<string, Holiday[]> = {
   "olongapo": [
     { date: "2026-06-01", name: "Olongapo City Charter Day", type: "regular" },
   ],
+  "manila": [
+    { date: "2026-06-24", name: "Araw ng Maynila (Manila Day)", type: "special",
+      note: "Proclamation No. 1320 — City of Manila only; other cities/provinces unaffected" },
+  ],
   // Dumaguete: no distinct local holiday identified for 2026; follows national calendar
 };
 
@@ -72,6 +76,7 @@ export const JURISDICTIONS: { id: string; name: string }[] = [
   { id: "iloilo",       name: "Iloilo" },
   { id: "olongapo",     name: "Olongapo / Subic" },
   { id: "dumaguete",    name: "Dumaguete" },
+  { id: "manila",       name: "Manila" },
 ];
 
 // Returns the current date in Asia/Manila time (UTC+8, no DST).

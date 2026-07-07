@@ -25,10 +25,20 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
         .hsg-wrap {
           margin-top: 28px;
         }
+        /* 5×2 pill grid on desktop, single stacked column on mobile */
         .hsg-grid {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: repeat(5, auto);
           gap: 5px;
+        }
+        @media (max-width: 700px) {
+          .hsg-grid {
+            grid-template-columns: 1fr;
+          }
+          .hsg-pill {
+            width: 100%;
+            justify-content: flex-start;
+          }
         }
         .hsg-pill {
           display: inline-flex;
@@ -70,7 +80,7 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
           line-height: 1;
           flex-shrink: 0;
         }
-        .hsg-dot-open  { color: #4ADE80; }
+        .hsg-dot-open   { color: #4ADE80; }
         .hsg-dot-closed { color: #F87171; }
         .hsg-city { color: #F8F6F1; }
         .hsg-sep {
@@ -99,9 +109,27 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
         }
         .hsg-info-city { font-weight: 600; }
         .hsg-info-name { font-style: italic; }
+        /* Severe weather advisory */
+        .hsg-advisory {
+          margin-top: 9px;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.6rem;
+          font-weight: 400;
+          color: rgba(201,168,76,0.78);
+          line-height: 1.6;
+          max-width: 520px;
+        }
+        .hsg-advisory-label {
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          font-size: 0.55rem;
+          color: #C9A84C;
+          margin-right: 4px;
+        }
         .hsg-link {
           display: block;
-          margin-top: 10px;
+          margin-top: 9px;
           font-family: 'Inter', sans-serif;
           font-size: 0.62rem;
           font-weight: 500;
@@ -139,6 +167,12 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
             <span className="hsg-info-name">{activePill.holidayName}</span>
           </p>
         )}
+
+        {/* Severe weather advisory */}
+        <p className="hsg-advisory">
+          <span className="hsg-advisory-label">⚠ Weather:</span>
+          Typhoons &amp; flooding may cause additional local office closures not reflected above — always verify locally before traveling for appointments.
+        </p>
 
         <a href="/city-guides#2026-holidays" className="hsg-link">
           View full 2026 holiday schedule →
