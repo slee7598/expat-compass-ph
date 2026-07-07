@@ -30,9 +30,11 @@ export default function ExpatSearch() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [asked, setAsked] = useState("");
+  const [history, setHistory] = useState<Array<{ question: string; answer: string }>>([]);
+  const [followUpQuery, setFollowUpQuery] = useState("");
   const abortRef = useRef<AbortController | null>(null);
 
-  async function handleSearch(q: string) {
+  async function handleSearch(q: string, hist: Array<{ question: string; answer: string }> = []) {
     const trimmed = q.trim();
     if (!trimmed || loading) return;
 
@@ -48,7 +50,7 @@ export default function ExpatSearch() {
       const res = await fetch("/api/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: trimmed }),
+        body: JSON.stringify({ query: trimmed, history: hist }),
         signal: abortRef.current.signal,
       });
 
@@ -78,13 +80,33 @@ export default function ExpatSearch() {
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    handleSearch(query);
+    setHistory([]);
+    setFollowUpQuery("");
+    handleSearch(query, []);
   }
 
   function handleSuggestion(s: string) {
     setQuery(s);
-    handleSearch(s);
+    setHistory([]);
+    setFollowUpQuery("");
+    handleSearch(s, []);
   }
+
+  function handleFollowUp(e: FormEvent) {
+    e.preventDefault();
+    const q = followUpQuery.trim();
+    if (!q || loading) return;
+    const newHistory = answer
+      ? [...history, { question: asked, answer: parseFollowUp(answer).main }]
+      : history;
+    setHistory(newHistory);
+    setFollowUpQuery("");
+    handleSearch(q, newHistory);
+  }
+
+  const parsedAnswer = !loading && answer
+    ? parseFollowUp(answer)
+    : { main: answer, followUp: "" };
 
   return (
     <>
@@ -208,6 +230,18 @@ export default function ExpatSearch() {
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(6px); }
           to   { opacity: 1; transform: translateY(0); }
+        }
+        .conv-badge {
+          display: inline-block;
+          font-size: 0.62rem;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          background: rgba(201,168,76,0.08);
+          border: 1px solid rgba(201,168,76,0.25);
+          padding: 3px 10px;
+          margin-bottom: 12px;
         }
         .answer-question {
           font-size: 0.72rem;
@@ -340,11 +374,70 @@ export default function ExpatSearch() {
           40% { opacity: 1; transform: scale(1); }
         }
 
+        /* ── FOLLOW-UP INPUT PANEL ── */
+        .followup-panel {
+          background: #0B1F3A;
+          border-left: 3px solid #C9A84C;
+          padding: 28px 40px;
+          animation: fadeIn 0.3s ease;
+        }
+        .followup-panel-label {
+          font-size: 0.65rem;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          margin-bottom: 14px;
+        }
+        .followup-form {
+          display: flex;
+          gap: 0;
+        }
+        .followup-input {
+          flex: 1;
+          padding: 16px 20px;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.92rem;
+          font-weight: 400;
+          color: #0B1F3A;
+          background: #F8F6F1;
+          border: none;
+          outline: none;
+          min-width: 0;
+        }
+        .followup-input::placeholder { color: #9AAABB; }
+        .followup-btn {
+          padding: 16px 28px;
+          background: #C9A84C;
+          color: #0B1F3A;
+          font-family: 'Inter', sans-serif;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+          white-space: nowrap;
+          flex-shrink: 0;
+          transition: background 0.2s;
+        }
+        .followup-btn:hover:not(:disabled) { background: #b8943e; }
+        .followup-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .followup-conv-note {
+          margin-top: 10px;
+          font-size: 0.68rem;
+          color: rgba(248,246,241,0.60);
+          font-weight: 400;
+        }
+
         @media (max-width: 900px) {
           .search-section { padding: 64px 24px; }
           .search-form { flex-direction: column; }
           .search-btn { padding: 16px 24px; }
           .answer-panel { padding: 28px 24px; }
+          .followup-panel { padding: 22px 24px; }
+          .followup-form { flex-direction: column; }
+          .followup-btn { padding: 14px 20px; }
         }
       `}</style>
 
@@ -402,36 +495,67 @@ export default function ExpatSearch() {
             <div className="answer-error">{error}</div>
           )}
 
-          {(answer || (loading && answer)) && (() => {
-            const { main, followUp } = !loading ? parseFollowUp(answer) : { main: answer, followUp: "" };
-            return (
-              <div className="answer-panel">
-                <p className="answer-question">{asked}</p>
-                {loading ? (
-                  <div className="answer-text">
-                    {answer}
-                    <span className="answer-cursor" />
-                  </div>
-                ) : (
-                  <div
-                    className="answer-text answer-text-md"
-                    dangerouslySetInnerHTML={{ __html: renderMarkdown(main) }}
-                  />
-                )}
-                {!loading && followUp && (
-                  <div className="answer-followup">
-                    <p className="answer-followup-label">You might also ask</p>
-                    <p className="answer-followup-text">{followUp}</p>
-                  </div>
-                )}
-                {!loading && (
-                  <p className="answer-footer">
-                    Powered by Claude · For informational purposes only · Always verify with official sources
-                  </p>
-                )}
-              </div>
-            );
-          })()}
+          {(answer || (loading && answer)) && (
+            <div className="answer-panel">
+              {history.length > 0 && !loading && (
+                <p className="conv-badge">
+                  Continuing conversation · {history.length} {history.length === 1 ? "exchange" : "exchanges"}
+                </p>
+              )}
+              <p className="answer-question">{asked}</p>
+              {loading ? (
+                <div className="answer-text">
+                  {answer}
+                  <span className="answer-cursor" />
+                </div>
+              ) : (
+                <div
+                  className="answer-text answer-text-md"
+                  dangerouslySetInnerHTML={{ __html: renderMarkdown(parsedAnswer.main) }}
+                />
+              )}
+              {!loading && parsedAnswer.followUp && (
+                <div className="answer-followup">
+                  <p className="answer-followup-label">You might also ask</p>
+                  <p className="answer-followup-text">{parsedAnswer.followUp}</p>
+                </div>
+              )}
+              {!loading && (
+                <p className="answer-footer">
+                  Powered by Claude · For informational purposes only · Always verify with official sources
+                </p>
+              )}
+            </div>
+          )}
+
+          {answer && !loading && (
+            <div className="followup-panel">
+              <p className="followup-panel-label">Follow Up</p>
+              <form className="followup-form" onSubmit={handleFollowUp}>
+                <input
+                  className="followup-input"
+                  type="text"
+                  value={followUpQuery}
+                  onChange={(e) => setFollowUpQuery(e.target.value)}
+                  placeholder="Type your follow-up question…"
+                  autoComplete="off"
+                  spellCheck={false}
+                />
+                <button
+                  className="followup-btn"
+                  type="submit"
+                  disabled={!followUpQuery.trim()}
+                >
+                  Ask →
+                </button>
+              </form>
+              {history.length > 0 && (
+                <p className="followup-conv-note">
+                  Claude has context from {history.length} previous {history.length === 1 ? "exchange" : "exchanges"} in this conversation.
+                </p>
+              )}
+            </div>
+          )}
         </div>
       </section>
     </>

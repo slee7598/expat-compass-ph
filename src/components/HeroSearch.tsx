@@ -32,9 +32,11 @@ export default function HeroSearch() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [asked, setAsked] = useState("");
+  const [history, setHistory] = useState<Array<{ question: string; answer: string }>>([]);
+  const [followUpQuery, setFollowUpQuery] = useState("");
   const abortRef = useRef<AbortController | null>(null);
 
-  async function runSearch(q: string) {
+  async function runSearch(q: string, hist: Array<{ question: string; answer: string }> = []) {
     const trimmed = q.trim();
     if (!trimmed || loading) return;
 
@@ -50,7 +52,7 @@ export default function HeroSearch() {
       const res = await fetch("/api/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: trimmed }),
+        body: JSON.stringify({ query: trimmed, history: hist }),
         signal: abortRef.current.signal,
       });
 
@@ -80,13 +82,33 @@ export default function HeroSearch() {
 
   function onSubmit(e: FormEvent) {
     e.preventDefault();
-    runSearch(query);
+    setHistory([]);
+    setFollowUpQuery("");
+    runSearch(query, []);
   }
 
   function onPillClick(q: string) {
     setQuery(q);
-    runSearch(q);
+    setHistory([]);
+    setFollowUpQuery("");
+    runSearch(q, []);
   }
+
+  function onFollowUpSubmit(e: FormEvent) {
+    e.preventDefault();
+    const q = followUpQuery.trim();
+    if (!q || loading) return;
+    const newHistory = answer
+      ? [...history, { question: asked, answer: parseFollowUp(answer).main }]
+      : history;
+    setHistory(newHistory);
+    setFollowUpQuery("");
+    runSearch(q, newHistory);
+  }
+
+  const parsedAnswer = !loading && answer
+    ? parseFollowUp(answer)
+    : { main: answer, followUp: "" };
 
   return (
     <div className="hs-wrap">
@@ -136,36 +158,67 @@ export default function HeroSearch() {
 
       {error && <p className="hs-error">{error}</p>}
 
-      {(answer || (loading && answer)) && (() => {
-        const { main, followUp } = !loading ? parseFollowUp(answer) : { main: answer, followUp: "" };
-        return (
-          <div className="hs-answer">
-            <p className="hs-answer-q">{asked}</p>
-            {loading ? (
-              <div className="hs-answer-text">
-                {answer}
-                <span className="hs-cursor" />
-              </div>
-            ) : (
-              <div
-                className="hs-answer-text hs-answer-text-md"
-                dangerouslySetInnerHTML={{ __html: renderMarkdown(main) }}
-              />
-            )}
-            {!loading && followUp && (
-              <div className="hs-followup">
-                <p className="hs-followup-label">You might also ask</p>
-                <p className="hs-followup-text">{followUp}</p>
-              </div>
-            )}
-            {!loading && (
-              <p className="hs-answer-foot">
-                Powered by Claude · For informational purposes only
-              </p>
-            )}
-          </div>
-        );
-      })()}
+      {(answer || (loading && answer)) && (
+        <div className="hs-answer">
+          {history.length > 0 && !loading && (
+            <p className="hs-conv-badge">
+              Continuing · {history.length} {history.length === 1 ? "exchange" : "exchanges"}
+            </p>
+          )}
+          <p className="hs-answer-q">{asked}</p>
+          {loading ? (
+            <div className="hs-answer-text">
+              {answer}
+              <span className="hs-cursor" />
+            </div>
+          ) : (
+            <div
+              className="hs-answer-text hs-answer-text-md"
+              dangerouslySetInnerHTML={{ __html: renderMarkdown(parsedAnswer.main) }}
+            />
+          )}
+          {!loading && parsedAnswer.followUp && (
+            <div className="hs-followup">
+              <p className="hs-followup-label">You might also ask</p>
+              <p className="hs-followup-text">{parsedAnswer.followUp}</p>
+            </div>
+          )}
+          {!loading && (
+            <p className="hs-answer-foot">
+              Powered by Claude · For informational purposes only
+            </p>
+          )}
+        </div>
+      )}
+
+      {answer && !loading && (
+        <div className="hs-followup-panel">
+          <p className="hs-followup-panel-label">Follow Up</p>
+          <form className="hs-followup-panel-form" onSubmit={onFollowUpSubmit}>
+            <input
+              className="hs-followup-panel-input"
+              type="text"
+              value={followUpQuery}
+              onChange={(e) => setFollowUpQuery(e.target.value)}
+              placeholder="Type your follow-up question…"
+              autoComplete="off"
+              spellCheck={false}
+            />
+            <button
+              className="hs-followup-panel-btn"
+              type="submit"
+              disabled={!followUpQuery.trim()}
+            >
+              Ask →
+            </button>
+          </form>
+          {history.length > 0 && (
+            <p className="hs-followup-panel-note">
+              Claude has context from {history.length} previous {history.length === 1 ? "exchange" : "exchanges"}.
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

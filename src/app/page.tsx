@@ -311,6 +311,38 @@ export default function Home() {
         .hs-followup-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
         .hs-followup-text { font-size: 0.88rem; font-weight: 400; line-height: 1.65; color: #1A2D42; }
         .hs-answer-foot { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(11,31,58,0.1); font-size: 0.68rem; color: #8A9AAA; }
+        .hs-conv-badge { display: inline-block; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.25); padding: 2px 8px; margin-bottom: 8px; }
+
+        /* ── HEROSEARCH FOLLOW-UP INPUT PANEL ── */
+        .hs-followup-panel {
+          background: #0B1F3A;
+          border-left: 3px solid #C9A84C;
+          padding: 20px 24px;
+          animation: hsFade 0.25s ease;
+        }
+        .hs-followup-panel-label {
+          font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em;
+          text-transform: uppercase; color: #C9A84C; margin-bottom: 10px;
+        }
+        .hs-followup-panel-form { display: flex; gap: 0; }
+        .hs-followup-panel-input {
+          flex: 1; padding: 11px 16px;
+          font-family: 'Inter', sans-serif; font-size: 0.87rem; font-weight: 400;
+          color: #0B1F3A; background: #F8F6F1; border: none; outline: none; min-width: 0;
+        }
+        .hs-followup-panel-input::placeholder { color: #9AAABB; }
+        .hs-followup-panel-btn {
+          padding: 11px 18px; background: #C9A84C; color: #0B1F3A;
+          font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 700;
+          letter-spacing: 0.1em; text-transform: uppercase; border: none; cursor: pointer;
+          white-space: nowrap; flex-shrink: 0; transition: background 0.2s;
+        }
+        .hs-followup-panel-btn:hover:not(:disabled) { background: #b8943e; }
+        .hs-followup-panel-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .hs-followup-panel-note {
+          margin-top: 8px; font-size: 0.65rem;
+          color: rgba(248,246,241,0.60); font-weight: 400;
+        }
 
         /* ── SECTIONS ── */
         .section { padding: 96px 48px; }

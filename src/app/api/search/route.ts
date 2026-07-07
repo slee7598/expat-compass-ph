@@ -94,9 +94,11 @@ export async function POST(request: Request) {
   }
 
   let query: string;
+  let history: Array<{ question: string; answer: string }> = [];
   try {
     const body = await request.json();
     query = body.query;
+    history = Array.isArray(body.history) ? body.history.slice(0, 5) : [];
   } catch {
     return new Response("Invalid request body.", { status: 400 });
   }
@@ -107,12 +109,20 @@ export async function POST(request: Request) {
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+  const messages = [
+    ...history.flatMap(({ question, answer }: { question: string; answer: string }) => [
+      { role: "user" as const, content: question },
+      { role: "assistant" as const, content: answer },
+    ]),
+    { role: "user" as const, content: query.trim() },
+  ];
+
   try {
     const stream = client.messages.stream({
       model: "claude-sonnet-4-6",
       max_tokens: 2048,
       system: SYSTEM_PROMPT,
-      messages: [{ role: "user", content: query.trim() }],
+      messages,
     });
 
     const readable = new ReadableStream({
