@@ -381,6 +381,13 @@ export default function ExpatSearch() {
           padding: 28px 40px;
           animation: fadeIn 0.3s ease;
         }
+        .followup-prompt {
+          font-size: 0.82rem;
+          font-weight: 300;
+          color: rgba(248,246,241,0.78);
+          margin-bottom: 16px;
+          line-height: 1.5;
+        }
         .followup-panel-label {
           font-size: 0.65rem;
           font-weight: 700;
@@ -530,6 +537,7 @@ export default function ExpatSearch() {
 
           {answer && !loading && (
             <div className="followup-panel">
+              <p className="followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
               <p className="followup-panel-label">Follow Up</p>
               <form className="followup-form" onSubmit={handleFollowUp}>
                 <input

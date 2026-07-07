@@ -193,6 +193,7 @@ export default function HeroSearch() {
 
       {answer && !loading && (
         <div className="hs-followup-panel">
+          <p className="hs-followup-prompt">Want to dig deeper? Enter a follow-up question below.</p>
           <p className="hs-followup-panel-label">Follow Up</p>
           <form className="hs-followup-panel-form" onSubmit={onFollowUpSubmit}>
             <input
