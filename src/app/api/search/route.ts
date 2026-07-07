@@ -98,7 +98,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     query = body.query;
-    history = Array.isArray(body.history) ? body.history.slice(0, 5) : [];
+    history = Array.isArray(body.history) ? body.history : [];
   } catch {
     return new Response("Invalid request body.", { status: 400 });
   }
