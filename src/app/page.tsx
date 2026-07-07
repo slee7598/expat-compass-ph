@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import HeroRate from "@/components/HeroRate";
-import HolidayStatusGrid from "@/components/HolidayStatusGrid";
+import HeroHolidayGrid from "@/components/HeroHolidayGrid";
 
 export const metadata: Metadata = {
   title: "Expat Compass PH — Your Guide to Living in the Philippines",
@@ -236,26 +236,26 @@ export default function Home() {
           margin-bottom: 28px;
         }
 
-        /* ── HERO RATE + HOLIDAY ROW ── */
+        /* ── HERO RATE + HOLIDAY GRID ROW ── */
         .hero-status-row {
           display: flex;
           align-items: flex-start;
-          gap: 48px;
+          gap: 44px;
           margin-bottom: 32px;
           flex-wrap: wrap;
         }
         .hero-status-row .hrate-wrap { margin-bottom: 0; }
-        .hero-status-row .hsg-wrap { margin-top: 0; }
         .hero-status-divider {
           display: block;
           width: 1px;
-          height: 56px;
           background: rgba(201,168,76,0.3);
           flex-shrink: 0;
-          margin-top: 4px;
+          align-self: stretch;
+          min-height: 60px;
+          margin-top: 2px;
         }
         @media (max-width: 700px) {
-          .hero-status-row { gap: 24px; }
+          .hero-status-row { gap: 20px; }
           .hero-status-divider { display: none; }
         }
 
@@ -659,7 +659,7 @@ export default function Home() {
           <div className="hero-status-row">
             <HeroRate />
             <span className="hero-status-divider" />
-            <HolidayStatusGrid />
+            <HeroHolidayGrid />
           </div>
           <h1 className="hero-title">
             Living in the Philippines,<br />done properly.
