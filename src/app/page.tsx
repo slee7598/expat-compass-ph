@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import HeroSearch from "@/components/HeroSearch";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import HeroRate from "@/components/HeroRate";
+import HeroHolidayStatus from "@/components/HeroHolidayStatus";
 
 export const metadata: Metadata = {
   title: "Expat Compass PH — Your Guide to Living in the Philippines",
@@ -233,6 +234,28 @@ export default function Home() {
           color: rgba(248,246,241,0.78);
           max-width: 500px;
           margin-bottom: 28px;
+        }
+
+        /* ── HERO RATE + HOLIDAY ROW ── */
+        .hero-status-row {
+          display: flex;
+          align-items: flex-start;
+          gap: 48px;
+          margin-bottom: 32px;
+          flex-wrap: wrap;
+        }
+        .hero-status-row .hrate-wrap { margin-bottom: 0; }
+        .hero-status-divider {
+          display: block;
+          width: 1px;
+          height: 56px;
+          background: rgba(201,168,76,0.3);
+          flex-shrink: 0;
+          margin-top: 4px;
+        }
+        @media (max-width: 700px) {
+          .hero-status-row { gap: 24px; }
+          .hero-status-divider { display: none; }
         }
 
         /* ── HERO SEARCH ── */
@@ -632,7 +655,11 @@ export default function Home() {
         <HomeSidebar />
         <div className="hero-content">
           <p className="hero-eyebrow">Your relocation resource</p>
-          <HeroRate />
+          <div className="hero-status-row">
+            <HeroRate />
+            <span className="hero-status-divider" />
+            <HeroHolidayStatus />
+          </div>
           <h1 className="hero-title">
             Living in the Philippines,<br />done properly.
           </h1>
