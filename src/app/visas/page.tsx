@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import HolidayBanner from "@/components/HolidayBanner";
 
 export const metadata: Metadata = {
   title: "Philippines Visa Guide for Expats 2026 — Tourist Extensions, SRRV, 13A & Digital Nomad Visa",
@@ -200,6 +201,7 @@ export default function VisasPage() {
           <p className="page-eyebrow">Visas and Immigration</p>
           <h1 className="page-title">Staying in the Philippines Legally</h1>
           <p className="page-sub">The complete guide to every visa option available to foreign nationals in 2026 — tourist extensions, retirement visas, spousal visas, and the new Digital Nomad Visa. Real costs, real timelines, no confusion.</p>
+          <HolidayBanner />
         </div>
       </div>
 

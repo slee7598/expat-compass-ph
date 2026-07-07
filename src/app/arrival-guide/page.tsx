@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import HolidayBanner from "@/components/HolidayBanner";
 
 export const metadata: Metadata = {
   title: "Arriving in the Philippines — Airport Guide and First Steps 2026",
@@ -119,6 +120,7 @@ export default function ArrivalGuidePage() {
           <p className="page-eyebrow">Arrival Guide</p>
           <h1 className="page-title">Arriving in the Philippines</h1>
           <p className="page-sub">Step by step through immigration, customs, transport, and your first week. No surprises — just clear, practical guidance for a smooth arrival.</p>
+          <HolidayBanner />
         </div>
       </div>
 

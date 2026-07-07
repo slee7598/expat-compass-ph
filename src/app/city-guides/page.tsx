@@ -361,6 +361,10 @@ export default function CityGuidesPage() {
               <p className="cs-city">Education Guide</p>
               <p className="cs-tagline">Schools for expat families by city</p>
             </a>
+            <a href="#2026-holidays" className="cs-card">
+              <p className="cs-city">2026 Holiday Schedule</p>
+              <p className="cs-tagline">Official non-working days — Proclamation No. 1006</p>
+            </a>
           </div>
         </div>
       </section>
@@ -1010,6 +1014,91 @@ export default function CityGuidesPage() {
           <div className="city-alert city-alert-light" style={{maxWidth:'860px', marginTop:'28px'}}>
             <p className="city-alert-label">Practical Festival Planning Tips</p>
             <p className="city-alert-body city-alert-body-light">Book accommodation months in advance for Sinulog, Ati-Atihan, and Dinagyang — these fill up completely. Sinulog week in Cebu: avoid crossing the Mactan-Cebu bridge unless you have hours to spare. Most major Philippine festivals fall in January to May during the dry season — ideal travel weather. Sinulog 2027: January 17. Dinagyang 2027: January 24.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 2026 HOLIDAY SCHEDULE ── */}
+      <section className="section section-dark" id="2026-holidays">
+        <div className="section-inner">
+          <p className="section-eyebrow section-eyebrow-light">Proclamation No. 1006 · Signed Sept 3, 2025</p>
+          <h2 className="section-heading section-heading-light">2026 Philippine National Holiday Schedule</h2>
+          <p style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, color:'#F8F6F1', marginBottom:'32px', maxWidth:'760px'}}>
+            Official non-working holidays declared by the President of the Philippines for 2026. Government offices, the Bureau of Immigration, banks, and most private businesses are closed on regular and special non-working holidays. Plan your visa appointments, bank visits, and arrivals around these dates.
+          </p>
+
+          <div style={{overflowX:'auto', maxWidth:'860px'}}>
+            <table style={{width:'100%', borderCollapse:'collapse', fontSize:'0.87rem'}}>
+              <thead>
+                <tr>
+                  <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 18px', textAlign:'left', fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase', whiteSpace:'nowrap'}}>Date</th>
+                  <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 18px', textAlign:'left', fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase'}}>Holiday</th>
+                  <th style={{background:'#C9A84C', color:'#0B1F3A', padding:'11px 18px', textAlign:'left', fontSize:'0.68rem', fontWeight:700, letterSpacing:'0.12em', textTransform:'uppercase', whiteSpace:'nowrap'}}>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { date: "Jan 1", name: "New Year's Day", type: "regular" },
+                  { date: "Feb 17", name: "Chinese New Year", type: "special" },
+                  { date: "Feb 25", name: "EDSA People Power Anniversary", type: "working" },
+                  { date: "Apr 2", name: "Maundy Thursday", type: "regular" },
+                  { date: "Apr 3", name: "Good Friday", type: "regular" },
+                  { date: "Apr 4", name: "Black Saturday", type: "special" },
+                  { date: "Apr 9", name: "Day of Valor (Araw ng Kagitingan)", type: "regular" },
+                  { date: "May 1", name: "Labor Day", type: "regular" },
+                  { date: "Jun 12", name: "Independence Day", type: "regular" },
+                  { date: "TBA", name: "Eidul Fitr", type: "tba" },
+                  { date: "TBA", name: "Eidul Adha", type: "tba" },
+                  { date: "Aug 21", name: "Ninoy Aquino Day", type: "special" },
+                  { date: "Aug 31", name: "National Heroes Day", type: "regular" },
+                  { date: "Nov 1", name: "All Saints Day", type: "special" },
+                  { date: "Nov 2", name: "All Souls Day", type: "special" },
+                  { date: "Nov 30", name: "Bonifacio Day", type: "regular" },
+                  { date: "Dec 8", name: "Feast of the Immaculate Conception", type: "special" },
+                  { date: "Dec 24", name: "Christmas Eve", type: "special" },
+                  { date: "Dec 25", name: "Christmas Day", type: "regular" },
+                  { date: "Dec 30", name: "Rizal Day", type: "regular" },
+                  { date: "Dec 31", name: "New Year's Eve", type: "special" },
+                ].map((row, i) => {
+                  const isWorking = row.type === "working";
+                  const isTBA = row.type === "tba";
+                  const rowBg = isWorking
+                    ? "rgba(251,191,36,0.08)"
+                    : i % 2 === 0
+                    ? "rgba(248,246,241,0.03)"
+                    : "transparent";
+                  const typePill =
+                    row.type === "regular"
+                      ? { label: "Regular Holiday", bg: "#0B1F3A", border: "rgba(248,246,241,0.25)", color: "#F8F6F1" }
+                      : row.type === "special"
+                      ? { label: "Special Non-Working", bg: "rgba(201,168,76,0.15)", border: "#C9A84C", color: "#C9A84C" }
+                      : row.type === "working"
+                      ? { label: "Special Working Day", bg: "rgba(251,191,36,0.12)", border: "#FBBF24", color: "#FBBF24" }
+                      : { label: "TBA — Islamic Calendar", bg: "rgba(148,163,184,0.1)", border: "rgba(148,163,184,0.4)", color: "rgba(248,246,241,0.70)" };
+                  return (
+                    <tr key={row.name} style={{background: rowBg}}>
+                      <td style={{padding:'12px 18px', borderBottom:'1px solid rgba(248,246,241,0.07)', color:'#F8F6F1', fontWeight:600, whiteSpace:'nowrap', verticalAlign:'top'}}>{row.date}</td>
+                      <td style={{padding:'12px 18px', borderBottom:'1px solid rgba(248,246,241,0.07)', color:'#F8F6F1', verticalAlign:'top', lineHeight:1.55}}>{row.name}</td>
+                      <td style={{padding:'12px 18px', borderBottom:'1px solid rgba(248,246,241,0.07)', verticalAlign:'top'}}>
+                        <span style={{display:'inline-block', fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', background: typePill.bg, border:`1px solid ${typePill.border}`, color: typePill.color, padding:'3px 9px', whiteSpace:'nowrap'}}>
+                          {typePill.label}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="city-alert" style={{maxWidth:'860px', marginTop:'28px'}}>
+            <p className="city-alert-label">Important Notes</p>
+            <p className="city-alert-body">
+              <strong style={{color:'#C9A84C'}}>Feb 25 — EDSA People Power Anniversary</strong> is classified as a Special Working Day, not a non-working holiday. Government offices, the Bureau of Immigration, banks, and businesses operate as normal. Do not confuse it with a day off.
+            </p>
+            <p className="city-alert-body" style={{marginTop:'10px'}}>
+              <strong style={{color:'#C9A84C'}}>Eidul Fitr and Eidul Adha</strong> — exact 2026 dates are TBA pending official Islamic calendar determination and a subsequent Presidential Proclamation. Check the Official Gazette of the Philippines for the announcement.
+            </p>
           </div>
         </div>
       </section>
