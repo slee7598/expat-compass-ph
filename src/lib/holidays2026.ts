@@ -34,14 +34,64 @@ export const HOLIDAYS_2026: Holiday[] = [
   { date: "2026-12-31", name: "New Year's Eve", type: "special" },
 ];
 
+// Local holidays by jurisdiction. National non-working holidays take precedence.
+// Dates subject to annual local proclamation — verify with local government units.
+export const LOCAL_HOLIDAYS_2026: Record<string, Holiday[]> = {
+  "cebu-city": [
+    { date: "2026-01-18", name: "Sinulog Sunday", type: "special" },
+    { date: "2026-02-24", name: "Cebu City Charter Day", type: "regular" },
+  ],
+  "lapu-lapu": [
+    { date: "2026-04-27", name: "Lapu-Lapu City Charter Day", type: "regular" },
+  ],
+  "cebu-province": [
+    { date: "2026-06-21", name: "Mandaue City Charter Day", type: "regular" },
+  ],
+  "baguio": [
+    { date: "2026-09-01", name: "Baguio City Charter Day", type: "regular" },
+  ],
+  "davao": [
+    { date: "2026-10-16", name: "Araw ng Davao (Charter Day)", type: "regular" },
+  ],
+  "iloilo": [
+    { date: "2026-01-25", name: "Dinagyang Sunday", type: "special" },
+  ],
+  "olongapo": [
+    { date: "2026-06-01", name: "Olongapo City Charter Day", type: "regular" },
+  ],
+  // Dumaguete: no distinct local holiday identified for 2026; follows national calendar
+};
+
+export const JURISDICTIONS: { id: string; name: string }[] = [
+  { id: "national",      name: "National" },
+  { id: "cebu-city",    name: "Cebu City" },
+  { id: "lapu-lapu",    name: "Lapu-Lapu" },
+  { id: "cebu-province", name: "Cebu Province" },
+  { id: "baguio",       name: "Baguio" },
+  { id: "davao",        name: "Davao" },
+  { id: "iloilo",       name: "Iloilo" },
+  { id: "olongapo",     name: "Olongapo / Subic" },
+  { id: "dumaguete",    name: "Dumaguete" },
+];
+
 // Returns the current date in Philippine Time (UTC+8)
-function getTodayPHT(): string {
+export function getTodayPHT(): string {
   const now = new Date();
   const pht = new Date(now.getTime() + 8 * 60 * 60 * 1000);
   const yyyy = pht.getUTCFullYear();
   const mm = String(pht.getUTCMonth() + 1).padStart(2, "0");
   const dd = String(pht.getUTCDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
+}
+
+// Returns the active non-working holiday for a jurisdiction on dateStr, or null (open).
+// National non-working holidays apply to all jurisdictions.
+// special-working national days keep jurisdiction open unless it also has a local holiday.
+export function getJurisdictionHoliday(jurisdictionId: string, dateStr: string): Holiday | null {
+  const national = HOLIDAYS_2026.find((h) => h.date === dateStr && h.type !== "special-working");
+  if (national) return national;
+  const local = (LOCAL_HOLIDAYS_2026[jurisdictionId] ?? []).find((h) => h.date === dateStr);
+  return local ?? null;
 }
 
 export function getTodayHoliday(): Holiday | null {

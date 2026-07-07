@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ExchangeRate from "@/components/ExchangeRate";
-import HolidayBanner from "@/components/HolidayBanner";
+import HolidayStatusGrid from "@/components/HolidayStatusGrid";
 
 export const metadata: Metadata = {
   title: "Banking in the Philippines for Foreigners 2026 — Accounts, Remittances & Digital Banking",
@@ -610,7 +610,7 @@ export default function BankingPage() {
             in cost-effectively, which digital wallets are worth using, and the
             practical realities of cash and cards in daily life.
           </p>
-          <HolidayBanner />
+          <HolidayStatusGrid />
         </div>
       </header>
 

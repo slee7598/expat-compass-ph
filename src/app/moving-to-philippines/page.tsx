@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import HolidayBanner from "@/components/HolidayBanner";
+import HolidayStatusGrid from "@/components/HolidayStatusGrid";
 
 export const metadata: Metadata = {
   title: "Moving to the Philippines — Complete Packing List and First Steps 2026",
@@ -123,7 +123,7 @@ export default function MovingToPhilippinesPage() {
           <p className="page-eyebrow">Moving Guide</p>
           <h1 className="page-title">Moving to the Philippines</h1>
           <p className="page-sub">What to bring, what to leave behind, what to do first, and how to set yourself up for success. Real advice from someone who has done it.</p>
-          <HolidayBanner />
+          <HolidayStatusGrid />
         </div>
       </div>
 
