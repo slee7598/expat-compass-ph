@@ -307,9 +307,6 @@ export default function Home() {
         .hs-answer-text-md .md-table-wrap td { padding: 7px 12px; border-bottom: 1px solid rgba(11,31,58,0.07); color: #1A2D42; vertical-align: top; line-height: 1.55; }
         .hs-answer-text-md .md-table-wrap tr:last-child td { border-bottom: none; }
         .hs-answer-text-md .md-table-wrap tr:nth-child(even) td { background: rgba(11,31,58,0.03); }
-        .hs-followup { margin-top: 16px; border-top: 1px solid rgba(201,168,76,0.35); background: rgba(201,168,76,0.05); padding: 12px 16px; }
-        .hs-followup-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
-        .hs-followup-text { font-size: 0.88rem; font-weight: 400; line-height: 1.65; color: #1A2D42; }
         .hs-answer-foot { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(11,31,58,0.1); font-size: 0.68rem; color: #8A9AAA; }
         .hs-conv-badge { display: inline-block; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.25); padding: 2px 8px; margin-bottom: 8px; }
 

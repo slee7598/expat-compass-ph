@@ -180,12 +180,6 @@ export default function HeroSearch() {
           {!loading && (
             <p className="hs-followup-prompt">↓ Want to dig deeper? Enter a follow-up question below. ↓</p>
           )}
-          {!loading && parsedAnswer.followUp && (
-            <div className="hs-followup">
-              <p className="hs-followup-label">You might also ask</p>
-              <p className="hs-followup-text">{parsedAnswer.followUp}</p>
-            </div>
-          )}
           {!loading && (
             <p className="hs-answer-foot">
               Powered by Claude · For informational purposes only

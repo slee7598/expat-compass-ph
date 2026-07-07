@@ -315,26 +315,6 @@ export default function ExpatSearch() {
         @keyframes blink {
           50% { opacity: 0; }
         }
-        .answer-followup {
-          margin-top: 24px;
-          border-top: 1px solid rgba(201,168,76,0.35);
-          background: rgba(201,168,76,0.05);
-          padding: 16px 20px;
-        }
-        .answer-followup-label {
-          font-size: 0.65rem;
-          font-weight: 700;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: #C9A84C;
-          margin-bottom: 8px;
-        }
-        .answer-followup-text {
-          font-size: 0.93rem;
-          font-weight: 400;
-          line-height: 1.72;
-          color: #2A3A4A;
-        }
         .answer-footer {
           margin-top: 24px;
           padding-top: 16px;
@@ -524,12 +504,6 @@ export default function ExpatSearch() {
               )}
               {!loading && (
                 <p className="followup-prompt">↓ Want to dig deeper? Enter a follow-up question below. ↓</p>
-              )}
-              {!loading && parsedAnswer.followUp && (
-                <div className="answer-followup">
-                  <p className="answer-followup-label">You might also ask</p>
-                  <p className="answer-followup-text">{parsedAnswer.followUp}</p>
-                </div>
               )}
               {!loading && (
                 <p className="answer-footer">
