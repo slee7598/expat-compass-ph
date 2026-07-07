@@ -162,26 +162,18 @@ export default function Home() {
         }
         .lsb-link.active { color: #C9A84C; border-left-color: #C9A84C; }
 
-        /* ── HERO BANNER (desktop: full-width top band) ── */
+        /* ── HERO BANNER (desktop: single row overlaid on hero image) ── */
         .hero-banner {
           position: relative;
           z-index: 15;
           flex-shrink: 0;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: flex-start;
+          flex-wrap: wrap;
           padding: 20px 48px 16px 32px;
-          background: rgba(11,31,58,0.90);
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
-          border-bottom: 1px solid rgba(201,168,76,0.20);
         }
-        .hb-top-row {
-          display: flex;
-          align-items: center;
-          gap: 28px;
-        }
-        .hb-logo-link { display: block; line-height: 0; }
+        .hb-logo-link { display: block; line-height: 0; flex-shrink: 0; }
         .hb-logo {
           display: block;
           width: 88px; height: auto;
@@ -193,12 +185,11 @@ export default function Home() {
         .hb-sep {
           display: block;
           width: 1px;
-          height: 52px;
+          align-self: stretch;
+          min-height: 48px;
           background: rgba(201,168,76,0.30);
           flex-shrink: 0;
-        }
-        .hb-grid-row {
-          margin-top: 6px;
+          margin: 0 28px;
         }
         /* Reset margins on widgets inside the banner */
         .hero-banner .hrate-wrap { margin-bottom: 0; }
@@ -511,10 +502,6 @@ export default function Home() {
           padding: 12px 20px;
           align-items: center;
           gap: 12px;
-          background: rgba(11,31,58,0.92);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          border-bottom: 1px solid rgba(201,168,76,0.15);
           flex-shrink: 0;
         }
         /* Compact rate display inside mobile bar */
@@ -592,11 +579,7 @@ export default function Home() {
           .hero-body { flex-direction: column; align-items: stretch; }
           .hero-mob-grid {
             display: block;
-            padding: 12px 20px 14px;
-            background: rgba(11,31,58,0.88);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(201,168,76,0.12);
+            padding: 8px 20px 12px;
           }
           .hero-content { padding: 32px 24px 48px; }
           .hs-wrap { max-width: 100%; }
@@ -670,25 +653,22 @@ export default function Home() {
         />
         <div className="hero-overlay" />
 
-        {/* Desktop top band: logo | live rate + city closure grid below */}
+        {/* Desktop: logo | live rate | office status grid — one row, overlaid on hero image */}
         <div className="hero-banner">
-          <div className="hb-top-row">
-            <Link href="/" className="hb-logo-link">
-              <Image
-                src="/images/logo.png"
-                alt="Expat Compass PH"
-                width={120}
-                height={120}
-                className="hb-logo"
-                priority
-              />
-            </Link>
-            <span className="hb-sep" />
-            <HeroRate />
-          </div>
-          <div className="hb-grid-row">
-            <HeroHolidayGrid />
-          </div>
+          <Link href="/" className="hb-logo-link">
+            <Image
+              src="/images/logo.png"
+              alt="Expat Compass PH"
+              width={120}
+              height={120}
+              className="hb-logo"
+              priority
+            />
+          </Link>
+          <span className="hb-sep" />
+          <HeroRate />
+          <span className="hb-sep" />
+          <HeroHolidayGrid />
         </div>
 
         {/* Sidebar nav + content body */}
