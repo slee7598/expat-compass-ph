@@ -139,7 +139,8 @@ export default function Home() {
         }
         .lsb-nav {
           flex: 1;
-          padding: 16px 0;
+          margin-top: 16px;
+          padding: 2px 0;
           overflow-y: auto;
           background: rgba(11,31,58,0.88);
           backdrop-filter: blur(16px);
