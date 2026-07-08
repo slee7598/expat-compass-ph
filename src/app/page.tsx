@@ -584,6 +584,7 @@ export default function Home() {
           .hero-mob-grid {
             display: block;
             padding: 6px 16px 10px;
+            flex-shrink: 0;
           }
           .hero-content { padding: 32px 24px 48px; }
           .hs-wrap { max-width: 100%; }

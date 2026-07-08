@@ -68,6 +68,7 @@ export function HeroHolidayGridClient({
           gap: 5px;
         }
         @media (max-width: 700px) {
+          .hhg-wrap { width: 100%; }
           .hhg-grid { grid-template-columns: repeat(5, 1fr); gap: 2px; width: 100%; }
           .hhg-pill { min-width: 0; width: 100%; padding: 4px 3px 5px; gap: 2px; }
           .hhg-city { font-size: 0.55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; }
