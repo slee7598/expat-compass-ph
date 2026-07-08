@@ -585,6 +585,8 @@ export default function Home() {
             display: block;
             padding: 6px 16px 10px;
             flex-shrink: 0;
+            position: relative;
+            z-index: 2;
           }
           .hero-content { padding: 32px 24px 48px; }
           .hs-wrap { max-width: 100%; }
