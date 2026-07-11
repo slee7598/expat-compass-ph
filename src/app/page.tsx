@@ -515,6 +515,8 @@ export default function Home() {
         .lsb-mob-bar .hrate-text { font-size: 1.0rem; white-space: nowrap; }
         .lsb-mob-bar .hrate-php { font-size: 1.3rem; }
         .lsb-mob-bar .hrate-loading { font-size: 1.3rem; }
+        .lsb-mob-bar .hrate-fb-row { margin-left: 0; justify-content: center; }
+        .lsb-mob-bar .hrate-fb-label { font-size: 0.55rem; }
 
         .lsb-mob-burger {
           background: none; border: none; cursor: pointer;
