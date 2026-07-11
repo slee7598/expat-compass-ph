@@ -126,10 +126,10 @@ export default function Home() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background: #F8F6F1; color: #0B1F3A; }
 
-        /* ── SIDEBAR — absolute within .hero so nav starts under the logo ── */
+        /* ── SIDEBAR — absolute within .hero-body so nav sits below the hero banner ── */
         .lsb {
           position: absolute;
-          top: 96px;
+          top: 0;
           left: 0;
           bottom: 0;
           width: 200px;
@@ -203,6 +203,7 @@ export default function Home() {
           display: flex;
           align-items: flex-start;
           min-height: 0;
+          position: relative;
         }
 
         /* ── MOBILE CITY GRID (shown below mob-bar; hidden on desktop) ── */
