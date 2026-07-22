@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
@@ -328,36 +329,68 @@ export default function VisasPage() {
           <h3 className="vsub vsub-light">Real costs at the counter</h3>
           <div className="va-gold">
             <p className="va-gold-label">Steve's Personal Experience — June 2026</p>
-            <p className="va-gold-body-light">Published BI fees look lower than what you actually pay at the counter. In practice, expect to pay approximately 5,000 pesos for a standard monthly or two-month extension. The difference between the published base fee and the actual amount is an expedited processing fee added automatically — you do not get a choice and there is no option to decline it. When your ACR I-Card is required after 59 days, the total jumps to 10,000 pesos or more. The LSVVE six-month extension at 11,500 to 13,900 pesos is actually the best value if you plan to stay long-term — one trip instead of monthly visits. Always bring extra cash. I will update this page with the official current fee board once I photograph it at the Gaisano Mall BI office in Lapu-Lapu City on my next extension.</p>
+            <p className="va-gold-body-light">Published BI fees look lower than what you actually pay at the counter. In practice, expect to pay approximately 5,000 pesos for a standard monthly or two-month extension. The difference between the published base fee and the actual amount is an expedited processing fee added automatically — you do not get a choice and there is no option to decline it. When your ACR I-Card is required after 59 days, the total jumps to 10,000 pesos or more. The LSVVE six-month extension at 11,500 to 13,900 pesos is actually the best value if you plan to stay long-term — one trip instead of monthly visits. Always bring extra cash.</p>
           </div>
 
-          <div className="vtable-wrap">
+          <div style={{margin: '32px 0', maxWidth: '900px'}}>
+            <Image
+              src="/images/bi-fee-board.jpg"
+              alt="Official Bureau of Immigration fee schedule at the Mactan Satellite Office, Pajo, Lapu-Lapu City"
+              width={1400}
+              height={1050}
+              style={{width: '100%', height: 'auto', display: 'block'}}
+              priority
+            />
+            <p style={{fontSize: '0.78rem', color: 'rgba(248,246,241,0.72)', marginTop: '10px', fontStyle: 'italic', lineHeight: 1.55}}>
+              Official BI fee schedule photographed at the Mactan Satellite Office, Pajo, Lapu-Lapu City — July 2026.
+            </p>
+          </div>
+
+          <div className="vtable-wrap" style={{maxWidth: '900px'}}>
             <table className="vtable">
               <thead>
                 <tr>
                   <th>Extension type</th>
-                  <th>Approximate real cost at counter</th>
+                  <th>1 month</th>
+                  <th>2 months</th>
+                  <th>Minor</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="td-dim">Monthly or 2-month extension</td>
-                  <td>~5,000 pesos</td>
+                  <td className="td-dim">Standard extension (under 59 days)</td>
+                  <td colSpan={3}>~₱5,000</td>
                 </tr>
                 <tr>
-                  <td className="td-dim">First extension requiring ACR I-Card</td>
-                  <td>10,000 pesos or more</td>
+                  <td className="td-dim">First-time extension exceeding 59 days (ACR I-Card mandatory)</td>
+                  <td>₱8,600</td>
+                  <td>₱9,100</td>
+                  <td>₱8,560</td>
                 </tr>
                 <tr>
-                  <td className="td-dim">LSVVE 6-month extension</td>
-                  <td>11,500 – 13,900 pesos depending on nationality</td>
+                  <td className="td-dim">Second-time extension exceeding 59 days</td>
+                  <td>₱3,870</td>
+                  <td>₱4,370</td>
+                  <td>₱4,230</td>
+                </tr>
+                <tr>
+                  <td className="td-dim">LSVVE (6-month extension)</td>
+                  <td colSpan={3}>₱11,500–13,900 depending on nationality</td>
+                </tr>
+                <tr>
+                  <td colSpan={4} style={{fontSize: '0.78rem', color: 'rgba(248,246,241,0.72)', fontStyle: 'italic', paddingTop: '6px', paddingBottom: '14px', borderBottom: '1px solid rgba(248,246,241,0.07)'}}>LSVVE is a distinct visa product from standard monthly extensions, filed separately with its own fee schedule. This figure should be confirmed directly with BI, as it is not shown on the standard extension fee board.</td>
                 </tr>
                 <tr>
                   <td className="td-dim">Overstay fine</td>
-                  <td>500 pesos per month overstayed + motion for reconsideration fee</td>
+                  <td colSpan={3}>₱1,010 flat fee covering 1 to 30 days of overstay</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <div className="va-blue" style={{marginTop: '28px', maxWidth: '900px'}}>
+            <p className="va-blue-label">Visa Stickers Discontinued — Keep Your Official Receipt</p>
+            <p className="va-blue-body">Visa stickers have not been issued by the Bureau of Immigration since November 13, 2019. Your visa validity is now printed directly on the Official Receipt (OR) issued at the time of your extension. Keep your OR — you will need to present it at your next extension and at departure.</p>
           </div>
 
           <h3 className="vsub vsub-light">The 36-month limit</h3>
@@ -788,7 +821,7 @@ export default function VisasPage() {
           <div className="sn-rule" />
           <div className="sn-body">
             <p>I have been living in the Philippines on tourist visa extensions while my wife Irish and I go through the CR-1 spousal visa process for her to eventually have the ability to visit the US. The monthly extension routine is straightforward once you know the system — but the costs surprised me when I first arrived. What you see on the BI website and what you pay at the counter are two different numbers. The automatic expedited fee adds up.</p>
-            <p>My plan is to photograph the official BI fee board at the Gaisano Mall office in Lapu-Lapu City on my next extension and add it to this page so you have the most accurate current numbers available anywhere online. If you are staying long term and qualify for the SRRV, the math often favors converting away from tourist extensions — the monthly cost adds up faster than most people realize, and the SRRV exemptions from annual reports and exit clearances are genuinely valuable.</p>
+            <p>If you are staying long term and qualify for the SRRV, the math often favors converting away from tourist extensions — the monthly cost adds up faster than most people realize, and the SRRV exemptions from annual reports and exit clearances are genuinely valuable.</p>
             <p>Irish and I are also working through the 13A process — I will document the real costs and timeline as we go through it ourselves.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
