@@ -380,7 +380,7 @@ export default function TransportationPage() {
           font-size: 0.95rem;
           font-weight: 300;
           line-height: 1.8;
-          color: #5C6B7A;
+          color: #1A1A1A;
           max-width: 640px;
         }
         .disclaimer-body strong { color: #0B1F3A; font-weight: 600; }
@@ -507,7 +507,7 @@ export default function TransportationPage() {
         .lto-ni::before { content: counter(ltoctr) '.'; position: absolute; left: 0; color: #C9A84C; font-size: 0.78rem; font-weight: 700; padding-top: 2px; }
         .lto-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
         .lto-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .lto-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #4A5868; }
+        .lto-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #1A1A1A; }
         .lto-body-light { color: #F8F6F1; }
         .lto-sub-light { color: #F8F6F1; border-top-color: rgba(248,246,241,0.1); }
         .lto-li-light { color: #F8F6F1; }

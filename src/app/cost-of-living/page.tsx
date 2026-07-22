@@ -83,12 +83,12 @@ export default function CostOfLivingPage() {
         /* ── ALERT BOXES ── */
         .ca-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ca-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .ca-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
-        .ca-gold-body-light { color: #4A5868; }
+        .ca-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ca-gold-body-light { color: #1A1A1A; }
 
         .ca-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ca-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
-        .ca-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .ca-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
 
         /* ── DATA CARD (electricity) ── */
         .data-card { background: rgba(248,246,241,0.04); border: 1px solid rgba(248,246,241,0.1); max-width: 680px; margin: 20px 0 28px; }
@@ -156,7 +156,7 @@ export default function CostOfLivingPage() {
         /* ── HEALTHCARE ── */
         .health-callout { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.25); border-left: 4px solid #C9A84C; padding: 32px 36px; margin: 16px 0 28px; max-width: 760px; }
         .health-callout-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
-        .health-callout-body { font-size: 0.95rem; font-weight: 300; line-height: 1.88; color: #4A5868; }
+        .health-callout-body { font-size: 0.95rem; font-weight: 300; line-height: 1.88; color: #1A1A1A; }
 
         .health-benchmarks { max-width: 640px; margin: 18px 0; }
         .hb-row { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; padding: 13px 0; border-bottom: 1px solid rgba(11,31,58,0.07); align-items: baseline; }

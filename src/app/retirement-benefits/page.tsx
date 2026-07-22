@@ -106,29 +106,29 @@ export default function RetirementBenefitsPage() {
           border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .rb-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .rb-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .rb-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
 
         .rb-alert {
           background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3);
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .rb-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
-        .rb-alert-body-dark { color: #4A5868; }
+        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .rb-alert-body-dark { color: #1A1A1A; }
 
         .rb-info {
           background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2);
           border-left: 4px solid #2979FF; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .rb-info-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
-        .rb-info-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .rb-info-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
 
         .rb-amber {
           background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28);
           border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .rb-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
-        .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
+        .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
 
         /* ── EXCEPTION CARDS ── */
         .exception-list { display: flex; flex-direction: column; gap: 16px; margin: 20px 0; max-width: 760px; }

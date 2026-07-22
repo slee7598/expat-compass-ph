@@ -67,13 +67,13 @@ export default function HousingPage() {
         /* ── ALERT BOXES ── */
         .ha-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .ha-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .ha-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
         .ha-gold-link { display: inline-block; margin-top: 12px; font-size: 0.82rem; font-weight: 600; color: #C9A84C; text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.4); padding-bottom: 1px; }
 
         .ha-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
-        .ha-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .ha-amber-body-light { color: #F8F6F1; }
+        .ha-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ha-amber-body-light { color: #1A1A1A; }
 
         /* ── PERSONAL CALLOUT ── */
         .personal-callout { background: #0D1E30; border-left: 4px solid #C9A84C; padding: 28px 32px; margin: 24px 0; max-width: 760px; }
@@ -102,7 +102,7 @@ export default function HousingPage() {
         .check-row { display: grid; grid-template-columns: 180px 1fr; gap: 0; border: 1px solid rgba(11,31,58,0.08); border-bottom: none; }
         .check-row:last-child { border-bottom: 1px solid rgba(11,31,58,0.08); }
         .check-label { background: #0B1F3A; padding: 18px 20px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; display: flex; align-items: flex-start; }
-        .check-body { padding: 18px 22px; background: #fff; font-size: 0.87rem; font-weight: 300; line-height: 1.72; color: #4A5868; }
+        .check-body { padding: 18px 22px; background: #fff; font-size: 0.87rem; font-weight: 300; line-height: 1.72; color: #1A1A1A; }
 
         /* ── NOISE CALLOUT ── */
         .noise-callout { background: #0D1E30; border: 1px solid rgba(248,246,241,0.08); border-left: 4px solid #F2994A; padding: 28px 32px; margin: 24px 0; max-width: 760px; }
@@ -314,7 +314,7 @@ export default function HousingPage() {
 
           <div className="ha-amber" style={{marginTop: '28px', background: 'rgba(242,153,74,0.05)', borderColor: 'rgba(242,153,74,0.2)'}}>
             <p className="ha-amber-label">Bridge Crossing Reality</p>
-            <p className="ha-amber-body-light" style={{color: 'rgba(248,246,241,0.8)', fontSize: '0.92rem', fontWeight: 300, lineHeight: 1.85}}>Both bridges connecting Mactan to Cebu City experience significant traffic during morning rush hour (7 to 9am) and evening rush hour (5 to 8pm). During off-peak hours the crossing takes 10 to 15 minutes. During rush hour it can take 45 minutes to over an hour. Sunday is consistently the best day for crossing — light traffic at almost any time. Plan your Cebu City visits accordingly and you will rarely feel the limitation.</p>
+            <p className="ha-amber-body-light" style={{color: '#1A1A1A', fontSize: '0.92rem', fontWeight: 300, lineHeight: 1.85}}>Both bridges connecting Mactan to Cebu City experience significant traffic during morning rush hour (7 to 9am) and evening rush hour (5 to 8pm). During off-peak hours the crossing takes 10 to 15 minutes. During rush hour it can take 45 minutes to over an hour. Sunday is consistently the best day for crossing — light traffic at almost any time. Plan your Cebu City visits accordingly and you will rarely feel the limitation.</p>
           </div>
         </div>
       </section>

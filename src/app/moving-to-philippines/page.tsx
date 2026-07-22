@@ -61,12 +61,12 @@ export default function MovingToPhilippinesPage() {
 
         .ma-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ma-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .ma-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .ma-gold-body-light { color: #F8F6F1; }
+        .ma-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ma-gold-body-light { color: #1A1A1A; }
 
         .ma-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ma-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .ma-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .ma-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
 
         .checklist-card { background: #fff; border: 1px solid #E8E4DC; padding: 40px 44px; margin-top: 8px; max-width: 760px; }
         .checklist-items { list-style: none; display: flex; flex-direction: column; gap: 14px; counter-reset: chkctr; }

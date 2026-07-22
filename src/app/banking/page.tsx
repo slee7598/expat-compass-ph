@@ -390,7 +390,7 @@ export default function BankingPage() {
           font-size: 0.95rem;
           font-weight: 300;
           line-height: 1.8;
-          color: #5C6B7A;
+          color: #1A1A1A;
           max-width: 640px;
         }
         .disclaimer-body strong { color: #0B1F3A; font-weight: 600; }
@@ -532,7 +532,7 @@ export default function BankingPage() {
         .broker-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #F8F6F1; }
         .bank-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
         .bank-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .bank-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: rgba(248,246,241,0.82); }
+        .bank-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #1A1A1A; }
         /* ── PHONE CARDS ── */
         .phone-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
         .phone-card { border: 1px solid #E8E4DC; border-bottom: none; padding: 26px 30px; background: #fff; }
@@ -542,7 +542,7 @@ export default function BankingPage() {
         .phone-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #4A5868; }
         .phone-rec-box { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.28); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 28px 0; max-width: 760px; }
         .phone-rec-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .phone-rec-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #4A5868; }
+        .phone-rec-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #1A1A1A; }
 
         /* ── JUMP NAV ── */
         .cs-label {

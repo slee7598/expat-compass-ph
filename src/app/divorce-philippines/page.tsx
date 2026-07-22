@@ -111,15 +111,15 @@ export default function DivorcePhilippinesPage() {
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .dv-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
-        .dv-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
-        .dv-alert-body-lt { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .dv-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .dv-alert-body-lt { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
         .dv-amber-alert {
           background: rgba(242,153,74,0.08); border: 1px solid rgba(242,153,74,0.35);
           border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .dv-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 12px; }
-        .dv-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .dv-amber-body-dark { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
+        .dv-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .dv-amber-body-dark { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
         .dv-navy-card {
           background: rgba(11,31,58,0.88); border: 1px solid rgba(201,168,76,0.2);
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;

@@ -62,12 +62,12 @@ export default function ArrivalGuidePage() {
 
         .aa-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .aa-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .aa-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
-        .aa-gold-body-light { color: #F8F6F1; }
+        .aa-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .aa-gold-body-light { color: #1A1A1A; }
 
         .aa-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .aa-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .aa-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
+        .aa-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
 
         /* 24-hour checklist card */
         .checklist-24 { background: #0B1F3A; padding: 40px 44px; margin: 28px 0; max-width: 760px; }

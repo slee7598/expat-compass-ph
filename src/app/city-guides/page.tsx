@@ -135,7 +135,7 @@ export default function CityGuidesPage() {
         .neighborhood-grid-light { background: #E8E4DC; }
         .neighborhood-card-light { background: #F8F6F1; border-left-color: transparent; }
         .neighborhood-card-light.neighborhood-card-featured { border-left-color: #C9A84C; }
-        .neighborhood-body-light { color: #4A5868; }
+        .neighborhood-body-light { color: #1A1A1A; }
 
         /* ── COST BOX ── */
         .cost-box {
@@ -166,7 +166,7 @@ export default function CityGuidesPage() {
           color: #C9A84C; margin-bottom: 8px;
         }
         .city-alert-body { font-size: 0.83rem; font-weight: 300; line-height: 1.7; color: #F8F6F1; }
-        .city-alert-body-light { color: #4A5868; }
+        .city-alert-body-light { color: #1A1A1A; }
 
         /* ── COMPARISON TABLE ── */
         .table-wrap { overflow-x: auto; margin-top: 8px; }
@@ -238,7 +238,7 @@ export default function CityGuidesPage() {
         /* ── DISCLAIMER ── */
         .disclaimer-section { background: #F8F6F1; border-top: 3px solid #C9A84C; }
         .disclaimer-body {
-          font-size: 0.88rem; font-weight: 300; line-height: 1.85; color: #5C6B7A; max-width: 720px;
+          font-size: 0.88rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; max-width: 720px;
         }
         .disclaimer-body strong { color: #0B1F3A; font-weight: 600; }
 
