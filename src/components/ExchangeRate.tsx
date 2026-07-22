@@ -81,7 +81,7 @@ export default function ExchangeRate() {
         .er-loading {
           font-size: 1.4rem;
           font-weight: 300;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
         }
         .er-rate {
           font-size: clamp(1.8rem, 4vw, 2.6rem);

@@ -553,7 +553,7 @@ export default function Home() {
         .lsb-mob-close {
           align-self: flex-end;
           background: none; border: none;
-          color: rgba(248,246,241,0.72); font-size: 1.8rem;
+          color: #F8F6F1; font-size: 1.8rem;
           cursor: pointer; padding: 18px 20px 10px;
           transition: color 0.15s;
         }

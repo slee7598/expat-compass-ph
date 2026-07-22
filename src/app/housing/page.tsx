@@ -121,7 +121,7 @@ export default function HousingPage() {
 
         .rent-table-light .rent-row { border-bottom-color: rgba(248,246,241,0.07); }
         .rent-table-light .rent-cat { color: #F8F6F1; }
-        .rent-table-light .rent-cat small { color: rgba(248,246,241,0.72); }
+        .rent-table-light .rent-cat small { color: rgba(248,246,241,0.78); }
         .rent-table-light .rent-cost { color: #F8F6F1; }
         .rent-table-light .rent-row-highlight .rent-cat { color: #F8F6F1; }
 

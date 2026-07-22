@@ -272,7 +272,7 @@ export default function CityGuidesPage() {
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
         .cs-tagline {
           font-size: 0.8rem; font-weight: 300; line-height: 1.55;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
         }
 
         /* ── MOBILE ── */

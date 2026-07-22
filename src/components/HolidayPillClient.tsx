@@ -103,7 +103,7 @@ export function HolidayPillClient({ pills }: { pills: PillData[] }) {
         .hsg-dot-closed { color: #F87171; }
         .hsg-city { color: #F8F6F1; }
         .hsg-sep {
-          color: rgba(248,246,241,0.38);
+          color: #F8F6F1;
           margin: 0 1px;
         }
         .hsg-status {

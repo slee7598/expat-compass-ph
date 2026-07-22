@@ -91,9 +91,9 @@ export default function VisasPage() {
         .vtable-wrap { overflow-x: auto; margin: 24px 0; max-width: 780px; }
         .vtable { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
         .vtable th { background: #C9A84C; color: #0B1F3A; font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 700; padding: 13px 18px; text-align: left; }
-        .vtable th.th-dim { background: rgba(201,168,76,0.12); color: rgba(248,246,241,0.5); font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+        .vtable th.th-dim { background: rgba(201,168,76,0.12); color: #F8F6F1; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
         .vtable td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.07); font-weight: 300; line-height: 1.5; color: #F8F6F1; vertical-align: top; }
-        .vtable td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.65); background: rgba(248,246,241,0.02); }
+        .vtable td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #F8F6F1; background: rgba(248,246,241,0.02); }
         .vtable-light th { background: #0B1F3A; color: #F8F6F1; }
         .vtable-light th.th-dim { background: rgba(11,31,58,0.08); color: rgba(11,31,58,0.45); }
         .vtable-light td { border-bottom-color: rgba(11,31,58,0.07); color: #4A5868; }
@@ -102,7 +102,7 @@ export default function VisasPage() {
         .vtable .td-warn { color: #F2994A; font-weight: 500; }
         .vtable .td-na { color: rgba(248,246,241,0.6); }
         .vtable-light .td-good { color: #27AE60; }
-        .vtable-light .td-na { color: rgba(11,31,58,0.25); }
+        .vtable-light .td-na { color: #8A9BAA; }
 
         /* ── COST TABLE ── */
         .cost-table-wrap { overflow-x: auto; margin: 20px 0 28px; max-width: 640px; }

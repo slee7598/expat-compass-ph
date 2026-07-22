@@ -529,7 +529,7 @@ export default function MarriagePage() {
           font-weight: 700;
           letter-spacing: 0.12em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.6);
+          color: #F8F6F1;
           margin: 40px 0 16px;
           padding-bottom: 10px;
           border-bottom: 1px solid rgba(201,168,76,0.15);
@@ -603,7 +603,7 @@ export default function MarriagePage() {
           font-weight: 600;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
         }
         .sn-fee-amount {
           font-size: 1.05rem;
@@ -710,9 +710,9 @@ export default function MarriagePage() {
         .compare-wrap { overflow-x: auto; margin: 28px 0; max-width: 780px; }
         .compare-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
         .compare-table th { background: #C9A84C; color: #0B1F3A; font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; padding: 14px 18px; text-align: left; }
-        .compare-table th.th-dim { background: rgba(201,168,76,0.12); color: rgba(248,246,241,0.5); font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+        .compare-table th.th-dim { background: rgba(201,168,76,0.12); color: #F8F6F1; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
         .compare-table td { padding: 12px 18px; border-bottom: 1px solid rgba(248,246,241,0.06); font-weight: 300; line-height: 1.5; color: #F8F6F1; vertical-align: top; }
-        .compare-table td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(248,246,241,0.65); background: rgba(248,246,241,0.02); }
+        .compare-table td.td-dim { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #F8F6F1; background: rgba(248,246,241,0.02); }
         .compare-table .td-good { color: #6FCF97; font-weight: 500; }
         .compare-table .td-warn { color: #F2994A; font-weight: 500; }
         .compare-table .td-bad { color: #EB5757; font-weight: 500; }
@@ -797,7 +797,7 @@ export default function MarriagePage() {
         .cs-card:hover .cs-city::after { transform: translateX(4px); }
         .cs-tagline {
           font-size: 0.8rem; font-weight: 300; line-height: 1.55;
-          color: rgba(248,246,241,0.72);
+          color: #F8F6F1;
         }
 
         /* ── MOBILE ── */

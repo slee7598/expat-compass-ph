@@ -110,7 +110,7 @@ body {
   align-self: flex-end;
   background: none;
   border: none;
-  color: rgba(248, 246, 241, 0.45);
+  color: #F8F6F1;
   font-size: 1.8rem;
   line-height: 1;
   cursor: pointer;
@@ -129,7 +129,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(248, 246, 241, 0.65);
+  color: #F8F6F1;
   text-decoration: none;
   padding: 14px 24px;
   border-left: 2px solid transparent;
