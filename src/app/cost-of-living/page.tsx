@@ -151,7 +151,7 @@ export default function CostOfLivingPage() {
         .surprise-head-less { color: #27AE60; border-color: #27AE60; }
         .surprise-item { margin-bottom: 20px; }
         .surprise-item-title { font-size: 0.88rem; font-weight: 600; color: #0B1F3A; margin-bottom: 5px; }
-        .surprise-item-body { font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: #5C6B7A; }
+        .surprise-item-body { font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: #F8F6F1; }
 
         /* ── HEALTHCARE ── */
         .health-callout { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.25); border-left: 4px solid #C9A84C; padding: 32px 36px; margin: 16px 0 28px; max-width: 760px; }
