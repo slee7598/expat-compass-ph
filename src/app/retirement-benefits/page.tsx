@@ -325,7 +325,7 @@ export default function RetirementBenefitsPage() {
 
           <div className="rb-warning">
             <p className="rb-warning-label">⚠ Payments Stop After 30 Days Abroad</p>
-            <p className="rb-warning-body">SSI is needs-based and stops after 30 days outside the US. If you are receiving SSI and move to the Philippines, your payments will stop. This is not a temporary suspension — you will need to return to the United States and re-establish residency to receive SSI again.</p>
+            <BodyText variant="dark-bg" className="rb-warning-body">SSI is needs-based and stops after 30 days outside the US. If you are receiving SSI and move to the Philippines, your payments will stop. This is not a temporary suspension — you will need to return to the United States and re-establish residency to receive SSI again.</BodyText>
           </div>
 
           <p className="rb-body rb-body-light">SSI and Social Security retirement are completely different programs and the rules for living abroad are completely different. If you receive both Social Security retirement and SSI, your retirement benefits continue in the Philippines but your SSI stops. Plan accordingly before you move.</p>
