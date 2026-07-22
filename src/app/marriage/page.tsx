@@ -697,8 +697,8 @@ export default function MarriagePage() {
           border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px;
         }
         .uv-policy-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
-        .uv-policy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
-        .uv-policy-body-lt { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .uv-policy-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
+        .uv-policy-body-lt { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
         .uv-fee-total {
           display: inline-flex; align-items: center; gap: 18px;
           background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.28);
@@ -727,7 +727,7 @@ export default function MarriagePage() {
           max-width: 760px;
         }
         .dv-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 12px; }
-        .dv-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .dv-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
         .dv-navy-card {
           background: rgba(11,31,58,0.88);
           border: 1px solid rgba(201,168,76,0.2);
@@ -755,8 +755,8 @@ export default function MarriagePage() {
         .dv-warn-list { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
         .dv-warn-li { font-size: 0.9rem; font-weight: 300; line-height: 1.72; padding-left: 26px; position: relative; }
         .dv-warn-li::before { content: '⚠'; position: absolute; left: 0; top: 1px; font-size: 0.72rem; color: #F2994A; }
-        .dv-warn-li-dark { color: #1A1A1A; }
-        .dv-warn-li-lt { color: #1A1A1A; }
+        .dv-warn-li-dark { color: #F8F6F1; }
+        .dv-warn-li-lt { color: #4A5868; }
         .dv-action-list { list-style: none; counter-reset: dvctr; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 18px; max-width: 760px; }
         .dv-action-item { font-size: 0.9rem; font-weight: 300; line-height: 1.72; color: #4A5868; padding-left: 40px; position: relative; counter-increment: dvctr; }
         .dv-action-item::before { content: counter(dvctr); position: absolute; left: 0; top: 1px; width: 24px; height: 24px; background: #C9A84C; color: #0B1F3A; font-size: 0.72rem; font-weight: 700; text-align: center; line-height: 24px; }

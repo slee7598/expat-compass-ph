@@ -78,38 +78,38 @@ export default function DatingPhilippinesPage() {
         /* ── ALERT BOXES ── */
         .rb-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.25); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .rb-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
-        .rb-warning-body-light { color: #1A1A1A; }
+        .rb-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .rb-warning-body-light { color: #F8F6F1; }
 
         .rb-amber { background: rgba(242,153,74,0.07); border: 1px solid rgba(242,153,74,0.3); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
-        .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
-        .rb-amber-body-light { color: #1A1A1A; }
+        .rb-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .rb-amber-body-light { color: #F8F6F1; }
 
         .rb-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
-        .rb-alert-body-dark { color: #1A1A1A; }
+        .rb-alert-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
+        .rb-alert-body-dark { color: #4A5868; }
 
         .rb-info { background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2); border-left: 4px solid #2979FF; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-info-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
-        .rb-info-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .rb-info-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         .rb-green { background: rgba(111,207,151,0.06); border: 1px solid rgba(111,207,151,0.25); border-left: 4px solid #6FCF97; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .rb-green-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #27AE60; margin-bottom: 10px; }
-        .rb-green-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .rb-green-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
 
         /* ── SCAM CARDS ── */
         .scam-grid { display: flex; flex-direction: column; gap: 16px; max-width: 760px; margin: 24px 0; }
         .scam-card { border: 1px solid rgba(235,87,87,0.2); border-left: 4px solid #EB5757; padding: 22px 24px; background: rgba(235,87,87,0.03); }
         .scam-card-name { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #EB5757; margin-bottom: 8px; }
-        .scam-card-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #1A1A1A; }
+        .scam-card-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── VERIFY CHECKLIST ── */
         .verify-list { list-style: none; display: flex; flex-direction: column; gap: 20px; max-width: 760px; margin: 24px 0; }
         .verify-item { border-left: 3px solid #C9A84C; padding: 16px 20px; background: rgba(201,168,76,0.04); }
         .verify-item-name { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
-        .verify-item-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #1A1A1A; }
+        .verify-item-body { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: #F8F6F1; }
 
         /* ── FLAGS ── */
         .flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 860px; }

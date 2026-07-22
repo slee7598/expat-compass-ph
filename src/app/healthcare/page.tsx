@@ -73,20 +73,20 @@ export default function HealthcarePage() {
         /* ── ALERT BOXES ── */
         .ha-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .ha-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ha-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
 
         .ha-amber { background: rgba(242,153,74,0.06); border: 1px solid rgba(242,153,74,0.28); border-left: 4px solid #F2994A; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-amber-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #F2994A; margin-bottom: 10px; }
-        .ha-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
-        .ha-amber-body-light { color: #1A1A1A; }
+        .ha-amber-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .ha-amber-body-light { color: #F8F6F1; }
 
         .ha-blue { background: rgba(41,121,255,0.05); border: 1px solid rgba(41,121,255,0.2); border-left: 4px solid #2979FF; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-blue-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2979FF; margin-bottom: 10px; }
-        .ha-blue-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ha-blue-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         .ha-red { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 24px 0; max-width: 760px; }
         .ha-red-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .ha-red-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ha-red-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── FEATURED HOSPITAL CARD ── */
         .hospital-hero { border: 1px solid rgba(201,168,76,0.25); background: rgba(201,168,76,0.03); max-width: 820px; margin-bottom: 28px; }
@@ -114,7 +114,7 @@ export default function HealthcarePage() {
         .campus-card:last-child { border-right: 1px solid rgba(11,31,58,0.08); }
         .campus-name { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C9A84C; margin-bottom: 8px; }
         .campus-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #0B1F3A; margin-bottom: 10px; }
-        .campus-body { font-size: 0.85rem; font-weight: 300; line-height: 1.72; color: #1A1A1A; }
+        .campus-body { font-size: 0.85rem; font-weight: 300; line-height: 1.72; color: #5C6B7A; }
 
         /* ── COST TABLES ── */
         .cost-table-wrap { overflow-x: auto; margin: 20px 0 8px; max-width: 760px; }
@@ -150,7 +150,7 @@ export default function HealthcarePage() {
         .ins-card-head { padding: 20px 24px 0; }
         .ins-card-tier { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A84C; margin-bottom: 6px; }
         .ins-card-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #0B1F3A; }
-        .ins-card-body { padding: 14px 24px 22px; font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: #1A1A1A; }
+        .ins-card-body { padding: 14px 24px 22px; font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: #5C6B7A; }
         .ins-card-link { display: inline-block; margin-top: 12px; padding: 9px 20px; background: #C9A84C; color: #0B1F3A; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-decoration: none; }
         .ins-card-featured { border-color: rgba(201,168,76,0.4); background: rgba(201,168,76,0.04); }
         .ins-card-featured .ins-card-name { color: #C9A84C; }

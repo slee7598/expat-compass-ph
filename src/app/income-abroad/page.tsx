@@ -56,12 +56,12 @@ export default function IncomeAbroadPage() {
 
         .ia-gold { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ia-gold-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .ia-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
-        .ia-gold-body-light { color: #1A1A1A; }
+        .ia-gold-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #4A5868; }
+        .ia-gold-body-light { color: #F8F6F1; }
 
         .ia-warning { background: rgba(235,87,87,0.06); border: 1px solid rgba(235,87,87,0.22); border-left: 4px solid #EB5757; padding: 26px 28px; margin: 28px 0; max-width: 760px; }
         .ia-warning-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #EB5757; margin-bottom: 10px; }
-        .ia-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #1A1A1A; }
+        .ia-warning-body { font-size: 0.92rem; font-weight: 300; line-height: 1.85; color: #F8F6F1; }
 
         /* ── COMPARISON CARDS ── */
         .transfer-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
@@ -69,7 +69,7 @@ export default function IncomeAbroadPage() {
         .transfer-card:last-child { border-bottom: 1px solid #E8E4DC; }
         .transfer-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
         .transfer-name { font-family: 'Playfair Display', serif; font-size: 1.02rem; font-weight: 700; color: #0B1F3A; }
-        .transfer-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #1A1A1A; }
+        .transfer-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #4A5868; }
 
         .sn-section { background: #0D1E30; border-top: 3px solid #C9A84C; padding: 80px 48px; position: relative; overflow: hidden; }
         .sn-section::before { content: 'S'; font-family: 'Playfair Display', serif; font-size: 320px; font-weight: 700; color: rgba(201,168,76,0.05); position: absolute; right: -10px; top: -60px; line-height: 1; pointer-events: none; user-select: none; }
