@@ -140,7 +140,7 @@ export default function Home() {
         }
         .lsb-nav {
           flex: 1;
-          margin-top: 16px;
+          margin-top: -18px;
           padding: 2px 0;
           overflow-y: auto;
           background: rgba(11,31,58,0.88);
@@ -176,7 +176,9 @@ export default function Home() {
           align-items: flex-start;
           flex-wrap: wrap;
           padding: 8px 48px 12px 32px;
+          pointer-events: none;
         }
+        .hero-banner > * { pointer-events: auto; }
         .hb-logo-link { display: block; line-height: 0; flex-shrink: 0; }
         .hb-logo {
           display: block;
