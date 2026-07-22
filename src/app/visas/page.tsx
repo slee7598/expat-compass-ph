@@ -123,11 +123,11 @@ export default function VisasPage() {
 
         /* ── DEPOSIT TABLE ── */
         .deposit-grid { display: flex; flex-direction: column; gap: 0; max-width: 720px; margin: 20px 0; }
-        .deposit-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 18px 24px; border: 1px solid rgba(248,246,241,0.08); border-bottom: none; align-items: center; background: rgba(248,246,241,0.03); }
-        .deposit-row:last-child { border-bottom: 1px solid rgba(248,246,241,0.08); }
-        .deposit-row:nth-child(even) { background: rgba(248,246,241,0.015); }
-        .deposit-label { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: #F8F6F1; }
-        .deposit-label strong { font-weight: 600; color: #F8F6F1; }
+        .deposit-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 18px 24px; border: 1px solid rgba(11,31,58,0.08); border-bottom: none; align-items: center; background: #fff; }
+        .deposit-row:last-child { border-bottom: 1px solid rgba(11,31,58,0.08); }
+        .deposit-row:nth-child(even) { background: rgba(11,31,58,0.02); }
+        .deposit-label { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: #4A5868; }
+        .deposit-label strong { font-weight: 600; color: #0B1F3A; }
         .deposit-amount { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #C9A84C; white-space: nowrap; }
         .deposit-head { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.2); }
         .deposit-head .deposit-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C9A84C; }
