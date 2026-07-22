@@ -140,7 +140,7 @@ export default function Home() {
         }
         .lsb-nav {
           flex: 1;
-          margin-top: -18px;
+          margin-top: -14px;
           padding: 2px 0;
           overflow-y: auto;
           background: rgba(11,31,58,0.88);
@@ -187,15 +187,6 @@ export default function Home() {
           padding: 5px;
           background: white;
           box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-        }
-        .hb-sep {
-          display: block;
-          width: 1px;
-          align-self: stretch;
-          min-height: 48px;
-          background: rgba(201,168,76,0.30);
-          flex-shrink: 0;
-          margin: 0 28px;
         }
         /* Reset margins on widgets inside the banner */
         .hero-banner .hrate-wrap { margin-bottom: 0; }
@@ -678,9 +669,7 @@ export default function Home() {
               priority
             />
           </Link>
-          <span className="hb-sep" />
           <HeroRate />
-          <span className="hb-sep" />
           <HeroHolidayGrid />
         </div>
 
