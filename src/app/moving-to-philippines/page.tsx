@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "Moving to the Philippines — Complete Packing List and First Steps 2026",
@@ -386,7 +387,7 @@ export default function MovingToPhilippinesPage() {
 
           <div className="ma-warning">
             <p className="ma-warning-label">⚠ Important — Western Sizes Are Extremely Limited</p>
-            <p className="ma-warning-body">Western sizing above XL is extremely limited in Philippine retail stores. If you are above XL or wear shoe sizes US 11 or larger bring sufficient clothing and shoes from home. This is one of the most consistently cited packing regrets among expats — do not underestimate it.</p>
+            <BodyText variant="dark-bg" className="ma-warning-body">Western sizing above XL is extremely limited in Philippine retail stores. If you are above XL or wear shoe sizes US 11 or larger bring sufficient clothing and shoes from home. This is one of the most consistently cited packing regrets among expats — do not underestimate it.</BodyText>
           </div>
         </div>
       </section>

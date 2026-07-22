@@ -610,7 +610,7 @@ export default function VisasPage() {
 
           <div className="va-amber">
             <p className="va-amber-label">Other Nationalities — Equivalent Documents</p>
-            <p className="va-amber-body">For 13A applicants from other countries, the equivalent document is the FBI Identification Record for Americans, the RCMP criminal record check for Canadians, the Australian National Police Check for Australians, and the equivalent national police authority certificate for other nationalities. All must be apostilled by the relevant national authority before submission to Philippine immigration.</p>
+            <BodyText variant="dark-bg" className="va-amber-body">For 13A applicants from other countries, the equivalent document is the FBI Identification Record for Americans, the RCMP criminal record check for Canadians, the Australian National Police Check for Australians, and the equivalent national police authority certificate for other nationalities. All must be apostilled by the relevant national authority before submission to Philippine immigration.</BodyText>
           </div>
 
           <div id="13a-exit-requirements">
@@ -938,7 +938,7 @@ export default function VisasPage() {
           <h3 className="vsub vsub-light">In Person Renewal — DS-11</h3>
           <div className="va-amber">
             <p className="va-amber-label">Walk-In Services Are NOT Available — Appointment Required</p>
-            <p className="va-amber-body">Walk-in services are not available. Each individual requires an appointment. Do not show up without one. No exceptions. Schedule appointments online through the Embassy portal at ph.usembassy.gov. Cell phones and other electronic devices are prohibited inside the Embassy — do not bring them to your appointment. Arrive 15 to 30 minutes before your scheduled appointment with printed color photos, originals and photocopies of all required documents, and proof of payment from pay.gov. The fee must be paid online before your appointment. DS-11 is required for first-time applicants and lost or stolen passports.</p>
+            <BodyText variant="dark-bg" className="va-amber-body">Walk-in services are not available. Each individual requires an appointment. Do not show up without one. No exceptions. Schedule appointments online through the Embassy portal at ph.usembassy.gov. Cell phones and other electronic devices are prohibited inside the Embassy — do not bring them to your appointment. Arrive 15 to 30 minutes before your scheduled appointment with printed color photos, originals and photocopies of all required documents, and proof of payment from pay.gov. The fee must be paid online before your appointment. DS-11 is required for first-time applicants and lost or stolen passports.</BodyText>
           </div>
 
           <h3 className="vsub vsub-light">Cebu-Based Americans — Use the Consular Agency</h3>

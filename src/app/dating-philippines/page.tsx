@@ -117,7 +117,7 @@ export default function DatingPhilippinesPage() {
         .flag-col-label-red { color: #EB5757; }
         .flag-col-label-green { color: #27AE60; }
         .flag-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-        .flag-item { font-size: 0.88rem; font-weight: 300; line-height: 1.65; color: #4A5868; padding-left: 22px; position: relative; }
+        .flag-item { font-size: 0.88rem; font-weight: 300; line-height: 1.65; color: #F8F6F1; padding-left: 22px; position: relative; }
         .flag-item-red::before { content: '✕'; position: absolute; left: 0; color: #EB5757; font-weight: 700; font-size: 0.75rem; top: 2px; }
         .flag-item-green::before { content: '✓'; position: absolute; left: 0; color: #27AE60; font-weight: 700; font-size: 0.75rem; top: 2px; }
 

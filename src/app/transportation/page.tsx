@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "Getting Around the Philippines — Expat Guide to Transport 2026",
@@ -873,7 +874,7 @@ export default function TransportationPage() {
 
           <div className="lto-alert">
             <p className="lto-alert-label">Should You Drive in the Philippines?</p>
-            <p className="lto-alert-body">Whether driving makes sense depends entirely on where you live. In Metro Manila, most long-term expats eventually conclude the answer is no — traffic is genuinely severe, parking is costly, and Grab and Maxim cover the need competently. In Cebu, especially outside the city core, having a car or motorcycle is genuinely convenient and the traffic, while real, is far more manageable. In provincial areas a vehicle is often essential. If you are new to the Philippines, consider spending your first few months using Grab and Maxim before deciding whether to buy. You will learn the roads without the pressure of ownership, and your decision will be better informed by actual experience.</p>
+            <BodyText variant="dark-bg" className="lto-alert-body">Whether driving makes sense depends entirely on where you live. In Metro Manila, most long-term expats eventually conclude the answer is no — traffic is genuinely severe, parking is costly, and Grab and Maxim cover the need competently. In Cebu, especially outside the city core, having a car or motorcycle is genuinely convenient and the traffic, while real, is far more manageable. In provincial areas a vehicle is often essential. If you are new to the Philippines, consider spending your first few months using Grab and Maxim before deciding whether to buy. You will learn the roads without the pressure of ownership, and your decision will be better informed by actual experience.</BodyText>
           </div>
         </div>
       </section>
