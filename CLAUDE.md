@@ -66,6 +66,18 @@ grep -rn "color.*rgba(11,31,58,0\.[0-2]" --include="*.tsx" --include="*.jsx" --i
 
 Zero violations must be confirmed before any commit. The pre-commit hook at `.git/hooks/pre-commit` will also block commits that introduce violations in staged CSS/TSX files.
 
+## MANDATORY: BodyText Component for All Body Paragraphs
+
+A shared `BodyText` component at `src/components/BodyText.tsx` enforces correct text color for all body paragraphs. It accepts a `variant` prop of `'dark-bg'` or `'light-bg'` and applies the correct brand color via inline style — always overriding any CSS class color.
+
+**ALL new body text MUST use `<BodyText variant="...">`. Raw `<p>` tags with manually-specified text colors are NOT permitted anywhere in this codebase. This applies to every future edit, every new page, every new callout box — no exceptions, no overrides, checked before ANY commit.**
+
+- `variant="dark-bg"` → applies `#F8F6F1` (cream, for dark navy sections)
+- `variant="light-bg"` → applies `#1A1A1A` (near-black, for white/cream sections)
+- The `style` prop on BodyText cannot accept `color` — TypeScript blocks this at compile time
+- Heading text, gold label overlines, and accent text are exempt (these are not body text)
+- Import: `import BodyText from '@/components/BodyText';`
+
 ## General Content Rules
 - Do not rewrite page content unless explicitly asked
 - Do not add new sections without being asked

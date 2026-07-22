@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "US Retirement Benefits Abroad — Social Security, Medicare & VA in the Philippines 2026",
@@ -567,11 +568,11 @@ export default function RetirementBenefitsPage() {
           <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:'2px', margin:'20px 0 28px', maxWidth:'760px'}}>
             <div style={{background:'rgba(235,87,87,0.06)', border:'1px solid rgba(235,87,87,0.2)', borderLeft:'4px solid #EB5757', padding:'24px 26px'}}>
               <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#EB5757', marginBottom:'12px'}}>Countries Where UK State Pension is FROZEN</p>
-              <p style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.78, color:'#4A5868'}}>Australia, Canada, New Zealand, South Africa, and most Commonwealth nations. Pensioners receive the pension rate first paid and it never increases. A pensioner who retired 20 years ago in Australia receives approximately £4,140 per year compared to £11,500 if they had remained in the UK.</p>
+              <BodyText variant="light-bg" style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.78}}>Australia, Canada, New Zealand, South Africa, and most Commonwealth nations. Pensioners receive the pension rate first paid and it never increases. A pensioner who retired 20 years ago in Australia receives approximately £4,140 per year compared to £11,500 if they had remained in the UK.</BodyText>
             </div>
             <div style={{background:'rgba(39,174,96,0.06)', border:'1px solid rgba(39,174,96,0.2)', borderLeft:'4px solid #27AE60', padding:'24px 26px'}}>
               <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#27AE60', marginBottom:'12px'}}>The Philippines is DIFFERENT</p>
-              <p style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.78, color:'#4A5868'}}>The Philippines has a bilateral agreement with the UK covering pension uprating. British expats living in the Philippines receive annual Triple Lock increases just like UK residents. This is one of the most valuable and least-known advantages of retiring to the Philippines for British nationals.</p>
+              <BodyText variant="light-bg" style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.78}}>The Philippines has a bilateral agreement with the UK covering pension uprating. British expats living in the Philippines receive annual Triple Lock increases just like UK residents. This is one of the most valuable and least-known advantages of retiring to the Philippines for British nationals.</BodyText>
             </div>
           </div>
 

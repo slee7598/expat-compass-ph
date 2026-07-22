@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "Best Cities in the Philippines for Expats 2026 — Where to Live Guide",
@@ -948,15 +949,15 @@ export default function CityGuidesPage() {
         <div className="section-inner">
           <p className="section-eyebrow">Live Like a Local</p>
           <h2 className="section-heading">Philippines Festival Calendar — Plan Around These Dates</h2>
-          <p style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, color:'#4A5868', marginBottom:'32px', maxWidth:'760px'}}>The Philippines has some of the most spectacular festivals in Asia. As an expat living here you will want to know about them — both to enjoy them and to plan your travel around the traffic and accommodation crunches they create.</p>
+          <BodyText variant="light-bg" style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, marginBottom:'32px', maxWidth:'760px'}}>The Philippines has some of the most spectacular festivals in Asia. As an expat living here you will want to know about them — both to enjoy them and to plan your travel around the traffic and accommodation crunches they create.</BodyText>
 
           {/* Sinulog — featured gold card */}
           <div style={{background:'rgba(201,168,76,0.08)', border:'2px solid #C9A84C', padding:'28px 32px', marginBottom:'16px', maxWidth:'860px'}}>
             <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>★ Featured — Biggest Festival in the Philippines</p>
             <p style={{fontFamily:"'Playfair Display', serif", fontSize:'1.15rem', fontWeight:700, color:'#0B1F3A', marginBottom:'6px'}}>Sinulog — Cebu City</p>
             <p style={{fontSize:'0.72rem', fontWeight:600, color:'#C9A84C', marginBottom:'14px', letterSpacing:'0.06em'}}>Third Sunday of January &mdash; Sinulog 2027: January 17</p>
-            <p style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.8, color:'#4A5868', marginBottom:'12px'}}>One of the largest festivals in the Philippines attracting over 5 million attendees. A religious and cultural celebration honoring the Santo Ni&ntilde;o — the Child Jesus — combining grand parades, street dancing, novena masses, and spectacular fireworks. Activities begin as early as December 27 and run through January 31.</p>
-            <p style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.8, color:'#4A5868'}}><strong style={{color:'#0B1F3A'}}>For expats on Mactan:</strong> The bridge crossing to Cebu City during Sinulog week is extremely congested. Stay on the Mactan side if you do not plan to attend. If you want to attend, stay in Cebu City — not Mactan. Book accommodation months in advance as the city fills completely.</p>
+            <BodyText variant="light-bg" style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.8, marginBottom:'12px'}}>One of the largest festivals in the Philippines attracting over 5 million attendees. A religious and cultural celebration honoring the Santo Ni&ntilde;o — the Child Jesus — combining grand parades, street dancing, novena masses, and spectacular fireworks. Activities begin as early as December 27 and run through January 31.</BodyText>
+            <BodyText variant="light-bg" style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.8}}><strong style={{color:'#0B1F3A'}}>For expats on Mactan:</strong> The bridge crossing to Cebu City during Sinulog week is extremely congested. Stay on the Mactan side if you do not plan to attend. If you want to attend, stay in Cebu City — not Mactan. Book accommodation months in advance as the city fills completely.</BodyText>
           </div>
 
           <div className="detail-rows" style={{maxWidth:'860px'}}>
@@ -1107,9 +1108,9 @@ export default function CityGuidesPage() {
             <h3 style={{fontFamily:"'Playfair Display', serif", fontSize:'1.3rem', fontWeight:700, color:'#F8F6F1', marginBottom:'10px'}}>
               Local &amp; Provincial Holidays 2026
             </h3>
-            <p style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.8, color:'rgba(248,246,241,0.78)', marginBottom:'24px', maxWidth:'760px'}}>
+            <BodyText variant="dark-bg" style={{fontSize:'0.88rem', fontWeight:300, lineHeight:1.8, marginBottom:'24px', maxWidth:'760px'}}>
               In addition to national holidays, individual cities and provinces observe non-working days for their own charter anniversaries and local festivals. These apply only within that city or municipality. Dates are subject to annual local proclamation — verify with the relevant local government unit (LGU) before making plans.
-            </p>
+            </BodyText>
 
             <div style={{overflowX:'auto', maxWidth:'860px'}}>
               <table style={{width:'100%', borderCollapse:'collapse', fontSize:'0.87rem'}}>
@@ -1171,7 +1172,7 @@ export default function CityGuidesPage() {
         <div className="section-inner">
           <p className="section-eyebrow section-eyebrow-light">For Expat Divers</p>
           <h2 className="section-heading section-heading-light">Philippines Dive Destinations — The Complete Guide for Expat Divers</h2>
-          <p style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, color:'rgba(248,246,241,0.8)', marginBottom:'40px', maxWidth:'760px'}}>The Philippines is one of the top three scuba diving destinations in the world, sitting at the heart of the Coral Triangle with more than 3,000 species of reef fish, 600 species of coral, and over 7,000 islands to explore. For expats living here, world-class diving is not a vacation — it is a weekend activity.</p>
+          <BodyText variant="dark-bg" style={{fontSize:'0.93rem', fontWeight:300, lineHeight:1.85, marginBottom:'40px', maxWidth:'760px'}}>The Philippines is one of the top three scuba diving destinations in the world, sitting at the heart of the Coral Triangle with more than 3,000 species of reef fish, 600 species of coral, and over 7,000 islands to explore. For expats living here, world-class diving is not a vacation — it is a weekend activity.</BodyText>
 
           {/* MALAPASCUA */}
           <div style={{marginBottom:'48px'}}>
@@ -1373,7 +1374,7 @@ export default function CityGuidesPage() {
         <div className="section-inner">
           <p className="section-eyebrow">For Expat Families</p>
           <h2 className="section-heading">Philippine Education System — A Guide for Expat Families</h2>
-          <p style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.85, color:'#4A5868', marginBottom:'40px', maxWidth:'760px'}}>For expat families with school-age children, understanding the Philippine education system is critical to choosing the right city. The quality gap between school types is significant and the best options vary by location.</p>
+          <BodyText variant="light-bg" style={{fontSize:'0.9rem', fontWeight:300, lineHeight:1.85, marginBottom:'40px', maxWidth:'760px'}}>For expat families with school-age children, understanding the Philippine education system is critical to choosing the right city. The quality gap between school types is significant and the best options vary by location.</BodyText>
 
           <div className="neighborhood-grid neighborhood-grid-light" style={{marginBottom:'40px'}}>
             <div className="neighborhood-card neighborhood-card-light">

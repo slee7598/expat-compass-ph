@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "How to Marry a Filipino Citizen as a Foreigner — Legal Requirements Philippines",
@@ -846,7 +847,7 @@ export default function MarriagePage() {
           </div>
           <div>
             <p style={{fontSize:'0.65rem', fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'8px'}}>Going Through a Divorce?</p>
-            <p style={{fontSize:'0.92rem', fontWeight:300, lineHeight:1.8, color:'#4A5868', marginBottom:'10px'}}>Going through a divorce from a Filipino spouse? This is one of the most searched and least explained topics for expats. We cover everything — US divorce consent rules, service of process, Article 26 judicial recognition, what happens to your spouse&rsquo;s civil status, timeline, cost, and how to avoid the most common mistakes.</p>
+            <BodyText variant="light-bg" style={{fontSize:'0.92rem', fontWeight:300, lineHeight:1.8, marginBottom:'10px'}}>Going through a divorce from a Filipino spouse? This is one of the most searched and least explained topics for expats. We cover everything — US divorce consent rules, service of process, Article 26 judicial recognition, what happens to your spouse&rsquo;s civil status, timeline, cost, and how to avoid the most common mistakes.</BodyText>
             <a href="/divorce-philippines" style={{display:'inline-flex', alignItems:'center', gap:'6px', fontSize:'0.82rem', fontWeight:600, color:'#C9A84C', textDecoration:'none', letterSpacing:'0.04em'}}>
               Read the Complete Divorce Guide &rarr;
             </a>

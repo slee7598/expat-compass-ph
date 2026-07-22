@@ -3,6 +3,7 @@ import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "Philippines Visa Guide for Expats 2026 — Tourist Extensions, SRRV, 13A & Digital Nomad Visa",
@@ -341,9 +342,9 @@ export default function VisasPage() {
               style={{width: '100%', height: 'auto', display: 'block'}}
               priority
             />
-            <p style={{fontSize: '0.78rem', color: 'rgba(248,246,241,0.72)', marginTop: '10px', fontStyle: 'italic', lineHeight: 1.55}}>
+            <BodyText variant="dark-bg" style={{fontSize: '0.78rem', marginTop: '10px', fontStyle: 'italic', lineHeight: 1.55}}>
               Official BI fee schedule photographed at the Mactan Satellite Office, Pajo, Lapu-Lapu City — July 2026.
-            </p>
+            </BodyText>
           </div>
 
           <div className="vtable-wrap" style={{maxWidth: '900px'}}>
