@@ -188,7 +188,7 @@ export default function ArrivalGuidePage() {
 
           <div className="aa-warning">
             <p className="aa-warning-label">⚠ Touts and Fixers</p>
-            <p className="aa-warning-body">Anyone approaching you unsolicited inside or outside the terminal offering taxis, transport, or accommodation is operating outside the official system. Use only the official taxi queue or Grab. Overcharging and scams targeting new arrivals are common at NAIA.</p>
+            <p className="aa-warning-body" style={{color:'#1A1A1A'}}>Anyone approaching you unsolicited inside or outside the terminal offering taxis, transport, or accommodation is operating outside the official system. Use only the official taxi queue or Grab. Overcharging and scams targeting new arrivals are common at NAIA.</p>
           </div>
         </div>
       </section>
