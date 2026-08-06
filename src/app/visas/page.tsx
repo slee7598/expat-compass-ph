@@ -846,7 +846,7 @@ export default function VisasPage() {
           <h3 className="vsub">Drug Offenses — Highest Scrutiny</h3>
           <div className="va-warning">
             <p className="va-warning-label">⚠ Drug Offenses — Consult an Attorney</p>
-            <p className="va-warning-body">The Philippines takes drug-related offenses extremely seriously. Any conviction related to drug possession, trafficking, or supply — regardless of how long ago or whether the sentence was suspended — will receive heavy scrutiny from Philippine immigration. Suspended sentences, spent convictions, and expunged records in your home country do not automatically resolve the issue in Philippine immigration proceedings. Consult a licensed Philippine immigration attorney before applying for any long-stay visa if you have any drug-related record. Do not attempt to conceal drug offenses — concealment is treated far more seriously than disclosure.</p>
+            <p className="va-warning-body" style={{color:'#1A1A1A'}}>The Philippines takes drug-related offenses extremely seriously. Any conviction related to drug possession, trafficking, or supply — regardless of how long ago or whether the sentence was suspended — will receive heavy scrutiny from Philippine immigration. Suspended sentences, spent convictions, and expunged records in your home country do not automatically resolve the issue in Philippine immigration proceedings. Consult a licensed Philippine immigration attorney before applying for any long-stay visa if you have any drug-related record. Do not attempt to conceal drug offenses — concealment is treated far more seriously than disclosure.</p>
           </div>
 
           <h3 className="vsub">Violent Offenses</h3>
