@@ -76,7 +76,7 @@ const remittances = {
   details: [
     {
       label: "Wise",
-      body: "Wise (formerly TransferWise) consistently offers among the best exchange rates with low, transparent fees — typically 0.4–1.5% of the transfer amount. Transfers to a Philippine bank account usually arrive within one to two business days. Wise also offers a multi-currency account and debit card that can reduce ATM fees significantly for day-to-day use in the Philippines.",
+      body: "Wise (formerly TransferWise) consistently offers among the best exchange rates with low, transparent fees — typically 0.4–1.5% of the transfer amount. Transfers to a Philippine bank account usually arrive within one to two business days. Wise also offers a multi-currency account and debit card that can reduce ATM fees significantly for day-to-day use in the Philippines. Open a Wise account through Steve's referral link at wise.com/invite/dic/stephenl3013 — new accounts opened through this link earn a bonus for both parties.",
     },
     {
       label: "Remitly & WorldRemit",

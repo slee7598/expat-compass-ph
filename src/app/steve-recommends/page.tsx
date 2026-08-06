@@ -76,9 +76,9 @@ const banking: RecItem[] = [
   {
     name: "Wise — Best Exchange Rates for Moving Money to the Philippines",
     body: "If you are moving money regularly from the United States to the Philippines, Wise is the transfer service I recommend above everything else. The reason is simple: Wise uses the mid-market exchange rate — the real rate you see when you search the exchange rate on Google. Not a marked-up rate, not a promotional rate that expires after your first transfer. The actual rate every single time. Most banks and transfer services make their money by quietly giving you a worse exchange rate. They call it a zero-fee transfer and then take their cut in the margin. Wise does the opposite — they show you a small transparent fee upfront and give you the real rate. On a $1,000 transfer from the US to the Philippines, the difference between Wise and a typical bank wire can be $30 to $80 in your favor every month. Fees start from as low as 0.4 percent of the transfer amount. 74 percent of transfers arrive in under 20 seconds. 95 percent complete within a day. New in 2026 — the Wise Debit Card Mastercard is now available for Philippine residents, meaning your Filipina partner can hold a Wise account and receive transfers with no hidden fees. Wise-to-Wise transfers between account holders are free for same-currency transfers. For regular monthly transfers from your US account to your Philippine bank account, Wise is the most cost-effective solution available.",
-    link: "https://wise.com",
-    linkLabel: "Open a Wise Account →",
-    note: "Affiliate link coming soon — genuine personal recommendation",
+    link: "https://wise.com/invite/dic/stephenl3013",
+    linkLabel: "OPEN A WISE ACCOUNT",
+    note: "Use this link to open your Wise account — we both benefit.",
   },
   {
     name: "Remitly — Fast Transfers When Speed Matters",
