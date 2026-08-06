@@ -391,7 +391,7 @@ export default function VisasPage() {
 
           <div className="va-blue" style={{marginTop: '28px', maxWidth: '900px'}}>
             <p className="va-blue-label">Visa Stickers Discontinued — Keep Your Official Receipt</p>
-            <p className="va-blue-body">Visa stickers have not been issued by the Bureau of Immigration since November 13, 2019. Your visa validity is now printed directly on the Official Receipt (OR) issued at the time of your extension. Keep your OR — you will need to present it at your next extension and at departure.</p>
+            <p className="va-blue-body" style={{color:'#F8F6F1'}}>Visa stickers have not been issued by the Bureau of Immigration since November 13, 2019. Your visa validity is now printed directly on the Official Receipt (OR) issued at the time of your extension. Keep your OR — you will need to present it at your next extension and at departure.</p>
           </div>
 
           <h3 className="vsub vsub-light">The 36-month limit</h3>
