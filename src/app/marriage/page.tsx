@@ -1022,6 +1022,10 @@ export default function MarriagePage() {
                 <span className="sn-req-text">{r}</span>
               </div>
             ))}
+            <div className="sn-req-item">
+              <span className="sn-req-num">6.</span>
+              <span className="sn-req-text">PSA CENOMAR — Some Local Civil Registrars, including Lapu-Lapu City, require foreign applicants to obtain a PSA CENOMAR in addition to the Certificate of Legal Capacity to Marry, regardless of general guidance suggesting it&rsquo;s only needed in specific cases. Steve had to order his directly. Confirm with your specific LCR whether this applies to you, and order early since processing takes time. Order at <a href="https://www.psaserbilis.com.ph" target="_blank" rel="noopener noreferrer" style={{color:'#C9A84C', textDecoration:'none'}}>psaserbilis.com.ph</a>.</span>
+            </div>
           </div>
 
           <div className="sn-fee">
