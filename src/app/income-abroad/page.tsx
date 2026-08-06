@@ -143,7 +143,7 @@ export default function IncomeAbroadPage() {
 
           <div className="ia-warning">
             <p className="ia-warning-label">⚠ Philippine Tax Residency — The 180 Day Trigger</p>
-            <p className="ia-warning-body">This is where many remote workers get surprised. Under Philippine tax law, a foreign national who stays in the Philippines for more than 180 days in a calendar year may be considered a resident alien and subject to Philippine income tax on Philippine-sourced income. For most remote workers employed by foreign companies with no Philippine-sourced income this may not create a tax liability on their employment income. However the threshold matters and should be discussed with a Philippine tax attorney if you plan to stay more than 180 days in the calendar year.</p>
+            <p className="ia-warning-body" style={{color:'#1A1A1A'}}>This is where many remote workers get surprised. Under Philippine tax law, a foreign national who stays in the Philippines for more than 180 days in a calendar year may be considered a resident alien and subject to Philippine income tax on Philippine-sourced income. For most remote workers employed by foreign companies with no Philippine-sourced income this may not create a tax liability on their employment income. However the threshold matters and should be discussed with a Philippine tax attorney if you plan to stay more than 180 days in the calendar year.</p>
           </div>
 
           <h3 className="isub">The Digital Nomad Visa Solution</h3>
