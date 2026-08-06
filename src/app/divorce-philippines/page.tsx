@@ -244,6 +244,10 @@ export default function DivorcePhilippinesPage() {
               <p className="cs-city">Annulment</p>
               <p className="cs-tagline">The alternative path</p>
             </a>
+            <a href="#legal-separation" className="cs-card">
+              <p className="cs-city">Legal Separation</p>
+              <p className="cs-tagline">What it does and does not do</p>
+            </a>
             <a href="#assets" className="cs-card">
               <p className="cs-city">Philippine Assets</p>
               <p className="cs-tagline">What happens to property</p>
