@@ -98,7 +98,7 @@ const topics = [
   {
     label: "Living on Income",
     description:
-      "How expats fund their life — Social Security, remote work, Digital Nomad Visa, and receiving money efficiently.",
+      "How expats fund their life in the Philippines — Social Security, remote work, Digital Nomad Visa, and receiving money efficiently. Remote workers: the Foreign Earned Income Exclusion may apply to your US salary even if your employer is American.",
     href: "/income-abroad",
   },
 ];

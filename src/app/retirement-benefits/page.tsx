@@ -470,6 +470,16 @@ export default function RetirementBenefitsPage() {
             <p className="rb-alert-label">Use a US Expat Tax Specialist</p>
             <p className="rb-alert-body">Use a US expat tax specialist not a regular accountant. Services like Greenback Tax Services, Taxes for Expats, and MyExpatTaxes specialize in this. A general tax preparer will likely miss critical forms and elections that could cost you significantly.</p>
           </div>
+
+          <div className="rb-alert" style={{marginTop:'28px'}}>
+            <p className="rb-alert-label">The Foreign Earned Income Exclusion — Why It Does Not Apply to Most Retirees</p>
+            <p className="rb-alert-body">The Foreign Earned Income Exclusion is one of the most valuable US tax benefits for American expats — but it does not apply to the income most retirees live on. Here is the clear distinction:</p>
+            <p className="rb-alert-body" style={{marginTop:'12px'}}><strong>FEIE applies to EARNED income only</strong> — wages, salaries, freelance income, and self-employment income earned while living abroad. The word <em>foreign</em> in the name describes where you are living, not who pays you.</p>
+            <p className="rb-alert-body" style={{marginTop:'12px'}}><strong>FEIE does NOT apply to:</strong> Social Security retirement payments. Pension income. 401k and IRA distributions. Investment dividends and capital gains. Rental income. Passive income of any kind.</p>
+            <p className="rb-alert-body" style={{marginTop:'12px'}}>If your primary income is Social Security, a pension, or investment distributions — FEIE provides no benefit for you. Your retirement income remains fully subject to US federal income tax regardless of where you live.</p>
+            <p className="rb-alert-body" style={{marginTop:'12px'}}>If you have any earned income in retirement — consulting, freelancing, part-time remote work, or self-employment — that earned portion may qualify for FEIE even if your retirement income does not.</p>
+            <p className="rb-alert-body" style={{marginTop:'12px'}}>See the full FEIE guide on our <a href="/income-abroad#feie" style={{color:'#C9A84C', textDecoration:'none', fontWeight:500}}>Living on Income page</a> for complete details including the two qualifying tests and how to claim it on Form 2555.</p>
+          </div>
         </div>
       </section>
 
