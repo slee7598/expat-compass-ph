@@ -533,7 +533,7 @@ export default function BankingPage() {
         .broker-body { font-size: 0.88rem; font-weight: 300; line-height: 1.78; color: #F8F6F1; }
         .bank-alert { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-left: 4px solid #C9A84C; padding: 22px 26px; margin: 24px 0; max-width: 760px; }
         .bank-alert-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 10px; }
-        .bank-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: #0B1F3A; }
+        .bank-alert-body { font-size: 0.9rem; font-weight: 300; line-height: 1.82; color: rgba(248,246,241,0.82); }
         /* ── PHONE CARDS ── */
         .phone-grid { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 28px 0; }
         .phone-card { border: 1px solid #E8E4DC; border-bottom: none; padding: 26px 30px; background: #fff; }
@@ -754,7 +754,7 @@ export default function BankingPage() {
 
           <div className="bank-alert" style={{marginTop: '48px', background: 'rgba(201,168,76,0.06)', border: '2px solid #C9A84C', borderLeft: '4px solid #C9A84C'}}>
             <p className="bank-alert-label">Important — Remittances from Abroad Are NOT Taxed in the Philippines</p>
-            <p className="bank-alert-body">Money you transfer from your US bank account or foreign income to your Philippine bank account is not subject to Philippine income tax. Under the Philippine National Internal Revenue Code, remittances from abroad are not classified as Philippine-sourced income for non-resident aliens. For expats living in the Philippines on SRRV, 13A, or tourist visa extensions who receive income from abroad — Social Security, pension, investment distributions, foreign employment — that income is not taxed by the Philippine government simply because you wire it to a local account. This is one of the most commonly misunderstood aspects of Philippine taxation for foreign residents. Your obligation to file and pay US taxes on that income continues regardless — but the Philippines does not take a second cut.</p>
+            <p className="bank-alert-body" style={{color:'#0B1F3A'}}>Money you transfer from your US bank account or foreign income to your Philippine bank account is not subject to Philippine income tax. Under the Philippine National Internal Revenue Code, remittances from abroad are not classified as Philippine-sourced income for non-resident aliens. For expats living in the Philippines on SRRV, 13A, or tourist visa extensions who receive income from abroad — Social Security, pension, investment distributions, foreign employment — that income is not taxed by the Philippine government simply because you wire it to a local account. This is one of the most commonly misunderstood aspects of Philippine taxation for foreign residents. Your obligation to file and pay US taxes on that income continues regardless — but the Philippines does not take a second cut.</p>
           </div>
         </div>
       </section>
