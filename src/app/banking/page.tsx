@@ -80,7 +80,7 @@ const remittances = {
     },
     {
       label: "Remitly & WorldRemit",
-      body: "Remitly and WorldRemit are popular for speed — economy transfers arrive in one to three business days; express options can deliver within hours for a higher fee. Both offer direct deposit to Philippine bank accounts and, in some cases, to GCash wallets. Rates are competitive but slightly less favourable than Wise on larger amounts. Good options for regular monthly transfers.",
+      body: "Remitly and WorldRemit are popular for speed — economy transfers arrive in one to three business days; express options can deliver within hours for a higher fee. Both offer direct deposit to Philippine bank accounts and, in some cases, to GCash wallets. Rates are competitive but slightly less favourable than Wise on larger amounts. Good options for regular monthly transfers. New users get $10 off, zero fees, and a special exchange rate on their first Remitly transfer of $50 or more — use Steve's referral link at remitly.com/r/pap5a4p3.",
     },
     {
       label: "Bank wire (SWIFT)",
@@ -844,7 +844,7 @@ export default function BankingPage() {
           <div className="sn-body">
             <p>I haven&rsquo;t opened a local Philippine bank account yet, and honestly, I haven&rsquo;t needed one. Cash is king here — and I mean Philippine pesos, not foreign currency. I rarely use credit cards.</p>
             <p>Here&rsquo;s the system I use: I keep my money in my Bank of America account in the States. Each month, I transfer what I need to my Schwab debit card. The reason is simple — ATMs in the Philippines give you the best exchange rates, and the Charles Schwab debit card refunds all international ATM fees automatically. Those fees add up fast, so this is a real money-saver. If you&rsquo;re moving to the Philippines and you don&rsquo;t already have a Schwab account, get one before you leave.</p>
-            <p>For sending money to someone&rsquo;s GCash or local bank account — paying rent, for example — I use Remitly. It transfers directly from your foreign bank account and the fees are minimal. That&rsquo;s how I pay my rent every month.</p>
+            <p>For sending money to someone&rsquo;s GCash or local bank account — paying rent, for example — I use Remitly. It transfers directly from your foreign bank account and the fees are minimal. That&rsquo;s how I pay my rent every month. New users get $10 off, zero fees, and a special exchange rate on their first transfer of $50 or more — use my <a href="https://www.remitly.com/r/pap5a4p3" target="_blank" rel="noopener noreferrer" style={{color:'#C9A84C', textDecoration:'none'}}>Remitly referral link</a>.</p>
           </div>
           <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
         </div>
