@@ -5,6 +5,8 @@ import ExchangeRate from "@/components/ExchangeRate";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
 import BodyText from "@/components/BodyText";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Banking in the Philippines for Foreigners 2026 — Accounts, Remittances & Digital Banking",
   description:

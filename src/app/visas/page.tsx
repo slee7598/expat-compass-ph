@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
 import BodyText from "@/components/BodyText";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Philippines Visa Guide for Expats 2026 — Tourist Extensions, SRRV, 13A & Digital Nomad Visa",
   description:

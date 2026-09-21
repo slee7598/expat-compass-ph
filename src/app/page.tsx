@@ -9,6 +9,8 @@ import HeroRate from "@/components/HeroRate";
 import BodyText from "@/components/BodyText";
 import HeroHolidayGrid from "@/components/HeroHolidayGrid";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Expat Compass PH — Your Guide to Living in the Philippines",
   description:

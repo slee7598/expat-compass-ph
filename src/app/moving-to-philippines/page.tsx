@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
 import BodyText from "@/components/BodyText";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Moving to the Philippines — Complete Packing List and First Steps 2026",
   description:

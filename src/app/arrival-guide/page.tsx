@@ -3,6 +3,8 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HolidayStatusGrid from "@/components/HolidayStatusGrid";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Arriving in the Philippines — Airport Guide and First Steps 2026",
   description:
