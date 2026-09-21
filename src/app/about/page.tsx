@@ -317,6 +317,100 @@ export default function AboutPage() {
           color: #2A3A4A;
         }
 
+        /* ── WEDDING PHOTOS ── */
+        .wedding-photos-section {
+          background: #0D1E30;
+          padding: 0;
+          line-height: 0;
+        }
+        .wedding-photos-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2px;
+        }
+        .wedding-photo-wrap {
+          position: relative;
+          aspect-ratio: 3 / 4;
+          overflow: hidden;
+        }
+
+        /* ── WEDDING SECTION ── */
+        .wedding-section {
+          background: #0B1F3A;
+          padding: 80px 48px;
+        }
+        .wedding-inner { max-width: 700px; }
+        .wedding-label {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: #C9A84C;
+          margin-bottom: 20px;
+        }
+        .wedding-label::before {
+          content: '';
+          display: block;
+          width: 28px;
+          height: 1px;
+          background: #C9A84C;
+        }
+        .wedding-heading {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(1.5rem, 3vw, 2rem);
+          font-weight: 700;
+          color: #F8F6F1;
+          line-height: 1.2;
+          margin-bottom: 40px;
+        }
+        .wedding-body { display: flex; flex-direction: column; gap: 20px; }
+        .wedding-para {
+          font-size: 0.97rem;
+          font-weight: 300;
+          line-height: 1.9;
+          color: #F8F6F1;
+        }
+        .wedding-em {
+          font-family: 'Playfair Display', serif;
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #C9A84C;
+        }
+        .wedding-rule {
+          width: 48px;
+          height: 1px;
+          background: rgba(201,168,76,0.35);
+          margin: 4px 0;
+        }
+        .wedding-sub {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(1.1rem, 2vw, 1.35rem);
+          font-weight: 700;
+          color: #F8F6F1;
+          line-height: 1.25;
+        }
+        .wedding-sign {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          margin-top: 8px;
+        }
+        .wedding-sign-name {
+          font-family: 'Playfair Display', serif;
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #C9A84C;
+        }
+        .wedding-sign-line {
+          font-size: 0.88rem;
+          font-weight: 400;
+          color: #F8F6F1;
+          letter-spacing: 0.03em;
+        }
+
         /* ── MOBILE ── */
         @media (max-width: 900px) {
           .nav { padding: 20px 24px; }
@@ -328,6 +422,8 @@ export default function AboutPage() {
           .photo-caption { padding: 14px 24px; }
           .caricature-section { padding: 56px 24px; }
           .footer { flex-direction: column; gap: 12px; text-align: center; }
+          .wedding-section { padding: 64px 24px; }
+          .wedding-photos-grid { grid-template-columns: 1fr; }
         }
       `}</style>
 
@@ -380,7 +476,7 @@ export default function AboutPage() {
             ))}
             <div className="story-rule" />
             <div className="story-sign">
-              <span className="story-sign-name">&mdash; Steve &amp; Irish Lee (Soon)</span>
+              <span className="story-sign-name">&mdash; Steve &amp; Irish Lee</span>
               <span className="story-sign-location">Punta Engaño, Mactan Island, Cebu, Philippines &nbsp;·&nbsp; June 2026</span>
             </div>
           </div>
@@ -398,6 +494,88 @@ export default function AboutPage() {
             <p className="irish-para">It was during this chapter of my life that I met Steve. What started as a simple conversation grew into something meaningful. Steve took the time to meet my family, showed them the respect they deserved, and asked for their blessing to marry me. After difficult experiences in the past, I am truly grateful to have found someone who shares my goals, my values, and my outlook on life. We have the same energy and enjoy the same things — healthy, protein-rich meals, an active lifestyle, travel, and new adventures together.</p>
             <p className="irish-para">We are fully committed to building a future together, and we have exciting plans ahead — including launching a YouTube channel in the near future where we will share our life, love, and travels across the Philippines.</p>
             <p className="irish-para">My journey has taught me to stay strong through challenges, to always value family, and to be grateful for the love and opportunities that have shaped who I am today.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* WEDDING PHOTOS */}
+      <div className="wedding-photos-section">
+        <div className="wedding-photos-grid">
+          <div className="wedding-photo-wrap">
+            <Image
+              src="/images/wedding-1.jpg"
+              alt="Steve &amp; Irish Lee — Wedding Day, September 18, 2026"
+              fill
+              className="photo-img"
+            />
+          </div>
+          <div className="wedding-photo-wrap">
+            <Image
+              src="/images/wedding-2.jpg"
+              alt="Steve &amp; Irish Lee — Lapu-Lapu City, Cebu, September 18, 2026"
+              fill
+              className="photo-img"
+            />
+          </div>
+        </div>
+        <p className="photo-caption">September 18, 2026 &nbsp;&middot;&nbsp; Lapu-Lapu City, Cebu, Philippines</p>
+      </div>
+
+      {/* WEDDING SECTION */}
+      <section className="wedding-section">
+        <div className="wedding-inner">
+          <p className="wedding-label">We Did It</p>
+          <h2 className="wedding-heading">Irish and I Are Officially Married</h2>
+          <div className="wedding-body">
+            <p className="wedding-para">On September 18, 2026, after months of paperwork, appointments, requirements, unexpected obstacles, and more than a few trips to government offices, Irish and I officially became husband and wife.</p>
+            <p className="wedding-para">For anyone who has been following Expat Compass PH, you know this wasn&rsquo;t something I wanted to document after the fact. We&rsquo;ve shared the process as we actually lived it—the good information, the confusing information, the requirements that changed depending on who we talked to, the marriage seminars, the documents, the CENOMAR questions, trying to find someone available to perform the ceremony, and everything else that comes with an American marrying a Filipina in the Philippines.</p>
+            <p className="wedding-para">Now we finally get to add the most important update:</p>
+            <p className="wedding-em">We got married.</p>
+
+            <div className="wedding-rule" />
+            <h3 className="wedding-sub">From a Process to Our Story</h3>
+
+            <p className="wedding-para">When I started documenting our marriage process, the goal was to help other foreigners understand what they may actually encounter when getting married in the Philippines.</p>
+            <p className="wedding-para">There are plenty of websites that give you a checklist.</p>
+            <p className="wedding-para">What I wanted to provide was something different: what actually happened to us.</p>
+            <p className="wedding-para">Sometimes what we experienced matched the official requirements perfectly. Sometimes City Hall asked for something we weren&rsquo;t expecting. Sometimes the answer to a question depended on the office, the person behind the counter, or the city where we were getting married.</p>
+            <p className="wedding-para">We documented those experiences because that&rsquo;s the information I would have wanted when we started.</p>
+            <p className="wedding-para">And now we&rsquo;ve reached the part of the story all that paperwork was leading toward.</p>
+
+            <div className="wedding-rule" />
+            <h3 className="wedding-sub">September 18, 2026</h3>
+
+            <p className="wedding-para">Irish and I were officially married on September 18, 2026, in Lapu-Lapu City, Cebu, Philippines.</p>
+            <p className="wedding-para">After everything it took to get there, being able to finally say &ldquo;my wife&rdquo; instead of &ldquo;my fiancée&rdquo; feels pretty damn good.</p>
+            <p className="wedding-para">But this isn&rsquo;t the end of what we&rsquo;re documenting.</p>
+            <p className="wedding-para">It&rsquo;s really the beginning of the next chapter.</p>
+
+            <div className="wedding-rule" />
+            <h3 className="wedding-sub">What&rsquo;s Next</h3>
+
+            <p className="wedding-para">Our next major process is obtaining Irish&rsquo;s PSA Marriage Certificate and beginning the CR-1 spousal visa process so she can eventually become a U.S. permanent resident.</p>
+            <p className="wedding-para">We&rsquo;ll continue living primarily in the Philippines, but we want Irish to be able to travel with me to the United States, spend time with my family, and eventually have the freedom that comes with permanent residency.</p>
+            <p className="wedding-para">And just like we did with the marriage process, we&rsquo;re going to document the CR-1 process as we actually experience it.</p>
+            <p className="wedding-para">The forms. The costs. The waiting. USCIS. NVC. The medical examination. The U.S. Embassy interview in Manila. The mistakes we avoid—and probably a few things we learn the hard way.</p>
+            <p className="wedding-para">When something changes, we&rsquo;ll update it.</p>
+            <p className="wedding-para">When we&rsquo;re told something different from what the websites say, we&rsquo;ll tell you.</p>
+            <p className="wedding-para">And when Irish eventually receives her immigrant visa, you&rsquo;ll know exactly how we got there.</p>
+
+            <div className="wedding-rule" />
+            <h3 className="wedding-sub">Officially Mr. &amp; Mrs. Lee</h3>
+
+            <p className="wedding-para">For now, though, we&rsquo;re going to enjoy this moment.</p>
+            <p className="wedding-para">After documenting every requirement and every step along the way, I&rsquo;m extremely happy to finally write this one:</p>
+
+            <div className="wedding-sign">
+              <span className="wedding-sign-name">Stephen &amp; Irish Lee</span>
+              <span className="wedding-sign-line">Married September 18, 2026</span>
+              <span className="wedding-sign-line">Lapu-Lapu City, Cebu, Philippines 🇺🇸❤️🇵🇭</span>
+            </div>
+
+            <div className="wedding-rule" />
+            <p className="wedding-para">The marriage process is complete.</p>
+            <p className="wedding-para">Now the next adventure begins.</p>
           </div>
         </div>
       </section>
