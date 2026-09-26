@@ -106,7 +106,7 @@ const entertainment: RecItem[] = [
   {
     name: "Xtreme Player",
     body: "Xtreme Player is the app I use to organize and stream my entire personal media library — movies, TV shows, and music — across all my devices. Clean interface, supports every format, and works great on the Fire TV Stick. If you have a media library you want to access anywhere, this is the app. Use my referral code 789011 at checkout to get started.",
-    link: "https://xtremeplayerllc.com",
+    link: "https://fostv.live/tellafriend/789011",
     linkLabel: "Visit Xtreme Player →",
   },
 ];
@@ -135,7 +135,7 @@ const activities: RecItem[] = [
   {
     name: "Airbnb",
     body: "Airbnb is my personal go-to for finding apartments, condos, and unique stays across the Philippines. The selection in Cebu, Manila, and Boracay is excellent — you can find everything from budget studios to beachfront villas. I use it for every trip. Note: Airbnb no longer has an affiliate program, so there is no commission link here — just an honest recommendation from someone who uses it constantly.",
-    link: "https://www.airbnb.com",
+    link: "https://www.airbnb.com/s/Philippines",
     linkLabel: "Browse Airbnb Philippines →",
   },
 ];
