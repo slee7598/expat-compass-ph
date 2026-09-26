@@ -116,7 +116,7 @@ const pillars = [
   },
   {
     heading: "Independent",
-    body: "No paid placements, no affiliate bias — just honest guidance.",
+    body: "Affiliate links and limited ads help keep the site free. Our content and recommendations are never influenced by either.",
   },
 ];
 

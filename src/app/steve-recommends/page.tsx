@@ -472,7 +472,7 @@ export default function SteveRecommendsPage() {
         <div className="disclosure-card">
           <span className="disclosure-icon">◆</span>
           <p className="disclosure-text">
-            Expat Compass PH is completely free — no ads, no memberships, no paywalls. It costs real time and money to research, build, and update this site daily. Some of the links on this page are affiliate links, which means if you click through and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products and services we genuinely believe in. Our opinions are never influenced by affiliate relationships — if something is not worth recommending, it does not appear on this site.
+            Expat Compass PH is completely free to use — no memberships, no paywalls. The site may show a small number of ads to help cover the real time and cost of researching, building, and updating this content. We keep ad placement minimal and never let it interfere with the actual information you came here for. Some of the links on this page are affiliate links, which means if you click through and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products and services we genuinely believe in. Our opinions are never influenced by affiliate relationships — if something is not worth recommending, it does not appear on this site.
           </p>
         </div>
       </div>
