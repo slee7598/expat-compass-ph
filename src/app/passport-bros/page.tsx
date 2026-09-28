@@ -107,7 +107,7 @@ export default function PassportBrosPage() {
       <div className="pb-header">
         <Nav active="/passport-bros" />
         <div className="pb-hero">
-          <p className="pb-eyebrow">Steve&rsquo;s Story</p>
+          <p className="pb-eyebrow">Passport Bros</p>
           <h1 className="pb-title">Passport Bros: What the Term Means and Where I Stand</h1>
         </div>
       </div>

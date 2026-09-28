@@ -259,7 +259,7 @@ export default function DatingPhilippinesPage() {
             </a>
           </div>
           <div className="rb-alert" style={{marginTop:'32px'}}>
-            <p className="rb-alert-label">Steve&rsquo;s Story</p>
+            <p className="rb-alert-label">Passport Bros</p>
             <BodyText variant="light-bg" className="rb-alert-body-dark">
               Read my take on the passport bro label and my story.{' '}
               <a href="/passport-bros" style={{color:'#C9A84C',fontWeight:500,textDecoration:'none'}}>Read it →</a>

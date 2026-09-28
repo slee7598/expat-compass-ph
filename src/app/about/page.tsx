@@ -464,7 +464,7 @@ export default function AboutPage() {
             made the move and wants to help others do the same with their eyes open.
           </p>
           <div style={{background:'rgba(201,168,76,0.06)',border:'1px solid rgba(201,168,76,0.3)',borderLeft:'4px solid #C9A84C',padding:'22px 26px',maxWidth:'660px',marginTop:'32px'}}>
-            <p style={{fontSize:'0.62rem',fontWeight:700,letterSpacing:'0.18em',textTransform:'uppercase',color:'#C9A84C',marginBottom:'10px'}}>My Story</p>
+            <p style={{fontSize:'0.62rem',fontWeight:700,letterSpacing:'0.18em',textTransform:'uppercase',color:'#C9A84C',marginBottom:'10px'}}>Passport Bros</p>
             <BodyText variant="light-bg" style={{fontSize:'0.92rem',fontWeight:300,lineHeight:1.85}}>
               Read my take on the passport bro label and my story.{' '}
               <a href="/passport-bros" style={{color:'#C9A84C',fontWeight:500,textDecoration:'none'}}>Read it →</a>

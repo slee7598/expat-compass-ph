@@ -44,7 +44,7 @@ const topics = [
     href: "/dating-philippines",
   },
   {
-    label: "My Story",
+    label: "Passport Bros",
     description:
       "What the passport bro label means, where he stands, and how he ended up married in the Philippines.",
     href: "/passport-bros",
