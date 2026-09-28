@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BodyText from "@/components/BodyText";
 
 export const metadata: Metadata = {
   title: "Dating in the Philippines — The Honest Guide for Foreign Men 2026",
@@ -256,6 +257,13 @@ export default function DatingPhilippinesPage() {
               <p className="cs-city">Sexual Health</p>
               <p className="cs-tagline">Facts, stats, and sources</p>
             </a>
+          </div>
+          <div className="rb-alert" style={{marginTop:'32px'}}>
+            <p className="rb-alert-label">Steve&rsquo;s Story</p>
+            <BodyText variant="light-bg" className="rb-alert-body-dark">
+              Read my take on the passport bro label and my story.{' '}
+              <a href="/passport-bros" style={{color:'#C9A84C',fontWeight:500,textDecoration:'none'}}>Read it →</a>
+            </BodyText>
           </div>
         </div>
       </section>
