@@ -936,7 +936,7 @@ export default function MarriagePage() {
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>When Irish and I applied for our marriage license in Lapu-Lapu City, I was not required to provide a PSA CENOMAR as the foreign applicant. The documents I provided were my Legal Capacity to Marry from the U.S. Consulate, passport, birth certificate, divorce decree, and cedula.</p>
+            <p>When applying for a marriage license in Lapu-Lapu City, the foreign applicant was not required to provide a PSA CENOMAR. The documents provided were the Legal Capacity to Marry from the U.S. Consulate, passport, birth certificate, divorce decree, and cedula.</p>
             <p>One thing that surprised us was how seriously the offices took appearance and dress code. Applicants should arrive well-dressed for the application, orientation, and counseling sessions. Casual but neat clothing is fine, but sleeveless shirts, shorts, and slippers may result in being turned away and asked to return another day.</p>
             <p>Requirements can change and may vary by municipality. Always verify current requirements directly with your local Civil Registrar before applying.</p>
           </div>
@@ -974,7 +974,7 @@ export default function MarriagePage() {
             ))}
             <div className="sn-req-item">
               <span className="sn-req-num">6.</span>
-              <span className="sn-req-text">PSA CENOMAR — Some Local Civil Registrars, including Lapu-Lapu City, require foreign applicants to obtain a PSA CENOMAR in addition to the Certificate of Legal Capacity to Marry, regardless of general guidance suggesting it&rsquo;s only needed in specific cases. Steve had to order his directly. Confirm with your specific LCR whether this applies to you, and order early since processing takes time. Order at <a href="https://www.psaserbilis.com.ph" target="_blank" rel="noopener noreferrer" style={{color:'#C9A84C', textDecoration:'none'}}>psaserbilis.com.ph</a>.</span>
+              <span className="sn-req-text">PSA CENOMAR — Some Local Civil Registrars, including Lapu-Lapu City, require foreign applicants to obtain a PSA CENOMAR in addition to the Certificate of Legal Capacity to Marry, regardless of general guidance suggesting it&rsquo;s only needed in specific cases. Confirm with your specific LCR whether this applies to you, and order early since processing takes time. Order at <a href="https://www.psaserbilis.com.ph" target="_blank" rel="noopener noreferrer" style={{color:'#C9A84C', textDecoration:'none'}}>psaserbilis.com.ph</a>.</span>
             </div>
           </div>
 
@@ -1520,10 +1520,10 @@ export default function MarriagePage() {
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>Irish and I are going through this process right now. We got married here in the Philippines and we are pursuing the CR-1 — not the K-1. We are living together in Cebu while the process runs its course. I am making a one-month trip to the US for the birth of my grandson, but I will be returning to the Philippines where Irish and I will continue building our life together.</p>
-            <p>While we wait for her green card, we are not sitting still. We are traveling the islands, exploring Southeast Asia, creating content, and gathering first-hand information to share with this community. That is what Expat Compass PH is — real experience, lived in real time, shared honestly.</p>
-            <p>Our plan is not to relocate to America permanently — it is to have the freedom to visit my family together for the holidays each year, while continuing to live the life we are building here. The CR-1 gives us that freedom without the stress and separation risk that the K-1 would have created under current US immigration policy.</p>
-            <p>This is not legal advice. It is our personal experience and our personal decision. Every situation is different — yours may call for a different approach. If there is any complexity in your case whatsoever, consult a licensed US immigration attorney before filing anything. I will update this page with real numbers and real timelines as we go through the process ourselves.</p>
+            <p>We are going through this process right now. We got married here in the Philippines and are pursuing the CR-1 — not the K-1. We are living together in Cebu while the process runs its course.</p>
+            <p>While we wait for the green card, we are not sitting still. We are traveling the islands, exploring Southeast Asia, creating content, and gathering first-hand information to share with this community. That is what Expat Compass PH is — real experience, lived in real time, shared honestly.</p>
+            <p>Our plan is not to relocate to America permanently — it is to have the freedom to visit family together for the holidays each year, while continuing to live the life we are building here. The CR-1 gives us that freedom without the stress and separation risk that the K-1 would have created under current US immigration policy.</p>
+            <p>This is not legal advice. It is our personal experience and our personal decision. Every situation is different — yours may call for a different approach. If there is any complexity in your case whatsoever, consult a licensed US immigration attorney before filing anything. This page will be updated with real numbers and real timelines as the process unfolds.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
         </div>

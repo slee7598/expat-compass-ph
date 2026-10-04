@@ -353,7 +353,7 @@ export default function HealthcarePage() {
           </div>
 
           <div className="personal-callout">
-            <p className="personal-callout-label">Steve&rsquo;s Experience at Chong Hua ER</p>
+            <p className="personal-callout-label">First-Hand Experience at Chong Hua ER</p>
             <p className="personal-callout-body">I was significantly ill and went to the Chong Hua emergency room. The process was seamless — a basic digital sign-in app, and I went straight to a bed with no wait. The staff was genuinely some of the friendliest I have encountered in any medical setting anywhere. They administered IV hydration and IV antibiotics, ran two blood tests, and prescribed four medications I took for a full week. The total bill including the separate doctor&rsquo;s fee was $300 USD. In the United States that same visit would have cost me thousands of dollars. I left Chong Hua impressed and relieved — both by the care and the bill.</p>
           </div>
 

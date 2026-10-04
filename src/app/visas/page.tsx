@@ -331,7 +331,7 @@ export default function VisasPage() {
 
           <h3 className="vsub vsub-light">Real costs at the counter</h3>
           <div className="va-gold">
-            <p className="va-gold-label">Steve's Personal Experience — June 2026</p>
+            <p className="va-gold-label">First-Hand Experience — June 2026</p>
             <p className="va-gold-body-light">Published BI fees look lower than what you actually pay at the counter. In practice, expect to pay approximately 5,000 pesos for a standard monthly or two-month extension. The difference between the published base fee and the actual amount is an expedited processing fee added automatically — you do not get a choice and there is no option to decline it. When your ACR I-Card is required after 59 days, the total jumps to 10,000 pesos or more. The LSVVE six-month extension at 11,500 to 13,900 pesos is actually the best value if you plan to stay long-term — one trip instead of monthly visits. Always bring extra cash.</p>
           </div>
 
@@ -823,9 +823,9 @@ export default function VisasPage() {
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>I have been living in the Philippines on tourist visa extensions while my wife Irish and I go through the CR-1 spousal visa process for her to eventually have the ability to visit the US. The monthly extension routine is straightforward once you know the system — but the costs surprised me when I first arrived. What you see on the BI website and what you pay at the counter are two different numbers. The automatic expedited fee adds up.</p>
+            <p>Living in the Philippines on tourist visa extensions while going through the CR-1 spousal visa process is a common approach. The monthly extension routine is straightforward once you know the system — but the costs surprised many expats on first arrival. What you see on the BI website and what you pay at the counter are two different numbers. The automatic expedited fee adds up.</p>
             <p>If you are staying long term and qualify for the SRRV, the math often favors converting away from tourist extensions — the monthly cost adds up faster than most people realize, and the SRRV exemptions from annual reports and exit clearances are genuinely valuable.</p>
-            <p>Irish and I are also working through the 13A process — I will document the real costs and timeline as we go through it ourselves.</p>
+            <p>The 13A process is also being documented as it unfolds — real costs and timeline will be added to this page as they are confirmed.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
         </div>

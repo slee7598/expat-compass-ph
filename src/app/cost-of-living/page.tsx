@@ -244,7 +244,7 @@ export default function CostOfLivingPage() {
         <div className="section-inner">
           <div className="opening-card">
             <p className="opening-card-label">A note on these numbers</p>
-            <p className="opening-card-body">Every cost of living guide for the Philippines has the same problem — vague ranges that do not help you plan. This page is different. The numbers here come from my actual monthly bills and real spending living in Cebu with my Filipina wife Irish. Where I do not have personal experience I tell you that clearly. Use these numbers as a genuine planning baseline, not marketing material.</p>
+            <p className="opening-card-body">Every cost of living guide for the Philippines has the same problem — vague ranges that do not help you plan. This page is different. The numbers here come from actual monthly bills and real spending from an American expat living in Cebu. Where direct experience is unavailable, that is noted clearly. Use these numbers as a genuine planning baseline, not marketing material.</p>
           </div>
         </div>
       </section>
@@ -256,7 +256,7 @@ export default function CostOfLivingPage() {
           <div className="cs-grid">
             <a href="#budget-tiers" className="cs-card">
               <p className="cs-city">Budget Tiers</p>
-              <p className="cs-tagline">Frugal to comfortable to Steve&rsquo;s level</p>
+              <p className="cs-tagline">Frugal to comfortable to premium</p>
             </a>
             <a href="#housing" className="cs-card">
               <p className="cs-city">Housing Costs</p>
@@ -279,7 +279,7 @@ export default function CostOfLivingPage() {
               <p className="cs-tagline">A $300 hospital visit</p>
             </a>
             <a href="#budget-breakdown" className="cs-card">
-              <p className="cs-city">Steve&rsquo;s Full Budget</p>
+              <p className="cs-city">Example Budget</p>
               <p className="cs-tagline">Real numbers, real life</p>
             </a>
             <a href="#budget-planning" className="cs-card">
@@ -310,7 +310,7 @@ export default function CostOfLivingPage() {
               <p className="tier-desc">Good accommodation, mix of home cooking and dining out, Grab for transport, private health insurance, some discretionary spending. This is what most Western expats target and it delivers a genuinely good quality of life.</p>
             </div>
             <div className="tier-card tier-card-highlight">
-              <p className="tier-label">Tier 3 — Steve&rsquo;s Level</p>
+              <p className="tier-label">Tier 3 — Premium</p>
               <p className="tier-name">Premium Expat</p>
               <p className="tier-range">~135,000 pesos / month<br />(~$2,300 USD)</p>
               <p className="tier-desc">5-star resort living, premium condo, S&amp;R groceries, nice restaurants once a week, gym and spa, full Grab transport. Living very well by any standard — and still dramatically cheaper than an equivalent lifestyle in the United States.</p>
@@ -330,7 +330,7 @@ export default function CostOfLivingPage() {
           <p className="cb">Housing is where the Philippines delivers its most dramatic value compared to Western countries, and where the range is widest depending on your expectations and location.</p>
 
           <div className="ca-gold">
-            <p className="ca-gold-label">Steve&rsquo;s Situation — Punta Engaño, Mactan Island</p>
+            <p className="ca-gold-label">Example: Punta Engaño Resort Condo, Mactan Island</p>
             <p className="ca-gold-body-light">I found an exceptional deal that I acknowledge I would struggle to replicate — a 66 square meter 1-bedroom 1-bathroom condo on the 11th floor of the Residences at Movenpick in Punta Engaño, Mactan Island. I pay 33,000 pesos per month. For that I get a large balcony with views of both sides of the island — I can watch the sunrise over one horizon and the sunset over the other from the same balcony. Full access to all amenities at the adjacent Movenpick 5-star resort: private beach, multiple pools, restaurants, game room, gym, and a 20 percent discount on everything at the resort including room rates for visiting family. This is an extraordinary deal for what it includes.</p>
           </div>
 
@@ -371,10 +371,10 @@ export default function CostOfLivingPage() {
 
           <p className="cb cb-light">Electricity is the cost that most surprises newly arrived expats in the Philippines. The Philippines has some of the highest electricity rates in Southeast Asia, and air conditioning is the culprit. In a tropical climate where temperatures regularly hit 35 degrees Celsius and above, running aircon is not optional for most Westerners — it is a survival necessity.</p>
 
-          <h3 className="csub csub-first csub-light">Steve&rsquo;s real electricity data</h3>
+          <h3 className="csub csub-first csub-light">Real electricity data — Punta Engaño resort condo</h3>
           <div className="data-card">
             <div className="data-card-head">
-              <p className="data-card-title">Monthly electricity — Movenpick Residences, Punta Engaño</p>
+              <p className="data-card-title">Monthly electricity — one-bedroom resort condo, Punta Engaño</p>
             </div>
             <div className="data-row">
               <span className="data-label">Month 1 — both aircons running 24/7</span>
@@ -412,7 +412,7 @@ export default function CostOfLivingPage() {
 
           <div className="ca-gold">
             <p className="ca-gold-label">MECO vs VECO — Know Before You Rent</p>
-            <p className="ca-gold-body" style={{color: '#F8F6F1'}}>VECO (Visayan Electric Company, now operating as MORE Electric and Power) serves Cebu City, Mandaue City, Talisay City, and the main Cebu island corridor. MECO (Mactan Electric Company) serves Mactan Island — Lapu-Lapu City, Cordova, and everything in the Mactan-Cebu Economic Zone including Punta Engaño. MECO rates have historically run higher than VECO rates. Steve pays MECO rates at his Movenpick condo — so his real electricity numbers already reflect this premium. If you are comparing condos on main Cebu island versus Mactan: budget approximately 10 to 15 percent more for electricity on Mactan under MECO. MECO also has a somewhat worse brownout reputation than some VECO service areas — generator coverage in your building becomes even more important on Mactan.</p>
+            <p className="ca-gold-body" style={{color: '#F8F6F1'}}>VECO (Visayan Electric Company, now operating as MORE Electric and Power) serves Cebu City, Mandaue City, Talisay City, and the main Cebu island corridor. MECO (Mactan Electric Company) serves Mactan Island — Lapu-Lapu City, Cordova, and everything in the Mactan-Cebu Economic Zone including Punta Engaño. MECO rates have historically run higher than VECO rates. Condos in Punta Engaño pay MECO rates — so the electricity figures on this page already reflect this premium. If you are comparing condos on main Cebu island versus Mactan: budget approximately 10 to 15 percent more for electricity on Mactan under MECO. MECO also has a somewhat worse brownout reputation than some VECO service areas — generator coverage in your building becomes even more important on Mactan.</p>
           </div>
         </div>
       </section>
@@ -424,13 +424,13 @@ export default function CostOfLivingPage() {
           <h2 className="section-heading">Internet, Water &amp; Other Utilities</h2>
 
           <h3 className="csub csub-first">Internet</h3>
-          <p className="cb">Steve pays 3,400 pesos per month for 1 gigabit fiber from PLDT. This is among the fastest consumer internet available in the Philippines and is sufficient for video calls, streaming, and working remotely without any issues. Converge is the main alternative to PLDT for fiber — many expats subscribe to both for redundancy. Standard fiber plans start around 1,500 to 2,000 pesos for 100–300 Mbps. The 1 Gbps plan at 3,400 pesos is excellent value for remote workers or heavy streamers.</p>
+          <p className="cb">Example: 1 gigabit fiber from PLDT at 3,400 pesos per month. This is among the fastest consumer internet available in the Philippines and is sufficient for video calls, streaming, and working remotely without any issues. Converge is the main alternative to PLDT for fiber — many expats subscribe to both for redundancy. Standard fiber plans start around 1,500 to 2,000 pesos for 100–300 Mbps. The 1 Gbps plan at 3,400 pesos is excellent value for remote workers or heavy streamers.</p>
 
           <h3 className="csub">Water</h3>
-          <p className="cb">Steve&rsquo;s water bill was 500 pesos per month and recently increased to 1,000 pesos per month. Water is dramatically cheaper than electricity and is rarely a budget concern. Budget 500 to 1,500 pesos per month depending on usage and building.</p>
+          <p className="cb">Water bill example: 500 pesos per month, recently increased to 1,000 pesos. Water is dramatically cheaper than electricity and is rarely a budget concern. Budget 500 to 1,500 pesos per month depending on usage and building.</p>
 
           <h3 className="csub">Generator coverage and brownouts</h3>
-          <p className="cb">Cebu and Mactan experience periodic brownouts — power outages that can last minutes to hours. A condo with building generator backup is highly recommended and worth paying a premium for. Steve&rsquo;s building at Movenpick has full generator coverage — no disruption to aircon, internet, or appliances during outages. Verify generator coverage before signing any lease. This is a question many new expats forget to ask and regret not asking.</p>
+          <p className="cb">Cebu and Mactan experience periodic brownouts — power outages that can last minutes to hours. A condo with building generator backup is highly recommended and worth paying a premium for. Well-equipped resort buildings provide full generator coverage — no disruption to aircon, internet, or appliances during outages. Verify generator coverage before signing any lease. This is a question many new expats forget to ask and regret not asking.</p>
         </div>
       </section>
 
@@ -441,13 +441,13 @@ export default function CostOfLivingPage() {
           <h2 className="section-heading section-heading-light">Groceries &amp; Food</h2>
 
           <h3 className="csub csub-first csub-light">Home cooking</h3>
-          <p className="cb cb-light">Steve and Irish shop primarily at S&amp;R — the Philippines equivalent of Costco, with membership warehouse pricing and a strong selection of Western products alongside local items. S&amp;R delivers free with a minimum 5,000 peso order. Steve spends 5,000 to 7,000 pesos every two weeks for two people — approximately 10,000 to 14,000 pesos per month on groceries. This covers quality ingredients for home-cooked meals daily and reflects a comfortable Western-influenced diet.</p>
+          <p className="cb cb-light">A two-person household shopping primarily at S&amp;R — the Philippines equivalent of Costco, with membership warehouse pricing and a strong selection of Western products alongside local items. S&amp;R delivers free with a minimum 5,000 peso order. Budget example: 5,000 to 7,000 pesos every two weeks for two people — approximately 10,000 to 14,000 pesos per month on groceries. This covers quality ingredients for home-cooked meals daily and reflects a comfortable Western-influenced diet.</p>
 
           <h3 className="csub csub-light">Where to shop by budget</h3>
           <div className="shop-grid" style={{borderColor: 'rgba(248,246,241,0.08)'}}>
             <div className="shop-row" style={{borderColor: 'rgba(248,246,241,0.08)'}}>
               <div className="shop-name">S&amp;R</div>
-              <div className="shop-desc" style={{background: 'rgba(248,246,241,0.04)', color: 'rgba(248,246,241,0.75)'}}>Best prices on bulk Western products, excellent quality, delivery available. Membership required. Steve&rsquo;s primary store.</div>
+              <div className="shop-desc" style={{background: 'rgba(248,246,241,0.04)', color: 'rgba(248,246,241,0.75)'}}>Best prices on bulk Western products, excellent quality, delivery available. Membership required.</div>
             </div>
             <div className="shop-row" style={{borderColor: 'rgba(248,246,241,0.08)'}}>
               <div className="shop-name">Landers</div>
@@ -468,7 +468,7 @@ export default function CostOfLivingPage() {
           </div>
 
           <h3 className="csub csub-light">Dining out</h3>
-          <p className="cb cb-light">Steve and Irish eat out approximately once a week, choosing nicer restaurants rather than street food. A meal for two at a good restaurant runs 2,000 to 3,000 pesos. They do not drink alcohol which keeps dining bills significantly lower than the typical expat experience.</p>
+          <p className="cb cb-light">Dining out approximately once a week, choosing nicer restaurants rather than street food. A meal for two at a good restaurant runs 2,000 to 3,000 pesos. Not drinking alcohol keeps dining bills significantly lower than the typical expat experience.</p>
 
           <div className="resto-list">
             <div className="resto-row">
@@ -502,7 +502,7 @@ export default function CostOfLivingPage() {
             <p className="ca-gold-body">San Miguel Pale Pilsen at a sari-sari store or convenience store runs approximately 38 to 50 pesos per bottle. At a mid-range bar or restaurant expect 80 to 150 pesos per bottle. At a resort bar or upscale venue expect 150 to 300 pesos. A 24-pack of San Miguel Pale Pilsen at S&amp;R costs 1,240 pesos — the cheapest bulk option available in Cebu. Alcohol is cheap in the Philippines by Western standards — a significant cost factor for expats who drink regularly.</p>
           </div>
 
-          <p className="cb cb-light" style={{marginTop: '20px'}}>Steve&rsquo;s honest note on food: I cook every day and eat well — this is not a sacrifice. Philippine ingredients are fresh and excellent. The combination of S&amp;R grocery delivery and Irish&rsquo;s cooking means we eat better here than I did in the US, at a fraction of the cost. The one meal out per week at a nice restaurant is a genuine treat, not a budget necessity.</p>
+          <p className="cb cb-light" style={{marginTop: '20px'}}>Honest note on food: Cooking every day here is not a sacrifice. Philippine ingredients are fresh and excellent. S&amp;R grocery delivery and local wet markets mean eating better here than in the US, at a fraction of the cost. The one meal out per week at a nice restaurant is a genuine treat, not a budget necessity.</p>
         </div>
       </section>
 
@@ -512,7 +512,7 @@ export default function CostOfLivingPage() {
           <p className="section-label">Getting Around</p>
           <h2 className="section-heading">Transportation</h2>
 
-          <p className="cb">Steve uses Grab and Maxim exclusively for transport, occasionally renting scooters and cars for road trips. Grab is the dominant rideshare app — reliable, safe, air-conditioned, and tracked. Maxim is a competing app that is often cheaper.</p>
+          <p className="cb">Using Grab and Maxim exclusively for transport, occasionally renting scooters and cars for road trips. Grab is the dominant rideshare app — reliable, safe, air-conditioned, and tracked. Maxim is a competing app that is often cheaper.</p>
 
           <div className="ca-amber">
             <p className="ca-amber-label">⚠ 2026 Fuel Price Alert</p>
@@ -551,15 +551,15 @@ export default function CostOfLivingPage() {
           <ul className="clist">
             <li className="cli">Frugal (jeepney and occasional Grab) — 2,000 to 4,000 pesos per month.</li>
             <li className="cli">Comfortable (regular Grab) — 8,000 to 15,000 pesos per month.</li>
-            <li className="cli">Steve&rsquo;s level (Grab and Maxim exclusively, occasional rentals) — included in his 20,000 peso bi-weekly discretionary cash withdrawal.</li>
+            <li className="cli">Grab and Maxim exclusively, occasional rentals — approximately 15,000–20,000 pesos per month.</li>
           </ul>
 
           <h3 className="csub">Motorcycle Ownership — Real Running Costs</h3>
           <p className="cb">Honda ADV 160 motorcycle — annual registration approximately PHP 1,500 to 2,500, CTPL insurance approximately PHP 500 per year, fuel at current prices approximately PHP 200 to 300 per week for daily use. Total monthly motorcycle cost approximately PHP 1,200 to 1,800 versus PHP 3,000 to 6,000 per month in Grab fares for an active expat. Ownership pays for itself within 18 to 24 months for most expats who use transport daily.</p>
 
           <div className="ca-gold">
-            <p className="ca-gold-label">Steve&rsquo;s Real Purchase — July 2026</p>
-            <p className="ca-gold-body-light">Steve purchased a 2024 Honda ADV 160 ABS Keyless in July 2026 for PHP 115,000 negotiated from PHP 120,000 plus PHP 13,000 attorney fee for a total of PHP 128,000 all-in. This represents the real market for a low-mileage 2024 ADV 160 in Cebu.</p>
+            <p className="ca-gold-label">Example Purchase — July 2026</p>
+            <p className="ca-gold-body-light">A 2024 Honda ADV 160 ABS Keyless purchased in July 2026 for PHP 115,000 negotiated from PHP 120,000 plus PHP 13,000 in legal transfer fees for a total of PHP 128,000 all-in. This represents the real market for a low-mileage 2024 ADV 160 in Cebu.</p>
           </div>
         </div>
       </section>
@@ -571,13 +571,13 @@ export default function CostOfLivingPage() {
           <h2 className="section-heading section-heading-light">Domestic Help &amp; Services</h2>
 
           <h3 className="csub csub-first csub-light">Housekeeper</h3>
-          <p className="cb cb-light">Steve previously employed a housekeeper who charged 500 pesos per visit to clean his condo, coming twice a week — 4,000 pesos per month total. This is typical for the Mactan area. In other parts of Cebu and provincial areas, rates may be lower. A live-in housekeeper (kasambahay) for a larger household typically costs 5,000 to 8,000 pesos per month plus accommodation and meals, and is governed by the Kasambahay Law which provides employment protections.</p>
+          <p className="cb cb-light">Example housekeeper: 500 pesos per visit, coming twice a week — 4,000 pesos per month total. This is typical for the Mactan area. In other parts of Cebu and provincial areas, rates may be lower. A live-in housekeeper (kasambahay) for a larger household typically costs 5,000 to 8,000 pesos per month plus accommodation and meals, and is governed by the Kasambahay Law which provides employment protections.</p>
 
           <h3 className="csub csub-light">Laundry service</h3>
-          <p className="cb cb-light">Steve uses a pickup and delivery laundry service for himself and Irish, spending 700 to 1,200 pesos per pickup depending on whether bedding is included. This is a common and affordable luxury — laundry services are ubiquitous in the Philippines and excellent value. Most expats adopt a laundry delivery service within weeks of arriving.</p>
+          <p className="cb cb-light">Pickup and delivery laundry service: 700 to 1,200 pesos per pickup depending on whether bedding is included. This is a common and affordable luxury — laundry services are ubiquitous in the Philippines and excellent value. Most expats adopt a laundry delivery service within weeks of arriving.</p>
 
           <h3 className="csub csub-light">Gym and spa</h3>
-          <p className="cb cb-light">Steve and Irish spend 14,000 pesos every 3 months for gym and spa access — approximately 4,667 pesos per month combined. This is for a premium facility. Basic gym memberships in Cebu start at 1,000 to 2,000 pesos per month.</p>
+          <p className="cb cb-light">Example: 14,000 pesos per quarter for two people for gym and spa access at a premium resort facility — approximately 4,667 pesos per month combined. Basic gym memberships in Cebu start at 1,000 to 2,000 pesos per month.</p>
         </div>
       </section>
 
@@ -590,7 +590,7 @@ export default function CostOfLivingPage() {
           <p className="cb">Healthcare is where the Philippines delivers some of its most dramatic value compared to the United States, and where the quality in private hospitals is genuinely excellent.</p>
 
           <div className="health-callout">
-            <p className="health-callout-label">Steve&rsquo;s Personal Experience — Private Hospital, Cebu</p>
+            <p className="health-callout-label">First-Hand Experience — Private Hospital, Cebu</p>
             <p className="health-callout-body">I had a significant illness that required a hospital visit to a private hospital in Cebu. I was in a hospital bed for 6 hours. During that time I received IV hydration, IV antibiotics, two separate blood tests, and a fecal test. I was prescribed four medications that I took for a full week, all filled at the hospital pharmacy. My total bill including everything — the hospital stay, all tests, all IV treatment, and all medications — was $300 USD. In the United States, that same visit would conservatively cost $3,000 to $5,000 without insurance and significantly more at an emergency room. This was not a budget clinic. This was quality private hospital care.</p>
           </div>
 
@@ -620,7 +620,7 @@ export default function CostOfLivingPage() {
 
           <h3 className="csub">Best private hospitals in Cebu</h3>
           <ul className="clist">
-            <li className="cli"><strong>Chong Hua Hospital</strong> — Steve&rsquo;s personal recommendation. Modern facilities, excellent English-speaking doctors, efficient service, reasonable costs.</li>
+            <li className="cli"><strong>Chong Hua Hospital</strong> — Modern facilities, excellent English-speaking doctors, efficient service, reasonable costs.</li>
             <li className="cli"><strong>Cebu Doctors Hospital</strong> — well regarded, central Cebu City location.</li>
             <li className="cli"><strong>Vicente Sotto Memorial Medical Center</strong> — government hospital, very affordable but busier.</li>
           </ul>
@@ -652,7 +652,7 @@ export default function CostOfLivingPage() {
       <section className="section section-mid" id="budget-breakdown">
         <div className="section-inner">
           <p className="section-label">The Real Numbers</p>
-          <h2 className="section-heading section-heading-light">Steve&rsquo;s Complete Monthly Budget</h2>
+          <h2 className="section-heading section-heading-light">Example Monthly Budget — Punta Engaño, One Household</h2>
           <p className="cb cb-light" style={{marginBottom: '32px'}}>Punta Engaño, Mactan Island, Cebu — 2026</p>
 
           <div className="budget-table-wrap">
@@ -848,10 +848,10 @@ export default function CostOfLivingPage() {
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>I want to be honest about my situation because I think it is both aspirational and realistic. I live in a 5-star resort complex on the 11th floor with views of two ocean horizons, full access to a private beach and multiple pools, and a kitchen where Irish cooks exceptional food every day. My total monthly spend including everything is approximately 106,000 to 114,000 pesos — under $2,000 USD. In Los Angeles or New York that money barely covers rent. Here it covers a lifestyle that most people in the West associate with a luxury vacation.</p>
+            <p>I want to be honest about my situation because I think it is both aspirational and realistic. I live in a 5-star resort complex on the 11th floor with views of two ocean horizons, full access to a private beach and multiple pools, and a kitchen with exceptional home cooking every day. My total monthly spend including everything is approximately 106,000 to 114,000 pesos — under $2,000 USD. In Los Angeles or New York that money barely covers rent. Here it covers a lifestyle that most people in the West associate with a luxury vacation.</p>
             <p>I am not independently wealthy. I work remotely. The Philippines makes this possible.</p>
             <p>What I will tell you honestly is that finding my specific deal at Movenpick required patience, timing, and some luck. You may not find exactly this — but the Philippines rewards people who look carefully, build local relationships, and are willing to live like a resident rather than a tourist.</p>
-            <p>The expat who moves here expecting to recreate their American lifestyle at American prices will be disappointed. The expat who embraces what the Philippines actually offers — fresh food, warm people, a tropical climate, and a pace of life that prioritizes living over working — will find this place transforms them. Irish and I are building something real here. The cost of living makes it possible.</p>
+            <p>The expat who moves here expecting to recreate their American lifestyle at American prices will be disappointed. The expat who embraces what the Philippines actually offers — fresh food, warm people, a tropical climate, and a pace of life that prioritizes living over working — will find this place transforms them. We are building something real here. The cost of living makes it possible.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>

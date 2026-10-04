@@ -658,7 +658,7 @@ export default function Home() {
       <section className="hero">
         <Image
           src="/images/sunrise.jpg"
-          alt="Sunrise from Movenpick Residences, Punta Engaño, Cebu"
+          alt="Sunrise over Punta Engaño, Cebu"
           fill
           priority
           className="hero-img"

@@ -250,12 +250,12 @@ export default function HousingPage() {
           <div className="area-grid">
             <div className="area-card-featured">
               <div className="area-card-featured-head">
-                <p className="area-card-featured-eyebrow">Premium Area — Steve&rsquo;s Recommendation</p>
+                <p className="area-card-featured-eyebrow">Premium Area — Top Recommendation</p>
               </div>
               <div className="area-card-featured-body">
                 <p className="area-card-title" style={{color: '#0B1F3A', fontFamily: "'Playfair Display', serif", fontSize: '1.05rem', fontWeight: 700, marginBottom: '14px'}}>Punta Engaño &amp; Mactan Newtown</p>
                 <p className="area-card-text">These two areas are less than half a mile from each other and together represent the premium end of Mactan Island living. Think of them as one destination with two personalities.</p>
-                <p className="area-card-text" style={{marginTop: '12px'}}><strong style={{color: '#0B1F3A'}}>Punta Engaño</strong> is the resort strip — Movenpick, Shangri-La, Crimson, and other 5-star resorts line this peninsula. If you want resort living, a private beach, and the quietest corner of Mactan, this is it. Steve lives here in the Residences at Movenpick.</p>
+                <p className="area-card-text" style={{marginTop: '12px'}}><strong style={{color: '#0B1F3A'}}>Punta Engaño</strong> is the resort strip — Movenpick, Shangri-La, Crimson, and other 5-star resorts line this peninsula. If you want resort living, a private beach, and the quietest corner of Mactan, this is it.</p>
                 <p className="area-card-text" style={{marginTop: '12px'}}><strong style={{color: '#0B1F3A'}}>Mactan Newtown</strong> is a master-planned development that is the best of everything in one place — high-end condominiums, restaurants, bars, convenience stores, gyms, and retail all within walking distance. It has the energy and amenities of a modern urban development without the chaos of central Cebu City. For expats who want walkable urban convenience with excellent accommodation options, Mactan Newtown is the top recommendation. The only trade-off is crossing the bridge to Cebu City — manageable if you time it right, frustrating during rush hour.</p>
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function HousingPage() {
               </div>
               <div className="area-card-body">
                 <p className="area-card-title">Marigondon</p>
-                <p className="area-card-text">The most affordable area on Mactan for expats. Home to Saekyung Village and similar mid-density developments. Good value accommodation, local amenities including 7-Eleven, restaurants, bars, nail salons, and massage shops within walking distance. More crowded and less premium than Punta Engaño and Mactan Newtown but completely functional and comfortable for budget-conscious expats. Steve spent his first month here in a 22sqm Airbnb studio for approximately $500 USD per month — small but well-equipped with hot plate, fridge, microwave, TV, balcony, and a washing machine.</p>
+                <p className="area-card-text">The most affordable area on Mactan for expats. Home to Saekyung Village and similar mid-density developments. Good value accommodation, local amenities including 7-Eleven, restaurants, bars, nail salons, and massage shops within walking distance. More crowded and less premium than Punta Engaño and Mactan Newtown but completely functional and comfortable for budget-conscious expats. A 22sqm Airbnb studio here runs approximately $500 USD per month — small but well-equipped with hot plate, fridge, microwave, TV, balcony, and a washing machine.</p>
               </div>
             </div>
 
@@ -276,7 +276,7 @@ export default function HousingPage() {
               </div>
               <div className="area-card-body">
                 <p className="area-card-title">IT Park — Cebu City</p>
-                <p className="area-card-text">For expats who want to be in the heart of Cebu City rather than on Mactan Island, IT Park (Cebu IT Park in Lahug) is worth serious consideration. Steve spent a month here in a 22sqm studio from Airbnb at approximately $500 USD per month. The condo itself was nowhere near as nice as Saekyung — no comparable amenities — but IT Park compensates with what is outside your door. The area is walkable, lively, and packed with restaurants, cafes, bars, and conveniences. The Sugbo Mercado — a beloved weekend night market with Filipino street food, local vendors, live music, and an electric atmosphere — is right there. The trade-off is traffic. IT Park sits in central Cebu City and the surrounding roads can be heavily congested, especially during rush hours. Steve found IT Park and Saekyung together gave him the full picture of what he wanted — and what he did not want. The conclusion: more of a beach resort lifestyle, which led him to Punta Engaño. That is exactly the point of the Airbnb-first strategy — you discover what actually matters to you by living it, not by reading about it.</p>
+                <p className="area-card-text">For expats who want to be in the heart of Cebu City rather than on Mactan Island, IT Park (Cebu IT Park in Lahug) is worth serious consideration. A 22sqm studio from Airbnb here runs approximately $500 USD per month. The condo itself was nowhere near as nice as Saekyung — no comparable amenities — but IT Park compensates with what is outside your door. The area is walkable, lively, and packed with restaurants, cafes, bars, and conveniences. The Sugbo Mercado — a beloved weekend night market with Filipino street food, local vendors, live music, and an electric atmosphere — is right there. The trade-off is traffic. IT Park sits in central Cebu City and the surrounding roads can be heavily congested, especially during rush hours. IT Park and Saekyung together give a full picture of what the two main Cebu expat zones offer — and what they do not. The conclusion many expats reach: more of a beach resort lifestyle, which leads to Punta Engaño. That is exactly the point of the Airbnb-first strategy — you discover what actually matters to you by living it, not by reading about it.</p>
 
                 <div style={{background:'rgba(201,168,76,0.06)', border:'1px solid rgba(201,168,76,0.3)', borderLeft:'3px solid #C9A84C', padding:'24px 28px', marginTop:'20px'}}>
                   <p style={{fontSize:'0.62rem', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>IT Park Specific Living Guide — What Five Years Teaches You</p>
@@ -336,7 +336,7 @@ export default function HousingPage() {
           </ul>
 
           <div className="ha-gold">
-            <p className="ha-gold-label">Steve&rsquo;s VPN Tip for Airbnb</p>
+            <p className="ha-gold-label">VPN Tip for Airbnb</p>
             <p className="ha-gold-body">I noticed consistently better rates when I access Airbnb through my VPN compared to accessing directly through my PLDT connection. Dynamic pricing algorithms may show different rates based on your location or browsing history. I book all my Airbnbs through my VPN now. Worth testing before you book.</p>
           </div>
 
@@ -365,10 +365,10 @@ export default function HousingPage() {
           <p className="section-label">Finding Long-Term Accommodation</p>
           <h2 className="section-heading section-heading-light">Use a Trusted Local Realtor</h2>
 
-          <p className="hb hb-light">Once you know the area and are ready to commit to a 6 to 12 month lease, use a trusted local realtor. This is Steve&rsquo;s strong personal recommendation and the approach he used to find his own condo.</p>
+          <p className="hb hb-light">Once you know the area and are ready to commit to a 6 to 12 month lease, use a trusted local realtor. This is a strong recommendation and the approach that works for finding quality long-term accommodation.</p>
 
           <div className="personal-callout">
-            <p className="personal-callout-label">Steve&rsquo;s Recommendation</p>
+            <p className="personal-callout-label">Recommendation</p>
             <p className="personal-callout-body">I would never rent directly from a private citizen I do not know. The potential for scams, misrepresented properties, and lease disputes is too high. I found my Movenpick condo and my realtor through dotproperty.com.ph — specifically the Lapu-Lapu City rental listings. A legitimate realtor with verifiable listings gives you a level of protection that a private Facebook marketplace deal simply does not.</p>
             <a className="personal-callout-link" href="https://www.dotproperty.com.ph/properties-for-rent/cebu/lapu-lapu" target="_blank" rel="noopener noreferrer">Browse Lapu-Lapu City rentals on Dot Property →</a>
           </div>
@@ -398,7 +398,7 @@ export default function HousingPage() {
             </div>
             <div className="check-row">
               <div className="check-label">Generator Coverage</div>
-              <div className="check-body">Ask explicitly what the building generator covers during brownouts. Does it cover all units or only common areas? Does it cover aircon? Steve&rsquo;s building at Movenpick has full generator coverage — this is not universal and it matters significantly in a country with regular power outages.</div>
+              <div className="check-body">Ask explicitly what the building generator covers during brownouts. Does it cover all units or only common areas? Does it cover aircon? Some buildings in Punta Engaño have full generator coverage — this is not universal and it matters significantly in a country with regular power outages.</div>
             </div>
             <div className="check-row">
               <div className="check-label">Internet Infrastructure</div>
@@ -432,13 +432,13 @@ export default function HousingPage() {
           <h2 className="section-heading section-heading-light">Understanding Philippine Lease Terms</h2>
 
           <h3 className="hsub hsub-first hsub-light">Post-dated checks</h3>
-          <p className="hb hb-light">Many Philippine landlords require post-dated checks — one check per month of the lease — provided upfront at signing. This is standard practice and not a red flag in itself. It is simply how the rental market operates. Steve paid first month, last month, and a security deposit equivalent to one month&rsquo;s rent when securing his current condo, transferred through Remitly before arrival.</p>
+          <p className="hb hb-light">Many Philippine landlords require post-dated checks — one check per month of the lease — provided upfront at signing. This is standard practice and not a red flag in itself. It is simply how the rental market operates. A typical arrangement includes first month, last month, and a security deposit equivalent to one month&rsquo;s rent — transferred through Remitly before arrival is one common approach.</p>
 
           <h3 className="hsub hsub-light">Security deposit</h3>
           <p className="hb hb-light">Typically one to two months rent. Should be returned at the end of the lease minus any legitimate deductions for damage. Get the condition of the unit documented in writing and photographs at move-in — this protects both parties and is standard practice.</p>
 
           <h3 className="hsub hsub-light">HOA and resort fees</h3>
-          <p className="hb hb-light">Ask explicitly what is included in the monthly rent. Steve&rsquo;s 33,000 peso rent at Movenpick includes all HOA fees and resort access fees — this is exceptional and part of what makes his deal so strong. In many buildings HOA fees are separate and can add 2,000 to 5,000 pesos or more per month.</p>
+          <p className="hb hb-light">Ask explicitly what is included in the monthly rent. Some resort-condo deals include all HOA fees and resort access fees in the rent — this is exceptional value. In many buildings HOA fees are separate and can add 2,000 to 5,000 pesos or more per month.</p>
 
           <h3 className="hsub hsub-light">Lease length</h3>
           <p className="hb hb-light">Standard leases run 6 or 12 months. Month-to-month arrangements are possible but command a premium. A 12-month commitment typically gets you a better rate and a landlord who is invested in maintaining the relationship.</p>
@@ -454,13 +454,13 @@ export default function HousingPage() {
           <p className="section-label">Furnished vs Unfurnished</p>
           <h2 className="section-heading">Always Go Furnished</h2>
 
-          <p className="hb">Steve&rsquo;s recommendation is unambiguous — always rent furnished in the Philippines, especially when starting out.</p>
+          <p className="hb">The recommendation is unambiguous — always rent furnished in the Philippines, especially when starting out.</p>
 
           <h3 className="hsub hsub-first">Why furnished makes sense</h3>
           <ul className="hlist">
-            <li className="hli">Shipping furniture and household goods from the United States to the Philippines is prohibitively expensive. Steve&rsquo;s mother sent two certified documents by FedEx and it cost $150 USD. Shipping a container of furniture would be financially absurd.</li>
-            <li className="hli">Philippine furniture is affordable and readily available. S&amp;R, SM Department Store, and the Home Store at SM Seaside all carry quality furniture at reasonable prices. Steve bought a fabric couch with two recliners from S&amp;R for 20,000 pesos and a LazyBoy from the Home Store at SM Seaside for 10,000 pesos.</li>
-            <li className="hli">The landlord relationship handles replacement naturally — when Steve upgraded a piece of furniture, his landlord came and picked up what he was replacing. This is a common arrangement in the Philippines.</li>
+            <li className="hli">Shipping furniture and household goods from the United States to the Philippines is prohibitively expensive. Two certified documents shipped by FedEx cost $150 USD. Shipping a container of furniture would be financially absurd.</li>
+            <li className="hli">Philippine furniture is affordable and readily available. S&amp;R, SM Department Store, and the Home Store at SM Seaside all carry quality furniture at reasonable prices. Example: a fabric couch with two recliners from S&amp;R for 20,000 pesos and a LazyBoy from the Home Store at SM Seaside for 10,000 pesos.</li>
+            <li className="hli">The landlord relationship handles replacement naturally — when you upgrade a piece of furniture, many landlords will come and collect what you are replacing. This is a common arrangement in the Philippines.</li>
           </ul>
 
           <h3 className="hsub">What furnished typically includes</h3>
@@ -485,7 +485,7 @@ export default function HousingPage() {
           <p className="hb hb-light">Do not ship household goods from the United States to the Philippines. This rule has almost no exceptions.</p>
 
           <h3 className="hsub hsub-first hsub-light">The cost reality</h3>
-          <p className="hb hb-light">International shipping to the Philippines is expensive, slow, and subject to Philippine customs which can be unpredictable, time-consuming, and occasionally very expensive. Steve&rsquo;s experience shipping two certified documents by FedEx cost $150 USD — two pieces of paper. A container shipment of household goods would cost thousands of dollars in shipping plus customs duties plus handling fees.</p>
+          <p className="hb hb-light">International shipping to the Philippines is expensive, slow, and subject to Philippine customs which can be unpredictable, time-consuming, and occasionally very expensive. Shipping two certified documents by FedEx cost $150 USD — two pieces of paper. A container shipment of household goods would cost thousands of dollars in shipping plus customs duties plus handling fees.</p>
 
           <h3 className="hsub hsub-light">What to bring instead</h3>
           <p className="hb hb-light">Clothes, personal items, laptops and electronics, medications, and documents. Everything else can be bought here at reasonable prices.</p>
@@ -521,7 +521,7 @@ export default function HousingPage() {
               <span className="rent-cost">30,000–55,000 pesos</span>
             </div>
             <div className="rent-row rent-row-highlight">
-              <span className="rent-cat">Steve&rsquo;s actual deal — 66 sqm, 11th floor<small>Full Movenpick 5-star resort access included</small></span>
+              <span className="rent-cat">Example deal — 66 sqm, 11th floor<small>Full Movenpick 5-star resort access included</small></span>
               <span className="rent-cost">33,000 pesos</span>
             </div>
             <div className="rent-row">

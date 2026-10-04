@@ -216,7 +216,7 @@ export default function IncomeAbroadPage() {
           </div>
 
           <div className="feie-steve">
-            <p className="feie-steve-tag">Steve&rsquo;s Situation — A Real Example</p>
+            <p className="feie-steve-tag">A Real Example</p>
             <p className="feie-steve-body">I work remotely for a US company. My employer is American. My salary is paid in US dollars into my US bank account. Under the FEIE my entire salary — paid by an American company into an American bank — may qualify for exclusion from US federal income tax because I earn it while living in the Philippines. The word <em>foreign</em> describes me not my employer. This is the single most important tax concept for American remote workers living abroad and the one most people get wrong.</p>
           </div>
 

@@ -192,8 +192,8 @@ export default function MovingToPhilippinesPage() {
           <h2 className="section-heading section-heading-light">Documents — Prepare These Before You Leave</h2>
 
           <div className="ma-gold">
-            <p className="ma-gold-label">Steve&rsquo;s Shipping Reality Check</p>
-            <p className="ma-gold-body-light">My mother sent my birth certificate and divorce decree — two documents — by FedEx to the Philippines. It cost $150 USD. That is two pieces of paper. Do not ship anything here that you can bring in your luggage or handle before you leave.</p>
+            <p className="ma-gold-label">Shipping Reality Check</p>
+            <p className="ma-gold-body-light">Two documents — a birth certificate and divorce decree — sent by FedEx to the Philippines cost $150 USD. That is two pieces of paper. Do not ship anything here that you can bring in your luggage or handle before you leave.</p>
           </div>
 
           <ul className="mlist">
@@ -231,8 +231,8 @@ export default function MovingToPhilippinesPage() {
             <li className="mli">Unlocked smartphone — bring your current phone; buy a local SIM at the airport.</li>
             <li className="mli">Voltage awareness — the Philippines uses 220V; American appliances designed for 110V will be damaged without a converter. Laptops and phone chargers are typically dual-voltage — check the label. Hair dryers and kitchen appliances often are not.</li>
             <li className="mli">Surge protector — bring one from the US; power fluctuations are common and the Philippine selection is inconsistent.</li>
-            <li className="mli">VPN router — GL.iNet travel routers recommended; sets up a permanent VPN for all devices. See Steve&rsquo;s Expat Toolkit.</li>
-            <li className="mli">Amazon Firestick 4K — bring one; gives access to full US streaming library through VPN. See Steve&rsquo;s Expat Toolkit.</li>
+            <li className="mli">VPN router — GL.iNet travel routers recommended; sets up a permanent VPN for all devices. See the Expat Toolkit.</li>
+            <li className="mli">Amazon Firestick 4K — bring one; gives access to full US streaming library through VPN. See the Expat Toolkit.</li>
           </ul>
 
           <h3 className="msub">Clothing and Personal</h3>
@@ -310,7 +310,7 @@ export default function MovingToPhilippinesPage() {
           <h2 className="section-heading section-heading-light">What NOT to Bring</h2>
 
           <h3 className="msub msub-first msub-light">Furniture and Appliances</h3>
-          <p className="mb mb-light">Do not ship furniture or large appliances. International shipping is expensive, slow, and subject to unpredictable customs. Philippine furniture is affordable. Steve bought a fabric couch with two recliners from S&amp;R for 20,000 pesos and a LazyBoy from the Home Store at SM Seaside for 10,000 pesos. When he upgraded furniture his landlord picked up what he replaced — a common arrangement in the Philippines.</p>
+          <p className="mb mb-light">Do not ship furniture or large appliances. International shipping is expensive, slow, and subject to unpredictable customs. Philippine furniture is affordable — example: a fabric couch with two recliners from S&amp;R for 20,000 pesos and a LazyBoy from the Home Store at SM Seaside for 10,000 pesos. When you upgrade furniture, many landlords will pick up what you replace — a common arrangement in the Philippines.</p>
 
           <h3 className="msub msub-light">Large Electronics</h3>
           <p className="mb mb-light">Buy locally — correctly voltaged for Philippine electricity.</p>
@@ -319,8 +319,8 @@ export default function MovingToPhilippinesPage() {
           <p className="mb mb-light">Philippine laundry services are excellent and affordable — 700 to 1,200 pesos for pickup and delivery. Pack for the first month and supplement locally.</p>
 
           <div className="ma-gold">
-            <p className="ma-gold-label">Steve&rsquo;s Shipping Reality Check</p>
-            <p className="ma-gold-body-light">My mother sent my birth certificate and divorce decree by FedEx to the Philippines. Cost: $150 USD. Two pieces of paper. Do not ship anything here that you can bring in luggage or buy locally.</p>
+            <p className="ma-gold-label">Shipping Reality Check</p>
+            <p className="ma-gold-body-light">Two documents — a birth certificate and divorce decree — sent by FedEx to the Philippines: $150 USD. Two pieces of paper. Do not ship anything here that you can bring in luggage or buy locally.</p>
           </div>
         </div>
       </section>
@@ -361,13 +361,13 @@ export default function MovingToPhilippinesPage() {
           <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>SM Supermarket and Robinsons Supermarket:</strong> The two most ubiquitous supermarket chains in the Philippines. Found in virtually every major mall. Good selection of local and some imported products at reasonable prices. SM Seaside City, SM City, and Robinsons Galleria are the main Cebu options.</p>
 
           <div className="ma-gold">
-            <p className="ma-gold-label">Steve&rsquo;s Grocery Choice</p>
-            <p className="ma-gold-body-light">S&amp;R Membership Shopping — The Philippines equivalent of Costco. Membership warehouse pricing on bulk items and the best selection of Western imported products in Cebu — peanut butter, cereals, imported meats, snacks, wine, and more. Free delivery with a 5,000 peso minimum order. Steve shops here for the majority of his groceries. Membership required. Locations: Mandaue City and SM Seaside area.</p>
+            <p className="ma-gold-label">Grocery Choice</p>
+            <p className="ma-gold-body-light">S&amp;R Membership Shopping — The Philippines equivalent of Costco. Membership warehouse pricing on bulk items and the best selection of Western imported products in Cebu — peanut butter, cereals, imported meats, snacks, wine, and more. Free delivery with a 5,000 peso minimum order. Membership required. Locations: Mandaue City and SM Seaside area.</p>
           </div>
 
           <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Landers Superstore:</strong> Strong competitor to S&amp;R with excellent imported product selection and no membership required. Good for Western pantry staples and imported goods. Located in Cebu Business Park and other major areas.</p>
 
-          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Wet Markets — Taboan and Carbon:</strong> For the cheapest fresh produce, fish, pork, and chicken in Cebu, nothing beats the wet markets. Taboan Market in Cebu City is famous for dried fish and local preserved goods — worth visiting once for the experience. Carbon Market is one of the largest in the Visayas for fresh produce. Prices dramatically lower than supermarkets. Irish handles the wet market shopping — a Filipina partner&rsquo;s knowledge of local markets is invaluable for food budgeting.</p>
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Wet Markets — Taboan and Carbon:</strong> For the cheapest fresh produce, fish, pork, and chicken in Cebu, nothing beats the wet markets. Taboan Market in Cebu City is famous for dried fish and local preserved goods — worth visiting once for the experience. Carbon Market is one of the largest in the Visayas for fresh produce. Prices dramatically lower than supermarkets. A local partner&rsquo;s knowledge of wet markets is invaluable for food budgeting.</p>
 
           <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Delivery Options:</strong> Most supermarkets and S&amp;R offer delivery. Grab Food, Foodpanda, and LalaFood deliver groceries and prepared food. In Mactan, S&amp;R delivery is the most popular among expats for bulk grocery runs.</p>
 
@@ -377,7 +377,7 @@ export default function MovingToPhilippinesPage() {
 
           <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>Wilcon Depot:</strong> Philippines equivalent of Home Depot. Larger format than ACE, better for tiles, plumbing, electrical, and renovation materials. Located in Mandaue City and Cebu City.</p>
 
-          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>SM Home and Appliances:</strong> SM Department Store has a home section with furniture, appliances, and housewares. For quality furniture The Home Store at SM Seaside is the best option — Steve bought his LazyBoy there for 10,000 pesos. For appliances Abenson and Anson&rsquo;s are the most reliable chains.</p>
+          <p className="mb mb-light"><strong style={{color:'#C9A84C'}}>SM Home and Appliances:</strong> SM Department Store has a home section with furniture, appliances, and housewares. For quality furniture The Home Store at SM Seaside is the best option — a LazyBoy there runs around 10,000 pesos. For appliances Abenson and Anson&rsquo;s are the most reliable chains.</p>
 
           <h3 className="msub msub-light">Clothing</h3>
 

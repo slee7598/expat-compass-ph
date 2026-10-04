@@ -375,7 +375,7 @@ export default function CityGuidesPage() {
         <div className="section-inner">
           <div className="city-layout">
             <div>
-              <div className="city-badge">Steve&rsquo;s Home City</div>
+              <div className="city-badge">Expat Compass Home City</div>
               <p className="section-eyebrow section-eyebrow-light">Cebu &amp; Mactan Island</p>
               <h2 className="section-heading section-heading-light">The Expat Sweet Spot of the Philippines</h2>
               <p className="section-tagline">Best overall balance of infrastructure, lifestyle, healthcare, cost, and community</p>
@@ -393,7 +393,7 @@ export default function CityGuidesPage() {
                   <li>1BR Marigondon budget: ₱3,000–8,000 / month</li>
                   <li>1BR Mactan standard: ₱15,000–30,000 / month</li>
                   <li>1BR Mactan Newtown premium: ₱25,000–45,000 / month</li>
-                  <li>Steve&rsquo;s Movenpick 66sqm + full resort access: ₱33,000 / month</li>
+                  <li>66sqm + full resort access (Punta Engaño example): ₱33,000 / month</li>
                   <li>Electricity moderate aircon: ₱4,000–8,000 / month</li>
                   <li>Comfortable expat total: ₱60,000–100,000 ($1,000–$1,700 USD)</li>
                   <li>Can you live on $1,500 USD/month: Yes, comfortably</li>
@@ -428,7 +428,7 @@ export default function CityGuidesPage() {
                     standard for expat healthcare in Cebu. Two campuses: Fuente Osmeña in Cebu City and
                     Mandaue closer to Mactan Island. Cebu Doctors University Hospital, Perpetual Succour
                     Hospital, and Vicente Sotto Memorial Medical Center also serve the area.
-                    Steve&rsquo;s personal ER experience at Chong Hua: 6 hours, IV treatment, blood tests,
+                    First-hand ER experience at Chong Hua: 6 hours, IV treatment, blood tests,
                     medications for a week, total bill $300 USD.
                   </p>
                 </div>
@@ -451,8 +451,7 @@ export default function CityGuidesPage() {
                       The premium end of Mactan Island. Punta Engaño is the resort strip — Movenpick,
                       Shangri-La, Crimson — private beaches and 5-star amenities. Mactan Newtown is a
                       master-planned development with high-end condominiums, restaurants, bars, gyms,
-                      and retail all within walking distance. Steve lives in Punta Engaño at the
-                      Residences at Movenpick. Less than half a mile separates the two areas.
+                      and retail all within walking distance. Less than half a mile separates the two areas.
                     </p>
                   </div>
                   <div className="neighborhood-card">

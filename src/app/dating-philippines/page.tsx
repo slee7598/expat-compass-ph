@@ -532,7 +532,7 @@ export default function DatingPhilippinesPage() {
 
           <div className="rb-alert">
             <p className="rb-alert-label">A Note on This Section</p>
-            <p className="rb-alert-body-dark">This section is written with honesty and with respect. Irish, my Filipina wife, has a close friend who is a ladyboy. This is not an outsider view — it is written by people who know and care about members of this community.</p>
+            <p className="rb-alert-body-dark">This section is written with honesty and with respect. A close friend is a ladyboy. This is not an outsider view — it is written by people who know and care about members of this community.</p>
           </div>
 
           <p className="rb-body">The Philippines has one of the most visible and socially integrated transgender communities in Asia. In cities like Manila, Cebu, and the Visayas, you will see transgender Filipinas — commonly called ladyboys, though many in the community prefer trans Pinay — in malls, restaurants, bars, entertainment, and every aspect of daily life. This is not unusual, underground, or hidden. It is everyday Philippine life. There are transgender Filipinas who are so feminine that foreigners often cannot tell the difference. Transgender personalities are prominent in Philippine media — TV shows hosted by transgender personalities air nationwide.</p>
@@ -557,7 +557,6 @@ export default function DatingPhilippinesPage() {
               </div>
             </div>
             <p className="irish-body">One of my closest friends is a ladyboy. She is kind, funny, loyal, and one of the most hardworking people I know. She has faced discrimination her whole life — from her family, from employers, from men who treated her badly after finding out who she was. I am not asking you to date someone you do not want to date. I am asking you to treat every person you encounter with basic human dignity, regardless of who they are. The Philippines is a diverse and complicated society. The more you understand it with an open heart, the richer your experience here will be.</p>
-            <p className="irish-sig">— Irish</p>
           </div>
         </div>
       </section>
@@ -709,11 +708,11 @@ export default function DatingPhilippinesPage() {
           <div className="sn-rule" />
           <div className="sn-body">
             <div>
-              <p className="sn-speaker">Steve</p>
+              <p className="sn-speaker">His Perspective</p>
               <p>I have been in the Philippines long enough to have seen both the best and worst of the expat dating experience. I have watched good men get taken advantage of and I have watched men behave terribly toward women who deserved better. The Philippines is genuinely one of the best places in the world to find a meaningful relationship with a warm, loyal, family-oriented partner. But it requires honesty, patience, and cultural awareness — not a transactional mindset.</p>
             </div>
             <div>
-              <p className="sn-speaker">Irish</p>
+              <p className="sn-speaker">Her Perspective</p>
               <p>I love my country and I love Filipino women. We are loyal, caring, and family-first in everything we do. We are also human beings who deserve to be treated with respect. If you come to the Philippines looking for a genuine connection, you will find one. If you come looking to exploit people in a poor country, you will find that too — and you will deserve everything that follows from it. Come with an open heart. Be honest about who you are and what you want. And please — be kind to everyone you meet here, regardless of how the connection works out.</p>
             </div>
           </div>
