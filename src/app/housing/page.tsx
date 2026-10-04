@@ -369,7 +369,7 @@ export default function HousingPage() {
 
           <div className="personal-callout">
             <p className="personal-callout-label">Recommendation</p>
-            <p className="personal-callout-body">I would never rent directly from a private citizen I do not know. The potential for scams, misrepresented properties, and lease disputes is too high. I found my Movenpick condo and my realtor through dotproperty.com.ph — specifically the Lapu-Lapu City rental listings. A legitimate realtor with verifiable listings gives you a level of protection that a private Facebook marketplace deal simply does not.</p>
+            <p className="personal-callout-body">I would never rent directly from a private citizen I do not know. The potential for scams, misrepresented properties, and lease disputes is too high. I found a one-bedroom resort condo on Mactan and a local realtor through dotproperty.com.ph — specifically the Lapu-Lapu City rental listings. A legitimate realtor with verifiable listings gives you a level of protection that a private Facebook marketplace deal simply does not.</p>
             <a className="personal-callout-link" href="https://www.dotproperty.com.ph/properties-for-rent/cebu/lapu-lapu" target="_blank" rel="noopener noreferrer">Browse Lapu-Lapu City rentals on Dot Property →</a>
           </div>
 
@@ -521,7 +521,7 @@ export default function HousingPage() {
               <span className="rent-cost">30,000–55,000 pesos</span>
             </div>
             <div className="rent-row rent-row-highlight">
-              <span className="rent-cat">Example deal — 66 sqm, 11th floor<small>Full Movenpick 5-star resort access included</small></span>
+              <span className="rent-cat">Example deal — 66 sqm, 11th floor<small>Full 5-star resort access included, Punta Engaño</small></span>
               <span className="rent-cost">33,000 pesos</span>
             </div>
             <div className="rent-row">
@@ -554,7 +554,7 @@ export default function HousingPage() {
           <div className="sn-rule" />
           <div className="sn-body">
             <p>I have lived in two places on Mactan Island and they could not have been more different. My first month in Marigondon at a 22sqm studio was exactly what I needed — a base to learn the island, meet people, figure out where I wanted to be. It was comfortable enough and the community had everything within walking distance. But I knew it was not where I wanted to stay long-term.</p>
-            <p>When I found the Residences at Movenpick through Dot Property, I knew immediately it was the right move. 33,000 pesos for an 11th floor condo with resort access, a private beach, and a view of both sunrises and sunsets from the same balcony. That deal took patience and a local realtor to find. It would not have happened if I had signed a 12-month lease in the first week I arrived.</p>
+            <p>When I found a one-bedroom resort condo on Mactan through Dot Property, I knew immediately it was the right move. 33,000 pesos for an 11th floor condo with resort access, a private beach, and a view of both sunrises and sunsets from the same balcony. That deal took patience and a local realtor to find. It would not have happened if I had signed a 12-month lease in the first week I arrived.</p>
             <p>My advice is simple: take your time, start on Airbnb, and use a trusted realtor when you are ready to commit. The Philippines rewards patience. The right place is out there — do not rush into the wrong one.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>

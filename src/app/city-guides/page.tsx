@@ -1564,7 +1564,7 @@ export default function CityGuidesPage() {
           <div className="sn-rule" />
           <div className="sn-body">
             <p>I spent time in Marigondon on Mactan and a month in IT Park in Cebu City before I found my place in Punta Engaño. Those months were not wasted — they showed me exactly what I wanted and what I did not. IT Park is lively and walkable with excellent food and nightlife. But I wanted beach. I wanted resort. I wanted to wake up and see water. Marigondon gave me the community feel and the affordability — and confirmed that I wanted something a bit more peaceful.</p>
-            <p>Punta Engaño at the Residences at Movenpick is exactly what I was looking for. The sunrise over one horizon and the sunset over the other from my 11th floor balcony. Full resort access. A private beach 3 minutes from my door.</p>
+            <p>A one-bedroom resort condo on Mactan at Punta Engaño is exactly what I was looking for. The sunrise over one horizon and the sunset over the other from an 11th floor balcony. Full resort access. A private beach 3 minutes from the door.</p>
             <p>This is not what every expat needs — plenty of people would find my setup overpriced when a perfectly comfortable 22sqm studio in Marigondon costs 3,000 pesos a month. The point is this: do not pick a city from a website. Come, rent an Airbnb, and live in it for a month. The right city will reveal itself to you. Every city on this page has people who love it and people who left. Only you know which one is yours.</p>
           </div>
           <p className="sn-verified">Last Updated June 2026 · Punta Engaño, Mactan Island, Cebu</p>

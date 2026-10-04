@@ -331,7 +331,7 @@ export default function CostOfLivingPage() {
 
           <div className="ca-gold">
             <p className="ca-gold-label">Example: Punta Engaño Resort Condo, Mactan Island</p>
-            <p className="ca-gold-body-light">I found an exceptional deal that I acknowledge I would struggle to replicate — a 66 square meter 1-bedroom 1-bathroom condo on the 11th floor of the Residences at Movenpick in Punta Engaño, Mactan Island. I pay 33,000 pesos per month. For that I get a large balcony with views of both sides of the island — I can watch the sunrise over one horizon and the sunset over the other from the same balcony. Full access to all amenities at the adjacent Movenpick 5-star resort: private beach, multiple pools, restaurants, game room, gym, and a 20 percent discount on everything at the resort including room rates for visiting family. This is an extraordinary deal for what it includes.</p>
+            <p className="ca-gold-body-light">An exceptional deal — a 66 square meter 1-bedroom 1-bathroom condo on the 11th floor of a 5-star resort on Mactan Island, 33,000 pesos per month. Large balcony with views of both sides of the island — sunrise over one horizon, sunset over the other. Full access to all resort amenities: private beach, multiple pools, restaurants, game room, gym, and a 20 percent discount on everything at the resort including room rates for visiting family. This is an extraordinary deal for what it includes.</p>
           </div>
 
           <h3 className="csub">The broader market — real data</h3>
@@ -350,7 +350,7 @@ export default function CostOfLivingPage() {
             </div>
             <div className="shop-row">
               <div className="shop-name">Premium or resort-adjacent</div>
-              <div className="shop-desc">30,000 to 60,000 pesos per month. Includes the Movenpick area and similar resort-integrated developments.</div>
+              <div className="shop-desc">30,000 to 60,000 pesos per month. Includes Punta Engaño resort-integrated developments and similar premium areas.</div>
             </div>
             <div className="shop-row">
               <div className="shop-name">Manila BGC or Makati premium</div>
@@ -359,7 +359,7 @@ export default function CostOfLivingPage() {
           </div>
 
           <h3 className="csub">How to find the best deals</h3>
-          <p className="cb">The Philippines rewards patience in finding accommodation. The best deals come from direct landlord relationships, Facebook housing groups, and word of mouth — not from property portals where prices are marked up for foreigners. Dot Property Philippines (dotproperty.com.ph) is a solid starting point for searching — it is where I found my current condo.</p>
+          <p className="cb">The Philippines rewards patience in finding accommodation. The best deals come from direct landlord relationships, Facebook housing groups, and word of mouth — not from property portals where prices are marked up for foreigners. Dot Property Philippines (dotproperty.com.ph) is a solid starting point for searching.</p>
         </div>
       </section>
 
@@ -557,10 +557,6 @@ export default function CostOfLivingPage() {
           <h3 className="csub">Motorcycle Ownership — Real Running Costs</h3>
           <p className="cb">Honda ADV 160 motorcycle — annual registration approximately PHP 1,500 to 2,500, CTPL insurance approximately PHP 500 per year, fuel at current prices approximately PHP 200 to 300 per week for daily use. Total monthly motorcycle cost approximately PHP 1,200 to 1,800 versus PHP 3,000 to 6,000 per month in Grab fares for an active expat. Ownership pays for itself within 18 to 24 months for most expats who use transport daily.</p>
 
-          <div className="ca-gold">
-            <p className="ca-gold-label">Example Purchase — July 2026</p>
-            <p className="ca-gold-body-light">A 2024 Honda ADV 160 ABS Keyless purchased in July 2026 for PHP 115,000 negotiated from PHP 120,000 plus PHP 13,000 in legal transfer fees for a total of PHP 128,000 all-in. This represents the real market for a low-mileage 2024 ADV 160 in Cebu.</p>
-          </div>
         </div>
       </section>
 
@@ -658,7 +654,7 @@ export default function CostOfLivingPage() {
           <div className="budget-table-wrap">
             <div className="budget-section-head">Fixed Monthly Costs</div>
             <div className="budget-row">
-              <span className="budget-item">Rent — Residences at Movenpick, 66 sqm 1BR, 11th floor, full resort access<small>Private beach, multiple pools, restaurants, gym, spa — 20% discount on all resort services</small></span>
+              <span className="budget-item">Rent — one-bedroom resort condo on Mactan, 66 sqm, 11th floor, full resort access<small>Private beach, multiple pools, restaurants, gym, spa — 20% discount on all resort services</small></span>
               <span className="budget-amount">33,000</span>
             </div>
             <div className="budget-row">
@@ -850,7 +846,7 @@ export default function CostOfLivingPage() {
           <div className="sn-body">
             <p>I want to be honest about my situation because I think it is both aspirational and realistic. I live in a 5-star resort complex on the 11th floor with views of two ocean horizons, full access to a private beach and multiple pools, and a kitchen with exceptional home cooking every day. My total monthly spend including everything is approximately 106,000 to 114,000 pesos — under $2,000 USD. In Los Angeles or New York that money barely covers rent. Here it covers a lifestyle that most people in the West associate with a luxury vacation.</p>
             <p>I am not independently wealthy. I work remotely. The Philippines makes this possible.</p>
-            <p>What I will tell you honestly is that finding my specific deal at Movenpick required patience, timing, and some luck. You may not find exactly this — but the Philippines rewards people who look carefully, build local relationships, and are willing to live like a resident rather than a tourist.</p>
+            <p>What the data will tell you honestly is that finding a resort-condo deal like this requires patience, timing, and some luck. You may not find exactly this — but the Philippines rewards people who look carefully, build local relationships, and are willing to live like a resident rather than a tourist.</p>
             <p>The expat who moves here expecting to recreate their American lifestyle at American prices will be disappointed. The expat who embraces what the Philippines actually offers — fresh food, warm people, a tropical climate, and a pace of life that prioritizes living over working — will find this place transforms them. We are building something real here. The cost of living makes it possible.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
