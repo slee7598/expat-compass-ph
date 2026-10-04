@@ -44,12 +44,6 @@ const topics = [
     href: "/dating-philippines",
   },
   {
-    label: "Passport Bros",
-    description:
-      "What the passport bro label means, where he stands, and how he ended up married in the Philippines.",
-    href: "/passport-bros",
-  },
-  {
     label: "US Benefits Abroad",
     description:
       "Social Security, Medicare, SSI, SSDI, and VA benefits for Americans living permanently in the Philippines. What continues and what stops.",

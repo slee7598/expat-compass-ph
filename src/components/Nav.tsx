@@ -15,12 +15,11 @@ const links = [
   { label: "Transportation", href: "/transportation" },
   { label: "City Guides", href: "/city-guides" },
   { label: "Dating in the Philippines", href: "/dating-philippines" },
-  { label: "Passport Bros", href: "/passport-bros" },
   { label: "US Benefits Abroad", href: "/retirement-benefits" },
   { label: "Moving to Philippines", href: "/moving-to-philippines" },
   { label: "Arrival Guide", href: "/arrival-guide" },
   { label: "Living on Income", href: "/income-abroad" },
-  { label: "Steve's Expat Toolkit", href: "/steve-recommends" },
+  { label: "Expat Toolkit", href: "/expat-toolkit" },
   { label: "About", href: "/about" },
 ];
 

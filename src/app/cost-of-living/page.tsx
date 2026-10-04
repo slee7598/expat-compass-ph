@@ -587,7 +587,7 @@ export default function CostOfLivingPage() {
 
           <div className="health-callout">
             <p className="health-callout-label">First-Hand Experience — Private Hospital, Cebu</p>
-            <p className="health-callout-body">I had a significant illness that required a hospital visit to a private hospital in Cebu. I was in a hospital bed for 6 hours. During that time I received IV hydration, IV antibiotics, two separate blood tests, and a fecal test. I was prescribed four medications that I took for a full week, all filled at the hospital pharmacy. My total bill including everything — the hospital stay, all tests, all IV treatment, and all medications — was $300 USD. In the United States, that same visit would conservatively cost $3,000 to $5,000 without insurance and significantly more at an emergency room. This was not a budget clinic. This was quality private hospital care.</p>
+            <p className="health-callout-body">A significant illness required a hospital visit to a private hospital in Cebu. 6 hours in a hospital bed, receiving IV hydration, IV antibiotics, two separate blood tests, and a fecal test. Four medications prescribed for a full week, all filled at the hospital pharmacy. Total bill including everything — hospital stay, all tests, all IV treatment, and all medications — $300 USD. In the United States, that same visit would conservatively cost $3,000 to $5,000 without insurance and significantly more at an emergency room. This was not a budget clinic. This was quality private hospital care.</p>
           </div>
 
           <h3 className="csub">Healthcare cost benchmarks</h3>
@@ -706,7 +706,7 @@ export default function CostOfLivingPage() {
             </div>
           </div>
 
-          <p className="cb cb-light" style={{marginTop: '24px'}}>I live at the top end of expat comfort in Cebu. My rent alone is exceptional value for what it includes — 5-star resort access, private beach, pools, and a view that most people pay thousands of dollars a night to experience as a hotel guest. Even at this level, my total spend is less than I would pay for a modest apartment in most American cities.</p>
+          <p className="cb cb-light" style={{marginTop: '24px'}}>This example household sits at the top end of expat comfort in Cebu. The rent alone is exceptional value for what it includes — 5-star resort access, private beach, pools, and a view that most people pay thousands of dollars a night to experience as a hotel guest. Even at this level, total spend is less than a modest apartment in most American cities.</p>
         </div>
       </section>
 
@@ -838,16 +838,16 @@ export default function CostOfLivingPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">Living the Life &nbsp;·&nbsp; Punta Engaño, Mactan Island</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">Example budget &nbsp;·&nbsp; Punta Engaño, Mactan Island</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>I want to be honest about my situation because I think it is both aspirational and realistic. I live in a 5-star resort complex on the 11th floor with views of two ocean horizons, full access to a private beach and multiple pools, and a kitchen with exceptional home cooking every day. My total monthly spend including everything is approximately 106,000 to 114,000 pesos — under $2,000 USD. In Los Angeles or New York that money barely covers rent. Here it covers a lifestyle that most people in the West associate with a luxury vacation.</p>
-            <p>I am not independently wealthy. I work remotely. The Philippines makes this possible.</p>
-            <p>What the data will tell you honestly is that finding a resort-condo deal like this requires patience, timing, and some luck. You may not find exactly this — but the Philippines rewards people who look carefully, build local relationships, and are willing to live like a resident rather than a tourist.</p>
-            <p>The expat who moves here expecting to recreate their American lifestyle at American prices will be disappointed. The expat who embraces what the Philippines actually offers — fresh food, warm people, a tropical climate, and a pace of life that prioritizes living over working — will find this place transforms them. We are building something real here. The cost of living makes it possible.</p>
+            <p>This example budget is both aspirational and realistic. The household lives in a 5-star resort complex on the 11th floor with views of two ocean horizons, full access to a private beach and multiple pools, and a kitchen with exceptional home cooking every day. Total monthly spend including everything: approximately 106,000 to 114,000 pesos — under $2,000 USD. In Los Angeles or New York that money barely covers rent. Here it covers a lifestyle that most people in the West associate with a luxury vacation.</p>
+            <p>This is not a household with independent wealth — it is funded by remote work. The Philippines makes this possible.</p>
+            <p>Finding a resort-condo deal like this requires patience, timing, and some luck. You may not find exactly this — but the Philippines rewards people who look carefully, build local relationships, and are willing to live like a resident rather than a tourist.</p>
+            <p>The expat who moves here expecting to recreate their American lifestyle at American prices will be disappointed. The expat who embraces what the Philippines actually offers — fresh food, warm people, a tropical climate, and a pace of life that prioritizes living over working — will find this place transforms them. The cost of living makes it possible.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>

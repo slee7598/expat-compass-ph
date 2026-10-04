@@ -193,7 +193,7 @@ export default function HousingPage() {
         <div className="section-inner">
           <div className="opening-card">
             <p className="opening-card-label">The most important advice on this page</p>
-            <p className="opening-card-body">The biggest mistake foreign men make when housing hunting in the Philippines is moving too fast. Commit to an Airbnb or Booking.com short stay first, learn the neighborhoods, build local knowledge, and then make a long-term decision. I lived in Marigondon for a month before finding my place in Punta Engaño. That month taught me more about Cebu than six months of research online.</p>
+            <p className="opening-card-body">The biggest mistake foreign men make when housing hunting in the Philippines is moving too fast. Commit to an Airbnb or Booking.com short stay first, learn the neighborhoods, build local knowledge, and then make a long-term decision. A month in Marigondon before finding a permanent place in Punta Engaño will teach more about Cebu than six months of research online.</p>
           </div>
         </div>
       </section>
@@ -337,7 +337,7 @@ export default function HousingPage() {
 
           <div className="ha-gold">
             <p className="ha-gold-label">VPN Tip for Airbnb</p>
-            <p className="ha-gold-body">I noticed consistently better rates when I access Airbnb through my VPN compared to accessing directly through my PLDT connection. Dynamic pricing algorithms may show different rates based on your location or browsing history. I book all my Airbnbs through my VPN now. Worth testing before you book.</p>
+            <p className="ha-gold-body">Consistently better rates appear when accessing Airbnb through a VPN compared to a direct Philippine ISP connection. Dynamic pricing algorithms may show different rates based on your location or browsing history. Booking Airbnbs through a VPN is worth testing before you commit to a price.</p>
           </div>
 
           <h3 className="hsub">What a good short-term Airbnb in Mactan costs</h3>
@@ -368,8 +368,8 @@ export default function HousingPage() {
           <p className="hb hb-light">Once you know the area and are ready to commit to a 6 to 12 month lease, use a trusted local realtor. This is a strong recommendation and the approach that works for finding quality long-term accommodation.</p>
 
           <div className="personal-callout">
-            <p className="personal-callout-label">Recommendation</p>
-            <p className="personal-callout-body">I would never rent directly from a private citizen I do not know. The potential for scams, misrepresented properties, and lease disputes is too high. I found a one-bedroom resort condo on Mactan and a local realtor through dotproperty.com.ph — specifically the Lapu-Lapu City rental listings. A legitimate realtor with verifiable listings gives you a level of protection that a private Facebook marketplace deal simply does not.</p>
+            <p className="personal-callout-label">Expat Compass PH Recommendation</p>
+            <p className="personal-callout-body">Expat Compass PH recommends against renting directly from a private citizen you do not know. The potential for scams, misrepresented properties, and lease disputes is too high. A one-bedroom resort condo on Mactan and a trusted local realtor were both found through dotproperty.com.ph — specifically the Lapu-Lapu City rental listings. A legitimate realtor with verifiable listings gives you a level of protection that a private Facebook marketplace deal simply does not.</p>
             <a className="personal-callout-link" href="https://www.dotproperty.com.ph/properties-for-rent/cebu/lapu-lapu" target="_blank" rel="noopener noreferrer">Browse Lapu-Lapu City rentals on Dot Property →</a>
           </div>
 
@@ -547,15 +547,15 @@ export default function HousingPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">Finding Home &nbsp;·&nbsp; Punta Engaño, Mactan Island</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">First-hand experience &nbsp;·&nbsp; Punta Engaño, Mactan Island</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>I have lived in two places on Mactan Island and they could not have been more different. My first month in Marigondon at a 22sqm studio was exactly what I needed — a base to learn the island, meet people, figure out where I wanted to be. It was comfortable enough and the community had everything within walking distance. But I knew it was not where I wanted to stay long-term.</p>
-            <p>When I found a one-bedroom resort condo on Mactan through Dot Property, I knew immediately it was the right move. 33,000 pesos for an 11th floor condo with resort access, a private beach, and a view of both sunrises and sunsets from the same balcony. That deal took patience and a local realtor to find. It would not have happened if I had signed a 12-month lease in the first week I arrived.</p>
-            <p>My advice is simple: take your time, start on Airbnb, and use a trusted realtor when you are ready to commit. The Philippines rewards patience. The right place is out there — do not rush into the wrong one.</p>
+            <p>Two places on Mactan Island — and they could not have been more different. A first month in Marigondon at a 22sqm studio was exactly what was needed — a base to learn the island, meet people, figure out where to settle. Comfortable enough, everything within walking distance. But it was not a long-term fit.</p>
+            <p>A one-bedroom resort condo on Mactan found through Dot Property: 33,000 pesos for an 11th floor unit with resort access, a private beach, and a view of both sunrises and sunsets from the same balcony. That deal took patience and a local realtor to find. It would not have happened if a 12-month lease had been signed in the first week.</p>
+            <p>The advice is simple: take your time, start on Airbnb, and use a trusted realtor when ready to commit. The Philippines rewards patience. The right place is out there — do not rush into the wrong one.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>

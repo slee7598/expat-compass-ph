@@ -3,10 +3,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Steve's Expat Toolkit — Products & Services I Actually Use in the Philippines",
+  title: "Expat Toolkit — Products & Services We Actually Use in the Philippines",
   description:
-    "The apps, services, and tools I personally use as an American expat living in Cebu, Philippines. VPN setup, SIM cards, streaming, insurance, and more.",
-  alternates: { canonical: "https://expatcompassph.com/steve-recommends" },
+    "The apps, services, and tools tested by expats living in Cebu, Philippines. VPN setup, SIM cards, streaming, insurance, and more.",
+  alternates: { canonical: "https://expatcompassph.com/expat-toolkit" },
 };
 
 type RecItem = { name: string; body: string; link?: string; linkLabel?: string; note?: string };
@@ -14,11 +14,11 @@ type RecItem = { name: string; body: string; link?: string; linkLabel?: string; 
 const comms: RecItem[] = [
   {
     name: "Smart eSIM (iPhone)",
-    body: "I use the Smart eSIM on my iPhone. I set it up at Gaisano Mall in Pasak, Lapu-Lapu City — they activate it for you on the spot, no hassle at all. I mainly got it because I needed a local number for apps like Lazada and Shopee, which require a Philippine number to function properly. The whole process took minutes.",
+    body: "The Smart eSIM on iPhone is the recommended local SIM solution. Set it up at Gaisano Mall in Pasak, Lapu-Lapu City — they activate it on the spot, no hassle at all. A local number is needed for apps like Lazada and Shopee which require a Philippine number to function properly. The whole process takes minutes.",
   },
   {
     name: "GLinet VPN Setup — The Remote Worker Hack",
-    body: "I don’t use a traditional VPN app. I use a GLinet home router (the Flint 3) paired with a GLinet travel router (the Slate 7 Pro). The travel router connects back to a home router in the US, which means every device I connect to it appears to be sitting in a US home — not in the Philippines. This is an absolute game-changer for remote workers. Your US banking apps, streaming services, and work systems see a US connection. No flags, no blocks, no issues. If you work remotely from the Philippines, this setup is worth every penny.",
+    body: "Rather than a traditional VPN app, this setup uses a GLinet home router (the Flint 3) paired with a GLinet travel router (the Slate 7 Pro). The travel router connects back to a home router in the US, which means every connected device appears to be sitting in a US home — not in the Philippines. This is an absolute game-changer for remote workers. US banking apps, streaming services, and work systems see a US connection. No flags, no blocks, no issues. If working remotely from the Philippines, this setup is worth every penny.",
     link: "https://www.amazon.com/s?k=GLinet&crid=Q08TN6PS44T6&sprefix=glinet%2Caps%2C795&linkCode=ll2&tag=expatcompassp-20&linkId=22e5dc989cc69abcbc3f97d3e8ddf57f&language=en_US&ref_=as_li_ss_tl",
     linkLabel: "Shop GLinet on Amazon →",
   },
@@ -27,7 +27,7 @@ const comms: RecItem[] = [
 const transport: RecItem[] = [
   {
     name: "Cebu Pacific",
-    body: "The cheapest domestic airline for island hopping in the Philippines. Delays happen. Cancellations happen. I use Cebu Pacific because frankly, you can’t be in a hurry for anything in the Philippines. If you can roll with it, the price is hard to beat.",
+    body: "The cheapest domestic airline for island hopping in the Philippines. Delays happen. Cancellations happen. Cebu Pacific is recommended for budget travel because frankly, you can’t be in a hurry for anything in the Philippines. If you can roll with it, the price is hard to beat.",
   },
   {
     name: "Philippine Airlines",
@@ -39,11 +39,11 @@ const transport: RecItem[] = [
   },
   {
     name: "Maxim",
-    body: "About half the price of Grab. My go-to when I’m not in a rush.",
+    body: "About half the price of Grab. Expat Compass PH’s go-to app when not in a rush.",
   },
   {
     name: "Honda ADV 160 — The Expat Scooter of Choice in Cebu",
-    body: "The Honda ADV 160 is the gold standard for expat scooters in Cebu. Automatic transmission means anyone can ride it. The 160cc engine handles Cebu highways and Mactan roads with power to spare without being intimidating. ABS brakes are essential for safety in Philippine traffic — do not buy a bike without ABS. Traction control adds another safety layer in wet conditions during rainy season. The keyless ignition is a genuine daily convenience. Large underseat storage handles daily essentials. Comfortable two-person seating for riding with a partner. Fuel economy of approximately 35 to 45 kilometers per liter at current fuel prices makes it dramatically cheaper per kilometer than Grab. New retail price is approximately PHP 155,000 to 165,000. Used 2023 and 2024 models in good condition typically run PHP 110,000 to 130,000 on Facebook Marketplace in Cebu. When buying used, use a local attorney to handle the LTO transfer — PHP 13,000 well spent for complete peace of mind on the paperwork. Pro tip: Have the seller meet you at Lapu-Lapu City Hall — attorney offices, notary services, and photocopying are all right there. One location, one trip, done.",
+    body: "The Honda ADV 160 is the gold standard for expat scooters in Cebu. Automatic transmission means anyone can ride it. The 160cc engine handles Cebu highways and Mactan roads with power to spare without being intimidating. ABS brakes are essential for safety in Philippine traffic — do not buy a bike without ABS. Traction control adds another safety layer in wet conditions during rainy season. The keyless ignition is a genuine daily convenience. Large underseat storage handles daily essentials. Comfortable two-person seating for riding with a partner. Fuel economy of approximately 35 to 45 kilometers per liter at current fuel prices makes it dramatically cheaper per kilometer than Grab. New retail price is approximately PHP 155,000 to 165,000. Used 2023 and 2024 models in good condition typically run PHP 110,000 to 130,000 on Facebook Marketplace in Cebu. When buying used, use a local attorney to handle the LTO transfer — PHP 13,000 well spent for complete peace of mind on the paperwork. Attorney recommendation for the LTO transfer process: Atty. Al M. Limalima, Lawyer and Notary Public, M.L. Quezon Highway Lapu-Lapu City in front of the Hall of Justice. Contact 0977-849-7678 or 0922-820-0382. Pro tip: Have the seller meet you at Lapu-Lapu City Hall — attorney offices, notary services, and photocopying are all right there. One location, one trip, done.",
     note: "Photo of the ADV 160 coming soon.",
   },
 ];
@@ -51,22 +51,22 @@ const transport: RecItem[] = [
 const food: RecItem[] = [
   {
     name: "S&R Membership Shopping",
-    body: "I have my groceries delivered from S&R. The local SM and Robinsons stores are always sold out of something you need. I cook at home far more than I eat out, so I like to stay well stocked. S&R delivery has been the most reliable solution for that.",
+    body: "S&R grocery delivery is the go-to solution for expats who cook at home. The local SM and Robinsons stores are always sold out of something you need. S&R delivery has been the most reliable solution for staying well stocked with Western pantry staples.",
   },
   {
     name: "A Word on Street Food",
-    body: "I never eat street food. Foreigners need to be careful — our bodies aren’t adjusted to the local bacteria the way locals are. What’s fine for someone who grew up here can put you flat on your back for days. It’s not worth the risk.",
+    body: "Street food is best avoided by new arrivals. Western digestive systems aren’t adjusted to the local bacteria the way locals are. What’s fine for someone who grew up here can put a foreigner flat on their back for days. It’s not worth the risk.",
   },
   {
     name: "Water",
-    body: "Always drink bottled water. I have 5-gallon bottles delivered to my condo every month. Never drink tap water. This is non-negotiable.",
+    body: "Always drink bottled water in the Philippines — never tap water. 5-gallon bottles delivered to your condo every month is the practical solution. This is non-negotiable.",
   },
 ];
 
 const health: RecItem[] = [
   {
     name: "My Approach to Health Insurance",
-    body: "I’m 52 years old and live a healthy lifestyle, so I’ve made a deliberate choice not to carry expat health insurance. When I need medical attention, I go to a private ER — as my Chong Hua experience shows, the costs are very manageable by Western standards. I keep my receipts and submit them to my US healthcare provider for full or partial reimbursement. This approach works for me given my age, health, and situation. It may not be right for everyone. If you have pre-existing conditions or want peace of mind, look into SafetyWing or a similar expat health plan.",
+    body: "Some active, healthy expats in their 50s make a deliberate choice not to carry expat health insurance — using a private ER when needed. As the Chong Hua experience on this site shows, the costs are very manageable by Western standards. Keeping receipts and submitting to a US healthcare provider for full or partial reimbursement is an option worth exploring. This approach may not be right for everyone. If you have pre-existing conditions or want peace of mind, SafetyWing or a similar expat health plan is a better fit.",
     link: "https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador",
     linkLabel: "Explore SafetyWing →",
   },
@@ -75,7 +75,7 @@ const health: RecItem[] = [
 const banking: RecItem[] = [
   {
     name: "Wise — Best Exchange Rates for Moving Money to the Philippines",
-    body: "If you are moving money regularly from the United States to the Philippines, Wise is the transfer service I recommend above everything else. The reason is simple: Wise uses the mid-market exchange rate — the real rate you see when you search the exchange rate on Google. Not a marked-up rate, not a promotional rate that expires after your first transfer. The actual rate every single time. Most banks and transfer services make their money by quietly giving you a worse exchange rate. They call it a zero-fee transfer and then take their cut in the margin. Wise does the opposite — they show you a small transparent fee upfront and give you the real rate. On a $1,000 transfer from the US to the Philippines, the difference between Wise and a typical bank wire can be $30 to $80 in your favor every month. Fees start from as low as 0.4 percent of the transfer amount. 74 percent of transfers arrive in under 20 seconds. 95 percent complete within a day. New in 2026 — the Wise Debit Card Mastercard is now available for Philippine residents, meaning your Filipina partner can hold a Wise account and receive transfers with no hidden fees. Wise-to-Wise transfers between account holders are free for same-currency transfers. For regular monthly transfers from your US account to your Philippine bank account, Wise is the most cost-effective solution available.",
+    body: "For anyone moving money regularly from the United States to the Philippines, Wise is the transfer service recommended above everything else. The reason is simple: Wise uses the mid-market exchange rate — the real rate you see when you search the exchange rate on Google. Not a marked-up rate, not a promotional rate that expires after your first transfer. The actual rate every single time. Most banks and transfer services make their money by quietly giving you a worse exchange rate. They call it a zero-fee transfer and then take their cut in the margin. Wise does the opposite — they show you a small transparent fee upfront and give you the real rate. On a $1,000 transfer from the US to the Philippines, the difference between Wise and a typical bank wire can be $30 to $80 in your favor every month. Fees start from as low as 0.4 percent of the transfer amount. 74 percent of transfers arrive in under 20 seconds. 95 percent complete within a day. New in 2026 — the Wise Debit Card Mastercard is now available for Philippine residents, meaning your Filipina partner can hold a Wise account and receive transfers with no hidden fees. Wise-to-Wise transfers between account holders are free for same-currency transfers. For regular monthly transfers from your US account to your Philippine bank account, Wise is the most cost-effective solution available.",
     link: "https://wise.com/invite/dic/stephenl3013",
     linkLabel: "OPEN A WISE ACCOUNT",
     note: "Use this link to open your Wise account — we both benefit.",
@@ -92,20 +92,20 @@ const banking: RecItem[] = [
 const immigration: RecItem[] = [
   {
     name: "Bureau of Immigration — Gaisano Mall, Pasak, Lapu-Lapu City",
-    body: "The Bureau of Immigration office inside Gaisano Mall in Pasak, Lapu-Lapu City is the best immigration office I have been to in the Philippines. In and out in 15 minutes. No chaos, no confusion. If you’re based on Mactan Island, this is your office. Don’t go downtown if you don’t have to.",
+    body: "The Bureau of Immigration office inside Gaisano Mall in Pasak, Lapu-Lapu City is the best immigration office in the Philippines — in and out in 15 minutes with no chaos or confusion. If based on Mactan Island, this is the office to use. Don’t go downtown if you don’t have to.",
   },
 ];
 
 const entertainment: RecItem[] = [
   {
     name: "Amazon Fire TV Stick 4K",
-    body: "The Fire TV Stick 4K is how I watch all my US content here in the Philippines. Plug it into any TV with an HDMI port and you have access to Netflix, Prime Video, YouTube, and hundreds of other apps. Pair it with the GLinet VPN setup I describe above and your streaming services think you are sitting in the US. An absolute must-have for any expat.",
+    body: "The Fire TV Stick 4K is how to watch all US content in the Philippines. Plug it into any TV with an HDMI port and you have access to Netflix, Prime Video, YouTube, and hundreds of other apps. Pair it with the GLinet VPN setup described above and streaming services think you are sitting in the US. An absolute must-have for any expat.",
     link: "https://www.amazon.com/s?k=Amazon+Firestick+4k&crid=Q20WSVAQF6X0&sprefix=amazon+firestick+4k%2Caps%2C403&linkCode=ll2&tag=expatcompassp-20&linkId=ea0a337c78a3f62afd409ac45c5aec33&language=en_US&ref_=as_li_ss_tl",
     linkLabel: "Shop on Amazon →",
   },
   {
     name: "Xtreme Player",
-    body: "Xtreme Player is the app I use to organize and stream my entire personal media library — movies, TV shows, and music — across all my devices. Clean interface, supports every format, and works great on the Fire TV Stick. If you have a media library you want to access anywhere, this is the app. Use my referral code 789011 at checkout to get started.",
+    body: "Xtreme Player is the app for organizing and streaming a personal media library — movies, TV shows, and music — across all devices. Clean interface, supports every format, and works great on the Fire TV Stick. If you have a media library you want to access anywhere, this is the app. Use referral code 789011 at checkout to get started.",
     link: "https://fostv.live/tellafriend/789011",
     linkLabel: "Visit Xtreme Player →",
   },
@@ -114,13 +114,13 @@ const entertainment: RecItem[] = [
 const activities: RecItem[] = [
   {
     name: "Klook — Activities & Experiences",
-    body: "Klook is my go-to for booking activities and experiences across the Philippines and Southeast Asia. Island hopping, diving, city tours, transfers — it is all on there, with instant confirmation and competitive prices.",
+    body: "Klook is the go-to platform for booking activities and experiences across the Philippines and Southeast Asia. Island hopping, diving, city tours, transfers — it is all on there, with instant confirmation and competitive prices.",
     link: "https://www.klook.com/destination/co1016-philippines/?aid=125611",
     linkLabel: "Browse Philippines Activities →",
   },
   {
     name: "Agoda — Best Hotel and Resort Booking for the Philippines and Asia",
-    body: "When I am planning travel within the Philippines — whether it is a resort stay in Boracay, a dive trip hotel in Dumaguete, or a night in Manila between flights — Agoda is the first place I check. Agoda is part of Booking Holdings but focuses specifically on the Asia-Pacific market. That regional focus means their Philippines inventory is exceptional. Every resort in Cebu, every beach hotel in Palawan, every guesthouse in Siargao is on Agoda, often at lower rates than anywhere else for Asian properties. The search and filter tools are excellent. The reviews are genuine and plentiful. The mobile app is outstanding for booking on the go. For expats in the Philippines, Agoda covers short-term accommodation when you first arrive, finding resort deals for weekend escapes, booking for visiting family and friends, and planning island hopping trips throughout the Visayas, Palawan, Siargao, and beyond. Over 2 million properties worldwide. Available in 38 languages. One of the most trusted booking platforms in Asia since 2005. Ambassador promo codes ExpatPH and CompassPH coming soon once Ambassador approval is confirmed.",
+    body: "When planning travel within the Philippines — whether it is a resort stay in Boracay, a dive trip hotel in Dumaguete, or a night in Manila between flights — Agoda is the first place to check. Agoda is part of Booking Holdings but focuses specifically on the Asia-Pacific market. That regional focus means their Philippines inventory is exceptional. Every resort in Cebu, every beach hotel in Palawan, every guesthouse in Siargao is on Agoda, often at lower rates than anywhere else for Asian properties. The search and filter tools are excellent. The reviews are genuine and plentiful. The mobile app is outstanding for booking on the go. For expats in the Philippines, Agoda covers short-term accommodation when you first arrive, finding resort deals for weekend escapes, booking for visiting family and friends, and planning island hopping trips throughout the Visayas, Palawan, Siargao, and beyond. Over 2 million properties worldwide. Available in 38 languages. One of the most trusted booking platforms in Asia since 2005. Ambassador promo codes ExpatPH and CompassPH coming soon once Ambassador approval is confirmed.",
     link: "https://www.agoda.com",
     linkLabel: "Search Hotels on Agoda →",
     note: "Ambassador approval in progress — promo codes and affiliate link coming soon",
@@ -134,13 +134,13 @@ const activities: RecItem[] = [
   },
   {
     name: "Airbnb",
-    body: "Airbnb is my personal go-to for finding apartments, condos, and unique stays across the Philippines. The selection in Cebu, Manila, and Boracay is excellent — you can find everything from budget studios to beachfront villas. I use it for every trip. Note: Airbnb no longer has an affiliate program, so there is no commission link here — just an honest recommendation from someone who uses it constantly.",
+    body: "Airbnb is the go-to for finding apartments, condos, and unique stays across the Philippines. The selection in Cebu, Manila, and Boracay is excellent — you can find everything from budget studios to beachfront villas. Note: Airbnb no longer has an affiliate program, so there is no commission link here — just an honest recommendation from a regular user.",
     link: "https://www.airbnb.com/s/Philippines",
     linkLabel: "Browse Airbnb Philippines →",
   },
 ];
 
-export default function SteveRecommendsPage() {
+export default function ExpatToolkitPage() {
   return (
     <>
       <style>{`
@@ -460,10 +460,10 @@ export default function SteveRecommendsPage() {
 
       {/* PAGE HEADER */}
       <header className="page-header">
-        <Nav active="/steve-recommends" />
+        <Nav active="/expat-toolkit" />
         <div className="page-hero">
-          <p className="page-eyebrow">Steve's Expat Toolkit</p>
-          <h1 className="page-title">Steve's Expat Toolkit</h1>
+          <p className="page-eyebrow">Expat Toolkit</p>
+          <h1 className="page-title">Expat Toolkit</h1>
         </div>
       </header>
 
@@ -502,11 +502,11 @@ export default function SteveRecommendsPage() {
             <p className="nordvpn-featured-label">Featured Recommendation</p>
             <h2 className="nordvpn-card-title">NordVPN — The VPN Service I Recommend for Expats</h2>
             <p className="nordvpn-card-body">
-              I run a personal private VPN setup for my own specific technical needs here in Punta Engaño. But if I were recommending a commercial VPN service to any expat in the Philippines — and I do recommend one — it is NordVPN without hesitation. I have followed the VPN space long enough to know NordVPN is the gold standard.
+              The site uses a private GL.iNet router setup for specific technical needs — but for a commercial VPN service for expats in the Philippines, the recommendation is NordVPN without hesitation. It is the gold standard.
             </p>
             <p className="nordvpn-card-subhead">Why expats in the Philippines need a VPN</p>
             <p className="nordvpn-card-body">
-              Your US streaming services — Netflix, Hulu, HBO Max, Disney Plus — are geo-blocked in the Philippines. NordVPN routes your connection through a US server so your full streaming library works exactly as it did at home. Your US banking apps sometimes flag Philippine IP addresses as suspicious activity — NordVPN keeps your connection appearing US-based so you never get locked out of your own accounts. The Airbnb pricing trick — I only book Airbnbs through a VPN because I consistently see better rates when my IP is not showing as a local Philippine connection. Dynamic pricing algorithms show different rates based on your location. And your Social Security account, Medicare portal, and US government services occasionally have issues with foreign IP addresses — a VPN eliminates that friction entirely.
+              US streaming services — Netflix, Hulu, HBO Max, Disney Plus — are geo-blocked in the Philippines. NordVPN routes your connection through a US server so your full streaming library works exactly as it did at home. US banking apps sometimes flag Philippine IP addresses as suspicious activity — NordVPN keeps your connection appearing US-based so you never get locked out of your own accounts. The Airbnb pricing trick — booking Airbnbs through a VPN consistently shows better rates when the IP is not showing as a local Philippine connection. Dynamic pricing algorithms show different rates based on your location. Social Security account, Medicare portal, and US government services occasionally have issues with foreign IP addresses — a VPN eliminates that friction entirely.
             </p>
             <p className="nordvpn-card-subhead">Why NordVPN specifically</p>
             <p className="nordvpn-card-body">
@@ -526,7 +526,7 @@ export default function SteveRecommendsPage() {
               Living between two countries means juggling an enormous number of logins — US banking, Philippine banking, Social Security, Medicare, visa portals, GCash, Maya, your Philippine landlord payment app, US brokerage accounts, and dozens of other services. Using the same password across multiple accounts or trying to remember unique passwords for each one is a real security risk, especially when accessing financial accounts from a different country regularly raises fraud flags in the first place.
             </p>
             <p className="nordvpn-card-body">
-              NordPass is the password manager I recommend pairing with NordVPN. It generates and stores strong unique passwords for every account, autofills logins securely across your devices, and syncs between your phone and computer so you always have access whether you are at your condo in the Philippines or traveling.
+              NordPass is the password manager recommended alongside NordVPN. It generates and stores strong unique passwords for every account, autofills logins securely across your devices, and syncs between your phone and computer so you always have access whether in the Philippines or traveling.
             </p>
             <p className="nordvpn-card-subhead">Specifically useful for expats</p>
             <p className="nordvpn-card-body">
@@ -715,8 +715,8 @@ export default function SteveRecommendsPage() {
       {/* DISCLAIMER */}
       <section className="rec-disclaimer">
         <p>
-          Some links on this page may be affiliate links. If you use them, I may earn a small
-          commission at no extra cost to you. I only recommend products and services I personally use.
+          Some links on this page may be affiliate links. If you use them, Expat Compass PH may earn a small
+          commission at no extra cost to you. Only products and services that have been personally tested are recommended here.
         </p>
       </section>
 

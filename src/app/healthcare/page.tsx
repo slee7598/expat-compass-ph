@@ -354,7 +354,7 @@ export default function HealthcarePage() {
 
           <div className="personal-callout">
             <p className="personal-callout-label">First-Hand Experience at Chong Hua ER</p>
-            <p className="personal-callout-body">I was significantly ill and went to the Chong Hua emergency room. The process was seamless — a basic digital sign-in app, and I went straight to a bed with no wait. The staff was genuinely some of the friendliest I have encountered in any medical setting anywhere. They administered IV hydration and IV antibiotics, ran two blood tests, and prescribed four medications I took for a full week. The total bill including the separate doctor&rsquo;s fee was $300 USD. In the United States that same visit would have cost me thousands of dollars. I left Chong Hua impressed and relieved — both by the care and the bill.</p>
+            <p className="personal-callout-body">A significant illness required a visit to the Chong Hua emergency room. The process was seamless — a basic digital sign-in app, straight to a bed with no wait. The staff was genuinely some of the friendliest encountered in any medical setting anywhere. IV hydration and IV antibiotics administered; two blood tests run; four medications prescribed for a full week. Total bill including the separate doctor&rsquo;s fee: $300 USD. In the United States that same visit would have cost thousands of dollars. The quality of care and the bill were both impressive.</p>
           </div>
 
           <h3 className="hsub">Two campuses — which to use</h3>
@@ -752,15 +752,15 @@ export default function HealthcarePage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">My Honest Assessment &nbsp;·&nbsp; Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">Honest assessment &nbsp;·&nbsp; Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>Healthcare was one of my biggest concerns before moving to the Philippines. I had heard stories about poor facilities and inadequate care in developing countries and I was skeptical. My experience at Chong Hua completely changed my thinking. The facilities are modern. The doctors are excellent and speak perfect English. The nurses were genuinely caring in a way that felt personal rather than procedural. And the bill was $300 USD for treatment that would have cost me thousands at home.</p>
-            <p>I am covered by my company&rsquo;s health insurance which I use for major care when I visit the US. Here in the Philippines I use Chong Hua for anything that comes up and pay out of pocket. At these prices it makes sense for my situation. Your situation may be different — particularly if you are retired and no longer have employer coverage. In that case I would strongly recommend a combination of an international plan like SafetyWing for emergency coverage and a cash reserve for routine care.</p>
-            <p>What I will tell you with confidence is that you will not be sacrificing quality by choosing Philippine private healthcare. In some ways — the personal attention, the lack of rushed appointments, the absence of insurance bureaucracy — the experience is actually better.</p>
+            <p>Healthcare was a major concern before moving to the Philippines. Stories about poor facilities and inadequate care in developing countries were worrying. The experience at Chong Hua completely changed that thinking. The facilities are modern. The doctors are excellent and speak perfect English. The nurses were genuinely caring in a way that felt personal rather than procedural. The bill was $300 USD for treatment that would have cost thousands at home.</p>
+            <p>For expats covered by US employer health insurance, Chong Hua works well for routine and urgent care on a pay-out-of-pocket basis. For retired expats without employer coverage, the recommendation is a combination of an international plan like SafetyWing for emergency coverage and a cash reserve for routine care.</p>
+            <p>Philippine private healthcare does not require sacrificing quality. In some ways — the personal attention, the lack of rushed appointments, the absence of insurance bureaucracy — the experience is actually better.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
         </div>

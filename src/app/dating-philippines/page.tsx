@@ -258,13 +258,6 @@ export default function DatingPhilippinesPage() {
               <p className="cs-tagline">Facts, stats, and sources</p>
             </a>
           </div>
-          <div className="rb-alert" style={{marginTop:'32px'}}>
-            <p className="rb-alert-label">Passport Bros</p>
-            <BodyText variant="light-bg" className="rb-alert-body-dark">
-              Read my take on the passport bro label and my story.{' '}
-              <a href="/passport-bros" style={{color:'#C9A84C',fontWeight:500,textDecoration:'none'}}>Read it →</a>
-            </BodyText>
-          </div>
         </div>
       </section>
 
@@ -552,11 +545,11 @@ export default function DatingPhilippinesPage() {
             <div className="irish-note-header">
               <div className="irish-monogram">I</div>
               <div>
-                <p className="irish-name">Irish&rsquo;s Note</p>
+                <p className="irish-name">Expat Compass PH Note</p>
                 <p className="irish-tag">Personal perspective · Cebu, Philippines</p>
               </div>
             </div>
-            <p className="irish-body">One of my closest friends is a ladyboy. She is kind, funny, loyal, and one of the most hardworking people I know. She has faced discrimination her whole life — from her family, from employers, from men who treated her badly after finding out who she was. I am not asking you to date someone you do not want to date. I am asking you to treat every person you encounter with basic human dignity, regardless of who they are. The Philippines is a diverse and complicated society. The more you understand it with an open heart, the richer your experience here will be.</p>
+            <p className="irish-body">One close friend is a ladyboy. She is kind, funny, loyal, and one of the most hardworking people around. She has faced discrimination her whole life — from her family, from employers, from men who treated her badly after finding out who she was. The ask is not to date someone you do not want to date. The ask is to treat every person you encounter with basic human dignity, regardless of who they are. The Philippines is a diverse and complicated society. The more you understand it with an open heart, the richer your experience here will be.</p>
           </div>
         </div>
       </section>
@@ -701,15 +694,15 @@ export default function DatingPhilippinesPage() {
           <div className="sn-header">
             <div className="sn-monogram">S&amp;I</div>
             <div>
-              <p className="sn-name">Steve and Irish&rsquo;s Note</p>
-              <p className="sn-tag">Our Honest Perspective · Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">An honest perspective · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
             <div>
               <p className="sn-speaker">His Perspective</p>
-              <p>I have been in the Philippines long enough to have seen both the best and worst of the expat dating experience. I have watched good men get taken advantage of and I have watched men behave terribly toward women who deserved better. The Philippines is genuinely one of the best places in the world to find a meaningful relationship with a warm, loyal, family-oriented partner. But it requires honesty, patience, and cultural awareness — not a transactional mindset.</p>
+              <p>Long enough in the Philippines to have seen both the best and worst of the expat dating experience. Good men get taken advantage of; men also behave terribly toward women who deserved better. The Philippines is genuinely one of the best places in the world to find a meaningful relationship with a warm, loyal, family-oriented partner. But it requires honesty, patience, and cultural awareness — not a transactional mindset.</p>
             </div>
             <div>
               <p className="sn-speaker">Her Perspective</p>

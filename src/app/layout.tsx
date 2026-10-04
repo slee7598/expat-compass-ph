@@ -87,10 +87,6 @@ export default function RootLayout({
                 name: "Expat Compass PH",
                 url: "https://expatcompassph.com",
                 description: "Practical guidance for expats living in the Philippines",
-                founder: {
-                  "@type": "Person",
-                  name: "Steve Lee",
-                },
                 sameAs: ["https://github.com/slee7598/expat-compass-ph"],
               },
             ]),

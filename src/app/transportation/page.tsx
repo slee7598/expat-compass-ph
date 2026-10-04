@@ -687,14 +687,14 @@ export default function TransportationPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
+              <p className="sn-name">Expat Compass PH Note</p>
               <p className="sn-tag">First-hand experience · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>Grab and Maxim have been my go-to ride apps in the Philippines. Both show you the fare upfront before you confirm — no surprises. Taxis exist and can be cheaper, but if you don&rsquo;t know the city, some drivers will take the scenic route. Stick to the apps until you know your way around.</p>
-            <p>One tip worth knowing: Maxim is typically about half the price of Grab. That said, Grab tends to be more available and more reliable during busy periods. My approach — use Maxim when I&rsquo;m not in a rush, use Grab when I need to be somewhere on time.</p>
+            <p>Grab and Maxim are the go-to ride apps in the Philippines. Both show the fare upfront before confirming — no surprises. Taxis exist and can be cheaper, but if you do not know the city, some drivers will take the scenic route. Stick to the apps until you know your way around.</p>
+            <p>One tip worth knowing: Maxim is typically about half the price of Grab. That said, Grab tends to be more available and more reliable during busy periods. Practical approach — use Maxim when not in a rush, use Grab when punctuality matters.</p>
           </div>
           <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
         </div>
@@ -821,8 +821,8 @@ export default function TransportationPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note &mdash; I Just Bought My First Philippine Vehicle</p>
-              <p className="sn-tag">REAL PURCHASE EXPERIENCE &middot; MACTAN ISLAND CEBU</p>
+              <p className="sn-name">Expat Compass PH Note &mdash; Used Motorcycle Purchase Example</p>
+              <p className="sn-tag">REAL PURCHASE DATA &middot; MACTAN ISLAND CEBU</p>
             </div>
           </div>
           <div className="sn-rule" />
@@ -831,6 +831,7 @@ export default function TransportationPage() {
             <p>The bike: 17,000 kilometers on the odometer. All original stock, engine never opened, complete OR/CR, 2027 registration already paid, original plates, no LTO violations or alarms.</p>
             <p>The numbers: Listed at PHP 120,000. Negotiated to PHP 115,000. A local attorney handled the entire transaction — verifying the documents, closing the open deed of sale, handling the LTO transfer paperwork, and ensuring everything was done correctly. Attorney fee: PHP 13,000. Total all-in cost: PHP 128,000.</p>
             <p>Why an attorney: The listing had an open deed of sale — a common but risky situation where the buyer information is left blank. An open deed creates legal uncertainty and the LTO does not accept them. The attorney closed the deed properly, verified the OR/CR numbers matched the physical bike, handled the PNP-HPG clearance, and filed all the LTO transfer paperwork within the required 20-working-day window. PHP 13,000 for complete peace of mind on the paperwork is worth it.</p>
+            <p>Expat Compass PH recommends for Mactan Island expats: Atty. Al M. Limalima, Lawyer and Notary Public. Office on M.L. Quezon Highway, Lapu-Lapu City, in front of the Hall of Justice. Contact: 0977-849-7678 or 0922-820-0382.</p>
             <p>Pro tip: Have the seller meet you at Lapu-Lapu City Hall. Everything you need for the transaction is right there — attorney offices are steps away on M.L. Quezon Highway in front of the Hall of Justice, notary services are on site, photocopying is available, and there is a scooter shop directly behind City Hall. One location, one trip, done.</p>
             <p>The ADV 160 is everything expats say it is. Comfortable, powerful enough for Cebu roads, smooth on the Mactan highways, and practical for two-up riding. The keyless ignition and ABS are worth paying for. Having your own transportation on Mactan is a genuine quality of life upgrade — no waiting for Grab drivers, no change problems, no surge pricing.</p>
           </div>

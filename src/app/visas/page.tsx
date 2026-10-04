@@ -817,8 +817,8 @@ export default function VisasPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">My personal immigration experience · Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">First-hand immigration experience · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />

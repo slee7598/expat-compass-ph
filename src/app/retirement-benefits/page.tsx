@@ -658,16 +658,16 @@ export default function RetirementBenefitsPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">Why I Built This Page · Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">Why this page was built · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>I will be upfront — I am still working and covered by my company health insurance, so I do not have personal experience navigating Social Security or Medicare as an expat. What I do have is a front-row seat to the confusion these topics create every single day in expat Facebook groups. I see the same questions asked over and over by people who moved to the Philippines without understanding what happens to their benefits, and I see the financial stress that results from not having this information before making the move. That is why I built this page.</p>
-            <p>The information here comes from SSA.gov, Medicare.gov, the US Embassy Manila Federal Benefits Unit, and current research from expat financial specialists. I have done my best to make it accurate and current as of June 2026.</p>
-            <p>If you have first-hand experience navigating Social Security, Medicare, or VA benefits as an expat in the Philippines, I would genuinely love to hear from you. Real-world experience from people living this is more valuable than anything I can research. Send me a note at steve@expatcompassph.com — your experience could help hundreds of people facing the same situation.</p>
-            <p>As always this is not financial or legal advice. Consult directly with SSA, Medicare, and a licensed US expat financial advisor before making decisions about your benefits.</p>
+            <p>To be upfront — this site is written by a working expat covered by US employer health insurance, so there is no personal experience navigating Social Security or Medicare as a retiree. What there is, however, is a front-row seat to the confusion these topics create every single day in expat Facebook groups. The same questions are asked over and over by people who moved to the Philippines without understanding what happens to their benefits — and the financial stress that results from not having this information before making the move. That is why this page was built.</p>
+            <p>The information here comes from SSA.gov, Medicare.gov, the US Embassy Manila Federal Benefits Unit, and current research from expat financial specialists. Every effort has been made to keep it accurate and current as of June 2026.</p>
+            <p>If you have first-hand experience navigating Social Security, Medicare, or VA benefits as an expat in the Philippines, sharing it would help hundreds of people facing the same situation. Contact us at contact@expatcompassph.com.</p>
+            <p>This is not financial or legal advice. Consult directly with SSA, Medicare, and a licensed US expat financial advisor before making decisions about your benefits.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
         </div>

@@ -278,13 +278,13 @@ export default function ArrivalGuidePage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">First Impressions · Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">First impressions · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>The first time I arrived in the Philippines I had no idea what to expect. NAIA is chaotic and overwhelming if you have never been. But once I got through and on a flight to Cebu, everything changed. Mactan-Cebu airport is modern and manageable. The heat hits you the moment you step outside. A Grab showed up in 4 minutes. By the time I reached my accommodation I already felt like things were going to be okay.</p>
+            <p>On first arrival in the Philippines there is no way to fully know what to expect. NAIA is chaotic and overwhelming. But once through and on a flight to Cebu, everything changes. Mactan-Cebu airport is modern and manageable. The heat hits the moment you step outside. A Grab showed up in 4 minutes. By the time accommodation is reached, it becomes clear things are going to be okay.</p>
             <p>The Philippines rewards people who arrive with patience and a sense of humor. Give yourself a full day to adjust before making any judgments. You made the right decision.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>

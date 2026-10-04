@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/moving-to-philippines`,   lastModified: lastmod, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/arrival-guide`,           lastModified: lastmod, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/income-abroad`,           lastModified: lastmod, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${base}/steve-recommends`,        lastModified: lastmod, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${base}/expat-toolkit`,        lastModified: lastmod, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/about`,                   lastModified: lastmod, changeFrequency: "weekly", priority: 0.8 },
   ];
 }

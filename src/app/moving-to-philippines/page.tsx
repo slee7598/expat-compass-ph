@@ -508,14 +508,14 @@ export default function MovingToPhilippinesPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">Lessons from the Move · Punta Engaño, Mactan Island</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">Lessons from the move · Punta Engaño, Mactan Island</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>When I moved to the Philippines I overthought what to bring and underthought what to do when I arrived. The things I stressed about before leaving — whether I would find familiar food, whether the internet would be fast enough — turned out to be non-issues. The things I did not think about enough — getting my documents prepared in advance, understanding the visa extension timeline, knowing where the nearest good hospital was — those required scrambling to sort out after arrival.</p>
-            <p>Get your documents done before you leave. Bring your medications. Bring a VPN router and Firestick. And do not ship anything. Everything else you can figure out when you get here. The Philippines rewards people who show up with an open attitude and figure things out as they go.</p>
+            <p>Most expats overthink what to bring and underthink what to do when arriving. The things that cause stress before leaving — whether familiar food is available, whether the internet is fast enough — turn out to be non-issues. The things that are often underprepared — documents, the visa extension timeline, the nearest good hospital — are the ones that require scrambling after arrival.</p>
+            <p>Get documents done before leaving. Bring medications. Bring a VPN router and Firestick. Do not ship anything. Everything else can be figured out on arrival. The Philippines rewards people who show up with an open attitude and figure things out as they go.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>

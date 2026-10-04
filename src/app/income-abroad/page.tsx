@@ -217,7 +217,7 @@ export default function IncomeAbroadPage() {
 
           <div className="feie-steve">
             <p className="feie-steve-tag">A Real Example</p>
-            <p className="feie-steve-body">I work remotely for a US company. My employer is American. My salary is paid in US dollars into my US bank account. Under the FEIE my entire salary — paid by an American company into an American bank — may qualify for exclusion from US federal income tax because I earn it while living in the Philippines. The word <em>foreign</em> describes me not my employer. This is the single most important tax concept for American remote workers living abroad and the one most people get wrong.</p>
+            <p className="feie-steve-body">Example: remote work for a US company, employer American, salary paid in US dollars into a US bank account. Under the FEIE the entire salary — paid by an American company into an American bank — may qualify for exclusion from US federal income tax because it is earned while living in the Philippines. The word <em>foreign</em> describes the taxpayer, not the employer. This is the single most important tax concept for American remote workers living abroad and the one most people get wrong.</p>
           </div>
 
           <div className="ia-gold">
@@ -384,14 +384,14 @@ export default function IncomeAbroadPage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">Funding the Life · Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">Funding the life · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
           <div className="sn-body">
-            <p>I work remotely for a US company and my income funds a lifestyle here that would cost three to four times as much in the United States. The Philippines is genuinely transformative for anyone whose income is in US dollars — your purchasing power increases dramatically the moment you land.</p>
-            <p>I am not retired yet, but I have watched friends here live very comfortably on Social Security alone. The key is being honest with yourself about what comfortable means to you — and being willing to live like a resident rather than a tourist. The people who struggle financially here are usually the ones trying to recreate an American lifestyle at American prices in a country where that is not necessary and not particularly satisfying anyway.</p>
+            <p>Remote work for a US company funds a lifestyle in the Philippines that would cost three to four times as much in the United States. The Philippines is genuinely transformative for anyone whose income is in US dollars — purchasing power increases dramatically the moment you land.</p>
+            <p>Expats who are not yet retired can watch friends here live very comfortably on Social Security alone. The key is being honest about what comfortable means — and being willing to live like a resident rather than a tourist. The people who struggle financially here are usually the ones trying to recreate an American lifestyle at American prices in a country where that is not necessary and not particularly satisfying anyway.</p>
           </div>
           <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
         </div>

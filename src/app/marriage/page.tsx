@@ -930,7 +930,7 @@ export default function MarriagePage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
+              <p className="sn-name">Expat Compass PH Note</p>
               <p className="sn-tag">First-hand experience · Lapu-Lapu City, Cebu</p>
             </div>
           </div>
@@ -1514,8 +1514,8 @@ export default function MarriagePage() {
           <div className="sn-header">
             <div className="sn-monogram">S</div>
             <div>
-              <p className="sn-name">Steve&rsquo;s Note</p>
-              <p className="sn-tag">Our personal decision · Cebu, Philippines</p>
+              <p className="sn-name">Expat Compass PH Note</p>
+              <p className="sn-tag">CR-1 in practice · Cebu, Philippines</p>
             </div>
           </div>
           <div className="sn-rule" />
