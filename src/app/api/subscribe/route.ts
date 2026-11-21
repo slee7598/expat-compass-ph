@@ -24,6 +24,11 @@ export async function POST(request: Request) {
     );
   }
 
+  // TEMP DEBUG — remove after verifying key
+  if (process.env.NODE_ENV !== "development") {
+    return NextResponse.json({ _keyprefix: apiKey.substring(0, 8), _keylen: apiKey.length });
+  }
+
   const headers = {
     "Content-Type": "application/json",
     "X-Kit-Api-Key": apiKey,
