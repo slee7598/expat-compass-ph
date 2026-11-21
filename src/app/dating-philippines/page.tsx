@@ -514,6 +514,11 @@ export default function DatingPhilippinesPage() {
             <p className="rb-alert-label">If You Have Been Scammed</p>
             <p className="rb-alert-body">You are not stupid. These are professional operations run by organized crime with scripts refined through thousands of victims. Stop all further payments immediately. Do not confront the scammer. Preserve every message, receipt, photo, video, and bank record. Report to the money-transfer provider first as this is time-sensitive, then your bank, then law enforcement in both your home country and through the NBI Cybercrime Division or PNP Anti-Cybercrime Group in the Philippines. Report even if you feel embarrassed — the Malate bust in October 2025 happened because multiple victims reported independently.</p>
           </div>
+
+          <div className="rb-info" style={{marginTop: '24px'}}>
+            <p className="rb-info-label">Free Resource</p>
+            <p className="rb-info-body">Expat Compass PH has a free printable checklist covering the scam playbook, quick verification tests, and step-by-step guidance if money has already been sent. Philippines emergency line: CICC Hotline 1326 (free, 24/7). <a href="/red-flag-checklist" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>Download the free scam checklist →</a></p>
+          </div>
         </div>
       </section>
 

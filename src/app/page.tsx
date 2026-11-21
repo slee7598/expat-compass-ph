@@ -44,6 +44,12 @@ const topics = [
     href: "/dating-philippines",
   },
   {
+    label: "Romance Scam Checklist",
+    description:
+      "Free one-page checklist: how scam hubs work and what to do if you've sent money.",
+    href: "/red-flag-checklist",
+  },
+  {
     label: "US Benefits Abroad",
     description:
       "Social Security, Medicare, SSI, SSDI, and VA benefits for Americans living permanently in the Philippines. What continues and what stops.",

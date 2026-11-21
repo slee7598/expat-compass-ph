@@ -15,6 +15,7 @@ const links = [
   { label: "Transportation", href: "/transportation" },
   { label: "City Guides", href: "/city-guides" },
   { label: "Dating in the Philippines", href: "/dating-philippines" },
+  { label: "Red-Flag Checklist", href: "/red-flag-checklist" },
   { label: "US Benefits Abroad", href: "/retirement-benefits" },
   { label: "Moving to Philippines", href: "/moving-to-philippines" },
   { label: "Arrival Guide", href: "/arrival-guide" },

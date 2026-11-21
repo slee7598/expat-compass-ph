@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 
-export default function NewsletterSignup() {
+interface Props {
+  heading?: string;
+}
+
+export default function NewsletterSignup({ heading }: Props = {}) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -38,7 +42,7 @@ export default function NewsletterSignup() {
     <div className="nl-wrap">
       <p className="nl-eyebrow">Free newsletter</p>
       <h2 className="nl-heading">
-        The Expat Compass dispatch — straight to your inbox.
+        {heading ?? "The Expat Compass dispatch — straight to your inbox."}
       </h2>
       <p className="nl-sub">
         Visa updates, cost-of-living data, and honest expat advice from someone
