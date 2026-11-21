@@ -51,7 +51,7 @@ export async function POST(request: Request) {
   if (!res1.ok) {
     console.error("[subscribe] Kit step 1 error:", res1.status, JSON.stringify(d1));
     return NextResponse.json(
-      { error: "Subscription failed. Please try again." },
+      { error: "Subscription failed. Please try again.", _debug: { step: 1, status: res1.status, body: d1 } },
       { status: 500 }
     );
   }
@@ -67,7 +67,7 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("[subscribe] Network error (step 2):", err);
     return NextResponse.json(
-      { error: "Could not reach subscription service. Please try again." },
+      { error: "Could not reach subscription service. Please try again.", _debug: { step: 2, err: String(err) } },
       { status: 502 }
     );
   }
@@ -76,7 +76,7 @@ export async function POST(request: Request) {
   if (!res2.ok) {
     console.error("[subscribe] Kit step 2 error:", res2.status, JSON.stringify(d2));
     return NextResponse.json(
-      { error: "Subscription failed. Please try again." },
+      { error: "Subscription failed. Please try again.", _debug: { step: 2, status: res2.status, body: d2 } },
       { status: 500 }
     );
   }
