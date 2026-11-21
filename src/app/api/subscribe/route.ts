@@ -24,11 +24,6 @@ export async function POST(request: Request) {
     );
   }
 
-  // TEMP DEBUG — remove after verifying key
-  if (process.env.NODE_ENV !== "development") {
-    return NextResponse.json({ _keyprefix: apiKey.substring(0, 8), _keylen: apiKey.length });
-  }
-
   const headers = {
     "Content-Type": "application/json",
     "X-Kit-Api-Key": apiKey,
@@ -56,7 +51,7 @@ export async function POST(request: Request) {
   if (!res1.ok) {
     console.error("[subscribe] Kit step 1 error:", res1.status, JSON.stringify(d1));
     return NextResponse.json(
-      { error: "Subscription failed. Please try again.", _debug: { step: 1, status: res1.status, body: d1 } },
+      { error: "Subscription failed. Please try again." },
       { status: 500 }
     );
   }
@@ -72,7 +67,7 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("[subscribe] Network error (step 2):", err);
     return NextResponse.json(
-      { error: "Could not reach subscription service. Please try again.", _debug: { step: 2, err: String(err) } },
+      { error: "Could not reach subscription service. Please try again." },
       { status: 502 }
     );
   }
@@ -81,7 +76,7 @@ export async function POST(request: Request) {
   if (!res2.ok) {
     console.error("[subscribe] Kit step 2 error:", res2.status, JSON.stringify(d2));
     return NextResponse.json(
-      { error: "Subscription failed. Please try again.", _debug: { step: 2, status: res2.status, body: d2 } },
+      { error: "Subscription failed. Please try again." },
       { status: 500 }
     );
   }
