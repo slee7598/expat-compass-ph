@@ -184,6 +184,17 @@ export default function RedFlagChecklistPage() {
           margin-top: 14px; display: block;
         }
 
+        /* ── VIDEO EMBED ── */
+        .rf-video-wrap {
+          position: relative; width: 100%; max-width: 760px;
+          padding-bottom: 42.75%; /* 16:9 on max-width 760px */
+          height: 0; overflow: hidden; margin-top: 8px;
+        }
+        .rf-video-iframe {
+          position: absolute; top: 0; left: 0;
+          width: 100%; height: 100%; border: none;
+        }
+
         /* ── CLOSING ── */
         .rf-closing-section { background: #F8F6F1; padding: 72px 48px; }
         .rf-closing-inner { max-width: 760px; }
@@ -470,16 +481,22 @@ export default function RedFlagChecklistPage() {
         </div>
       </section>
 
-      {/* VIDEO PLACEHOLDER — hidden until embed URL is added */}
-      <div style={{ display: "none" }}>
-        {/* TODO: YouTube embed URL after publish */}
-        <section className="section section-dark">
-          <div className="section-inner">
-            <p className="section-label">Watch the Full Documentary</p>
-            <h2 className="section-heading section-heading-light">Watch the full documentary</h2>
+      {/* VIDEO — Watch the full documentary */}
+      <section className="section section-dark">
+        <div className="section-inner">
+          <p className="section-label">Watch the Full Documentary</p>
+          <h2 className="section-heading section-heading-light">Watch the full documentary</h2>
+          <div className="rf-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/KVs0JaWNgc4"
+              title="Inside the Philippine Scam Hubs — Expat Compass PH"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="rf-video-iframe"
+            />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* NEWSLETTER */}
       <section className="section newsletter-section">
