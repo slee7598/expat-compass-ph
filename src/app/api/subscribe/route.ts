@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 const FORM_ID = "9610050";
 
 export async function POST(request: Request) {
-  // Parse body
   let email: string;
   try {
     const body = await request.json();
@@ -25,17 +24,20 @@ export async function POST(request: Request) {
     );
   }
 
-  console.log(`[subscribe] Subscribing ${email} to form ${FORM_ID}`);
+  console.log(`[subscribe] Subscribing ${email} to Kit form ${FORM_ID}`);
 
-  // ConvertKit v3 API — matches the _XXXXX public API key format
-  const kitUrl = `https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`;
+  // Kit v4 API — POST /v4/forms/{id}/subscribers with Bearer auth
+  const kitUrl = `https://api.kit.com/v4/forms/${FORM_ID}/subscribers`;
 
   let res: Response;
   try {
     res = await fetch(kitUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ api_key: apiKey, email }),
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({ email_address: email }),
     });
   } catch (err) {
     console.error("[subscribe] Network error calling Kit API:", err);
