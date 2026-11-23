@@ -331,7 +331,7 @@ export default function HealthcarePage() {
         <div className="section-inner">
           <div className="hook-card">
             <p className="hook-card-label">The number that changes how you think about Philippine healthcare</p>
-            <p className="hook-card-body">In the United States, a 6-hour emergency room visit with IV treatment, blood tests, and a week of prescription medications would cost $3,000 to $5,000 minimum without insurance — and often significantly more. My total bill at Chong Hua Hospital in Cebu for exactly that treatment was $300 USD. That is not a typo. That is healthcare in the Philippines.</p>
+            <p className="hook-card-body">In the United States, a 6-hour emergency room visit with IV treatment, blood tests, and a week of prescription medications would cost $3,000 to $5,000 minimum without insurance — and often significantly more. The total bill at Chong Hua Hospital in Cebu for exactly that treatment was $300 USD. That is not a typo. That is healthcare in the Philippines.</p>
             <p className="hook-card-note">That figure covers one emergency-room visit: 6 hours, IV fluids and antibiotics, two blood tests, a week of medication, doctor&rsquo;s fee included. Everyday and emergency care here is genuinely this affordable. For serious procedures — heart surgery, cancer treatment, or medical evacuation — the numbers are very different. See the <a href="#big-ticket-costs" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>big-ticket costs table</a> below.</p>
           </div>
         </div>
@@ -581,7 +581,7 @@ export default function HealthcarePage() {
 
           <div className="ha-gold">
             <p className="ha-gold-label">The number that stops people</p>
-            <p className="ha-gold-body">I saw a sign at a dental clinic advertising implants for 22,000 pesos per tooth. At current exchange rates that is approximately $375 USD. In the United States a single dental implant typically costs $3,000 to $6,000. Many expats factor the cost of dental work into their decision to move to the Philippines — and some visit specifically for dental tourism, saving enough on a single procedure to cover flights and accommodation.</p>
+            <p className="ha-gold-body">One dental clinic here advertised implants for 22,000 pesos per tooth. At current exchange rates that is approximately $375 USD. In the United States a single dental implant typically costs $3,000 to $6,000. Many expats factor the cost of dental work into their decision to move to the Philippines — and some visit specifically for dental tourism, saving enough on a single procedure to cover flights and accommodation.</p>
           </div>
 
           <h3 className="hsub">Dental cost benchmarks Philippines 2026</h3>
@@ -934,7 +934,7 @@ export default function HealthcarePage() {
 
           <p className="hb hb-light">There are extremely limited exceptions for emergency care during travel within 60 days of entering a foreign country under certain Medigap plans, but these are temporary travel provisions — not coverage for people living abroad.</p>
 
-          <p className="hb hb-light">The full breakdown of Medicare, Part A, Part B, Medigap, and the pending Medicare Portability Act pilot program that could change everything is on our <a href="/retirement-benefits" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>US Benefits Abroad page</a>. Read it before you make any decisions about dropping or maintaining Medicare coverage.</p>
+          <p className="hb hb-light">The full breakdown of Medicare, Part A, Part B, Medigap, and a proposed bill that would study Medicare coverage abroad is on our <a href="/retirement-benefits" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>US Benefits Abroad page</a>. Read it before you make any decisions about dropping or maintaining Medicare coverage.</p>
         </div>
       </section>
 
