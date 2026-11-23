@@ -802,7 +802,7 @@ export default function BankingPage() {
             <p>GCash is the most widely used digital wallet in the Philippines, but foreigners often hit a wall trying to set it up. The verification process requires a Philippine mobile number and government-issued ID that most expats cannot provide. A more foreigner-friendly alternative is Maya (formerly PayMaya), which has a simpler verification process and is accepted at most of the same merchants. If GCash is important to you, some expats have had success setting it up after obtaining their ACR I-Card and a local SIM — but it is not guaranteed.</p>
             <p>One workaround worth knowing — you can send money directly to a GCash account using Remitly, even if you cannot set up your own GCash account. The minimum transfer amount to GCash via Remitly is PHP 6,000. This is particularly useful for sending money to a Filipino partner or family member who already has GCash set up.</p>
           </div>
-          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Verified: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
@@ -848,7 +848,7 @@ export default function BankingPage() {
             <p>The system that works: keep money in a US bank account. Each month, transfer what is needed to a Schwab debit card. ATMs in the Philippines give the best exchange rates, and the Charles Schwab debit card refunds all international ATM fees automatically. Those fees add up fast — this is a real money-saver. Anyone moving to the Philippines without a Schwab account should open one before leaving.</p>
             <p>For sending money to a GCash or local bank account — paying rent, for example — Remitly transfers directly from a foreign bank account with minimal fees. New users get $10 off, zero fees, and a special exchange rate on their first transfer of $50 or more — use our <a href="https://www.remitly.com/r/pap5a4p3" target="_blank" rel="noopener noreferrer" style={{color:'#C9A84C', textDecoration:'none'}}>Remitly referral link</a>.</p>
           </div>
-          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Verified: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
@@ -908,8 +908,8 @@ export default function BankingPage() {
           <p className="section-body section-body-light">Foreign bank accounts including Philippine bank accounts must be reported if the total exceeds $10,000 at any point during the year. File FinCEN Form 114 by April 15. US brokerage accounts are not foreign accounts and do not count toward FBAR. Philippine bank accounts do.</p>
 
           <div className="bank-alert">
-            <p className="bank-alert-label">Policy Verification — June 2026</p>
-            <p className="bank-alert-body">Brokerage policies for international clients change frequently. Always verify directly with your brokerage before moving abroad. This information reflects conditions as of June 2026.</p>
+            <p className="bank-alert-label">Policy Verification — October 2026</p>
+            <p className="bank-alert-body">Brokerage policies for international clients change frequently. Always verify directly with your brokerage before moving abroad. This information reflects conditions as of October 2026.</p>
           </div>
         </div>
       </section>

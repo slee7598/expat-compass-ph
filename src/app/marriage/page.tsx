@@ -990,7 +990,7 @@ export default function MarriagePage() {
             ))}
           </div>
 
-          <p className="sn-verified">Last Verified: June 2026 · Lapu-Lapu City, Cebu, Philippines</p>
+          <p className="sn-verified">Last Verified: October 2026 · Lapu-Lapu City, Cebu, Philippines</p>
         </div>
       </section>
 
@@ -1503,7 +1503,7 @@ export default function MarriagePage() {
 
           <div className="uv-policy-alert-lt" style={{borderLeftColor:'#F2994A', borderColor:'rgba(242,153,74,0.3)', background:'rgba(242,153,74,0.05)'}}>
             <p className="uv-policy-label" style={{color:'#F2994A'}}>Disclaimer — Verify Current Requirements</p>
-            <p className="uv-policy-body-lt">UK and international immigration law changes regularly. The information above reflects conditions as of June 2026. Always verify current fees, income thresholds, and requirements directly at gov.uk/visas-immigration before making any application decisions. Consider consulting a licensed UK immigration solicitor for complex cases.</p>
+            <p className="uv-policy-body-lt">UK and international immigration law changes regularly. The information above reflects conditions as of October 2026. Always verify current fees, income thresholds, and requirements directly at gov.uk/visas-immigration before making any application decisions. Consider consulting a licensed UK immigration solicitor for complex cases.</p>
           </div>
         </div>
       </section>
@@ -1525,7 +1525,7 @@ export default function MarriagePage() {
             <p>Our plan is not to relocate to America permanently — it is to have the freedom to visit family together for the holidays each year, while continuing to live the life we are building here. The CR-1 gives us that freedom without the stress and separation risk that the K-1 would have created under current US immigration policy.</p>
             <p>This is not legal advice. It is our personal experience and our personal decision. Every situation is different — yours may call for a different approach. If there is any complexity in your case whatsoever, consult a licensed US immigration attorney before filing anything. This page will be updated with real numbers and real timelines as the process unfolds.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
@@ -1540,7 +1540,7 @@ export default function MarriagePage() {
             </h2>
           </div>
           <p className="legal-body">
-            <strong>Immigration law is complex and US policy is changing rapidly in 2026.</strong> The information on this page reflects conditions as of June 2026 and is for general informational purposes only. It is not legal advice. Before making any immigration decisions, consult a licensed US immigration attorney.
+            <strong>Immigration law is complex and US policy is changing rapidly in 2026.</strong> The information on this page reflects conditions as of October 2026 and is for general informational purposes only. It is not legal advice. Before making any immigration decisions, consult a licensed US immigration attorney.
             <br /><br />
             Processing times, fees, and policy requirements change without notice. The 2026 Adjustment of Status policy described on this page is subject to ongoing legal challenges and may change. Always verify current requirements directly at <strong>uscis.gov</strong> and the US Embassy Manila website at <strong>ph.usembassy.gov</strong>.
             <br /><br />

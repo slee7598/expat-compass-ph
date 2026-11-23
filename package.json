@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check-contrast": "bash scripts/check-contrast.sh"
+    "check-contrast": "bash scripts/check-contrast.sh",
+    "check-dates": "node scripts/check-dates.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.105.0",

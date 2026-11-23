@@ -1567,7 +1567,7 @@ export default function CityGuidesPage() {
             <p>A one-bedroom resort condo on Mactan at Punta Engaño delivered exactly that. The sunrise over one horizon and the sunset over the other from an 11th floor balcony. Full resort access. A private beach 3 minutes away.</p>
             <p>This is not what every expat needs — plenty of people would find a resort setup overpriced when a perfectly comfortable 22sqm studio in Marigondon costs 3,000 pesos a month. The point is this: do not pick a city from a website. Come, rent an Airbnb, and live in it for a month. The right city will reveal itself to you. Every city on this page has people who love it and people who left. Only you know which one is yours.</p>
           </div>
-          <p className="sn-verified">Last Updated June 2026 · Punta Engaño, Mactan Island, Cebu</p>
+          <p className="sn-verified">Last Updated October 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>
       </section>
 
@@ -1577,7 +1577,7 @@ export default function CityGuidesPage() {
           <p className="section-eyebrow">Important Note</p>
           <h2 className="section-heading" style={{marginBottom:"24px"}}>Costs and Conditions Change</h2>
           <p className="disclaimer-body">
-            <strong>All figures reflect conditions as of June 2026.</strong> Rental markets,
+            <strong>All figures reflect conditions as of October 2026.</strong> Rental markets,
             neighborhood character, and infrastructure quality change — sometimes quickly. Rental
             figures are indicative ranges based on furnished condos in mid-to-upper-tier buildings.
             Actual prices vary by specific building, floor, furnishing level, lease term, and

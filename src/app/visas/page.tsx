@@ -726,7 +726,7 @@ export default function VisasPage() {
 
           <div className="va-amber">
             <p className="va-amber-label">⚠ Verify Before Applying</p>
-            <p className="va-amber-body">As of June 2026 some implementation details are still being finalized. No official list of qualifying countries has been published as of this writing. Verify current requirements directly with the Bureau of Immigration or Department of Foreign Affairs before preparing documents. Do not rely on third-party sites for the current income threshold or application process. Processing time when complete documents are submitted is approximately 2 to 3 weeks.</p>
+            <p className="va-amber-body">As of October 2026 some implementation details are still being finalized. No official list of qualifying countries has been published as of this writing. Verify current requirements directly with the Bureau of Immigration or Department of Foreign Affairs before preparing documents. Do not rely on third-party sites for the current income threshold or application process. Processing time when complete documents are submitted is approximately 2 to 3 weeks.</p>
           </div>
         </div>
       </section>
@@ -827,7 +827,7 @@ export default function VisasPage() {
             <p>If you are staying long term and qualify for the SRRV, the math often favors converting away from tourist extensions — the monthly cost adds up faster than most people realize, and the SRRV exemptions from annual reports and exit clearances are genuinely valuable.</p>
             <p>The 13A process is also being documented as it unfolds — real costs and timeline will be added to this page as they are confirmed.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
@@ -973,7 +973,7 @@ export default function VisasPage() {
             <h2 className="section-heading" style={{fontSize: '1.2rem', marginBottom: '8px'}}>Verify before you act.</h2>
           </div>
           <p className="legal-body">
-            <strong>Immigration rules, fees, and requirements change regularly and without notice.</strong> The information on this page reflects conditions as of June 2026 and is for general informational purposes only. Always verify current requirements directly with the Bureau of Immigration at <strong>immigration.gov.ph</strong> or the Philippine Retirement Authority at <strong>pra.gov.ph</strong> before making immigration decisions.
+            <strong>Immigration rules, fees, and requirements change regularly and without notice.</strong> The information on this page reflects conditions as of October 2026 and is for general informational purposes only. Always verify current requirements directly with the Bureau of Immigration at <strong>immigration.gov.ph</strong> or the Philippine Retirement Authority at <strong>pra.gov.ph</strong> before making immigration decisions.
             <br /><br />
             Consider consulting a licensed Philippine immigration attorney or PRA-accredited consultant for complex situations. Expat Compass PH is not a law firm and does not provide legal advice. Nothing on this site constitutes a legal opinion or creates an attorney-client relationship.
           </p>

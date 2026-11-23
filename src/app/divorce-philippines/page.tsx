@@ -357,7 +357,7 @@ export default function DivorcePhilippinesPage() {
             <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>Republic v. Manalo (2018):</strong> The Supreme Court expanded Article 26 to cover situations where the Filipino spouse — not just the foreign spouse — initiates the divorce abroad. Either spouse can now seek judicial recognition of the foreign divorce in the Philippines.</p>
             <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>Republic v. Kikuchi (2022):</strong> Confirmed that administrative divorces are also recognizable — not only those granted by foreign courts.</p>
             <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>Republic v. Cuevas (2024):</strong> The Court confirmed that the type of divorce does not matter — whether judicial, administrative, or by mutual agreement — as long as it is valid under the foreign spouse&rsquo;s national law.</p>
-            <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>As of June 2026:</strong> No law allowing Filipino citizens to file for absolute domestic divorce has been enacted despite multiple legislative attempts. Judicial recognition of foreign divorces in mixed marriages remains the primary legal pathway.</p>
+            <p className="dv-navy-body"><strong style={{color: '#C9A84C'}}>As of August 2026:</strong> No law allowing Filipino citizens to file for absolute domestic divorce has been enacted despite multiple legislative attempts. Judicial recognition of foreign divorces in mixed marriages remains the primary legal pathway.</p>
           </div>
         </div>
       </section>
@@ -581,7 +581,7 @@ export default function DivorcePhilippinesPage() {
       <section className="dv-disclaimer">
         <div className="dv-disclaimer-inner">
           <p className="dv-disclaimer-label">Legal Disclaimer</p>
-          <p className="dv-disclaimer-text">This page provides general information about divorce law as it applies to international marriages between American men and Filipino citizens. It is not legal advice and should not be relied upon as such. Philippine and US family law is complex, jurisdiction-specific, and subject to change. Laws change, court rulings evolve, and individual circumstances vary significantly. Always consult a licensed US family law attorney in your state and a licensed Philippine family law attorney before taking any legal action regarding your marriage. Expat Compass PH is not a law firm and does not provide legal advice. Nothing on this page creates an attorney-client relationship. The information on this page reflects conditions as of June 2026.</p>
+          <p className="dv-disclaimer-text">This page provides general information about divorce law as it applies to international marriages between American men and Filipino citizens. It is not legal advice and should not be relied upon as such. Philippine and US family law is complex, jurisdiction-specific, and subject to change. Laws change, court rulings evolve, and individual circumstances vary significantly. Always consult a licensed US family law attorney in your state and a licensed Philippine family law attorney before taking any legal action regarding your marriage. Expat Compass PH is not a law firm and does not provide legal advice. Nothing on this page creates an attorney-client relationship. The information on this page reflects conditions as of August 2026.</p>
         </div>
       </section>
 

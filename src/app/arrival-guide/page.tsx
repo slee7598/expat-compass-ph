@@ -287,7 +287,7 @@ export default function ArrivalGuidePage() {
             <p>On first arrival in the Philippines there is no way to fully know what to expect. NAIA is chaotic and overwhelming. But once through and on a flight to Cebu, everything changes. Mactan-Cebu airport is modern and manageable. The heat hits the moment you step outside. A Grab showed up in 4 minutes. By the time accommodation is reached, it becomes clear things are going to be okay.</p>
             <p>The Philippines rewards people who arrive with patience and a sense of humor. Give yourself a full day to adjust before making any judgments. You made the right decision.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 

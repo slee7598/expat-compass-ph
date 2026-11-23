@@ -714,7 +714,7 @@ export default function DatingPhilippinesPage() {
               <p>I love my country and I love Filipino women. We are loyal, caring, and family-first in everything we do. We are also human beings who deserve to be treated with respect. If you come to the Philippines looking for a genuine connection, you will find one. If you come looking to exploit people in a poor country, you will find that too — and you will deserve everything that follows from it. Come with an open heart. Be honest about who you are and what you want. And please — be kind to everyone you meet here, regardless of how the connection works out.</p>
             </div>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: November 2026 · Cebu, Philippines</p>
         </div>
       </section>
 

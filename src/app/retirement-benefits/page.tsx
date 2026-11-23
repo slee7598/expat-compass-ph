@@ -669,7 +669,7 @@ export default function RetirementBenefitsPage() {
             <p>If you have first-hand experience navigating Social Security, Medicare, or VA benefits as an expat in the Philippines, sharing it would help hundreds of people facing the same situation. Contact us at contact@expatcompassph.com.</p>
             <p>This is not financial or legal advice. Consult directly with SSA, Medicare, and a licensed US expat financial advisor before making decisions about your benefits.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
@@ -681,7 +681,7 @@ export default function RetirementBenefitsPage() {
             <h2 className="legal-heading">Verify before you move.</h2>
           </div>
           <p className="legal-body">
-            Benefit rules, payment amounts, and eligibility requirements change regularly. This page reflects conditions as of June 2026 and is for general informational purposes only. It is not financial or legal advice. Always verify current rules directly with the Social Security Administration at <strong>ssa.gov</strong>, Medicare at <strong>medicare.gov</strong>, and the VA at <strong>va.gov</strong> before making decisions about your benefits.
+            Benefit rules, payment amounts, and eligibility requirements change regularly. This page reflects conditions as of October 2026 and is for general informational purposes only. It is not financial or legal advice. Always verify current rules directly with the Social Security Administration at <strong>ssa.gov</strong>, Medicare at <strong>medicare.gov</strong>, and the VA at <strong>va.gov</strong> before making decisions about your benefits.
           </p>
         </div>
       </section>

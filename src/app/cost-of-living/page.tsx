@@ -849,7 +849,7 @@ export default function CostOfLivingPage() {
             <p>Finding a resort-condo deal like this requires patience, timing, and some luck. You may not find exactly this — but the Philippines rewards people who look carefully, build local relationships, and are willing to live like a resident rather than a tourist.</p>
             <p>The expat who moves here expecting to recreate their American lifestyle at American prices will be disappointed. The expat who embraces what the Philippines actually offers — fresh food, warm people, a tropical climate, and a pace of life that prioritizes living over working — will find this place transforms them. The cost of living makes it possible.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
+          <p className="sn-verified">Last Updated: November 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>
       </section>
 
@@ -857,7 +857,7 @@ export default function CostOfLivingPage() {
       <section className="legal-section">
         <div className="legal-inner">
           <p className="legal-body">
-            <strong>Costs fluctuate with exchange rates, fuel prices, and inflation.</strong> All figures reflect conditions as of June 2026. Individual costs vary significantly based on lifestyle, location, and personal choices. This page reflects one expat&rsquo;s real experience and should be used as a planning guide, not a guarantee. Exchange rates change — verify the current PHP/USD rate before making financial plans.
+            <strong>Costs fluctuate with exchange rates, fuel prices, and inflation.</strong> All figures reflect conditions as of November 2026. Individual costs vary significantly based on lifestyle, location, and personal choices. This page reflects one expat&rsquo;s real experience and should be used as a planning guide, not a guarantee. Exchange rates change — verify the current PHP/USD rate before making financial plans.
           </p>
         </div>
       </section>

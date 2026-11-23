@@ -84,6 +84,11 @@ A shared `BodyText` component at `src/components/BodyText.tsx` enforces correct 
 - Do not change existing copy without being asked
 - When in doubt, ask before changing anything personal
 
+## Rule: Last-updated dates (set by the owner, Nov 22, 2026)
+Any change to a page's content (text, prices, tables, facts, links in the body) must update that page's "Last updated" date in the same commit, along with its sitemap lastModified and JSON-LD dateModified. Styling-only or layout-only changes don't count. Never bump the date on a page whose content didn't change. Before finishing any task, list every page whose content you changed and confirm each one's date was updated (run `npm run check-dates` if it exists).
+
+Dates live in `src/lib/lastUpdated.ts` — update `display` (e.g. "November 2026") and `iso` (e.g. "2026-11-22") there. The sitemap reads from this map automatically.
+
 ## Site Identity
 - Site name: Expat Compass PH
 - Owner: Steve Lee

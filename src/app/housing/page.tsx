@@ -557,7 +557,7 @@ export default function HousingPage() {
             <p>A one-bedroom resort condo on Mactan found through Dot Property: 33,000 pesos for an 11th floor unit with resort access, a private beach, and a view of both sunrises and sunsets from the same balcony. That deal took patience and a local realtor to find. It would not have happened if a 12-month lease had been signed in the first week.</p>
             <p>The advice is simple: take your time, start on Airbnb, and use a trusted realtor when ready to commit. The Philippines rewards patience. The right place is out there — do not rush into the wrong one.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
+          <p className="sn-verified">Last Updated: October 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>
       </section>
 

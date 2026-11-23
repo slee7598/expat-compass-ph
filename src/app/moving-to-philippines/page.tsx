@@ -517,7 +517,7 @@ export default function MovingToPhilippinesPage() {
             <p>Most expats overthink what to bring and underthink what to do when arriving. The things that cause stress before leaving — whether familiar food is available, whether the internet is fast enough — turn out to be non-issues. The things that are often underprepared — documents, the visa extension timeline, the nearest good hospital — are the ones that require scrambling after arrival.</p>
             <p>Get documents done before leaving. Bring medications. Bring a VPN router and Firestick. Do not ship anything. Everything else can be figured out on arrival. The Philippines rewards people who show up with an open attitude and figure things out as they go.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Punta Engaño, Mactan Island, Cebu</p>
+          <p className="sn-verified">Last Updated: October 2026 · Punta Engaño, Mactan Island, Cebu</p>
         </div>
       </section>
 

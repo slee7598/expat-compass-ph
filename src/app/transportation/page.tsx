@@ -696,7 +696,7 @@ export default function TransportationPage() {
             <p>Grab and Maxim are the go-to ride apps in the Philippines. Both show the fare upfront before confirming — no surprises. Taxis exist and can be cheaper, but if you do not know the city, some drivers will take the scenic route. Stick to the apps until you know your way around.</p>
             <p>One tip worth knowing: Maxim is typically about half the price of Grab. That said, Grab tends to be more available and more reliable during busy periods. Practical approach — use Maxim when not in a rush, use Grab when punctuality matters.</p>
           </div>
-          <p className="sn-verified">Last Verified: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Verified: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
@@ -835,7 +835,7 @@ export default function TransportationPage() {
             <p>Pro tip: Have the seller meet you at Lapu-Lapu City Hall. Everything you need for the transaction is right there — attorney offices are steps away on M.L. Quezon Highway in front of the Hall of Justice, notary services are on site, photocopying is available, and there is a scooter shop directly behind City Hall. One location, one trip, done.</p>
             <p>The ADV 160 is everything expats say it is. Comfortable, powerful enough for Cebu roads, smooth on the Mactan highways, and practical for two-up riding. The keyless ignition and ABS are worth paying for. Having your own transportation on Mactan is a genuine quality of life upgrade — no waiting for Grab drivers, no change problems, no surge pricing.</p>
           </div>
-          <p className="sn-verified">LAST UPDATED JULY 2026 &middot; PUNTA ENGANO MACTAN ISLAND CEBU</p>
+          <p className="sn-verified">LAST UPDATED OCTOBER 2026 &middot; PUNTA ENGANO MACTAN ISLAND CEBU</p>
         </div>
       </section>
 

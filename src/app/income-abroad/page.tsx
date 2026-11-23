@@ -393,7 +393,7 @@ export default function IncomeAbroadPage() {
             <p>Remote work for a US company funds a lifestyle in the Philippines that would cost three to four times as much in the United States. The Philippines is genuinely transformative for anyone whose income is in US dollars — purchasing power increases dramatically the moment you land.</p>
             <p>Expats who are not yet retired can watch friends here live very comfortably on Social Security alone. The key is being honest about what comfortable means — and being willing to live like a resident rather than a tourist. The people who struggle financially here are usually the ones trying to recreate an American lifestyle at American prices in a country where that is not necessary and not particularly satisfying anyway.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: October 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
