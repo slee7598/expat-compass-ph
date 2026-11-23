@@ -225,6 +225,19 @@ export default function HealthcarePage() {
         }
 
         /* ── NEWSLETTER ── */
+        /* ── VIDEO EMBED ── */
+        .hc-video-section { background: #0B1F3A; padding: 56px 48px; }
+        .hc-video-inner { max-width: 860px; }
+        .hc-video-wrap {
+          position: relative; width: 100%; max-width: 860px;
+          padding-bottom: 48.375%; /* 16:9 on max-width 860px */
+          height: 0; overflow: hidden; margin-top: 0;
+        }
+        .hc-video-iframe {
+          position: absolute; top: 0; left: 0;
+          width: 100%; height: 100%; border: none;
+        }
+
         .newsletter-section { background: #0B1F3A; }
         .nl-wrap { max-width: 600px; margin: 0 auto; text-align: center; }
         .nl-eyebrow {
@@ -323,8 +336,20 @@ export default function HealthcarePage() {
         </div>
       </div>
 
-      {/* VIDEO03_EMBED */}
-      {/* <!-- VIDEO03_EMBED --> */}
+      {/* ── VIDEO EMBED ── */}
+      <section className="hc-video-section">
+        <div className="hc-video-inner">
+          <div className="hc-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/cP4h8nkmSds"
+              title="Philippines Healthcare: The $300 Hospital Night and the One That Isn't Cheap"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="hc-video-iframe"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* ── OPENING HOOK ── */}
       <section className="section section-light">
