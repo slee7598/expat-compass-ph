@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BodyText from "@/components/BodyText";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export const metadata: Metadata = {
   title: "Healthcare in the Philippines for Expats 2026 — Hospitals, Costs & Insurance",
   description:
     "Complete guide to healthcare in the Philippines for expats. Real costs from Chong Hua Hospital Cebu, private hospital comparisons, dental tourism, health insurance options, and what Medicare does not cover abroad.",
   alternates: { canonical: "https://expatcompassph.com/healthcare" },
+  openGraph: {
+    images: [{ url: "/og/healthcare.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og/healthcare.jpg"],
+  },
 };
 
 export default function HealthcarePage() {
@@ -53,6 +62,7 @@ export default function HealthcarePage() {
         }
         .hook-card-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A84C; margin-bottom: 14px; }
         .hook-card-body { font-size: 1.02rem; font-weight: 300; line-height: 1.88; color: #4A5868; }
+        .hook-card-note { font-size: 0.88rem; font-weight: 300; line-height: 1.72; color: #5C6B7A; margin-top: 14px; border-top: 1px solid rgba(201,168,76,0.2); padding-top: 14px; }
 
         /* ── BODY TEXT ── */
         .hb { font-size: 0.93rem; font-weight: 300; line-height: 1.85; color: #4A5868; margin-bottom: 16px; max-width: 760px; }
@@ -128,6 +138,13 @@ export default function HealthcarePage() {
         .cost-table td.td-ph { font-family: 'Playfair Display', serif; font-weight: 700; color: #27AE60; white-space: nowrap; text-align: right; }
         .cost-table-note { font-size: 0.8rem; font-weight: 300; color: #6B7B8A; margin-top: 8px; max-width: 760px; }
 
+        /* big-ticket table on dark bg */
+        .cost-table-dark td { border-bottom-color: rgba(248,246,241,0.07); color: #F8F6F1; }
+        .cost-table-dark td.td-service { color: #F8F6F1; font-weight: 500; }
+        .cost-table-dark td.td-cost { color: #C9A84C; }
+        .cost-table-dark td.td-us { color: #EB5757; }
+        .cost-table-note-dark { font-size: 0.8rem; font-weight: 300; color: rgba(248,246,241,0.78); margin-top: 8px; max-width: 760px; }
+
         /* ── HOSPITAL LIST ── */
         .hosp-list { display: flex; flex-direction: column; gap: 0; max-width: 820px; margin: 16px 0; }
         .hosp-card { border: 1px solid rgba(248,246,241,0.08); border-bottom: none; display: grid; grid-template-columns: 200px 1fr; }
@@ -155,6 +172,16 @@ export default function HealthcarePage() {
         .ins-card-featured { border-color: rgba(201,168,76,0.4); background: rgba(201,168,76,0.04); }
         .ins-card-featured .ins-card-name { color: #C9A84C; }
         .ins-card-wide { grid-column: 1 / -1; }
+
+        /* ── SAFETYWING PLAN CARDS ── */
+        .sw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 820px; margin: 20px 0; }
+        .sw-card { border: 1px solid rgba(11,31,58,0.08); background: #fff; padding: 28px 28px 24px; }
+        .sw-card-tier { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A84C; margin-bottom: 8px; }
+        .sw-card-name { font-family: 'Playfair Display', serif; font-size: 1.08rem; font-weight: 700; color: #0B1F3A; margin-bottom: 12px; }
+        .sw-card-price { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #0B1F3A; margin-bottom: 4px; }
+        .sw-card-price-note { font-size: 0.75rem; font-weight: 300; color: #5C6B7A; margin-bottom: 16px; }
+        .sw-card-rule { font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: #5C6B7A; border-top: 1px solid rgba(11,31,58,0.07); padding-top: 14px; margin-top: 14px; }
+        .sw-card-rule + .sw-card-rule { border-top: none; padding-top: 0; margin-top: 8px; }
 
         /* ── PHARMACY GRID ── */
         .pharmacy-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 760px; margin: 20px 0; }
@@ -197,6 +224,46 @@ export default function HealthcarePage() {
           color: #F8F6F1;
         }
 
+        /* ── NEWSLETTER ── */
+        .newsletter-section { background: #0B1F3A; }
+        .nl-wrap { max-width: 600px; margin: 0 auto; text-align: center; }
+        .nl-eyebrow {
+          display: inline-flex; align-items: center; gap: 10px;
+          font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #C9A84C; margin-bottom: 16px;
+        }
+        .nl-eyebrow::before, .nl-eyebrow::after { content: ''; display: block; width: 20px; height: 1px; background: #C9A84C; }
+        .nl-heading {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 700; line-height: 1.2;
+          color: #F8F6F1; margin-bottom: 16px;
+        }
+        .nl-sub { font-size: 0.95rem; font-weight: 300; line-height: 1.7; color: #F8F6F1; margin-bottom: 32px; }
+        .nl-form { display: flex; gap: 0; max-width: 480px; margin: 0 auto 12px; }
+        .nl-input {
+          flex: 1; padding: 14px 18px;
+          background: rgba(248,246,241,0.96);
+          border: 1px solid rgba(201,168,76,0.3); border-right: none;
+          outline: none; font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #0B1F3A;
+        }
+        .nl-input::placeholder { color: rgba(11,31,58,0.4); }
+        .nl-btn {
+          padding: 14px 24px; background: #C9A84C; color: #0B1F3A;
+          font-family: 'Inter', sans-serif; font-size: 0.76rem; font-weight: 700;
+          letter-spacing: 0.1em; text-transform: uppercase; border: none; cursor: pointer;
+          transition: background 0.2s; white-space: nowrap; flex-shrink: 0;
+        }
+        .nl-btn:hover:not(:disabled) { background: #b8943e; }
+        .nl-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .nl-success {
+          display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px;
+          background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3);
+          color: #C9A84C; font-size: 0.9rem; font-weight: 500; margin-bottom: 12px;
+        }
+        .nl-check { font-size: 1.1rem; font-weight: 700; }
+        .nl-error { font-size: 0.82rem; color: rgba(248,246,241,0.78); margin-top: 8px; }
+        .nl-note { font-size: 0.72rem; color: rgba(248,246,241,0.6); margin-top: 12px; }
+
         /* ── STEVE'S NOTE ── */
         .sn-section {
           background: #0D1E30; border-top: 3px solid #C9A84C;
@@ -232,6 +299,7 @@ export default function HealthcarePage() {
           .campus-card:last-child { border-bottom: 1px solid rgba(11,31,58,0.08); }
           .ins-grid { grid-template-columns: 1fr; }
           .ins-card-wide { grid-column: auto; }
+          .sw-grid { grid-template-columns: 1fr; }
           .hosp-card { grid-template-columns: 1fr; }
           .hosp-label { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.25); }
           .pharmacy-grid { grid-template-columns: repeat(2, 1fr); }
@@ -255,14 +323,23 @@ export default function HealthcarePage() {
         </div>
       </div>
 
+      {/* VIDEO03_EMBED */}
+      {/* <!-- VIDEO03_EMBED --> */}
+
       {/* ── OPENING HOOK ── */}
       <section className="section section-light">
         <div className="section-inner">
           <div className="hook-card">
             <p className="hook-card-label">The number that changes how you think about Philippine healthcare</p>
             <p className="hook-card-body">In the United States, a 6-hour emergency room visit with IV treatment, blood tests, and a week of prescription medications would cost $3,000 to $5,000 minimum without insurance — and often significantly more. My total bill at Chong Hua Hospital in Cebu for exactly that treatment was $300 USD. That is not a typo. That is healthcare in the Philippines.</p>
+            <p className="hook-card-note">That figure covers one emergency-room visit: 6 hours, IV fluids and antibiotics, two blood tests, a week of medication, doctor&rsquo;s fee included. Everyday and emergency care here is genuinely this affordable. For serious procedures — heart surgery, cancer treatment, or medical evacuation — the numbers are very different. See the <a href="#big-ticket-costs" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>big-ticket costs table</a> below.</p>
           </div>
         </div>
+      </section>
+
+      {/* ── NEWSLETTER ── */}
+      <section className="section newsletter-section">
+        <NewsletterSignup />
       </section>
 
       {/* ── JUMP NAV ── */}
@@ -286,9 +363,25 @@ export default function HealthcarePage() {
               <p className="cs-city">Pharmacies</p>
               <p className="cs-tagline">Where to fill prescriptions</p>
             </a>
+            <a href="#big-ticket-costs" className="cs-card">
+              <p className="cs-city">Big-Ticket Costs</p>
+              <p className="cs-tagline">What serious procedures really cost</p>
+            </a>
             <a href="#insurance" className="cs-card">
               <p className="cs-city">Health Insurance</p>
               <p className="cs-tagline">SafetyWing, Cigna, and more</p>
+            </a>
+            <a href="#safetywing-plans" className="cs-card">
+              <p className="cs-city">SafetyWing Plans</p>
+              <p className="cs-tagline">Essential vs Complete compared</p>
+            </a>
+            <a href="#paying-the-hospital" className="cs-card">
+              <p className="cs-city">Paying the Hospital</p>
+              <p className="cs-tagline">Laws, deposits, and practical tips</p>
+            </a>
+            <a href="#local-hmos" className="cs-card">
+              <p className="cs-city">Local HMOs</p>
+              <p className="cs-tagline">Age limits and what to expect</p>
             </a>
             <a href="#medicare" className="cs-card">
               <p className="cs-city">Medicare Abroad</p>
@@ -339,22 +432,27 @@ export default function HealthcarePage() {
               <div className="hospital-icon">CH</div>
               <div>
                 <p className="hospital-name">Chong Hua Hospital</p>
-                <p className="hospital-tagline">Largest and most advanced private hospital in the Visayas and Mindanao regions &nbsp;·&nbsp; Est. 1924 &nbsp;·&nbsp; Two Metro Cebu campuses</p>
+                <p className="hospital-tagline">Largest and most advanced private hospital in the Visayas and Mindanao regions &nbsp;·&nbsp; One of Cebu&rsquo;s oldest private hospitals &nbsp;·&nbsp; Two Metro Cebu campuses</p>
               </div>
             </div>
             <div className="hospital-body">
-              <p className="hb">When expats in Cebu ask where to go for medical care, the answer is almost universally Chong Hua Hospital. It is the largest and most advanced private hospital in the Visayas and Mindanao regions, with a 100-year history and two major campuses serving Metro Cebu.</p>
+              <p className="hb">When expats in Cebu ask where to go for medical care, the answer is almost universally Chong Hua Hospital. It is the largest and most advanced private hospital in the Visayas and Mindanao regions, one of Cebu&rsquo;s oldest private hospitals, and has two major campuses serving Metro Cebu.</p>
             </div>
           </div>
 
           <div className="achievement">
             <span className="achievement-star">★</span>
-            <p className="achievement-body"><strong>World recognition — 2026:</strong> Chong Hua Hospital was ranked among the world&rsquo;s best hospitals — the first time the Philippines was included in a global hospital ranking that evaluated more than 2,500 institutions across 32 countries. This is not a regional distinction. This is global recognition for a hospital in Cebu, Philippines.</p>
+            <p className="achievement-body"><strong>National recognition — 2026:</strong> Chong Hua Hospital was named to Newsweek and Statista&rsquo;s World&rsquo;s Best Hospitals 2026 list for the Philippines — the first year the country was included in the ranking. This is a national Philippines distinction, recognizing Chong Hua among the top hospitals in the country.</p>
           </div>
 
           <div className="personal-callout">
             <p className="personal-callout-label">First-Hand Experience at Chong Hua ER</p>
             <p className="personal-callout-body">A significant illness required a visit to the Chong Hua emergency room. The process was seamless — a basic digital sign-in app, straight to a bed with no wait. The staff was genuinely some of the friendliest encountered in any medical setting anywhere. IV hydration and IV antibiotics administered; two blood tests run; four medications prescribed for a full week. Total bill including the separate doctor&rsquo;s fee: $300 USD. In the United States that same visit would have cost thousands of dollars. The quality of care and the bill were both impressive.</p>
+          </div>
+
+          <div className="ha-gold">
+            <p className="ha-gold-label">Expat Compass PH Note</p>
+            <p className="ha-gold-body">The $300 figure above was for one emergency room visit. That is representative of everyday and ER-level care in the Philippines. For serious procedures — a cardiac procedure, cancer treatment, or medical evacuation — costs are far higher. See the <a href="#big-ticket-costs" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>big-ticket costs section</a> for a realistic picture of what major care actually runs.</p>
           </div>
 
           <h3 className="hsub">Two campuses — which to use</h3>
@@ -576,6 +674,56 @@ export default function HealthcarePage() {
         </div>
       </section>
 
+      {/* ── BIG-TICKET COSTS ── */}
+      <section className="section section-dark" id="big-ticket-costs">
+        <div className="section-inner">
+          <p className="section-label">When It Gets Serious</p>
+          <h2 className="section-heading section-heading-light">Big-Ticket Costs: 2026 Ranges</h2>
+
+          <BodyText variant="dark-bg" className="hb">Everyday care and emergency-room visits are genuinely cheap here. Major procedures are a different story. These are real-world ranges for serious interventions at private hospitals — the numbers that make insurance non-negotiable.</BodyText>
+
+          <div className="cost-table-wrap">
+            <table className="cost-table cost-table-dark">
+              <thead>
+                <tr>
+                  <th>Procedure</th>
+                  <th className="th-right">PHP Range</th>
+                  <th className="th-right">USD Equivalent</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="td-service">Angioplasty + stent</td>
+                  <td className="td-cost">₱150,000–350,000+</td>
+                  <td className="td-us">~$2,500–$6,000+</td>
+                </tr>
+                <tr>
+                  <td className="td-service">Heart bypass (full package, Manila private hospital)</td>
+                  <td className="td-cost">₱1.2–1.4 million</td>
+                  <td className="td-us">over $20,000</td>
+                </tr>
+                <tr>
+                  <td className="td-service">Air ambulance (jet)</td>
+                  <td className="td-cost">—</td>
+                  <td className="td-us">thousands of dollars per hour</td>
+                </tr>
+                <tr>
+                  <td className="td-service">Medical flight from Asia to the U.S.</td>
+                  <td className="td-cost">—</td>
+                  <td className="td-us">$165,000–$225,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="cost-table-note-dark">Sources: clinicfinderph.com (2026), Pacific Prime. Ranges vary widely; get a written estimate. Angioplasty costs more in an emergency or with multiple stents.</p>
+
+          <div className="ha-amber" style={{marginTop: '28px'}}>
+            <p className="ha-amber-label">Why This Table Matters</p>
+            <p className="ha-amber-body">A heart event or the need for air evacuation can erase a decade of savings. The Philippines is excellent value for routine and emergency care. It is not a free pass on insurance for anything serious.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 6: INSURANCE ── */}
       <section className="section section-light" id="insurance">
         <div className="section-inner">
@@ -590,13 +738,15 @@ export default function HealthcarePage() {
           <div className="ins-grid">
             <div className="ins-card ins-card-featured ins-card-wide">
               <div className="ins-card-head">
-                <p className="ins-card-tier">Most Popular Among Expats</p>
-                <p className="ins-card-name">SafetyWing Nomad Insurance</p>
+                <p className="ins-card-tier">Most Popular Among Expats — Two Plans Available</p>
+                <p className="ins-card-name">SafetyWing</p>
               </div>
               <div className="ins-card-body">
-                The most popular entry-level option among expats and digital nomads. Affordable monthly premiums, covers emergency medical care, hospitalization, and evacuation. Does not cover pre-existing conditions. Best for younger, healthy expats who want basic coverage at low cost. Available month-to-month with no long-term commitment.
+                SafetyWing now offers two distinct products. <strong>Essential (travel-medical)</strong> is the original — affordable month-to-month emergency and hospitalization coverage, no long-term commitment. <strong>Complete (international health plan)</strong> is a more comprehensive annual plan that includes routine care, cancer treatment, and specialist visits. See the full <a href="#safetywing-plans" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>SafetyWing Plans comparison</a> below for details and 2026 pricing.
                 <br />
                 <a className="ins-card-link" href="https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador" target="_blank" rel="noopener noreferrer">Get a Quote from SafetyWing →</a>
+                <br />
+                <span style={{fontSize: '0.75rem', fontWeight: 300, color: '#5C6B7A', display: 'block', marginTop: '8px'}}>Affiliate link: Expat Compass PH may earn a small commission at no extra cost to you.</span>
               </div>
             </div>
 
@@ -621,7 +771,7 @@ export default function HealthcarePage() {
                 <p className="ins-card-tier">Government Program</p>
                 <p className="ins-card-name">PhilHealth</p>
               </div>
-              <div className="ins-card-body">The Philippine government health insurance program. Foreigners holding certain visas including the SRRV and 13A can enroll. Coverage is basic but provides a meaningful subsidy at accredited hospitals including VSMMC. Worth enrolling in as a supplement to private insurance, not as a replacement. See the full PhilHealth breakdown below.</div>
+              <div className="ins-card-body">The Philippine government health insurance program. Foreign residents with an SRRV or a valid ACR I-Card (such as 13(a) visa holders) can enroll. Coverage is a meaningful subsidy — typically around 60% of a hospital bill — but not comprehensive. Worth enrolling in as a supplement to private insurance, not as a replacement. See the full PhilHealth breakdown below.</div>
             </div>
 
             <div className="ins-card" style={{borderColor: 'rgba(242,153,74,0.3)', background: 'rgba(242,153,74,0.03)'}}>
@@ -629,24 +779,29 @@ export default function HealthcarePage() {
                 <p className="ins-card-tier" style={{color: '#F2994A'}}>Advanced Consideration</p>
                 <p className="ins-card-name">Out of Pocket — Is It Viable?</p>
               </div>
-              <div className="ins-card-body">For many healthy expats, especially younger ones, the math sometimes favors paying out of pocket rather than maintaining expensive insurance. At Philippine private hospital rates, even a significant illness costs $300 USD. However this calculation changes dramatically for serious conditions. Out-of-pocket works only with a substantial emergency fund. The recommended approach: a basic plan like SafetyWing plus a $5,000 to $10,000 USD cash emergency fund.</div>
+              <div className="ins-card-body">For many healthy expats, paying out of pocket for routine and emergency-room care is genuinely feasible here — a 6-hour ER visit with IV treatment and blood tests can run around $300 USD. But the out-of-pocket calculation changes dramatically for serious conditions. See the <a href="#big-ticket-costs" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>big-ticket costs table</a> before deciding. Expat Compass PH recommends: a basic plan like SafetyWing plus $5,000 to $10,000 you can reach the same night.</div>
             </div>
           </div>
 
           <h3 className="hsub">PhilHealth for Foreign Residents — 2026 Rates and Enrollment</h3>
-          <p className="hb">Foreigners on certain long-stay visas can enroll in PhilHealth as direct contributors. Here is what you need to know in 2026.</p>
+          <BodyText variant="light-bg" className="hb">Foreigners who are legal residents can join PhilHealth as direct contributors. Here is what you need to know in 2026.</BodyText>
 
           <div className="ha-gold">
             <p className="ha-gold-label">2026 Annual Contribution Rates — Foreign Residents</p>
-            <p className="ha-gold-body">SRRV (Special Resident Retiree Visa) holders: approximately PHP 15,000 per year. &nbsp;·&nbsp; 13(a) spousal visa holders: approximately PHP 17,000 per year. These are direct contributor rates for foreigners not employed by a Philippine company. Rates are set by PhilHealth and may be adjusted — verify current rates at philhealth.gov.ph before enrolling.</p>
+            <p className="ha-gold-body">SRRV (Special Resident Retiree Visa) holders: approximately PHP 15,000 per year. &nbsp;·&nbsp; 13(a) spousal visa holders (and other ACR I-Card holders): approximately PHP 17,000 per year. These are direct contributor rates for foreigners not employed by a Philippine company. Rates are set by PhilHealth and may be adjusted — verify current rates at philhealth.gov.ph before enrolling.</p>
+          </div>
+
+          <div className="ha-gold">
+            <p className="ha-gold-label">Expat Compass PH Note — What PhilHealth Actually Covers</p>
+            <p className="ha-gold-body">PhilHealth typically covers around 60% of a hospital bill. Expect to pay up to 40% yourself. It is a subsidy, not a safety net.</p>
           </div>
 
           <h3 className="hsub">Who Qualifies</h3>
           <ul className="hlist">
-            <li className="hli">Foreigners holding a valid SRRV issued by the Philippine Retirement Authority.</li>
-            <li className="hli">Foreigners holding a valid 13(a) spousal visa — both probationary and permanent.</li>
+            <li className="hli">SRRV holders — the SRRV is issued by the Philippine Retirement Authority and qualifies you as a direct contributor.</li>
+            <li className="hli">Foreigners holding a valid ACR I-Card, such as 13(a) spousal visa holders (both probationary and permanent).</li>
             <li className="hli">Foreigners employed by a Philippine-registered company — mandatory enrollment with different contribution structure.</li>
-            <li className="hli">Other long-stay visa holders — verify eligibility directly with PhilHealth at philhealth.gov.ph.</li>
+            <li className="hli">On tourist visa extensions, most PhilHealth offices won&rsquo;t enroll you. Ask your local office. Verify eligibility directly with PhilHealth at philhealth.gov.ph.</li>
           </ul>
 
           <h3 className="hsub">What PhilHealth Covers</h3>
@@ -668,7 +823,98 @@ export default function HealthcarePage() {
 
           <div className="ha-amber">
             <p className="ha-amber-label">Honest Assessment — Is PhilHealth Worth It for Foreign Residents?</p>
-            <p className="ha-amber-body">At PHP 15,000 to 17,000 per year, PhilHealth is worth enrolling in if you qualify on SRRV or 13A. The inpatient case rate reductions can meaningfully cut a hospital bill for a significant illness or surgery. However PhilHealth is not a substitute for comprehensive private insurance — coverage gaps for outpatient care, specialist consultations, and medications are real. The recommended combination for most foreign residents: PhilHealth plus SafetyWing Nomad Insurance or similar international plan. That gives you both the government subsidy at accredited hospitals and proper international coverage for emergencies. <a href="https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador" target="_blank" rel="noopener noreferrer" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>Get a SafetyWing quote →</a></p>
+            <p className="ha-amber-body">At PHP 15,000 to 17,000 per year, PhilHealth is worth enrolling in if you qualify on SRRV or 13A. The inpatient case rate reductions can meaningfully cut a hospital bill for a significant illness or surgery. However PhilHealth is not a substitute for comprehensive private insurance — coverage gaps for outpatient care, specialist consultations, and medications are real. Expat Compass PH recommends: PhilHealth plus SafetyWing or similar international plan. That gives you both the government subsidy at accredited hospitals and proper international coverage for emergencies. <a href="https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador" target="_blank" rel="noopener noreferrer" style={{color: '#C9A84C', fontWeight: 600, textDecoration: 'none'}}>Get a SafetyWing quote →</a></p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SAFETYWING PLANS ── */}
+      <section className="section section-light" id="safetywing-plans">
+        <div className="section-inner">
+          <p className="section-label">SafetyWing</p>
+          <h2 className="section-heading">SafetyWing: Essential vs Complete</h2>
+
+          <BodyText variant="light-bg" className="hb">SafetyWing offers two distinct products for expats. They serve different purposes at very different price points. Know which one you need before you sign up.</BodyText>
+
+          <div className="sw-grid">
+            <div className="sw-card">
+              <p className="sw-card-tier">Travel-Medical Plan</p>
+              <p className="sw-card-name">SafetyWing Essential</p>
+              <p className="sw-card-price">~$161 / 4 weeks</p>
+              <p className="sw-card-price-note">Age 50–59. Billed every 28 days.</p>
+              <p className="sw-card-rule">$250,000 medical maximum per coverage period. Built for emergencies and acute illness, not routine care.</p>
+              <p className="sw-card-rule">Reimbursement-first: you pay the hospital, then claim back. Does not cover pre-existing conditions.</p>
+              <p className="sw-card-rule">Coverage ends at age 69. No long-term commitment — cancel any time.</p>
+            </div>
+            <div className="sw-card" style={{borderColor: 'rgba(201,168,76,0.4)', background: 'rgba(201,168,76,0.03)'}}>
+              <p className="sw-card-tier">International Health Plan</p>
+              <p className="sw-card-name">SafetyWing Complete</p>
+              <p className="sw-card-price">~$380.50 / month</p>
+              <p className="sw-card-price-note">Age 50–59. About $4,500 a year. 12-month commitment.</p>
+              <p className="sw-card-rule">Up to $1.5 million a year in hospital and medical cover. Includes cancer treatment, specialist visits, mental health, and a yearly checkup.</p>
+              <p className="sw-card-rule">Must sign up by age 64 (renewable after). No pre-existing conditions. You cannot list the U.S. as your country of residence.</p>
+              <p className="sw-card-rule">12-month commitment required. Best for expats who need comprehensive annual coverage, not just emergency backup.</p>
+            </div>
+          </div>
+
+          <div className="ha-gold">
+            <p className="ha-gold-label">How SafetyWing Pays Hospitals</p>
+            <p className="ha-gold-body">SafetyWing can send a hospital a guarantee of payment for the first 24 hours of an emergency and pay directly for planned treatment — but a hospital can still decline it. For day-to-day care, the standard process is pay first, claim back. Keep receipts for everything.</p>
+          </div>
+
+          <p className="cost-table-note" style={{marginTop: '24px'}}>Prices from the SafetyWing calculator, Nov 2026. Check your own age and quote — rates vary by age band.</p>
+
+          <div style={{marginTop: '24px', display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap'}}>
+            <a className="ins-card-link" href="https://safetywing.com/?referenceID=26552539&utm_source=26552539&utm_medium=Ambassador" target="_blank" rel="noopener noreferrer">Get a SafetyWing Quote →</a>
+            <span style={{fontSize: '0.78rem', fontWeight: 300, color: '#5C6B7A'}}>Affiliate link: Expat Compass PH may earn a small commission at no extra cost to you.</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PAYING THE HOSPITAL ── */}
+      <section className="section section-dark" id="paying-the-hospital">
+        <div className="section-inner">
+          <p className="section-label">Know Before You Go</p>
+          <h2 className="section-heading section-heading-light">Paying the Hospital</h2>
+
+          <BodyText variant="dark-bg" className="hb">Philippine hospital billing has specific rules — some that protect patients, some that catch expats off guard. Know these before you need them.</BodyText>
+
+          <h3 className="hsub hsub-first hsub-light">Emergency Admissions — Republic Act 10932</h3>
+          <BodyText variant="dark-bg" className="hb">The Anti-Hospital Deposit Law (RA 10932) says that in an emergency, a hospital cannot demand a cash deposit before providing basic emergency care. Staff who break this law face fines of ₱100,000 or more and possible imprisonment.</BodyText>
+
+          <h3 className="hsub hsub-light">Planned Admissions</h3>
+          <BodyText variant="dark-bg" className="hb">Planned admissions work differently. Chong Hua, for example, asks for a partial payment on admission. The doctor&rsquo;s fee is typically billed separately from the hospital bill — expect two bills.</BodyText>
+
+          <BodyText variant="dark-bg" className="hb">At private hospitals you generally cannot leave until the full bill is paid. Plan for this.</BodyText>
+
+          <h3 className="hsub hsub-light">Republic Act 9439 — Promissory Note Discharge</h3>
+          <BodyText variant="dark-bg" className="hb">RA 9439 allows patients to leave a hospital on a promissory note backed by a mortgage or a co-signer if they cannot pay the full bill immediately. <strong style={{color: '#F8F6F1'}}>Important exception: patients in private rooms are not covered by RA 9439.</strong> This law applies to ward and semi-private patients.</BodyText>
+
+          <div className="ha-gold">
+            <p className="ha-gold-label">Expat Compass PH Recommends</p>
+            <p className="ha-gold-body">Keep $5,000 to $10,000 you can reach the same night — card limit or bank funds. Save your hospital&rsquo;s phone number in your phone now, before you need it. At Chong Hua: Mandaue campus (032) 233-8000, Fuente campus (032) 255-8000. Confirm current numbers directly with the hospital.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LOCAL HMOs ── */}
+      <section className="section section-light" id="local-hmos">
+        <div className="section-inner">
+          <p className="section-label">Local Coverage</p>
+          <h2 className="section-heading">Local HMOs and Age Limits</h2>
+
+          <BodyText variant="light-bg" className="hb">Local Philippine HMOs (Health Maintenance Organizations) are an option some expats explore as an alternative to international insurance. The key thing to know: most of them have age cutoffs for new members.</BodyText>
+
+          <div className="ha-amber">
+            <p className="ha-amber-label">Age Cutoffs for Local HMO Individual Plans</p>
+            <p className="ha-amber-body">Maxicare&rsquo;s main individual plan (MyMaxicare) stops taking new members at age 60. Most local HMOs cap new individual members at 60 to 65. If you are under 60 and healthy, a local HMO may be worth exploring as a supplement. If you are over 60, most individual HMO plans are not an option as a new member.</p>
+          </div>
+
+          <BodyText variant="light-bg" className="hb">Over 60, the realistic local options shift to prepaid health cards — products that cover checkups and diagnostics but not a major hospital stay. These are useful for routine care but are not a substitute for international health insurance for serious illness.</BodyText>
+
+          <div className="ha-gold">
+            <p className="ha-gold-label">Expat Compass PH Recommends</p>
+            <p className="ha-gold-body">If you are over 60, do not count on a local HMO as your primary coverage. Pursue an international plan like SafetyWing Complete (must sign up by 64) or Cigna Global while you are still eligible. Waiting costs more and closes doors.</p>
           </div>
         </div>
       </section>
@@ -683,6 +929,8 @@ export default function HealthcarePage() {
             <p className="ha-blue-label">The Short Answer</p>
             <p className="ha-blue-body">Nothing. Medicare does not cover planned or routine care outside the United States. It does not cover your Chong Hua consultation. It does not cover your medications. It does not cover a hospital stay in Cebu. You paid into Medicare your entire working life and in the Philippines it provides no benefit for the care you actually receive.</p>
           </div>
+
+          <p className="hb hb-light">In most situations Medicare does not pay for care outside the U.S. However, you can keep Part A and Part B — as long as you keep paying the Part B premium — so that coverage is there when you fly home. That is the main reason most American expats maintain their Medicare while living abroad.</p>
 
           <p className="hb hb-light">There are extremely limited exceptions for emergency care during travel within 60 days of entering a foreign country under certain Medigap plans, but these are temporary travel provisions — not coverage for people living abroad.</p>
 
@@ -762,7 +1010,7 @@ export default function HealthcarePage() {
             <p>For expats covered by US employer health insurance, Chong Hua works well for routine and urgent care on a pay-out-of-pocket basis. For retired expats without employer coverage, the recommendation is a combination of an international plan like SafetyWing for emergency coverage and a cash reserve for routine care.</p>
             <p>Philippine private healthcare does not require sacrificing quality. In some ways — the personal attention, the lack of rushed appointments, the absence of insurance bureaucracy — the experience is actually better.</p>
           </div>
-          <p className="sn-verified">Last Updated: June 2026 · Cebu, Philippines</p>
+          <p className="sn-verified">Last Updated: November 2026 · Cebu, Philippines</p>
         </div>
       </section>
 
