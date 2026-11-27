@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://expatcompassph.com",
   },
+  other: {
+    "impact-site-verification": "4eb3416a-ee97-47a3-8525-8a89fdab9184",
+  },
 };
 
 export default function RootLayout({
@@ -59,7 +62,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <meta name="impact-site-verification" value="4eb3416a-ee97-47a3-8525-8a89fdab9184" />
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script
           async
